@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name MOS_6510)(type Legacy)(uri "${KIPRJMOD}/lib/MOS 6510.lib")(options "")(descr "C64 CPU"))
+  (lib (name MOS_8501)(type Legacy)(uri "${KIPRJMOD}/lib/MOS 8501.lib")(options "")(descr "C16 CPU"))
+  (lib (name MOS_7360_TED)(type Legacy)(uri ${KIPRJMOD}/lib/MOS_7360_TED.lib)(options "")(descr TED))
+  (lib (name MOS_6529)(type Legacy)(uri ${KIPRJMOD}/lib/MOS_6529.lib)(options "")(descr ""))
+)
