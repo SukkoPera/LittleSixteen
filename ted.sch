@@ -444,7 +444,7 @@ Connection ~ 1740 4385
 Wire Wire Line
 	3300 4385 3300 4430
 Text Notes 1975 3305 2    50   ~ 0
-NTSC: 14.31818 MHz\nPAL: 17.73447 MHz\nCL = 32p
+NTSC: 14.31818 MHz\nPAL: 17.734475 MHz\n+/- 70ppm\nCL = 32p
 $Comp
 L Device:R R2
 U 1 1 5EADE4E6
@@ -732,6 +732,8 @@ Wire Wire Line
 Connection ~ 6000 2850
 Wire Wire Line
 	6000 2850 7435 2850
+Text Notes 2475 1985 0    157  ~ 0
+CLOCK GENERATION
 Wire Bus Line
 	6865 885  6865 1650
 Wire Bus Line
