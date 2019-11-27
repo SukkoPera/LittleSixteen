@@ -6,4 +6,6 @@
   (lib (name 4464)(type Legacy)(uri ${KIPRJMOD}/lib/4464.lib)(options "")(descr ""))
   (lib (name 4416)(type Legacy)(uri ${KIPRJMOD}/lib/4416.lib)(options "")(descr ""))
   (lib (name Exp-Port)(type Legacy)(uri ${KIPRJMOD}/lib/Exp-Port.lib)(options "")(descr ""))
+  (lib (name r_pack05)(type Legacy)(uri ${KIPRJMOD}/lib/r_pack05.lib)(options "")(descr ""))
+  (lib (name r_pack04)(type Legacy)(uri ${KIPRJMOD}/lib/r_pack04.lib)(options "")(descr ""))
 )

@@ -4,6 +4,9 @@ http://visual6502.org/images/pages/MOS_8501_die_shots.html
 7501/8501 pin info:
 https://ist.uwaterloo.ca/~schepers/MJK/7501.html
 
+Tech docs:
+https://www.pagetable.com/?p=541
+
 6529_replacement_for_C16.gif by Dr Jefyll:
 http://forum.6502.org/viewtopic.php?t=3067#p34914
 

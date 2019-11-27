@@ -40,15 +40,15 @@ m3
 Text Label 8420 2950 0    60   ~ 0
 m7
 Text Label 8420 4250 0    60   ~ 0
-a0
+m0
 Text Label 8420 4350 0    60   ~ 0
-a1
+m1
 Text Label 8420 4450 0    60   ~ 0
-a2
+m2
 Text Label 8420 4550 0    60   ~ 0
-a3
+m3
 Text Label 8420 4650 0    60   ~ 0
-a7
+m7
 Entry Wire Line
 	5780 2750 5880 2650
 Entry Wire Line
@@ -68,11 +68,11 @@ Entry Wire Line
 Entry Wire Line
 	5780 4650 5880 4550
 Text Label 6130 4350 0    60   ~ 0
-a6
+m6
 Text Label 6130 4450 0    60   ~ 0
-a5
+m5
 Text Label 6130 4550 0    60   ~ 0
-a4
+m4
 Entry Wire Line
 	8850 2450 8950 2350
 Entry Wire Line
@@ -90,9 +90,7 @@ d7
 Text Label 8420 2450 0    60   ~ 0
 d6
 Entry Wire Line
-	8850 3950 8950 4050
-Entry Wire Line
-	8850 4150 8950 4250
+	8850 4150 8950 4050
 Text Label 8420 3950 0    60   ~ 0
 d3
 Text Label 8420 4150 0    60   ~ 0
@@ -121,13 +119,13 @@ Entry Wire Line
 	8650 2950 8750 3050
 Entry Wire Line
 	8650 4650 8750 4750
-Text Label 4530 2000 0    60   ~ 0
+Text Label 4780 2000 0    60   ~ 0
 m0
-Text Label 4530 2300 0    60   ~ 0
+Text Label 4780 2300 0    60   ~ 0
 m1
-Text Label 4530 2600 0    60   ~ 0
+Text Label 4780 2600 0    60   ~ 0
 m2
-Text Label 4530 2900 0    60   ~ 0
+Text Label 4780 2900 0    60   ~ 0
 m3
 Wire Wire Line
 	8075 2150 8175 2150
@@ -255,13 +253,13 @@ Wire Wire Line
 Wire Wire Line
 	2895 3200 3240 3200
 Wire Wire Line
-	4240 2300 4980 2300
+	4240 2300 4310 2300
 Wire Wire Line
-	4240 2900 4980 2900
+	4240 2900 4310 2900
 Wire Wire Line
-	4240 2000 4980 2000
+	4240 2000 4310 2000
 Wire Wire Line
-	4240 2600 4980 2600
+	4240 2600 4310 2600
 Wire Wire Line
 	3740 1700 3740 1640
 $Comp
@@ -325,13 +323,13 @@ Entry Wire Line
 	4980 5340 5080 5440
 Entry Wire Line
 	4980 5640 5080 5740
-Text Label 4530 4740 0    60   ~ 0
+Text Label 4775 4740 0    60   ~ 0
 m4
-Text Label 4530 5040 0    60   ~ 0
+Text Label 4780 5040 0    60   ~ 0
 m5
-Text Label 4530 5340 0    60   ~ 0
+Text Label 4780 5340 0    60   ~ 0
 m6
-Text Label 4530 5640 0    60   ~ 0
+Text Label 4780 5640 0    60   ~ 0
 m7
 $Comp
 L 74xx:74LS257 U8
@@ -381,13 +379,13 @@ Wire Wire Line
 Wire Wire Line
 	2895 5940 3240 5940
 Wire Wire Line
-	4240 5040 4980 5040
+	4240 5040 4310 5040
 Wire Wire Line
-	4240 5640 4980 5640
+	4240 5640 4310 5640
 Wire Wire Line
-	4240 4740 4980 4740
+	4240 4740 4310 4740
 Wire Wire Line
-	4240 5340 4980 5340
+	4240 5340 4310 5340
 $Comp
 L power:VCC #PWR0120
 U 1 1 5E710070
@@ -574,16 +572,147 @@ F 3 "" H 6350 4895 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6470 4650 6575 4650
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5E9A23DC
+P 4410 1400
+F 0 "RN?" V 3993 1400 50  0000 C CNN
+F 1 "R_Pack04" V 4084 1400 50  0000 C CNN
+F 2 "" V 4685 1400 50  0001 C CNN
+F 3 "~" H 4410 1400 50  0001 C CNN
+	1    4410 1400
+	0    1    1    0   
+$EndComp
+Entry Wire Line
+	8850 3950 8950 3850
+$Comp
+L r_pack04:R_Pack04 RP3
+U 1 1 5E9B0DDD
+P 4510 2460
+F 0 "RP3" V 3833 2460 50  0000 C CNN
+F 1 "68" V 3924 2460 50  0000 C CNN
+F 2 "" V 4885 2460 50  0001 C CNN
+F 3 "" H 4560 2460 50  0001 C CNN
+	1    4510 2460
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4710 2000 4980 2000
+Wire Wire Line
+	4710 2300 4980 2300
 Wire Bus Line
-	5580 1730 5580 3950
+	2330 4640 2330 4740
 Wire Bus Line
-	8950 1730 8950 4250
+	2330 5040 2330 5340
 Wire Bus Line
-	5780 2750 5780 5740
+	2330 5340 2330 5540
 Wire Bus Line
-	5080 2100 5080 5740
+	2330 5540 2330 5640
 Wire Bus Line
-	8750 2650 8750 5740
+	5080 5440 5080 5740
 Wire Bus Line
-	2330 2000 2330 5640
+	5080 5140 5080 5440
+Wire Bus Line
+	5080 4840 5080 5140
+Wire Bus Line
+	2330 4940 2330 5040
+Wire Bus Line
+	2330 4740 2330 4940
+Wire Bus Line
+	2330 2300 2330 2500
+Wire Bus Line
+	2330 2500 2330 2600
+Wire Bus Line
+	2330 2600 2330 2800
+Wire Bus Line
+	2330 2800 2330 2900
+Wire Bus Line
+	2330 2900 2330 4640
+Wire Bus Line
+	8750 4750 8750 5740
+Wire Bus Line
+	8750 3050 8750 4350
+Wire Bus Line
+	5080 3000 5080 4840
+Wire Bus Line
+	5080 2700 5080 3000
+Wire Bus Line
+	8950 4050 8950 4055
+Wire Bus Line
+	5580 3850 5580 3950
+Wire Bus Line
+	5580 2250 5580 3850
+Wire Bus Line
+	8950 3850 8950 4050
+Wire Bus Line
+	8950 2350 8950 3850
+Wire Bus Line
+	5780 4650 5780 5740
+Wire Bus Line
+	5780 4550 5780 4650
+Wire Bus Line
+	5780 4450 5780 4550
+Wire Bus Line
+	5780 2950 5780 4450
+Wire Bus Line
+	8750 4650 8750 4750
+Wire Bus Line
+	8750 4550 8750 4650
+Wire Bus Line
+	8750 4450 8750 4550
+Wire Bus Line
+	8750 4350 8750 4450
+Wire Bus Line
+	8750 2950 8750 3050
+Wire Bus Line
+	8750 2850 8750 2950
+Wire Bus Line
+	2330 2200 2330 2300
+Wire Bus Line
+	2330 2000 2330 2200
+Wire Bus Line
+	8750 2750 8750 2850
+Wire Bus Line
+	8750 2650 8750 2750
+Wire Bus Line
+	5080 2400 5080 2700
+Wire Bus Line
+	5080 2100 5080 2400
+Wire Bus Line
+	5780 2850 5780 2950
+Wire Bus Line
+	5780 2750 5780 2850
+Wire Bus Line
+	8950 2150 8950 2350
+Wire Bus Line
+	8950 1730 8950 2150
+Wire Bus Line
+	5580 2150 5580 2250
+Wire Bus Line
+	5580 1730 5580 2150
+Wire Wire Line
+	4710 2600 4980 2600
+Wire Wire Line
+	4710 2900 4980 2900
+$Comp
+L r_pack04:R_Pack04 RP4
+U 1 1 5E9C15B2
+P 4510 5200
+F 0 "RP4" V 3833 5200 50  0000 C CNN
+F 1 "68" V 3924 5200 50  0000 C CNN
+F 2 "" V 4885 5200 50  0001 C CNN
+F 3 "" H 4560 5200 50  0001 C CNN
+	1    4510 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4710 4740 4980 4740
+Wire Wire Line
+	4710 5040 4980 5040
+Wire Wire Line
+	4710 5340 4980 5340
+Wire Wire Line
+	4710 5640 4980 5640
+Text Notes 4575 4095 1    50   ~ 0
+TODO: Check pins\nof RP3/4
 $EndSCHEMATC
