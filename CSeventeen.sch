@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -42,5 +42,11 @@ S 3775 3725 1250 865
 U 5E6A379E
 F0 "Expansion Port" 50
 F1 "exp_port.sch" 50
+$EndSheet
+$Sheet
+S 6055 3695 1375 870 
+U 5EACE220
+F0 "Misc" 50
+F1 "misc.sch" 50
 $EndSheet
 $EndSCHEMATC

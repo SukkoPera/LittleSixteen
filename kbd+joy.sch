@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title "CSeventeen"
 Date "2019-11-26"
 Rev "1git"
@@ -266,10 +266,10 @@ Wire Bus Line
 Text GLabel 2810 1380 0    50   Input ~ 0
 d[0..7]
 Wire Wire Line
-	4365 1140 4120 1140
+	4365 1140 3910 1140
 Wire Wire Line
 	4365 1240 4120 1240
-Text GLabel 4120 1140 0    50   Input ~ 0
+Text GLabel 3910 1140 0    50   Input ~ 0
 KEYPORT_CS
 Text GLabel 4120 1240 0    50   Input ~ 0
 R_~W

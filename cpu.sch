@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -373,4 +373,6 @@ Wire Bus Line
 Connection ~ 4700 1930
 Wire Wire Line
 	4700 1930 4700 2795
+Text GLabel 4205 2395 0    50   Input ~ 0
+PHI0
 $EndSCHEMATC
