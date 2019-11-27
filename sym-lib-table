@@ -3,4 +3,7 @@
   (lib (name MOS_8501)(type Legacy)(uri "${KIPRJMOD}/lib/MOS 8501.lib")(options "")(descr "C16 CPU"))
   (lib (name MOS_7360_TED)(type Legacy)(uri ${KIPRJMOD}/lib/MOS_7360_TED.lib)(options "")(descr TED))
   (lib (name MOS_6529)(type Legacy)(uri ${KIPRJMOD}/lib/MOS_6529.lib)(options "")(descr ""))
+  (lib (name 4464)(type Legacy)(uri ${KIPRJMOD}/lib/4464.lib)(options "")(descr ""))
+  (lib (name 4416)(type Legacy)(uri ${KIPRJMOD}/lib/4416.lib)(options "")(descr ""))
+  (lib (name Exp-Port)(type Legacy)(uri ${KIPRJMOD}/lib/Exp-Port.lib)(options "")(descr ""))
 )

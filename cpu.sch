@@ -1,0 +1,376 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MOS_8501:MOS_8501 U?
+U 1 1 5E4AA751
+P 5595 3345
+AR Path="/5E4AA751" Ref="U?"  Part="1" 
+AR Path="/5E4A81E1/5E4AA751" Ref="U2"  Part="1" 
+F 0 "U2" H 5595 4660 50  0000 C CNN
+F 1 "MOS_8501" H 5595 4569 50  0000 C CNN
+F 2 "MODULE" H 5595 3345 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5595 3345 50  0001 C CNN
+	1    5595 3345
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4845 2395 4205 2395
+Wire Wire Line
+	4845 2495 4205 2495
+Wire Wire Line
+	4845 2595 4475 2595
+Wire Wire Line
+	4845 2695 4205 2695
+Wire Wire Line
+	4845 2795 4700 2795
+Wire Wire Line
+	4845 2895 4205 2895
+Wire Wire Line
+	4845 2995 4205 2995
+Wire Wire Line
+	4845 3095 4205 3095
+Wire Wire Line
+	4845 3195 4205 3195
+Wire Wire Line
+	4845 3295 4205 3295
+Wire Wire Line
+	4845 3395 4205 3395
+Wire Wire Line
+	4845 3495 4205 3495
+Wire Wire Line
+	4845 3595 4205 3595
+Wire Wire Line
+	4845 3695 4205 3695
+Wire Wire Line
+	4845 3795 4205 3795
+Wire Wire Line
+	4845 3895 4205 3895
+Wire Wire Line
+	4845 3995 4205 3995
+Wire Wire Line
+	4845 4095 4205 4095
+Wire Wire Line
+	4845 4195 4205 4195
+Wire Wire Line
+	4845 4295 4700 4295
+Wire Wire Line
+	6985 2395 6345 2395
+Wire Wire Line
+	6985 2595 6345 2595
+Wire Wire Line
+	6985 2695 6345 2695
+Wire Wire Line
+	6985 2795 6345 2795
+Wire Wire Line
+	6985 2895 6345 2895
+Wire Wire Line
+	6985 2995 6345 2995
+Wire Wire Line
+	6985 3095 6345 3095
+Wire Wire Line
+	6985 3195 6345 3195
+Wire Wire Line
+	6985 3295 6345 3295
+Wire Wire Line
+	6985 3395 6345 3395
+Wire Wire Line
+	6985 3495 6345 3495
+Wire Wire Line
+	6985 3595 6345 3595
+Wire Wire Line
+	6985 3695 6345 3695
+Wire Wire Line
+	6985 3795 6345 3795
+Wire Wire Line
+	6985 3895 6345 3895
+Wire Wire Line
+	6985 3995 6345 3995
+Wire Wire Line
+	6985 4195 6345 4195
+Wire Wire Line
+	6985 4295 6345 4295
+Entry Wire Line
+	4105 2795 4205 2895
+Entry Wire Line
+	4105 2895 4205 2995
+Entry Wire Line
+	4105 2995 4205 3095
+Entry Wire Line
+	4105 3095 4205 3195
+Entry Wire Line
+	4105 3195 4205 3295
+Entry Wire Line
+	4105 3295 4205 3395
+Entry Wire Line
+	4105 3395 4205 3495
+Entry Wire Line
+	4105 3495 4205 3595
+Entry Wire Line
+	4105 3595 4205 3695
+Entry Wire Line
+	4105 3695 4205 3795
+Entry Wire Line
+	4105 3795 4205 3895
+Entry Wire Line
+	4105 3895 4205 3995
+Entry Wire Line
+	4105 3995 4205 4095
+Entry Wire Line
+	4105 4095 4205 4195
+Entry Wire Line
+	7085 4095 6985 4195
+Entry Wire Line
+	6985 4295 7085 4195
+Wire Bus Line
+	7085 4755 4105 4755
+Wire Bus Line
+	4105 2795 3510 2795
+Text Label 6415 4195 0    50   ~ 0
+a15
+Text Label 6415 4295 0    50   ~ 0
+a14
+Text Label 6415 2595 0    50   ~ 0
+d0
+Text Label 6415 2695 0    50   ~ 0
+d1
+Text Label 6415 2795 0    50   ~ 0
+d2
+Text Label 6415 2895 0    50   ~ 0
+d3
+Text Label 6415 2995 0    50   ~ 0
+d4
+Text Label 6415 3095 0    50   ~ 0
+d5
+Text Label 6415 3195 0    50   ~ 0
+d6
+Text Label 6415 3295 0    50   ~ 0
+d7
+Text Label 6415 3395 0    50   ~ 0
+p0
+Text Label 6415 3495 0    50   ~ 0
+p1
+Text Label 6415 3595 0    50   ~ 0
+p2
+Text Label 6415 3695 0    50   ~ 0
+p3
+Text Label 6415 3795 0    50   ~ 0
+p4
+Text Label 6415 3895 0    50   ~ 0
+p5
+Text Label 6415 3995 0    50   ~ 0
+p6
+Text Label 4650 2895 0    50   ~ 0
+a0
+Text Label 4650 2995 0    50   ~ 0
+a1
+Text Label 4650 3095 0    50   ~ 0
+a2
+Text Label 4650 3195 0    50   ~ 0
+a3
+Text Label 4650 3295 0    50   ~ 0
+a4
+Text Label 4650 3395 0    50   ~ 0
+a5
+Text Label 4650 3495 0    50   ~ 0
+a6
+Text Label 4650 3595 0    50   ~ 0
+a7
+Text Label 4650 3695 0    50   ~ 0
+a8
+Text Label 4650 3795 0    50   ~ 0
+a9
+Text Label 4650 3895 0    50   ~ 0
+a10
+Text Label 4650 3995 0    50   ~ 0
+a11
+Text Label 4650 4095 0    50   ~ 0
+a12
+Text Label 4650 4195 0    50   ~ 0
+a13
+$Comp
+L power:GND #PWR0114
+U 1 1 5E4ABF7A
+P 4700 5010
+F 0 "#PWR0114" H 4700 4760 50  0001 C CNN
+F 1 "GND" H 4705 4837 50  0000 C CNN
+F 2 "" H 4700 5010 50  0001 C CNN
+F 3 "" H 4700 5010 50  0001 C CNN
+	1    4700 5010
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5010 4700 4295
+$Comp
+L power:VCC #PWR0115
+U 1 1 5E4AE0E8
+P 4700 1840
+F 0 "#PWR0115" H 4700 1690 50  0001 C CNN
+F 1 "VCC" H 4717 2013 50  0000 C CNN
+F 2 "" H 4700 1840 50  0001 C CNN
+F 3 "" H 4700 1840 50  0001 C CNN
+	1    4700 1840
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1840 4700 1930
+$Comp
+L power:VCC #PWR0116
+U 1 1 5E4AFEA5
+P 1270 6730
+F 0 "#PWR0116" H 1270 6580 50  0001 C CNN
+F 1 "VCC" H 1287 6903 50  0000 C CNN
+F 2 "" H 1270 6730 50  0001 C CNN
+F 3 "" H 1270 6730 50  0001 C CNN
+	1    1270 6730
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5E4B05D5
+P 1270 7495
+F 0 "#PWR0117" H 1270 7245 50  0001 C CNN
+F 1 "GND" H 1275 7322 50  0000 C CNN
+F 2 "" H 1270 7495 50  0001 C CNN
+F 3 "" H 1270 7495 50  0001 C CNN
+	1    1270 7495
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C4
+U 1 1 5E4B0F0F
+P 1025 7090
+F 0 "C4" H 911 7136 50  0000 R CNN
+F 1 "10u/25V" H 911 7045 50  0000 R CNN
+F 2 "" H 1025 7090 50  0001 C CNN
+F 3 "~" H 1025 7090 50  0001 C CNN
+	1    1025 7090
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5E4B1835
+P 1520 7090
+F 0 "C22" H 1635 7136 50  0000 L CNN
+F 1 "100n" H 1635 7045 50  0000 L CNN
+F 2 "" H 1558 6940 50  0001 C CNN
+F 3 "~" H 1520 7090 50  0001 C CNN
+	1    1520 7090
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1025 6940 1025 6820
+Wire Wire Line
+	1025 6820 1270 6820
+Wire Wire Line
+	1520 6820 1520 6940
+Wire Wire Line
+	1270 6730 1270 6820
+Connection ~ 1270 6820
+Wire Wire Line
+	1270 6820 1520 6820
+Wire Wire Line
+	1025 7240 1025 7385
+Wire Wire Line
+	1025 7385 1270 7385
+Wire Wire Line
+	1520 7385 1520 7240
+Wire Wire Line
+	1270 7495 1270 7385
+Connection ~ 1270 7385
+Wire Wire Line
+	1270 7385 1520 7385
+Entry Wire Line
+	6985 2595 7085 2495
+Entry Wire Line
+	6985 2695 7085 2595
+Entry Wire Line
+	6985 2895 7085 2795
+Entry Wire Line
+	6985 3095 7085 2995
+Entry Wire Line
+	6985 3195 7085 3095
+Entry Wire Line
+	6985 3295 7085 3195
+Entry Wire Line
+	6985 3395 7085 3295
+Entry Wire Line
+	6985 3495 7085 3395
+Entry Wire Line
+	6985 3595 7085 3495
+Entry Wire Line
+	6985 3695 7085 3595
+Entry Wire Line
+	6985 3795 7085 3695
+Entry Wire Line
+	6985 3895 7085 3795
+Entry Wire Line
+	6985 3995 7085 3895
+Entry Wire Line
+	6985 2995 7085 2895
+Entry Wire Line
+	6985 2795 7085 2695
+Wire Bus Line
+	7085 2495 7580 2495
+Text GLabel 7580 2495 2    50   BiDi ~ 0
+d[0..7]
+Wire Bus Line
+	7085 3295 7580 3295
+Text GLabel 7580 3295 2    50   BiDi ~ 0
+p[0..6]
+Text GLabel 6620 4095 2    50   Input ~ 0
+MUX
+Wire Wire Line
+	6345 4095 6620 4095
+Text GLabel 6620 2495 2    50   Output ~ 0
+R_~W
+Wire Wire Line
+	6345 2495 6620 2495
+Text GLabel 3510 2795 0    50   Output ~ 0
+a[0..15]
+Text GLabel 4205 2595 0    50   Input ~ 0
+~IRQ
+$Comp
+L Device:R R19
+U 1 1 5E989959
+P 4475 2145
+F 0 "R19" H 4405 2191 50  0000 R CNN
+F 1 "3.3k" H 4405 2100 50  0000 R CNN
+F 2 "" V 4405 2145 50  0001 C CNN
+F 3 "~" H 4475 2145 50  0001 C CNN
+	1    4475 2145
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4475 2295 4475 2595
+Connection ~ 4475 2595
+Wire Wire Line
+	4475 2595 4205 2595
+Wire Wire Line
+	4475 1995 4475 1930
+Wire Wire Line
+	4475 1930 4700 1930
+Wire Bus Line
+	7085 4095 7085 4755
+Wire Bus Line
+	7085 3295 7085 3895
+Wire Bus Line
+	7085 2495 7085 3195
+Wire Bus Line
+	4105 2795 4105 4755
+Connection ~ 4700 1930
+Wire Wire Line
+	4700 1930 4700 2795
+$EndSCHEMATC

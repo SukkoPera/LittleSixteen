@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 4416
+D 16384x4 Dynamic RAM
+K dynamic ram
+F http://pdf.datasheetcatalog.com/datasheet_pdf/texas-instruments/TMS4416-12_to_TMS4416-20.pdf
+$ENDCMP
+#
+#End Doc Library

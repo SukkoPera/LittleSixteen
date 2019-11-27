@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
-Title ""
-Date ""
-Rev ""
+Sheet 2 6
+Title "SukkoPera"
+Date "2019-11-26"
+Rev "1git"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -35,11 +35,9 @@ Wire Wire Line
 Wire Wire Line
 	3785 3000 3315 3000
 Wire Wire Line
-	3785 3100 3315 3100
+	3785 3100 3020 3100
 Wire Wire Line
 	3785 3200 3315 3200
-Wire Wire Line
-	3785 3300 3315 3300
 Wire Wire Line
 	3785 3400 3315 3400
 Wire Wire Line
@@ -293,6 +291,96 @@ Text GLabel 3020 3500 0    50   Output ~ 0
 ~RAS
 Text GLabel 3315 3600 0    50   Output ~ 0
 ~CAS
+Text GLabel 3315 3400 0    50   Output ~ 0
+MUX
+Text GLabel 3315 3200 0    50   Input ~ 0
+R_~W
+Text GLabel 5755 3900 2    50   Output ~ 0
+AEC
+Text GLabel 5755 4100 2    50   Output ~ 0
+SND
+$Comp
+L power:VCC #PWR?
+U 1 1 5E9903BD
+P 1320 6600
+AR Path="/5E4A81E1/5E9903BD" Ref="#PWR?"  Part="1" 
+AR Path="/5DE044CB/5E9903BD" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 1320 6450 50  0001 C CNN
+F 1 "VCC" H 1337 6773 50  0000 C CNN
+F 2 "" H 1320 6600 50  0001 C CNN
+F 3 "" H 1320 6600 50  0001 C CNN
+	1    1320 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9903C3
+P 1320 7365
+AR Path="/5E4A81E1/5E9903C3" Ref="#PWR?"  Part="1" 
+AR Path="/5DE044CB/5E9903C3" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 1320 7115 50  0001 C CNN
+F 1 "GND" H 1325 7192 50  0000 C CNN
+F 2 "" H 1320 7365 50  0001 C CNN
+F 3 "" H 1320 7365 50  0001 C CNN
+	1    1320 7365
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5E9903C9
+P 1075 6960
+AR Path="/5E4A81E1/5E9903C9" Ref="C?"  Part="1" 
+AR Path="/5DE044CB/5E9903C9" Ref="C3"  Part="1" 
+F 0 "C3" H 961 7006 50  0000 R CNN
+F 1 "10u/25V" H 961 6915 50  0000 R CNN
+F 2 "" H 1075 6960 50  0001 C CNN
+F 3 "~" H 1075 6960 50  0001 C CNN
+	1    1075 6960
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9903CF
+P 1570 6960
+AR Path="/5E4A81E1/5E9903CF" Ref="C?"  Part="1" 
+AR Path="/5DE044CB/5E9903CF" Ref="C21"  Part="1" 
+F 0 "C21" H 1685 7006 50  0000 L CNN
+F 1 "100n" H 1685 6915 50  0000 L CNN
+F 2 "" H 1608 6810 50  0001 C CNN
+F 3 "~" H 1570 6960 50  0001 C CNN
+	1    1570 6960
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 6810 1075 6690
+Wire Wire Line
+	1075 6690 1320 6690
+Wire Wire Line
+	1570 6690 1570 6810
+Wire Wire Line
+	1320 6600 1320 6690
+Connection ~ 1320 6690
+Wire Wire Line
+	1320 6690 1570 6690
+Wire Wire Line
+	1075 7110 1075 7255
+Wire Wire Line
+	1075 7255 1320 7255
+Wire Wire Line
+	1570 7255 1570 7110
+Wire Wire Line
+	1320 7365 1320 7255
+Connection ~ 1320 7255
+Wire Wire Line
+	1320 7255 1570 7255
+Text GLabel 3315 3000 0    50   Output ~ 0
+~CS0
+Text GLabel 3020 3100 0    50   Output ~ 0
+~CS1
+Text GLabel 3020 3300 0    50   Output ~ 0
+~IRQ
+Wire Wire Line
+	3020 3300 3785 3300
 Wire Bus Line
 	3215 1935 3215 2700
 Wire Bus Line
@@ -301,6 +389,8 @@ Wire Bus Line
 	5855 4300 5855 5000
 Wire Bus Line
 	5855 1935 5855 3700
-Text GLabel 3315 3400 0    50   Output ~ 0
-MUX
+Text GLabel 3315 4800 0    50   Output ~ 0
+SYNC_LUM
+Text GLabel 3315 3800 0    50   Output ~ 0
+COLOR
 $EndSCHEMATC

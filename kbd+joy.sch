@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 6
 Title "CSeventeen"
 Date "2019-11-26"
 Rev "1git"
@@ -272,7 +272,7 @@ Wire Wire Line
 Text GLabel 4120 1140 0    50   Input ~ 0
 KEYPORT_CS
 Text GLabel 4120 1240 0    50   Input ~ 0
-R_W
+R_~W
 Wire Wire Line
 	5015 4185 4400 4190
 $Comp
@@ -1190,10 +1190,10 @@ Connection ~ 6785 4150
 Wire Wire Line
 	6785 4150 6465 4150
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0112
 U 1 1 5E419B38
 P 6485 5070
-F 0 "#PWR?" H 6485 4920 50  0001 C CNN
+F 0 "#PWR0112" H 6485 4920 50  0001 C CNN
 F 1 "VCC" H 6502 5243 50  0000 C CNN
 F 2 "" H 6485 5070 50  0001 C CNN
 F 3 "" H 6485 5070 50  0001 C CNN
@@ -1215,10 +1215,10 @@ Wire Wire Line
 Wire Wire Line
 	6485 3240 6485 3345
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0113
 U 1 1 5E3CD296
 P 6485 3240
-F 0 "#PWR?" H 6485 3090 50  0001 C CNN
+F 0 "#PWR0113" H 6485 3090 50  0001 C CNN
 F 1 "VCC" H 6502 3413 50  0000 C CNN
 F 2 "" H 6485 3240 50  0001 C CNN
 F 3 "" H 6485 3240 50  0001 C CNN
@@ -1258,11 +1258,11 @@ Wire Wire Line
 	6785 5975 8215 5975
 Wire Wire Line
 	6685 5575 6685 6295
+Connection ~ 6685 6295
+Wire Wire Line
+	6685 6295 8315 6295
 Wire Bus Line
 	3510 1380 3510 2085
 Wire Bus Line
 	7030 980  7030 3215
-Connection ~ 6685 6295
-Wire Wire Line
-	6685 6295 8315 6295
 $EndSCHEMATC
