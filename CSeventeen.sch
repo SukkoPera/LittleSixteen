@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -46,7 +46,13 @@ $EndSheet
 $Sheet
 S 6055 3695 1375 870 
 U 5EACE220
-F0 "Misc" 50
+F0 "Power & Misc" 50
 F1 "misc.sch" 50
+$EndSheet
+$Sheet
+S 1415 3575 1245 920 
+U 5ECB474B
+F0 "Datassette" 50
+F1 "datasette.sch" 50
 $EndSheet
 $EndSCHEMATC

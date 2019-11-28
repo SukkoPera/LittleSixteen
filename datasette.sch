@@ -1,0 +1,396 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Mini-DIN-7 CN3
+U 1 1 5ECB4902
+P 4495 2635
+F 0 "CN3" H 4495 2360 50  0000 C CNN
+F 1 "CASSETTE" H 4495 2269 50  0000 C CNN
+F 2 "" V 4485 2625 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 4485 2625 50  0001 C CNN
+	1    4495 2635
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4195 2535 4015 2535
+Wire Wire Line
+	4015 2535 4015 3175
+$Comp
+L power:GND #PWR0151
+U 1 1 5ECB75EB
+P 4495 3235
+F 0 "#PWR0151" H 4495 2985 50  0001 C CNN
+F 1 "GND" H 4500 3062 50  0000 C CNN
+F 2 "" H 4495 3235 50  0001 C CNN
+F 3 "" H 4495 3235 50  0001 C CNN
+	1    4495 3235
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0152
+U 1 1 5ECB7C31
+P 3855 1970
+F 0 "#PWR0152" H 3855 1820 50  0001 C CNN
+F 1 "VCC" H 3872 2143 50  0000 C CNN
+F 2 "" H 3855 1970 50  0001 C CNN
+F 3 "" H 3855 1970 50  0001 C CNN
+	1    3855 1970
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB14
+U 1 1 5ECB83BF
+P 3700 2275
+F 0 "FB14" H 3800 2275 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" H 3800 2230 50  0001 L CNN
+F 2 "" V 3630 2275 50  0001 C CNN
+F 3 "~" H 3700 2275 50  0001 C CNN
+	1    3700 2275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3855 1970 3855 2065
+$Comp
+L Device:C C26
+U 1 1 5ECBA653
+P 4015 2285
+F 0 "C26" H 3900 2239 50  0000 R CNN
+F 1 "100n" H 3900 2330 50  0000 R CNN
+F 2 "" H 4053 2135 50  0001 C CNN
+F 3 "~" H 4015 2285 50  0001 C CNN
+	1    4015 2285
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4015 2435 4015 2535
+Connection ~ 4015 2535
+$Comp
+L Device:Ferrite_Bead_Small FB15
+U 1 1 5ECBC7A2
+P 4935 2970
+F 0 "FB15" H 4835 2970 50  0000 R CNN
+F 1 "Ferrite_Bead_Small" H 5035 2925 50  0001 L CNN
+F 2 "" V 4865 2970 50  0001 C CNN
+F 3 "~" H 4935 2970 50  0001 C CNN
+	1    4935 2970
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4935 3070 4935 3175
+Wire Wire Line
+	4935 3175 4495 3175
+Wire Wire Line
+	4495 3175 4495 3235
+Connection ~ 4495 3175
+Wire Wire Line
+	4495 3175 4015 3175
+Wire Wire Line
+	4795 2735 4935 2735
+Wire Wire Line
+	4935 2735 4935 2870
+Wire Wire Line
+	4015 2135 4015 2065
+Wire Wire Line
+	4015 2065 3855 2065
+Wire Wire Line
+	3700 2175 3700 2065
+Connection ~ 3855 2065
+Wire Wire Line
+	3700 2065 3855 2065
+Wire Wire Line
+	3700 2375 3700 2735
+Wire Wire Line
+	3700 2735 4195 2735
+Wire Wire Line
+	4195 2635 3355 2635
+Text GLabel 2595 2635 0    50   Output ~ 0
+CST_RD
+$Comp
+L Device:Ferrite_Bead_Small FB16
+U 1 1 5ECC62CE
+P 3255 2635
+F 0 "FB16" V 3400 2635 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 3355 2590 50  0001 L CNN
+F 2 "" V 3185 2635 50  0001 C CNN
+F 3 "~" H 3255 2635 50  0001 C CNN
+	1    3255 2635
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3155 2635 2900 2635
+$Comp
+L Device:C C23
+U 1 1 5ECC701E
+P 2900 2895
+F 0 "C23" H 2785 2849 50  0000 R CNN
+F 1 "470p" H 2785 2940 50  0000 R CNN
+F 2 "" H 2938 2745 50  0001 C CNN
+F 3 "~" H 2900 2895 50  0001 C CNN
+	1    2900 2895
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 2745 2900 2635
+Connection ~ 2900 2635
+Wire Wire Line
+	2900 2635 2595 2635
+$Comp
+L Transistor_BJT:2SD600 Q5
+U 1 1 5ECC85E0
+P 7820 2325
+F 0 "Q5" H 8012 2371 50  0000 L CNN
+F 1 "2SD880" H 8012 2280 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 8020 2250 50  0001 L CIN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/sanyo/ds_pdf_e/2SB631.pdf" H 7820 2325 50  0001 L CNN
+	1    7820 2325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB19
+U 1 1 5ECC99AD
+P 7395 2635
+F 0 "FB19" V 7540 2635 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 7495 2590 50  0001 L CNN
+F 2 "" V 7325 2635 50  0001 C CNN
+F 3 "~" H 7395 2635 50  0001 C CNN
+	1    7395 2635
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7495 2635 7720 2635
+Wire Wire Line
+	7720 2635 7720 2525
+Wire Wire Line
+	4795 2635 7295 2635
+$Comp
+L power:+9V #PWR0153
+U 1 1 5ECCB73B
+P 7720 1580
+F 0 "#PWR0153" H 7720 1430 50  0001 C CNN
+F 1 "+9V" H 7735 1753 50  0000 C CNN
+F 2 "" H 7720 1580 50  0001 C CNN
+F 3 "" H 7720 1580 50  0001 C CNN
+	1    7720 1580
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7720 1580 7720 1710
+Wire Wire Line
+	8020 2325 8220 2325
+$Comp
+L w_device:ZENER D12
+U 1 1 5ECCE714
+P 8220 2765
+F 0 "D12" V 8283 2712 40  0000 R CNN
+F 1 "6.8V" V 8207 2712 40  0000 R CNN
+F 2 "" H 8220 2765 60  0000 C CNN
+F 3 "" H 8220 2765 60  0000 C CNN
+	1    8220 2765
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8220 2665 8220 2325
+Connection ~ 8220 2325
+Wire Wire Line
+	8220 2325 8560 2325
+$Comp
+L Device:R R13
+U 1 1 5ECCF7CF
+P 8220 2010
+F 0 "R13" H 8290 2056 50  0000 L CNN
+F 1 "470" H 8290 1965 50  0000 L CNN
+F 2 "" V 8150 2010 50  0001 C CNN
+F 3 "~" H 8220 2010 50  0001 C CNN
+	1    8220 2010
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8220 2160 8220 2325
+Wire Wire Line
+	8220 1860 8220 1710
+Wire Wire Line
+	8220 1710 7720 1710
+Connection ~ 7720 1710
+Wire Wire Line
+	7720 1710 7720 2125
+$Comp
+L 74xx:74LS06 U9
+U 3 1 5ECD4244
+P 8860 2325
+F 0 "U9" H 8860 2008 50  0000 C CNN
+F 1 "74LS06" H 8860 2099 50  0000 C CNN
+F 2 "" H 8860 2325 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 8860 2325 50  0001 C CNN
+	3    8860 2325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9160 2325 9395 2325
+Text GLabel 9395 2325 2    50   Input ~ 0
+CST_MTR
+$Comp
+L Device:Ferrite_Bead_Small FB17
+U 1 1 5ECD8623
+P 5590 2535
+F 0 "FB17" V 5735 2535 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 5690 2490 50  0001 L CNN
+F 2 "" V 5520 2535 50  0001 C CNN
+F 3 "~" H 5590 2535 50  0001 C CNN
+	1    5590 2535
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4795 2535 5490 2535
+$Comp
+L Device:R R29
+U 1 1 5ECD9EF8
+P 6230 2535
+F 0 "R29" V 6023 2535 50  0000 C CNN
+F 1 "100" V 6114 2535 50  0000 C CNN
+F 2 "" V 6160 2535 50  0001 C CNN
+F 3 "~" H 6230 2535 50  0001 C CNN
+	1    6230 2535
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5690 2535 5855 2535
+$Comp
+L Device:C C24
+U 1 1 5ECE063E
+P 5855 2925
+F 0 "C24" H 5740 2879 50  0000 R CNN
+F 1 "470p" H 5740 2970 50  0000 R CNN
+F 2 "" H 5893 2775 50  0001 C CNN
+F 3 "~" H 5855 2925 50  0001 C CNN
+	1    5855 2925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5855 2775 5855 2535
+Connection ~ 5855 2535
+Wire Wire Line
+	5855 2535 6080 2535
+Wire Wire Line
+	5855 3175 5355 3175
+Connection ~ 4935 3175
+Wire Wire Line
+	5855 3075 5855 3175
+Wire Wire Line
+	6380 2535 6615 2535
+Text GLabel 6615 2535 2    50   Input ~ 0
+CST_WRT
+$Comp
+L 74xx:74LS125 U11
+U 3 1 5ECE62E7
+P 5855 1745
+F 0 "U11" H 5855 2062 50  0000 C CNN
+F 1 "74LS125" H 5855 1971 50  0000 C CNN
+F 2 "" H 5855 1745 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 5855 1745 50  0001 C CNN
+	3    5855 1745
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB18
+U 1 1 5ECE8130
+P 5035 1745
+F 0 "FB18" V 5180 1745 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 5135 1700 50  0001 L CNN
+F 2 "" V 4965 1745 50  0001 C CNN
+F 3 "~" H 5035 1745 50  0001 C CNN
+	1    5035 1745
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C25
+U 1 1 5ECF7C46
+P 5355 2135
+F 0 "C25" H 5240 2089 50  0000 R CNN
+F 1 "470p" H 5240 2180 50  0000 R CNN
+F 2 "" H 5393 1985 50  0001 C CNN
+F 3 "~" H 5355 2135 50  0001 C CNN
+	1    5355 2135
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4495 1745 4935 1745
+Wire Wire Line
+	4495 1745 4495 2335
+Wire Wire Line
+	5135 1745 5355 1745
+Wire Wire Line
+	5355 1985 5355 1745
+Connection ~ 5355 1745
+Wire Wire Line
+	5355 1745 5555 1745
+Wire Wire Line
+	5355 2285 5355 3175
+Connection ~ 5355 3175
+Wire Wire Line
+	5355 3175 4935 3175
+Wire Wire Line
+	6155 1745 6615 1745
+Text GLabel 6615 1745 2    50   Output ~ 0
+d[0..7]
+Text Label 6390 1745 2    50   ~ 0
+d2
+Wire Wire Line
+	5855 1995 5855 2115
+Wire Wire Line
+	5855 2115 6615 2115
+Text GLabel 6615 2115 2    50   Input ~ 0
+CASSETTE
+Wire Wire Line
+	8220 2815 8220 3175
+Wire Wire Line
+	8220 3175 5855 3175
+Connection ~ 5855 3175
+Wire Wire Line
+	2900 3045 2900 3175
+Wire Wire Line
+	2900 3175 4015 3175
+Connection ~ 4015 3175
+Text Notes 7080 2040 2    50   ~ 0
+$FD10-$FD1F
+$Comp
+L Device:R R12
+U 1 1 5ED1DFFB
+P 5355 1430
+F 0 "R12" H 5425 1476 50  0000 L CNN
+F 1 "3.3k" H 5425 1385 50  0000 L CNN
+F 2 "" V 5285 1430 50  0001 C CNN
+F 3 "~" H 5355 1430 50  0001 C CNN
+	1    5355 1430
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5355 1580 5355 1745
+$Comp
+L power:VCC #PWR0154
+U 1 1 5ED20248
+P 5355 1185
+F 0 "#PWR0154" H 5355 1035 50  0001 C CNN
+F 1 "VCC" H 5372 1358 50  0000 C CNN
+F 2 "" H 5355 1185 50  0001 C CNN
+F 3 "" H 5355 1185 50  0001 C CNN
+	1    5355 1185
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5355 1185 5355 1280
+Text Notes 6960 1665 2    50   ~ 0
+CST_SENSE
+$EndSCHEMATC
