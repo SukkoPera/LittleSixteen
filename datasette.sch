@@ -389,12 +389,10 @@ Text GLabel 2590 2560 0    50   Output ~ 0
 p[0..7]
 Text Label 2765 2560 2    50   ~ 0
 p4
-Text Notes 2625 2475 2    50   ~ 0
-CST_READ
+Text Notes 2565 2475 2    50   ~ 0
+CST_RD
 Text GLabel 6610 2460 2    50   Input ~ 0
 p[0..7]
-Text Notes 6930 2385 2    50   ~ 0
-CST_WRT
 Text Label 6450 2460 0    50   ~ 0
 p6
 Wire Wire Line
@@ -732,4 +730,6 @@ Text Notes 2370 1490 0    157  ~ 0
 DATASSETTE\nINTERFACE
 Wire Bus Line
 	7890 4845 7890 5725
+Text Notes 6930 2385 2    50   ~ 0
+CST_WRT
 $EndSCHEMATC
