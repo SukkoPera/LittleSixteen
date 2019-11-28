@@ -52,7 +52,7 @@ $EndSheet
 $Sheet
 S 1415 3575 1245 920 
 U 5ECB474B
-F0 "Datassette" 50
+F0 "Datassette & Serial Bus" 50
 F1 "datasette.sch" 50
 $EndSheet
 $EndSCHEMATC

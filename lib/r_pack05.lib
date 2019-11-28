@@ -44,7 +44,7 @@ ENDDEF
 #
 # R_Pack_5_Split
 #
-DEF R_Pack_5_Split R 0 0 Y Y 4 F N
+DEF R_Pack_5_Split R 0 0 Y Y 5 F N
 F0 "R" 80 0 50 V V C CNN
 F1 "R_Pack_5_Split" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
@@ -56,6 +56,7 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 X ~ 3 0 -150 50 U 50 50 2 1 P
 X ~ 4 0 -150 50 U 50 50 3 1 P
 X ~ 5 0 -150 50 U 50 50 4 1 P
+X ~ 6 0 -150 50 U 50 50 5 1 P
 ENDDRAW
 ENDDEF
 #

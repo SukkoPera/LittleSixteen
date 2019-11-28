@@ -327,7 +327,7 @@ d[0..7]
 Wire Bus Line
 	5035 3120 5530 3120
 Text GLabel 5530 3120 2    50   BiDi ~ 0
-p[0..6]
+p[0..7]
 Text GLabel 4570 3920 2    50   Input ~ 0
 MUX
 Wire Wire Line
@@ -413,8 +413,6 @@ F 3 "" H 7885 3300 50  0001 C CNN
 	1    7885 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6695 2220 7385 2220
 Wire Wire Line
 	4295 2220 4525 2220
 Wire Wire Line
@@ -566,6 +564,17 @@ Text GLabel 1900 2320 0    50   Input ~ 0
 BA
 Text GLabel 1900 2520 0    50   Input ~ 0
 AEC
+Text GLabel 9325 3720 2    50   Output ~ 0
+RESET
+Wire Wire Line
+	6695 2220 6855 2220
+Wire Wire Line
+	6855 2220 6850 3720
+Wire Wire Line
+	6850 3720 9325 3720
+Connection ~ 6855 2220
+Wire Wire Line
+	6855 2220 7385 2220
 Wire Bus Line
 	5035 4120 5035 4580
 Wire Bus Line
