@@ -116,8 +116,6 @@ Wire Wire Line
 	3700 2735 4195 2735
 Wire Wire Line
 	4195 2635 3355 2635
-Text GLabel 2595 2635 0    50   Output ~ 0
-CST_RD
 $Comp
 L Device:Ferrite_Bead_Small FB16
 U 1 1 5ECC62CE
@@ -237,10 +235,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 8860 2325 50  0001 C CNN
 	3    8860 2325
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9160 2325 9395 2325
-Text GLabel 9395 2325 2    50   Input ~ 0
-CST_MTR
 $Comp
 L Device:Ferrite_Bead_Small FB17
 U 1 1 5ECD8623
@@ -290,8 +284,6 @@ Wire Wire Line
 	5855 3075 5855 3175
 Wire Wire Line
 	6380 2535 6615 2535
-Text GLabel 6615 2535 2    50   Input ~ 0
-CST_WRT
 $Comp
 L 74xx:74LS125 U11
 U 3 1 5ECE62E7
@@ -393,4 +385,24 @@ Wire Wire Line
 	5355 1185 5355 1280
 Text Notes 6960 1665 2    50   ~ 0
 CST_SENSE
+Text GLabel 2595 2635 0    50   Output ~ 0
+p[0..6]
+Text Label 2770 2635 2    50   ~ 0
+p4
+Text Notes 2630 2550 2    50   ~ 0
+CST_READ
+Text GLabel 6615 2535 2    50   Input ~ 0
+p[0..6]
+Text Notes 6935 2460 2    50   ~ 0
+CST_WRT
+Text Label 6455 2535 0    50   ~ 0
+p6
+Wire Wire Line
+	9160 2325 9395 2325
+Text GLabel 9395 2325 2    50   Input ~ 0
+p[0..6]
+Text Notes 9715 2250 2    50   ~ 0
+CST_MTR
+Text Label 9335 2325 2    50   ~ 0
+p3
 $EndSCHEMATC

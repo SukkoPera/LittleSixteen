@@ -167,9 +167,9 @@ p3
 Text Label 4365 3620 0    50   ~ 0
 p4
 Text Label 4365 3720 0    50   ~ 0
-p5
-Text Label 4365 3820 0    50   ~ 0
 p6
+Text Label 4365 3820 0    50   ~ 0
+p7
 Text Label 2600 2720 0    50   ~ 0
 a0
 Text Label 2600 2820 0    50   ~ 0
