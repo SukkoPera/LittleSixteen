@@ -9,4 +9,5 @@
   (lib (name r_pack05)(type Legacy)(uri ${KIPRJMOD}/lib/r_pack05.lib)(options "")(descr ""))
   (lib (name r_pack04)(type Legacy)(uri ${KIPRJMOD}/lib/r_pack04.lib)(options "")(descr ""))
   (lib (name 74ls157)(type Legacy)(uri ${KIPRJMOD}/lib/74ls157.lib)(options "")(descr ""))
+  (lib (name 23128)(type Legacy)(uri ${KIPRJMOD}/lib/23128.lib)(options "")(descr ""))
 )

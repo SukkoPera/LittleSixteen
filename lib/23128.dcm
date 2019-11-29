@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 23128
+D 16k x 8 bit PROM used as ROM in several commodore (and other) computer systems
+K 16kx8 bit PROM ROM
+F http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf
+$ENDCMP
+#
+$CMP 27128
+D UV Erasable EPROM 128 KiBit, [Obsolete 2000-11]
+K Erasable OTP EPROM 128KiBit
+F http://eeshop.unl.edu/pdf/27128.pdf
+$ENDCMP
+#
+#End Doc Library
