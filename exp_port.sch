@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 6 10
 Title ""
 Date ""
 Rev ""
@@ -178,13 +178,7 @@ Wire Wire Line
 	6605 4890 7755 4890
 Wire Wire Line
 	6605 5090 7755 5090
-NoConn ~ 5105 3390
-NoConn ~ 5105 3590
-NoConn ~ 5105 3690
-NoConn ~ 5105 3790
 NoConn ~ 5105 5390
-NoConn ~ 6605 3290
-NoConn ~ 6605 3190
 NoConn ~ 5105 5290
 Text Label 5105 4390 2    60   ~ 0
 d7
@@ -315,12 +309,34 @@ Text GLabel 4580 3990 0    50   Input ~ 0
 ~CS0
 Wire Wire Line
 	4580 3990 5105 3990
-Text GLabel 4580 3790 0    50   Input ~ 0
-MUX
 Wire Wire Line
 	5105 3890 4305 3890
 Text GLabel 4305 3890 0    50   Input ~ 0
 ~CS1
+Wire Wire Line
+	6605 3290 7440 3290
+Text GLabel 7440 3290 2    50   Input ~ 0
+~RESET
+Text GLabel 7230 3190 2    50   Input ~ 0
+C1_LOW
+Wire Wire Line
+	6605 3190 7230 3190
+Wire Wire Line
+	5105 3690 4305 3690
+Text GLabel 4305 3690 0    50   Input ~ 0
+C2_LOW
+Text GLabel 4580 3790 0    50   Input ~ 0
+C2_HIGH
+Wire Wire Line
+	4580 3790 5105 3790
+Text GLabel 4580 3590 0    50   Input ~ 0
+C1_HIGH
+Wire Wire Line
+	4580 3590 5105 3590
+Text GLabel 4580 3390 0    50   Input ~ 0
+~IRQ
+Wire Wire Line
+	4580 3390 5105 3390
 Wire Bus Line
 	3910 4290 3910 4990
 Wire Bus Line

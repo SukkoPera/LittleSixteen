@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 5 10
 Title ""
 Date ""
 Rev ""
@@ -419,7 +419,7 @@ Wire Wire Line
 	4525 2070 4525 2220
 Connection ~ 4525 2220
 Wire Wire Line
-	4525 2220 6095 2220
+	4525 2220 5385 2220
 Wire Wire Line
 	8385 2620 8520 2620
 Wire Wire Line
@@ -565,7 +565,7 @@ BA
 Text GLabel 1900 2520 0    50   Input ~ 0
 AEC
 Text GLabel 9325 3720 2    50   Output ~ 0
-RESET
+SERIAL_RESET
 Wire Wire Line
 	6695 2220 6855 2220
 Wire Wire Line
@@ -575,6 +575,10 @@ Wire Wire Line
 Connection ~ 6855 2220
 Wire Wire Line
 	6855 2220 7385 2220
+Wire Wire Line
+	5385 2220 5385 1435
+Wire Wire Line
+	5385 1435 6320 1435
 Wire Bus Line
 	5035 4120 5035 4580
 Wire Bus Line
@@ -583,4 +587,9 @@ Wire Bus Line
 	5035 2320 5035 3020
 Wire Bus Line
 	2055 2620 2055 4580
+Connection ~ 5385 2220
+Wire Wire Line
+	5385 2220 6095 2220
+Text GLabel 6320 1435 2    50   Output ~ 0
+~RESET
 $EndSCHEMATC

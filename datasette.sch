@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 8 10
 Title ""
 Date ""
 Rev ""
@@ -721,7 +721,7 @@ Entry Wire Line
 Wire Bus Line
 	7890 4845 8215 4845
 Text GLabel 8215 6070 2    50   Input ~ 0
-RESET
+SERIAL_RESET
 Wire Wire Line
 	7500 6070 8215 6070
 Text Notes 2355 4625 0    157  ~ 0

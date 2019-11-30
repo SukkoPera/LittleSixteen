@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -25,10 +25,10 @@ F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 3765 2530 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0164
 U 1 1 5EE49D74
 P 3765 3750
-F 0 "#PWR?" H 3765 3500 50  0001 C CNN
+F 0 "#PWR0164" H 3765 3500 50  0001 C CNN
 F 1 "GND" H 3770 3577 50  0000 C CNN
 F 2 "" H 3765 3750 50  0001 C CNN
 F 3 "" H 3765 3750 50  0001 C CNN
@@ -38,10 +38,10 @@ $EndComp
 Wire Wire Line
 	3765 3750 3765 3685
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0165
 U 1 1 5EE4AA2F
 P 3765 1300
-F 0 "#PWR?" H 3765 1150 50  0001 C CNN
+F 0 "#PWR0165" H 3765 1150 50  0001 C CNN
 F 1 "VCC" H 3782 1473 50  0000 C CNN
 F 2 "" H 3765 1300 50  0001 C CNN
 F 3 "" H 3765 1300 50  0001 C CNN
@@ -230,7 +230,7 @@ Wire Wire Line
 Wire Wire Line
 	3270 3685 3765 3685
 Text GLabel 3060 3430 0    50   Input ~ 0
-BASIC_CS1
+~BASIC_CS1
 $Comp
 L 23128:23128 U4
 U 1 1 5EE6447F
@@ -243,10 +243,10 @@ F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 7540 2530 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0166
 U 1 1 5EE64489
 P 7540 3750
-F 0 "#PWR?" H 7540 3500 50  0001 C CNN
+F 0 "#PWR0166" H 7540 3500 50  0001 C CNN
 F 1 "GND" H 7545 3577 50  0000 C CNN
 F 2 "" H 7540 3750 50  0001 C CNN
 F 3 "" H 7540 3750 50  0001 C CNN
@@ -256,10 +256,10 @@ $EndComp
 Wire Wire Line
 	7540 3750 7540 3685
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0167
 U 1 1 5EE64494
 P 7540 1300
-F 0 "#PWR?" H 7540 1150 50  0001 C CNN
+F 0 "#PWR0167" H 7540 1150 50  0001 C CNN
 F 1 "VCC" H 7557 1473 50  0000 C CNN
 F 2 "" H 7540 1300 50  0001 C CNN
 F 3 "" H 7540 1300 50  0001 C CNN
@@ -448,7 +448,7 @@ Wire Wire Line
 Wire Wire Line
 	7045 3685 7540 3685
 Text GLabel 6835 3430 0    50   Input ~ 0
-KERNAL_CS1
+~KERNAL_CS1
 Wire Wire Line
 	7140 3230 7045 3230
 Wire Wire Line

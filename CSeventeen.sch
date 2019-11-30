@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -60,5 +60,11 @@ S 8130 1260 1365 870
 U 5EE476E1
 F0 "ROMs" 50
 F1 "rom.sch" 50
+$EndSheet
+$Sheet
+S 3540 4685 1250 830 
+U 5EE7AAEB
+F0 "PLA & Chip Selection" 50
+F1 "pla.sch" 50
 $EndSheet
 $EndSCHEMATC
