@@ -98,7 +98,7 @@ U 1 1 5E029075
 P 7650 3080
 F 0 "EM5" H 7650 3275 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 7650 3306 50  0001 C CNN
-F 2 "LittleSixteen:EMI_Filter" V 7650 3080 50  0001 C CNN
+F 2 "CSeventeen:EMI_Filter" V 7650 3080 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 7650 3080 50  0001 C CNN
 	1    7650 3080
 	1    0    0    -1  
@@ -109,7 +109,7 @@ U 1 1 5E02CB2E
 P 8710 3230
 F 0 "EM3" H 8710 3425 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 8710 3456 50  0001 C CNN
-F 2 "LittleSixteen:EMI_Filter" V 8710 3230 50  0001 C CNN
+F 2 "CSeventeen:EMI_Filter" V 8710 3230 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 8710 3230 50  0001 C CNN
 	1    8710 3230
 	1    0    0    -1  
@@ -120,7 +120,7 @@ U 1 1 5E02E767
 P 8185 3380
 F 0 "EM4" H 8185 3575 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 8185 3606 50  0001 C CNN
-F 2 "LittleSixteen:EMI_Filter" V 8185 3380 50  0001 C CNN
+F 2 "CSeventeen:EMI_Filter" V 8185 3380 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 8185 3380 50  0001 C CNN
 	1    8185 3380
 	1    0    0    -1  
@@ -195,7 +195,7 @@ U 1 1 5E03E255
 P 10100 3530
 F 0 "FB13" H 10200 3530 50  0000 L CNN
 F 1 "Ferrite_Bead_Small" H 10200 3485 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 10030 3530 50  0001 C CNN
+F 2 "CSeventeen:Ferrite" V 10030 3530 50  0001 C CNN
 F 3 "~" H 10100 3530 50  0001 C CNN
 	1    10100 3530
 	1    0    0    -1  
@@ -208,7 +208,7 @@ U 1 1 5E03F938
 P 10505 3130
 F 0 "FB12" V 10360 3130 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 10605 3085 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 10435 3130 50  0001 C CNN
+F 2 "CSeventeen:Ferrite" V 10435 3130 50  0001 C CNN
 F 3 "~" H 10505 3130 50  0001 C CNN
 	1    10505 3130
 	0    1    1    0   
@@ -219,7 +219,7 @@ U 1 1 5E040A9B
 P 10305 3030
 F 0 "FB58" V 10160 3030 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 10405 2985 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 10235 3030 50  0001 C CNN
+F 2 "CSeventeen:Ferrite" V 10235 3030 50  0001 C CNN
 F 3 "~" H 10305 3030 50  0001 C CNN
 	1    10305 3030
 	0    1    1    0   
@@ -283,7 +283,7 @@ U 1 1 5E059C15
 P 2195 2780
 F 0 "C18" V 1943 2780 50  0000 C CNN
 F 1 "10u/25V" V 2034 2780 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2195 2780 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2195 2780 50  0001 C CNN
 F 3 "~" H 2195 2780 50  0001 C CNN
 	1    2195 2780
 	0    1    1    0   
@@ -307,7 +307,7 @@ U 1 1 5E061026
 P 2195 2265
 F 0 "C19" V 1943 2265 50  0000 C CNN
 F 1 "10u/25V" V 2034 2265 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2195 2265 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2195 2265 50  0001 C CNN
 F 3 "~" H 2195 2265 50  0001 C CNN
 	1    2195 2265
 	0    1    1    0   
