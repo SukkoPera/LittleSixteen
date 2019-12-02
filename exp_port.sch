@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 10
+Sheet 6 11
 Title ""
 Date ""
 Rev ""
@@ -178,7 +178,6 @@ Wire Wire Line
 	6605 4890 7755 4890
 Wire Wire Line
 	6605 5090 7755 5090
-NoConn ~ 5105 5290
 Text Label 5105 4390 2    60   ~ 0
 d7
 Text Label 5105 4490 2    60   ~ 0
@@ -336,10 +335,14 @@ Text GLabel 4580 3390 0    50   Input ~ 0
 ~IRQ
 Wire Wire Line
 	4580 3390 5105 3390
-Text GLabel 4580 5390 0    50   Input ~ 0
+Text GLabel 4305 5390 0    50   Input ~ 0
 PHI2
 Wire Wire Line
-	4580 5390 5105 5390
+	4305 5390 5105 5390
+Text GLabel 4580 5290 0    50   Output ~ 0
+EXT_AUDIO
+Wire Wire Line
+	4580 5290 5105 5290
 Wire Bus Line
 	3910 4290 3910 4990
 Wire Bus Line

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 10
+Sheet 4 11
 Title "Open Commodore 16 64 kB RAM Expansion"
 Date "2018-01-01"
 Rev "2"

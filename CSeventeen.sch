@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -66,5 +66,11 @@ S 3540 4685 1250 830
 U 5EE7AAEB
 F0 "PLA & Chip Selection" 50
 F1 "pla.sch" 50
+$EndSheet
+$Sheet
+S 5880 4680 1260 825 
+U 5E019FCB
+F0 "Audio/Video Output" 50
+F1 "avout.sch" 50
 $EndSheet
 $EndSCHEMATC

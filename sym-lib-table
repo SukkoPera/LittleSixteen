@@ -11,4 +11,5 @@
   (lib (name 74ls157)(type Legacy)(uri ${KIPRJMOD}/lib/74ls157.lib)(options "")(descr ""))
   (lib (name 23128)(type Legacy)(uri ${KIPRJMOD}/lib/23128.lib)(options "")(descr ""))
   (lib (name MOS_251641_PLA)(type Legacy)(uri ${KIPRJMOD}/lib/MOS_251641_PLA.lib)(options "")(descr ""))
+  (lib (name Modulator)(type Legacy)(uri ${KIPRJMOD}/lib/Modulator.lib)(options "")(descr ""))
 )
