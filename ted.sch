@@ -506,7 +506,7 @@ U 1 1 5EAF64AB
 P 3200 3380
 F 0 "Q1" H 3390 3426 50  0000 L CNN
 F 1 "2SC1815" H 3390 3335 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3400 3305 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3400 3305 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 3200 3380 50  0001 L CNN
 	1    3200 3380
 	1    0    0    -1  
@@ -601,7 +601,7 @@ U 1 1 5EB1F45B
 P 4765 3130
 F 0 "Q2" H 4955 3176 50  0000 L CNN
 F 1 "2SC1815" H 4955 3085 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4965 3055 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 4965 3055 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 4765 3130 50  0001 L CNN
 	1    4765 3130
 	1    0    0    -1  
