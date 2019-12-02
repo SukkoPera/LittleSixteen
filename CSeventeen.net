@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/CSeventeen/CSeventeen.sch)
-    (date "lun 2 dic 2019, 20:17:52")
+    (date "lun 2 dic 2019, 20:28:53")
     (tool "Eeschema 5.1.5")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -252,6 +252,7 @@
       (tstamp 5EB3F5F2))
     (comp (ref TP1)
       (value CLOCK_TESTPOINT)
+      (footprint TestPoint:TestPoint_Pad_D2.0mm)
       (datasheet ~)
       (libsource (lib Connector) (part TestPoint) (description "test point"))
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
@@ -271,6 +272,7 @@
       (tstamp 5DED1597))
     (comp (ref CN2)
       (value KEYBOARD_HEADER)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x20_Male) (description "Generic connector, single row, 01x20, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names "/Keyboard & Joystick/") (tstamps /5DECEF6F/))
@@ -732,6 +734,7 @@
       (tstamp 5E982F3B))
     (comp (ref CN9)
       (value LED_CONNECTOR)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x03_Male) (description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
