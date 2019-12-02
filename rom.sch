@@ -19,7 +19,7 @@ U 1 1 5EE49479
 P 3765 2530
 F 0 "U3" H 3990 3575 50  0000 C CNN
 F 1 "23128_BASIC" H 4080 1480 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm" H 3765 2530 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 3765 2530 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 3765 2530 50  0001 C CNN
 	1    3765 2530
 	1    0    0    -1  
@@ -237,7 +237,7 @@ U 1 1 5EE6447F
 P 7540 2530
 F 0 "U4" H 7765 3575 50  0000 C CNN
 F 1 "23128_KERNAL" H 7855 1480 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm" H 7540 2530 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 7540 2530 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 7540 2530 50  0001 C CNN
 	1    7540 2530
 	1    0    0    -1  

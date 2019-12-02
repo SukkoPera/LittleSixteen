@@ -148,7 +148,7 @@ U 1 1 5ED32B7C
 P 4305 3170
 F 0 "SW1" H 4305 3401 50  0000 C CNN
 F 1 "POWER_SWITCH" H 4305 3310 50  0000 C CNN
-F 2 "" H 4305 3170 60  0000 C CNN
+F 2 "" H 4305 3170 60  0001 C CNN
 F 3 "" H 4305 3170 60  0000 C CNN
 	1    4305 3170
 	1    0    0    -1  
@@ -176,7 +176,7 @@ U 1 1 5ED392FB
 P 6005 2995
 F 0 "VR1" H 6005 3237 50  0000 C CNN
 F 1 "7805" H 6005 3146 50  0000 C CNN
-F 2 "" H 6030 2845 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 6030 2845 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 6005 2945 50  0001 C CNN
 	1    6005 2995
 	1    0    0    -1  
@@ -354,7 +354,7 @@ U 7 1 5EE35EC8
 P 4035 5795
 F 0 "U9" H 4265 5841 50  0000 L CNN
 F 1 "74LS06" H 4265 5750 50  0000 L CNN
-F 2 "" H 4035 5795 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4035 5795 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4035 5795 50  0001 C CNN
 	7    4035 5795
 	1    0    0    -1  
@@ -420,7 +420,7 @@ U 5 1 5EE3FF94
 P 2830 5795
 F 0 "U11" H 3060 5841 50  0000 L CNN
 F 1 "74LS125" H 3060 5750 50  0000 L CNN
-F 2 "" H 2830 5795 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2830 5795 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 2830 5795 50  0001 C CNN
 	5    2830 5795
 	1    0    0    -1  
