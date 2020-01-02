@@ -340,7 +340,7 @@ U 1 1 5DF69658
 P 5315 4285
 F 0 "CN4" H 5470 4650 50  0000 C CNN
 F 1 "JOY1" H 5475 4570 50  0000 C CNN
-F 2 "" V 5305 4275 50  0001 C CNN
+F 2 "CommodorePlus4:Connector_Mini-DIN_Female_8Pin_2rows" V 5305 4275 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 5305 4275 50  0001 C CNN
 	1    5315 4285
 	1    0    0    -1  
@@ -650,7 +650,7 @@ U 1 1 5E19A816
 P 3875 6110
 F 0 "CN5" H 4030 6475 50  0000 C CNN
 F 1 "JOY2" H 4035 6395 50  0000 C CNN
-F 2 "" V 3865 6100 50  0001 C CNN
+F 2 "CommodorePlus4:Connector_Mini-DIN_Female_8Pin_2rows" V 3865 6100 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 3865 6100 50  0001 C CNN
 	1    3875 6110
 	1    0    0    -1  

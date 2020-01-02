@@ -19,7 +19,7 @@ U 1 1 5ECB4902
 P 4490 2560
 F 0 "CN3" H 4490 2285 50  0000 C CNN
 F 1 "CASSETTE" H 4490 2194 50  0000 C CNN
-F 2 "" V 4480 2550 50  0001 C CNN
+F 2 "CommodorePlus4:Connector_Mini-DIN_Female_7Pin_2rows" V 4480 2550 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 4480 2550 50  0001 C CNN
 	1    4490 2560
 	1    0    0    -1  
@@ -409,7 +409,7 @@ U 1 1 5ED6C96C
 P 4140 5725
 F 0 "CN7" H 4140 6330 50  0000 C CNN
 F 1 "SERIAL_BUS" H 4140 6245 50  0000 C CNN
-F 2 "" H 4140 5725 50  0001 C CNN
+F 2 "CommodorePlus4:Connector_DIN_Female_6Pin_3rows" H 4140 5725 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4140 5725 50  0001 C CNN
 	1    4140 5725
 	1    0    0    -1  

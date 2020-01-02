@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name CSeventeen)(type KiCad)(uri ${KIPRJMOD}/CSeventeen.pretty)(options "")(descr ""))
+  (lib (name CommodorePlus4)(type KiCad)(uri ${KIPRJMOD}/CommodorePlus4.pretty)(options "")(descr ""))
 )
