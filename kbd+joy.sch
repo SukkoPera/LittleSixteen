@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 11
+Sheet 6 11
 Title "CSeventeen"
-Date "2019-11-26"
+Date "2020-01-03"
 Rev "1git"
 Comp "SukkoPera"
-Comment1 ""
-Comment2 ""
+Comment1 "Licensed under CC BY-NC-SA 4.0"
+Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -149,7 +149,7 @@ F 3 "" H 9110 2930 50  0001 C CNN
 	1    9110 2930
 	1    0    0    -1  
 $EndComp
-Text Notes 665  2090 0    50   ~ 0
+Text Notes 3350 2115 2    50   ~ 0
 According to Wikipedia, "it is rather clear that the 6529 is just a\nrelabeled 74(LS)639 bidirectional three-state/open-Collector-bus\ndriver. [...]\n\nIf Open-Collector-Output at A-Side is NOT necessary (e.g. for input\nonly application like in Commodore C16 Keyboard-Scanner) 74LS245,\nwhich is available much more easily today will also do."
 Entry Wire Line
 	7030 1680 7130 1780
@@ -315,9 +315,9 @@ $EndComp
 Wire Wire Line
 	5595 2920 5725 2920
 Wire Wire Line
-	5725 2920 5725 3500
+	5725 2920 5725 3505
 Wire Wire Line
-	5055 3505 5725 3500
+	5055 3505 5725 3505
 $Comp
 L power:GND #PWR0107
 U 1 1 5DFEE778

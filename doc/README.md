@@ -13,6 +13,8 @@ http://forum.6502.org/viewtopic.php?t=3067#p34914
 Useful info:
 https://www.associazione64.it/home/il-commodore-16/#ics
 
+Modulator Rauswerfen:
+https://www.forum64.de/index.php?thread/44092-hf-modulator-rauswerfen-c64c/
 
 http://cbm-hackers.2304266.n4.nabble.com/CPU-Replacement-for-die-264-series-td4501523.html
 About GATE IN:

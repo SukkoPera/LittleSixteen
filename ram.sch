@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 11
-Title "Open Commodore 16 64 kB RAM Expansion"
-Date "2018-01-01"
-Rev "2"
+Title "CSeventeen"
+Date "2020-01-03"
+Rev "1git"
 Comp "SukkoPera"
-Comment1 ""
-Comment2 ""
+Comment1 "Licensed under CC BY-NC-SA 4.0"
+Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
 $EndDescr

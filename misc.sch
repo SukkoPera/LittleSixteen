@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 11
-Title ""
-Date "2019-11-28"
+Sheet 9 11
+Title "CSeventeen"
+Date "2020-01-03"
 Rev "1git"
-Comp ""
-Comment1 ""
-Comment2 ""
+Comp "SukkoPera"
+Comment1 "Licensed under CC BY-NC-SA 4.0"
+Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -291,12 +291,12 @@ $EndComp
 Wire Wire Line
 	6535 2045 6535 2300
 Connection ~ 6535 2300
-Text Notes 2655 2465 0    157  ~ 0
+Text Notes 2625 2225 0    157  ~ 0
 POWER REGULATION
 Text Notes 9085 1940 0    157  ~ 0
 POWER LED
 Text Notes 6630 2810 0    50   ~ 0
-This is that big white resistor that is responsible\nfor a lot of the heat inside the C16 case. I never\nfully understood why it is here.\n\nA good idea is using a switching regulator instead\nof the usual 7805, like those made by Traco.\nTSR 1-2450 should be a good choice. That should\nalso make the big metal heatsink useless.
+This is that big white resistor that is responsible\nfor a lot of the heat inside the C16 case. I have\nnever fully understood why it is here.\n\nA good idea is using a switching regulator instead\nof the usual 7805, like those made by Traco.\nTSR 1-2450 should be a good choice. That should\nalso make the big metal heatsink useless.
 Text Notes 4850 3660 2    50   ~ 0
 TODO: Check filter pinout and make switch 6-pin
 NoConn ~ 4455 3220
@@ -451,4 +451,6 @@ F 3 "" H 2830 6410 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2830 6295 2830 6410
+Text Notes 5420 2700 2    50   ~ 0
+D11 is a 1N4001\non my board
 $EndSCHEMATC

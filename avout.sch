@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 11
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "CSeventeen"
+Date "2020-01-03"
+Rev "1git"
+Comp "SukkoPera"
+Comment1 "Licensed under CC BY-NC-SA 4.0"
+Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -562,4 +562,6 @@ Text Notes 10670 3010 0    50   ~ 0
 EXT_AUDIO
 Text Notes 10280 3315 0    50   ~ 0
 AUDIO_OUT
+Text Notes 8575 2360 0    50   ~ 0
+From C64-Wiki (C64 uses the same connector):\n\nThe eight pin jack is *not* the more common DIN 45326\n(pins spanning 270°, circular like a horseshoe), but\nDIN 41524 (pins spanning 262°, a "U" shape with a more\nopen end). It's possible to forcibly plug in a wrong plug into\nthe jack, but one should get the right plug in the first place\non a new purchase. Should you happen to get the wrong\nplug and wasn't planning to use the +5V pin then you can\nremove the upper two pins out for a perfect fit.
 $EndSCHEMATC

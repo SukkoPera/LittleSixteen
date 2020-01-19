@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
-Title "SukkoPera"
-Date "2019-11-26"
+Sheet 3 11
+Title "CSeventeen"
+Date "2020-01-03"
 Rev "1git"
-Comp ""
-Comment1 ""
-Comment2 ""
+Comp "SukkoPera"
+Comment1 "Licensed under CC BY-NC-SA 4.0"
+Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -382,19 +382,6 @@ SYNC_LUM
 Text GLabel 6965 2750 0    50   Output ~ 0
 COLOR
 $Comp
-L Device:Crystal_GND2 Y1
-U 1 1 5EAD3A54
-P 1740 3655
-F 0 "Y1" V 1740 3786 50  0000 L CNN
-F 1 "Crystal_GND2" V 1695 3786 50  0001 L CNN
-F 2 "" H 1740 3655 50  0001 C CNN
-F 3 "~" H 1740 3655 50  0001 C CNN
-	1    1740 3655
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1740 3805 1740 3850
-$Comp
 L Device:C C12
 U 1 1 5EAD5FE1
 P 1740 4110
@@ -734,6 +721,19 @@ Wire Wire Line
 	6000 2850 7435 2850
 Text Notes 2475 1985 0    157  ~ 0
 CLOCK GENERATION
+Wire Wire Line
+	1740 3805 1740 3850
+$Comp
+L Device:Crystal_GND3 Y1
+U 1 1 5E276D96
+P 1740 3655
+F 0 "Y1" V 1740 3786 50  0000 L CNN
+F 1 "Crystal" V 1695 3786 50  0001 L CNN
+F 2 "Crystal:Crystal_HC49-U_Horizontal_1EP_style2" H 1740 3655 50  0001 C CNN
+F 3 "~" H 1740 3655 50  0001 C CNN
+	1    1740 3655
+	0    -1   1    0   
+$EndComp
 Wire Bus Line
 	6865 885  6865 1650
 Wire Bus Line
