@@ -11,8 +11,11 @@
 
   (page A3)
   (title_block
+    (title LittleSixteen)
     (date 2019-12-02)
     (rev 1git)
+    (company SukkoPera)
+    (comment 1 "Licensed under CC BY-NC-SA 4.0")
   )
 
   (layers
