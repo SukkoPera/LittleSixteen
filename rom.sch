@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 11
-Title "CSeventeen"
+Title "LittleSixteen"
 Date "2020-01-03"
 Rev "1git"
 Comp "SukkoPera"
