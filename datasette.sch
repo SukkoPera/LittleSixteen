@@ -56,7 +56,7 @@ U 1 1 5ECB83BF
 P 3695 2200
 F 0 "FB14" H 3795 2200 50  0000 L CNN
 F 1 "Ferrite_Bead_Small" H 3795 2155 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 3625 2200 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 3625 2200 50  0001 C CNN
 F 3 "~" H 3695 2200 50  0001 C CNN
 	1    3695 2200
 	-1   0    0    1   
@@ -83,7 +83,7 @@ U 1 1 5ECBC7A2
 P 4930 2895
 F 0 "FB15" H 4830 2895 50  0000 R CNN
 F 1 "Ferrite_Bead_Small" H 5030 2850 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 4860 2895 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 4860 2895 50  0001 C CNN
 F 3 "~" H 4930 2895 50  0001 C CNN
 	1    4930 2895
 	-1   0    0    1   
@@ -122,7 +122,7 @@ U 1 1 5ECC62CE
 P 3250 2560
 F 0 "FB16" V 3395 2560 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 3350 2515 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 3180 2560 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 3180 2560 50  0001 C CNN
 F 3 "~" H 3250 2560 50  0001 C CNN
 	1    3250 2560
 	0    -1   -1   0   
@@ -162,7 +162,7 @@ U 1 1 5ECC99AD
 P 7390 2560
 F 0 "FB19" V 7535 2560 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 7490 2515 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 7320 2560 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 7320 2560 50  0001 C CNN
 F 3 "~" H 7390 2560 50  0001 C CNN
 	1    7390 2560
 	0    -1   -1   0   
@@ -241,7 +241,7 @@ U 1 1 5ECD8623
 P 5585 2460
 F 0 "FB17" V 5730 2460 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 5685 2415 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 5515 2460 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 5515 2460 50  0001 C CNN
 F 3 "~" H 5585 2460 50  0001 C CNN
 	1    5585 2460
 	0    -1   -1   0   
@@ -301,7 +301,7 @@ U 1 1 5ECE8130
 P 5030 1670
 F 0 "FB18" V 5175 1670 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 5130 1625 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 4960 1670 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 4960 1670 50  0001 C CNN
 F 3 "~" H 5030 1670 50  0001 C CNN
 	1    5030 1670
 	0    -1   -1   0   
@@ -448,7 +448,7 @@ U 1 1 5ED7203F
 P 3680 6015
 F 0 "FB1" H 3580 6015 50  0000 R CNN
 F 1 "Ferrite_Bead_Small" H 3780 5970 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 3610 6015 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 3610 6015 50  0001 C CNN
 F 3 "~" H 3680 6015 50  0001 C CNN
 	1    3680 6015
 	1    0    0    -1  
@@ -480,7 +480,7 @@ U 1 1 5ED7946B
 P 4775 5380
 F 0 "FB5" V 4920 5380 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 4875 5335 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 4705 5380 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 4705 5380 50  0001 C CNN
 F 3 "~" H 4775 5380 50  0001 C CNN
 	1    4775 5380
 	0    -1   -1   0   
@@ -508,7 +508,7 @@ U 1 1 5ED81D59
 P 5075 5625
 F 0 "FB4" V 5220 5625 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 5175 5580 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 5005 5625 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 5005 5625 50  0001 C CNN
 F 3 "~" H 5075 5625 50  0001 C CNN
 	1    5075 5625
 	0    -1   -1   0   
@@ -538,7 +538,7 @@ U 1 1 5ED88505
 P 4775 5825
 F 0 "FB3" V 4630 5825 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 4875 5780 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 4705 5825 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 4705 5825 50  0001 C CNN
 F 3 "~" H 4775 5825 50  0001 C CNN
 	1    4775 5825
 	0    -1   -1   0   
@@ -572,7 +572,7 @@ U 1 1 5ED99E91
 P 5070 6070
 F 0 "FB2" V 5215 6070 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 5170 6025 50  0001 L CNN
-F 2 "CSeventeen:Ferrite" V 5000 6070 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 5000 6070 50  0001 C CNN
 F 3 "~" H 5070 6070 50  0001 C CNN
 	1    5070 6070
 	0    1    1    0   

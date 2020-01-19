@@ -493,7 +493,7 @@
     (add_net VCC)
   )
 
-  (module CSeventeen:Top4 (layer F.Cu) (tedit 0) (tstamp 5DE6BFD0)
+  (module LittleSixteen:Top4 (layer F.Cu) (tedit 0) (tstamp 5DE6BFD0)
     (at 208.788 134.572)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
@@ -17147,7 +17147,7 @@
       (xy -154.286526 66.913485)) (layer Eco2.User) (width 0.01))
   )
 
-  (module CSeventeen:Top3 (layer F.Cu) (tedit 0) (tstamp 5DE5E45E)
+  (module LittleSixteen:Top3 (layer F.Cu) (tedit 0) (tstamp 5DE5E45E)
     (at 208.788 131.572)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
@@ -39243,7 +39243,7 @@
     )
   )
 
-  (module CSeventeen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF8327A)
+  (module LittleSixteen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF8327A)
     (at 346.837 185.141329 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39277,7 +39277,7 @@
       (net 119 "Net-(EM1-Pad3)"))
   )
 
-  (module CSeventeen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF8328E)
+  (module LittleSixteen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF8328E)
     (at 346.837 152.722665 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39311,7 +39311,7 @@
       (net 175 "Net-(CN5-Pad8)"))
   )
 
-  (module CSeventeen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF832A2)
+  (module LittleSixteen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF832A2)
     (at 163.767999 92.84)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39345,7 +39345,7 @@
       (net 188 "Net-(EM3-Pad1)"))
   )
 
-  (module CSeventeen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF832B6)
+  (module LittleSixteen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF832B6)
     (at 173.421499 90.3)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39379,7 +39379,7 @@
       (net 189 "Net-(EM4-Pad1)"))
   )
 
-  (module CSeventeen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF832CA)
+  (module LittleSixteen:EMI_Filter (layer F.Cu) (tedit 5DE58F5D) (tstamp 5DF832CA)
     (at 168.594749 90.3)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39413,7 +39413,7 @@
       (net 190 "Net-(EM5-Pad1)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF832DE)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF832DE)
     (at 126.438 91.7)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39446,7 +39446,7 @@
       (net 183 "Net-(CN7-Pad2)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF832F2)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF832F2)
     (at 135.969 91.7)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39479,7 +39479,7 @@
       (net 106 "Net-(FB2-Pad1)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83306)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83306)
     (at 145.5 91.7)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39512,7 +39512,7 @@
       (net 186 "Net-(CN7-Pad5)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8331A)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8331A)
     (at 140.7345 91.7)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39545,7 +39545,7 @@
       (net 185 "Net-(CN7-Pad4)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8332E)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8332E)
     (at 131.2035 91.7)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39578,7 +39578,7 @@
       (net 105 "Net-(FB5-Pad2)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83342)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83342)
     (at 183.075 90.3)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39611,7 +39611,7 @@
       (net 97 "Net-(C31-Pad2)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83356)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83356)
     (at 178.248249 90.3)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39644,7 +39644,7 @@
       (net 13 GND))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8336A)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8336A)
     (at 102.2 80.5)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39677,7 +39677,7 @@
       (net 16 VCC))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8337E)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8337E)
     (at 87.56 80.5)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39710,7 +39710,7 @@
       (net 155 "Net-(CN3-Pad1)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83392)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83392)
     (at 97.32 80.5)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39743,7 +39743,7 @@
       (net 117 p4))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833A6)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833A6)
     (at 82.68 80.5)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39776,7 +39776,7 @@
       (net 104 "Net-(C24-Pad2)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833BA)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833BA)
     (at 92.44 80.5)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39809,7 +39809,7 @@
       (net 154 "Net-(CN3-Pad6)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833CE)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833CE)
     (at 77.8 80.5)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39847,7 +39847,7 @@
     )
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833E2)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833E2)
     (at 346.837 189.193662 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39880,7 +39880,7 @@
       (net 166 "Net-(CN4-Pad5)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833F6)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF833F6)
     (at 346.837 164.879664 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39913,7 +39913,7 @@
       (net 1 "Net-(D1-Pad1)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8340A)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8340A)
     (at 344.297 193.246 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39946,7 +39946,7 @@
       (net 165 "Net-(CN4-Pad2)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8341E)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8341E)
     (at 346.837 168.931997 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -39979,7 +39979,7 @@
       (net 164 "Net-(CN4-Pad3)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83432)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83432)
     (at 346.837 177.036663 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40012,7 +40012,7 @@
       (net 7 "Net-(D4-Pad1)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83446)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83446)
     (at 346.837 172.98433 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40045,7 +40045,7 @@
       (net 162 "Net-(CN4-Pad6)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8345A)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8345A)
     (at 346.837 181.088996 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40078,7 +40078,7 @@
       (net 160 "Net-(CN4-Pad7)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8346E)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8346E)
     (at 346.837 156.774998 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40111,7 +40111,7 @@
       (net 16 VCC))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83482)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83482)
     (at 346.837 132.461 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40144,7 +40144,7 @@
       (net 173 "Net-(CN5-Pad1)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83496)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83496)
     (at 346.837 160.827331 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40177,7 +40177,7 @@
       (net 83 "Net-(D7-Pad1)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834AA)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834AA)
     (at 346.837 136.513333 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40210,7 +40210,7 @@
       (net 172 "Net-(CN5-Pad3)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834BE)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834BE)
     (at 346.837 144.617999 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40243,7 +40243,7 @@
       (net 85 "Net-(D9-Pad1)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834D2)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834D2)
     (at 346.837 140.565666 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40276,7 +40276,7 @@
       (net 174 "Net-(CN5-Pad6)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834E6)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834E6)
     (at 346.837 148.670332 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40309,7 +40309,7 @@
       (net 168 "Net-(CN5-Pad7)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834FA)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF834FA)
     (at 251.841 101.854 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40342,7 +40342,7 @@
       (net 33 ~RAS))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8350E)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8350E)
     (at 251.841 106.807 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40375,7 +40375,7 @@
       (net 37 PHI0))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83522)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83522)
     (at 251.841 117.983 90)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40408,7 +40408,7 @@
       (net 149 "Net-(CN1-Pad11)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83536)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83536)
     (at 321.564 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40441,7 +40441,7 @@
       (net 127 "Net-(FB41-Pad2)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8354A)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8354A)
     (at 267.6398 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40474,7 +40474,7 @@
       (net 132 "Net-(CN2-Pad8)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8355E)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8355E)
     (at 287.2486 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40507,7 +40507,7 @@
       (net 136 "Net-(CN2-Pad12)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83572)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83572)
     (at 282.3464 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40540,7 +40540,7 @@
       (net 135 "Net-(CN2-Pad11)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83586)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83586)
     (at 292.1508 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40573,7 +40573,7 @@
       (net 123 "Net-(FB45-Pad2)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8359A)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8359A)
     (at 252.9332 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40606,7 +40606,7 @@
       (net 128 "Net-(CN2-Pad1)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835AE)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835AE)
     (at 306.8574 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40639,7 +40639,7 @@
       (net 121 "Net-(FB47-Pad2)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835C2)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835C2)
     (at 257.8354 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40672,7 +40672,7 @@
       (net 130 "Net-(CN2-Pad6)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835D6)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835D6)
     (at 316.6618 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40705,7 +40705,7 @@
       (net 142 "Net-(CN2-Pad18)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835EA)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835EA)
     (at 301.9552 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40738,7 +40738,7 @@
       (net 139 "Net-(CN2-Pad15)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835FE)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF835FE)
     (at 297.053 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40771,7 +40771,7 @@
       (net 5 k2))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83612)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83612)
     (at 311.7596 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40804,7 +40804,7 @@
       (net 8 k3))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83626)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83626)
     (at 262.7376 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40837,7 +40837,7 @@
       (net 131 "Net-(CN2-Pad7)"))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8363A)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8363A)
     (at 272.542 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40870,7 +40870,7 @@
       (net 115 k5))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8364E)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF8364E)
     (at 277.4442 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40903,7 +40903,7 @@
       (net 9 k6))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83662)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83662)
     (at 248.031 182.596 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -40936,7 +40936,7 @@
       (net 11 k7))
   )
 
-  (module CSeventeen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83676)
+  (module LittleSixteen:Ferrite (layer F.Cu) (tedit 5DE58FD5) (tstamp 5DF83676)
     (at 187.4 90.3)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")

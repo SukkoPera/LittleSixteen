@@ -1,67 +1,4 @@
-19561607552453598
-Arduino
-Arduino_101_Shield
-https://store.arduino.cc/genuino-101
-
-0
-38
-38
-Arduino
-Arduino_Due_Shield
-https://store.arduino.cc/arduino-due
-
-0
-92
-91
-Arduino
-Arduino_Leonardo_Shield
-https://store.arduino.cc/arduino-leonardo-with-headers
-
-0
-38
-37
-Arduino
-Arduino_Mega2560_Shield
-https://store.arduino.cc/arduino-mega-2560-rev3
-
-0
-92
-91
-Arduino
-Arduino_Micro_Socket
-https://store.arduino.cc/arduino-micro
-
-0
-34
-32
-Arduino
-Arduino_Mini_Socket
-https://store.arduino.cc/arduino-mini-05
-
-0
-35
-35
-Arduino
-Arduino_Nano_Socket
-https://store.arduino.cc/arduino-nano
-
-0
-30
-30
-Arduino
-Arduino_Uno_Shield
-https://store.arduino.cc/arduino-uno-rev3
-
-0
-38
-37
-Arduino
-Arduino_Zero_Shield
-https://store.arduino.cc/genuino-zero
-
-0
-38
-38
+19593444833629471
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6145,6 +6082,209 @@ capacitor tantalum
 0
 2
 2
+CommodorePlus4
+24Pin_Edge
+24 pin edge footprint for Commodore Plus 4
+24 pin edge
+0
+24
+24
+CommodorePlus4
+50Pin_Edge_Connector
+50 Pin Edge Connector. Pitch 0.078" for Commodore Plus 4
+50 Pin Edge Connector. Pitch 0.078"
+0
+50
+50
+CommodorePlus4
+CP_Axial_L40.0mm_D16.0mm_P48.00mm_Horizontal
+CP, Axial series, Axial, Horizontal, pin pitch=48mm, , length*diameter=40*16mm^2, Electrolytic Capacitor
+CP Axial series Axial Horizontal pin pitch 48mm  length 40mm diameter 16mm Electrolytic Capacitor
+0
+2
+2
+CommodorePlus4
+C_Disc_10mm_6mm
+C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf
+C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor
+0
+2
+2
+CommodorePlus4
+Capacitor_D12.5mm_W5.0mm_P10.00mm
+C, Disc series, Radial, pin pitch=10.00mm, , diameter*width=12.5*5.0mm^2, Capacitor, http://www.vishay.com/docs/28535/vy2series.pdf
+C Disc series Radial pin pitch 10.00mm  diameter 12.5mm width 5.0mm Capacitor
+0
+2
+2
+CommodorePlus4
+Connector_DIN_Female_6Pin_3rows
+A footprint for the generic 6 pin DIN through hole connector with shell.
+6 pin din
+0
+8
+8
+CommodorePlus4
+Connector_DIN_Female_8Pin_3rows
+A footprint for the generic 6 pin Mini-DIN through hole connector with shell.
+mini din 6pin connector socket
+0
+10
+8
+CommodorePlus4
+Connector_Mini-DIN_Female_7Pin_2rows
+A footprint for the generic 6 pin Mini-DIN through hole connector with shell.
+mini din 6pin connector socket
+0
+8
+7
+CommodorePlus4
+Connector_Mini-DIN_Female_8Pin_2rows
+A footprint for the generic 6 pin Mini-DIN through hole connector with shell.
+mini din 6pin connector socket
+0
+11
+8
+CommodorePlus4
+Connector_Power_4pin_251614_01
+4 Pin square power connector for Commodore Plus 4
+4 pin square power connector
+0
+13
+4
+CommodorePlus4
+Diode_Bridge_12.5x12.5
+Single phase bridge rectifier case 15.2x15.2mm, pitch 10.9mm, see https://diotec.com/tl_files/diotec/files/pdf/datasheets/kbpc600.pdf
+Diode Bridge KBPC6xx
+0
+4
+4
+CommodorePlus4
+EMI-Filter
+C, Disc series, Radial, pin pitch=10.00mm, , diameter*width=9*5.0mm^2, Capacitor, http://www.vishay.com/docs/28535/vy2series.pdf
+C Disc series Radial pin pitch 10.00mm  diameter 9mm width 5.0mm Capacitor
+0
+4
+4
+CommodorePlus4
+Ferrite_Bead_L5.0mm_D3.6mm_P13.00mm_Horizontal
+Inductor, MAxial, Horizontal, pin pitch=10.00mm, length*diameter=5*3.6mm
+inductor axial horizontal
+0
+2
+2
+CommodorePlus4
+Fuseholder_Cylinder-6.3x32mm
+http://www.schurter.com/var/schurter/storage/ilcatalogue/files/document/datasheet/en/pdf/typ_OGN.pdf
+Fuseholder horizontal open 5x20 Schurter 0031.8201
+0
+4
+2
+CommodorePlus4
+Jumper
+Inductor, Murata BL01RN1A2A2, Axial, Horizontal, pin pitch=10.00mm, length*diameter=5*3.6mm, https://www.murata.com/en-global/products/productdetail?partno=BL01RN1A2A2%23
+inductor axial horizontal
+0
+4
+4
+CommodorePlus4
+Keyboard_Connector
+Through hole straight pin header, 1x18, 1.00mm pitch, single row
+Through hole pin header THT 1x18 1.00mm single row
+0
+18
+18
+CommodorePlus4
+L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical
+Inductor, Axial series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=7*3.3mm^2, Fastron, MICC, http://www.fastrongroup.com/image-show/70/MICC.pdf?type=Complete-DataSheet&productType=series
+Inductor Axial series Axial Vertical pin pitch 5.08mm  length 7mm diameter 3.3mm Fastron MICC
+0
+2
+2
+CommodorePlus4
+L_Axial_L10.0mm_D4.0mm_P15.5mm_Horizontal
+Inductor, Axial series, Axial, Horizontal, pin pitch=25.4mm, , length*diameter=16*7.5mm^2, Fastron, XHBCC, http://www.fastrongroup.com/image-show/26/XHBCC.pdf?type=Complete-DataSheet&productType=series
+Inductor Axial series Axial Horizontal pin pitch 25.4mm  length 16mm diameter 7.5mm Fastron XHBCC
+0
+2
+2
+CommodorePlus4
+Noise_Filter
+Current-compensated Chokes, Scaffner, RN216-04, 15.5mmx23.0mm https://www.schaffner.com/products/download/product/datasheet/rn-series-common-mode-chokes-new/
+chokes schaffner tht
+0
+4
+4
+CommodorePlus4
+RF_Modulator
+Commodore Plus 4 RF Modulator
+rf modulator
+0
+8
+8
+CommodorePlus4
+R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal
+Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=12.7mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0309 series Axial Horizontal pin pitch 12.7mm 0.5W = 1/2W length 9mm diameter 3.2mm
+0
+2
+2
+CommodorePlus4
+Resistor_Horizontal
+Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm
+0
+2
+2
+CommodorePlus4
+Switch-Pushbutton
+C, Disc series, Radial, pin pitch=10.00mm, , diameter*width=9*5.0mm^2, Capacitor, http://www.vishay.com/docs/28535/vy2series.pdf
+C Disc series Radial pin pitch 10.00mm  diameter 9mm width 5.0mm Capacitor
+0
+5
+2
+CommodorePlus4
+Switch-Rocker
+Rocker Switch for Commodore Plus 4
+rocket switch
+0
+10
+6
+CommodorePlus4
+TrimCap_251029-02
+C, Rect series, Radial, pin pitch=5.00mm, , length*width=7*6mm^2, Capacitor
+C Rect series Radial pin pitch 5.00mm  length 7mm width 6mm Capacitor
+0
+2
+2
+CommodorePlus4
+pcb-components_from_scan
+
+
+0
+0
+0
+CommodorePlus4
+pcb_outline_from_scan
+
+
+0
+0
+0
+CommodorePlus4
+pcb_scan
+
+
+0
+0
+0
+CommodorePlus4
+pcb_vias_from_scan
+
+
+0
+0
+0
 Connector
 Banana_Jack_1Pin
 Single banana socket, footprint - 6mm drill
@@ -51155,6 +51295,48 @@ Yellow 5381 Series LED
 0
 2
 2
+LittleSixteen
+EMI_Filter
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
+LittleSixteen
+Ferrite
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
+LittleSixteen
+Top
+
+
+0
+0
+0
+LittleSixteen
+Top2
+
+
+0
+0
+0
+LittleSixteen
+Top3
+
+
+0
+0
+0
+LittleSixteen
+Top4
+
+
+0
+0
+0
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -52023,48 +52205,6 @@ net tie
 0
 4
 4
-OpenMegaChip
-LED_0805_HandSoldering_ModSilkS
-Resistor SMD 0805, hand soldering
-resistor 0805
-0
-2
-2
-OpenMegaChip
-PLCC-84_SMD
-PLCC, 84 pins, through hole
-plcc leaded
-0
-84
-84
-OpenMegaChip
-PinHeader_1x01_P2.54mm_Vertical
-Through hole straight pin header, 1x01, 2.54mm pitch, single row
-Through hole pin header THT 1x01 2.54mm single row
-0
-1
-1
-OpenMegaChip
-Pins84SMD
-surface-mounted straight pin header, 2x11, 2.54mm pitch, double rows
-Surface mounted pin header SMD 2x11 2.54mm double row
-0
-84
-22
-OpenMegaChip
-SOJ-40-Socket
-Support CMS SOJ 40 pins
-CMS SOJ
-0
-40
-40
-OpenMegaChip
-SOJ-40-Socket-LongPads
-Support CMS SOJ 40 pins
-CMS SOJ
-0
-40
-40
 OptoDevice
 ADNS-9800
 Laser Gaming Sensor ADNS-9800
