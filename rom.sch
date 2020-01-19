@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 11
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Sheet 5 11
+Title "CSeventeen"
+Date "2020-01-03"
+Rev "1git"
+Comp "SukkoPera"
+Comment1 "Licensed under CERN OHL v.1.2"
+Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
 $EndDescr

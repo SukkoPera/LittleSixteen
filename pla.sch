@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 10 11
-Title ""
-Date "2019-12-02"
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "CSeventeen"
+Date "2020-01-03"
+Rev "1git"
+Comp "SukkoPera"
+Comment1 "Licensed under CERN OHL v.1.2"
+Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -555,6 +555,14 @@ Wire Wire Line
 	3655 2715 3655 2615
 Wire Wire Line
 	3655 2615 3855 2615
+Text Notes 9705 2735 0    50   ~ 0
+This enables function\nROM HIGH on the +4
+Wire Notes Line
+	9930 2755 9930 3045
+Text Notes 8170 1870 0    50   ~ 0
+This enables function\nROM LOW on the +4
+Wire Notes Line
+	8395 1890 8395 2180
 Wire Bus Line
 	5025 2015 5025 2615
 Wire Bus Line
