@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 11
 Title "LittleSixteen"
-Date "2020-01-03"
+Date "2020-01-20"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -124,7 +124,7 @@ Wire Wire Line
 Wire Wire Line
 	6485 1480 6485 2680
 Wire Wire Line
-	5865 1680 6665 1680
+	5865 1680 5985 1680
 Wire Wire Line
 	6665 1680 6665 1980
 Wire Wire Line
@@ -156,7 +156,7 @@ Entry Wire Line
 Entry Wire Line
 	7030 1580 7130 1680
 Wire Wire Line
-	5865 1580 6860 1580
+	5865 1580 6090 1580
 Wire Wire Line
 	6860 1580 6860 1530
 Wire Wire Line
@@ -200,7 +200,7 @@ k[0..7]
 Wire Wire Line
 	4365 1480 3610 1480
 Wire Wire Line
-	4365 1580 3910 1580
+	4365 1580 3905 1580
 Wire Wire Line
 	4365 1680 4025 1680
 Wire Wire Line
@@ -331,10 +331,6 @@ F 3 "" H 5295 3255 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5295 3255 5295 3170
-Wire Wire Line
-	4025 1680 4025 2920
-Wire Wire Line
-	4025 2920 4995 2920
 Connection ~ 4025 1680
 Wire Wire Line
 	4025 1680 3610 1680
@@ -884,16 +880,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 3855 4745 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3910 1580 3910 2920
+	3905 1580 3905 2510
+Connection ~ 3905 1580
 Wire Wire Line
-	3910 2920 3315 2920
-Wire Wire Line
-	3315 2920 3315 4745
-Connection ~ 3910 1580
-Wire Wire Line
-	3910 1580 3610 1580
-Wire Wire Line
-	3315 4745 3555 4745
+	3905 1580 3610 1580
 Wire Wire Line
 	7955 5760 7955 2580
 Wire Wire Line
@@ -1261,6 +1251,66 @@ Wire Wire Line
 Connection ~ 6685 6295
 Wire Wire Line
 	6685 6295 8315 6295
+Wire Wire Line
+	4765 2920 4995 2920
+Wire Wire Line
+	3905 2510 2775 2510
+Wire Wire Line
+	4025 3270 4615 3270
+Wire Wire Line
+	4615 3270 4615 3170
+Wire Wire Line
+	4025 1680 4025 3270
+Wire Wire Line
+	5985 1680 5985 2510
+Wire Wire Line
+	5985 2510 4615 2510
+Wire Wire Line
+	4615 2510 4615 2670
+Connection ~ 5985 1680
+Wire Wire Line
+	5985 1680 6665 1680
+Wire Wire Line
+	6090 1580 6090 2410
+Connection ~ 6090 1580
+Wire Wire Line
+	6090 1580 6860 1580
+Wire Wire Line
+	3320 4745 3555 4745
+Wire Wire Line
+	2775 5110 3170 5110
+Wire Wire Line
+	3170 5110 3170 4995
+Wire Wire Line
+	2775 2510 2775 5110
+Wire Wire Line
+	6090 2410 3170 2410
+Wire Wire Line
+	3170 2410 3170 4495
+Text Notes 2700 4005 2    50   ~ 0
+The JD1 and JD2 jumpers are not present\nin the original schematics, but I have traced\nthem on my board. They are labeled "D1" and\n"D2", I have renamed them to avoid conflicts\nwith the diodes bearing the same labels.\n\nTheir purpose seems to be able to enable the\njoysticks after passing through the keyboard\ndriver. Since the latter was introduced late in\nthe C16 architecture, maybe the designers\nweren't sure what was best and they kept \nboth possibilities.
+$Comp
+L Jumper:Jumper_3_Bridged12 JD2
+U 1 1 5E31F2CA
+P 4615 2920
+F 0 "JD2" V 4615 2987 50  0000 L CNN
+F 1 "Jumper_3_Bridged12" V 4660 2987 50  0001 L CNN
+F 2 "LittleSixteen:SolderJumper2x" H 4615 2920 50  0001 C CNN
+F 3 "~" H 4615 2920 50  0001 C CNN
+	1    4615 2920
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JD1
+U 1 1 5E450B9C
+P 3170 4745
+F 0 "JD1" V 3170 4812 50  0000 L CNN
+F 1 "Jumper_3_Bridged12" V 3215 4812 50  0001 L CNN
+F 2 "LittleSixteen:SolderJumper2x" H 3170 4745 50  0001 C CNN
+F 3 "~" H 3170 4745 50  0001 C CNN
+	1    3170 4745
+	0    -1   -1   0   
+$EndComp
 Wire Bus Line
 	3510 1380 3510 2085
 Wire Bus Line

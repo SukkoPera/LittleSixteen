@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 11
 Title "LittleSixteen"
-Date "2020-01-03"
+Date "2020-01-20"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -104,10 +104,6 @@ d0
 Text Label 6365 3540 0    60   ~ 0
 d1
 Entry Wire Line
-	2565 1490 2665 1590
-Text Label 2865 1590 0    60   ~ 0
-a0
-Entry Wire Line
 	5215 1490 5315 1590
 Entry Wire Line
 	5215 1790 5315 1890
@@ -123,10 +119,6 @@ Text Label 5015 1490 0    60   ~ 0
 m0
 Text Label 5015 1790 0    60   ~ 0
 m1
-Text Label 5015 2090 0    60   ~ 0
-m2
-Text Label 5015 2390 0    60   ~ 0
-m3
 Wire Wire Line
 	8310 1640 8410 1640
 Wire Wire Line
@@ -199,97 +191,9 @@ Wire Wire Line
 	6265 1940 6265 3640
 Wire Wire Line
 	6165 2040 6165 3740
-Wire Wire Line
-	3475 2790 3320 2790
-Wire Wire Line
-	2665 1590 3475 1590
-Text Label 2865 2490 0    60   ~ 0
-a9
-Text Label 2865 2390 0    60   ~ 0
-a10
-Text Label 2865 2190 0    60   ~ 0
-a2
-Text Label 2865 2090 0    60   ~ 0
-a9
-Text Label 2865 1890 0    60   ~ 0
-a1
-Text Label 2865 1790 0    60   ~ 0
-a8
-Entry Wire Line
-	2565 2390 2665 2490
-Entry Wire Line
-	2565 2290 2665 2390
-Entry Wire Line
-	2565 2090 2665 2190
-Entry Wire Line
-	2565 1990 2665 2090
-Entry Wire Line
-	2565 1790 2665 1890
-Entry Wire Line
-	2565 1690 2665 1790
-Wire Wire Line
-	2665 1790 3475 1790
-Wire Wire Line
-	2665 1890 3475 1890
-Wire Wire Line
-	2665 2090 3475 2090
-Wire Wire Line
-	2665 2190 3475 2190
-Wire Wire Line
-	2665 2490 3475 2490
-Wire Wire Line
-	2665 2390 3475 2390
-Wire Wire Line
-	1905 2690 2420 2690
-Wire Wire Line
-	4475 1790 4545 1790
-Wire Wire Line
-	4475 2390 4545 2390
-Wire Wire Line
-	4475 1490 4545 1490
-Wire Wire Line
-	4475 2090 4545 2090
-$Comp
-L power:VCC #PWR0118
-U 1 1 5E691A04
-P 3320 1130
-F 0 "#PWR0118" H 3320 980 50  0001 C CNN
-F 1 "VCC" H 3337 1303 50  0000 C CNN
-F 2 "" H 3320 1130 50  0001 C CNN
-F 3 "" H 3320 1130 50  0001 C CNN
-	1    3320 1130
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3475 1490 3320 1490
-Wire Wire Line
-	3320 1490 3320 1130
 Connection ~ 6015 5230
 Wire Bus Line
 	6015 5230 8985 5230
-Text GLabel 1905 2690 0    50   Input ~ 0
-MUX
-Wire Bus Line
-	2565 1490 2050 1490
-Text GLabel 2050 1490 0    50   Input ~ 0
-a[0..15]
-$Comp
-L power:GND #PWR0119
-U 1 1 5E6F60AB
-P 3320 3160
-F 0 "#PWR0119" H 3320 2910 50  0001 C CNN
-F 1 "GND" H 3325 2987 50  0000 C CNN
-F 2 "" H 3320 3160 50  0001 C CNN
-F 3 "" H 3320 3160 50  0001 C CNN
-	1    3320 3160
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3320 2790 3320 3160
-Entry Wire Line
-	2565 4230 2665 4330
-Text Label 2865 4330 0    60   ~ 0
-a4
 Entry Wire Line
 	5215 4230 5315 4330
 Entry Wire Line
@@ -304,68 +208,6 @@ Text Label 5015 4530 0    60   ~ 0
 m5
 Text Label 5015 5130 0    60   ~ 0
 m7
-Wire Wire Line
-	3475 5530 3320 5530
-Wire Wire Line
-	2665 4330 3475 4330
-Text Label 2865 5230 0    60   ~ 0
-a7
-Text Label 2865 4830 0    60   ~ 0
-a13
-Text Label 2865 4930 0    60   ~ 0
-a6
-Text Label 2865 4630 0    60   ~ 0
-a5
-Text Label 2865 4530 0    60   ~ 0
-a12
-Entry Wire Line
-	2565 5130 2665 5230
-Entry Wire Line
-	2565 4730 2665 4830
-Entry Wire Line
-	2565 4830 2665 4930
-Entry Wire Line
-	2565 4530 2665 4630
-Entry Wire Line
-	2565 4430 2665 4530
-Wire Wire Line
-	2665 4530 3475 4530
-Wire Wire Line
-	2665 4630 3475 4630
-Wire Wire Line
-	2665 4930 3475 4930
-Wire Wire Line
-	2665 5230 3475 5230
-$Comp
-L power:VCC #PWR0120
-U 1 1 5E710070
-P 3320 3870
-F 0 "#PWR0120" H 3320 3720 50  0001 C CNN
-F 1 "VCC" H 3337 4043 50  0000 C CNN
-F 2 "" H 3320 3870 50  0001 C CNN
-F 3 "" H 3320 3870 50  0001 C CNN
-	1    3320 3870
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 5E710080
-P 3320 5900
-F 0 "#PWR0121" H 3320 5650 50  0001 C CNN
-F 1 "GND" H 3325 5727 50  0000 C CNN
-F 2 "" H 3320 5900 50  0001 C CNN
-F 3 "" H 3320 5900 50  0001 C CNN
-	1    3320 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3320 5530 3320 5900
-Entry Wire Line
-	2565 4130 2665 4230
-Text Label 2865 4230 0    60   ~ 0
-a11
-Wire Wire Line
-	2665 4230 3475 4230
 $Comp
 L 4416:4416 U6
 U 1 1 5E74C446
@@ -504,36 +346,10 @@ Wire Wire Line
 	6705 4140 6810 4140
 Entry Wire Line
 	9085 3440 9185 3340
-$Comp
-L r_pack04:R_Pack04 RP3
-U 1 1 5E9B0DDD
-P 4745 1950
-F 0 "RP3" V 4068 1950 50  0000 C CNN
-F 1 "68" V 4159 1950 50  0000 C CNN
-F 2 "" V 5120 1950 50  0001 C CNN
-F 3 "" H 4795 1950 50  0001 C CNN
-	1    4745 1950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4945 1490 5215 1490
 Wire Wire Line
 	4945 1790 5215 1790
-Wire Wire Line
-	4945 2090 5215 2090
-Wire Wire Line
-	4945 2390 5215 2390
-$Comp
-L r_pack04:R_Pack04 RP4
-U 1 1 5E9C15B2
-P 4745 4690
-F 0 "RP4" V 4068 4690 50  0000 C CNN
-F 1 "68" V 4159 4690 50  0000 C CNN
-F 2 "" V 5120 4690 50  0001 C CNN
-F 3 "" H 4795 4690 50  0001 C CNN
-	1    4745 4690
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4945 4230 5215 4230
 Wire Wire Line
@@ -542,53 +358,8 @@ Wire Wire Line
 	4945 4830 5215 4830
 Wire Wire Line
 	4945 5130 5215 5130
-Text Notes 4810 3585 1    50   ~ 0
-TODO: Check pins\nof RP3/4
 Text Label 5015 4830 0    60   ~ 0
 m6
-$Comp
-L 74ls157:74LS157 U8
-U 1 1 5E9C487A
-P 3975 4830
-F 0 "U8" H 3975 5580 50  0000 C CNN
-F 1 "74LS257" H 3975 3960 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3975 4830 50  0001 C CNN
-F 3 "" H 3975 4830 50  0001 C CNN
-	1    3975 4830
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4475 4530 4545 4530
-Wire Wire Line
-	4475 5130 4545 5130
-Wire Wire Line
-	4475 4230 4545 4230
-Wire Wire Line
-	4475 4830 4545 4830
-Wire Wire Line
-	3320 5130 3475 5130
-Wire Wire Line
-	2665 4830 3475 4830
-Wire Wire Line
-	3320 3870 3320 5130
-Wire Wire Line
-	2420 2690 2420 5430
-Wire Wire Line
-	2420 5430 3475 5430
-Connection ~ 2420 2690
-Wire Wire Line
-	2420 2690 3475 2690
-$Comp
-L 74ls157:74LS157 U7
-U 1 1 5EA19058
-P 3975 2090
-F 0 "U7" H 3975 2840 50  0000 C CNN
-F 1 "74LS257" H 3975 1220 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3975 2090 50  0001 C CNN
-F 3 "" H 3975 2090 50  0001 C CNN
-	1    3975 2090
-	1    0    0    -1  
-$EndComp
 $Comp
 L 74ls157:74LS157 U7
 U 2 1 5EA2906C
@@ -611,8 +382,6 @@ F 3 "" H 4510 7010 50  0001 C CNN
 	2    4510 7010
 	1    0    0    -1  
 $EndComp
-Text Notes 2720 3580 0    50   ~ 0
-U7 and U8 can either be 74x157 or 74x257,\nsince they are permanently enabled
 Wire Wire Line
 	3645 7410 3645 7485
 Wire Wire Line
@@ -770,10 +539,241 @@ F 3 "~" H 5850 6990 50  0001 C CNN
 	1    5850 6990
 	1    0    0    -1  
 $EndComp
+Text Label 5015 2090 0    60   ~ 0
+m2
+Wire Wire Line
+	4945 2090 5215 2090
+Text Label 5015 2390 0    60   ~ 0
+m3
+Wire Wire Line
+	4945 2390 5215 2390
+Entry Wire Line
+	2565 1490 2665 1590
+Text Label 2865 1590 0    60   ~ 0
+a0
+Wire Wire Line
+	3475 2790 3320 2790
+Wire Wire Line
+	2665 1590 3475 1590
+Text Label 2865 2490 0    60   ~ 0
+a3
+Text Label 2865 2390 0    60   ~ 0
+a10
+Text Label 2865 2190 0    60   ~ 0
+a2
+Text Label 2865 2090 0    60   ~ 0
+a9
+Text Label 2865 1890 0    60   ~ 0
+a1
+Text Label 2865 1790 0    60   ~ 0
+a8
+Entry Wire Line
+	2565 2390 2665 2490
+Entry Wire Line
+	2565 2290 2665 2390
+Entry Wire Line
+	2565 2090 2665 2190
+Entry Wire Line
+	2565 1990 2665 2090
+Entry Wire Line
+	2565 1790 2665 1890
+Entry Wire Line
+	2565 1690 2665 1790
+Wire Wire Line
+	2665 1790 3475 1790
+Wire Wire Line
+	2665 1890 3475 1890
+Wire Wire Line
+	2665 2090 3475 2090
+Wire Wire Line
+	2665 2190 3475 2190
+Wire Wire Line
+	2665 2490 3475 2490
+Wire Wire Line
+	2665 2390 3475 2390
+Wire Wire Line
+	1905 2690 2420 2690
+$Comp
+L power:VCC #PWR0118
+U 1 1 5E691A04
+P 3320 1130
+F 0 "#PWR0118" H 3320 980 50  0001 C CNN
+F 1 "VCC" H 3337 1303 50  0000 C CNN
+F 2 "" H 3320 1130 50  0001 C CNN
+F 3 "" H 3320 1130 50  0001 C CNN
+	1    3320 1130
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 1490 3320 1490
+Wire Wire Line
+	3320 1490 3320 1130
+Text GLabel 1905 2690 0    50   Input ~ 0
+MUX
 Wire Bus Line
-	9185 1220 9185 3545
+	2565 1490 2050 1490
+Text GLabel 2050 1490 0    50   Input ~ 0
+a[0..15]
+$Comp
+L power:GND #PWR0119
+U 1 1 5E6F60AB
+P 3320 3160
+F 0 "#PWR0119" H 3320 2910 50  0001 C CNN
+F 1 "GND" H 3325 2987 50  0000 C CNN
+F 2 "" H 3320 3160 50  0001 C CNN
+F 3 "" H 3320 3160 50  0001 C CNN
+	1    3320 3160
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3320 2790 3320 3160
+Entry Wire Line
+	2565 4230 2665 4330
+Text Label 2865 4330 0    60   ~ 0
+a4
+Wire Wire Line
+	3475 5530 3320 5530
+Wire Wire Line
+	2665 4330 3475 4330
+Text Label 2865 5230 0    60   ~ 0
+a7
+Text Label 2865 4830 0    60   ~ 0
+a13
+Text Label 2865 4930 0    60   ~ 0
+a6
+Text Label 2865 4630 0    60   ~ 0
+a5
+Text Label 2865 4530 0    60   ~ 0
+a12
+Entry Wire Line
+	2565 5130 2665 5230
+Entry Wire Line
+	2565 4730 2665 4830
+Entry Wire Line
+	2565 4830 2665 4930
+Entry Wire Line
+	2565 4530 2665 4630
+Entry Wire Line
+	2565 4430 2665 4530
+Wire Wire Line
+	2665 4530 3475 4530
+Wire Wire Line
+	2665 4630 3475 4630
+Wire Wire Line
+	2665 4930 3475 4930
+Wire Wire Line
+	2665 5230 3475 5230
+$Comp
+L power:VCC #PWR0120
+U 1 1 5E710070
+P 3320 3870
+F 0 "#PWR0120" H 3320 3720 50  0001 C CNN
+F 1 "VCC" H 3337 4043 50  0000 C CNN
+F 2 "" H 3320 3870 50  0001 C CNN
+F 3 "" H 3320 3870 50  0001 C CNN
+	1    3320 3870
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5E710080
+P 3320 5900
+F 0 "#PWR0121" H 3320 5650 50  0001 C CNN
+F 1 "GND" H 3325 5727 50  0000 C CNN
+F 2 "" H 3320 5900 50  0001 C CNN
+F 3 "" H 3320 5900 50  0001 C CNN
+	1    3320 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3320 5530 3320 5900
+Entry Wire Line
+	2565 4130 2665 4230
+Text Label 2865 4230 0    60   ~ 0
+a11
+Wire Wire Line
+	2665 4230 3475 4230
+$Comp
+L 74ls157:74LS157 U8
+U 1 1 5E9C487A
+P 3975 4830
+F 0 "U8" H 3975 5580 50  0000 C CNN
+F 1 "74LS257" H 3975 3960 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3975 4830 50  0001 C CNN
+F 3 "" H 3975 4830 50  0001 C CNN
+	1    3975 4830
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3320 5130 3475 5130
+Wire Wire Line
+	2665 4830 3475 4830
+Wire Wire Line
+	3320 3870 3320 5130
+Wire Wire Line
+	2420 2690 2420 5430
+Wire Wire Line
+	2420 5430 3475 5430
+Connection ~ 2420 2690
+Wire Wire Line
+	2420 2690 3475 2690
+$Comp
+L 74ls157:74LS157 U7
+U 1 1 5EA19058
+P 3975 2090
+F 0 "U7" H 3975 2840 50  0000 C CNN
+F 1 "74LS257" H 3975 1220 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3975 2090 50  0001 C CNN
+F 3 "" H 3975 2090 50  0001 C CNN
+	1    3975 2090
+	1    0    0    -1  
+$EndComp
+Text Notes 2720 3580 0    50   ~ 0
+U7 and U8 can either be 74x157 or 74x257,\nsince they are permanently enabled
+Wire Wire Line
+	4475 5130 4545 5130
+Wire Wire Line
+	4475 4230 4545 4230
+Wire Wire Line
+	4475 4530 4545 4530
+Wire Wire Line
+	4475 4830 4545 4830
+Wire Wire Line
+	4475 2390 4545 2390
+Wire Wire Line
+	4475 1490 4545 1490
+Wire Wire Line
+	4475 2090 4545 2090
+Wire Wire Line
+	4475 1790 4545 1790
+$Comp
+L rp3:RPack4_RP3 RP3
+U 1 1 5E2F7E53
+P 4745 1950
+F 0 "RP3" V 4068 1950 50  0000 C CNN
+F 1 "68" V 4159 1950 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 4810 1950 50  0001 C CNN
+F 3 "" H 4885 1950 50  0001 C CNN
+	1    4745 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L rp4:RPack4_RP4 RP4
+U 1 1 5E55EE90
+P 4745 4690
+F 0 "RP4" V 4068 4690 50  0000 C CNN
+F 1 "68" V 4159 4690 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 4810 4690 50  0001 C CNN
+F 3 "" H 4885 4690 50  0001 C CNN
+	1    4745 4690
+	0    1    1    0   
+$EndComp
+Text Notes 4810 3585 1    50   ~ 0
+Yes, RP3/4 have this\nweird pin numbering...
 Wire Bus Line
 	5815 1220 5815 3440
+Wire Bus Line
+	9185 1220 9185 3545
 Wire Bus Line
 	6015 2240 6015 5230
 Wire Bus Line

@@ -12,4 +12,6 @@
   (lib (name 23128)(type Legacy)(uri ${KIPRJMOD}/lib/23128.lib)(options "")(descr ""))
   (lib (name MOS_251641_PLA)(type Legacy)(uri ${KIPRJMOD}/lib/MOS_251641_PLA.lib)(options "")(descr ""))
   (lib (name Modulator)(type Legacy)(uri ${KIPRJMOD}/lib/Modulator.lib)(options "")(descr ""))
+  (lib (name rp3)(type Legacy)(uri ${KIPRJMOD}/lib/rp3.lib)(options "")(descr ""))
+  (lib (name rp4)(type Legacy)(uri ${KIPRJMOD}/lib/rp4.lib)(options "")(descr ""))
 )
