@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 11
 Title "LittleSixteen"
-Date "2020-01-03"
+Date "2020-10-04"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CERN OHL v.1.2"
@@ -19,7 +19,7 @@ U 1 1 5E01B0CC
 P 6060 2930
 F 0 "M1" H 6440 3425 50  0000 C CNN
 F 1 "Modulator" H 6315 2440 50  0000 C CNN
-F 2 "" H 6260 2980 50  0001 C CNN
+F 2 "CommodorePlus4:RF_Modulator" H 6260 2980 50  0001 C CNN
 F 3 "" H 6260 2980 50  0001 C CNN
 	1    6060 2930
 	1    0    0    -1  
@@ -27,20 +27,16 @@ $EndComp
 $Comp
 L Device:C C11
 U 1 1 5E01CA58
-P 7000 2680
-F 0 "C11" H 7115 2726 50  0000 L CNN
-F 1 "100n" H 7115 2635 50  0000 L CNN
-F 2 "" H 7038 2530 50  0001 C CNN
-F 3 "~" H 7000 2680 50  0001 C CNN
-	1    7000 2680
+P 7000 2055
+F 0 "C11" H 7115 2101 50  0000 L CNN
+F 1 "100n" H 7115 2010 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 7038 1905 50  0001 C CNN
+F 3 "~" H 7000 2055 50  0001 C CNN
+	1    7000 2055
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6060 2110 6530 2110
-Wire Wire Line
-	7000 2110 7000 2530
-Wire Wire Line
-	7000 2830 7000 3755
+	7000 2205 7000 3755
 Wire Wire Line
 	7000 3755 6530 3755
 Wire Wire Line
@@ -64,39 +60,34 @@ Wire Wire Line
 $Comp
 L Device:L L1
 U 1 1 5E01E939
-P 6530 1785
-F 0 "L1" H 6582 1831 50  0000 L CNN
-F 1 "1.2u" H 6582 1740 50  0000 L CNN
-F 2 "" H 6530 1785 50  0001 C CNN
-F 3 "~" H 6530 1785 50  0001 C CNN
-	1    6530 1785
+P 6060 2035
+F 0 "L1" H 6112 2081 50  0000 L CNN
+F 1 "1.2u" H 6112 1990 50  0000 L CNN
+F 2 "" H 6060 2035 50  0001 C CNN
+F 3 "~" H 6060 2035 50  0001 C CNN
+	1    6060 2035
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6530 1935 6530 2110
-Connection ~ 6530 2110
-Wire Wire Line
-	6530 2110 7000 2110
 $Comp
 L power:VCC #PWR0178
 U 1 1 5E021287
-P 6530 1510
-F 0 "#PWR0178" H 6530 1360 50  0001 C CNN
-F 1 "VCC" H 6547 1683 50  0000 C CNN
-F 2 "" H 6530 1510 50  0001 C CNN
-F 3 "" H 6530 1510 50  0001 C CNN
-	1    6530 1510
+P 6530 1680
+F 0 "#PWR0178" H 6530 1530 50  0001 C CNN
+F 1 "VCC" H 6547 1853 50  0000 C CNN
+F 2 "" H 6530 1680 50  0001 C CNN
+F 3 "" H 6530 1680 50  0001 C CNN
+	1    6530 1680
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6530 1510 6530 1635
+	6530 1680 6530 1765
 $Comp
 L Connector:DIN-8 CN6
 U 1 1 5E022697
 P 9695 3130
 F 0 "CN6" H 9695 3725 50  0000 C CNN
 F 1 "AUDIO_VIDEO" H 9695 3640 50  0000 C CNN
-F 2 "" H 9695 3130 50  0001 C CNN
+F 2 "CommodorePlus4:Connector_DIN_Female_8Pin_3rows" H 9695 3130 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 9695 3130 50  0001 C CNN
 	1    9695 3130
 	1    0    0    -1  
@@ -107,7 +98,7 @@ U 1 1 5E029075
 P 7650 3080
 F 0 "EM5" H 7650 3275 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 7650 3306 50  0001 C CNN
-F 2 "" V 7650 3080 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 7650 3080 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 7650 3080 50  0001 C CNN
 	1    7650 3080
 	1    0    0    -1  
@@ -118,7 +109,7 @@ U 1 1 5E02CB2E
 P 8710 3230
 F 0 "EM3" H 8710 3425 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 8710 3456 50  0001 C CNN
-F 2 "" V 8710 3230 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8710 3230 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 8710 3230 50  0001 C CNN
 	1    8710 3230
 	1    0    0    -1  
@@ -129,7 +120,7 @@ U 1 1 5E02E767
 P 8185 3380
 F 0 "EM4" H 8185 3575 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 8185 3606 50  0001 C CNN
-F 2 "" V 8185 3380 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8185 3380 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 8185 3380 50  0001 C CNN
 	1    8185 3380
 	1    0    0    -1  
@@ -204,7 +195,7 @@ U 1 1 5E03E255
 P 10100 3530
 F 0 "FB13" H 10200 3530 50  0000 L CNN
 F 1 "Ferrite_Bead_Small" H 10200 3485 50  0001 L CNN
-F 2 "" V 10030 3530 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 10030 3530 50  0001 C CNN
 F 3 "~" H 10100 3530 50  0001 C CNN
 	1    10100 3530
 	1    0    0    -1  
@@ -217,7 +208,7 @@ U 1 1 5E03F938
 P 10505 3130
 F 0 "FB12" V 10360 3130 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 10605 3085 50  0001 L CNN
-F 2 "" V 10435 3130 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 10435 3130 50  0001 C CNN
 F 3 "~" H 10505 3130 50  0001 C CNN
 	1    10505 3130
 	0    1    1    0   
@@ -228,7 +219,7 @@ U 1 1 5E040A9B
 P 10305 3030
 F 0 "FB58" V 10160 3030 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 10405 2985 50  0001 L CNN
-F 2 "" V 10235 3030 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 10235 3030 50  0001 C CNN
 F 3 "~" H 10305 3030 50  0001 C CNN
 	1    10305 3030
 	0    1    1    0   
@@ -253,7 +244,7 @@ U 1 1 5E05604E
 P 1775 2780
 F 0 "R28" V 1568 2780 50  0000 C CNN
 F 1 "1k" V 1659 2780 50  0000 C CNN
-F 2 "" V 1705 2780 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1705 2780 50  0001 C CNN
 F 3 "~" H 1775 2780 50  0001 C CNN
 	1    1775 2780
 	0    1    1    0   
@@ -268,7 +259,7 @@ U 1 1 5E057298
 P 1500 3000
 F 0 "R25" H 1570 3046 50  0000 L CNN
 F 1 "100k" H 1570 2955 50  0000 L CNN
-F 2 "" V 1430 3000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1430 3000 50  0001 C CNN
 F 3 "~" H 1500 3000 50  0001 C CNN
 	1    1500 3000
 	1    0    0    -1  
@@ -292,7 +283,7 @@ U 1 1 5E059C15
 P 2195 2780
 F 0 "C18" V 1943 2780 50  0000 C CNN
 F 1 "10u/25V" V 2034 2780 50  0000 C CNN
-F 2 "" H 2195 2780 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2195 2780 50  0001 C CNN
 F 3 "~" H 2195 2780 50  0001 C CNN
 	1    2195 2780
 	0    1    1    0   
@@ -305,7 +296,7 @@ U 1 1 5E06101C
 P 1775 2265
 F 0 "R8" V 1568 2265 50  0000 C CNN
 F 1 "1k" V 1659 2265 50  0000 C CNN
-F 2 "" V 1705 2265 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1705 2265 50  0001 C CNN
 F 3 "~" H 1775 2265 50  0001 C CNN
 	1    1775 2265
 	0    1    1    0   
@@ -316,7 +307,7 @@ U 1 1 5E061026
 P 2195 2265
 F 0 "C19" V 1943 2265 50  0000 C CNN
 F 1 "10u/25V" V 2034 2265 50  0000 C CNN
-F 2 "" H 2195 2265 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2195 2265 50  0001 C CNN
 F 3 "~" H 2195 2265 50  0001 C CNN
 	1    2195 2265
 	0    1    1    0   
@@ -344,7 +335,7 @@ U 1 1 5E067484
 P 3505 2515
 F 0 "R24" V 3298 2515 50  0000 C CNN
 F 1 "1k" V 3389 2515 50  0000 C CNN
-F 2 "" V 3435 2515 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3435 2515 50  0001 C CNN
 F 3 "~" H 3505 2515 50  0001 C CNN
 	1    3505 2515
 	0    1    1    0   
@@ -355,7 +346,7 @@ U 1 1 5E067CC1
 P 2835 2780
 F 0 "R9" H 2905 2826 50  0000 L CNN
 F 1 "12k" H 2905 2735 50  0000 L CNN
-F 2 "" V 2765 2780 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 2765 2780 50  0001 C CNN
 F 3 "~" H 2835 2780 50  0001 C CNN
 	1    2835 2780
 	1    0    0    -1  
@@ -371,7 +362,7 @@ U 1 1 5E06AC0B
 P 3140 2780
 F 0 "C20" H 3255 2826 50  0000 L CNN
 F 1 "10n" H 3255 2735 50  0000 L CNN
-F 2 "" H 3178 2630 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3178 2630 50  0001 C CNN
 F 3 "~" H 3140 2780 50  0001 C CNN
 	1    3140 2780
 	1    0    0    -1  
@@ -387,7 +378,7 @@ U 1 1 5E06CD62
 P 3990 2515
 F 0 "Q3" H 4180 2561 50  0000 L CNN
 F 1 "2SC1815" H 4180 2470 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4190 2440 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 4190 2440 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 3990 2515 50  0001 L CNN
 	1    3990 2515
 	1    0    0    -1  
@@ -415,7 +406,7 @@ U 1 1 5E0721C1
 P 3140 2200
 F 0 "R23" H 3210 2246 50  0000 L CNN
 F 1 "10k" H 3210 2155 50  0000 L CNN
-F 2 "" V 3070 2200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3070 2200 50  0001 C CNN
 F 3 "~" H 3140 2200 50  0001 C CNN
 	1    3140 2200
 	1    0    0    -1  
@@ -458,7 +449,7 @@ U 1 1 5E0D6134
 P 4340 3750
 F 0 "R26" V 4133 3750 50  0000 C CNN
 F 1 "240" V 4224 3750 50  0000 C CNN
-F 2 "" V 4270 3750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 4270 3750 50  0001 C CNN
 F 3 "~" H 4340 3750 50  0001 C CNN
 	1    4340 3750
 	0    1    1    0   
@@ -469,7 +460,7 @@ U 1 1 5E0D6DA0
 P 4670 3980
 F 0 "R27" H 4600 3934 50  0000 R CNN
 F 1 "240" H 4600 4025 50  0000 R CNN
-F 2 "" V 4600 3980 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 4600 3980 50  0001 C CNN
 F 3 "~" H 4670 3980 50  0001 C CNN
 	1    4670 3980
 	-1   0    0    1   
@@ -497,7 +488,7 @@ U 1 1 5E0DD47B
 P 5010 3750
 F 0 "C31" V 4758 3750 50  0000 C CNN
 F 1 "10u/25V" V 4849 3750 50  0000 C CNN
-F 2 "" H 5010 3750 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5010 3750 50  0001 C CNN
 F 3 "~" H 5010 3750 50  0001 C CNN
 	1    5010 3750
 	0    -1   1    0   
@@ -511,7 +502,7 @@ U 1 1 5E0E0320
 P 5340 3980
 F 0 "R11" H 5270 3934 50  0000 R CNN
 F 1 "100k" H 5270 4025 50  0000 R CNN
-F 2 "" V 5270 3980 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5270 3980 50  0001 C CNN
 F 3 "~" H 5340 3980 50  0001 C CNN
 	1    5340 3980
 	-1   0    0    1   
@@ -556,12 +547,21 @@ Wire Wire Line
 Wire Wire Line
 	4090 1780 4090 1875
 Connection ~ 4090 1875
-Wire Wire Line
-	6060 2280 6060 2110
 Text Notes 10670 3010 0    50   ~ 0
 EXT_AUDIO
 Text Notes 10280 3315 0    50   ~ 0
 AUDIO_OUT
 Text Notes 8575 2360 0    50   ~ 0
 From C64-Wiki (C64 uses the same connector):\n\nThe eight pin jack is *not* the more common DIN 45326\n(pins spanning 270°, circular like a horseshoe), but\nDIN 41524 (pins spanning 262°, a "U" shape with a more\nopen end). It's possible to forcibly plug in a wrong plug into\nthe jack, but one should get the right plug in the first place\non a new purchase. Should you happen to get the wrong\nplug and wasn't planning to use the +5V pin then you can\nremove the upper two pins out for a perfect fit.
+Wire Wire Line
+	6530 1765 7000 1765
+Connection ~ 6530 1765
+Wire Wire Line
+	7000 1765 7000 1905
+Wire Wire Line
+	6530 1765 6060 1765
+Wire Wire Line
+	6060 1765 6060 1885
+Wire Wire Line
+	6060 2185 6060 2280
 $EndSCHEMATC
