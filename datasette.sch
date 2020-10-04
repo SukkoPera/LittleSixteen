@@ -156,17 +156,6 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/sanyo/ds_pdf_e/2SB631.pdf" H 7815
 	1    7815 2250
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB19
-U 1 1 5ECC99AD
-P 7390 2560
-F 0 "FB19" V 7535 2560 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 7490 2515 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 7320 2560 50  0001 C CNN
-F 3 "~" H 7390 2560 50  0001 C CNN
-	1    7390 2560
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7490 2560 7715 2560
 Wire Wire Line
@@ -348,7 +337,7 @@ CASSETTE
 Wire Wire Line
 	8215 2740 8215 3100
 Wire Wire Line
-	8215 3100 5850 3100
+	8215 3100 7390 3100
 Connection ~ 5850 3100
 Wire Wire Line
 	2895 2970 2895 3100
@@ -403,19 +392,6 @@ Text Notes 9710 2175 2    50   ~ 0
 CST_MTR
 Text Label 9330 2250 2    50   ~ 0
 p3
-$Comp
-L Connector:DIN-6 CN7
-U 1 1 5ED6C96C
-P 4140 5725
-F 0 "CN7" H 4140 6330 50  0000 C CNN
-F 1 "SERIAL_BUS" H 4140 6245 50  0000 C CNN
-F 2 "CommodorePlus4:Connector_DIN_Female_6Pin_3rows" H 4140 5725 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4140 5725 50  0001 C CNN
-	1    4140 5725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3840 5825 3555 5825
 Wire Wire Line
 	3555 5825 3555 5480
 $Comp
@@ -442,49 +418,8 @@ F 3 "" H 3555 5085 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3555 5085 3555 5180
-$Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 5ED7203F
-P 3680 6015
-F 0 "FB1" H 3580 6015 50  0000 R CNN
-F 1 "Ferrite_Bead_Small" H 3780 5970 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 3610 6015 50  0001 C CNN
-F 3 "~" H 3680 6015 50  0001 C CNN
-	1    3680 6015
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3680 5915 3680 5625
-Wire Wire Line
-	3680 5625 3840 5625
-Wire Wire Line
-	3680 6115 3680 6225
-$Comp
-L power:GND #PWR0158
-U 1 1 5ED75A9A
-P 3680 6225
-F 0 "#PWR0158" H 3680 5975 50  0001 C CNN
-F 1 "GND" H 3685 6052 50  0000 C CNN
-F 2 "" H 3680 6225 50  0001 C CNN
-F 3 "" H 3680 6225 50  0001 C CNN
-	1    3680 6225
-	1    0    0    -1  
-$EndComp
 Text Notes 4400 5335 2    50   ~ 0
 FEMALE DIN-6
-Wire Wire Line
-	4140 5425 4140 5380
-$Comp
-L Device:Ferrite_Bead_Small FB5
-U 1 1 5ED7946B
-P 4775 5380
-F 0 "FB5" V 4920 5380 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 4875 5335 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 4705 5380 50  0001 C CNN
-F 3 "~" H 4775 5380 50  0001 C CNN
-	1    4775 5380
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4140 5380 4675 5380
 $Comp
@@ -502,19 +437,6 @@ Wire Wire Line
 	4875 5380 5505 5380
 Text Label 7690 5380 2    50   ~ 0
 p2
-$Comp
-L Device:Ferrite_Bead_Small FB4
-U 1 1 5ED81D59
-P 5075 5625
-F 0 "FB4" V 5220 5625 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 5175 5580 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 5005 5625 50  0001 C CNN
-F 3 "~" H 5075 5625 50  0001 C CNN
-	1    5075 5625
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4440 5625 4975 5625
 Wire Wire Line
 	5175 5625 5800 5625
 Wire Wire Line
@@ -532,19 +454,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 7205 5625 50  0001 C CNN
 	5    7205 5625
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB3
-U 1 1 5ED88505
-P 4775 5825
-F 0 "FB3" V 4630 5825 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 4875 5780 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 4705 5825 50  0001 C CNN
-F 3 "~" H 4775 5825 50  0001 C CNN
-	1    4775 5825
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4440 5825 4675 5825
 Wire Wire Line
 	4875 5825 5950 5825
 $Comp
@@ -564,19 +473,6 @@ Text Label 7690 5825 2    50   ~ 0
 p0
 Wire Wire Line
 	7205 5380 7790 5380
-Wire Wire Line
-	4140 6025 4140 6070
-$Comp
-L Device:Ferrite_Bead_Small FB2
-U 1 1 5ED99E91
-P 5070 6070
-F 0 "FB2" V 5215 6070 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 5170 6025 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 5000 6070 50  0001 C CNN
-F 3 "~" H 5070 6070 50  0001 C CNN
-	1    5070 6070
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4140 6070 4970 6070
 Wire Wire Line
@@ -730,6 +626,164 @@ Text Notes 2370 1490 0    157  ~ 0
 DATASSETTE\nINTERFACE
 Text Notes 6930 2385 2    50   ~ 0
 CST_WRT
+$Comp
+L Ferrite3Pin:Ferrite_3pin FB3
+U 1 1 5E29E46B
+P 4775 5825
+F 0 "FB3" V 4660 5825 50  0000 C CNN
+F 1 "Ferrite_3pin" V 4629 5825 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 4705 5825 50  0001 C CNN
+F 3 "~" H 4775 5825 50  0001 C CNN
+	1    4775 5825
+	0    -1   1    0   
+$EndComp
+$Comp
+L Ferrite3Pin:Ferrite_3pin FB2
+U 1 1 5E2AB049
+P 5070 6070
+F 0 "FB2" V 4955 6070 50  0000 C CNN
+F 1 "Ferrite_3pin" V 4924 6070 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 5000 6070 50  0001 C CNN
+F 3 "~" H 5070 6070 50  0001 C CNN
+	1    5070 6070
+	0    -1   1    0   
+$EndComp
+$Comp
+L Ferrite3Pin:Ferrite_3pin FB4
+U 1 1 5E2AB69F
+P 5075 5625
+F 0 "FB4" V 4960 5625 50  0000 C CNN
+F 1 "Ferrite_3pin" V 4929 5625 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 5005 5625 50  0001 C CNN
+F 3 "~" H 5075 5625 50  0001 C CNN
+	1    5075 5625
+	0    -1   1    0   
+$EndComp
+$Comp
+L Ferrite3Pin:Ferrite_3pin FB5
+U 1 1 5E2AC1A5
+P 4775 5380
+F 0 "FB5" V 4660 5380 50  0000 C CNN
+F 1 "Ferrite_3pin" V 4629 5380 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 4705 5380 50  0001 C CNN
+F 3 "~" H 4775 5380 50  0001 C CNN
+	1    4775 5380
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4775 5480 4775 5515
+Wire Wire Line
+	4775 5515 4595 5515
+Wire Wire Line
+	4595 5515 4595 6290
+Wire Wire Line
+	4595 6290 4775 6290
+Wire Wire Line
+	5070 6290 5070 6170
+Wire Wire Line
+	4775 5925 4775 6290
+Wire Wire Line
+	5075 5725 5075 5755
+Wire Wire Line
+	5075 5755 4925 5755
+Wire Wire Line
+	4925 5755 4925 6290
+Connection ~ 4925 6290
+Wire Wire Line
+	4925 6290 5070 6290
+Connection ~ 4775 6290
+$Comp
+L power:GND #PWR0184
+U 1 1 5E2C1840
+P 4850 6345
+F 0 "#PWR0184" H 4850 6095 50  0001 C CNN
+F 1 "GND" H 4855 6172 50  0000 C CNN
+F 2 "" H 4850 6345 50  0001 C CNN
+F 3 "" H 4850 6345 50  0001 C CNN
+	1    4850 6345
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6290 4850 6345
+Wire Wire Line
+	4775 6290 4850 6290
+Connection ~ 4850 6290
+Wire Wire Line
+	4850 6290 4925 6290
+Wire Wire Line
+	4140 6025 4140 6070
+Wire Wire Line
+	4440 5825 4675 5825
+Wire Wire Line
+	4440 5625 4975 5625
+Wire Wire Line
+	4140 5425 4140 5380
+Wire Wire Line
+	3680 5625 3840 5625
+Wire Wire Line
+	3840 5825 3555 5825
+Wire Wire Line
+	3680 6290 3680 6345
+Connection ~ 3680 6290
+Wire Wire Line
+	3865 6290 3680 6290
+Wire Wire Line
+	3865 6135 3865 6290
+Wire Wire Line
+	3780 6135 3865 6135
+$Comp
+L Ferrite3Pin:Ferrite_3pin FB1
+U 1 1 5E2BCB55
+P 3680 6135
+F 0 "FB1" H 3580 6135 50  0000 R CNN
+F 1 "Ferrite_3pin" V 3534 6135 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 3610 6135 50  0001 C CNN
+F 3 "~" H 3680 6135 50  0001 C CNN
+	1    3680 6135
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0158
+U 1 1 5ED75A9A
+P 3680 6345
+F 0 "#PWR0158" H 3680 6095 50  0001 C CNN
+F 1 "GND" H 3685 6172 50  0000 C CNN
+F 2 "" H 3680 6345 50  0001 C CNN
+F 3 "" H 3680 6345 50  0001 C CNN
+	1    3680 6345
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3680 6235 3680 6290
+Wire Wire Line
+	3680 6035 3680 5625
+$Comp
+L Connector:DIN-6 CN7
+U 1 1 5ED6C96C
+P 4140 5725
+F 0 "CN7" H 4140 6330 50  0000 C CNN
+F 1 "SERIAL_BUS" H 4140 6245 50  0000 C CNN
+F 2 "CommodorePlus4:Connector_DIN_Female_6Pin_3rows" H 4140 5725 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4140 5725 50  0001 C CNN
+	1    4140 5725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ferrite3Pin:Ferrite_3pin FB19
+U 1 1 5E31356C
+P 7390 2560
+F 0 "FB19" V 7245 2560 50  0000 C CNN
+F 1 "Ferrite_3pin" V 7244 2560 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 7320 2560 50  0001 C CNN
+F 3 "~" H 7390 2560 50  0001 C CNN
+	1    7390 2560
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7390 2660 7390 3100
+Connection ~ 7390 3100
+Wire Wire Line
+	7390 3100 5850 3100
 Wire Bus Line
 	7890 4845 7890 5725
 $EndSCHEMATC

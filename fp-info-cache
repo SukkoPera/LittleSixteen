@@ -1,4 +1,4 @@
-19593444833629471
+19598194980956512
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51310,6 +51310,20 @@ Through hole pin header THT 1x03 2.54mm single row
 3
 3
 LittleSixteen
+SolderJumper2x
+SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip
+solder jumper open
+0
+4
+3
+LittleSixteen
+Sw16
+
+
+0
+0
+0
+LittleSixteen
 Top
 
 
@@ -65015,6 +65029,13 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+Panelizing
+Tab3mm
+
+
+0
+0
+0
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf
