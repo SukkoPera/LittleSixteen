@@ -143,7 +143,7 @@ Connection ~ 3005 3370
 Wire Wire Line
 	3005 3370 3410 3370
 $Comp
-L w_device:SW_SPDT SW1
+L LittleSixteen-rescue:SW_SPDT-w_device SW1
 U 1 1 5ED32B7C
 P 4305 3170
 F 0 "SW1" H 4305 3401 50  0000 C CNN

@@ -189,7 +189,7 @@ Wire Wire Line
 Wire Wire Line
 	8015 2250 8215 2250
 $Comp
-L w_device:ZENER D12
+L LittleSixteen-rescue:ZENER-w_device D12
 U 1 1 5ECCE714
 P 8215 2690
 F 0 "D12" V 8278 2637 40  0000 R CNN
