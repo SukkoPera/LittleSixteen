@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 10 11
 Title "LittleSixteen"
-Date "2020-01-03"
+Date "2020-10-04"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CERN OHL v.1.2"
@@ -150,7 +150,7 @@ U 1 1 5EEA5EFC
 P 6355 6770
 F 0 "C28" H 6470 6816 50  0000 L CNN
 F 1 "100n" H 6470 6725 50  0000 L CNN
-F 2 "" H 6393 6620 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 6393 6620 50  0001 C CNN
 F 3 "~" H 6355 6770 50  0001 C CNN
 	1    6355 6770
 	1    0    0    -1  
@@ -343,7 +343,7 @@ U 1 1 5DEA08DA
 P 3730 6770
 F 0 "C30" H 3845 6816 50  0000 L CNN
 F 1 "100n" H 3845 6725 50  0000 L CNN
-F 2 "" H 3768 6620 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3768 6620 50  0001 C CNN
 F 3 "~" H 3730 6770 50  0001 C CNN
 	1    3730 6770
 	1    0    0    -1  
@@ -520,19 +520,15 @@ F 3 "DOCUMENTATION" H 2675 2915 50  0001 C CNN
 	1    2675 2915
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3425 2815 4140 2815
 Connection ~ 6830 3780
 Text Notes 4140 2890 2    50   ~ 0
 ADDR CLK\n$FDD0-$FDDF
-Text Notes 3640 3780 0    50   ~ 0
-KERN $FC00-$FCFF
 NoConn ~ 3425 2215
 NoConn ~ 3425 2515
 Text Notes 3525 2250 0    50   ~ 0
-SCS
+SCS (?)
 Text Notes 3525 2550 0    50   ~ 0
-$FD00-$FD0F
+$FD00-$FD0F (ACIA CS on +4)
 Wire Wire Line
 	3425 2315 3630 2315
 Text GLabel 3630 2315 2    50   Output ~ 0
@@ -542,19 +538,19 @@ Wire Wire Line
 Text GLabel 3855 2415 2    50   Output ~ 0
 CASSETTE
 Wire Wire Line
-	3580 2615 3580 3780
+	3665 2615 3665 2815
 Wire Wire Line
-	3580 2615 3425 2615
+	3665 2615 3425 2615
 Wire Wire Line
 	3580 3780 6830 3780
 Wire Wire Line
-	3425 2715 3655 2715
+	3425 2715 3750 2715
 Text GLabel 3855 2615 2    50   Output ~ 0
 KEYPORT_CS
 Wire Wire Line
-	3655 2715 3655 2615
+	3750 2715 3750 2615
 Wire Wire Line
-	3655 2615 3855 2615
+	3750 2615 3855 2615
 Text Notes 9705 2735 0    50   ~ 0
 This enables function\nROM HIGH on the +4
 Wire Notes Line
@@ -563,6 +559,14 @@ Text Notes 8170 1870 0    50   ~ 0
 This enables function\nROM LOW on the +4
 Wire Notes Line
 	8395 1890 8395 2180
+Text Notes 3640 3780 0    50   ~ 0
+KERN $FC00-$FCFF
+Wire Wire Line
+	3665 2815 4140 2815
+Wire Wire Line
+	3425 2815 3580 2815
+Wire Wire Line
+	3580 2815 3580 3780
 Wire Bus Line
 	5025 2015 5025 2615
 Wire Bus Line
