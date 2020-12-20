@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 11
 Title "LittleSixteen"
-Date "2020-01-03"
+Date "2020-12-20"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -366,17 +366,6 @@ Wire Wire Line
 Text GLabel 2155 2220 0    50   Input ~ 0
 PHI0
 $Comp
-L Timer:NE555 U10
-U 1 1 5EC2982D
-P 7885 2420
-F 0 "U10" H 7625 2765 50  0000 C CNN
-F 1 "NE555" H 7660 2070 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7885 2420 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 7885 2420 50  0001 C CNN
-	1    7885 2420
-	-1   0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS06 U9
 U 1 1 5EC2AC8D
 P 6395 2220
@@ -584,6 +573,17 @@ Wire Wire Line
 	5385 2220 6095 2220
 Text GLabel 6320 1435 2    50   Output ~ 0
 ~RESET
+$Comp
+L Timer:NE555P U10
+U 1 1 5FE24901
+P 7885 2420
+F 0 "U10" H 7610 2770 50  0000 C CNN
+F 1 "NE555P" H 7685 2065 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 8535 2020 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 8735 2020 50  0001 C CNN
+	1    7885 2420
+	-1   0    0    -1  
+$EndComp
 Wire Bus Line
 	5035 4120 5035 4580
 Wire Bus Line
