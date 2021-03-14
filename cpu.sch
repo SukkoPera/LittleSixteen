@@ -478,7 +478,7 @@ NoConn ~ 8385 2420
 Wire Wire Line
 	8385 2220 9075 2220
 $Comp
-L w_device:SW_PUSH SW2
+L LittleSixteen-rescue:SW_PUSH-w_device SW2
 U 1 1 5EC5E8D3
 P 9455 2685
 F 0 "SW2" V 9409 2793 50  0000 L CNN
