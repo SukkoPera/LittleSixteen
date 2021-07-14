@@ -19,7 +19,7 @@ U 1 1 5ECB4902
 P 4490 2560
 F 0 "CN3" H 4490 2285 50  0000 C CNN
 F 1 "CASSETTE" H 4490 2194 50  0000 C CNN
-F 2 "CommodorePlus4:Connector_Mini-DIN_Female_7Pin_2rows" V 4480 2550 50  0001 C CNN
+F 2 "LittleSixteen:Connector_Mini-DIN_Female_7Pin_2rows" V 4480 2550 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 4480 2550 50  0001 C CNN
 	1    4490 2560
 	1    0    0    -1  
@@ -81,12 +81,12 @@ $Comp
 L Device:Ferrite_Bead_Small FB15
 U 1 1 5ECBC7A2
 P 4930 2895
-F 0 "FB15" H 4830 2895 50  0000 R CNN
+F 0 "FB15" H 5030 2895 50  0000 L CNN
 F 1 "Ferrite_Bead_Small" H 5030 2850 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 4860 2895 50  0001 C CNN
 F 3 "~" H 4930 2895 50  0001 C CNN
 	1    4930 2895
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4930 2995 4930 3100
@@ -125,7 +125,7 @@ F 1 "Ferrite_Bead_Small" H 3350 2515 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 3180 2560 50  0001 C CNN
 F 3 "~" H 3250 2560 50  0001 C CNN
 	1    3250 2560
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	3150 2560 2895 2560
@@ -241,12 +241,12 @@ $Comp
 L Device:R R29
 U 1 1 5ECD9EF8
 P 6225 2460
-F 0 "R29" V 6018 2460 50  0000 C CNN
-F 1 "100" V 6109 2460 50  0000 C CNN
+F 0 "R29" V 6432 2460 50  0000 C CNN
+F 1 "100" V 6341 2460 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 6155 2460 50  0001 C CNN
 F 3 "~" H 6225 2460 50  0001 C CNN
 	1    6225 2460
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5685 2460 5850 2460
@@ -350,12 +350,12 @@ $Comp
 L Device:R R12
 U 1 1 5ED1DFFB
 P 5350 1355
-F 0 "R12" H 5420 1401 50  0000 L CNN
-F 1 "3.3k" H 5420 1310 50  0000 L CNN
+F 0 "R12" H 5280 1309 50  0000 R CNN
+F 1 "3.3k" H 5280 1400 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5280 1355 50  0001 C CNN
 F 3 "~" H 5350 1355 50  0001 C CNN
 	1    5350 1355
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5350 1505 5350 1670

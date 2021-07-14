@@ -579,7 +579,7 @@ U 1 1 5FE24901
 P 7885 2420
 F 0 "U10" H 7610 2770 50  0000 C CNN
 F 1 "NE555P" H 7685 2065 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 8535 2020 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 8535 2020 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 8735 2020 50  0001 C CNN
 	1    7885 2420
 	-1   0    0    -1  

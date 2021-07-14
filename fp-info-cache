@@ -1,4 +1,4 @@
-22201377570385234
+22204630245371234
 Arduino
 Arduino_101_Shield
 https://store.arduino.cc/genuino-101
@@ -56196,6 +56196,13 @@ LittleSixteen
 50
 50
 LittleSixteen
+Connector_Mini-DIN_Female_7Pin_2rows
+A footprint for the generic 6 pin Mini-DIN through hole connector with shell.
+mini din 6pin connector socket
+0
+8
+7
+LittleSixteen
 EMI_Filter
 Through hole straight pin header, 1x03, 2.54mm pitch, single row
 Through hole pin header THT 1x03 2.54mm single row
@@ -56223,6 +56230,13 @@ Sw16
 0
 0
 0
+LittleSixteen
+Switch-Pushbutton
+C, Disc series, Radial, pin pitch=10.00mm, , diameter*width=9*5.0mm^2, Capacitor, http://www.vishay.com/docs/28535/vy2series.pdf
+C Disc series Radial pin pitch 10.00mm  diameter 9mm width 5.0mm Capacitor
+0
+5
+3
 LittleSixteen
 Top
 
