@@ -274,7 +274,7 @@ F 1 "Ferrite_Bead_Small" V 4619 4090 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 4695 4090 50  0001 C CNN
 F 3 "~" H 4765 4090 50  0001 C CNN
 	1    4765 4090
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	4865 4090 5105 4090
