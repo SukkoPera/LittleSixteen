@@ -63,7 +63,7 @@ U 1 1 5E01E939
 P 6060 2035
 F 0 "L1" H 6112 2081 50  0000 L CNN
 F 1 "1.2u" H 6112 1990 50  0000 L CNN
-F 2 "" H 6060 2035 50  0001 C CNN
+F 2 "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC" H 6060 2035 50  0001 C CNN
 F 3 "~" H 6060 2035 50  0001 C CNN
 	1    6060 2035
 	1    0    0    -1  
@@ -101,7 +101,7 @@ F 1 "EMI_Filter_LCL" H 7650 3306 50  0001 C CNN
 F 2 "LittleSixteen:EMI_Filter" V 7650 3080 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 7650 3080 50  0001 C CNN
 	1    7650 3080
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:EMI_Filter_LCL EM3
@@ -112,7 +112,7 @@ F 1 "EMI_Filter_LCL" H 8710 3456 50  0001 C CNN
 F 2 "LittleSixteen:EMI_Filter" V 8710 3230 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 8710 3230 50  0001 C CNN
 	1    8710 3230
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:EMI_Filter_LCL EM4
@@ -123,7 +123,7 @@ F 1 "EMI_Filter_LCL" H 8185 3606 50  0001 C CNN
 F 2 "LittleSixteen:EMI_Filter" V 8185 3380 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 8185 3380 50  0001 C CNN
 	1    8185 3380
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6710 2980 7350 2980
@@ -211,7 +211,7 @@ F 1 "Ferrite_Bead_Small" H 10605 3085 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 10435 3130 50  0001 C CNN
 F 3 "~" H 10505 3130 50  0001 C CNN
 	1    10505 3130
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB58
@@ -222,7 +222,7 @@ F 1 "Ferrite_Bead_Small" H 10405 2985 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 10235 3030 50  0001 C CNN
 F 3 "~" H 10305 3030 50  0001 C CNN
 	1    10305 3030
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	9995 3030 10205 3030
@@ -333,12 +333,12 @@ $Comp
 L Device:R R24
 U 1 1 5E067484
 P 3505 2515
-F 0 "R24" V 3298 2515 50  0000 C CNN
-F 1 "1k" V 3389 2515 50  0000 C CNN
+F 0 "R24" V 3712 2515 50  0000 C CNN
+F 1 "1k" V 3621 2515 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3435 2515 50  0001 C CNN
 F 3 "~" H 3505 2515 50  0001 C CNN
 	1    3505 2515
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R9

@@ -151,7 +151,7 @@ U 1 1 5ECC85E0
 P 7815 2250
 F 0 "Q5" H 8007 2296 50  0000 L CNN
 F 1 "2SD880" H 8007 2205 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 8015 2175 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 8015 2175 50  0001 L CIN
 F 3 "http://pdf.datasheetcatalog.com/datasheet/sanyo/ds_pdf_e/2SB631.pdf" H 7815 2250 50  0001 L CNN
 	1    7815 2250
 	-1   0    0    -1  

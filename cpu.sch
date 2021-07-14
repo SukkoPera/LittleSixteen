@@ -472,7 +472,7 @@ U 1 1 5EC5E8D3
 P 9455 2685
 F 0 "SW2" V 9409 2793 50  0000 L CNN
 F 1 "RESET_SW" V 9500 2793 50  0000 L CNN
-F 2 "CommodorePlus4:Switch-Pushbutton" H 9455 2685 60  0001 C CNN
+F 2 "LittleSixteen:Switch-Pushbutton" H 9455 2685 60  0001 C CNN
 F 3 "" H 9455 2685 60  0000 C CNN
 	1    9455 2685
 	0    1    1    0   
