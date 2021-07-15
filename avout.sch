@@ -19,7 +19,7 @@ U 1 1 5E01B0CC
 P 6060 2930
 F 0 "M1" H 6440 3425 50  0000 C CNN
 F 1 "Modulator" H 6315 2440 50  0000 C CNN
-F 2 "CommodorePlus4:RF_Modulator" H 6260 2980 50  0001 C CNN
+F 2 "LittleSixteen:RF_Modulator" H 6260 2980 50  0001 C CNN
 F 3 "" H 6260 2980 50  0001 C CNN
 	1    6060 2930
 	1    0    0    -1  
@@ -87,7 +87,7 @@ U 1 1 5E022697
 P 9695 3130
 F 0 "CN6" H 9695 3725 50  0000 C CNN
 F 1 "AUDIO_VIDEO" H 9695 3640 50  0000 C CNN
-F 2 "CommodorePlus4:Connector_DIN_Female_8Pin_3rows" H 9695 3130 50  0001 C CNN
+F 2 "LittleSixteen:Connector_DIN_Female_8Pin_3rows" H 9695 3130 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 9695 3130 50  0001 C CNN
 	1    9695 3130
 	1    0    0    -1  

@@ -1,4 +1,4 @@
-22207883348498234
+22211136123927234
 Arduino
 Arduino_101_Shield
 https://store.arduino.cc/genuino-101
@@ -56196,6 +56196,13 @@ LittleSixteen
 50
 50
 LittleSixteen
+Connector_DIN_Female_8Pin_3rows
+A footprint for the generic 6 pin Mini-DIN through hole connector with shell.
+mini din 6pin connector socket
+0
+10
+9
+LittleSixteen
 Connector_Mini-DIN_Female_7Pin_2rows
 A footprint for the generic 6 pin Mini-DIN through hole connector with shell.
 mini din 6pin connector socket
@@ -56208,7 +56215,7 @@ A footprint for the generic 6 pin Mini-DIN through hole connector with shell.
 mini din 6pin connector socket
 0
 11
-8
+9
 LittleSixteen
 EMI_Filter
 Through hole straight pin header, 1x03, 2.54mm pitch, single row
@@ -56223,6 +56230,13 @@ Through hole pin header THT 1x03 2.54mm single row
 0
 3
 3
+LittleSixteen
+RF_Modulator
+Commodore Plus 4 RF Modulator
+rf modulator
+0
+8
+8
 LittleSixteen
 SolderJumper2x
 SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip

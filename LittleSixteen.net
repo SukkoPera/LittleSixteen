@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Thu 15 Jul 2021 23:35:46 CEST")
+    (date "Fri 16 Jul 2021 00:22:39 CEST")
     (tool "Eeschema 5.1.10")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1119,7 +1119,7 @@
       (tstamp 5DEA08DA))
     (comp (ref M1)
       (value Modulator)
-      (footprint CommodorePlus4:RF_Modulator)
+      (footprint LittleSixteen:RF_Modulator)
       (libsource (lib Modulator) (part Modulator) (description ""))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E01B0CC))
@@ -1139,7 +1139,7 @@
       (tstamp 5E01E939))
     (comp (ref CN6)
       (value AUDIO_VIDEO)
-      (footprint CommodorePlus4:Connector_DIN_Female_8Pin_3rows)
+      (footprint LittleSixteen:Connector_DIN_Female_8Pin_3rows)
       (datasheet http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf)
       (libsource (lib Connector) (part DIN-8) (description "8-pin DIN connector"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
