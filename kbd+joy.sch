@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 11
 Title "LittleSixteen"
-Date "2020-01-20"
+Date "2021-07-15"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -295,7 +295,7 @@ F 1 "EMI_Filter_LCL" H 4755 3831 50  0001 C CNN
 F 2 "LittleSixteen:EMI_Filter" V 4755 3605 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4755 3605 50  0001 C CNN
 	1    4755 3605
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4400 3505 4455 3505
@@ -619,7 +619,7 @@ F 1 "EMI_Filter_LCL" H 3315 5656 50  0001 C CNN
 F 2 "LittleSixteen:EMI_Filter" V 3315 5430 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3315 5430 50  0001 C CNN
 	1    3315 5430
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2960 5330 3015 5330
@@ -686,45 +686,45 @@ Wire Wire Line
 $Comp
 L Diode:1N914 D6
 U 1 1 5E19A82E
-P 5320 5760
-F 0 "D6" H 5320 5976 50  0000 C CNN
-F 1 "1N914" H 5320 5885 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 5320 5585 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5320 5760 50  0001 C CNN
-	1    5320 5760
+P 6605 5760
+F 0 "D6" H 6605 5976 50  0000 C CNN
+F 1 "1N914" H 6605 5885 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6605 5585 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6605 5760 50  0001 C CNN
+	1    6605 5760
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:1N914 D7
 U 1 1 5E19A838
-P 5620 5830
-F 0 "D7" H 5620 6046 50  0000 C CNN
-F 1 "1N914" H 5620 5955 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 5620 5655 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5620 5830 50  0001 C CNN
-	1    5620 5830
+P 6905 5830
+F 0 "D7" H 6905 6046 50  0000 C CNN
+F 1 "1N914" H 6905 5955 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6905 5655 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6905 5830 50  0001 C CNN
+	1    6905 5830
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:1N914 D8
 U 1 1 5E19A842
-P 5320 5905
-F 0 "D8" H 5320 5775 50  0000 C CNN
-F 1 "1N914" H 5320 5680 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 5320 5730 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5320 5905 50  0001 C CNN
-	1    5320 5905
+P 6605 5905
+F 0 "D8" H 6605 5775 50  0000 C CNN
+F 1 "1N914" H 6605 5680 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6605 5730 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6605 5905 50  0001 C CNN
+	1    6605 5905
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:1N914 D9
 U 1 1 5E19A84C
-P 5620 5975
-F 0 "D9" H 5620 5851 50  0000 C CNN
-F 1 "1N914" H 5620 5760 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 5620 5800 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5620 5975 50  0001 C CNN
-	1    5620 5975
+P 6905 5975
+F 0 "D9" H 6905 5851 50  0000 C CNN
+F 1 "1N914" H 6905 5760 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6905 5800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6905 5975 50  0001 C CNN
+	1    6905 5975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -734,7 +734,7 @@ Wire Wire Line
 Wire Wire Line
 	4495 5905 4670 5905
 Wire Wire Line
-	5470 5975 5070 5975
+	6755 5975 5770 5975
 Wire Wire Line
 	4575 5975 4575 6490
 $Comp
@@ -758,12 +758,12 @@ Wire Wire Line
 $Comp
 L Diode:1N914 D10
 U 1 1 5E19A869
-P 5320 6295
-F 0 "D10" H 5320 6171 50  0000 C CNN
-F 1 "1N914" H 5320 6080 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 5320 6120 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5320 6295 50  0001 C CNN
-	1    5320 6295
+P 6605 6295
+F 0 "D10" H 6605 6171 50  0000 C CNN
+F 1 "1N914" H 6605 6080 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6605 6120 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6605 6295 50  0001 C CNN
+	1    6605 6295
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -778,7 +778,7 @@ F 3 "~" H 4770 5760 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4870 5760 5170 5760
+	4870 5760 5470 5760
 $Comp
 L Device:Ferrite_Bead_Small FB32
 U 1 1 5E19A87E
@@ -791,7 +791,7 @@ F 3 "~" H 4970 5830 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5070 5830 5470 5830
+	5070 5830 5870 5830
 $Comp
 L Device:Ferrite_Bead_Small FB34
 U 1 1 5E19A889
@@ -817,7 +817,7 @@ F 3 "~" H 4770 5905 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4870 5905 5170 5905
+	4870 5905 5570 5905
 $Comp
 L Device:Ferrite_Bead_Small FB30
 U 1 1 5E19A89F
@@ -836,7 +836,7 @@ Wire Wire Line
 Wire Wire Line
 	2770 6110 3575 6110
 Wire Wire Line
-	4870 6295 5170 6295
+	4870 6295 5670 6295
 $Comp
 L Device:Ferrite_Bead_Small FB35
 U 1 1 5E19A8AD
@@ -886,34 +886,24 @@ Wire Wire Line
 	3905 1580 3610 1580
 Wire Wire Line
 	7955 5760 7955 2580
-Wire Wire Line
-	5470 5760 6485 5760
 Connection ~ 7955 2580
 Wire Wire Line
 	7955 2580 8740 2580
 Wire Wire Line
 	8045 5830 8045 2280
-Wire Wire Line
-	5770 5830 6885 5830
 Connection ~ 8045 2280
 Wire Wire Line
 	8045 2280 8525 2280
 Wire Wire Line
 	8130 5905 8130 2180
-Wire Wire Line
-	5470 5905 6585 5905
 Connection ~ 8130 2180
 Wire Wire Line
 	8130 2180 8755 2180
 Wire Wire Line
 	8215 5975 8215 2480
-Wire Wire Line
-	5770 5975 6785 5975
 Connection ~ 8215 2480
 Wire Wire Line
 	8215 2480 8525 2480
-Wire Wire Line
-	5470 6295 6685 6295
 Wire Wire Line
 	8315 6295 8315 1080
 Connection ~ 8315 1080
@@ -1156,12 +1146,12 @@ This is one of the weakest spots of the C16, where the\nTED chip pins are direct
 $Comp
 L Device:R_Network05 RP5
 U 1 1 5E3A4C16
-P 6685 5375
-F 0 "RP5" H 6973 5421 50  0000 L CNN
-F 1 "3.3k" H 6973 5330 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 7060 5375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6685 5375 50  0001 C CNN
-	1    6685 5375
+P 5670 5375
+F 0 "RP5" H 5958 5421 50  0000 L CNN
+F 1 "3.3k" H 5958 5330 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 6045 5375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5670 5375 50  0001 C CNN
+	1    5670 5375
 	1    0    0    -1  
 $EndComp
 Connection ~ 6485 3935
@@ -1182,16 +1172,16 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR0112
 U 1 1 5E419B38
-P 6485 5070
-F 0 "#PWR0112" H 6485 4920 50  0001 C CNN
-F 1 "VCC" H 6502 5243 50  0000 C CNN
-F 2 "" H 6485 5070 50  0001 C CNN
-F 3 "" H 6485 5070 50  0001 C CNN
-	1    6485 5070
+P 5470 5070
+F 0 "#PWR0112" H 5470 4920 50  0001 C CNN
+F 1 "VCC" H 5487 5243 50  0000 C CNN
+F 2 "" H 5470 5070 50  0001 C CNN
+F 3 "" H 5470 5070 50  0001 C CNN
+	1    5470 5070
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6485 5070 6485 5175
+	5470 5070 5470 5175
 Wire Wire Line
 	6885 3745 6885 4005
 Wire Wire Line
@@ -1227,30 +1217,15 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6685 3545 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6485 5575 6485 5760
-Connection ~ 6485 5760
+	5470 5575 5470 5760
 Wire Wire Line
-	6485 5760 7955 5760
+	5870 5575 5870 5830
 Wire Wire Line
-	6885 5575 6885 5830
-Connection ~ 6885 5830
+	5570 5575 5570 5905
 Wire Wire Line
-	6885 5830 8045 5830
+	5770 5575 5770 5975
 Wire Wire Line
-	6585 5575 6585 5905
-Connection ~ 6585 5905
-Wire Wire Line
-	6585 5905 8130 5905
-Wire Wire Line
-	6785 5575 6785 5975
-Connection ~ 6785 5975
-Wire Wire Line
-	6785 5975 8215 5975
-Wire Wire Line
-	6685 5575 6685 6295
-Connection ~ 6685 6295
-Wire Wire Line
-	6685 6295 8315 6295
+	5670 5575 5670 6295
 Wire Wire Line
 	4765 2920 4995 2920
 Wire Wire Line
@@ -1311,6 +1286,31 @@ F 3 "~" H 3170 4745 50  0001 C CNN
 	1    3170 4745
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	6755 5760 7955 5760
+Wire Wire Line
+	7055 5830 8045 5830
+Wire Wire Line
+	6755 5905 8130 5905
+Wire Wire Line
+	7055 5975 8215 5975
+Wire Wire Line
+	6755 6295 8315 6295
+Connection ~ 5470 5760
+Wire Wire Line
+	5470 5760 6455 5760
+Connection ~ 5570 5905
+Wire Wire Line
+	5570 5905 6455 5905
+Connection ~ 5670 6295
+Wire Wire Line
+	5670 6295 6455 6295
+Connection ~ 5770 5975
+Wire Wire Line
+	5770 5975 5070 5975
+Connection ~ 5870 5830
+Wire Wire Line
+	5870 5830 6755 5830
 Wire Bus Line
 	3510 1380 3510 2085
 Wire Bus Line
