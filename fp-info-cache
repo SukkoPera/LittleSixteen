@@ -1,4 +1,4 @@
-22206256714202234
+22207883348498234
 Arduino
 Arduino_101_Shield
 https://store.arduino.cc/genuino-101
@@ -56202,6 +56202,13 @@ mini din 6pin connector socket
 0
 8
 7
+LittleSixteen
+Connector_Mini-DIN_Female_8Pin_2rows
+A footprint for the generic 6 pin Mini-DIN through hole connector with shell.
+mini din 6pin connector socket
+0
+11
+8
 LittleSixteen
 EMI_Filter
 Through hole straight pin header, 1x03, 2.54mm pitch, single row
