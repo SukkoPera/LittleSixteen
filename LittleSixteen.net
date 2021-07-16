@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Fri 16 Jul 2021 00:22:39 CEST")
+    (date "Fri 16 Jul 2021 19:57:15 CEST")
     (tool "Eeschema 5.1.10")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1016,6 +1016,7 @@
       (tstamp 5ED26A7B))
     (comp (ref L3)
       (value LINE_FILTER)
+      (footprint CommodorePlus4:Noise_Filter)
       (datasheet ~)
       (libsource (lib Device) (part EMI_Filter_LL) (description "EMI 2-inductor filter"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
@@ -1029,7 +1030,7 @@
       (tstamp 5ED2CF6B))
     (comp (ref SW1)
       (value POWER_SWITCH)
-      (footprint CommodorePlus4:Switch-Rocker)
+      (footprint LittleSixteen:Switch-Rocker)
       (libsource (lib w_device) (part SW_SPDT) (description "Switch SPDT"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 5ED32B7C))
