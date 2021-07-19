@@ -853,7 +853,7 @@ F 1 "Ferrite_Bead_Small" V 8474 880 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8550 880 50  0001 C CNN
 F 3 "~" H 8620 880 50  0001 C CNN
 	1    8620 880 
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8720 880  9230 880 
@@ -866,7 +866,7 @@ F 1 "Ferrite_Bead_Small" V 8484 1080 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8560 1080 50  0001 C CNN
 F 3 "~" H 8630 1080 50  0001 C CNN
 	1    8630 1080
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8530 1080 8315 1080
@@ -881,7 +881,7 @@ F 1 "Ferrite_Bead_Small" V 8484 1480 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8560 1480 50  0001 C CNN
 F 3 "~" H 8630 1480 50  0001 C CNN
 	1    8630 1480
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8730 1480 9230 1480
@@ -894,7 +894,7 @@ F 1 "Ferrite_Bead_Small" V 8494 1680 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8570 1680 50  0001 C CNN
 F 3 "~" H 8640 1680 50  0001 C CNN
 	1    8640 1680
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8740 1680 9230 1680
@@ -907,7 +907,7 @@ F 1 "Ferrite_Bead_Small" V 8469 1880 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8545 1880 50  0001 C CNN
 F 3 "~" H 8615 1880 50  0001 C CNN
 	1    8615 1880
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8715 1880 9230 1880
@@ -920,7 +920,7 @@ F 1 "Ferrite_Bead_Small" V 8469 2080 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8545 2080 50  0001 C CNN
 F 3 "~" H 8615 2080 50  0001 C CNN
 	1    8615 2080
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8715 2080 9230 2080
@@ -933,7 +933,7 @@ F 1 "Ferrite_Bead_Small" V 8479 2280 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8555 2280 50  0001 C CNN
 F 3 "~" H 8625 2280 50  0001 C CNN
 	1    8625 2280
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8725 2280 9230 2280
@@ -946,7 +946,7 @@ F 1 "Ferrite_Bead_Small" V 8479 2480 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8555 2480 50  0001 C CNN
 F 3 "~" H 8625 2480 50  0001 C CNN
 	1    8625 2480
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8725 2480 9230 2480
@@ -959,7 +959,7 @@ F 1 "Ferrite_Bead_Small" V 8474 2680 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8550 2680 50  0001 C CNN
 F 3 "~" H 8620 2680 50  0001 C CNN
 	1    8620 2680
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8720 2680 9230 2680
@@ -972,7 +972,7 @@ F 1 "Ferrite_Bead_Small" V 8694 1380 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8770 1380 50  0001 C CNN
 F 3 "~" H 8840 1380 50  0001 C CNN
 	1    8840 1380
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8940 1380 9230 1380
@@ -985,7 +985,7 @@ F 1 "Ferrite_Bead_Small" V 8714 1580 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8790 1580 50  0001 C CNN
 F 3 "~" H 8860 1580 50  0001 C CNN
 	1    8860 1580
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8960 1580 9230 1580
@@ -998,7 +998,7 @@ F 1 "Ferrite_Bead_Small" V 8704 1780 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8780 1780 50  0001 C CNN
 F 3 "~" H 8850 1780 50  0001 C CNN
 	1    8850 1780
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8950 1780 9230 1780
@@ -1011,7 +1011,7 @@ F 1 "Ferrite_Bead_Small" V 8684 1980 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8760 1980 50  0001 C CNN
 F 3 "~" H 8830 1980 50  0001 C CNN
 	1    8830 1980
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8930 1980 9230 1980
@@ -1024,7 +1024,7 @@ F 1 "Ferrite_Bead_Small" V 8709 2180 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8785 2180 50  0001 C CNN
 F 3 "~" H 8855 2180 50  0001 C CNN
 	1    8855 2180
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8955 2180 9230 2180
@@ -1037,7 +1037,7 @@ F 1 "Ferrite_Bead_Small" V 8709 2380 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8785 2380 50  0001 C CNN
 F 3 "~" H 8855 2380 50  0001 C CNN
 	1    8855 2380
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8955 2380 9230 2380
@@ -1050,7 +1050,7 @@ F 1 "Ferrite_Bead_Small" V 8694 2580 50  0001 C CNN
 F 2 "LittleSixteen:Ferrite" V 8770 2580 50  0001 C CNN
 F 3 "~" H 8840 2580 50  0001 C CNN
 	1    8840 2580
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8940 2580 9230 2580
