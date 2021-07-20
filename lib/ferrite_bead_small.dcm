@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Ferrite_Bead_Small
+D Ferrite bead, small symbol
+K L ferrite bead inductor filter
+F ~
+$ENDCMP
+#
+#End Doc Library
