@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 11
 Title "LittleSixteen"
-Date "2020-12-20"
+Date "2021-07-20"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -584,6 +584,54 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 8735 2020 50  0001 C CNN
 	1    7885 2420
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	10455 2595 10455 2670
+Wire Wire Line
+	10455 2220 10455 2295
+$Comp
+L power:GND #PWR?
+U 1 1 611CBEE7
+P 10455 2670
+AR Path="/5E4A465A/611CBEE7" Ref="#PWR?"  Part="1" 
+AR Path="/5EE7AAEB/611CBEE7" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A81E1/611CBEE7" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 10455 2420 50  0001 C CNN
+F 1 "GND" H 10460 2497 50  0000 C CNN
+F 2 "" H 10455 2670 50  0001 C CNN
+F 3 "" H 10455 2670 50  0001 C CNN
+	1    10455 2670
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 611CBEED
+P 10455 2220
+AR Path="/5E4A465A/611CBEED" Ref="#PWR?"  Part="1" 
+AR Path="/5EE7AAEB/611CBEED" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A81E1/611CBEED" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 10455 2070 50  0001 C CNN
+F 1 "VCC" H 10472 2393 50  0000 C CNN
+F 2 "" H 10455 2220 50  0001 C CNN
+F 3 "" H 10455 2220 50  0001 C CNN
+	1    10455 2220
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 611CBEF3
+P 10455 2445
+AR Path="/5E4A465A/611CBEF3" Ref="C?"  Part="1" 
+AR Path="/5EE7AAEB/611CBEF3" Ref="C?"  Part="1" 
+AR Path="/5E4A81E1/611CBEF3" Ref="C29"  Part="1" 
+F 0 "C29" H 10570 2491 50  0000 L CNN
+F 1 "100n" H 10570 2400 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10493 2295 50  0001 C CNN
+F 3 "~" H 10455 2445 50  0001 C CNN
+	1    10455 2445
+	1    0    0    -1  
+$EndComp
+Text Notes 10225 3190 0    50   ~ 0
+Additional\ndecoupling cap\nfor U10
 Wire Bus Line
 	5035 4120 5035 4580
 Wire Bus Line

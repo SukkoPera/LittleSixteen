@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 11
 Title "LittleSixteen"
-Date "2020-01-20"
+Date "2021-07-20"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -363,12 +363,12 @@ m6
 $Comp
 L 74ls157:74LS157 U7
 U 2 1 5EA2906C
-P 3645 7010
-F 0 "U7" H 3875 7081 50  0000 L CNN
-F 1 "74LS257" H 3875 6990 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3645 7010 50  0001 C CNN
-F 3 "" H 3645 7010 50  0001 C CNN
-	2    3645 7010
+P 3005 7010
+F 0 "U7" H 3235 7081 50  0000 L CNN
+F 1 "74LS257" H 3235 6990 50  0000 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3005 7010 50  0001 C CNN
+F 3 "" H 3005 7010 50  0001 C CNN
+	2    3005 7010
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -380,32 +380,6 @@ F 1 "74LS257" H 4740 6990 50  0000 L CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4510 7010 50  0001 C CNN
 F 3 "" H 4510 7010 50  0001 C CNN
 	2    4510 7010
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3645 7410 3645 7485
-Wire Wire Line
-	3645 6485 3645 6560
-$Comp
-L power:GND #PWR0133
-U 1 1 5EA3A17A
-P 3645 7485
-F 0 "#PWR0133" H 3645 7235 50  0001 C CNN
-F 1 "GND" H 3650 7312 50  0000 C CNN
-F 2 "" H 3645 7485 50  0001 C CNN
-F 3 "" H 3645 7485 50  0001 C CNN
-	1    3645 7485
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0134
-U 1 1 5EA3AA22
-P 3645 6485
-F 0 "#PWR0134" H 3645 6335 50  0001 C CNN
-F 1 "VCC" H 3662 6658 50  0000 C CNN
-F 2 "" H 3645 6485 50  0001 C CNN
-F 3 "" H 3645 6485 50  0001 C CNN
-	1    3645 6485
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -463,8 +437,8 @@ $EndComp
 Connection ~ 4885 6525
 Wire Wire Line
 	4885 6525 5265 6525
-Text Notes 2250 7195 0    50   ~ 0
-For some reason, U7 has\nno decoupling cap.\n\nC10 is also closer to U12,\nactually...
+Text Notes 3610 7660 0    50   ~ 0
+Additional\ndecoupling cap
 Wire Wire Line
 	6400 7140 6400 7215
 Wire Wire Line
@@ -770,6 +744,61 @@ F 3 "" H 4885 4690 50  0001 C CNN
 $EndComp
 Text Notes 4810 3585 1    50   ~ 0
 Yes, RP3/4 have this\nweird pin numbering...
+$Comp
+L Device:C C35
+U 1 1 611A31E9
+P 3760 6985
+F 0 "C35" H 3875 7031 50  0000 L CNN
+F 1 "100n" H 3875 6940 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3798 6835 50  0001 C CNN
+F 3 "~" H 3760 6985 50  0001 C CNN
+	1    3760 6985
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3005 6560 3005 6525
+Wire Wire Line
+	3005 6525 3380 6525
+Wire Wire Line
+	3760 6525 3760 6835
+Wire Wire Line
+	3760 7135 3760 7455
+Wire Wire Line
+	3760 7455 3380 7455
+Wire Wire Line
+	3005 7455 3005 7410
+Wire Wire Line
+	3380 7455 3380 7530
+$Comp
+L power:GND #PWR0162
+U 1 1 611A31FA
+P 3380 7530
+F 0 "#PWR0162" H 3380 7280 50  0001 C CNN
+F 1 "GND" H 3385 7357 50  0000 C CNN
+F 2 "" H 3380 7530 50  0001 C CNN
+F 3 "" H 3380 7530 50  0001 C CNN
+	1    3380 7530
+	1    0    0    -1  
+$EndComp
+Connection ~ 3380 7455
+Wire Wire Line
+	3380 7455 3005 7455
+Wire Wire Line
+	3380 6450 3380 6525
+$Comp
+L power:VCC #PWR0163
+U 1 1 611A3207
+P 3380 6450
+F 0 "#PWR0163" H 3380 6300 50  0001 C CNN
+F 1 "VCC" H 3397 6623 50  0000 C CNN
+F 2 "" H 3380 6450 50  0001 C CNN
+F 3 "" H 3380 6450 50  0001 C CNN
+	1    3380 6450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3380 6525
+Wire Wire Line
+	3380 6525 3760 6525
 Wire Bus Line
 	5815 1220 5815 3440
 Wire Bus Line
