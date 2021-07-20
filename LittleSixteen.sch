@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 11
 Title "LittleSixteen"
-Date "2021-07-16"
+Date "2021-07-20"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -282,6 +282,17 @@ F 1 "POLARITY" H 9643 6310 50  0000 L CNN
 F 2 "w_logo:Logo_silk_polarity_external_10x2.8mm" H 9565 6355 50  0001 C CNN
 F 3 "" H 9565 6355 50  0001 C CNN
 	1    9565 6355
+	1    0    0    -1  
+$EndComp
+$Comp
+L void:Void V0
+U 1 1 61145DF1
+P 9565 6150
+F 0 "V0" H 9643 6196 50  0000 L CNN
+F 1 "LOGO" H 9643 6105 50  0000 L CNN
+F 2 "LittleSixteen:Logo" H 9565 6150 50  0001 C CNN
+F 3 "" H 9565 6150 50  0001 C CNN
+	1    9565 6150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
