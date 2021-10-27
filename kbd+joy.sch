@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 11
 Title "LittleSixteen"
-Date "2020-01-20"
+Date "2021-07-15"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CERN OHL v.1.2"
@@ -295,7 +295,7 @@ F 1 "EMI_Filter_LCL" H 4755 3831 50  0001 C CNN
 F 2 "" V 4755 3605 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4755 3605 50  0001 C CNN
 	1    4755 3605
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4400 3505 4455 3505
@@ -517,7 +517,7 @@ F 1 "Ferrite_Bead_Small" V 4064 4000 50  0001 C CNN
 F 2 "" V 4140 4000 50  0001 C CNN
 F 3 "~" H 4210 4000 50  0001 C CNN
 	1    4210 4000
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4210 3795 4210 3900
@@ -547,7 +547,7 @@ F 1 "Ferrite_Bead_Small" V 4889 3780 50  0001 C CNN
 F 2 "" V 4965 3780 50  0001 C CNN
 F 3 "~" H 5035 3780 50  0001 C CNN
 	1    5035 3780
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	5135 3780 5315 3780
@@ -619,7 +619,7 @@ F 1 "EMI_Filter_LCL" H 3315 5656 50  0001 C CNN
 F 2 "" V 3315 5430 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3315 5430 50  0001 C CNN
 	1    3315 5430
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2960 5330 3015 5330
@@ -683,58 +683,12 @@ Wire Wire Line
 	4245 6010 4245 6295
 Wire Wire Line
 	4245 6295 4670 6295
-$Comp
-L Diode:1N914 D6
-U 1 1 5E19A82E
-P 5320 5760
-F 0 "D6" H 5320 5976 50  0000 C CNN
-F 1 "1N914" H 5320 5885 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5320 5585 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5320 5760 50  0001 C CNN
-	1    5320 5760
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N914 D7
-U 1 1 5E19A838
-P 5620 5830
-F 0 "D7" H 5620 6046 50  0000 C CNN
-F 1 "1N914" H 5620 5955 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5620 5655 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5620 5830 50  0001 C CNN
-	1    5620 5830
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N914 D8
-U 1 1 5E19A842
-P 5320 5905
-F 0 "D8" H 5320 5775 50  0000 C CNN
-F 1 "1N914" H 5320 5680 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5320 5730 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5320 5905 50  0001 C CNN
-	1    5320 5905
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N914 D9
-U 1 1 5E19A84C
-P 5620 5975
-F 0 "D9" H 5620 5851 50  0000 C CNN
-F 1 "1N914" H 5620 5760 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5620 5800 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5620 5975 50  0001 C CNN
-	1    5620 5975
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4330 5760 4670 5760
 Wire Wire Line
 	4415 5830 4870 5830
 Wire Wire Line
 	4495 5905 4670 5905
-Wire Wire Line
-	5470 5975 5070 5975
 Wire Wire Line
 	4575 5975 4575 6490
 $Comp
@@ -756,17 +710,6 @@ Wire Wire Line
 Wire Wire Line
 	3315 5605 3315 6565
 $Comp
-L Diode:1N914 D10
-U 1 1 5E19A869
-P 5320 6295
-F 0 "D10" H 5320 6171 50  0000 C CNN
-F 1 "1N914" H 5320 6080 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5320 6120 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5320 6295 50  0001 C CNN
-	1    5320 6295
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Ferrite_Bead_Small FB31
 U 1 1 5E19A873
 P 4770 5760
@@ -777,8 +720,6 @@ F 3 "~" H 4770 5760 50  0001 C CNN
 	1    4770 5760
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4870 5760 5170 5760
 $Comp
 L Device:Ferrite_Bead_Small FB32
 U 1 1 5E19A87E
@@ -790,8 +731,6 @@ F 3 "~" H 4970 5830 50  0001 C CNN
 	1    4970 5830
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5070 5830 5470 5830
 $Comp
 L Device:Ferrite_Bead_Small FB34
 U 1 1 5E19A889
@@ -816,8 +755,6 @@ F 3 "~" H 4770 5905 50  0001 C CNN
 	1    4770 5905
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4870 5905 5170 5905
 $Comp
 L Device:Ferrite_Bead_Small FB30
 U 1 1 5E19A89F
@@ -827,7 +764,7 @@ F 1 "Ferrite_Bead_Small" V 2624 5825 50  0001 C CNN
 F 2 "" V 2700 5825 50  0001 C CNN
 F 3 "~" H 2770 5825 50  0001 C CNN
 	1    2770 5825
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2770 5620 2770 5725
@@ -835,8 +772,6 @@ Wire Wire Line
 	2770 5925 2770 6110
 Wire Wire Line
 	2770 6110 3575 6110
-Wire Wire Line
-	4870 6295 5170 6295
 $Comp
 L Device:Ferrite_Bead_Small FB35
 U 1 1 5E19A8AD
@@ -857,7 +792,7 @@ F 1 "Ferrite_Bead_Small" V 3449 5605 50  0001 C CNN
 F 2 "" V 3525 5605 50  0001 C CNN
 F 3 "~" H 3595 5605 50  0001 C CNN
 	1    3595 5605
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	3695 5605 3875 5605
@@ -886,34 +821,24 @@ Wire Wire Line
 	3905 1580 3610 1580
 Wire Wire Line
 	7955 5760 7955 2580
-Wire Wire Line
-	5470 5760 6485 5760
 Connection ~ 7955 2580
 Wire Wire Line
 	7955 2580 8740 2580
 Wire Wire Line
 	8045 5830 8045 2280
-Wire Wire Line
-	5770 5830 6885 5830
 Connection ~ 8045 2280
 Wire Wire Line
 	8045 2280 8525 2280
 Wire Wire Line
 	8130 5905 8130 2180
-Wire Wire Line
-	5470 5905 6585 5905
 Connection ~ 8130 2180
 Wire Wire Line
 	8130 2180 8755 2180
 Wire Wire Line
 	8215 5975 8215 2480
-Wire Wire Line
-	5770 5975 6785 5975
 Connection ~ 8215 2480
 Wire Wire Line
 	8215 2480 8525 2480
-Wire Wire Line
-	5470 6295 6685 6295
 Wire Wire Line
 	8315 6295 8315 1080
 Connection ~ 8315 1080
@@ -928,7 +853,7 @@ F 1 "Ferrite_Bead_Small" V 8474 880 50  0001 C CNN
 F 2 "" V 8550 880 50  0001 C CNN
 F 3 "~" H 8620 880 50  0001 C CNN
 	1    8620 880 
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8720 880  9230 880 
@@ -941,7 +866,7 @@ F 1 "Ferrite_Bead_Small" V 8484 1080 50  0001 C CNN
 F 2 "" V 8560 1080 50  0001 C CNN
 F 3 "~" H 8630 1080 50  0001 C CNN
 	1    8630 1080
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8530 1080 8315 1080
@@ -956,7 +881,7 @@ F 1 "Ferrite_Bead_Small" V 8484 1480 50  0001 C CNN
 F 2 "" V 8560 1480 50  0001 C CNN
 F 3 "~" H 8630 1480 50  0001 C CNN
 	1    8630 1480
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8730 1480 9230 1480
@@ -969,7 +894,7 @@ F 1 "Ferrite_Bead_Small" V 8494 1680 50  0001 C CNN
 F 2 "" V 8570 1680 50  0001 C CNN
 F 3 "~" H 8640 1680 50  0001 C CNN
 	1    8640 1680
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8740 1680 9230 1680
@@ -982,7 +907,7 @@ F 1 "Ferrite_Bead_Small" V 8469 1880 50  0001 C CNN
 F 2 "" V 8545 1880 50  0001 C CNN
 F 3 "~" H 8615 1880 50  0001 C CNN
 	1    8615 1880
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8715 1880 9230 1880
@@ -995,7 +920,7 @@ F 1 "Ferrite_Bead_Small" V 8469 2080 50  0001 C CNN
 F 2 "" V 8545 2080 50  0001 C CNN
 F 3 "~" H 8615 2080 50  0001 C CNN
 	1    8615 2080
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8715 2080 9230 2080
@@ -1008,7 +933,7 @@ F 1 "Ferrite_Bead_Small" V 8479 2280 50  0001 C CNN
 F 2 "" V 8555 2280 50  0001 C CNN
 F 3 "~" H 8625 2280 50  0001 C CNN
 	1    8625 2280
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8725 2280 9230 2280
@@ -1021,7 +946,7 @@ F 1 "Ferrite_Bead_Small" V 8479 2480 50  0001 C CNN
 F 2 "" V 8555 2480 50  0001 C CNN
 F 3 "~" H 8625 2480 50  0001 C CNN
 	1    8625 2480
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8725 2480 9230 2480
@@ -1034,7 +959,7 @@ F 1 "Ferrite_Bead_Small" V 8474 2680 50  0001 C CNN
 F 2 "" V 8550 2680 50  0001 C CNN
 F 3 "~" H 8620 2680 50  0001 C CNN
 	1    8620 2680
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8720 2680 9230 2680
@@ -1047,7 +972,7 @@ F 1 "Ferrite_Bead_Small" V 8694 1380 50  0001 C CNN
 F 2 "" V 8770 1380 50  0001 C CNN
 F 3 "~" H 8840 1380 50  0001 C CNN
 	1    8840 1380
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8940 1380 9230 1380
@@ -1060,7 +985,7 @@ F 1 "Ferrite_Bead_Small" V 8714 1580 50  0001 C CNN
 F 2 "" V 8790 1580 50  0001 C CNN
 F 3 "~" H 8860 1580 50  0001 C CNN
 	1    8860 1580
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8960 1580 9230 1580
@@ -1073,7 +998,7 @@ F 1 "Ferrite_Bead_Small" V 8704 1780 50  0001 C CNN
 F 2 "" V 8780 1780 50  0001 C CNN
 F 3 "~" H 8850 1780 50  0001 C CNN
 	1    8850 1780
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8950 1780 9230 1780
@@ -1086,7 +1011,7 @@ F 1 "Ferrite_Bead_Small" V 8684 1980 50  0001 C CNN
 F 2 "" V 8760 1980 50  0001 C CNN
 F 3 "~" H 8830 1980 50  0001 C CNN
 	1    8830 1980
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8930 1980 9230 1980
@@ -1099,7 +1024,7 @@ F 1 "Ferrite_Bead_Small" V 8709 2180 50  0001 C CNN
 F 2 "" V 8785 2180 50  0001 C CNN
 F 3 "~" H 8855 2180 50  0001 C CNN
 	1    8855 2180
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8955 2180 9230 2180
@@ -1112,7 +1037,7 @@ F 1 "Ferrite_Bead_Small" V 8709 2380 50  0001 C CNN
 F 2 "" V 8785 2380 50  0001 C CNN
 F 3 "~" H 8855 2380 50  0001 C CNN
 	1    8855 2380
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8955 2380 9230 2380
@@ -1125,7 +1050,7 @@ F 1 "Ferrite_Bead_Small" V 8694 2580 50  0001 C CNN
 F 2 "" V 8770 2580 50  0001 C CNN
 F 3 "~" H 8840 2580 50  0001 C CNN
 	1    8840 2580
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8940 2580 9230 2580
@@ -1153,17 +1078,6 @@ NoConn ~ 8965 1280
 NoConn ~ 8965 2780
 Text Notes 8425 4100 0    50   ~ 0
 This is one of the weakest spots of the C16, where the\nTED chip pins are directly exposed outside through the\njoystick ports.\n\nIt would be a good idea to add a buffer (74LS244 is fine)\nand maybe TVS diodes for ESD protection.\n\nAfter this is done, it could even be considered to replace\nthe MiniDIN-8 ports with D-SUB 9 ones.
-$Comp
-L Device:R_Network05 RP5
-U 1 1 5E3A4C16
-P 6685 5375
-F 0 "RP5" H 6973 5421 50  0000 L CNN
-F 1 "3.3k" H 6973 5330 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 7060 5375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6685 5375 50  0001 C CNN
-	1    6685 5375
-	1    0    0    -1  
-$EndComp
 Connection ~ 6485 3935
 Wire Wire Line
 	6485 3935 6910 3935
@@ -1179,19 +1093,6 @@ Wire Wire Line
 Connection ~ 6785 4150
 Wire Wire Line
 	6785 4150 6465 4150
-$Comp
-L power:VCC #PWR0112
-U 1 1 5E419B38
-P 6485 5070
-F 0 "#PWR0112" H 6485 4920 50  0001 C CNN
-F 1 "VCC" H 6502 5243 50  0000 C CNN
-F 2 "" H 6485 5070 50  0001 C CNN
-F 3 "" H 6485 5070 50  0001 C CNN
-	1    6485 5070
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6485 5070 6485 5175
 Wire Wire Line
 	6885 3745 6885 4005
 Wire Wire Line
@@ -1226,31 +1127,6 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6685 3545 50  0001 C CNN
 	1    6685 3545
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6485 5575 6485 5760
-Connection ~ 6485 5760
-Wire Wire Line
-	6485 5760 7955 5760
-Wire Wire Line
-	6885 5575 6885 5830
-Connection ~ 6885 5830
-Wire Wire Line
-	6885 5830 8045 5830
-Wire Wire Line
-	6585 5575 6585 5905
-Connection ~ 6585 5905
-Wire Wire Line
-	6585 5905 8130 5905
-Wire Wire Line
-	6785 5575 6785 5975
-Connection ~ 6785 5975
-Wire Wire Line
-	6785 5975 8215 5975
-Wire Wire Line
-	6685 5575 6685 6295
-Connection ~ 6685 6295
-Wire Wire Line
-	6685 6295 8315 6295
 Wire Wire Line
 	4765 2920 4995 2920
 Wire Wire Line
@@ -1311,6 +1187,130 @@ F 3 "~" H 3170 4745 50  0001 C CNN
 	1    3170 4745
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Diode:1N914 D6
+U 1 1 5E19A82E
+P 6605 5760
+F 0 "D6" H 6605 5976 50  0000 C CNN
+F 1 "1N914" H 6605 5885 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6605 5585 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6605 5760 50  0001 C CNN
+	1    6605 5760
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N914 D7
+U 1 1 5E19A838
+P 6905 5830
+F 0 "D7" H 6905 6046 50  0000 C CNN
+F 1 "1N914" H 6905 5955 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6905 5655 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6905 5830 50  0001 C CNN
+	1    6905 5830
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N914 D8
+U 1 1 5E19A842
+P 6605 5905
+F 0 "D8" H 6605 5775 50  0000 C CNN
+F 1 "1N914" H 6605 5680 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6605 5730 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6605 5905 50  0001 C CNN
+	1    6605 5905
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N914 D9
+U 1 1 5E19A84C
+P 6905 5975
+F 0 "D9" H 6905 5851 50  0000 C CNN
+F 1 "1N914" H 6905 5760 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6905 5800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6905 5975 50  0001 C CNN
+	1    6905 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N914 D10
+U 1 1 5E19A869
+P 6605 6295
+F 0 "D10" H 6605 6171 50  0000 C CNN
+F 1 "1N914" H 6605 6080 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6605 6120 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6605 6295 50  0001 C CNN
+	1    6605 6295
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6755 5760 7955 5760
+Wire Wire Line
+	7055 5830 8045 5830
+Wire Wire Line
+	6755 5905 8130 5905
+Wire Wire Line
+	7055 5975 8215 5975
+Wire Wire Line
+	6755 6295 8315 6295
+$Comp
+L Device:R_Network05 RP5
+U 1 1 5E3A4C16
+P 5670 5375
+F 0 "RP5" H 5958 5421 50  0000 L CNN
+F 1 "3.3k" H 5958 5330 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 6045 5375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5670 5375 50  0001 C CNN
+	1    5670 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0112
+U 1 1 5E419B38
+P 5470 5070
+F 0 "#PWR0112" H 5470 4920 50  0001 C CNN
+F 1 "VCC" H 5487 5243 50  0000 C CNN
+F 2 "" H 5470 5070 50  0001 C CNN
+F 3 "" H 5470 5070 50  0001 C CNN
+	1    5470 5070
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5470 5070 5470 5175
+Wire Wire Line
+	5470 5575 5470 5760
+Wire Wire Line
+	5870 5575 5870 5830
+Wire Wire Line
+	5570 5575 5570 5905
+Wire Wire Line
+	5770 5575 5770 5975
+Wire Wire Line
+	5670 5575 5670 6295
+Wire Wire Line
+	4870 5760 5470 5760
+Wire Wire Line
+	5470 5760 6455 5760
+Connection ~ 5470 5760
+Wire Wire Line
+	4870 5905 5570 5905
+Wire Wire Line
+	5570 5905 6455 5905
+Connection ~ 5570 5905
+Wire Wire Line
+	4870 6295 5670 6295
+Wire Wire Line
+	5670 6295 6455 6295
+Connection ~ 5670 6295
+Wire Wire Line
+	6755 5975 5770 5975
+Wire Wire Line
+	5770 5975 5070 5975
+Connection ~ 5770 5975
+Wire Wire Line
+	5070 5830 5870 5830
+Wire Wire Line
+	5870 5830 6755 5830
+Connection ~ 5870 5830
 Wire Bus Line
 	3510 1380 3510 2085
 Wire Bus Line
