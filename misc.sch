@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 11
 Title "LittleSixteen"
-Date "2021-07-20"
+Date "2021-10-31"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -484,4 +484,22 @@ Wire Wire Line
 	2800 5620 3160 5620
 Text Notes 3005 7160 0    50   ~ 0
 Additional\ndecoupling cap
+$Comp
+L 74xx:74LS02 U?
+U 4 1 6197C826
+P 9860 5355
+AR Path="/5EE7AAEB/6197C826" Ref="U?"  Part="4" 
+AR Path="/5EACE220/6197C826" Ref="U12"  Part="4" 
+F 0 "U12" H 9860 5680 50  0000 C CNN
+F 1 "74LS02" H 9860 5589 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9860 5355 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 9860 5355 50  0001 C CNN
+	4    9860 5355
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9560 5255
+NoConn ~ 9560 5455
+NoConn ~ 10160 5355
+Text Notes 9410 4820 0    157  ~ 0
+SPARES
 $EndSCHEMATC

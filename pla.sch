@@ -641,10 +641,10 @@ F 3 "~" H 6485 6715 50  0001 C CNN
 	1    6485 6715
 	1    0    0    -1  
 $EndComp
+Text Notes 6255 7460 0    50   ~ 0
+Additional\ndecoupling cap\nfor U15
 Wire Bus Line
 	5025 2015 5025 2615
 Wire Bus Line
 	1560 2115 1560 3215
-Text Notes 6255 7460 0    50   ~ 0
-Additional\ndecoupling cap\nfor U15
 $EndSCHEMATC
