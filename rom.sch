@@ -8,7 +8,7 @@ Title "LittleSixteen"
 Date "2020-01-03"
 Rev "1git"
 Comp "SukkoPera"
-Comment1 "Licensed under CERN OHL v.1.2"
+Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
@@ -104,7 +104,7 @@ U 1 1 5EE4EA00
 P 4970 2530
 F 0 "C5" H 5085 2576 50  0000 L CNN
 F 1 "100n" H 5085 2485 50  0000 L CNN
-F 2 "" H 5008 2380 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5008 2380 50  0001 C CNN
 F 3 "~" H 4970 2530 50  0001 C CNN
 	1    4970 2530
 	1    0    0    -1  
@@ -322,7 +322,7 @@ U 1 1 5EE644B7
 P 8745 2530
 F 0 "C6" H 8860 2576 50  0000 L CNN
 F 1 "100n" H 8860 2485 50  0000 L CNN
-F 2 "" H 8783 2380 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 8783 2380 50  0001 C CNN
 F 3 "~" H 8745 2530 50  0001 C CNN
 	1    8745 2530
 	1    0    0    -1  

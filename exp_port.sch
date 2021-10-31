@@ -8,7 +8,7 @@ Title "LittleSixteen"
 Date "2020-01-03"
 Rev "1git"
 Comp "SukkoPera"
-Comment1 "Licensed under CERN OHL v.1.2"
+Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
@@ -87,7 +87,7 @@ U 1 1 5E91CB40
 P 5855 4290
 F 0 "CN1" H 5855 5855 50  0000 C CNN
 F 1 "EXPANSION_CONNECTOR" H 5855 5764 50  0000 C CNN
-F 2 "" H 5855 2640 50  0001 C CNN
+F 2 "LittleSixteen:50Pin_Edge_Connector" H 5855 2640 50  0001 C CNN
 F 3 "DOCUMENTATION" H 5855 2540 50  0001 C CNN
 	1    5855 4290
 	1    0    0    -1  
@@ -258,7 +258,7 @@ U 1 1 5E9793EF
 P 6905 3390
 F 0 "FB38" V 6760 3390 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" V 6759 3390 50  0001 C CNN
-F 2 "" V 6835 3390 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 6835 3390 50  0001 C CNN
 F 3 "~" H 6905 3390 50  0001 C CNN
 	1    6905 3390
 	0    1    1    0   
@@ -271,7 +271,7 @@ U 1 1 5E979856
 P 4765 4090
 F 0 "FB40" V 4625 4090 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" V 4619 4090 50  0001 C CNN
-F 2 "" V 4695 4090 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 4695 4090 50  0001 C CNN
 F 3 "~" H 4765 4090 50  0001 C CNN
 	1    4765 4090
 	0    -1   1    0   
@@ -296,7 +296,7 @@ U 1 1 5E982F3B
 P 7105 3490
 F 0 "FB39" V 6960 3490 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" V 6959 3490 50  0001 C CNN
-F 2 "" V 7035 3490 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 7035 3490 50  0001 C CNN
 F 3 "~" H 7105 3490 50  0001 C CNN
 	1    7105 3490
 	0    1    1    0   

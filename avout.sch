@@ -8,7 +8,7 @@ Title "LittleSixteen"
 Date "2021-07-20"
 Rev "1git"
 Comp "SukkoPera"
-Comment1 "Licensed under CERN OHL v.1.2"
+Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
@@ -19,7 +19,7 @@ U 1 1 5E01B0CC
 P 6060 2930
 F 0 "M1" H 6440 3425 50  0000 C CNN
 F 1 "Modulator" H 6315 2440 50  0000 C CNN
-F 2 "CommodorePlus4:RF_Modulator" H 6260 2980 50  0001 C CNN
+F 2 "LittleSixteen:RF_Modulator" H 6260 2980 50  0001 C CNN
 F 3 "" H 6260 2980 50  0001 C CNN
 	1    6060 2930
 	1    0    0    -1  
@@ -63,7 +63,7 @@ U 1 1 5E01E939
 P 6060 2035
 F 0 "L1" H 6112 2081 50  0000 L CNN
 F 1 "1.2u" H 6112 1990 50  0000 L CNN
-F 2 "" H 6060 2035 50  0001 C CNN
+F 2 "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC" H 6060 2035 50  0001 C CNN
 F 3 "~" H 6060 2035 50  0001 C CNN
 	1    6060 2035
 	1    0    0    -1  
@@ -87,7 +87,7 @@ U 1 1 5E022697
 P 9695 3130
 F 0 "CN6" H 9695 3725 50  0000 C CNN
 F 1 "AUDIO_VIDEO" H 9695 3640 50  0000 C CNN
-F 2 "CommodorePlus4:Connector_DIN_Female_8Pin_3rows" H 9695 3130 50  0001 C CNN
+F 2 "LittleSixteen:Connector_DIN_Female_8Pin_3rows" H 9695 3130 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 9695 3130 50  0001 C CNN
 	1    9695 3130
 	1    0    0    -1  
