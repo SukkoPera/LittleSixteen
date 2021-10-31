@@ -3,21 +3,37 @@ LittleSixteen is an Open Hardware remake of the Commodore 16 home computer and a
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/LittleSixteen/master/img/render-top.png)
 
-
 ## Why?
-I was trying to understand why [64k RAM expansions](https://github.com/SukkoPera/OpenC16RamExpansion) do not work out-of-the-box on Commodore 16 machines, so I looked around and found some schematics. While they looked correct (and official), I found them hard to understand, as most of the components were packed together on a single page. So I thought the first thing I had to do was to redraw them so that they were easier to pick up at first sight. I did it in Kicad so these schematics could actually be used to remake the C16 board, which I ultimately did.
+I was trying to understand why [64k RAM expansions](https://github.com/SukkoPera/OpenC16RamExpansion) do not work out-of-the-box on Commodore 16 machines, so I looked around and found some schematics. While they looked correct (and official), I found them hard to understand, as most of the components were packed together on a single page. So I thought the first thing I had to do was to redraw them so that they woult be easier to pick up at first sight. I did it in Kicad so that those schematics could actually be used to remake the C16 board, which I ultimately did.
 
-You might think there is not much point in that, as C16 mainboards are usually abundant and still in good shape these days, it's their CPU and TED chips that tend to die an early death, unfortunately. So the main goal of this project is documenting how this computer was made, in the hope that, as some [other](https://hackaday.io/project/11460-fpgated) [projects](http://www.e-basteln.de/computing/65f02/65f02/) progress, we will have a fully open implementation of a Commodore 16 one day (and of the rest of the x264 Series, of course).
+You might think there is not much point in that, as C16 mainboards are usually abundant and still in good shape these days, it's their CPU and TED chips that tend to die an early death, unfortunately, and you would be right. The main goal of this project is in fact to document how this computer was made, in the hope that, as some [other](https://hackaday.io/project/11460-fpgated) [projects](http://www.e-basteln.de/computing/65f02/65f02/) progress, we could have a fully open implementation of a Commodore 16 one day (and of the rest of the x264 Series, of course).
 
 Components and circuits are grouped by logical functions in the schematics. DRC and ERC checks are 100% passed (not strictly true, but the remaining few warnings are harmless).
 
+The board was routed manually, trying to keep each track close to the original layout. This means that the schematics should be 100% accurate.
+
 ## Differences from original
-- TBD
+- The original board was probably laid out by hand and a lot of tracks were drawn with arbitrary slopes. I have sticked to only 45 degrees tracks, which of course means I could not follow the original tracks exactly, but I tried to stay as close to them as possible and to keep all the "visual hints" that allow identifying a track quickly. I must admit I'm quite satisfied of the end result, to be honest.
+- I used my usual track widths and via sizes (plus some new values for the larger tracks), I didn't bother figuring out what sizes the original board used.
+- All tracks were laid out "by eye", which means with *reasonable* - not *maniacal* - accuracy to the original design. Most care was taken in the positioning of components that ought to be in a certain position (i.e.: screw holes and I/O connectors), to ensure drop-in replaceability. Other components and tracks are "more or less" there, but as the board was wholly laid out from scratch by hand, don't expect sub-millimeter accuracy.
+- The footprints for all DIP chips use "long pads". This makes them easier to solder and more solid to the board should you need to rework them. This forced a few tracks running very close to the original pads to be slightly offset away.
+- Some footprints are slightly longer/larger/wider pitch/whatever than the originals, so that I could use ready-made KiCad libraries.
+- Footprints for the connectors and modulator were taken from [StormTrooper's Plus/4 remake](https://github.com/StormTrooper/Commodore-Plus4), without checking them for correctness.
+- I didn't bother to create the right footprint for the original power connector, as there's no point in wasting time for some item that is nowhere to be found these days. I used a much more common one instead. Same goes for the inductor.
+- I didn't pay much attention to the silkscreen, many labels can probably be placed better, but I added a description for every IC, like it or not.
+- Proper footprints were added for all the protection diodes that Commodore forcibly retrofitted on real boards (See D96-99).
+- With the C16, Commodore went as far as saving a few cents by not mounting the decoupling capacitors for a few chips. They left the pads on the boards but removed all silkscreen indications. These were restored and assigned random numbers.
+- The ground fill is autogenerated by KiCad, so it won't match the original exactly (not even close).
+- Probably there's something more I've forgotten.
+
+If you don't like any of the above, feel free to fix it yourself and [submit a Pull Request](https://github.com/SukkoPera/LittleSixteen/pulls).
 
 ## Limitations
 **Nothing of what you find here was tested, so use at your own risk**.
 
 I haven't triple-checked everything, since the purpose of this was mainly to have a better comprehension of how memory is addressed, so **there may be errors** here and there. Please open a Pull Request or Issue if you find any.
+
+Again, if you are wondering why that is the case, you are welcome to join the project and help, instead of standing there and moaning.
 
 ## License
 The LittleSixteen documentation, including the design itself, is copyright &copy; SukkoPera 2019-2021 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
