@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sun 31 Oct 2021 00:09:46 CEST")
+    (date "Sun 31 Oct 2021 09:53:15 CET")
     (tool "Eeschema 5.1.10")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -207,6 +207,12 @@
       (libsource (lib void) (part Void) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 61145DF1))
+    (comp (ref V2)
+      (value "CC BY-NC-SA 4.0")
+      (footprint LittleSixteen:cc_by_nc_sa)
+      (libsource (lib void) (part Void) (description ""))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 61992CC0))
     (comp (ref U2)
       (value MOS_8501)
       (footprint Package_DIP:DIP-40_W15.24mm_Socket_LongPads)
