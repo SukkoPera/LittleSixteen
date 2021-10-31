@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 11
 Title "LittleSixteen"
-Date "2021-10-29"
-Rev "1git"
+Date "2021-10-31"
+Rev "2git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 "WARNING: These schematics might contain errors!"
@@ -932,7 +932,7 @@ Wire Notes Line
 Wire Notes Line
 	3200 2020 2675 2020
 Text Notes 3495 4505 2    50   ~ 0
-These are more\nretrofitted\nprotection diodes,\nthese are present on\nmost C16s I've seen
+These are more retrofitted\nprotection diodes, these\nare present on most C16s\nI've seen; note that these\ndiodes have been added on all\npins going straight to the CPU
 Wire Bus Line
 	3565 4640 3565 5520
 $EndSCHEMATC
