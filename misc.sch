@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 11
 Title "LittleSixteen"
-Date "2021-10-31"
-Rev "2git"
+Date "2021-11-01"
+Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 "WARNING: These schematics might contain errors!"
@@ -75,27 +75,25 @@ Connection ~ 10040 2885
 $Comp
 L Connector:Barrel_Jack CN8
 U 1 1 5ED25866
-P 2275 2220
-F 0 "CN8" H 2332 1903 50  0000 C CNN
-F 1 "POWER_INPUT" H 2332 1994 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2325 2180 50  0001 C CNN
-F 3 "~" H 2325 2180 50  0001 C CNN
-	1    2275 2220
+P 2585 2220
+F 0 "CN8" H 2642 1903 50  0000 C CNN
+F 1 "POWER_INPUT" H 2642 1994 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2635 2180 50  0001 C CNN
+F 3 "~" H 2635 2180 50  0001 C CNN
+	1    2585 2220
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 5ED26A7B
 P 5385 2190
-F 0 "C1" H 5500 2236 50  0000 L CNN
-F 1 "100n" H 5500 2145 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5423 2040 50  0001 C CNN
+F 0 "C1" H 5271 2236 50  0000 R CNN
+F 1 "10u/50V" H 5271 2145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5423 2040 50  0001 C CNN
 F 3 "~" H 5385 2190 50  0001 C CNN
 	1    5385 2190
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4920 2070 5085 2070
 Wire Wire Line
 	5085 2070 5085 1945
 Wire Wire Line
@@ -113,193 +111,116 @@ Connection ~ 5385 2445
 $Comp
 L Device:EMI_Filter_LL L3
 U 1 1 5ED29C90
-P 3510 2220
-F 0 "L3" H 3510 2550 50  0000 C CNN
-F 1 "LINE_FILTER" H 3510 2440 50  0000 C CNN
-F 2 "CommodorePlus4:Noise_Filter" H 3510 2260 50  0001 C CNN
-F 3 "~" H 3510 2260 50  0001 C CNN
-	1    3510 2220
+P 3820 2220
+F 0 "L3" H 3820 2550 50  0000 C CNN
+F 1 "LINE_FILTER" H 3820 2440 50  0000 C CNN
+F 2 "CommodorePlus4:Noise_Filter" H 3820 2260 50  0001 C CNN
+F 3 "~" H 3820 2260 50  0001 C CNN
+	1    3820 2220
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C200
 U 1 1 5ED2CF6B
-P 2905 2220
-F 0 "C200" H 2997 2266 50  0000 L CNN
-F 1 "220n" H 2997 2175 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2905 2220 50  0001 C CNN
-F 3 "~" H 2905 2220 50  0001 C CNN
-	1    2905 2220
+P 3215 2220
+F 0 "C200" H 3307 2266 50  0000 L CNN
+F 1 "220n" H 3307 2175 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3215 2220 50  0001 C CNN
+F 3 "~" H 3215 2220 50  0001 C CNN
+	1    3215 2220
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2575 2120 2905 2120
-Connection ~ 2905 2120
+	2885 2120 3215 2120
+Connection ~ 3215 2120
 Wire Wire Line
-	2905 2120 3310 2120
+	3215 2120 3620 2120
 Wire Wire Line
-	2575 2320 2905 2320
-Connection ~ 2905 2320
+	2885 2320 3215 2320
+Connection ~ 3215 2320
 Wire Wire Line
-	2905 2320 3310 2320
+	3215 2320 3620 2320
 $Comp
 L w_device:SW_SPDT SW1
 U 1 1 5ED32B7C
-P 4205 2120
-F 0 "SW1" H 4205 2351 50  0000 C CNN
-F 1 "POWER_SWITCH" H 4205 2260 50  0000 C CNN
-F 2 "LittleSixteen:Switch-Rocker" H 4205 2120 60  0001 C CNN
-F 3 "" H 4205 2120 60  0000 C CNN
-	1    4205 2120
+P 4515 2120
+F 0 "SW1" H 4515 2351 50  0000 C CNN
+F 1 "POWER_SWITCH" H 4515 2260 50  0000 C CNN
+F 2 "LittleSixteen:Switch-Rocker" H 4515 2120 60  0001 C CNN
+F 3 "" H 4515 2120 60  0000 C CNN
+	1    4515 2120
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3710 2120 4055 2120
-$Comp
-L Device:Fuse F1
-U 1 1 5ED355AC
-P 4770 2070
-F 0 "F1" V 4573 2070 50  0000 C CNN
-F 1 "FUSE" V 4664 2070 50  0000 C CNN
-F 2 "CommodorePlus4:Fuseholder_Cylinder-6.3x32mm" V 4700 2070 50  0001 C CNN
-F 3 "~" H 4770 2070 50  0001 C CNN
-	1    4770 2070
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4355 2070 4620 2070
-Text Notes 2010 2300 2    50   ~ 0
+	4020 2120 4365 2120
+Text Notes 2320 2300 2    50   ~ 0
 9V DC 1.0A\nCENTER NEGATIVE
 $Comp
 L Regulator_Linear:L7805 VR1
 U 1 1 5ED392FB
-P 5905 1945
-F 0 "VR1" H 5905 2187 50  0000 C CNN
-F 1 "7805" H 5905 2096 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5930 1795 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5905 1895 50  0001 C CNN
-	1    5905 1945
+P 7550 1945
+F 0 "VR1" H 7550 2187 50  0000 C CNN
+F 1 "TSR 2-2450" H 7550 2096 50  0000 C CNN
+F 2 "LittleSixteen:TSR_2-2450" H 7575 1795 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 7550 1895 50  0001 C CNN
+	1    7550 1945
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3710 2320 5085 2320
+	4020 2320 5085 2320
 Wire Wire Line
-	5385 1945 5605 1945
+	5385 1945 5815 1945
 Wire Wire Line
-	5905 2245 5905 2445
+	7550 2245 7550 2445
 Wire Wire Line
-	5385 2445 5905 2445
+	5385 2445 5815 2445
 $Comp
 L power:GND #PWR0148
 U 1 1 5ED44963
-P 5905 2560
-F 0 "#PWR0148" H 5905 2310 50  0001 C CNN
-F 1 "GND" H 5910 2387 50  0000 C CNN
-F 2 "" H 5905 2560 50  0001 C CNN
-F 3 "" H 5905 2560 50  0001 C CNN
-	1    5905 2560
+P 7550 2560
+F 0 "#PWR0148" H 7550 2310 50  0001 C CNN
+F 1 "GND" H 7555 2387 50  0000 C CNN
+F 2 "" H 7550 2560 50  0001 C CNN
+F 3 "" H 7550 2560 50  0001 C CNN
+	1    7550 2560
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5905 2445 5905 2560
-Connection ~ 5905 2445
-$Comp
-L Device:CP1 C2
-U 1 1 5ED4680C
-P 6435 2190
-F 0 "C2" H 6550 2236 50  0000 L CNN
-F 1 "47u/25V" H 6550 2145 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 6435 2190 50  0001 C CNN
-F 3 "~" H 6435 2190 50  0001 C CNN
-	1    6435 2190
-	1    0    0    -1  
-$EndComp
+	7550 2445 7550 2560
+Connection ~ 7550 2445
 Wire Wire Line
-	5905 2445 6435 2445
-Wire Wire Line
-	6435 2445 6435 2340
-Wire Wire Line
-	6205 1945 6435 1945
-Wire Wire Line
-	6435 1945 6435 2040
-$Comp
-L Device:D D11
-U 1 1 5ED49365
-P 5905 1575
-F 0 "D11" H 5905 1791 50  0000 C CNN
-F 1 "1N914" H 5905 1700 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_KathodeUp" H 5905 1575 50  0001 C CNN
-F 3 "~" H 5905 1575 50  0001 C CNN
-	1    5905 1575
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5ED49989
-P 5905 1250
-F 0 "R10" V 5698 1250 50  0000 C CNN
-F 1 "20/5W" V 5789 1250 50  0000 C CNN
-F 2 "Resistor_THT:R_Box_L26.0mm_W5.0mm_P20.00mm" V 5835 1250 50  0001 C CNN
-F 3 "~" H 5905 1250 50  0001 C CNN
-	1    5905 1250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5385 1945 5385 1575
-Wire Wire Line
-	5385 1250 5755 1250
-Wire Wire Line
-	5755 1575 5385 1575
-Connection ~ 5385 1575
-Wire Wire Line
-	5385 1575 5385 1250
-Wire Wire Line
-	6055 1575 6435 1575
-Wire Wire Line
-	6435 1575 6435 1945
-Connection ~ 6435 1945
-Wire Wire Line
-	6055 1250 6435 1250
-Wire Wire Line
-	6435 1250 6435 1575
-Connection ~ 6435 1575
+	7850 1945 8080 1945
 $Comp
 L power:+9V #PWR0149
 U 1 1 5ED51964
-P 5385 995
-F 0 "#PWR0149" H 5385 845 50  0001 C CNN
-F 1 "+9V" H 5400 1168 50  0000 C CNN
-F 2 "" H 5385 995 50  0001 C CNN
-F 3 "" H 5385 995 50  0001 C CNN
-	1    5385 995 
+P 5385 1835
+F 0 "#PWR0149" H 5385 1685 50  0001 C CNN
+F 1 "+9V" H 5400 2008 50  0000 C CNN
+F 2 "" H 5385 1835 50  0001 C CNN
+F 3 "" H 5385 1835 50  0001 C CNN
+	1    5385 1835
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5385 995  5385 1250
-Connection ~ 5385 1250
 $Comp
 L power:VCC #PWR0150
 U 1 1 5ED52F9F
-P 6435 995
-F 0 "#PWR0150" H 6435 845 50  0001 C CNN
-F 1 "VCC" H 6452 1168 50  0000 C CNN
-F 2 "" H 6435 995 50  0001 C CNN
-F 3 "" H 6435 995 50  0001 C CNN
-	1    6435 995 
+P 8080 1835
+F 0 "#PWR0150" H 8080 1685 50  0001 C CNN
+F 1 "VCC" H 8097 2008 50  0000 C CNN
+F 2 "" H 8080 1835 50  0001 C CNN
+F 3 "" H 8080 1835 50  0001 C CNN
+	1    8080 1835
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6435 995  6435 1250
-Connection ~ 6435 1250
 Text Notes 2525 1175 0    157  ~ 0
 POWER REGULATION
 Text Notes 9085 1940 0    157  ~ 0
 POWER LED
-Text Notes 6530 1760 0    50   ~ 0
-This is that big white resistor that is responsible\nfor a lot of the heat inside the C16 case. I have\nnever fully understood why it is here.\n\nA good idea is using a switching regulator instead\nof the usual 7805, like those made by Traco.\nTSR 1-2450 should be a good choice. That should\nalso make the big metal heatsink useless.
+Text Notes 5790 1500 0    50   ~ 0
+The TSR 2-2450 has a wide input range (6.5 - 36 VDC, 12 VDC nom.)\nand is able to output up to 2A. The input filter is modeled as\nrecommended in the "tsr2_emi_consideration.pdf" document available\non the Traco website.\n\nThe 1A model, TSR 1-2450 would probably be sufficient for most uses,\ntoo, but maybe the input filter values should be changed.
 Text Notes 4750 2610 2    50   ~ 0
 TODO: Check filter pinout and make switch 6-pin
-NoConn ~ 4355 2170
+NoConn ~ 4665 2170
 $Comp
 L power:GND #PWR0155
 U 1 1 5ED5CFD9
@@ -425,8 +346,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 1050 6565 50  0001 C CNN
 	5    1050 6565
 	1    0    0    -1  
 $EndComp
-Text Notes 5320 1650 2    50   ~ 0
-D11 is a 1N4001\non my board
 $Comp
 L Device:C C36
 U 1 1 611BD40B
@@ -785,4 +704,90 @@ Wire Wire Line
 	6520 4280 6695 4280
 Text Notes 6865 5075 0    50   ~ 0
 This will be inverted\nseparately by U9B,\nno idea why
+Wire Wire Line
+	5385 1835 5385 1945
+Wire Wire Line
+	8080 1835 8080 1945
+Wire Wire Line
+	4665 2070 5085 2070
+$Comp
+L Device:L L2
+U 1 1 61823D45
+P 6195 1945
+F 0 "L2" V 6480 1945 50  0000 C CNN
+F 1 "5.6u" V 6390 1945 50  0000 C CNN
+F 2 "Inductor_SMD:L_TracoPower_TCK-141" H 6195 1945 50  0001 C CNN
+F 3 "~" H 6195 1945 50  0001 C CNN
+	1    6195 1945
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 61824D2B
+P 5815 2190
+F 0 "C2" H 5930 2236 50  0000 L CNN
+F 1 "10u/50V" H 5930 2145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5853 2040 50  0001 C CNN
+F 3 "~" H 5815 2190 50  0001 C CNN
+	1    5815 2190
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5815 2040 5815 1945
+Wire Wire Line
+	5815 2340 5815 2445
+Connection ~ 5815 1945
+Wire Wire Line
+	5815 1945 6045 1945
+Connection ~ 5815 2445
+Wire Wire Line
+	5815 2445 6570 2445
+Wire Wire Line
+	6345 1945 6570 1945
+$Comp
+L Device:C C37
+U 1 1 6182DC53
+P 6570 2190
+F 0 "C37" H 6685 2236 50  0000 L CNN
+F 1 "10u/50V" H 6685 2145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 6608 2040 50  0001 C CNN
+F 3 "~" H 6570 2190 50  0001 C CNN
+	1    6570 2190
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6570 2040 6570 1945
+Wire Wire Line
+	6570 2340 6570 2445
+Wire Wire Line
+	7000 2040 7000 1945
+Wire Wire Line
+	7000 2340 7000 2445
+Connection ~ 6570 1945
+Wire Wire Line
+	6570 1945 7000 1945
+Connection ~ 6570 2445
+Wire Wire Line
+	6570 2445 7000 2445
+Connection ~ 7000 1945
+Wire Wire Line
+	7000 1945 7250 1945
+Connection ~ 7000 2445
+Wire Wire Line
+	7000 2445 7550 2445
+$Comp
+L Device:CP1 C?
+U 1 1 618376A0
+P 7000 2190
+AR Path="/5E4A81E1/618376A0" Ref="C?"  Part="1" 
+AR Path="/5EACE220/618376A0" Ref="C38"  Part="1" 
+F 0 "C38" H 6886 2236 50  0000 R CNN
+F 1 "56u/50V" H 6886 2145 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 7000 2190 50  0001 C CNN
+F 3 "~" H 7000 2190 50  0001 C CNN
+	1    7000 2190
+	-1   0    0    -1  
+$EndComp
+Text Notes 6020 1880 0    50   ~ 0
+TCK-141
 $EndSCHEMATC
