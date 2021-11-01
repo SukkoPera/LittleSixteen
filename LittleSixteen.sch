@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 12
 Title "LittleSixteen"
-Date "2021-07-20"
-Rev "2git"
+Date "2021-11-02"
+Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 "WARNING: These schematics might contain errors!"
@@ -40,8 +40,8 @@ $EndSheet
 $Sheet
 S 1580 3180 1300 750 
 U 5DECEF6F
-F0 "Keyboard & Joystick" 50
-F1 "kbd+joy.sch" 50
+F0 "Keyboard" 50
+F1 "keyboard.sch" 50
 $EndSheet
 $Sheet
 S 3990 3180 1300 750 
@@ -66,6 +66,12 @@ S 3990 5130 1300 750
 U 5EE7AAEB
 F0 "PLA & Chip Selection" 50
 F1 "pla.sch" 50
+$EndSheet
+$Sheet
+S 1580 5130 1300 750 
+U 61BCD018
+F0 "Joysticks" 50
+F1 "joysticks.sch" 50
 $EndSheet
 $Sheet
 S 6400 5130 1300 750 
