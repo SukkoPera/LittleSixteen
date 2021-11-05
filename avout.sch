@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 12
+Sheet 12 12
 Title "LittleSixteen"
 Date "2021-07-20"
 Rev "2git"
@@ -563,5 +563,21 @@ Wire Wire Line
 Wire Wire Line
 	6060 1765 6060 1885
 Wire Wire Line
-	6060 2185 6060 2280
+	6060 2185 6060 2235
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 6260C869
+P 6015 2235
+F 0 "#FLG0104" H 6015 2310 50  0001 C CNN
+F 1 "PWR_FLAG" V 6015 2362 50  0000 L CNN
+F 2 "" H 6015 2235 50  0001 C CNN
+F 3 "~" H 6015 2235 50  0001 C CNN
+	1    6015 2235
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6015 2235 6060 2235
+Connection ~ 6060 2235
+Wire Wire Line
+	6060 2235 6060 2280
 $EndSCHEMATC

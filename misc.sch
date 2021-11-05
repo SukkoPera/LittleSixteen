@@ -803,4 +803,20 @@ F 3 "~" H 7000 1845 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7000 1845 7000 1945
+$Comp
+L 74xx:74LS125 U?
+U 4 1 625FE5B6
+P 9860 5960
+AR Path="/5ECB474B/625FE5B6" Ref="U?"  Part="4" 
+AR Path="/5EACE220/625FE5B6" Ref="U11"  Part="4" 
+F 0 "U11" H 9860 6277 50  0000 C CNN
+F 1 "74LS125" H 9860 6186 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9860 5960 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 9860 5960 50  0001 C CNN
+	4    9860 5960
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9560 5960
+NoConn ~ 9860 6210
+NoConn ~ 10160 5960
 $EndSCHEMATC
