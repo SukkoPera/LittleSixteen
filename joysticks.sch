@@ -260,8 +260,6 @@ F 3 "" H 3340 4340 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4815 4780 4815 5210
-Wire Wire Line
 	4735 4680 4910 4680
 Wire Wire Line
 	4655 4580 5110 4580
@@ -269,10 +267,6 @@ Wire Wire Line
 	4570 4480 4910 4480
 Wire Wire Line
 	4415 4730 4485 4730
-Wire Wire Line
-	4115 5210 4815 5210
-Wire Wire Line
-	4115 5130 4115 5210
 Wire Wire Line
 	4735 4830 4735 4680
 Wire Wire Line
@@ -289,17 +283,6 @@ Wire Wire Line
 	4570 4930 4570 4480
 Wire Wire Line
 	4415 4930 4570 4930
-$Comp
-L Connector:Mini-DIN-8 CN5
-U 1 1 5E19A816
-P 4115 4830
-F 0 "CN5" H 4270 5195 50  0000 C CNN
-F 1 "JOY2" H 4275 5115 50  0000 C CNN
-F 2 "LittleSixteen:Connector_Mini-DIN_Female_8Pin_2rows" V 4105 4820 50  0001 C CNN
-F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 4105 4820 50  0001 C CNN
-	1    4115 4830
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 5E19A7E6
@@ -423,7 +406,7 @@ F 3 "" H 3340 1665 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4815 2105 4815 2535
+	4815 2105 4815 2355
 Wire Wire Line
 	4735 2005 4865 2005
 Wire Wire Line
@@ -468,10 +451,6 @@ Wire Wire Line
 Wire Wire Line
 	4415 2055 4485 2055
 Wire Wire Line
-	4115 2535 4815 2535
-Wire Wire Line
-	4115 2455 4115 2535
-Wire Wire Line
 	4735 2155 4735 2005
 Wire Wire Line
 	4415 2155 4735 2155
@@ -485,17 +464,6 @@ Wire Wire Line
 	4570 2255 4570 1805
 Wire Wire Line
 	4415 2255 4570 2255
-$Comp
-L Connector:Mini-DIN-8 CN4
-U 1 1 5DF69658
-P 4115 2155
-F 0 "CN4" H 4270 2520 50  0000 C CNN
-F 1 "JOY1" H 4275 2440 50  0000 C CNN
-F 2 "LittleSixteen:Connector_Mini-DIN_Female_8Pin_2rows" V 4105 2145 50  0001 C CNN
-F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 4105 2145 50  0001 C CNN
-	1    4115 2155
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
 	9585 1805 9685 1705
 Entry Wire Line
@@ -570,7 +538,7 @@ $EndComp
 Wire Wire Line
 	8345 4880 9585 4880
 Wire Wire Line
-	3555 5105 3555 5210
+	3555 5105 3555 5160
 Wire Wire Line
 	3555 4480 4115 4480
 Wire Wire Line
@@ -699,7 +667,7 @@ F 3 "" H 3555 2545 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3555 2435 3555 2545
+	3555 2435 3555 2490
 Wire Wire Line
 	5930 1480 5930 1805
 Wire Wire Line
@@ -1153,8 +1121,50 @@ Wire Wire Line
 	2390 5030 2390 5230
 Wire Wire Line
 	1660 5030 2390 5030
-Wire Bus Line
-	9685 1705 9685 4780
 Text Notes 2800 2090 2    50   ~ 0
 The JD1 and JD2 jumpers are not present\nin the original schematics, but I have traced\nthem on my board. They are labeled "D1" and\n"D2", I have renamed them to avoid conflicts\nwith the diodes bearing the same labels.\n\nTheir purpose seems to be able to enable the\njoysticks after passing through the keyboard\ndriver. Since it seems  the latter was introduced\nlate in the x264 architecture, maybe the\ndesigners weren't sure what was best and kept\nboth possibilities.
+$Comp
+L mini-din-8:Mini-DIN-8 CN5
+U 1 1 62150BCE
+P 4115 4830
+F 0 "CN5" H 4320 5150 50  0000 C CNN
+F 1 "JOY2" H 4315 5075 50  0000 C CNN
+F 2 "LittleSixteen:KMDGX-8S-BS" V 4105 4820 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 4105 4820 50  0001 C CNN
+	1    4115 4830
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4415 5030 4815 5030
+Wire Wire Line
+	4815 4780 4815 5030
+Wire Wire Line
+	4115 5160 3555 5160
+Wire Wire Line
+	4115 5130 4115 5160
+Connection ~ 3555 5160
+Wire Wire Line
+	3555 5160 3555 5210
+$Comp
+L mini-din-8:Mini-DIN-8 CN4
+U 1 1 62179774
+P 4115 2155
+F 0 "CN4" H 4295 2485 50  0000 C CNN
+F 1 "JOY1" H 4295 2410 50  0000 C CNN
+F 2 "LittleSixteen:KMDGX-8S-BS" V 4105 2145 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 4105 2145 50  0001 C CNN
+	1    4115 2155
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4415 2355 4815 2355
+Wire Wire Line
+	3555 2490 4115 2490
+Wire Wire Line
+	4115 2490 4115 2455
+Wire Bus Line
+	9685 1705 9685 4780
+Connection ~ 3555 2490
+Wire Wire Line
+	3555 2490 3555 2545
 $EndSCHEMATC

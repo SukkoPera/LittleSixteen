@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "LittleSixteen"
-Date "2021-10-31"
+Date "2021-11-06"
 Rev "2git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -13,17 +13,6 @@ Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:Mini-DIN-7 CN3
-U 1 1 5ECB4902
-P 5040 2465
-F 0 "CN3" H 5040 2190 50  0000 C CNN
-F 1 "CASSETTE" H 5040 2099 50  0000 C CNN
-F 2 "LittleSixteen:Connector_Mini-DIN_Female_7Pin_2rows" V 5030 2455 50  0001 C CNN
-F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 5030 2455 50  0001 C CNN
-	1    5040 2465
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4740 2365 4345 2365
 Wire Wire Line
@@ -933,8 +922,23 @@ Wire Notes Line
 	3200 2020 2675 2020
 Text Notes 3495 4505 2    50   ~ 0
 These are more retrofitted\nprotection diodes, these\nare present on most C16s\nI've seen; note that these\ndiodes have been added on all\npins going straight to the CPU
-Wire Bus Line
-	3565 4640 3565 5520
 Text Label 9070 2155 2    50   ~ 0
 ~p3
+$Comp
+L mini-din-7:Mini-DIN-7 CN3
+U 1 1 620EE6EF
+P 5040 2465
+F 0 "CN3" H 4845 2215 50  0000 C CNN
+F 1 "CASSETTE" H 4745 2130 50  0000 C CNN
+F 2 "LittleSixteen:KMDGX-7S-BS" V 5030 2455 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 5030 2455 50  0001 C CNN
+	1    5040 2465
+	1    0    0    -1  
+$EndComp
+Text Notes 4995 2155 1    50   ~ 0
+WARNING: The drawing of\nthis connector does not\nmatch the real connector\nexactly!
+Wire Wire Line
+	5040 2765 5040 3005
+Wire Bus Line
+	3565 4640 3565 5520
 $EndSCHEMATC

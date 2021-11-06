@@ -18,4 +18,6 @@
   (lib (name void)(type Legacy)(uri ${KIPRJMOD}/lib/void.lib)(options "")(descr ""))
   (lib (name ferrite_bead_small)(type Legacy)(uri ${KIPRJMOD}/lib/ferrite_bead_small.lib)(options "")(descr ""))
   (lib (name atf16v8)(type Legacy)(uri ${KIPRJMOD}/lib/atf16v8.lib)(options "")(descr ""))
+  (lib (name mini-din-7)(type Legacy)(uri ${KIPRJMOD}/lib/mini-din-7.lib)(options "")(descr ""))
+  (lib (name mini-din-8)(type Legacy)(uri ${KIPRJMOD}/lib/mini-din-8.lib)(options "")(descr ""))
 )
