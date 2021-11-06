@@ -785,9 +785,9 @@ WRITE
 Text Notes 5350 2460 0    50   ~ 0
 MOTOR
 Text Notes 5350 2560 0    50   ~ 0
-SENSE
-Text Notes 4405 2360 0    50   ~ 0
-GROUND
+MOTOR_GND
+Text Notes 4525 2360 0    50   ~ 0
+GND
 Text Notes 4525 2460 0    50   ~ 0
 READ
 Text Notes 4555 2560 0    50   ~ 0
@@ -935,4 +935,6 @@ Text Notes 3495 4505 2    50   ~ 0
 These are more retrofitted\nprotection diodes, these\nare present on most C16s\nI've seen; note that these\ndiodes have been added on all\npins going straight to the CPU
 Wire Bus Line
 	3565 4640 3565 5520
+Text Label 9070 2155 2    50   ~ 0
+~p3
 $EndSCHEMATC

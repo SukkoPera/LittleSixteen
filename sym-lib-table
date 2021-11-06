@@ -17,4 +17,5 @@
   (lib (name Ferrite3Pin)(type Legacy)(uri ${KIPRJMOD}/lib/Ferrite3Pin.lib)(options "")(descr ""))
   (lib (name void)(type Legacy)(uri ${KIPRJMOD}/lib/void.lib)(options "")(descr ""))
   (lib (name ferrite_bead_small)(type Legacy)(uri ${KIPRJMOD}/lib/ferrite_bead_small.lib)(options "")(descr ""))
+  (lib (name atf16v8)(type Legacy)(uri ${KIPRJMOD}/lib/atf16v8.lib)(options "")(descr ""))
 )
