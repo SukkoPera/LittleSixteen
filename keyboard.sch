@@ -520,11 +520,29 @@ Wire Wire Line
 Wire Wire Line
 	4005 3120 4760 3120
 Wire Wire Line
-	6260 3220 7060 3220
+	6260 3220 6345 3220
 Wire Wire Line
-	6260 3120 7255 3120
+	6260 3120 6435 3120
+Wire Wire Line
+	6435 3120 6435 1735
+Wire Wire Line
+	6435 1735 7230 1735
+Connection ~ 6435 3120
+Wire Wire Line
+	6435 3120 7255 3120
+Wire Wire Line
+	6345 3220 6345 1635
+Wire Wire Line
+	6345 1635 7230 1635
+Connection ~ 6345 3220
+Wire Wire Line
+	6345 3220 7060 3220
+Text GLabel 7230 1635 2    50   Output ~ 0
+D2_LATCHED
 Wire Bus Line
 	3905 2920 3905 3625
 Wire Bus Line
 	7425 2520 7425 4755
+Text GLabel 7230 1735 2    50   Output ~ 0
+D1_LATCHED
 $EndSCHEMATC
