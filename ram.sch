@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 12
 Title "LittleSixteen"
-Date "2021-07-20"
+Date "2021-11-06"
 Rev "2git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -567,17 +567,6 @@ Wire Wire Line
 	2665 2390 3475 2390
 Wire Wire Line
 	1905 2690 2420 2690
-$Comp
-L power:VCC #PWR0118
-U 1 1 5E691A04
-P 3320 1130
-F 0 "#PWR0118" H 3320 980 50  0001 C CNN
-F 1 "VCC" H 3337 1303 50  0000 C CNN
-F 2 "" H 3320 1130 50  0001 C CNN
-F 3 "" H 3320 1130 50  0001 C CNN
-	1    3320 1130
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3475 1490 3320 1490
 Wire Wire Line
@@ -585,8 +574,8 @@ Wire Wire Line
 Text GLabel 1905 2690 0    50   Input ~ 0
 MUX
 Wire Bus Line
-	2565 1490 2050 1490
-Text GLabel 2050 1490 0    50   Input ~ 0
+	2565 1160 2050 1160
+Text GLabel 2050 1160 0    50   Input ~ 0
 a[0..15]
 $Comp
 L power:GND #PWR0119
@@ -640,12 +629,12 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR0120
 U 1 1 5E710070
-P 3320 3870
-F 0 "#PWR0120" H 3320 3720 50  0001 C CNN
-F 1 "VCC" H 3337 4043 50  0000 C CNN
-F 2 "" H 3320 3870 50  0001 C CNN
-F 3 "" H 3320 3870 50  0001 C CNN
-	1    3320 3870
+P 3585 3790
+F 0 "#PWR0120" H 3585 3640 50  0001 C CNN
+F 1 "VCC" H 3602 3963 50  0000 C CNN
+F 2 "" H 3585 3790 50  0001 C CNN
+F 3 "" H 3585 3790 50  0001 C CNN
+	1    3585 3790
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -702,7 +691,7 @@ F 3 "" H 3975 2090 50  0001 C CNN
 	1    3975 2090
 	1    0    0    -1  
 $EndComp
-Text Notes 2720 3580 0    50   ~ 0
+Text Notes 2715 3550 0    50   ~ 0
 U7 and U8 can either be 74x157 or 74x257,\nsince they are permanently enabled
 Wire Wire Line
 	4475 5130 4545 5130
@@ -742,8 +731,8 @@ F 3 "" H 4885 4690 50  0001 C CNN
 	1    4745 4690
 	0    1    1    0   
 $EndComp
-Text Notes 4810 3585 1    50   ~ 0
-Yes, RP3/4 have this\nweird pin numbering...
+Text Notes 4915 3675 1    50   ~ 0
+Yes, RP3/4 have this\nweird pin numbering,\nmost likely in order to\nmake routing easier
 $Comp
 L Device:C C35
 U 1 1 611A31E9
@@ -799,6 +788,69 @@ $EndComp
 Connection ~ 3380 6525
 Wire Wire Line
 	3380 6525 3760 6525
+$Comp
+L Connector:Conn_01x03_Male JP2
+U 1 1 61451C3E
+P 3320 3670
+F 0 "JP2" V 3382 3482 50  0000 R CNN
+F 1 "JP_RAMSIZE2" V 3473 3482 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3320 3670 50  0001 C CNN
+F 3 "~" H 3320 3670 50  0001 C CNN
+	1    3320 3670
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3420 3870 3420 4000
+Wire Wire Line
+	3420 4000 3585 4000
+Wire Wire Line
+	3585 4000 3585 3790
+Wire Wire Line
+	3220 3870 3220 4000
+Wire Wire Line
+	3220 4000 2665 4000
+Entry Wire Line
+	2565 3900 2665 4000
+Text Label 2865 4000 0    60   ~ 0
+a14
+$Comp
+L power:VCC #PWR0118
+U 1 1 6147AF8D
+P 3585 1050
+F 0 "#PWR0118" H 3585 900 50  0001 C CNN
+F 1 "VCC" H 3602 1223 50  0000 C CNN
+F 2 "" H 3585 1050 50  0001 C CNN
+F 3 "" H 3585 1050 50  0001 C CNN
+	1    3585 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male JP1
+U 1 1 6147B280
+P 3320 930
+F 0 "JP1" V 3382 742 50  0000 R CNN
+F 1 "JP_RAMSIZE1" V 3473 742 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3320 930 50  0001 C CNN
+F 3 "~" H 3320 930 50  0001 C CNN
+	1    3320 930 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3420 1130 3420 1260
+Wire Wire Line
+	3420 1260 3585 1260
+Wire Wire Line
+	3585 1260 3585 1050
+Wire Wire Line
+	3220 1130 3220 1260
+Wire Wire Line
+	3220 1260 2665 1260
+Entry Wire Line
+	2565 1160 2665 1260
+Text Label 2865 1260 0    60   ~ 0
+a15
+Text Notes 3730 1130 0    50   ~ 0
+JP1/2 are a 16kB/64kB\nRAM Switch Mod. Use\n4464 chips instead of 4416.
 Wire Bus Line
 	5815 1220 5815 3440
 Wire Bus Line
@@ -810,5 +862,5 @@ Wire Bus Line
 Wire Bus Line
 	8985 2140 8985 5230
 Wire Bus Line
-	2565 1490 2565 5130
+	2565 1160 2565 5130
 $EndSCHEMATC
