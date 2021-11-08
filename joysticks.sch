@@ -1162,9 +1162,9 @@ Wire Wire Line
 	3555 2490 4115 2490
 Wire Wire Line
 	4115 2490 4115 2455
-Wire Bus Line
-	9685 1705 9685 4780
 Connection ~ 3555 2490
 Wire Wire Line
 	3555 2490 3555 2545
+Wire Bus Line
+	9685 1705 9685 4780
 $EndSCHEMATC

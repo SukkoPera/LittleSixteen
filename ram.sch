@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 12
 Title "LittleSixteen"
-Date "2021-11-06"
+Date "2021-11-08"
 Rev "2git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -526,8 +526,6 @@ Entry Wire Line
 Text Label 2865 1590 0    60   ~ 0
 a0
 Wire Wire Line
-	3475 2790 3320 2790
-Wire Wire Line
 	2665 1590 3475 1590
 Text Label 2865 2490 0    60   ~ 0
 a3
@@ -566,36 +564,21 @@ Wire Wire Line
 Wire Wire Line
 	2665 2390 3475 2390
 Wire Wire Line
-	1905 2690 2420 2690
+	2320 2690 2420 2690
 Wire Wire Line
 	3475 1490 3320 1490
 Wire Wire Line
 	3320 1490 3320 1130
-Text GLabel 1905 2690 0    50   Input ~ 0
+Text GLabel 2320 2690 0    50   Input ~ 0
 MUX
 Wire Bus Line
-	2565 1160 2050 1160
-Text GLabel 2050 1160 0    50   Input ~ 0
+	2565 1160 2350 1160
+Text GLabel 2350 1160 0    50   Input ~ 0
 a[0..15]
-$Comp
-L power:GND #PWR0119
-U 1 1 5E6F60AB
-P 3320 3160
-F 0 "#PWR0119" H 3320 2910 50  0001 C CNN
-F 1 "GND" H 3325 2987 50  0000 C CNN
-F 2 "" H 3320 3160 50  0001 C CNN
-F 3 "" H 3320 3160 50  0001 C CNN
-	1    3320 3160
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3320 2790 3320 3160
 Entry Wire Line
 	2565 4230 2665 4330
 Text Label 2865 4330 0    60   ~ 0
 a4
-Wire Wire Line
-	3475 5530 3320 5530
 Wire Wire Line
 	2665 4330 3475 4330
 Text Label 2865 5230 0    60   ~ 0
@@ -637,19 +620,6 @@ F 3 "" H 3585 3790 50  0001 C CNN
 	1    3585 3790
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 5E710080
-P 3320 5900
-F 0 "#PWR0121" H 3320 5650 50  0001 C CNN
-F 1 "GND" H 3325 5727 50  0000 C CNN
-F 2 "" H 3320 5900 50  0001 C CNN
-F 3 "" H 3320 5900 50  0001 C CNN
-	1    3320 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3320 5530 3320 5900
 Entry Wire Line
 	2565 4130 2665 4230
 Text Label 2865 4230 0    60   ~ 0
@@ -851,6 +821,68 @@ Text Label 2865 1260 0    60   ~ 0
 a15
 Text Notes 3730 1130 0    50   ~ 0
 JP1/2 are a 16kB/64kB\nRAM Switch Mod. Use\n4464 chips instead of 4416.
+Text GLabel 965  2690 0    50   Input ~ 0
+RAMEN
+$Comp
+L 74xx:74LS02 U?
+U 4 1 618ABE98
+P 1535 2790
+AR Path="/5EE7AAEB/618ABE98" Ref="U?"  Part="4" 
+AR Path="/5EACE220/618ABE98" Ref="U?"  Part="4" 
+AR Path="/5E4A465A/618ABE98" Ref="U12"  Part="4" 
+F 0 "U12" H 1535 3115 50  0000 C CNN
+F 1 "74LS02" H 1535 3024 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1535 2790 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 1535 2790 50  0001 C CNN
+	4    1535 2790
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	965  2690 1135 2690
+Wire Wire Line
+	1135 2690 1135 2890
+Wire Wire Line
+	1135 2890 1235 2890
+Connection ~ 1135 2690
+Wire Wire Line
+	1135 2690 1235 2690
+Wire Wire Line
+	1835 2790 2320 2790
+Wire Wire Line
+	2320 2790 2320 5530
+Connection ~ 2320 2790
+Wire Wire Line
+	2320 2790 3475 2790
+Wire Wire Line
+	2320 5530 3475 5530
+$Comp
+L Device:R R99
+U 1 1 61920791
+P 1135 2350
+F 0 "R99" H 1205 2396 50  0000 L CNN
+F 1 "10k" H 1205 2305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1065 2350 50  0001 C CNN
+F 3 "~" H 1135 2350 50  0001 C CNN
+	1    1135 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1135 2500 1135 2690
+$Comp
+L power:VCC #PWR0119
+U 1 1 61928882
+P 1135 2100
+F 0 "#PWR0119" H 1135 1950 50  0001 C CNN
+F 1 "VCC" H 1152 2273 50  0000 C CNN
+F 2 "" H 1135 2100 50  0001 C CNN
+F 3 "" H 1135 2100 50  0001 C CNN
+	1    1135 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1135 2100 1135 2200
+Text Label 1845 2790 0    50   ~ 0
+~ramen
 Wire Bus Line
 	5815 1220 5815 3440
 Wire Bus Line
@@ -863,4 +895,6 @@ Wire Bus Line
 	8985 2140 8985 5230
 Wire Bus Line
 	2565 1160 2565 5130
+Text Notes 660  3570 0    50   ~ 0
+We make use of a spare gate to fix the\neternal problem of external RAM\nexpansions not working, which is due to\nthe impossibility of disabling the internal\nRAM. This should do it, just ground the Z\npin and the internal RAM will disappear.
 $EndSCHEMATC

@@ -963,12 +963,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS175" H 6165 1585 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3145 1585 3575 1585
-Wire Bus Line
-	5245 1085 5245 1685
-Wire Bus Line
-	1280 1185 1280 2285
-Wire Bus Line
-	2680 4095 2680 7215
 Text Label 3175 1685 0    50   ~ 0
 addr_clk
 Text Label 3175 1885 0    50   ~ 0
@@ -986,4 +980,10 @@ F 3 "" H 1710 4455 50  0001 C CNN
 	1    1710 4455
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	5245 1085 5245 1685
+Wire Bus Line
+	1280 1185 1280 2285
+Wire Bus Line
+	2680 4095 2680 7215
 $EndSCHEMATC

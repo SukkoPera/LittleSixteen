@@ -343,8 +343,22 @@ Text GLabel 4580 5290 0    50   Output ~ 0
 EXT_AUDIO
 Wire Wire Line
 	4580 5290 5105 5290
+Text GLabel 7230 5190 2    50   Output ~ 0
+RAMEN
+Wire Wire Line
+	6605 5190 7230 5190
+Wire Notes Line
+	6375 5115 7575 5115
+Wire Notes Line
+	7575 5115 7575 5260
+Wire Notes Line
+	7575 5260 6375 5260
+Wire Notes Line
+	6375 5260 6375 5115
 Wire Bus Line
 	3910 4290 3910 4990
 Wire Bus Line
 	7855 3490 7855 4990
+Text Notes 6885 5715 0    50   ~ 0
+On the Plus/4 schematics from the German User's guide, the\nZ pin is reported as "RAMEN (NC)". On the actual boards it is\nactually NC, but then why not use it as a real "RAM Enable"\nsignal to solve the problem of external RAM expansions not\nworking? :)
 $EndSCHEMATC
