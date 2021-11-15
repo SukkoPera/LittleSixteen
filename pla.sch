@@ -751,7 +751,6 @@ F 3 "DOCUMENTATION" H 9050 3530 50  0001 C CNN
 	2    9050 3530
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10150 2150
 Text GLabel 10420 2350 2    50   Output ~ 0
 C2_HIGH
 Text GLabel 10420 2250 2    50   Output ~ 0
@@ -840,7 +839,6 @@ Wire Wire Line
 	8615 1385 8885 1385
 Wire Wire Line
 	8615 1185 8885 1185
-NoConn ~ 8615 1285
 Wire Wire Line
 	6665 1785 6940 1785
 Wire Wire Line
@@ -980,6 +978,14 @@ F 3 "" H 1710 4455 50  0001 C CNN
 	1    1710 4455
 	1    0    0    -1  
 $EndComp
+Text GLabel 8885 1285 2    50   Output ~ 0
+~FUNCLO_CS
+Wire Wire Line
+	8615 1285 8885 1285
+Text GLabel 10420 2150 2    50   Output ~ 0
+~FUNCHI_CS
+Wire Wire Line
+	10150 2150 10420 2150
 Wire Bus Line
 	5245 1085 5245 1685
 Wire Bus Line

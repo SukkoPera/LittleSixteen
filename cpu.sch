@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 12
 Title "LittleSixteen"
-Date "2021-11-04"
+Date "2021-11-12"
 Rev "2git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -640,22 +640,6 @@ Entry Wire Line
 	2365 5380 2465 5480
 Text Notes 6425 4220 0    50   ~ 0
 The 7501/8501 CPU used in the x264 series is not much different from the 6510 that was used in the C64.\nMapping of most pins is straightforward. Some signals change names but they are obviously the same.\n\n6510s were working at 1MHz in the C64, while the x264 design is able to push them to nearly 2 MHz\nduring video blanking. Since most 6510s seem to be pretty forgiving in this regard, we are left\nwith two issues:\n- GATE_IN: There is a lot of myth and inaccuracy about the purpose of this pin that is not available\n  on the 6510. Here's a quote from the TED System Hardware Manual that should clarify things:\n  \n  "GATE IN: TTL level input, used to gate the R/W line to prevent the R/W line from going low during a\n  read cycle, before RAS and CAS go high (resulting in a Read/Write cycle). Normally connected to the\n  MUX line in a system configuration to synchronize the DRAM memory cycle to the processor clock cycle.\n  \n  If AEC is low when Gate In makes a low to high transition, the R/W line will go to a high impedence\n  until the next transition of the Gate In line and AEC is high prior to the transition."\n  \n  This is confirmed by some guys who recently decapped an 8501 and analyzed its die, please see\n  http://forum.6502.org/viewtopic.php?f=4&t=6617.\n  \n  A forum thread (http://www.softwolves.com/arkiv/cbm-hackers/16/16855.html) seems to suggest that\n  when using DRAMs the signal is pretty useless, but it would be needed if SRAMs were used. I'm not sure\n  this is correct and I really can't judge by myself, but since experience shows that leaving GATE_IN\n  unconnected doesn't *seem* to hurt, we'll go with that for the moment, but for the future we might\n  do something along the lines of this quote from Bil Herd himself:\n  \n  "[During the development of the x264 family, where we were using 6510 CPUs] I think I did the Gated\n  Read/Write with a 74LS73 only I drove the R/W line high, not HiZ."\n- I/O Port: The 8501 has a 7-bit I/O port while the 6510 only has a 6-bit, plus the exposed bits are\n  numbered differently, so some remapping is needed, which implies that some modding to the KERNAL is\n  required as well. I decided to follow what Andrew Challis did at\n  http://hackjunk.com/2017/06/23/commodore-16-plus-4-8501-to-6510-cpu-conversion/. So, the 6510 socket\n  is basically Andy's adapter built into the mainboard. If you go with a 6510 you will need to use his\n  modified KERNAL and to solder the diode at Dxxx. This comes at a compromise though:\n  - Disk fastloaders will not work (unless they are modified themselves to match our pin shuffling).\n  - The Datassette motor will spin whenever one of its keys is pressed, the computer will no longer be\n    able to control it.\n  I think these drawbacks are acceptable, as most fastloaders won't work anyway when using an SD2IEC,\n  which is what most people do these days, I guess, while the loss of tape control isn't much of an\n  issue in itself. Make sure to send a small donation to Andy if you go this way.\n
-Wire Bus Line
-	5105 5880 5105 6380
-Wire Bus Line
-	5105 5080 5105 5780
-Wire Bus Line
-	5105 2415 5105 3015
-Wire Bus Line
-	5105 1615 5105 2315
-Wire Bus Line
-	2365 5380 2365 7230
-Wire Bus Line
-	4690 6680 4690 7230
-Wire Bus Line
-	5105 3415 5105 3875
-Wire Bus Line
-	2125 1915 2125 3875
 NoConn ~ 8145 6025
 $Comp
 L power:GND #PWR0197
@@ -687,4 +671,20 @@ Wire Wire Line
 	8145 6025 9320 6025
 Text Notes 8720 5785 0    50   ~ 0
 TBD
+Wire Bus Line
+	4690 6680 4690 7230
+Wire Bus Line
+	5105 3415 5105 3875
+Wire Bus Line
+	5105 5880 5105 6380
+Wire Bus Line
+	5105 2415 5105 3015
+Wire Bus Line
+	5105 1615 5105 2315
+Wire Bus Line
+	5105 5080 5105 5780
+Wire Bus Line
+	2125 1915 2125 3875
+Wire Bus Line
+	2365 5380 2365 7230
 $EndSCHEMATC
