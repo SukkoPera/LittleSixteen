@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "LittleSixteen"
-Date "2021-11-06"
+Date "2021-11-17"
 Rev "2git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -413,13 +413,13 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4550 5175 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6375 5175 5950 5175
-Text Label 3765 5175 0    50   ~ 0
+Text Label 3175 5175 0    50   ~ 0
 p2
 Wire Wire Line
 	6075 5420 5655 5420
 Wire Wire Line
-	3950 5420 3665 5420
-Text Label 3765 5420 0    50   ~ 0
+	3950 5420 3175 5420
+Text Label 3175 5420 0    50   ~ 0
 p1
 $Comp
 L 74xx:74LS06 U9
@@ -446,11 +446,11 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4550 5620 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 5620 3665 5620
-Text Label 3765 5620 0    50   ~ 0
+	4250 5620 3175 5620
+Text Label 3175 5620 0    50   ~ 0
 p0
 Wire Wire Line
-	4250 5175 3665 5175
+	4250 5175 3175 5175
 Wire Wire Line
 	7315 5865 6280 5865
 Wire Wire Line
@@ -562,41 +562,39 @@ Wire Wire Line
 Connection ~ 5505 5620
 Wire Wire Line
 	5505 5620 5165 5620
-Text GLabel 3240 4640 0    50   BiDi ~ 0
+Text GLabel 2750 4640 0    50   BiDi ~ 0
 p[0..7]
 Entry Wire Line
-	3665 5175 3565 5075
+	3175 5175 3075 5075
 Entry Wire Line
-	3665 5420 3565 5320
+	3175 5420 3075 5320
 Entry Wire Line
-	3665 5620 3565 5520
+	3175 5620 3075 5520
 Wire Wire Line
 	4995 5420 5000 4950
-Wire Wire Line
-	5000 4950 4210 4950
 Connection ~ 4995 5420
 Wire Wire Line
 	4995 5420 4550 5420
-Text Label 3770 4950 0    50   ~ 0
+Text Label 3175 4950 0    50   ~ 0
 p6
 Wire Wire Line
 	5165 5620 5170 4740
 Connection ~ 5165 5620
 Wire Wire Line
 	5165 5620 4850 5620
-Text Label 3770 4740 0    50   ~ 0
+Text Label 3175 4740 0    50   ~ 0
 p7
 Entry Wire Line
-	3665 4950 3565 4850
+	3175 4950 3075 4850
 Entry Wire Line
-	3665 4740 3565 4640
+	3175 4740 3075 4640
 Wire Bus Line
-	3565 4640 3240 4640
-Text GLabel 3240 5865 0    50   Input ~ 0
+	3075 4640 2750 4640
+Text GLabel 2750 5865 0    50   Input ~ 0
 SERIAL_RESET
 Wire Wire Line
-	3955 5865 3240 5865
-Text Notes 2915 6740 0    157  ~ 0
+	3955 5865 2750 5865
+Text Notes 6575 4490 0    157  ~ 0
 SERIAL BUS\n(OR 1541 DISK DRIVE)
 Text Notes 2920 1395 0    157  ~ 0
 DATASSETTE\nINTERFACE
@@ -750,23 +748,20 @@ Connection ~ 7940 3005
 Wire Wire Line
 	7940 3005 6400 3005
 $Comp
-L Device:D D98
+L Device:D D97
 U 1 1 61845FF9
-P 4210 4355
-F 0 "D98" V 4164 4276 50  0000 R CNN
-F 1 "1n4148" V 4255 4276 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 4210 4355 50  0001 C CNN
-F 3 "~" H 4210 4355 50  0001 C CNN
-	1    4210 4355
+P 3615 4355
+F 0 "D97" V 3569 4276 50  0000 R CNN
+F 1 "1n4148" V 3660 4276 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3615 4355 50  0001 C CNN
+F 3 "~" H 3615 4355 50  0001 C CNN
+	1    3615 4355
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	4210 4505 4210 4950
-Connection ~ 4210 4950
+	3615 4505 3615 4950
 Wire Wire Line
-	4210 4950 3665 4950
-Wire Wire Line
-	4210 4205 4210 4055
+	3615 4205 3615 4055
 Text Notes 5135 1975 3    50   ~ 0
 SENSE
 Text Notes 5350 2360 0    50   ~ 0
@@ -782,9 +777,9 @@ READ
 Text Notes 4555 2560 0    50   ~ 0
 +5V
 Wire Notes Line
-	3540 4205 3540 4500
+	2960 4205 2960 4500
 Wire Notes Line
-	4620 4500 4620 4205
+	4025 4495 4025 4200
 Text Notes 2635 2255 2    50   ~ 0
 These are protection diodes retrofitted\nafter production on *some* C16s I've seen.\nThese seem different from the 1n4148 that\nare retrofitted on p6/p7 on the same board,\nsince those clearly say 1n4148 on their\nbodies, while these have a color coding of\nyellow (thick/cathode), brown, yellow,\ngrey (or light blue?), which... erm, would\nmake them 1n4148 ^___^. Multimeter says\ntheir Voltage drops are 0.555V and 0.561V,\nwhile it says 0.323 for the others (all\nmeasures in-circuit).
 Text Notes 7610 5615 0    50   ~ 0
@@ -813,46 +808,41 @@ GND
 Text Notes 8095 5630 0    50   ~ 0
 - Fastloaders might use these signals differently!\n- All signals are active-low\n- All signals are open collector, since this is a *bus*
 Connection ~ 3360 2465
-Connection ~ 3970 4740
-Wire Wire Line
-	3970 4740 3665 4740
-Wire Wire Line
-	5170 4740 3970 4740
 Wire Notes Line
-	3540 4500 4620 4500
+	2960 4490 4025 4500
 Wire Notes Line
-	4620 4205 3540 4205
+	4025 4205 2960 4205
 Wire Wire Line
-	4085 4055 3970 4055
-Connection ~ 4085 4055
+	3490 4055 3375 4055
+Connection ~ 3490 4055
 Wire Wire Line
-	4085 3960 4085 4055
+	3490 3960 3490 4055
 $Comp
 L power:VCC #PWR0191
 U 1 1 61857C18
-P 4085 3960
-F 0 "#PWR0191" H 4085 3810 50  0001 C CNN
-F 1 "VCC" H 4102 4133 50  0000 C CNN
-F 2 "" H 4085 3960 50  0001 C CNN
-F 3 "" H 4085 3960 50  0001 C CNN
-	1    4085 3960
+P 3490 3960
+F 0 "#PWR0191" H 3490 3810 50  0001 C CNN
+F 1 "VCC" H 3507 4133 50  0000 C CNN
+F 2 "" H 3490 3960 50  0001 C CNN
+F 3 "" H 3490 3960 50  0001 C CNN
+	1    3490 3960
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3970 4055 3970 4205
+	3375 4055 3375 4205
 Wire Wire Line
-	4210 4055 4085 4055
+	3615 4055 3490 4055
 Wire Wire Line
-	3970 4505 3970 4740
+	3375 4505 3375 4740
 $Comp
 L Device:D D99
 U 1 1 61845668
-P 3970 4355
-F 0 "D99" V 3924 4435 50  0000 L CNN
-F 1 "1n4148" V 4015 4435 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3970 4355 50  0001 C CNN
-F 3 "~" H 3970 4355 50  0001 C CNN
-	1    3970 4355
+P 3375 4355
+F 0 "D99" V 3329 4435 50  0000 L CNN
+F 1 "1n4148" V 3420 4435 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3375 4355 50  0001 C CNN
+F 3 "~" H 3375 4355 50  0001 C CNN
+	1    3375 4355
 	0    -1   1    0   
 $EndComp
 Text GLabel 2480 2465 0    50   Output ~ 0
@@ -866,10 +856,10 @@ Wire Wire Line
 Wire Wire Line
 	4345 3005 5040 3005
 $Comp
-L Device:D D96
+L Device:D D95
 U 1 1 619101DA
 P 3065 2160
-F 0 "D96" V 3019 2240 50  0000 L CNN
+F 0 "D95" V 3019 2240 50  0000 L CNN
 F 1 "1n4148" V 3110 2240 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3065 2160 50  0001 C CNN
 F 3 "~" H 3065 2160 50  0001 C CNN
@@ -890,10 +880,10 @@ $EndComp
 Wire Wire Line
 	3065 1890 3065 2010
 $Comp
-L Device:D D97
+L Device:D D94
 U 1 1 619101EB
 P 3065 2735
-F 0 "D97" V 3019 2815 50  0000 L CNN
+F 0 "D94" V 3019 2815 50  0000 L CNN
 F 1 "1n4148" V 3110 2815 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3065 2735 50  0001 C CNN
 F 3 "~" H 3065 2735 50  0001 C CNN
@@ -920,8 +910,8 @@ Wire Notes Line
 	3200 2895 3200 2020
 Wire Notes Line
 	3200 2020 2675 2020
-Text Notes 3495 4505 2    50   ~ 0
-These are more retrofitted\nprotection diodes, these\nare present on most C16s\nI've seen; note that these\ndiodes have been added on all\npins going straight to the CPU
+Text Notes 2875 4485 2    50   ~ 0
+These (and the ones below) are\nmore retrofitted protection\ndiodes, these are present on\nmost C16s I've seen.\nNote that these protection\ndiodes have been added on all\npins going straight to the CPU\nfrom the outside world.
 Text Label 9070 2155 2    50   ~ 0
 ~p3
 $Comp
@@ -939,6 +929,74 @@ Text Notes 4995 2155 1    50   ~ 0
 WARNING: The drawing of\nthis connector does not\nmatch the real connector\nexactly!
 Wire Wire Line
 	5040 2765 5040 3005
+Connection ~ 3375 4740
+Wire Wire Line
+	3375 4740 3175 4740
+Connection ~ 3615 4950
+Wire Wire Line
+	3615 4950 3175 4950
+Wire Wire Line
+	3615 4950 5000 4950
+Wire Wire Line
+	3375 4740 5170 4740
+$Comp
+L Device:D D96
+U 1 1 6195D0A7
+P 3615 6090
+F 0 "D96" V 3569 6011 50  0000 R CNN
+F 1 "1n4148" V 3660 6011 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3615 6090 50  0001 C CNN
+F 3 "~" H 3615 6090 50  0001 C CNN
+	1    3615 6090
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3615 6240 3615 6475
+Wire Wire Line
+	3375 6240 3375 6475
+$Comp
+L Device:D D98
+U 1 1 6195D577
+P 3375 6090
+F 0 "D98" V 3329 6170 50  0000 L CNN
+F 1 "1n4148" V 3420 6170 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3375 6090 50  0001 C CNN
+F 3 "~" H 3375 6090 50  0001 C CNN
+	1    3375 6090
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3375 4740 3375 5940
+Wire Wire Line
+	3615 4950 3615 5940
+Wire Wire Line
+	3375 6475 3490 6475
+Wire Wire Line
+	3490 6475 3490 6545
+Connection ~ 3490 6475
+Wire Wire Line
+	3490 6475 3615 6475
+$Comp
+L power:GND #PWR0207
+U 1 1 6198FDCB
+P 3490 6545
+F 0 "#PWR0207" H 3490 6295 50  0001 C CNN
+F 1 "GND" H 3495 6372 50  0000 C CNN
+F 2 "" H 3490 6545 50  0001 C CNN
+F 3 "" H 3490 6545 50  0001 C CNN
+	1    3490 6545
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	2960 5950 2960 6245
+Wire Notes Line
+	2960 6235 4025 6245
+Wire Notes Line
+	4025 5950 2960 5950
+Wire Notes Line
+	4025 6245 4025 5950
 Wire Bus Line
-	3565 4640 3565 5520
+	3075 4640 3075 5520
+Text Notes 2875 6210 2    50   ~ 0
+These protection diodes\nare usually installed in place of\nferrites FB3 and FB4.
 $EndSCHEMATC
