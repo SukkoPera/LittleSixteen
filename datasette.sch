@@ -14,361 +14,359 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	4740 2365 4345 2365
+	4390 2325 3995 2325
 Wire Wire Line
-	4345 2365 4345 3005
+	3995 2325 3995 2965
 $Comp
 L power:GND #PWR0151
 U 1 1 5ECB75EB
-P 5040 3065
-F 0 "#PWR0151" H 5040 2815 50  0001 C CNN
-F 1 "GND" H 5045 2892 50  0000 C CNN
-F 2 "" H 5040 3065 50  0001 C CNN
-F 3 "" H 5040 3065 50  0001 C CNN
-	1    5040 3065
+P 4690 3025
+F 0 "#PWR0151" H 4690 2775 50  0001 C CNN
+F 1 "GND" H 4695 2852 50  0000 C CNN
+F 2 "" H 4690 3025 50  0001 C CNN
+F 3 "" H 4690 3025 50  0001 C CNN
+	1    4690 3025
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0152
 U 1 1 5ECB7C31
-P 4185 1800
-F 0 "#PWR0152" H 4185 1650 50  0001 C CNN
-F 1 "VCC" H 4202 1973 50  0000 C CNN
-F 2 "" H 4185 1800 50  0001 C CNN
-F 3 "" H 4185 1800 50  0001 C CNN
-	1    4185 1800
+P 3835 1760
+F 0 "#PWR0152" H 3835 1610 50  0001 C CNN
+F 1 "VCC" H 3852 1933 50  0000 C CNN
+F 2 "" H 3835 1760 50  0001 C CNN
+F 3 "" H 3835 1760 50  0001 C CNN
+	1    3835 1760
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB14
 U 1 1 5ECB83BF
-P 4030 2105
-F 0 "FB14" H 4130 2105 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 4130 2060 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 3960 2105 50  0001 C CNN
-F 3 "~" H 4030 2105 50  0001 C CNN
-	1    4030 2105
+P 3680 2065
+F 0 "FB14" H 3780 2065 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" H 3780 2020 50  0001 L CNN
+F 2 "LittleSixteen:Ferrite" V 3610 2065 50  0001 C CNN
+F 3 "~" H 3680 2065 50  0001 C CNN
+	1    3680 2065
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4185 1800 4185 1895
+	3835 1760 3835 1855
 $Comp
 L Device:C C26
 U 1 1 5ECBA653
-P 4345 2115
-F 0 "C26" H 4230 2069 50  0000 R CNN
-F 1 "100n" H 4230 2160 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4383 1965 50  0001 C CNN
-F 3 "~" H 4345 2115 50  0001 C CNN
-	1    4345 2115
+P 3995 2075
+F 0 "C26" H 3880 2029 50  0000 R CNN
+F 1 "100n" H 3880 2120 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4033 1925 50  0001 C CNN
+F 3 "~" H 3995 2075 50  0001 C CNN
+	1    3995 2075
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4345 2265 4345 2365
-Connection ~ 4345 2365
+	3995 2225 3995 2325
+Connection ~ 3995 2325
 $Comp
 L Device:Ferrite_Bead_Small FB15
 U 1 1 5ECBC7A2
-P 5480 2800
-F 0 "FB15" H 5580 2800 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 5580 2755 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 5410 2800 50  0001 C CNN
-F 3 "~" H 5480 2800 50  0001 C CNN
-	1    5480 2800
+P 5130 2760
+F 0 "FB15" H 5230 2760 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" H 5230 2715 50  0001 L CNN
+F 2 "LittleSixteen:Ferrite" V 5060 2760 50  0001 C CNN
+F 3 "~" H 5130 2760 50  0001 C CNN
+	1    5130 2760
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5480 2900 5480 3005
+	5130 2860 5130 2965
 Wire Wire Line
-	5480 3005 5040 3005
+	5130 2965 4690 2965
 Wire Wire Line
-	5040 3005 5040 3065
-Connection ~ 5040 3005
+	4690 2965 4690 3025
+Connection ~ 4690 2965
 Wire Wire Line
-	5340 2565 5480 2565
+	4990 2525 5130 2525
 Wire Wire Line
-	5480 2565 5480 2700
+	5130 2525 5130 2660
 Wire Wire Line
-	4345 1965 4345 1895
+	3995 1925 3995 1855
 Wire Wire Line
-	4345 1895 4185 1895
+	3995 1855 3835 1855
 Wire Wire Line
-	4030 2005 4030 1895
-Connection ~ 4185 1895
+	3680 1965 3680 1855
+Connection ~ 3835 1855
 Wire Wire Line
-	4030 1895 4185 1895
+	3680 1855 3835 1855
 Wire Wire Line
-	4030 2205 4030 2565
+	3680 2165 3680 2525
 Wire Wire Line
-	4030 2565 4740 2565
+	3680 2525 4390 2525
 Wire Wire Line
-	4740 2465 3805 2465
+	4390 2425 3455 2425
 $Comp
 L Device:Ferrite_Bead_Small FB16
 U 1 1 5ECC62CE
-P 3705 2465
-F 0 "FB16" V 3850 2465 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 3805 2420 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 3635 2465 50  0001 C CNN
-F 3 "~" H 3705 2465 50  0001 C CNN
-	1    3705 2465
+P 3355 2425
+F 0 "FB16" V 3500 2425 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 3455 2380 50  0001 L CNN
+F 2 "LittleSixteen:Ferrite" V 3285 2425 50  0001 C CNN
+F 3 "~" H 3355 2425 50  0001 C CNN
+	1    3355 2425
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	3605 2465 3360 2465
+	3255 2425 3010 2425
 $Comp
 L Device:C C23
 U 1 1 5ECC701E
-P 3360 2725
-F 0 "C23" H 3245 2679 50  0000 R CNN
-F 1 "470p" H 3245 2770 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3398 2575 50  0001 C CNN
-F 3 "~" H 3360 2725 50  0001 C CNN
-	1    3360 2725
+P 3010 2685
+F 0 "C23" H 2895 2639 50  0000 R CNN
+F 1 "470p" H 2895 2730 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3048 2535 50  0001 C CNN
+F 3 "~" H 3010 2685 50  0001 C CNN
+	1    3010 2685
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3360 2575 3360 2465
+	3010 2535 3010 2425
 $Comp
 L Transistor_BJT:2SD600 Q5
 U 1 1 5ECC85E0
-P 8365 2155
-F 0 "Q5" H 8557 2201 50  0000 L CNN
-F 1 "2SD880" H 8557 2110 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 8565 2080 50  0001 L CIN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/sanyo/ds_pdf_e/2SB631.pdf" H 8365 2155 50  0001 L CNN
-	1    8365 2155
+P 8015 2115
+F 0 "Q5" H 8207 2161 50  0000 L CNN
+F 1 "2SD880" H 8207 2070 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 8215 2040 50  0001 L CIN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/sanyo/ds_pdf_e/2SB631.pdf" H 8015 2115 50  0001 L CNN
+	1    8015 2115
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8040 2465 8265 2465
+	7690 2425 7915 2425
 Wire Wire Line
-	8265 2465 8265 2355
+	7915 2425 7915 2315
 Wire Wire Line
-	5340 2465 7840 2465
+	4990 2425 7490 2425
 $Comp
 L power:+9V #PWR0153
 U 1 1 5ECCB73B
-P 8265 1410
-F 0 "#PWR0153" H 8265 1260 50  0001 C CNN
-F 1 "+9V" H 8280 1583 50  0000 C CNN
-F 2 "" H 8265 1410 50  0001 C CNN
-F 3 "" H 8265 1410 50  0001 C CNN
-	1    8265 1410
+P 7915 1370
+F 0 "#PWR0153" H 7915 1220 50  0001 C CNN
+F 1 "+9V" H 7930 1543 50  0000 C CNN
+F 2 "" H 7915 1370 50  0001 C CNN
+F 3 "" H 7915 1370 50  0001 C CNN
+	1    7915 1370
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8265 1410 8265 1540
+	7915 1370 7915 1500
 Wire Wire Line
-	8565 2155 8765 2155
+	8215 2115 8415 2115
 $Comp
 L w_device:ZENER D12
 U 1 1 5ECCE714
-P 8765 2595
-F 0 "D12" V 8828 2542 40  0000 R CNN
-F 1 "6.8V" V 8752 2542 40  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8765 2595 60  0001 C CNN
-F 3 "" H 8765 2595 60  0000 C CNN
-	1    8765 2595
+P 8415 2555
+F 0 "D12" V 8478 2502 40  0000 R CNN
+F 1 "6.8V" V 8402 2502 40  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8415 2555 60  0001 C CNN
+F 3 "" H 8415 2555 60  0000 C CNN
+	1    8415 2555
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8765 2495 8765 2155
-Connection ~ 8765 2155
+	8415 2455 8415 2115
+Connection ~ 8415 2115
 Wire Wire Line
-	8765 2155 9105 2155
+	8415 2115 8755 2115
 $Comp
 L Device:R R13
 U 1 1 5ECCF7CF
-P 8765 1840
-F 0 "R13" H 8835 1886 50  0000 L CNN
-F 1 "470" H 8835 1795 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8695 1840 50  0001 C CNN
-F 3 "~" H 8765 1840 50  0001 C CNN
-	1    8765 1840
+P 8415 1800
+F 0 "R13" H 8485 1846 50  0000 L CNN
+F 1 "470" H 8485 1755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8345 1800 50  0001 C CNN
+F 3 "~" H 8415 1800 50  0001 C CNN
+	1    8415 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8765 1990 8765 2155
+	8415 1950 8415 2115
 Wire Wire Line
-	8765 1690 8765 1540
+	8415 1650 8415 1500
 Wire Wire Line
-	8765 1540 8265 1540
-Connection ~ 8265 1540
+	8415 1500 7915 1500
+Connection ~ 7915 1500
 Wire Wire Line
-	8265 1540 8265 1955
+	7915 1500 7915 1915
 $Comp
 L 74xx:74LS06 U9
 U 3 1 5ECD4244
-P 9405 2155
-F 0 "U9" H 9405 1838 50  0000 C CNN
-F 1 "74LS06" H 9405 1929 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9405 2155 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 9405 2155 50  0001 C CNN
-	3    9405 2155
+P 9055 2115
+F 0 "U9" H 9055 2340 50  0000 C CNN
+F 1 "74LS06" H 9050 2425 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9055 2115 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 9055 2115 50  0001 C CNN
+	3    9055 2115
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB17
 U 1 1 5ECD8623
-P 6135 2365
-F 0 "FB17" V 6280 2365 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 6235 2320 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 6065 2365 50  0001 C CNN
-F 3 "~" H 6135 2365 50  0001 C CNN
-	1    6135 2365
+P 5785 2325
+F 0 "FB17" V 5930 2325 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 5885 2280 50  0001 L CNN
+F 2 "LittleSixteen:Ferrite" V 5715 2325 50  0001 C CNN
+F 3 "~" H 5785 2325 50  0001 C CNN
+	1    5785 2325
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5340 2365 6035 2365
+	4990 2325 5685 2325
 $Comp
 L Device:R R29
 U 1 1 5ECD9EF8
-P 6775 2365
-F 0 "R29" V 6982 2365 50  0000 C CNN
-F 1 "100" V 6891 2365 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 6705 2365 50  0001 C CNN
-F 3 "~" H 6775 2365 50  0001 C CNN
-	1    6775 2365
+P 6425 2325
+F 0 "R29" V 6632 2325 50  0000 C CNN
+F 1 "100" V 6541 2325 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 6355 2325 50  0001 C CNN
+F 3 "~" H 6425 2325 50  0001 C CNN
+	1    6425 2325
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6235 2365 6400 2365
+	5885 2325 6050 2325
 $Comp
 L Device:C C24
 U 1 1 5ECE063E
-P 6400 2755
-F 0 "C24" H 6285 2709 50  0000 R CNN
-F 1 "470p" H 6285 2800 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 6438 2605 50  0001 C CNN
-F 3 "~" H 6400 2755 50  0001 C CNN
-	1    6400 2755
+P 6050 2715
+F 0 "C24" H 5935 2669 50  0000 R CNN
+F 1 "470p" H 5935 2760 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 6088 2565 50  0001 C CNN
+F 3 "~" H 6050 2715 50  0001 C CNN
+	1    6050 2715
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6400 2605 6400 2365
-Connection ~ 6400 2365
+	6050 2565 6050 2325
+Connection ~ 6050 2325
 Wire Wire Line
-	6400 2365 6625 2365
+	6050 2325 6275 2325
 Wire Wire Line
-	6400 3005 5900 3005
-Connection ~ 5480 3005
+	6050 2965 5550 2965
+Connection ~ 5130 2965
 Wire Wire Line
-	6400 2905 6400 3005
+	6050 2865 6050 2965
 Wire Wire Line
-	6925 2365 7160 2365
+	6575 2325 6810 2325
 $Comp
 L 74xx:74LS125 U11
 U 3 1 5ECE62E7
-P 6400 1575
-F 0 "U11" H 6400 1892 50  0000 C CNN
-F 1 "74LS125" H 6400 1801 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6400 1575 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 6400 1575 50  0001 C CNN
-	3    6400 1575
+P 6395 1535
+F 0 "U11" H 6395 1852 50  0000 C CNN
+F 1 "74LS125" H 6395 1761 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6395 1535 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 6395 1535 50  0001 C CNN
+	3    6395 1535
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB18
 U 1 1 5ECE8130
-P 5580 1575
-F 0 "FB18" V 5725 1575 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 5680 1530 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 5510 1575 50  0001 C CNN
-F 3 "~" H 5580 1575 50  0001 C CNN
-	1    5580 1575
+P 5230 1535
+F 0 "FB18" V 5375 1535 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 5330 1490 50  0001 L CNN
+F 2 "LittleSixteen:Ferrite" V 5160 1535 50  0001 C CNN
+F 3 "~" H 5230 1535 50  0001 C CNN
+	1    5230 1535
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C25
 U 1 1 5ECF7C46
-P 5900 1965
-F 0 "C25" H 5785 1919 50  0000 R CNN
-F 1 "470p" H 5785 2010 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5938 1815 50  0001 C CNN
-F 3 "~" H 5900 1965 50  0001 C CNN
-	1    5900 1965
+P 5550 1925
+F 0 "C25" H 5435 1879 50  0000 R CNN
+F 1 "470p" H 5435 1970 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5588 1775 50  0001 C CNN
+F 3 "~" H 5550 1925 50  0001 C CNN
+	1    5550 1925
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5040 1575 5480 1575
+	4690 1535 5130 1535
 Wire Wire Line
-	5040 1575 5040 2165
+	4690 1535 4690 2125
 Wire Wire Line
-	5680 1575 5900 1575
+	5330 1535 5550 1535
 Wire Wire Line
-	5900 1815 5900 1575
-Connection ~ 5900 1575
+	5550 1775 5550 1535
+Connection ~ 5550 1535
 Wire Wire Line
-	5900 1575 6100 1575
+	5550 1535 5880 1535
 Wire Wire Line
-	5900 2115 5900 3005
-Connection ~ 5900 3005
+	5550 2075 5550 2965
+Connection ~ 5550 2965
 Wire Wire Line
-	5900 3005 5480 3005
+	5550 2965 5130 2965
 Wire Wire Line
-	6700 1575 7160 1575
-Text GLabel 7160 1575 2    50   Output ~ 0
+	6695 1535 7155 1535
+Text GLabel 7155 1535 2    50   Output ~ 0
 d[0..7]
-Text Label 6935 1575 2    50   ~ 0
+Text Label 6930 1535 2    50   ~ 0
 d2
 Wire Wire Line
-	6400 1825 6400 1945
+	6395 1785 6395 1905
 Wire Wire Line
-	6400 1945 7160 1945
-Text GLabel 7160 1945 2    50   Input ~ 0
+	6395 1905 7155 1905
+Text GLabel 7155 1905 2    50   Input ~ 0
 CASSETTE
 Wire Wire Line
-	8765 2645 8765 3005
+	8415 2605 8415 2965
 Wire Wire Line
-	8765 3005 7940 3005
-Connection ~ 6400 3005
+	8415 2965 7590 2965
+Connection ~ 6050 2965
 Wire Wire Line
-	3360 2875 3360 3005
+	3010 2835 3010 2965
 Wire Wire Line
-	3360 3005 4345 3005
-Connection ~ 4345 3005
-Text Notes 7625 1870 2    50   ~ 0
+	3010 2965 3995 2965
+Connection ~ 3995 2965
+Text Notes 7620 1830 2    50   ~ 0
 $FD10-$FD1F
 $Comp
 L Device:R R12
 U 1 1 5ED1DFFB
-P 5900 1260
-F 0 "R12" H 5830 1214 50  0000 R CNN
-F 1 "3.3k" H 5830 1305 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5830 1260 50  0001 C CNN
-F 3 "~" H 5900 1260 50  0001 C CNN
-	1    5900 1260
+P 5550 1220
+F 0 "R12" H 5480 1174 50  0000 R CNN
+F 1 "3.3k" H 5480 1265 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5480 1220 50  0001 C CNN
+F 3 "~" H 5550 1220 50  0001 C CNN
+	1    5550 1220
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5900 1410 5900 1575
+	5550 1370 5550 1535
 $Comp
 L power:VCC #PWR0154
 U 1 1 5ED20248
-P 5900 1015
-F 0 "#PWR0154" H 5900 865 50  0001 C CNN
-F 1 "VCC" H 5917 1188 50  0000 C CNN
-F 2 "" H 5900 1015 50  0001 C CNN
-F 3 "" H 5900 1015 50  0001 C CNN
-	1    5900 1015
+P 5550 975
+F 0 "#PWR0154" H 5550 825 50  0001 C CNN
+F 1 "VCC" H 5567 1148 50  0000 C CNN
+F 2 "" H 5550 975 50  0001 C CNN
+F 3 "" H 5550 975 50  0001 C CNN
+	1    5550 975 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 1015 5900 1110
-Text Notes 7160 1495 0    50   ~ 0
-CST_SENSE\nLOW if one of the keys\nPLAY, RECORD, F.FWD\nor REW is pressed,\nHIGH otherwise
-Text GLabel 7160 2365 2    50   Input ~ 0
+	5550 975  5550 1070
+Text Notes 7070 1450 0    50   ~ 0
+CST_SENSE:\nLOW if one of the\nkeys PLAY,\nRECORD, F.FWD\nor REW is pressed,\nHIGH otherwise
+Text GLabel 6810 2325 2    50   Input ~ 0
 p[0..7]
-Text Label 7000 2365 0    50   ~ 0
+Text Label 6650 2325 0    50   ~ 0
 p6
-Wire Wire Line
-	9705 2155 9940 2155
-Text GLabel 9940 2155 2    50   Input ~ 0
+Text GLabel 9940 2115 2    50   Input ~ 0
 p[0..7]
-Text Notes 9945 2085 0    50   ~ 0
-CST_MTR\nLOW = Motor on\nHIGH = Motor off 
-Text Label 9880 2155 2    50   ~ 0
+Text Notes 9945 2045 0    50   ~ 0
+CST_MTR:\nLOW = Motor on\nHIGH = Motor off 
+Text Label 9895 2115 2    50   ~ 0
 p3
 Wire Wire Line
 	7900 5620 7900 5275
@@ -596,9 +594,9 @@ Wire Wire Line
 	3955 5865 2750 5865
 Text Notes 6575 4490 0    157  ~ 0
 SERIAL BUS\n(OR 1541 DISK DRIVE)
-Text Notes 2920 1395 0    157  ~ 0
+Text Notes 2570 1355 0    157  ~ 0
 DATASSETTE\nINTERFACE
-Text Notes 7480 2290 2    50   ~ 0
+Text Notes 7130 2250 2    50   ~ 0
 CST_WRT
 $Comp
 L Ferrite3Pin:Ferrite_3pin FB3
@@ -734,19 +732,19 @@ Wire Wire Line
 $Comp
 L Ferrite3Pin:Ferrite_3pin FB19
 U 1 1 5E31356C
-P 7940 2465
-F 0 "FB19" V 7795 2465 50  0000 C CNN
-F 1 "Ferrite_3pin" V 7794 2465 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 7870 2465 50  0001 C CNN
-F 3 "~" H 7940 2465 50  0001 C CNN
-	1    7940 2465
+P 7590 2425
+F 0 "FB19" V 7445 2425 50  0000 C CNN
+F 1 "Ferrite_3pin" V 7444 2425 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 7520 2425 50  0001 C CNN
+F 3 "~" H 7590 2425 50  0001 C CNN
+	1    7590 2425
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	7940 2565 7940 3005
-Connection ~ 7940 3005
+	7590 2525 7590 2965
+Connection ~ 7590 2965
 Wire Wire Line
-	7940 3005 6400 3005
+	7590 2965 6050 2965
 $Comp
 L Device:D D97
 U 1 1 61845FF9
@@ -762,25 +760,25 @@ Wire Wire Line
 	3615 4505 3615 4950
 Wire Wire Line
 	3615 4205 3615 4055
-Text Notes 5135 1975 3    50   ~ 0
+Text Notes 4785 1935 3    50   ~ 0
 SENSE
-Text Notes 5350 2360 0    50   ~ 0
+Text Notes 5000 2320 0    50   ~ 0
 WRITE
-Text Notes 5350 2460 0    50   ~ 0
+Text Notes 5000 2420 0    50   ~ 0
 MOTOR
-Text Notes 5350 2560 0    50   ~ 0
+Text Notes 5000 2520 0    50   ~ 0
 MOTOR_GND
-Text Notes 4525 2360 0    50   ~ 0
+Text Notes 4175 2320 0    50   ~ 0
 GND
-Text Notes 4525 2460 0    50   ~ 0
+Text Notes 4175 2420 0    50   ~ 0
 READ
-Text Notes 4555 2560 0    50   ~ 0
+Text Notes 4205 2520 0    50   ~ 0
 +5V
 Wire Notes Line
 	2960 4205 2960 4500
 Wire Notes Line
 	4025 4495 4025 4200
-Text Notes 2635 2255 2    50   ~ 0
+Text Notes 2285 2215 2    50   ~ 0
 These are protection diodes retrofitted\nafter production on *some* C16s I've seen.\nThese seem different from the 1n4148 that\nare retrofitted on p6/p7 on the same board,\nsince those clearly say 1n4148 on their\nbodies, while these have a color coding of\nyellow (thick/cathode), brown, yellow,\ngrey (or light blue?), which... erm, would\nmake them 1n4148 ^___^. Multimeter says\ntheir Voltage drops are 0.555V and 0.561V,\nwhile it says 0.323 for the others (all\nmeasures in-circuit).
 Text Notes 7610 5615 0    50   ~ 0
 SRQ
@@ -807,7 +805,7 @@ Text Notes 7605 5415 0    50   ~ 0
 GND
 Text Notes 8095 5630 0    50   ~ 0
 - Fastloaders might use these signals differently!\n- All signals are active-low\n- All signals are open collector, since this is a *bus*
-Connection ~ 3360 2465
+Connection ~ 3010 2425
 Wire Notes Line
 	2960 4490 4025 4500
 Wire Notes Line
@@ -845,90 +843,90 @@ F 3 "~" H 3375 4355 50  0001 C CNN
 	1    3375 4355
 	0    -1   1    0   
 $EndComp
-Text GLabel 2480 2465 0    50   Output ~ 0
+Text GLabel 2130 2425 0    50   Output ~ 0
 p[0..7]
-Text Label 2655 2465 2    50   ~ 0
+Text Label 2305 2425 2    50   ~ 0
 p4
-Text Notes 2455 2380 2    50   ~ 0
+Text Notes 2105 2340 2    50   ~ 0
 CST_RD
 Wire Wire Line
-	2480 2465 3065 2465
+	2130 2425 2715 2425
 Wire Wire Line
-	4345 3005 5040 3005
+	3995 2965 4690 2965
 $Comp
 L Device:D D95
 U 1 1 619101DA
-P 3065 2160
-F 0 "D95" V 3019 2240 50  0000 L CNN
-F 1 "1n4148" V 3110 2240 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3065 2160 50  0001 C CNN
-F 3 "~" H 3065 2160 50  0001 C CNN
-	1    3065 2160
+P 2715 2120
+F 0 "D95" V 2669 2200 50  0000 L CNN
+F 1 "1n4148" V 2760 2200 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2715 2120 50  0001 C CNN
+F 3 "~" H 2715 2120 50  0001 C CNN
+	1    2715 2120
 	0    -1   1    0   
 $EndComp
 $Comp
 L power:VCC #PWR0192
 U 1 1 619101E1
-P 3065 1890
-F 0 "#PWR0192" H 3065 1740 50  0001 C CNN
-F 1 "VCC" H 3082 2063 50  0000 C CNN
-F 2 "" H 3065 1890 50  0001 C CNN
-F 3 "" H 3065 1890 50  0001 C CNN
-	1    3065 1890
+P 2715 1850
+F 0 "#PWR0192" H 2715 1700 50  0001 C CNN
+F 1 "VCC" H 2732 2023 50  0000 C CNN
+F 2 "" H 2715 1850 50  0001 C CNN
+F 3 "" H 2715 1850 50  0001 C CNN
+	1    2715 1850
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3065 1890 3065 2010
+	2715 1850 2715 1970
 $Comp
 L Device:D D94
 U 1 1 619101EB
-P 3065 2735
-F 0 "D94" V 3019 2815 50  0000 L CNN
-F 1 "1n4148" V 3110 2815 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3065 2735 50  0001 C CNN
-F 3 "~" H 3065 2735 50  0001 C CNN
-	1    3065 2735
+P 2715 2695
+F 0 "D94" V 2669 2775 50  0000 L CNN
+F 1 "1n4148" V 2760 2775 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2715 2695 50  0001 C CNN
+F 3 "~" H 2715 2695 50  0001 C CNN
+	1    2715 2695
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	3065 2885 3065 3005
+	2715 2845 2715 2965
 Wire Wire Line
-	3065 2310 3065 2465
+	2715 2270 2715 2425
 Wire Wire Line
-	3360 3005 3065 3005
-Connection ~ 3360 3005
-Connection ~ 3065 2465
+	3010 2965 2715 2965
+Connection ~ 3010 2965
+Connection ~ 2715 2425
 Wire Wire Line
-	3065 2465 3360 2465
+	2715 2425 3010 2425
 Wire Wire Line
-	3065 2465 3065 2585
+	2715 2425 2715 2545
 Wire Notes Line
-	2675 2020 2675 2895
+	2325 1980 2325 2855
 Wire Notes Line
-	2675 2895 3200 2895
+	2325 2855 2850 2855
 Wire Notes Line
-	3200 2895 3200 2020
+	2850 2855 2850 1980
 Wire Notes Line
-	3200 2020 2675 2020
+	2850 1980 2325 1980
 Text Notes 2875 4485 2    50   ~ 0
 These (and the ones below) are\nmore retrofitted protection\ndiodes, these are present on\nmost C16s I've seen.\nNote that these protection\ndiodes have been added on all\npins going straight to the CPU\nfrom the outside world.
-Text Label 9070 2155 2    50   ~ 0
+Text Label 8720 2115 2    50   ~ 0
 ~p3
 $Comp
 L mini-din-7:Mini-DIN-7 CN3
 U 1 1 620EE6EF
-P 5040 2465
-F 0 "CN3" H 4845 2215 50  0000 C CNN
-F 1 "CASSETTE" H 4745 2130 50  0000 C CNN
-F 2 "LittleSixteen:KMDGX-7S-BS" V 5030 2455 50  0001 C CNN
-F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 5030 2455 50  0001 C CNN
-	1    5040 2465
+P 4690 2425
+F 0 "CN3" H 4495 2175 50  0000 C CNN
+F 1 "CASSETTE" H 4395 2090 50  0000 C CNN
+F 2 "LittleSixteen:KMDGX-7S-BS" V 4680 2415 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 4680 2415 50  0001 C CNN
+	1    4690 2425
 	1    0    0    -1  
 $EndComp
-Text Notes 4995 2155 1    50   ~ 0
+Text Notes 4645 2115 1    50   ~ 0
 WARNING: The drawing of\nthis connector does not\nmatch the real connector\nexactly!
 Wire Wire Line
-	5040 2765 5040 3005
+	4690 2725 4690 2965
 Connection ~ 3375 4740
 Wire Wire Line
 	3375 4740 3175 4740
@@ -995,8 +993,74 @@ Wire Notes Line
 	4025 5950 2960 5950
 Wire Notes Line
 	4025 6245 4025 5950
-Wire Bus Line
-	3075 4640 3075 5520
 Text Notes 2875 6210 2    50   ~ 0
 These protection diodes\nare usually installed in place of\nferrites FB3 and FB4.
+$Comp
+L Device:R R93
+U 1 1 61AAE880
+P 9700 1380
+F 0 "R93" H 9630 1334 50  0000 R CNN
+F 1 "3.3k" H 9630 1425 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9630 1380 50  0001 C CNN
+F 3 "~" H 9700 1380 50  0001 C CNN
+	1    9700 1380
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 1530 9700 2115
+$Comp
+L power:VCC #PWR0208
+U 1 1 61AAED7B
+P 9700 1135
+F 0 "#PWR0208" H 9700 985 50  0001 C CNN
+F 1 "VCC" H 9717 1308 50  0000 C CNN
+F 2 "" H 9700 1135 50  0001 C CNN
+F 3 "" H 9700 1135 50  0001 C CNN
+	1    9700 1135
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1135 9700 1230
+$Comp
+L Device:D D93
+U 1 1 61AB5646
+P 9490 1380
+F 0 "D93" V 9440 1625 50  0000 R CNN
+F 1 "1n4148" V 9530 1760 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 9490 1380 50  0001 C CNN
+F 3 "~" H 9490 1380 50  0001 C CNN
+	1    9490 1380
+	0    -1   1    0   
+$EndComp
+Connection ~ 9700 2115
+Wire Wire Line
+	9700 2115 9940 2115
+Wire Wire Line
+	5880 1535 5880 790 
+Wire Wire Line
+	9490 790  9490 1230
+Connection ~ 5880 1535
+Wire Wire Line
+	5880 1535 6095 1535
+Wire Wire Line
+	9355 2115 9490 2115
+Wire Wire Line
+	9490 1530 9490 2115
+Connection ~ 9490 2115
+Wire Wire Line
+	9490 2115 9700 2115
+Wire Wire Line
+	5880 790  9490 790 
+Wire Notes Line
+	9050 1200 10035 1200
+Wire Notes Line
+	10035 1200 10035 1575
+Wire Notes Line
+	10035 1575 9050 1575
+Wire Notes Line
+	9050 1575 9050 1200
+Text Notes 10095 1665 0    50   ~ 0
+This diode is the one\nAndrew Challis\nrecommends in order\nto let the Datassette\nmotor run only when\none of its keys is pressed.\nWe add a pull-up resistor\njust in case. Install both\nonly when using a 6510\nCPU. (He says FB15 on\nhis page but it's a clear\nmistake.)
+Wire Bus Line
+	3075 4640 3075 5520
 $EndSCHEMATC
