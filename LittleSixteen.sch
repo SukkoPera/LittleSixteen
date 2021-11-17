@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 12
 Title "LittleSixteen"
-Date "2021-11-02"
+Date "2021-11-17"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -282,34 +282,120 @@ Wire Wire Line
 $Comp
 L void:Void V1
 U 1 1 61157949
-P 9270 6100
-F 0 "V1" H 9348 6146 50  0000 L CNN
-F 1 "POLARITY" H 9348 6055 50  0000 L CNN
-F 2 "w_logo:Logo_silk_polarity_external_10x2.8mm" H 9270 6100 50  0001 C CNN
-F 3 "" H 9270 6100 50  0001 C CNN
-	1    9270 6100
+P 8625 6095
+F 0 "V1" H 8703 6141 50  0000 L CNN
+F 1 "POLARITY" H 8703 6050 50  0000 L CNN
+F 2 "w_logo:Logo_silk_polarity_external_10x2.8mm" H 8625 6095 50  0001 C CNN
+F 3 "" H 8625 6095 50  0001 C CNN
+	1    8625 6095
 	1    0    0    -1  
 $EndComp
 $Comp
 L void:Void V0
 U 1 1 61145DF1
-P 9270 5895
-F 0 "V0" H 9348 5941 50  0000 L CNN
-F 1 "LOGO" H 9348 5850 50  0000 L CNN
-F 2 "LittleSixteen:Logo" H 9270 5895 50  0001 C CNN
-F 3 "" H 9270 5895 50  0001 C CNN
-	1    9270 5895
+P 8625 5890
+F 0 "V0" H 8703 5936 50  0000 L CNN
+F 1 "LOGO" H 8703 5845 50  0000 L CNN
+F 2 "LittleSixteen:Logo" H 8625 5890 50  0001 C CNN
+F 3 "" H 8625 5890 50  0001 C CNN
+	1    8625 5890
 	1    0    0    -1  
 $EndComp
 $Comp
 L void:Void V2
 U 1 1 61992CC0
-P 9270 6290
-F 0 "V2" H 9348 6336 50  0000 L CNN
-F 1 "CC BY-NC-SA 4.0" H 9348 6245 50  0000 L CNN
-F 2 "LittleSixteen:cc_by_nc_sa" H 9270 6290 50  0001 C CNN
-F 3 "" H 9270 6290 50  0001 C CNN
-	1    9270 6290
+P 8625 6285
+F 0 "V2" H 8703 6331 50  0000 L CNN
+F 1 "CC BY-NC-SA 4.0" H 8703 6240 50  0000 L CNN
+F 2 "LittleSixteen:cc_by_nc_sa" H 8625 6285 50  0001 C CNN
+F 3 "" H 8625 6285 50  0001 C CNN
+	1    8625 6285
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H11
+U 1 1 61A81AD7
+P 9795 4735
+F 0 "H11" H 9895 4738 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9895 4693 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9795 4735 50  0001 C CNN
+F 3 "~" H 9795 4735 50  0001 C CNN
+	1    9795 4735
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H12
+U 1 1 61A81BB9
+P 9795 5045
+F 0 "H12" H 9895 5048 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9895 5003 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9795 5045 50  0001 C CNN
+F 3 "~" H 9795 5045 50  0001 C CNN
+	1    9795 5045
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H13
+U 1 1 61A81BC3
+P 9795 5365
+F 0 "H13" H 9895 5368 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9895 5323 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9795 5365 50  0001 C CNN
+F 3 "~" H 9795 5365 50  0001 C CNN
+	1    9795 5365
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H14
+U 1 1 61A81BCD
+P 9795 5690
+F 0 "H14" H 9895 5693 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9895 5648 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9795 5690 50  0001 C CNN
+F 3 "~" H 9795 5690 50  0001 C CNN
+	1    9795 5690
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9640 6165 9795 6165
+Wire Wire Line
+	9795 6165 9795 6225
+$Comp
+L power:GND #PWR07
+U 1 1 61A81BE3
+P 9795 6225
+F 0 "#PWR07" H 9795 5975 50  0001 C CNN
+F 1 "GND" H 9800 6052 50  0000 C CNN
+F 2 "" H 9795 6225 50  0001 C CNN
+F 3 "" H 9795 6225 50  0001 C CNN
+	1    9795 6225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9795 5790 9795 5835
+Wire Wire Line
+	9795 5835 9640 5835
+Connection ~ 9640 5835
+Wire Wire Line
+	9640 5835 9640 6165
+Wire Wire Line
+	9795 5465 9795 5510
+Wire Wire Line
+	9795 5510 9640 5510
+Connection ~ 9640 5510
+Wire Wire Line
+	9640 5510 9640 5835
+Wire Wire Line
+	9795 5145 9795 5190
+Wire Wire Line
+	9795 5190 9640 5190
+Connection ~ 9640 5190
+Wire Wire Line
+	9640 5190 9640 5510
+Wire Wire Line
+	9795 4835 9795 4880
+Wire Wire Line
+	9795 4880 9640 4880
+Wire Wire Line
+	9640 4880 9640 5190
 $EndSCHEMATC
