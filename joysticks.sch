@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 12
 Title "LittleSixteen"
-Date "2021-11-06"
+Date "2021-11-18"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -13,21 +13,14 @@ Comment2 "WARNING: These schematics might contain errors!"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	8905 1805 9585 1805
-Connection ~ 8905 1805
-Text Label 9585 4880 2    50   ~ 0
+Text Label 9585 4980 2    50   ~ 0
 k7
 Text Label 9585 2205 2    50   ~ 0
 k6
-Text Label 9585 2105 2    50   ~ 0
-k3
 Text Label 9585 2005 2    50   ~ 0
 k2
 Text Label 9585 1905 2    50   ~ 0
 k1
-Text Label 9585 1805 2    50   ~ 0
-k0
 Wire Wire Line
 	5310 4580 5930 4580
 Wire Wire Line
@@ -36,12 +29,6 @@ Wire Wire Line
 	5110 4680 5630 4680
 Wire Wire Line
 	5110 4480 5530 4480
-Wire Wire Line
-	5730 4295 5730 4680
-Wire Wire Line
-	5830 4295 5830 4630
-Wire Wire Line
-	5930 4295 5930 4480
 Wire Wire Line
 	5530 4295 5530 4480
 Wire Wire Line
@@ -68,36 +55,34 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5730 4095 50  0001 C CNN
 	1    5730 4095
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8345 4480 8905 4480
 $Comp
 L Diode:1N914 D10
 U 1 1 5E19A869
-P 8195 4880
-F 0 "D10" H 8195 4756 50  0000 C CNN
-F 1 "1N914" H 8195 4665 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4705 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4880 50  0001 C CNN
-	1    8195 4880
+P 8195 4980
+F 0 "D10" H 8330 5020 50  0000 C CNN
+F 1 "1N914" H 8195 4765 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4805 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4980 50  0001 C CNN
+	1    8195 4980
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:1N914 D9
 U 1 1 5E19A84C
-P 8510 4780
-F 0 "D9" H 8510 4656 50  0000 C CNN
-F 1 "1N914" H 8510 4565 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4605 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4780 50  0001 C CNN
-	1    8510 4780
+P 8195 4480
+F 0 "D9" H 8195 4697 50  0000 C CNN
+F 1 "1N914" H 8195 4606 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4305 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4480 50  0001 C CNN
+	1    8195 4480
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:1N914 D8
 U 1 1 5E19A842
 P 8195 4680
-F 0 "D8" H 8195 4550 50  0000 C CNN
-F 1 "1N914" H 8195 4455 50  0000 C CNN
+F 0 "D8" H 8305 4720 50  0000 C CNN
+F 1 "1N914" H 8195 4455 50  0001 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4505 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4680 50  0001 C CNN
 	1    8195 4680
@@ -107,8 +92,8 @@ $Comp
 L Diode:1N914 D7
 U 1 1 5E19A838
 P 8510 4580
-F 0 "D7" H 8510 4796 50  0000 C CNN
-F 1 "1N914" H 8510 4705 50  0000 C CNN
+F 0 "D7" H 8620 4625 50  0000 C CNN
+F 1 "1N914" H 8510 4705 50  0001 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4405 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4580 50  0001 C CNN
 	1    8510 4580
@@ -117,12 +102,12 @@ $EndComp
 $Comp
 L Diode:1N914 D6
 U 1 1 5E19A82E
-P 8195 4480
-F 0 "D6" H 8195 4696 50  0000 C CNN
-F 1 "1N914" H 8195 4605 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4305 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4480 50  0001 C CNN
-	1    8195 4480
+P 8510 4780
+F 0 "D6" H 8620 4820 50  0000 C CNN
+F 1 "1N914" H 8510 4905 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4605 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4780 50  0001 C CNN
+	1    8510 4780
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -151,12 +136,6 @@ Wire Wire Line
 	5530 1110 5530 1080
 Wire Wire Line
 	5530 1480 5530 1805
-Wire Wire Line
-	5630 1480 5630 2005
-Wire Wire Line
-	5730 1480 5730 2005
-Wire Wire Line
-	5830 1480 5830 1955
 Text Notes 3020 7615 0    50   ~ 0
 This was one of the weakest spots of the C16, where the\nTED chip pins were directly exposed outside through the\njoystick ports.\n\nAdding a buffer will protect the TED from ESD, and TVS\ndiodes could do even more. This is basically Levente\nHársfalvi's design integrated into the C16. Please see:\nhttp://www.zimmers.net/anonftp/pub/cbm/documents/projects/interfaces/plus4joy/plus4joy.html\n\nWe can also consider to replace the MiniDIN-8 ports with\nD-SUB 9 ones.
 $Comp
@@ -294,8 +273,6 @@ F 3 "" H 3555 5210 50  0001 C CNN
 	1    3555 5210
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8345 1805 8905 1805
 $Comp
 L Device:Ferrite_Bead_Small FB29
 U 1 1 5E0A3992
@@ -385,8 +362,8 @@ $Comp
 L Diode:1N914 D5
 U 1 1 5E07A0F3
 P 8195 2205
-F 0 "D5" H 8195 2081 50  0000 C CNN
-F 1 "1N914" H 8195 1990 50  0000 C CNN
+F 0 "D5" H 8305 2245 50  0000 C CNN
+F 1 "1N914" H 8195 1990 50  0001 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 2030 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2205 50  0001 C CNN
 	1    8195 2205
@@ -411,39 +388,6 @@ Wire Wire Line
 	4735 2005 4865 2005
 Wire Wire Line
 	4570 1805 4865 1805
-$Comp
-L Diode:1N914 D4
-U 1 1 5E03D312
-P 8510 2105
-F 0 "D4" H 8510 1981 50  0000 C CNN
-F 1 "1N914" H 8510 1890 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1930 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 2105 50  0001 C CNN
-	1    8510 2105
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N914 D2
-U 1 1 5E03AEE2
-P 8510 1905
-F 0 "D2" H 8510 2121 50  0000 C CNN
-F 1 "1N914" H 8510 2030 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1730 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 1905 50  0001 C CNN
-	1    8510 1905
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N914 D1
-U 1 1 5E037618
-P 8195 1805
-F 0 "D1" H 8195 2021 50  0000 C CNN
-F 1 "1N914" H 8195 1930 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1630 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 1805 50  0001 C CNN
-	1    8195 1805
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4485 2205 4865 2205
 Wire Wire Line
@@ -475,7 +419,7 @@ Entry Wire Line
 Entry Wire Line
 	9585 1905 9685 1805
 Entry Wire Line
-	9585 4880 9685 4780
+	9585 4980 9685 4880
 Wire Bus Line
 	9685 1705 10185 1705
 Text GLabel 10185 1705 2    50   Output ~ 0
@@ -485,17 +429,15 @@ Joystick Connector Pinout\nMiniDIN-8\n1 Up\n2 Down\n3 Left\n4 Right\n5 +5V\n6 Fi
 Wire Wire Line
 	5630 4295 5630 4680
 Wire Wire Line
-	7200 4480 7395 4480
+	7200 4780 7395 4780
 Wire Wire Line
 	7200 4680 7395 4680
 Wire Wire Line
-	7200 4880 7395 4880
+	7200 4980 7395 4980
 Wire Wire Line
 	7200 4580 7395 4580
 Wire Wire Line
-	7200 4780 7395 4780
-Wire Wire Line
-	8660 4780 9135 4780
+	7200 4480 7395 4480
 Wire Wire Line
 	8345 4680 9060 4680
 Wire Wire Line
@@ -506,7 +448,6 @@ Wire Wire Line
 	5730 4880 5110 4880
 Wire Wire Line
 	4910 4880 4485 4880
-NoConn ~ 7200 4980
 NoConn ~ 7200 5080
 NoConn ~ 7200 5180
 $Comp
@@ -536,7 +477,7 @@ F 3 "" H 6700 4075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8345 4880 9585 4880
+	8345 4980 9585 4980
 Wire Wire Line
 	3555 5105 3555 5160
 Wire Wire Line
@@ -549,23 +490,23 @@ Wire Wire Line
 $Comp
 L Device:R_Pack05_SIP_Split RN2
 U 2 1 61EB4E58
-P 7545 4780
-F 0 "RN2" V 7500 5020 50  0000 C CNN
-F 1 "100" V 7429 4780 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7465 4780 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4780 50  0001 C CNN
-	2    7545 4780
+P 7545 4480
+F 0 "RN2" V 7500 4720 50  0000 C CNN
+F 1 "100" V 7429 4480 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7465 4480 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4480 50  0001 C CNN
+	2    7545 4480
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Pack05_SIP_Split RN2
 U 3 1 61EB627F
-P 7545 4880
-F 0 "RN2" V 7505 5120 50  0000 C CNN
-F 1 "100" V 7429 4880 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7465 4880 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4880 50  0001 C CNN
-	3    7545 4880
+P 7545 4980
+F 0 "RN2" V 7505 5220 50  0000 C CNN
+F 1 "100" V 7429 4980 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7465 4980 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4980 50  0001 C CNN
+	3    7545 4980
 	0    1    1    0   
 $EndComp
 $Comp
@@ -582,24 +523,24 @@ $EndComp
 $Comp
 L Device:R_Pack05_SIP_Split RN2
 U 5 1 61EB849F
-P 7545 4480
-F 0 "RN2" V 7500 4720 50  0000 C CNN
-F 1 "100" V 7429 4480 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7465 4480 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4480 50  0001 C CNN
-	5    7545 4480
+P 7545 4780
+F 0 "RN2" V 7500 5020 50  0000 C CNN
+F 1 "100" V 7429 4780 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7465 4780 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4780 50  0001 C CNN
+	5    7545 4780
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7695 4480 8045 4480
+	7695 4780 8360 4780
 Wire Wire Line
 	7695 4580 8360 4580
 Wire Wire Line
 	7695 4680 8045 4680
 Wire Wire Line
-	7695 4780 8360 4780
+	7695 4480 8045 4480
 Wire Wire Line
-	7695 4880 8045 4880
+	7695 4980 8045 4980
 Wire Wire Line
 	3555 1775 3555 2055
 Wire Wire Line
@@ -610,17 +551,9 @@ Connection ~ 3555 2055
 Wire Wire Line
 	3555 2055 3555 2235
 Wire Wire Line
-	7205 1805 7400 1805
-Wire Wire Line
 	7205 2005 7400 2005
 Wire Wire Line
-	7205 2205 7400 2205
-Wire Wire Line
 	7205 1905 7400 1905
-Wire Wire Line
-	7205 2105 7400 2105
-NoConn ~ 7205 2305
-NoConn ~ 7205 2405
 NoConn ~ 7205 2505
 $Comp
 L 74xx:74AHCT244 U17
@@ -645,17 +578,6 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 1905 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Pack05_SIP_Split RN1
-U 5 1 61FC7C7D
-P 7550 1805
-F 0 "RN1" V 7505 2045 50  0000 C CNN
-F 1 "100" V 7434 1805 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7470 1805 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 1805 50  0001 C CNN
-	5    7550 1805
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0106
 U 1 1 5DFA2033
 P 3555 2545
@@ -669,8 +591,6 @@ $EndComp
 Wire Wire Line
 	3555 2435 3555 2490
 Wire Wire Line
-	5930 1480 5930 1805
-Wire Wire Line
 	4655 1905 5065 1905
 Wire Wire Line
 	4655 2610 4655 1905
@@ -679,28 +599,11 @@ Wire Wire Line
 Wire Wire Line
 	5065 2205 5730 2205
 Wire Wire Line
-	5065 2005 5630 2005
-Wire Wire Line
 	5065 1805 5530 1805
 Wire Wire Line
 	5265 1905 5930 1905
 Wire Wire Line
-	7700 1805 8045 1805
-Wire Wire Line
-	7700 1905 8360 1905
-Wire Wire Line
-	7700 2105 8360 2105
-Wire Wire Line
 	7700 2205 8045 2205
-Wire Wire Line
-	8660 1905 8985 1905
-Wire Wire Line
-	8660 2105 9135 2105
-Wire Wire Line
-	8345 2205 9585 2205
-Connection ~ 9135 2105
-Wire Wire Line
-	9135 2105 9585 2105
 Wire Wire Line
 	8345 2005 9060 2005
 Connection ~ 9060 2005
@@ -713,21 +616,17 @@ $Comp
 L Diode:1N914 D3
 U 1 1 5E03D308
 P 8195 2005
-F 0 "D3" H 8195 1881 50  0000 C CNN
-F 1 "1N914" H 8195 1790 50  0000 C CNN
+F 0 "D3" H 8305 2045 50  0000 C CNN
+F 1 "1N914" H 8195 1790 50  0001 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1830 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2005 50  0001 C CNN
 	1    8195 2005
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8905 1805 8905 4480
-Wire Wire Line
 	8985 1905 8985 4580
 Wire Wire Line
 	9060 2005 9060 4680
-Wire Wire Line
-	9135 2105 9135 4780
 $Comp
 L power:GND #PWR0107
 U 1 1 5DFEE778
@@ -915,33 +814,7 @@ $EndComp
 Wire Wire Line
 	6705 3105 6705 3145
 Wire Wire Line
-	6200 4480 5930 4480
-Connection ~ 5930 4480
-Wire Wire Line
-	5930 4480 5930 4580
-Wire Wire Line
-	5830 4630 5990 4630
-Wire Wire Line
-	5990 4630 5990 4580
-Wire Wire Line
-	5990 4580 6200 4580
-Connection ~ 5830 4630
-Wire Wire Line
-	5830 4630 5830 4780
-Wire Wire Line
-	6200 4680 5730 4680
-Connection ~ 5730 4680
-Wire Wire Line
-	5730 4680 5730 4880
-Wire Wire Line
-	5630 4680 5630 4730
-Wire Wire Line
-	5630 4730 5990 4730
-Wire Wire Line
-	5990 4730 5990 4780
-Wire Wire Line
-	5990 4780 6200 4780
-Connection ~ 5630 4680
+	6015 4780 6200 4780
 $Comp
 L 74xx:74AHCT244 U18
 U 1 1 61D585FB
@@ -953,17 +826,13 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT244.pdf" H 6700 
 	1    6700 4980
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5530 4480 5530 5080
-Wire Wire Line
-	5530 5080 6200 5080
 Connection ~ 5530 4480
 $Comp
 L Device:R_Pack05_SIP_Split RN2
 U 1 1 61EB0CF8
 P 7545 4580
 F 0 "RN2" V 7500 4815 50  0000 C CNN
-F 1 "100" V 7429 4580 50  0000 C CNN
+F 1 "100" V 7340 4580 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 4580 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4580 50  0001 C CNN
 	1    7545 4580
@@ -993,62 +862,13 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2005 50  0001 C CNN
 	4    7550 2005
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Pack05_SIP_Split RN1
-U 2 1 61FC7C5F
-P 7550 2105
-F 0 "RN1" V 7505 2345 50  0000 C CNN
-F 1 "100" V 7434 2105 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7470 2105 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2105 50  0001 C CNN
-	2    7550 2105
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6205 1805 5930 1805
-Connection ~ 5930 1805
-Wire Wire Line
-	5930 1805 5930 1905
-Wire Wire Line
-	5830 1955 5990 1955
-Wire Wire Line
-	5990 1955 5990 1905
-Wire Wire Line
-	5990 1905 6205 1905
-Connection ~ 5830 1955
-Wire Wire Line
-	5830 1955 5830 2105
-Wire Wire Line
-	6205 2005 5730 2005
-Connection ~ 5730 2005
-Wire Wire Line
-	5730 2005 5730 2205
-Wire Wire Line
-	5530 2405 5530 1805
-Connection ~ 5530 1805
-Wire Wire Line
-	6205 2105 5990 2105
-Wire Wire Line
-	5990 2105 5990 2170
-Wire Wire Line
-	5990 2170 5630 2170
-Wire Wire Line
-	5630 2170 5630 2005
-Connection ~ 5630 2005
 Wire Wire Line
 	6200 4880 5990 4880
-Wire Wire Line
-	5990 4880 5990 4980
 Wire Wire Line
 	5990 5820 6700 5820
 Connection ~ 6700 5820
 Wire Wire Line
 	6700 5820 6700 5855
-Wire Wire Line
-	6200 4980 5990 4980
-Connection ~ 5990 4980
-Wire Wire Line
-	5990 4980 5990 5180
 Wire Wire Line
 	6200 5180 5990 5180
 Connection ~ 5990 5180
@@ -1057,26 +877,17 @@ Wire Wire Line
 Wire Wire Line
 	6205 2205 5995 2205
 Wire Wire Line
-	5995 2205 5995 2305
-Wire Wire Line
-	6205 2305 5995 2305
-Connection ~ 5995 2305
-Wire Wire Line
-	5995 2305 5995 2505
-Wire Wire Line
 	6205 2505 5995 2505
 Connection ~ 5995 2505
 Wire Wire Line
 	5995 2505 5995 3145
 Wire Wire Line
-	5530 2405 6205 2405
-Wire Wire Line
 	5995 3145 6705 3145
 Connection ~ 6705 3145
 Wire Wire Line
 	6705 3145 6705 3180
-Text Notes 5925 2630 2    50   ~ 0
-The odd connections here\nare to simplify routing!
+Text Notes 5875 2680 2    50   ~ 0
+The (apparently)\nodd connections\nhere are to\nsimplify routing!
 $Comp
 L Jumper:Jumper_3_Bridged12 JD1
 U 1 1 61F59301
@@ -1122,7 +933,7 @@ Wire Wire Line
 Wire Wire Line
 	1660 5030 2390 5030
 Text Notes 2800 2090 2    50   ~ 0
-The JD1 and JD2 jumpers are not present\nin the original schematics, but I have traced\nthem on my board. They are labeled "D1" and\n"D2", I have renamed them to avoid conflicts\nwith the diodes bearing the same labels.\n\nTheir purpose seems to be able to enable the\njoysticks after passing through the keyboard\ndriver. Since it seems  the latter was introduced\nlate in the x264 architecture, maybe the\ndesigners weren't sure what was best and kept\nboth possibilities.
+The JD1 and JD2 jumpers are not present\nin the original schematics but I have traced\nthem on my board. They are labeled "D1" and\n"D2", I have renamed them to avoid conflicts\nwith the diodes bearing the same labels.\n\nTheir purpose seems to be able to enable the\njoysticks after passing through the keyboard\ndriver. Since it seems  the latter was introduced\nlate in the x264 architecture, maybe the\ndesigners weren't sure what was best and kept\nboth possibilities.
 $Comp
 L mini-din-8:Mini-DIN-8 CN5
 U 1 1 62150BCE
@@ -1165,6 +976,209 @@ Wire Wire Line
 Connection ~ 3555 2490
 Wire Wire Line
 	3555 2490 3555 2545
+Wire Wire Line
+	5930 1480 5930 1905
+Wire Wire Line
+	5830 1480 5830 1725
+Wire Wire Line
+	5930 1905 6205 1905
+Connection ~ 5930 1905
+Wire Wire Line
+	5730 1480 5730 2205
+Wire Wire Line
+	5630 1480 5630 2005
+Wire Wire Line
+	5065 2005 5630 2005
+Connection ~ 5630 2005
+Wire Wire Line
+	5630 2005 6205 2005
+Wire Wire Line
+	5730 2205 5730 2305
+Connection ~ 5730 2205
+Wire Wire Line
+	7305 2205 7400 2205
+NoConn ~ 7205 2205
+Wire Wire Line
+	6205 2405 5995 2405
+Connection ~ 5995 2405
+Wire Wire Line
+	5995 2405 5995 2505
+Wire Wire Line
+	5995 2205 5995 2405
+Wire Wire Line
+	5730 2305 6205 2305
+Wire Wire Line
+	7205 2305 7305 2305
+Wire Wire Line
+	7305 2305 7305 2205
+NoConn ~ 7205 2405
+Wire Wire Line
+	5530 1805 6020 1805
+Wire Wire Line
+	6020 1805 6020 2105
+Wire Wire Line
+	6020 2105 6205 2105
+Connection ~ 5530 1805
+Wire Wire Line
+	8660 2100 8905 2105
+$Comp
+L Diode:1N914 D1
+U 1 1 5E037618
+P 8510 2100
+F 0 "D1" H 8625 2140 50  0000 C CNN
+F 1 "1N914" H 8510 2225 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 2100 50  0001 C CNN
+	1    8510 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7205 2105 7400 2105
+$Comp
+L Device:R_Pack05_SIP_Split RN1
+U 5 1 61FC7C7D
+P 7550 2105
+F 0 "RN1" V 7505 2345 50  0000 C CNN
+F 1 "100" V 7434 2105 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7470 2105 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2105 50  0001 C CNN
+	5    7550 2105
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 2105 8360 2100
+Text Label 9585 2105 2    50   ~ 0
+k0
+Text Label 9585 1805 2    50   ~ 0
+k3
+$Comp
+L Diode:1N914 D4
+U 1 1 5E03D312
+P 8195 1805
+F 0 "D4" H 8195 2022 50  0000 C CNN
+F 1 "1N914" H 8195 1931 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1630 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 1805 50  0001 C CNN
+	1    8195 1805
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7205 1805 7400 1805
+Wire Wire Line
+	7700 1805 8045 1805
+$Comp
+L Device:R_Pack05_SIP_Split RN1
+U 2 1 61FC7C5F
+P 7550 1805
+F 0 "RN1" V 7505 2045 50  0000 C CNN
+F 1 "100" V 7434 1805 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7470 1805 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 1805 50  0001 C CNN
+	2    7550 1805
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8345 2205 9585 2205
+Wire Wire Line
+	8345 1805 8905 1805
+Wire Wire Line
+	5830 1725 6100 1725
+Wire Wire Line
+	6100 1725 6100 1805
+Wire Wire Line
+	6100 1805 6205 1805
+Connection ~ 5830 1725
+Wire Wire Line
+	5830 1725 5830 2105
+Text Label 5305 1805 0    50   ~ 0
+1u
+Text Label 5305 1905 0    50   ~ 0
+1d
+Text Label 5305 2005 0    50   ~ 0
+1l
+Text Label 5305 2105 0    50   ~ 0
+1r
+Text Label 5305 2205 0    50   ~ 0
+1f
+Wire Wire Line
+	8905 2105 9135 2105
+Wire Wire Line
+	8660 1905 8985 1905
+Wire Wire Line
+	7700 1905 8360 1905
+$Comp
+L Diode:1N914 D2
+U 1 1 5E03AEE2
+P 8510 1905
+F 0 "D2" H 8620 1945 50  0000 C CNN
+F 1 "1N914" H 8510 2030 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1730 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 1905 50  0001 C CNN
+	1    8510 1905
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5930 4295 5930 4580
+Wire Wire Line
+	5830 4295 5830 4400
+Wire Wire Line
+	5930 4580 6200 4580
+Connection ~ 5930 4580
+Wire Wire Line
+	5830 4400 6095 4400
+Wire Wire Line
+	6095 4400 6095 4480
+Wire Wire Line
+	6095 4480 6200 4480
+Connection ~ 5830 4400
+Wire Wire Line
+	5830 4400 5830 4780
+Wire Wire Line
+	5530 4480 6015 4480
+Wire Wire Line
+	6015 4480 6015 4780
+Connection ~ 5630 4680
+Wire Wire Line
+	5730 4295 5730 4880
+Wire Wire Line
+	5630 4680 6200 4680
+Wire Wire Line
+	5730 4880 5730 4980
+Connection ~ 5730 4880
+Wire Wire Line
+	5990 4880 5990 5080
+Wire Wire Line
+	5730 4980 6200 4980
+Wire Wire Line
+	6200 5080 5990 5080
+Connection ~ 5990 5080
+Wire Wire Line
+	5990 5080 5990 5180
+Text Label 5340 4480 0    50   ~ 0
+2u
+Text Label 5340 4580 0    50   ~ 0
+2d
+Text Label 5340 4680 0    50   ~ 0
+2l
+Text Label 5340 4780 0    50   ~ 0
+2r
+Text Label 5340 4880 0    50   ~ 0
+2f
+Wire Wire Line
+	8660 4780 9135 4780
+Connection ~ 8905 1805
+Wire Wire Line
+	8905 1805 8905 4480
+Connection ~ 9135 2105
+Wire Wire Line
+	9135 2105 9585 2105
+Wire Wire Line
+	9135 2105 9135 4780
+Wire Wire Line
+	8905 1805 9585 1805
+Wire Wire Line
+	8345 4480 8905 4480
+NoConn ~ 7200 4880
 Wire Bus Line
-	9685 1705 9685 4780
+	9685 1705 9685 4880
 $EndSCHEMATC
