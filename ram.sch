@@ -704,10 +704,10 @@ $EndComp
 Text Notes 4915 3675 1    50   ~ 0
 Yes, RP3/4 have this\nweird pin numbering,\nmost likely in order to\nmake routing easier
 $Comp
-L Device:C C35
+L Device:C C92
 U 1 1 611A31E9
 P 3760 6985
-F 0 "C35" H 3875 7031 50  0000 L CNN
+F 0 "C92" H 3875 7031 50  0000 L CNN
 F 1 "100n" H 3875 6940 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3798 6835 50  0001 C CNN
 F 3 "~" H 3760 6985 50  0001 C CNN
@@ -883,6 +883,8 @@ Wire Wire Line
 	1135 2100 1135 2200
 Text Label 1845 2790 0    50   ~ 0
 ~ramen
+Text Notes 660  3570 0    50   ~ 0
+We make use of a spare gate to fix the\neternal problem of external RAM\nexpansions not working, which is due to\nthe impossibility of disabling the internal\nRAM. This should do it, just ground the Z\npin and the internal RAM will disappear.
 Wire Bus Line
 	5815 1220 5815 3440
 Wire Bus Line
@@ -895,6 +897,4 @@ Wire Bus Line
 	8985 2140 8985 5230
 Wire Bus Line
 	2565 1160 2565 5130
-Text Notes 660  3570 0    50   ~ 0
-We make use of a spare gate to fix the\neternal problem of external RAM\nexpansions not working, which is due to\nthe impossibility of disabling the internal\nRAM. This should do it, just ground the Z\npin and the internal RAM will disappear.
 $EndSCHEMATC

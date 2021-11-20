@@ -539,10 +539,10 @@ Wire Wire Line
 	6345 3220 7060 3220
 Text GLabel 7230 1635 2    50   Output ~ 0
 D2_LATCHED
+Text GLabel 7230 1735 2    50   Output ~ 0
+D1_LATCHED
 Wire Bus Line
 	3905 2920 3905 3625
 Wire Bus Line
 	7425 2520 7425 4755
-Text GLabel 7230 1735 2    50   Output ~ 0
-D1_LATCHED
 $EndSCHEMATC

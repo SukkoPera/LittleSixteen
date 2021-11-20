@@ -604,14 +604,6 @@ Wire Wire Line
 	5265 1905 5930 1905
 Wire Wire Line
 	7700 2205 8045 2205
-Wire Wire Line
-	8345 2005 9060 2005
-Connection ~ 9060 2005
-Wire Wire Line
-	9060 2005 9585 2005
-Connection ~ 8985 1905
-Wire Wire Line
-	8985 1905 9585 1905
 $Comp
 L Diode:1N914 D3
 U 1 1 5E03D308
@@ -623,10 +615,6 @@ F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2005 50  0001 C CNN
 	1    8195 2005
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8985 1905 8985 4580
-Wire Wire Line
-	9060 2005 9060 4680
 $Comp
 L power:GND #PWR0107
 U 1 1 5DFEE778
@@ -707,8 +695,6 @@ Wire Wire Line
 Connection ~ 6065 2805
 Wire Wire Line
 	6065 2805 6205 2805
-Wire Bus Line
-	1560 2255 1560 4930
 Wire Wire Line
 	10710 6075 10710 6150
 Wire Wire Line
@@ -932,8 +918,6 @@ Wire Wire Line
 	2390 5030 2390 5230
 Wire Wire Line
 	1660 5030 2390 5030
-Text Notes 2800 2090 2    50   ~ 0
-The JD1 and JD2 jumpers are not present\nin the original schematics but I have traced\nthem on my board. They are labeled "D1" and\n"D2", I have renamed them to avoid conflicts\nwith the diodes bearing the same labels.\n\nTheir purpose seems to be able to enable the\njoysticks after passing through the keyboard\ndriver. Since it seems  the latter was introduced\nlate in the x264 architecture, maybe the\ndesigners weren't sure what was best and kept\nboth possibilities.
 $Comp
 L mini-din-8:Mini-DIN-8 CN5
 U 1 1 62150BCE
@@ -1080,8 +1064,6 @@ $EndComp
 Wire Wire Line
 	8345 2205 9585 2205
 Wire Wire Line
-	8345 1805 8905 1805
-Wire Wire Line
 	5830 1725 6100 1725
 Wire Wire Line
 	6100 1725 6100 1805
@@ -1100,10 +1082,6 @@ Text Label 5305 2105 0    50   ~ 0
 1r
 Text Label 5305 2205 0    50   ~ 0
 1f
-Wire Wire Line
-	8905 2105 9135 2105
-Wire Wire Line
-	8660 1905 8985 1905
 Wire Wire Line
 	7700 1905 8360 1905
 $Comp
@@ -1166,19 +1144,41 @@ Text Label 5340 4880 0    50   ~ 0
 2f
 Wire Wire Line
 	8660 4780 9135 4780
-Connection ~ 8905 1805
 Wire Wire Line
-	8905 1805 8905 4480
-Connection ~ 9135 2105
+	8345 4480 8905 4480
+Wire Bus Line
+	1560 2255 1560 4930
+Text Notes 2800 2090 2    50   ~ 0
+The JD1 and JD2 jumpers are not present\nin the original schematics but I have traced\nthem on my board. They are labeled "D1" and\n"D2", I have renamed them to avoid conflicts\nwith the diodes bearing the same labels.\n\nTheir purpose seems to be able to enable the\njoysticks after passing through the keyboard\ndriver. Since it seems  the latter was introduced\nlate in the x264 architecture, maybe the\ndesigners weren't sure what was best and kept\nboth possibilities.
+NoConn ~ 7200 4880
 Wire Wire Line
 	9135 2105 9585 2105
+Wire Wire Line
+	8905 2105 9135 2105
+Connection ~ 9135 2105
 Wire Wire Line
 	9135 2105 9135 4780
 Wire Wire Line
 	8905 1805 9585 1805
 Wire Wire Line
-	8345 4480 8905 4480
-NoConn ~ 7200 4880
+	8345 1805 8905 1805
+Connection ~ 8905 1805
+Wire Wire Line
+	8905 1805 8905 4480
+Wire Wire Line
+	9060 2005 9585 2005
+Wire Wire Line
+	8345 2005 9060 2005
+Connection ~ 9060 2005
+Wire Wire Line
+	9060 2005 9060 4680
+Wire Wire Line
+	8660 1905 8985 1905
+Wire Wire Line
+	8985 1905 9585 1905
+Connection ~ 8985 1905
+Wire Wire Line
+	8985 1905 8985 4580
 Wire Bus Line
 	9685 1705 9685 4880
 $EndSCHEMATC

@@ -355,10 +355,10 @@ Wire Notes Line
 	7575 5260 6375 5260
 Wire Notes Line
 	6375 5260 6375 5115
+Text Notes 6885 5715 0    50   ~ 0
+On the Plus/4 schematics from the German User's guide, the\nZ pin is reported as "RAMEN (NC)". On the actual boards it is\nactually NC, but then why not use it as a real "RAM Enable"\nsignal to solve the problem of external RAM expansions not\nworking? :)
 Wire Bus Line
 	3910 4290 3910 4990
 Wire Bus Line
 	7855 3490 7855 4990
-Text Notes 6885 5715 0    50   ~ 0
-On the Plus/4 schematics from the German User's guide, the\nZ pin is reported as "RAMEN (NC)". On the actual boards it is\nactually NC, but then why not use it as a real "RAM Enable"\nsignal to solve the problem of external RAM expansions not\nworking? :)
 $EndSCHEMATC
