@@ -20,4 +20,5 @@
   (lib (name atf16v8)(type Legacy)(uri ${KIPRJMOD}/lib/atf16v8.lib)(options "")(descr ""))
   (lib (name mini-din-7)(type Legacy)(uri ${KIPRJMOD}/lib/mini-din-7.lib)(options "")(descr ""))
   (lib (name mini-din-8)(type Legacy)(uri ${KIPRJMOD}/lib/mini-din-8.lib)(options "")(descr ""))
+  (lib (name DT1042)(type Legacy)(uri ${KIPRJMOD}/lib/DT1042.lib)(options "")(descr ""))
 )

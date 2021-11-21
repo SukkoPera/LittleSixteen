@@ -369,35 +369,35 @@ CST_MTR:\nLOW = Motor on\nHIGH = Motor off
 Text Label 9895 2115 2    50   ~ 0
 p3
 Wire Wire Line
-	7900 5620 7900 5275
+	8090 5620 8090 5275
 $Comp
 L Device:R R102
 U 1 1 5ED6F117
-P 7900 5125
-F 0 "R102" H 7970 5171 50  0000 L CNN
-F 1 "330" H 7970 5080 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 7830 5125 50  0001 C CNN
-F 3 "~" H 7900 5125 50  0001 C CNN
-	1    7900 5125
+P 8090 5125
+F 0 "R102" H 8160 5171 50  0000 L CNN
+F 1 "330" H 8160 5080 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8020 5125 50  0001 C CNN
+F 3 "~" H 8090 5125 50  0001 C CNN
+	1    8090 5125
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0157
 U 1 1 5ED6F7A0
-P 7900 4880
-F 0 "#PWR0157" H 7900 4730 50  0001 C CNN
-F 1 "VCC" H 7917 5053 50  0000 C CNN
-F 2 "" H 7900 4880 50  0001 C CNN
-F 3 "" H 7900 4880 50  0001 C CNN
-	1    7900 4880
+P 8090 4880
+F 0 "#PWR0157" H 8090 4730 50  0001 C CNN
+F 1 "VCC" H 8107 5053 50  0000 C CNN
+F 2 "" H 8090 4880 50  0001 C CNN
+F 3 "" H 8090 4880 50  0001 C CNN
+	1    8090 4880
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 4880 7900 4975
-Text Notes 6995 6085 0    50   ~ 0
+	8090 4880 8090 4975
+Text Notes 7185 6085 0    50   ~ 0
 FEMALE DIN-6
 Wire Wire Line
-	7315 5175 6575 5175
+	7505 5175 6575 5175
 $Comp
 L 74xx:74LS06 U9
 U 4 1 5ED7BF96
@@ -450,7 +450,7 @@ p0
 Wire Wire Line
 	4250 5175 3175 5175
 Wire Wire Line
-	7315 5865 6280 5865
+	7505 5865 6280 5865
 Wire Wire Line
 	6080 5865 5805 5865
 $Comp
@@ -592,7 +592,7 @@ Text GLabel 2750 5865 0    50   Input ~ 0
 SERIAL_RESET
 Wire Wire Line
 	3955 5865 2750 5865
-Text Notes 6575 4490 0    157  ~ 0
+Text Notes 4865 4060 0    157  ~ 0
 SERIAL BUS\n(OR 1541 DISK DRIVE)
 Text Notes 2570 1355 0    157  ~ 0
 DATASSETTE\nINTERFACE
@@ -683,52 +683,52 @@ Connection ~ 6400 6085
 Wire Wire Line
 	6400 6085 6325 6085
 Wire Wire Line
-	7315 5820 7315 5865
+	7505 5820 7505 5865
 Wire Wire Line
-	7015 5620 6575 5620
+	7205 5620 6575 5620
 Wire Wire Line
-	7015 5420 6275 5420
+	7205 5420 6275 5420
 Wire Wire Line
-	7315 5220 7315 5175
+	7505 5220 7505 5175
 Wire Wire Line
-	7775 5420 7615 5420
+	7965 5420 7805 5420
 Wire Wire Line
-	7615 5620 7900 5620
+	7805 5620 8090 5620
 Wire Wire Line
-	7775 6085 7775 6140
-Connection ~ 7775 6085
+	7965 6085 7965 6140
+Connection ~ 7965 6085
 Wire Wire Line
-	7590 6085 7775 6085
+	7780 6085 7965 6085
 Wire Wire Line
-	7590 5930 7590 6085
+	7780 5930 7780 6085
 Wire Wire Line
-	7675 5930 7590 5930
+	7865 5930 7780 5930
 $Comp
 L Ferrite3Pin:Ferrite_3pin FB1
 U 1 1 5E2BCB55
-P 7775 5930
-F 0 "FB1" H 7675 5930 50  0000 R CNN
-F 1 "Ferrite_3pin" V 7629 5930 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 7705 5930 50  0001 C CNN
-F 3 "~" H 7775 5930 50  0001 C CNN
-	1    7775 5930
+P 7965 5930
+F 0 "FB1" H 7865 5930 50  0000 R CNN
+F 1 "Ferrite_3pin" V 7819 5930 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 7895 5930 50  0001 C CNN
+F 3 "~" H 7965 5930 50  0001 C CNN
+	1    7965 5930
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0158
 U 1 1 5ED75A9A
-P 7775 6140
-F 0 "#PWR0158" H 7775 5890 50  0001 C CNN
-F 1 "GND" H 7780 5967 50  0000 C CNN
-F 2 "" H 7775 6140 50  0001 C CNN
-F 3 "" H 7775 6140 50  0001 C CNN
-	1    7775 6140
+P 7965 6140
+F 0 "#PWR0158" H 7965 5890 50  0001 C CNN
+F 1 "GND" H 7970 5967 50  0000 C CNN
+F 2 "" H 7965 6140 50  0001 C CNN
+F 3 "" H 7965 6140 50  0001 C CNN
+	1    7965 6140
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7775 6030 7775 6085
+	7965 6030 7965 6085
 Wire Wire Line
-	7775 5830 7775 5420
+	7965 5830 7965 5420
 $Comp
 L Ferrite3Pin:Ferrite_3pin FB19
 U 1 1 5E31356C
@@ -753,6 +753,7 @@ F 0 "D97" V 3569 4276 50  0000 R CNN
 F 1 "1n4148" V 3660 4276 50  0000 R CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3615 4355 50  0001 C CNN
 F 3 "~" H 3615 4355 50  0001 C CNN
+F 4 "Do not mount if U91 is mounted" H 3615 4355 50  0001 C CNN "Notes"
 	1    3615 4355
 	0    -1   1    0   
 $EndComp
@@ -780,31 +781,31 @@ Wire Notes Line
 	4025 4495 4025 4200
 Text Notes 2285 2215 2    50   ~ 0
 These are protection diodes retrofitted\nafter production on *some* C16s I've seen.\nThese seem different from the 1n4148 that\nare retrofitted on p6/p7 on the same board,\nsince those clearly say 1n4148 on their\nbodies, while these have a color coding of\nyellow (thick/cathode), brown, yellow,\ngrey (or light blue?), which... erm, would\nmake them 1n4148 ^___^. Multimeter says\ntheir Voltage drops are 0.555V and 0.561V,\nwhile it says 0.323 for the others (all\nmeasures in-circuit).
-Text Notes 7610 5615 0    50   ~ 0
+Text Notes 7800 5615 0    50   ~ 0
 SRQ
-Text Notes 7155 5165 0    50   ~ 0
+Text Notes 7345 5165 0    50   ~ 0
 ATN
-Text Notes 6845 5415 0    50   ~ 0
+Text Notes 6975 5420 0    50   ~ 0
 CLK
-Text Notes 6810 5615 0    50   ~ 0
+Text Notes 6975 5620 0    50   ~ 0
 DATA
-Text Notes 7000 5860 0    50   ~ 0
+Text Notes 7190 5860 0    50   ~ 0
 RESET
 $Comp
 L Connector:DIN-6 CN7
 U 1 1 5ED6C96C
-P 7315 5520
-F 0 "CN7" H 7165 5765 50  0000 C CNN
-F 1 "SERIAL_BUS" H 7315 5080 50  0000 C CNN
-F 2 "CommodorePlus4:Connector_DIN_Female_6Pin_3rows" H 7315 5520 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7315 5520 50  0001 C CNN
-	1    7315 5520
+P 7505 5520
+F 0 "CN7" H 7355 5765 50  0000 C CNN
+F 1 "SERIAL_BUS" H 7505 5080 50  0000 C CNN
+F 2 "CommodorePlus4:Connector_DIN_Female_6Pin_3rows" H 7505 5520 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7505 5520 50  0001 C CNN
+	1    7505 5520
 	-1   0    0    -1  
 $EndComp
-Text Notes 7605 5415 0    50   ~ 0
+Text Notes 7795 5415 0    50   ~ 0
 GND
-Text Notes 8095 5630 0    50   ~ 0
-- Fastloaders might use these signals differently!\n- All signals are active-low\n- All signals are open collector, since this is a *bus*
+Text Notes 4070 6785 0    50   ~ 0
+NOTES:\n- Fastloaders might use these signals differently!\n- All signals are active-low\n- All signals are open collector, since this is a *bus*
 Connection ~ 3010 2425
 Wire Notes Line
 	2960 4490 4025 4500
@@ -840,6 +841,7 @@ F 0 "D99" V 3329 4435 50  0000 L CNN
 F 1 "1n4148" V 3420 4435 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3375 4355 50  0001 C CNN
 F 3 "~" H 3375 4355 50  0001 C CNN
+F 4 "Do not mount if U91 is mounted" H 3375 4355 50  0001 C CNN "Notes"
 	1    3375 4355
 	0    -1   1    0   
 $EndComp
@@ -945,6 +947,7 @@ F 0 "D96" V 3569 6011 50  0000 R CNN
 F 1 "1n4148" V 3660 6011 50  0000 R CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3615 6090 50  0001 C CNN
 F 3 "~" H 3615 6090 50  0001 C CNN
+F 4 "Do not mount if U91 is mounted" H 3615 6090 50  0001 C CNN "Notes"
 	1    3615 6090
 	0    -1   1    0   
 $EndComp
@@ -960,6 +963,7 @@ F 0 "D98" V 3329 6170 50  0000 L CNN
 F 1 "1n4148" V 3420 6170 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 3375 6090 50  0001 C CNN
 F 3 "~" H 3375 6090 50  0001 C CNN
+F 4 "Do not mount if U91 is mounted" H 3375 6090 50  0001 C CNN "Notes"
 	1    3375 6090
 	0    -1   1    0   
 $EndComp
@@ -1061,6 +1065,72 @@ Wire Notes Line
 	9050 1575 9050 1200
 Text Notes 10095 1665 0    50   ~ 0
 This diode is the one\nAndrew Challis\nrecommends in order\nto let the Datassette\nmotor run only when\none of its keys is pressed.\nWe add a pull-up resistor\njust in case. Install both\nonly when using a 6510\nCPU. (He says FB15 on\nhis page but it's a clear\nmistake.)
+$Comp
+L DT1042:DT1042 U91
+U 1 1 6223655A
+P 9975 5145
+F 0 "U91" H 10303 5191 50  0000 L CNN
+F 1 "DT1042" H 10303 5100 50  0000 L CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 9825 4595 50  0001 C CNN
+F 3 "" H 9825 4595 50  0001 C CNN
+F 4 "Optional, protects Serial port from ESD" H 9975 5145 50  0001 C CNN "Notes"
+	1    9975 5145
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9975 4695 9975 4625
+Wire Wire Line
+	9975 5595 9975 5670
+$Comp
+L power:VCC #PWR0209
+U 1 1 62244AD8
+P 9975 4625
+F 0 "#PWR0209" H 9975 4475 50  0001 C CNN
+F 1 "VCC" H 9992 4798 50  0000 C CNN
+F 2 "" H 9975 4625 50  0001 C CNN
+F 3 "" H 9975 4625 50  0001 C CNN
+	1    9975 4625
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0210
+U 1 1 6224539A
+P 9975 5670
+F 0 "#PWR0210" H 9975 5420 50  0001 C CNN
+F 1 "GND" H 9980 5497 50  0000 C CNN
+F 2 "" H 9975 5670 50  0001 C CNN
+F 3 "" H 9975 5670 50  0001 C CNN
+	1    9975 5670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9375 4995 9045 4995
+Wire Wire Line
+	9375 5095 9045 5095
+Wire Wire Line
+	9375 5195 9045 5195
+Wire Wire Line
+	9375 5295 9045 5295
+Text Label 3750 2425 0    50   ~ 0
+prot1
+Text Label 6670 5620 0    50   ~ 0
+cn7_p5
+Text Label 6670 5420 0    50   ~ 0
+cn7_p4
+Text Label 6670 5175 0    50   ~ 0
+cn7_p3
+Text Label 6670 5865 0    50   ~ 0
+cn7_p6
+Text Label 9045 5195 0    50   ~ 0
+cn7_p5
+Text Label 9045 5295 0    50   ~ 0
+cn7_p3
+Text Label 9045 5095 0    50   ~ 0
+cn7_p4
+Text Label 9045 4995 0    50   ~ 0
+cn7_p6
 Wire Bus Line
 	3075 4640 3075 5520
+Text Notes 9075 6315 0    50   ~ 0
+This offers better ESD protection\nthan the retrofitted diodes, but it's\nan SMT component. Use only one\nor the other, at your preference.
 $EndSCHEMATC
