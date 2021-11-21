@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "LittleSixteen"
-Date "2021-11-17"
+Date "2021-11-21"
 Rev "2git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -863,6 +863,7 @@ F 0 "D95" V 2669 2200 50  0000 L CNN
 F 1 "1n4148" V 2760 2200 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2715 2120 50  0001 C CNN
 F 3 "~" H 2715 2120 50  0001 C CNN
+F 4 "Do not mount if U92 is mounted" H 2715 2120 50  0001 C CNN "Notes"
 	1    2715 2120
 	0    -1   1    0   
 $EndComp
@@ -887,6 +888,7 @@ F 0 "D94" V 2669 2775 50  0000 L CNN
 F 1 "1n4148" V 2760 2775 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2715 2695 50  0001 C CNN
 F 3 "~" H 2715 2695 50  0001 C CNN
+F 4 "Do not mount if U92 is mounted" H 2715 2695 50  0001 C CNN "Notes"
 	1    2715 2695
 	0    -1   1    0   
 $EndComp
@@ -1007,6 +1009,7 @@ F 0 "R93" H 9630 1334 50  0000 R CNN
 F 1 "3.3k" H 9630 1425 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9630 1380 50  0001 C CNN
 F 3 "~" H 9700 1380 50  0001 C CNN
+F 4 "Only mount if using a 6510 CPU (But shouldn't hurt anyway)" H 9700 1380 50  0001 C CNN "Notes"
 	1    9700 1380
 	-1   0    0    1   
 $EndComp
@@ -1033,6 +1036,7 @@ F 0 "D93" V 9440 1625 50  0000 R CNN
 F 1 "1n4148" V 9530 1760 50  0000 R CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 9490 1380 50  0001 C CNN
 F 3 "~" H 9490 1380 50  0001 C CNN
+F 4 "Only mount if using a 6510 CPU" H 9490 1380 50  0001 C CNN "Notes"
 	1    9490 1380
 	0    -1   1    0   
 $EndComp
@@ -1111,8 +1115,8 @@ Wire Wire Line
 	9375 5195 9045 5195
 Wire Wire Line
 	9375 5295 9045 5295
-Text Label 3750 2425 0    50   ~ 0
-prot1
+Text Label 3710 2425 0    50   ~ 0
+cn3_p5
 Text Label 6670 5620 0    50   ~ 0
 cn7_p5
 Text Label 6670 5420 0    50   ~ 0
@@ -1129,8 +1133,71 @@ Text Label 9045 5095 0    50   ~ 0
 cn7_p4
 Text Label 9045 4995 0    50   ~ 0
 cn7_p6
+Text Notes 9075 6315 0    50   ~ 0
+These offer better ESD protection\nthan the retrofitted diodes, but use\nan SMT component. Mount only one\nor the other, at your preference.
+Text Label 5265 2325 0    50   ~ 0
+cn3_p6
+Text Label 4690 1535 0    50   ~ 0
+cn3_p7
+$Comp
+L DT1042:DT1042 U92
+U 1 1 62324DC8
+P 9975 3360
+F 0 "U92" H 10303 3406 50  0000 L CNN
+F 1 "DT1042" H 10303 3315 50  0000 L CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 9825 2810 50  0001 C CNN
+F 3 "" H 9825 2810 50  0001 C CNN
+F 4 "Optional, protects Serial port from ESD" H 9975 3360 50  0001 C CNN "Notes"
+	1    9975 3360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9975 2910 9975 2840
+Wire Wire Line
+	9975 3810 9975 3885
+$Comp
+L power:VCC #PWR0211
+U 1 1 62325334
+P 9975 2840
+F 0 "#PWR0211" H 9975 2690 50  0001 C CNN
+F 1 "VCC" H 9992 3013 50  0000 C CNN
+F 2 "" H 9975 2840 50  0001 C CNN
+F 3 "" H 9975 2840 50  0001 C CNN
+	1    9975 2840
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0212
+U 1 1 6232533E
+P 9975 3885
+F 0 "#PWR0212" H 9975 3635 50  0001 C CNN
+F 1 "GND" H 9980 3712 50  0000 C CNN
+F 2 "" H 9975 3885 50  0001 C CNN
+F 3 "" H 9975 3885 50  0001 C CNN
+	1    9975 3885
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9375 3210 9045 3210
+Wire Wire Line
+	9375 3310 9045 3310
+Wire Wire Line
+	9375 3510 9045 3510
+Text Label 9045 3510 0    50   ~ 0
+cn3_p6
+Text Label 9045 3310 0    50   ~ 0
+cn3_p5
+Text Label 9045 3210 0    50   ~ 0
+cn3_p7
+NoConn ~ 9375 3410
+Wire Notes Line
+	8925 2565 10795 2565
+Wire Notes Line
+	10795 2565 10795 6410
+Wire Notes Line
+	10795 6410 8925 6410
+Wire Notes Line
+	8925 6410 8925 2565
 Wire Bus Line
 	3075 4640 3075 5520
-Text Notes 9075 6315 0    50   ~ 0
-This offers better ESD protection\nthan the retrofitted diodes, but it's\nan SMT component. Use only one\nor the other, at your preference.
 $EndSCHEMATC

@@ -270,6 +270,7 @@ F 0 "D80" H 2335 5455 50  0000 C CNN
 F 1 "1n4148" H 2325 5550 50  0000 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2225 5405 50  0001 C CNN
 F 3 "~" H 2225 5405 50  0001 C CNN
+F 4 "Only mount if using PLA16V8" H 2225 5405 50  0001 C CNN "Notes"
 	1    2225 5405
 	-1   0    0    1   
 $EndComp
@@ -307,6 +308,7 @@ F 0 "D81" H 2140 5265 50  0000 C CNN
 F 1 "1n4148" H 2025 5179 50  0001 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2025 5305 50  0001 C CNN
 F 3 "~" H 2025 5305 50  0001 C CNN
+F 4 "Only mount if using PLA16V8" H 2025 5305 50  0001 C CNN "Notes"
 	1    2025 5305
 	-1   0    0    1   
 $EndComp
@@ -320,6 +322,7 @@ F 0 "D82" H 2335 5165 50  0000 C CNN
 F 1 "1n4148" H 2225 5079 50  0001 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2225 5205 50  0001 C CNN
 F 3 "~" H 2225 5205 50  0001 C CNN
+F 4 "Only mount if using PLA16V8" H 2225 5205 50  0001 C CNN "Notes"
 	1    2225 5205
 	-1   0    0    1   
 $EndComp
@@ -333,6 +336,7 @@ F 0 "D83" H 2140 5065 50  0000 C CNN
 F 1 "1n4148" H 2025 4979 50  0001 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2025 5105 50  0001 C CNN
 F 3 "~" H 2025 5105 50  0001 C CNN
+F 4 "Only mount if using PLA16V8" H 2025 5105 50  0001 C CNN "Notes"
 	1    2025 5105
 	-1   0    0    1   
 $EndComp
@@ -346,6 +350,7 @@ F 0 "D84" H 2330 4970 50  0000 C CNN
 F 1 "1n4148" H 2225 4879 50  0001 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2225 5005 50  0001 C CNN
 F 3 "~" H 2225 5005 50  0001 C CNN
+F 4 "Only mount if using PLA16V8" H 2225 5005 50  0001 C CNN "Notes"
 	1    2225 5005
 	-1   0    0    1   
 $EndComp
@@ -359,6 +364,7 @@ F 0 "D85" H 2140 4865 50  0000 C CNN
 F 1 "1n4148" H 2025 4779 50  0001 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2025 4905 50  0001 C CNN
 F 3 "~" H 2025 4905 50  0001 C CNN
+F 4 "Only mount if using PLA16V8" H 2025 4905 50  0001 C CNN "Notes"
 	1    2025 4905
 	-1   0    0    1   
 $EndComp
@@ -391,6 +397,7 @@ F 0 "R80" H 1640 4614 50  0000 R CNN
 F 1 "5.6k" H 1640 4705 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1640 4660 50  0001 C CNN
 F 3 "~" H 1710 4660 50  0001 C CNN
+F 4 "Only mount if using PLA16V8" H 1710 4660 50  0001 C CNN "Notes"
 	1    1710 4660
 	-1   0    0    1   
 $EndComp
