@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sun 21 Nov 2021 12:46:44 CET")
+    (date "Sun 21 Nov 2021 20:12:31 CET")
     (tool "Eeschema 5.1.10")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1158,8 +1158,8 @@
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 6216ADBB))
     (comp (ref D90)
-      (value SMCJ9.0A-13-F)
-      (footprint Diode_SMD:D_SMC)
+      (value SA9.0A)
+      (footprint Diode_THT:D_DO-15_P5.08mm_Vertical_KathodeUp)
       (datasheet https://www.vishay.com/docs/88301/15ke.pdf)
       (libsource (lib Diode) (part 1.5KExxA) (description "1500W unidirectional TRANSZORB® Transient Voltage Suppressor, DO-201AE"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))

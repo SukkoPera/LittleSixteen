@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 12
 Title "LittleSixteen"
-Date "2021-11-20"
+Date "2021-11-21"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -775,8 +775,8 @@ L Diode:1.5KExxA D90
 U 1 1 6217E1A5
 P 3515 2210
 F 0 "D90" V 3469 2290 50  0000 L CNN
-F 1 "SMCJ9.0A-13-F" V 3560 2290 50  0000 L CNN
-F 2 "Diode_SMD:D_SMC" H 3515 2010 50  0001 C CNN
+F 1 "SA9.0A" V 3560 2290 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P5.08mm_Vertical_KathodeUp" H 3515 2010 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 3465 2210 50  0001 C CNN
 	1    3515 2210
 	0    1    1    0   
@@ -791,4 +791,6 @@ Wire Wire Line
 Connection ~ 3515 2465
 Wire Wire Line
 	3515 2465 4360 2465
+Text Notes 3075 2880 0    50   ~ 0
+TVS DIODE WILL PROVIDE\nPROTECTION AGAINST ESD\nTRANSIENTS AND REVERSE\nPOLARITY
 $EndSCHEMATC
