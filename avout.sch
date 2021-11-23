@@ -82,17 +82,6 @@ $EndComp
 Wire Wire Line
 	6480 865  6480 950 
 $Comp
-L Connector:DIN-8 CN6
-U 1 1 5E022697
-P 9645 2315
-F 0 "CN6" H 9645 2910 50  0000 C CNN
-F 1 "AUDIO_VIDEO" H 9645 2825 50  0000 C CNN
-F 2 "LittleSixteen:Connector_DIN_Female_8Pin_3rows" H 9645 2315 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 9645 2315 50  0001 C CNN
-	1    9645 2315
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:EMI_Filter_LCL EM5
 U 1 1 5E029075
 P 7600 2265
@@ -170,7 +159,7 @@ Wire Wire Line
 Wire Wire Line
 	10050 1945 10050 2615
 Wire Wire Line
-	10050 2940 8660 2940
+	10050 2940 9520 2940
 Connection ~ 8660 2940
 Wire Wire Line
 	9645 2615 9645 2785
@@ -1108,4 +1097,20 @@ F 3 "" H 7810 4860 50  0001 C CNN
 	1    7810 4860
 	1    0    0    -1  
 $EndComp
+$Comp
+L din-8:DIN-8 CN6
+U 1 1 62908D19
+P 9645 2315
+F 0 "CN6" H 9650 2905 50  0000 C CNN
+F 1 "AUDIO_VIDEO" H 9645 2820 50  0000 C CNN
+F 2 "LittleSixteen:DIN-8_DS_8_102_OR_102B" H 9645 2315 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 9645 2315 50  0001 C CNN
+	1    9645 2315
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9520 2590 9520 2940
+Connection ~ 9520 2940
+Wire Wire Line
+	9520 2940 8660 2940
 $EndSCHEMATC
