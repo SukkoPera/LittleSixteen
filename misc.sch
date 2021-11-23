@@ -542,21 +542,6 @@ Wire Wire Line
 	6520 4280 6695 4280
 Text Notes 6865 5075 0    50   ~ 0
 This will be inverted\nseparately by U9B,\nno idea why
-$Comp
-L 74xx:74LS125 U?
-U 4 1 625FE5B6
-P 9860 5960
-AR Path="/5ECB474B/625FE5B6" Ref="U?"  Part="4" 
-AR Path="/5EACE220/625FE5B6" Ref="U11"  Part="4" 
-F 0 "U11" H 9860 6277 50  0000 C CNN
-F 1 "74LS125" H 9860 6186 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9860 5960 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 9860 5960 50  0001 C CNN
-	4    9860 5960
-	1    0    0    -1  
-$EndComp
-NoConn ~ 9560 5960
-NoConn ~ 9860 6210
 NoConn ~ 10160 5960
 Wire Wire Line
 	3370 1965 3515 1965
@@ -863,4 +848,39 @@ Wire Wire Line
 	2350 2760 2350 2875
 Text Notes 2525 1715 0    50   ~ 0
 YEAH, THE POWER SWITCH\nIS WIRED LIKE THIS...
+$Comp
+L 74xx:74LS125 U?
+U 4 1 625FE5B6
+P 9860 5960
+AR Path="/5ECB474B/625FE5B6" Ref="U?"  Part="4" 
+AR Path="/5EACE220/625FE5B6" Ref="U11"  Part="4" 
+F 0 "U11" H 9860 6277 50  0000 C CNN
+F 1 "74LS125" H 9860 6186 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9860 5960 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 9860 5960 50  0001 C CNN
+	4    9860 5960
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9560 5960 9410 5960
+Wire Wire Line
+	9410 5960 9410 5735
+Wire Wire Line
+	9410 5960 9410 6325
+Wire Wire Line
+	9410 6325 9860 6325
+Wire Wire Line
+	9860 6325 9860 6210
+Connection ~ 9410 5960
+$Comp
+L power:VCC #PWR0217
+U 1 1 62A8DCB8
+P 9410 5735
+F 0 "#PWR0217" H 9410 5585 50  0001 C CNN
+F 1 "VCC" H 9427 5908 50  0000 C CNN
+F 2 "" H 9410 5735 50  0001 C CNN
+F 3 "" H 9410 5735 50  0001 C CNN
+	1    9410 5735
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
