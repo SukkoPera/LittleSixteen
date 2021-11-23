@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 12
 Title "LittleSixteen"
-Date "2021-11-21"
+Date "2021-11-23"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -351,6 +351,7 @@ F 0 "RP1" H 7753 4026 50  0000 L CNN
 F 1 "1k" H 7753 3935 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 7595 3980 50  0001 C CNN
 F 3 "~" H 7665 3980 50  0001 C CNN
+F 4 "Bussed" H 7665 3980 50  0001 C CNN "Notes"
 	1    7665 3980
 	-1   0    0    -1  
 $EndComp
@@ -598,12 +599,12 @@ Wire Wire Line
 $Comp
 L power:+9V #PWR0149
 U 1 1 5ED51964
-P 4360 1855
-F 0 "#PWR0149" H 4360 1705 50  0001 C CNN
-F 1 "+9V" H 4375 2028 50  0000 C CNN
-F 2 "" H 4360 1855 50  0001 C CNN
-F 3 "" H 4360 1855 50  0001 C CNN
-	1    4360 1855
+P 5350 1855
+F 0 "#PWR0149" H 5350 1705 50  0001 C CNN
+F 1 "+9V" H 5365 2028 50  0000 C CNN
+F 2 "" H 5350 1855 50  0001 C CNN
+F 3 "" H 5350 1855 50  0001 C CNN
+	1    5350 1855
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -622,7 +623,7 @@ POWER REGULATION
 Text Notes 4775 1400 0    50   ~ 0
 The TSR 2-2450 has a wide input range (6.5 - 36 VDC, 12 VDC nom.)\nand is able to output up to 2A.\n\nThe 1A model, TSR 1-2450 would probably be sufficient for most uses.\n\nThanks to Kinmami for helping design the input filter.
 Wire Wire Line
-	4360 1855 4360 1965
+	5350 1855 5350 1965
 Wire Wire Line
 	7250 1855 7250 1965
 $Comp
@@ -768,7 +769,7 @@ $EndComp
 Connection ~ 7250 1965
 Wire Wire Line
 	6610 2465 7250 2465
-Text Notes 4525 1715 0    50   ~ 0
+Text Notes 5170 1710 2    50   ~ 0
 RECOMMENDED:\nWURTH 744750230047
 $Comp
 L Diode:1.5KExxA D90
@@ -793,4 +794,6 @@ Wire Wire Line
 	3515 2465 4360 2465
 Text Notes 3075 2880 0    50   ~ 0
 TVS DIODE WILL PROVIDE\nPROTECTION AGAINST ESD\nTRANSIENTS AND REVERSE\nPOLARITY
+Text Label 3515 1965 0    50   ~ 0
+9v_in
 $EndSCHEMATC

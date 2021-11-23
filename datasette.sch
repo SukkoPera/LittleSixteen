@@ -472,6 +472,7 @@ F 0 "RP1" H 5920 4870 50  0000 R CNN
 F 1 "1k" H 6038 4680 50  0001 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 5880 4725 50  0001 C CNN
 F 3 "~" H 5950 4725 50  0001 C CNN
+F 4 "Bussed" H 5950 4725 50  0001 C CNN "Notes"
 	2    5950 4725
 	-1   0    0    -1  
 $EndComp
@@ -483,6 +484,7 @@ F 0 "RP1" H 5810 4525 50  0000 L CNN
 F 1 "1k" H 5893 4680 50  0001 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 5735 4725 50  0001 C CNN
 F 3 "~" H 5805 4725 50  0001 C CNN
+F 4 "Bussed" H 5805 4725 50  0001 C CNN "Notes"
 	3    5805 4725
 	-1   0    0    -1  
 $EndComp
@@ -494,6 +496,7 @@ F 0 "RP1" H 5660 4890 50  0000 L CNN
 F 1 "1k" H 5743 4680 50  0001 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 5585 4725 50  0001 C CNN
 F 3 "~" H 5655 4725 50  0001 C CNN
+F 4 "Bussed" H 5655 4725 50  0001 C CNN "Notes"
 	4    5655 4725
 	-1   0    0    -1  
 $EndComp
@@ -505,6 +508,7 @@ F 0 "RP1" H 5515 4525 50  0000 L CNN
 F 1 "1k" H 5585 4725 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 5435 4725 50  0001 C CNN
 F 3 "~" H 5505 4725 50  0001 C CNN
+F 4 "Bussed" H 5505 4725 50  0001 C CNN "Notes"
 	5    5505 4725
 	-1   0    0    -1  
 $EndComp

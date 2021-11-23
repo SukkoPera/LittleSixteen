@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 12
 Title "LittleSixteen"
-Date "2021-11-18"
+Date "2021-11-22"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Text Label 9585 4980 2    50   ~ 0
 k7
-Text Label 9585 2205 2    50   ~ 0
+Text Label 9585 2305 2    50   ~ 0
 k6
 Text Label 9585 2005 2    50   ~ 0
 k2
@@ -118,6 +118,7 @@ F 0 "RP2" H 6018 1326 50  0000 L CNN
 F 1 "3.3k" H 6018 1235 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 6105 1280 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5730 1280 50  0001 C CNN
+F 4 "Bussed" H 5730 1280 50  0001 C CNN "Notes"
 	1    5730 1280
 	1    0    0    -1  
 $EndComp
@@ -361,12 +362,12 @@ $EndComp
 $Comp
 L Diode:1N914 D5
 U 1 1 5E07A0F3
-P 8195 2205
-F 0 "D5" H 8305 2245 50  0000 C CNN
-F 1 "1N914" H 8195 1990 50  0001 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 2030 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2205 50  0001 C CNN
-	1    8195 2205
+P 8195 2305
+F 0 "D5" H 8305 2345 50  0000 C CNN
+F 1 "1N914" H 8195 2090 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 2130 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2305 50  0001 C CNN
+	1    8195 2305
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -411,7 +412,7 @@ Wire Wire Line
 Entry Wire Line
 	9585 1805 9685 1705
 Entry Wire Line
-	9585 2205 9685 2105
+	9585 2305 9685 2205
 Entry Wire Line
 	9585 2105 9685 2005
 Entry Wire Line
@@ -488,46 +489,50 @@ Connection ~ 3555 4730
 Wire Wire Line
 	3555 4730 3555 4905
 $Comp
-L Device:R_Pack05_SIP_Split RN2
+L Device:R_Pack05_SIP_Split RP91
 U 2 1 61EB4E58
 P 7545 4480
-F 0 "RN2" V 7500 4720 50  0000 C CNN
+F 0 "RP91" V 7500 4720 50  0000 C CNN
 F 1 "100" V 7429 4480 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 4480 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4480 50  0001 C CNN
+F 4 "Independent" H 7545 4480 50  0001 C CNN "Notes"
 	2    7545 4480
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Pack05_SIP_Split RN2
+L Device:R_Pack05_SIP_Split RP91
 U 3 1 61EB627F
 P 7545 4980
-F 0 "RN2" V 7505 5220 50  0000 C CNN
+F 0 "RP91" V 7505 5220 50  0000 C CNN
 F 1 "100" V 7429 4980 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 4980 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4980 50  0001 C CNN
+F 4 "Independent" H 7545 4980 50  0001 C CNN "Notes"
 	3    7545 4980
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Pack05_SIP_Split RN2
+L Device:R_Pack05_SIP_Split RP91
 U 4 1 61EB730F
 P 7545 4680
-F 0 "RN2" V 7505 4920 50  0000 C CNN
+F 0 "RP91" V 7505 4920 50  0000 C CNN
 F 1 "100" V 7429 4680 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 4680 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4680 50  0001 C CNN
+F 4 "Independent" H 7545 4680 50  0001 C CNN "Notes"
 	4    7545 4680
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Pack05_SIP_Split RN2
+L Device:R_Pack05_SIP_Split RP91
 U 5 1 61EB849F
 P 7545 4780
-F 0 "RN2" V 7500 5020 50  0000 C CNN
+F 0 "RP91" V 7500 5020 50  0000 C CNN
 F 1 "100" V 7429 4780 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 4780 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4780 50  0001 C CNN
+F 4 "Independent" H 7545 4780 50  0001 C CNN "Notes"
 	5    7545 4780
 	0    1    1    0   
 $EndComp
@@ -567,13 +572,14 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT244.pdf" H 6705 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Pack05_SIP_Split RN1
+L Device:R_Pack05_SIP_Split RP90
 U 1 1 61FC7C55
 P 7550 1905
-F 0 "RN1" V 7505 2140 50  0000 C CNN
+F 0 "RP90" V 7505 2140 50  0000 C CNN
 F 1 "100" V 7360 1905 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7470 1905 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 1905 50  0001 C CNN
+F 4 "Independent" H 7550 1905 50  0001 C CNN "Notes"
 	1    7550 1905
 	0    1    1    0   
 $EndComp
@@ -603,7 +609,7 @@ Wire Wire Line
 Wire Wire Line
 	5265 1905 5930 1905
 Wire Wire Line
-	7700 2205 8045 2205
+	7700 2305 8045 2305
 $Comp
 L Diode:1N914 D3
 U 1 1 5E03D308
@@ -813,38 +819,29 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT244.pdf" H 6700 
 	1    0    0    -1  
 $EndComp
 Connection ~ 5530 4480
-$Comp
-L Device:R_Pack05_SIP_Split RN2
-U 1 1 61EB0CF8
-P 7545 4580
-F 0 "RN2" V 7500 4815 50  0000 C CNN
-F 1 "100" V 7340 4580 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7465 4580 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4580 50  0001 C CNN
-	1    7545 4580
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7700 2005 8045 2005
 $Comp
-L Device:R_Pack05_SIP_Split RN1
+L Device:R_Pack05_SIP_Split RP90
 U 3 1 61FC7C69
-P 7550 2205
-F 0 "RN1" V 7510 2445 50  0000 C CNN
-F 1 "100" V 7434 2205 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7470 2205 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2205 50  0001 C CNN
-	3    7550 2205
+P 7550 2305
+F 0 "RP90" V 7510 2545 50  0000 C CNN
+F 1 "100" V 7434 2305 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7470 2305 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2305 50  0001 C CNN
+F 4 "Independent" H 7550 2305 50  0001 C CNN "Notes"
+	3    7550 2305
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Pack05_SIP_Split RN1
+L Device:R_Pack05_SIP_Split RP90
 U 4 1 61FC7C73
 P 7550 2005
-F 0 "RN1" V 7510 2245 50  0000 C CNN
+F 0 "RP90" V 7510 2245 50  0000 C CNN
 F 1 "100" V 7434 2005 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7470 2005 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2005 50  0001 C CNN
+F 4 "Independent" H 7550 2005 50  0001 C CNN "Notes"
 	4    7550 2005
 	0    1    1    0   
 $EndComp
@@ -979,8 +976,6 @@ Wire Wire Line
 Wire Wire Line
 	5730 2205 5730 2305
 Connection ~ 5730 2205
-Wire Wire Line
-	7305 2205 7400 2205
 NoConn ~ 7205 2205
 Wire Wire Line
 	6205 2405 5995 2405
@@ -991,10 +986,6 @@ Wire Wire Line
 	5995 2205 5995 2405
 Wire Wire Line
 	5730 2305 6205 2305
-Wire Wire Line
-	7205 2305 7305 2305
-Wire Wire Line
-	7305 2305 7305 2205
 NoConn ~ 7205 2405
 Wire Wire Line
 	5530 1805 6020 1805
@@ -1019,13 +1010,14 @@ $EndComp
 Wire Wire Line
 	7205 2105 7400 2105
 $Comp
-L Device:R_Pack05_SIP_Split RN1
+L Device:R_Pack05_SIP_Split RP90
 U 5 1 61FC7C7D
 P 7550 2105
-F 0 "RN1" V 7505 2345 50  0000 C CNN
+F 0 "RP90" V 7505 2345 50  0000 C CNN
 F 1 "100" V 7434 2105 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7470 2105 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2105 50  0001 C CNN
+F 4 "Independent" H 7550 2105 50  0001 C CNN "Notes"
 	5    7550 2105
 	0    1    1    0   
 $EndComp
@@ -1051,18 +1043,19 @@ Wire Wire Line
 Wire Wire Line
 	7700 1805 8045 1805
 $Comp
-L Device:R_Pack05_SIP_Split RN1
+L Device:R_Pack05_SIP_Split RP90
 U 2 1 61FC7C5F
 P 7550 1805
-F 0 "RN1" V 7505 2045 50  0000 C CNN
+F 0 "RP90" V 7505 2045 50  0000 C CNN
 F 1 "100" V 7434 1805 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7470 1805 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 1805 50  0001 C CNN
+F 4 "Independent" H 7550 1805 50  0001 C CNN "Notes"
 	2    7550 1805
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8345 2205 9585 2205
+	8345 2305 9585 2305
 Wire Wire Line
 	5830 1725 6100 1725
 Wire Wire Line
@@ -1179,6 +1172,20 @@ Wire Wire Line
 Connection ~ 8985 1905
 Wire Wire Line
 	8985 1905 8985 4580
+$Comp
+L Device:R_Pack05_SIP_Split RP91
+U 1 1 61EB0CF8
+P 7545 4580
+F 0 "RP91" V 7500 4815 50  0000 C CNN
+F 1 "100" V 7340 4580 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7465 4580 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4580 50  0001 C CNN
+F 4 "Independent" H 7545 4580 50  0001 C CNN "Notes"
+	1    7545 4580
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7205 2305 7400 2305
 Wire Bus Line
 	9685 1705 9685 4880
 $EndSCHEMATC

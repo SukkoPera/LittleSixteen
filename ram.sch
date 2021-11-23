@@ -687,6 +687,7 @@ F 0 "RP3" V 4068 1950 50  0000 C CNN
 F 1 "68" V 4159 1950 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP8" V 4810 1950 50  0001 C CNN
 F 3 "" H 4885 1950 50  0001 C CNN
+F 4 "Independent" H 4745 1950 50  0001 C CNN "Notes"
 	1    4745 1950
 	0    1    1    0   
 $EndComp
@@ -698,6 +699,7 @@ F 0 "RP4" V 4068 4690 50  0000 C CNN
 F 1 "68" V 4159 4690 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP8" V 4810 4690 50  0001 C CNN
 F 3 "" H 4885 4690 50  0001 C CNN
+F 4 "Independent" H 4745 4690 50  0001 C CNN "Notes"
 	1    4745 4690
 	0    1    1    0   
 $EndComp
