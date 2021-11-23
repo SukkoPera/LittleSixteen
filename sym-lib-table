@@ -23,4 +23,5 @@
   (lib (name DT1042)(type Legacy)(uri ${KIPRJMOD}/lib/DT1042.lib)(options "")(descr ""))
   (lib (name din-6)(type Legacy)(uri ${KIPRJMOD}/lib/din-6.lib)(options "")(descr ""))
   (lib (name din-8)(type Legacy)(uri ${KIPRJMOD}/lib/din-8.lib)(options "")(descr ""))
+  (lib (name power_switch)(type Legacy)(uri ${KIPRJMOD}/lib/power_switch.lib)(options "")(descr ""))
 )

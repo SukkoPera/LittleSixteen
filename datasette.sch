@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "LittleSixteen"
-Date "2021-11-21"
+Date "2021-11-23"
 Rev "2git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -394,7 +394,7 @@ F 3 "" H 8090 4880 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8090 4880 8090 4975
-Text Notes 7185 6085 0    50   ~ 0
+Text Notes 7515 5880 0    50   ~ 0
 FEMALE DIN-6
 Wire Wire Line
 	7505 5175 6575 5175
@@ -787,25 +787,8 @@ Text Notes 2285 2215 2    50   ~ 0
 These are protection diodes retrofitted\nafter production on *some* C16s I've seen.\nThese seem different from the 1n4148 that\nare retrofitted on p6/p7 on the same board,\nsince those clearly say 1n4148 on their\nbodies, while these have a color coding of\nyellow (thick/cathode), brown, yellow,\ngrey (or light blue?), which... erm, would\nmake them 1n4148 ^___^. Multimeter says\ntheir Voltage drops are 0.555V and 0.561V,\nwhile it says 0.323 for the others (all\nmeasures in-circuit).
 Text Notes 7800 5615 0    50   ~ 0
 SRQ
-Text Notes 7345 5165 0    50   ~ 0
-ATN
-Text Notes 6975 5420 0    50   ~ 0
-CLK
-Text Notes 6975 5620 0    50   ~ 0
-DATA
 Text Notes 7190 5860 0    50   ~ 0
 RESET
-$Comp
-L Connector:DIN-6 CN7
-U 1 1 5ED6C96C
-P 7505 5520
-F 0 "CN7" H 7355 5765 50  0000 C CNN
-F 1 "SERIAL_BUS" H 7505 5080 50  0000 C CNN
-F 2 "CommodorePlus4:Connector_DIN_Female_6Pin_3rows" H 7505 5520 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7505 5520 50  0001 C CNN
-	1    7505 5520
-	-1   0    0    -1  
-$EndComp
 Text Notes 7795 5415 0    50   ~ 0
 GND
 Text Notes 4070 6785 0    50   ~ 0
@@ -1318,8 +1301,30 @@ Wire Wire Line
 	2095 7345 2095 7515
 Wire Wire Line
 	1640 7245 2100 7245
-Wire Bus Line
-	3075 4640 3075 5520
 Text Notes 2260 7435 0    50   ~ 0
 This connector has all the Tape and IEC\nsignals and can be used to implement\nan internal SD2IEC or Tapuino.
+Wire Wire Line
+	7430 5820 7430 6085
+Wire Wire Line
+	7430 6085 7780 6085
+Connection ~ 7780 6085
+Text Notes 6975 5620 0    50   ~ 0
+DATA
+Text Notes 6975 5420 0    50   ~ 0
+CLK
+Text Notes 7345 5165 0    50   ~ 0
+ATN
+Wire Bus Line
+	3075 4640 3075 5520
+$Comp
+L din-6:DIN-6 CN7
+U 1 1 62951460
+P 7505 5520
+F 0 "CN7" H 7505 6075 50  0000 C CNN
+F 1 "SERIAL_BUS" H 7505 5990 50  0000 C CNN
+F 2 "LittleSixteen:DIN-6_DS_6_102_OR_102B" H 7505 5520 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7505 5520 50  0001 C CNN
+	1    7505 5520
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

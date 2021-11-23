@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 12
 Title "LittleSixteen"
-Date "2021-11-23"
+Date "2021-11-24"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -559,8 +559,6 @@ NoConn ~ 9560 5960
 NoConn ~ 9860 6210
 NoConn ~ 10160 5960
 Wire Wire Line
-	3370 2090 3370 1965
-Wire Wire Line
 	3370 1965 3515 1965
 Wire Wire Line
 	3370 2340 3370 2465
@@ -618,7 +616,7 @@ F 3 "" H 7250 1855 50  0001 C CNN
 	1    7250 1855
 	1    0    0    -1  
 $EndComp
-Text Notes 1960 1355 0    157  ~ 0
+Text Notes 1910 1165 0    157  ~ 0
 POWER REGULATION
 Text Notes 4775 1400 0    50   ~ 0
 The TSR 2-2450 has a wide input range (6.5 - 36 VDC, 12 VDC nom.)\nand is able to output up to 2A.\n\nThe 1A model, TSR 1-2450 would probably be sufficient for most uses.\n\nThanks to Kinmami for helping design the input filter.
@@ -694,22 +692,8 @@ Text Notes 1750 2315 2    50   ~ 0
 9V DC 1.0A\nCENTER NEGATIVE
 Wire Wire Line
 	2355 2340 3370 2340
-$Comp
-L w_device:SW_SPDT SW1
-U 1 1 5ED32B7C
-P 2875 2140
-F 0 "SW1" H 2875 2371 50  0000 C CNN
-F 1 "POWER_SWITCH" H 2875 2280 50  0000 C CNN
-F 2 "LittleSixteen:Switch-Rocker" H 2875 2140 60  0001 C CNN
-F 3 "" H 2875 2140 60  0000 C CNN
-	1    2875 2140
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2355 2140 2725 2140
-Wire Wire Line
-	3025 2090 3370 2090
-NoConn ~ 3025 2190
+	2355 2140 2645 2140
 $Comp
 L Device:CP1 C?
 U 1 1 62108250
@@ -792,8 +776,91 @@ Wire Wire Line
 Connection ~ 3515 2465
 Wire Wire Line
 	3515 2465 4360 2465
-Text Notes 3075 2880 0    50   ~ 0
+Text Notes 3270 2870 0    50   ~ 0
 TVS DIODE WILL PROVIDE\nPROTECTION AGAINST ESD\nTRANSIENTS AND REVERSE\nPOLARITY
 Text Label 3515 1965 0    50   ~ 0
 9v_in
+$Comp
+L power_switch:SW_DPDT_x2 SW1
+U 1 1 62A43028
+P 2925 2140
+F 0 "SW1" H 2925 2485 50  0000 C CNN
+F 1 "POWER_SWITCH" H 2925 2395 50  0000 C CNN
+F 2 "LittleSixteen:Switch-Rocker" H 2925 2140 50  0001 C CNN
+F 3 "~" H 2925 2140 50  0001 C CNN
+	1    2925 2140
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_switch:SW_DPDT_x2 SW1
+U 2 1 62A43AA2
+P 2925 2580
+F 0 "SW1" H 2930 2955 50  0000 C CNN
+F 1 "POWER_SWITCH" H 2940 2865 50  0000 C CNN
+F 2 "LittleSixteen:Switch-Rocker" H 2925 2580 50  0001 C CNN
+F 3 "~" H 2925 2580 50  0001 C CNN
+	2    2925 2580
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3125 2240 3230 2240
+Wire Wire Line
+	3370 1965 3370 2240
+Wire Wire Line
+	2645 2140 2645 1945
+Wire Wire Line
+	2645 1945 3220 1945
+Wire Wire Line
+	3220 1945 3220 2040
+Wire Wire Line
+	3220 2040 3125 2040
+Connection ~ 2645 2140
+Wire Wire Line
+	2645 2140 2725 2140
+Wire Wire Line
+	2645 2140 2645 2580
+Wire Wire Line
+	2645 2580 2725 2580
+Wire Wire Line
+	2645 2580 2645 2805
+Wire Wire Line
+	2645 2805 3220 2805
+Wire Wire Line
+	3220 2805 3220 2680
+Wire Wire Line
+	3220 2680 3125 2680
+Connection ~ 2645 2580
+Wire Wire Line
+	3125 2480 3230 2480
+Wire Wire Line
+	3230 2480 3230 2240
+Connection ~ 3230 2240
+Wire Wire Line
+	3230 2240 3370 2240
+$Comp
+L power_switch:SW_DPDT_x2 SW1
+U 3 1 62A474EB
+P 2350 2685
+F 0 "SW1" H 2437 2723 50  0000 L CNN
+F 1 "POWER_SWITCH" H 2437 2632 50  0000 L CNN
+F 2 "LittleSixteen:Switch-Rocker" H 2350 2685 50  0001 C CNN
+F 3 "~" H 2350 2685 50  0001 C CNN
+	3    2350 2685
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0197
+U 1 1 62A6B46E
+P 2350 2875
+F 0 "#PWR0197" H 2350 2625 50  0001 C CNN
+F 1 "GND" H 2355 2702 50  0000 C CNN
+F 2 "" H 2350 2875 50  0001 C CNN
+F 3 "" H 2350 2875 50  0001 C CNN
+	1    2350 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2760 2350 2875
+Text Notes 2525 1715 0    50   ~ 0
+YEAH, THE POWER SWITCH\nIS WIRED LIKE THIS...
 $EndSCHEMATC
