@@ -166,16 +166,16 @@ Wire Wire Line
 Wire Wire Line
 	9645 2785 9260 2785
 Wire Wire Line
-	9260 2785 9260 1890
+	9260 2785 9260 2030
 $Comp
 L power:VCC #PWR0179
 U 1 1 5E03CB7C
-P 9260 1890
-F 0 "#PWR0179" H 9260 1740 50  0001 C CNN
-F 1 "VCC" H 9277 2063 50  0000 C CNN
-F 2 "" H 9260 1890 50  0001 C CNN
-F 3 "" H 9260 1890 50  0001 C CNN
-	1    9260 1890
+P 9260 1635
+F 0 "#PWR0179" H 9260 1485 50  0001 C CNN
+F 1 "VCC" H 9277 1808 50  0000 C CNN
+F 2 "" H 9260 1635 50  0001 C CNN
+F 3 "" H 9260 1635 50  0001 C CNN
+	1    9260 1635
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -540,7 +540,7 @@ Text Notes 10620 2195 0    50   ~ 0
 EXT_AUDIO
 Text Notes 10230 2500 0    50   ~ 0
 AUDIO_OUT
-Text Notes 8525 1545 0    50   ~ 0
+Text Notes 8230 1375 0    50   ~ 0
 From C64-Wiki (C64 uses the same connector):\n\nThe eight pin jack is *not* the more common DIN 45326\n(pins spanning 270°, circular like a horseshoe), but\nDIN 41524 (pins spanning 262°, a "U" shape with a more\nopen end). It's possible to forcibly plug in a wrong plug into\nthe jack, but one should get the right plug in the first place\non a new purchase. Should you happen to get the wrong\nplug and wasn't planning to use the +5V pin then you can\nremove the upper two pins out for a perfect fit.
 Wire Wire Line
 	6480 950  6950 950 
@@ -1113,4 +1113,19 @@ Wire Wire Line
 Connection ~ 9520 2940
 Wire Wire Line
 	9520 2940 8660 2940
+$Comp
+L Device:R R?
+U 1 1 61DEF839
+P 9260 1880
+AR Path="/61BCD018/61DEF839" Ref="R?"  Part="1" 
+AR Path="/5E019FCB/61DEF839" Ref="R95"  Part="1" 
+F 0 "R95" H 9190 1926 50  0000 R CNN
+F 1 "4.7R 1W" H 9190 1835 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 9190 1880 50  0001 C CNN
+F 3 "~" H 9260 1880 50  0001 C CNN
+	1    9260 1880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9260 1730 9260 1635
 $EndSCHEMATC
