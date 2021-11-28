@@ -1314,8 +1314,6 @@ Text Notes 6975 5420 0    50   ~ 0
 CLK
 Text Notes 7345 5165 0    50   ~ 0
 ATN
-Wire Bus Line
-	3075 4640 3075 5520
 $Comp
 L din-6:DIN-6 CN7
 U 1 1 62951460
@@ -1327,4 +1325,6 @@ F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7505 5520 50  0001
 	1    7505 5520
 	-1   0    0    -1  
 $EndComp
+Wire Bus Line
+	3075 4640 3075 5520
 $EndSCHEMATC

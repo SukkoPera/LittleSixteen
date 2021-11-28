@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 12
 Title "LittleSixteen"
-Date "2021-11-22"
+Date "2021-11-28"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -137,7 +137,7 @@ Wire Wire Line
 	5530 1110 5530 1080
 Wire Wire Line
 	5530 1480 5530 1805
-Text Notes 3020 7615 0    50   ~ 0
+Text Notes 11095 1440 2    50   ~ 0
 This was one of the weakest spots of the C16, where the\nTED chip pins were directly exposed outside through the\njoystick ports.\n\nAdding a buffer will protect the TED from ESD, and TVS\ndiodes could do even more. This is basically Levente\nHársfalvi's design integrated into the C16. Please see:\nhttp://www.zimmers.net/anonftp/pub/cbm/documents/projects/interfaces/plus4joy/plus4joy.html\n\nWe can also consider to replace the MiniDIN-8 ports with\nD-SUB 9 ones.
 $Comp
 L Device:Ferrite_Bead_Small FB37
@@ -423,7 +423,7 @@ Wire Bus Line
 	9685 1705 10185 1705
 Text GLabel 10185 1705 2    50   Output ~ 0
 k[0..7]
-Text Notes 650  7680 0    50   ~ 0
+Text Notes 555  7680 0    50   ~ 0
 Joystick Connector Pinout\nMiniDIN-8\n1 Up\n2 Down\n3 Left\n4 Right\n5 +5V\n6 Fire\n7 Ground\n8 Select\n\nAll signals are joy to C16, except Select
 Wire Wire Line
 	5630 4295 5630 4680
@@ -1212,6 +1212,200 @@ Wire Wire Line
 	3340 4685 3340 4830
 Wire Wire Line
 	3340 4040 3340 3925
+$Comp
+L DT1042:DT1042 U?
+U 1 1 61A59722
+P 3190 6910
+AR Path="/5ECB474B/61A59722" Ref="U?"  Part="1" 
+AR Path="/61BCD018/61A59722" Ref="U93"  Part="1" 
+F 0 "U93" H 3518 6956 50  0000 L CNN
+F 1 "DT1042" H 3518 6865 50  0000 L CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 3040 6360 50  0001 C CNN
+F 3 "" H 3040 6360 50  0001 C CNN
+F 4 "Optional, protects Joystick port from ESD" H 3190 6910 50  0001 C CNN "Notes"
+	1    3190 6910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3190 6460 3190 6390
+Wire Wire Line
+	3190 7360 3190 7435
+$Comp
+L power:VCC #PWR?
+U 1 1 61A5972A
+P 3190 6390
+AR Path="/5ECB474B/61A5972A" Ref="#PWR?"  Part="1" 
+AR Path="/61BCD018/61A5972A" Ref="#PWR0218"  Part="1" 
+F 0 "#PWR0218" H 3190 6240 50  0001 C CNN
+F 1 "VCC" H 3207 6563 50  0000 C CNN
+F 2 "" H 3190 6390 50  0001 C CNN
+F 3 "" H 3190 6390 50  0001 C CNN
+	1    3190 6390
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A59730
+P 3190 7435
+AR Path="/5ECB474B/61A59730" Ref="#PWR?"  Part="1" 
+AR Path="/61BCD018/61A59730" Ref="#PWR0219"  Part="1" 
+F 0 "#PWR0219" H 3190 7185 50  0001 C CNN
+F 1 "GND" H 3195 7262 50  0000 C CNN
+F 2 "" H 3190 7435 50  0001 C CNN
+F 3 "" H 3190 7435 50  0001 C CNN
+	1    3190 7435
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2590 6760 2400 6760
+Wire Wire Line
+	2590 6860 2400 6860
+Wire Wire Line
+	2590 7060 2400 7060
+Wire Wire Line
+	2590 6960 2400 6960
+$Comp
+L DT1042:DT1042 U?
+U 1 1 61A6C798
+P 6200 6920
+AR Path="/5ECB474B/61A6C798" Ref="U?"  Part="1" 
+AR Path="/61BCD018/61A6C798" Ref="U94"  Part="1" 
+F 0 "U94" H 6528 6966 50  0000 L CNN
+F 1 "DT1042" H 6528 6875 50  0000 L CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 6050 6370 50  0001 C CNN
+F 3 "" H 6050 6370 50  0001 C CNN
+F 4 "Optional, protects Joystick port from ESD" H 6200 6920 50  0001 C CNN "Notes"
+	1    6200 6920
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 6470 6200 6400
+Wire Wire Line
+	6200 7370 6200 7445
+$Comp
+L power:VCC #PWR?
+U 1 1 61A6CFAC
+P 6200 6400
+AR Path="/5ECB474B/61A6CFAC" Ref="#PWR?"  Part="1" 
+AR Path="/61BCD018/61A6CFAC" Ref="#PWR0220"  Part="1" 
+F 0 "#PWR0220" H 6200 6250 50  0001 C CNN
+F 1 "VCC" H 6217 6573 50  0000 C CNN
+F 2 "" H 6200 6400 50  0001 C CNN
+F 3 "" H 6200 6400 50  0001 C CNN
+	1    6200 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A6CFB6
+P 6200 7445
+AR Path="/5ECB474B/61A6CFB6" Ref="#PWR?"  Part="1" 
+AR Path="/61BCD018/61A6CFB6" Ref="#PWR0221"  Part="1" 
+F 0 "#PWR0221" H 6200 7195 50  0001 C CNN
+F 1 "GND" H 6205 7272 50  0000 C CNN
+F 2 "" H 6200 7445 50  0001 C CNN
+F 3 "" H 6200 7445 50  0001 C CNN
+	1    6200 7445
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 7070 5445 7070
+Wire Wire Line
+	5600 6970 5445 6970
+$Comp
+L DT1042:DT1042 U?
+U 1 1 61A78456
+P 4650 6915
+AR Path="/5ECB474B/61A78456" Ref="U?"  Part="1" 
+AR Path="/61BCD018/61A78456" Ref="U95"  Part="1" 
+F 0 "U95" H 4978 6961 50  0000 L CNN
+F 1 "DT1042" H 4978 6870 50  0000 L CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 4500 6365 50  0001 C CNN
+F 3 "" H 4500 6365 50  0001 C CNN
+F 4 "Optional, protects Joystick port from ESD" H 4650 6915 50  0001 C CNN "Notes"
+	1    4650 6915
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 6465 4650 6395
+Wire Wire Line
+	4650 7365 4650 7440
+$Comp
+L power:VCC #PWR?
+U 1 1 61A78C9E
+P 4650 6395
+AR Path="/5ECB474B/61A78C9E" Ref="#PWR?"  Part="1" 
+AR Path="/61BCD018/61A78C9E" Ref="#PWR0222"  Part="1" 
+F 0 "#PWR0222" H 4650 6245 50  0001 C CNN
+F 1 "VCC" H 4667 6568 50  0000 C CNN
+F 2 "" H 4650 6395 50  0001 C CNN
+F 3 "" H 4650 6395 50  0001 C CNN
+	1    4650 6395
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A78CA8
+P 4650 7440
+AR Path="/5ECB474B/61A78CA8" Ref="#PWR?"  Part="1" 
+AR Path="/61BCD018/61A78CA8" Ref="#PWR0223"  Part="1" 
+F 0 "#PWR0223" H 4650 7190 50  0001 C CNN
+F 1 "GND" H 4655 7267 50  0000 C CNN
+F 2 "" H 4650 7440 50  0001 C CNN
+F 3 "" H 4650 7440 50  0001 C CNN
+	1    4650 7440
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6765 3880 6765
+Wire Wire Line
+	4050 6865 3880 6865
+Wire Wire Line
+	4050 7065 3880 7065
+Wire Wire Line
+	4050 6965 3880 6965
+Text Label 4425 2255 0    50   ~ 0
+f1u
+Text Label 4425 2155 0    50   ~ 0
+f1l
+Text Label 4425 2355 0    50   ~ 0
+f1r
+Text Label 4425 2055 0    50   ~ 0
+f1f
+Text Label 3705 2255 0    50   ~ 0
+f1d
+Text Label 5445 6970 0    50   ~ 0
+f2d
+Text Label 2400 6760 0    50   ~ 0
+f1d
+Text Label 2400 6860 0    50   ~ 0
+f1u
+Text Label 2400 7060 0    50   ~ 0
+f1r
+Text Label 2400 6960 0    50   ~ 0
+f1f
+Text Label 4425 4930 0    50   ~ 0
+f2u
+Text Label 3705 4930 0    50   ~ 0
+f2d
+Text Label 4425 5030 0    50   ~ 0
+f2r
+Text Label 4425 4730 0    50   ~ 0
+f2f
+Text Label 4425 4830 0    50   ~ 0
+f2l
+Text Label 5445 7070 0    50   ~ 0
+f1l
+NoConn ~ 5600 6770
+NoConn ~ 5600 6870
+Text Label 3880 6765 0    50   ~ 0
+f2u
+Text Label 3880 6865 0    50   ~ 0
+f2l
+Text Label 3880 6965 0    50   ~ 0
+f2f
+Text Label 3880 7065 0    50   ~ 0
+f2r
 Wire Bus Line
 	9685 1705 9685 4880
 $EndSCHEMATC
