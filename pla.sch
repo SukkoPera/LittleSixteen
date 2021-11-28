@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 10 12
 Title "LittleSixteen"
 Date "2021-11-05"
-Rev "2git"
+Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 "WARNING: These schematics might contain errors!"
