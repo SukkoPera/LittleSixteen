@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 12
 Title "LittleSixteen"
-Date "2021-11-24"
+Date "2021-11-28"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -640,19 +640,6 @@ F 3 "~" H 5350 2210 50  0001 C CNN
 	1    5350 2210
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 62290C11
-P 5975 1865
-F 0 "#FLG0103" H 5975 1940 50  0001 C CNN
-F 1 "PWR_FLAG" H 5975 2038 50  0000 C CNN
-F 2 "" H 5975 1865 50  0001 C CNN
-F 3 "~" H 5975 1865 50  0001 C CNN
-	1    5975 1865
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5975 1865 5975 1965
 Wire Wire Line
 	4360 2360 4360 2465
 Wire Wire Line
@@ -898,4 +885,18 @@ F 3 "~" H 7770 1965 50  0001 C CNN
 	1    7770 1965
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	8275 2065 8275 1965
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 62290C11
+P 8275 2065
+F 0 "#FLG0103" H 8275 2140 50  0001 C CNN
+F 1 "PWR_FLAG" H 8275 2238 50  0000 C CNN
+F 2 "" H 8275 2065 50  0001 C CNN
+F 3 "~" H 8275 2065 50  0001 C CNN
+	1    8275 2065
+	-1   0    0    1   
+$EndComp
+Connection ~ 8275 1965
 $EndSCHEMATC
