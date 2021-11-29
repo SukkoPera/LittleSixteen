@@ -733,10 +733,10 @@ Connection ~ 3380 6525
 Wire Wire Line
 	3380 6525 3760 6525
 $Comp
-L Connector:Conn_01x03_Male JP2
+L Connector:Conn_01x03_Male JP4
 U 1 1 61451C3E
 P 2765 3770
-F 0 "JP2" V 2827 3582 50  0000 R CNN
+F 0 "JP4" V 2827 3582 50  0000 R CNN
 F 1 "JP_RAMSIZE2" V 2918 3582 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2765 3770 50  0001 C CNN
 F 3 "~" H 2765 3770 50  0001 C CNN
@@ -769,10 +769,10 @@ F 3 "" H 3030 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male JP1
+L Connector:Conn_01x03_Male JP3
 U 1 1 6147B280
 P 2765 1030
-F 0 "JP1" V 2827 842 50  0000 R CNN
+F 0 "JP3" V 2827 842 50  0000 R CNN
 F 1 "JP_RAMSIZE1" V 2918 842 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2765 1030 50  0001 C CNN
 F 3 "~" H 2765 1030 50  0001 C CNN
@@ -794,7 +794,7 @@ Entry Wire Line
 Text Label 2310 1360 0    60   ~ 0
 a15
 Text Notes 3175 1230 0    50   ~ 0
-JP1/2 are a 16kB/64kB\nRAM Switch Mod. Use\n4464 chips instead of 4416.
+JP3/4 are a 16kB/64kB\nRAM Switch Mod. Use\n4464 chips instead of 4416.
 Text GLabel 5445 1540 0    50   Input ~ 0
 RAMEN
 $Comp

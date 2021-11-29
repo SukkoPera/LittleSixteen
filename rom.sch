@@ -602,10 +602,10 @@ Wire Wire Line
 Text Label 4695 6735 2    50   ~ 0
 singlerom_ce
 $Comp
-L Jumper:Jumper_3_Bridged12 JP3
+L Jumper:Jumper_3_Bridged12 JP5
 U 1 1 61D78514
 P 6600 3010
-F 0 "JP3" V 6646 3077 50  0000 L CNN
+F 0 "JP5" V 6646 3077 50  0000 L CNN
 F 1 "SWITCH_KCE" V 6555 3077 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6600 3010 50  0001 C CNN
 F 3 "~" H 6600 3010 50  0001 C CNN
@@ -625,10 +625,10 @@ Wire Wire Line
 Text Notes 8210 6155 0    50   ~ 0
 |Range      |Size      |A15|A14| Content |\n|-----------|----------|---|---|---------|\n|$0000-$3FFF|16K       | 0 | 0 | Kernal  |\n|$4000-$7FFF|16K       | 0 | 1 | Basic   |\n|$8000-$BFFF|16K       | 1 | 0 | FnLO    |\n|$C000-$FFFF|16K       | 1 | 1 | FnHI    |\n\nA15 = /CEK & /CEB\nA14 = /CEK & /CEFL\n/CEF = /CEFL & /CEFH\n/CE = /CEK & /CEB & /CEF = A15 & /CEF\n\n|/CEK|/CEB|/CEFL|/CEFH|A15|A14|/CEF|/CE|\n|----|----|-----|-----|---|---|----|---|\n|  0 |  1 |  1  |  1  | 0 | 0 |  1 | 0 |\n|  1 |  0 |  1  |  1  | 0 | 1 |  1 | 0 |\n|  1 |  1 |  0  |  1  | 1 | 0 |  0 | 0 |\n|  1 |  1 |  1  |  0  | 1 | 1 |  0 | 0 |\n|  1 |  1 |  1  |  1  | 1 | 1 |  1 | 1 |
 $Comp
-L Jumper:Jumper_3_Bridged12 JP4
+L Jumper:Jumper_3_Bridged12 JP6
 U 1 1 619F419B
 P 6600 4265
-F 0 "JP4" V 6646 4332 50  0000 L CNN
+F 0 "JP6" V 6646 4332 50  0000 L CNN
 F 1 "SWITCH_KA15" V 6555 4332 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6600 4265 50  0001 C CNN
 F 3 "~" H 6600 4265 50  0001 C CNN
@@ -672,10 +672,10 @@ $EndComp
 Text Label 5665 4785 0    50   ~ 0
 singlerom_a15
 $Comp
-L Jumper:Jumper_3_Bridged12 JP5
+L Jumper:Jumper_3_Bridged12 JP7
 U 1 1 61A25418
 P 6600 5540
-F 0 "JP5" V 6646 5607 50  0000 L CNN
+F 0 "JP7" V 6646 5607 50  0000 L CNN
 F 1 "SWITCH_KA14" V 6555 5607 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6600 5540 50  0001 C CNN
 F 3 "~" H 6600 5540 50  0001 C CNN

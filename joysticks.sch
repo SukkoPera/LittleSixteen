@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 12
 Title "LittleSixteen"
-Date "2021-11-28"
+Date "2021-11-29"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -870,10 +870,10 @@ Wire Wire Line
 Text Notes 5875 2680 2    50   ~ 0
 The (apparently)\nodd connections\nhere are to\nsimplify routing!
 $Comp
-L Jumper:Jumper_3_Bridged12 JD1
+L Jumper:Jumper_3_Bridged12 JP1
 U 1 1 61F59301
 P 2390 5480
-F 0 "JD1" V 2344 5547 50  0000 L CNN
+F 0 "JP1" V 2344 5547 50  0000 L CNN
 F 1 "JOY2_SELECT" V 2435 5547 50  0000 L CNN
 F 2 "LittleSixteen:SolderJumper2x" H 2390 5480 50  0001 C CNN
 F 3 "~" H 2390 5480 50  0001 C CNN
@@ -889,10 +889,10 @@ D1_LATCHED
 Wire Wire Line
 	2540 2805 2655 2805
 $Comp
-L Jumper:Jumper_3_Bridged12 JD2
+L Jumper:Jumper_3_Bridged12 JP2
 U 1 1 61F9FE8A
 P 2390 2805
-F 0 "JD2" V 2344 2872 50  0000 L CNN
+F 0 "JP2" V 2344 2872 50  0000 L CNN
 F 1 "JOY1_SELECT" V 2435 2872 50  0000 L CNN
 F 2 "LittleSixteen:SolderJumper2x" H 2390 2805 50  0001 C CNN
 F 3 "~" H 2390 2805 50  0001 C CNN
@@ -1139,8 +1139,8 @@ Wire Wire Line
 	8345 4480 8905 4480
 Wire Bus Line
 	1560 2255 1560 4930
-Text Notes 2800 2090 2    50   ~ 0
-The JD1 and JD2 jumpers are not present\nin the original schematics but I have traced\nthem on my board. They are labeled "D1" and\n"D2", I have renamed them to avoid conflicts\nwith the diodes bearing the same labels.\n\nTheir purpose seems to be able to enable the\njoysticks after passing through the keyboard\ndriver. Since it seems  the latter was introduced\nlate in the x264 architecture, maybe the\ndesigners weren't sure what was best and kept\nboth possibilities.
+Text Notes 2575 4575 2    50   ~ 0
+The JP1 and JP2 jumpers are not present\nin the original schematics but I have traced\nthem on my board. They are labeled "D1" and\n"D2", I have renamed them to avoid conflicts\nwith the diodes bearing the same labels.\n\nTheir purpose seems to be able to enable the\njoysticks after passing through the keyboard\ndriver. Since it seems  the latter was introduced\nlate in the x264 architecture, maybe the\ndesigners weren't sure what was best and kept\nboth possibilities.
 NoConn ~ 7200 4880
 Wire Wire Line
 	9135 2105 9585 2105
@@ -1406,6 +1406,26 @@ Text Label 3880 6965 0    50   ~ 0
 f2f
 Text Label 3880 7065 0    50   ~ 0
 f2r
+Wire Notes Line
+	2890 1215 3545 1215
+Wire Notes Line
+	3545 1215 3545 1585
+Wire Notes Line
+	3545 1585 2890 1585
+Wire Notes Line
+	2890 1585 2890 1220
+Text Notes 2845 1475 2    50   ~ 0
+ADDITIONAL CURRENT-\nLIMITING RESISTOR
+Wire Notes Line
+	2880 3990 3535 3990
+Wire Notes Line
+	3535 4360 2880 4360
+Wire Notes Line
+	2880 4360 2880 3995
+Text Notes 3575 4260 0    50   ~ 0
+ADDITIONAL CURRENT-\nLIMITING RESISTOR
+Wire Notes Line
+	3535 4360 3535 3995
 Wire Bus Line
 	9685 1705 9685 4880
 $EndSCHEMATC
