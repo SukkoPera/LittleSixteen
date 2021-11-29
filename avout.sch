@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 12 12
 Title "LittleSixteen"
-Date "2021-11-09"
+Date "2021-11-29"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -166,7 +166,7 @@ Wire Wire Line
 Wire Wire Line
 	9645 2785 9260 2785
 Wire Wire Line
-	9260 2785 9260 2030
+	9260 2785 9260 2705
 $Comp
 L power:VCC #PWR0179
 U 1 1 5E03CB7C
@@ -1128,4 +1128,17 @@ F 3 "~" H 9260 1880 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9260 1730 9260 1635
+$Comp
+L Device:Ferrite_Bead_Small FB95
+U 1 1 61E4B6DF
+P 9260 2605
+F 0 "FB95" H 9066 2605 50  0000 R CNN
+F 1 "Ferrite_Bead_Small" H 9360 2560 50  0001 L CNN
+F 2 "LittleSixteen:Ferrite" V 9190 2605 50  0001 C CNN
+F 3 "~" H 9260 2605 50  0001 C CNN
+	1    9260 2605
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9260 2505 9260 2030
 $EndSCHEMATC
