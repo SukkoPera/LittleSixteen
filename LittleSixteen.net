@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Thu 02 Dec 2021 01:11:57 CET")
+    (date "Fri 03 Dec 2021 00:29:39 CET")
     (tool "Eeschema 5.1.10")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1168,7 +1168,7 @@
       (tstamp 6217E1A5))
     (comp (ref SW1)
       (value POWER_SWITCH)
-      (footprint LittleSixteen:Switch-Rocker)
+      (footprint LittleSixteen:C64_PowerSwitch)
       (libsource (lib power_switch) (part SW_DPDT_x2) (description "Switch, dual pole double throw, separate symbols"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 62A43028))
