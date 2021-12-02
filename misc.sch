@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 12
 Title "LittleSixteen"
-Date "2021-11-28"
+Date "2021-11-30"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -380,10 +380,6 @@ Connection ~ 4315 5270
 Wire Wire Line
 	3935 5270 4315 5270
 Wire Wire Line
-	3935 4895 3935 5270
-Wire Wire Line
-	3935 4280 3935 4595
-Wire Wire Line
 	3935 3835 3935 3670
 Connection ~ 3935 4280
 Wire Wire Line
@@ -400,19 +396,6 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3865 3985 50
 F 3 "~" H 3935 3985 50  0001 C CNN
 	1    3935 3985
 	-1   0    0    -1  
-$EndComp
-$Comp
-L w_device:SW_PUSH SW?
-U 1 1 61864E4A
-P 3935 4745
-AR Path="/5E4A81E1/61864E4A" Ref="SW?"  Part="1" 
-AR Path="/5EACE220/61864E4A" Ref="SW2"  Part="1" 
-F 0 "SW2" V 3889 4853 50  0000 L CNN
-F 1 "RESET_SW" V 3980 4853 50  0000 L CNN
-F 2 "LittleSixteen:Switch-Pushbutton" H 3935 4745 60  0001 C CNN
-F 3 "" H 3935 4745 60  0000 C CNN
-	1    3935 4745
-	0    -1   1    0   
 $EndComp
 Connection ~ 4315 4280
 Wire Wire Line
@@ -899,4 +882,23 @@ F 3 "~" H 8275 2065 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 8275 1965
+$Comp
+L Connector:Conn_01x02_Male JP11
+U 1 1 62214D74
+P 3640 4695
+F 0 "JP11" H 3613 4669 50  0000 R CNN
+F 1 "SW_RESET" H 3613 4578 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3640 4695 50  0001 C CNN
+F 3 "~" H 3640 4695 50  0001 C CNN
+	1    3640 4695
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3840 4795 3935 4795
+Wire Wire Line
+	3935 4795 3935 5270
+Wire Wire Line
+	3840 4695 3935 4695
+Wire Wire Line
+	3935 4280 3935 4695
 $EndSCHEMATC
