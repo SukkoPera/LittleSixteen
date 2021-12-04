@@ -357,10 +357,6 @@ Wire Notes Line
 	6375 5260 6375 5115
 Text Notes 7635 5710 0    50   ~ 0
 On the Plus/4 schematics from the German User's guide, the\nZ pin is reported as "RAMEN (NC)". On the actual boards it is\nactually NC, but then why not use it as a real "RAM Enable"\nsignal to solve the problem of external RAM expansions not\nworking? :)\nWe add a jumper just in case some old cart has Z grounded\nwhile it shouldn't.
-Wire Bus Line
-	3910 4290 3910 4990
-Wire Bus Line
-	7855 3490 7855 4990
 $Comp
 L Device:Jumper_NC_Small JP8
 U 1 1 61F43269
@@ -374,4 +370,8 @@ F 3 "~" H 6955 5190 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7055 5190 7230 5190
+Wire Bus Line
+	3910 4290 3910 4990
+Wire Bus Line
+	7855 3490 7855 4990
 $EndSCHEMATC

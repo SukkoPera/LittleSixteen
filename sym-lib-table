@@ -24,4 +24,6 @@
   (lib (name din-6)(type Legacy)(uri ${KIPRJMOD}/lib/din-6.lib)(options "")(descr ""))
   (lib (name din-8)(type Legacy)(uri ${KIPRJMOD}/lib/din-8.lib)(options "")(descr ""))
   (lib (name power_switch)(type Legacy)(uri ${KIPRJMOD}/lib/power_switch.lib)(options "")(descr ""))
+  (lib (name linefilter)(type Legacy)(uri ${KIPRJMOD}/lib/linefilter.lib)(options "")(descr ""))
+  (lib (name din-7)(type Legacy)(uri ${KIPRJMOD}/lib/din-7.lib)(options "")(descr ""))
 )

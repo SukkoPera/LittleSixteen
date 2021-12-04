@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 12
 Title "LittleSixteen"
-Date "2021-11-30"
+Date "2021-12-04"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -16,63 +16,63 @@ $EndDescr
 $Comp
 L Connector:Conn_01x03_Male CN9
 U 1 1 5EACE4A1
-P 9600 2985
-F 0 "CN9" H 9708 3266 50  0000 C CNN
-F 1 "LED_CONNECTOR" H 9708 3175 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9600 2985 50  0001 C CNN
-F 3 "~" H 9600 2985 50  0001 C CNN
-	1    9600 2985
+P 9490 4430
+F 0 "CN9" H 9598 4711 50  0000 C CNN
+F 1 "LED_CONNECTOR" H 9598 4620 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9490 4430 50  0001 C CNN
+F 3 "~" H 9490 4430 50  0001 C CNN
+	1    9490 4430
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0141
 U 1 1 5EACF012
-P 9920 3270
-F 0 "#PWR0141" H 9920 3020 50  0001 C CNN
-F 1 "GND" H 9925 3097 50  0000 C CNN
-F 2 "" H 9920 3270 50  0001 C CNN
-F 3 "" H 9920 3270 50  0001 C CNN
-	1    9920 3270
+P 9810 4715
+F 0 "#PWR0141" H 9810 4465 50  0001 C CNN
+F 1 "GND" H 9815 4542 50  0000 C CNN
+F 2 "" H 9810 4715 50  0001 C CNN
+F 3 "" H 9810 4715 50  0001 C CNN
+	1    9810 4715
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0142
 U 1 1 5EACF5AC
-P 10040 2390
-F 0 "#PWR0142" H 10040 2240 50  0001 C CNN
-F 1 "VCC" H 10057 2563 50  0000 C CNN
-F 2 "" H 10040 2390 50  0001 C CNN
-F 3 "" H 10040 2390 50  0001 C CNN
-	1    10040 2390
+P 9930 3835
+F 0 "#PWR0142" H 9930 3685 50  0001 C CNN
+F 1 "VCC" H 9947 4008 50  0000 C CNN
+F 2 "" H 9930 3835 50  0001 C CNN
+F 3 "" H 9930 3835 50  0001 C CNN
+	1    9930 3835
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9800 2985 9920 2985
+	9690 4430 9810 4430
 Wire Wire Line
-	9920 2985 9920 3270
+	9810 4430 9810 4715
 $Comp
 L Device:R R14
 U 1 1 5EAD07A8
-P 10040 2605
-F 0 "R14" H 10110 2651 50  0000 L CNN
-F 1 "470" H 10110 2560 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9970 2605 50  0001 C CNN
-F 3 "~" H 10040 2605 50  0001 C CNN
-	1    10040 2605
+P 9930 4050
+F 0 "R14" H 10000 4096 50  0000 L CNN
+F 1 "470" H 10000 4005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9860 4050 50  0001 C CNN
+F 3 "~" H 9930 4050 50  0001 C CNN
+	1    9930 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10040 2390 10040 2455
+	9930 3835 9930 3900
 Wire Wire Line
-	9800 2885 10040 2885
+	9690 4330 9930 4330
 Wire Wire Line
-	10040 2885 10040 2755
+	9930 4330 9930 4200
 Wire Wire Line
-	9800 3085 10040 3085
+	9690 4530 9930 4530
 Wire Wire Line
-	10040 3085 10040 2885
-Connection ~ 10040 2885
-Text Notes 9085 1940 0    157  ~ 0
+	9930 4530 9930 4330
+Connection ~ 9930 4330
+Text Notes 8975 3385 0    157  ~ 0
 POWER LED
 $Comp
 L power:GND #PWR0155
@@ -526,298 +526,36 @@ Wire Wire Line
 Text Notes 6865 5075 0    50   ~ 0
 This will be inverted\nseparately by U9B,\nno idea why
 NoConn ~ 10160 5960
-Wire Wire Line
-	3370 1965 3515 1965
-Wire Wire Line
-	3370 2340 3370 2465
-Wire Wire Line
-	4360 2060 4360 1965
-Connection ~ 4360 1965
-$Comp
-L Regulator_Linear:L7805 VR1
-U 1 1 5ED392FB
-P 6610 1965
-F 0 "VR1" H 6610 2207 50  0000 C CNN
-F 1 "TSR 2-2450" H 6610 2116 50  0000 C CNN
-F 2 "LittleSixteen:TSR_2-2450" H 6635 1815 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 6610 1915 50  0001 C CNN
-	1    6610 1965
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6610 2265 6610 2465
-$Comp
-L power:GND #PWR0148
-U 1 1 5ED44963
-P 6610 2580
-F 0 "#PWR0148" H 6610 2330 50  0001 C CNN
-F 1 "GND" H 6615 2407 50  0000 C CNN
-F 2 "" H 6610 2580 50  0001 C CNN
-F 3 "" H 6610 2580 50  0001 C CNN
-	1    6610 2580
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6610 2465 6610 2580
-Connection ~ 6610 2465
-Wire Wire Line
-	6910 1965 7250 1965
-$Comp
-L power:+9V #PWR0149
-U 1 1 5ED51964
-P 5350 1855
-F 0 "#PWR0149" H 5350 1705 50  0001 C CNN
-F 1 "+9V" H 5365 2028 50  0000 C CNN
-F 2 "" H 5350 1855 50  0001 C CNN
-F 3 "" H 5350 1855 50  0001 C CNN
-	1    5350 1855
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0150
-U 1 1 5ED52F9F
-P 8275 1855
-F 0 "#PWR0150" H 8275 1705 50  0001 C CNN
-F 1 "VCC" H 8292 2028 50  0000 C CNN
-F 2 "" H 8275 1855 50  0001 C CNN
-F 3 "" H 8275 1855 50  0001 C CNN
-	1    8275 1855
-	1    0    0    -1  
-$EndComp
-Text Notes 1910 1165 0    157  ~ 0
+Text Notes 6695 885  0    157  ~ 0
 POWER REGULATION
-Text Notes 4775 1400 0    50   ~ 0
+Text Notes 10480 -1865 0    50   ~ 0
 The TSR 2-2450 has a wide input range (6.5 - 36 VDC, 12 VDC nom.)\nand is able to output up to 2A.\n\nThe 1A model, TSR 1-2450 would probably be sufficient for most uses.\n\nThanks to Kinmami for helping design the input filter.
-Wire Wire Line
-	5350 1855 5350 1965
-Wire Wire Line
-	8275 1855 8275 1965
-$Comp
-L Device:L L2
-U 1 1 61823D45
-P 4850 1965
-F 0 "L2" V 5040 1965 50  0000 C CNN
-F 1 "4.7u" V 4949 1965 50  0000 C CNN
-F 2 "LittleSixteen:Inductor_Wurth_744750230047" H 4850 1965 50  0001 C CNN
-F 3 "~" H 4850 1965 50  0001 C CNN
-	1    4850 1965
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5350 2060 5350 1965
-Wire Wire Line
-	5350 2360 5350 2465
-Connection ~ 5975 1965
-Wire Wire Line
-	5975 1965 6310 1965
-$Comp
-L Device:CP1 C?
-U 1 1 618376A0
-P 5350 2210
-AR Path="/5E4A81E1/618376A0" Ref="C?"  Part="1" 
-AR Path="/5EACE220/618376A0" Ref="C97"  Part="1" 
-F 0 "C97" H 5236 2256 50  0000 R CNN
-F 1 "100u/35V" H 5236 2165 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 5350 2210 50  0001 C CNN
-F 3 "~" H 5350 2210 50  0001 C CNN
-	1    5350 2210
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4360 2360 4360 2465
-Wire Wire Line
-	3370 2465 3515 2465
-Connection ~ 4360 2465
-Wire Wire Line
-	4360 1965 4700 1965
-Text Notes 5110 2775 0    50   ~ 0
+Text Notes 4880 2430 0    50   ~ 0
 RECOMMENDED\nX5R/X7R\nCERAMIC
-$Comp
-L Connector:Barrel_Jack CN8
-U 1 1 5ED25866
-P 2055 2240
-F 0 "CN8" H 2112 1923 50  0000 C CNN
-F 1 "POWER_INPUT" H 2112 2014 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2105 2200 50  0001 C CNN
-F 3 "~" H 2105 2200 50  0001 C CNN
-	1    2055 2240
-	1    0    0    1   
-$EndComp
-Text Notes 1750 2315 2    50   ~ 0
-9V DC 1.0A\nCENTER NEGATIVE
-Wire Wire Line
-	2355 2340 3370 2340
-Wire Wire Line
-	2355 2140 2645 2140
-$Comp
-L Device:CP1 C?
-U 1 1 62108250
-P 4360 2210
-AR Path="/5E4A81E1/62108250" Ref="C?"  Part="1" 
-AR Path="/5EACE220/62108250" Ref="C1"  Part="1" 
-F 0 "C1" H 4246 2256 50  0000 R CNN
-F 1 "22u/35V" H 4246 2165 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 4360 2210 50  0001 C CNN
-F 3 "~" H 4360 2210 50  0001 C CNN
-	1    4360 2210
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 1965 5350 1965
-Wire Wire Line
-	4360 2465 5350 2465
-Connection ~ 5350 1965
-Wire Wire Line
-	5350 1965 5975 1965
-Connection ~ 5350 2465
-Connection ~ 5975 2465
-Wire Wire Line
-	5975 2465 6610 2465
-Wire Wire Line
-	5350 2465 5975 2465
-Wire Wire Line
-	5975 2360 5975 2465
-Wire Wire Line
-	5975 2060 5975 1965
-$Comp
-L Device:C C98
-U 1 1 6182DC53
-P 5975 2210
-F 0 "C98" H 6090 2256 50  0000 L CNN
-F 1 "100n/50V" H 6090 2165 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 6013 2060 50  0001 C CNN
-F 3 "~" H 5975 2210 50  0001 C CNN
-	1    5975 2210
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 2360 7250 2465
-Wire Wire Line
-	7250 2060 7250 1965
-$Comp
-L Device:C C99
-U 1 1 6216ADBB
-P 7250 2210
-F 0 "C99" H 7365 2256 50  0000 L CNN
-F 1 "100n/50V" H 7365 2165 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 7288 2060 50  0001 C CNN
-F 3 "~" H 7250 2210 50  0001 C CNN
-	1    7250 2210
-	1    0    0    -1  
-$EndComp
-Connection ~ 7250 1965
-Wire Wire Line
-	6610 2465 7250 2465
-Text Notes 5170 1710 2    50   ~ 0
-RECOMMENDED:\nWURTH 744750230047
-$Comp
-L Diode:1.5KExxA D90
-U 1 1 6217E1A5
-P 3515 2210
-F 0 "D90" V 3469 2290 50  0000 L CNN
-F 1 "SA9.0A" V 3560 2290 50  0000 L CNN
-F 2 "Diode_THT:D_DO-15_P5.08mm_Vertical_KathodeUp" H 3515 2010 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 3465 2210 50  0001 C CNN
-	1    3515 2210
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3515 2060 3515 1965
-Connection ~ 3515 1965
-Wire Wire Line
-	3515 1965 4360 1965
-Wire Wire Line
-	3515 2360 3515 2465
-Connection ~ 3515 2465
-Wire Wire Line
-	3515 2465 4360 2465
-Text Notes 3270 2870 0    50   ~ 0
-TVS DIODE WILL PROVIDE\nPROTECTION AGAINST ESD\nTRANSIENTS AND REVERSE\nPOLARITY
-Text Label 3515 1965 0    50   ~ 0
-9v_in
-$Comp
-L power_switch:SW_DPDT_x2 SW1
-U 1 1 62A43028
-P 2925 2140
-F 0 "SW1" H 2925 2485 50  0000 C CNN
-F 1 "POWER_SWITCH" H 2925 2395 50  0000 C CNN
-F 2 "LittleSixteen:C64_PowerSwitch" H 2925 2140 50  0001 C CNN
-F 3 "~" H 2925 2140 50  0001 C CNN
-	1    2925 2140
-	1    0    0    -1  
-$EndComp
 $Comp
 L power_switch:SW_DPDT_x2 SW1
 U 2 1 62A43AA2
-P 2925 2580
-F 0 "SW1" H 2930 2955 50  0000 C CNN
-F 1 "POWER_SWITCH" H 2940 2865 50  0000 C CNN
-F 2 "LittleSixteen:C64_PowerSwitch" H 2925 2580 50  0001 C CNN
-F 3 "~" H 2925 2580 50  0001 C CNN
-	2    2925 2580
+P 6330 1860
+F 0 "SW1" H 6330 2053 50  0000 C CNN
+F 1 "POWER_SWITCH" H 6330 2144 50  0000 C CNN
+F 2 "LittleSixteen:C64_PowerSwitch" H 6330 1860 50  0001 C CNN
+F 3 "~" H 6330 1860 50  0001 C CNN
+	2    6330 1860
 	1    0    0    1   
-$EndComp
-Wire Wire Line
-	3125 2240 3230 2240
-Wire Wire Line
-	3370 1965 3370 2240
-Wire Wire Line
-	2645 2140 2645 1945
-Wire Wire Line
-	2645 1945 3220 1945
-Wire Wire Line
-	3220 1945 3220 2040
-Wire Wire Line
-	3220 2040 3125 2040
-Connection ~ 2645 2140
-Wire Wire Line
-	2645 2140 2725 2140
-Wire Wire Line
-	2645 2140 2645 2580
-Wire Wire Line
-	2645 2580 2725 2580
-Wire Wire Line
-	2645 2580 2645 2805
-Wire Wire Line
-	2645 2805 3220 2805
-Wire Wire Line
-	3220 2805 3220 2680
-Wire Wire Line
-	3220 2680 3125 2680
-Connection ~ 2645 2580
-Wire Wire Line
-	3125 2480 3230 2480
-Wire Wire Line
-	3230 2480 3230 2240
-Connection ~ 3230 2240
-Wire Wire Line
-	3230 2240 3370 2240
-$Comp
-L power_switch:SW_DPDT_x2 SW1
-U 3 1 62A474EB
-P 2350 2685
-F 0 "SW1" H 2437 2723 50  0000 L CNN
-F 1 "POWER_SWITCH" H 2437 2632 50  0000 L CNN
-F 2 "LittleSixteen:C64_PowerSwitch" H 2350 2685 50  0001 C CNN
-F 3 "~" H 2350 2685 50  0001 C CNN
-	3    2350 2685
-	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0197
 U 1 1 62A6B46E
-P 2350 2875
-F 0 "#PWR0197" H 2350 2625 50  0001 C CNN
-F 1 "GND" H 2355 2702 50  0000 C CNN
-F 2 "" H 2350 2875 50  0001 C CNN
-F 3 "" H 2350 2875 50  0001 C CNN
-	1    2350 2875
+P 10280 2520
+F 0 "#PWR0197" H 10280 2270 50  0001 C CNN
+F 1 "GND" H 10285 2347 50  0000 C CNN
+F 2 "" H 10280 2520 50  0001 C CNN
+F 3 "" H 10280 2520 50  0001 C CNN
+	1    10280 2520
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 2760 2350 2875
-Text Notes 2525 1715 0    50   ~ 0
-YEAH, THE POWER SWITCH\nIS WIRED LIKE THIS...
+	10280 2405 10280 2520
 $Comp
 L 74xx:74LS125 U?
 U 4 1 625FE5B6
@@ -853,35 +591,6 @@ F 3 "" H 9410 5735 50  0001 C CNN
 	1    9410 5735
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7250 1965 7620 1965
-Wire Wire Line
-	7920 1965 8275 1965
-$Comp
-L Device:Ferrite_Bead FB90
-U 1 1 62AAE45D
-P 7770 1965
-F 0 "FB90" V 7496 1965 50  0000 C CNN
-F 1 "28C0236-0JW-10" V 7587 1965 50  0000 C CNN
-F 2 "LittleSixteen:FB_28C0236-0JW-10" V 7700 1965 50  0001 C CNN
-F 3 "~" H 7770 1965 50  0001 C CNN
-	1    7770 1965
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8275 2065 8275 1965
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 62290C11
-P 8275 2065
-F 0 "#FLG0103" H 8275 2140 50  0001 C CNN
-F 1 "PWR_FLAG" H 8275 2238 50  0000 C CNN
-F 2 "" H 8275 2065 50  0001 C CNN
-F 3 "~" H 8275 2065 50  0001 C CNN
-	1    8275 2065
-	-1   0    0    1   
-$EndComp
-Connection ~ 8275 1965
 $Comp
 L Connector:Conn_01x02_Male JP11
 U 1 1 62214D74
@@ -901,4 +610,472 @@ Wire Wire Line
 	3840 4695 3935 4695
 Wire Wire Line
 	3935 4280 3935 4695
+$Comp
+L power_switch:SW_DPDT_x2 SW1
+U 1 1 62A43028
+P 4590 1110
+F 0 "SW1" H 4590 785 50  0000 C CNN
+F 1 "POWER_SWITCH" H 4590 876 50  0000 C CNN
+F 2 "LittleSixteen:C64_PowerSwitch" H 4590 1110 50  0001 C CNN
+F 3 "~" H 4590 1110 50  0001 C CNN
+	1    4590 1110
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2450 1010 2450 1335
+Wire Wire Line
+	1595 1010 2450 1010
+Wire Wire Line
+	1595 1335 1595 1010
+Wire Wire Line
+	1720 1335 1595 1335
+$Comp
+L power_switch:SW_DPDT_x2 SW1
+U 3 1 62A474EB
+P 10280 2330
+F 0 "SW1" H 10367 2368 50  0000 L CNN
+F 1 "POWER_SWITCH" H 10367 2277 50  0000 L CNN
+F 2 "LittleSixteen:C64_PowerSwitch" H 10280 2330 50  0001 C CNN
+F 3 "~" H 10280 2330 50  0001 C CNN
+	3    10280 2330
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2320 1335 2450 1335
+Wire Wire Line
+	1720 1535 1595 1535
+Wire Wire Line
+	2320 1435 2380 1435
+Wire Wire Line
+	1660 1435 1660 1080
+Wire Wire Line
+	1660 1080 2020 1080
+Wire Wire Line
+	2020 1080 2020 1135
+Wire Wire Line
+	1660 1435 1720 1435
+Wire Wire Line
+	2020 1080 2380 1080
+Wire Wire Line
+	2380 1080 2380 1435
+Connection ~ 2020 1080
+Text Label 3550 1335 0    50   ~ 0
+in_+5v
+Text Label 3550 1435 0    50   ~ 0
+in_gnd
+Text Label 3550 1535 0    50   ~ 0
+in_-9vac
+Text Label 3550 1635 0    50   ~ 0
+in_+9avc
+Wire Wire Line
+	2450 1010 2765 1010
+Connection ~ 2450 1010
+Wire Wire Line
+	2380 1435 2765 1435
+Connection ~ 2380 1435
+Wire Wire Line
+	2765 1375 2765 1435
+Connection ~ 2765 1435
+Wire Wire Line
+	2765 1075 2765 1010
+Connection ~ 2765 1010
+Wire Wire Line
+	2765 1010 3465 1010
+$Comp
+L Device:C C100
+U 1 1 62C16C6D
+P 2765 1225
+F 0 "C100" H 2880 1271 50  0000 L CNN
+F 1 "100n/25V" H 2880 1180 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2803 1075 50  0001 C CNN
+F 3 "~" H 2765 1225 50  0001 C CNN
+	1    2765 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2765 1900 2765 1960
+Connection ~ 2765 1960
+Wire Wire Line
+	2765 1600 2765 1535
+Connection ~ 2765 1535
+$Comp
+L Device:C C103
+U 1 1 62C32DD5
+P 2765 1750
+F 0 "C103" H 2880 1796 50  0000 L CNN
+F 1 "220n/25V" H 2880 1705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2803 1600 50  0001 C CNN
+F 3 "~" H 2765 1750 50  0001 C CNN
+	1    2765 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2320 1535 2765 1535
+Wire Wire Line
+	1595 1960 2765 1960
+Wire Wire Line
+	1595 1535 1595 1960
+Wire Wire Line
+	2765 1435 3945 1435
+Wire Wire Line
+	3465 1010 3465 1335
+Wire Wire Line
+	3465 1335 3945 1335
+Wire Wire Line
+	2765 1960 3470 1960
+Wire Wire Line
+	4245 1435 5195 1435
+$Comp
+L Device:CP1 C?
+U 1 1 62C8C494
+P 5195 1225
+AR Path="/5E4A81E1/62C8C494" Ref="C?"  Part="1" 
+AR Path="/5EACE220/62C8C494" Ref="C101"  Part="1" 
+F 0 "C101" H 5405 1315 50  0000 R CNN
+F 1 "100u/35V" H 5605 1120 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 5195 1225 50  0001 C CNN
+F 3 "~" H 5195 1225 50  0001 C CNN
+	1    5195 1225
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5545 1075 5545 1010
+$Comp
+L Device:C C102
+U 1 1 62C8D93A
+P 5545 1225
+F 0 "C102" H 5570 1315 50  0000 L CNN
+F 1 "100n/25V" H 5580 1120 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5583 1075 50  0001 C CNN
+F 3 "~" H 5545 1225 50  0001 C CNN
+	1    5545 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4245 1535 4790 1535
+$Comp
+L Device:C C105
+U 1 1 62C9A551
+P 4445 1860
+F 0 "C105" H 4331 1906 50  0000 R CNN
+F 1 "220n/25V" H 4331 1815 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4483 1710 50  0001 C CNN
+F 3 "~" H 4445 1860 50  0001 C CNN
+	1    4445 1860
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C106
+U 1 1 62C9B55F
+P 4790 1860
+F 0 "C106" H 4905 1906 50  0000 L CNN
+F 1 "220n/25V" H 4905 1815 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4828 1710 50  0001 C CNN
+F 3 "~" H 4790 1860 50  0001 C CNN
+	1    4790 1860
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4245 1635 4445 1635
+Wire Wire Line
+	4445 1635 4445 1710
+Connection ~ 4445 1635
+Wire Wire Line
+	4445 1635 5335 1635
+Wire Wire Line
+	4790 1710 4790 1535
+Connection ~ 4790 1535
+Wire Wire Line
+	4790 1535 5545 1535
+Wire Wire Line
+	4445 2010 4445 2100
+Wire Wire Line
+	4790 2100 4790 2010
+$Comp
+L power:GND #PWR0224
+U 1 1 62CB637A
+P 4620 2175
+F 0 "#PWR0224" H 4620 1925 50  0001 C CNN
+F 1 "GND" H 4625 2002 50  0000 C CNN
+F 2 "" H 4620 2175 50  0001 C CNN
+F 3 "" H 4620 2175 50  0001 C CNN
+	1    4620 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4620 2100 4620 2175
+Wire Wire Line
+	4445 2100 4620 2100
+Connection ~ 4620 2100
+Wire Wire Line
+	4620 2100 4790 2100
+Wire Wire Line
+	5335 1635 5335 2100
+$Comp
+L Device:C C104
+U 1 1 62CD93BC
+P 5545 1860
+F 0 "C104" H 5660 1906 50  0000 L CNN
+F 1 "220n/25V" H 5660 1815 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5583 1710 50  0001 C CNN
+F 3 "~" H 5545 1860 50  0001 C CNN
+	1    5545 1860
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5335 2100 5545 2100
+Wire Wire Line
+	5545 2010 5545 2100
+Wire Wire Line
+	5545 1535 5545 1710
+Connection ~ 5545 1535
+$Comp
+L Device:Fuse F100
+U 1 1 62D06C9B
+P 6860 1760
+F 0 "F100" V 6663 1760 50  0000 C CNN
+F 1 "1.5A" V 6754 1760 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open" V 6790 1760 50  0001 C CNN
+F 3 "~" H 6860 1760 50  0001 C CNN
+	1    6860 1760
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6530 1760 6710 1760
+Wire Wire Line
+	5545 1375 5545 1435
+Connection ~ 5545 1435
+Wire Wire Line
+	5545 1435 6050 1435
+Wire Wire Line
+	4245 1335 4330 1335
+Wire Wire Line
+	4330 1335 4330 1110
+Wire Wire Line
+	4330 1110 4390 1110
+NoConn ~ 4790 1210
+Wire Wire Line
+	5545 1010 5195 1010
+Wire Wire Line
+	5195 1375 5195 1435
+Connection ~ 5195 1435
+Wire Wire Line
+	5195 1435 5545 1435
+Wire Wire Line
+	5195 1075 5195 1010
+Connection ~ 5195 1010
+Wire Wire Line
+	5195 1010 4790 1010
+Wire Wire Line
+	5545 1010 6050 1010
+Wire Wire Line
+	6050 1010 6050 920 
+Connection ~ 5545 1010
+$Comp
+L power:VCC #PWR0225
+U 1 1 62D6EB81
+P 6050 920
+F 0 "#PWR0225" H 6050 770 50  0001 C CNN
+F 1 "VCC" H 6067 1093 50  0000 C CNN
+F 2 "" H 6050 920 50  0001 C CNN
+F 3 "" H 6050 920 50  0001 C CNN
+	1    6050 920 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 1535 5875 1860
+Wire Wire Line
+	5875 1860 6130 1860
+Wire Wire Line
+	5545 1535 5875 1535
+$Comp
+L power:GND #PWR0226
+U 1 1 62D7FE05
+P 6050 1510
+F 0 "#PWR0226" H 6050 1260 50  0001 C CNN
+F 1 "GND" H 6055 1337 50  0000 C CNN
+F 2 "" H 6050 1510 50  0001 C CNN
+F 3 "" H 6050 1510 50  0001 C CNN
+	1    6050 1510
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1435 6050 1510
+NoConn ~ 6530 1960
+Connection ~ 5545 2100
+Wire Wire Line
+	7250 2445 7250 2510
+Wire Wire Line
+	7010 1760 7250 1760
+Wire Wire Line
+	7250 1760 7250 1845
+$Comp
+L Device:CP1 C?
+U 1 1 62DD1B71
+P 8330 2360
+AR Path="/5E4A81E1/62DD1B71" Ref="C?"  Part="1" 
+AR Path="/5EACE220/62DD1B71" Ref="C108"  Part="1" 
+F 0 "C108" H 8215 2406 50  0000 R CNN
+F 1 "10u" H 8215 2315 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8330 2360 50  0001 C CNN
+F 3 "~" H 8330 2360 50  0001 C CNN
+	1    8330 2360
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2210 8750 2145
+$Comp
+L Device:C C109
+U 1 1 62DD212C
+P 8750 2360
+F 0 "C109" H 8865 2406 50  0000 L CNN
+F 1 "100n/25V" H 8865 2315 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 8788 2210 50  0001 C CNN
+F 3 "~" H 8750 2360 50  0001 C CNN
+	1    8750 2360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2510 8750 2570
+Wire Wire Line
+	8330 2510 8330 2570
+Wire Wire Line
+	8330 2210 8330 2145
+$Comp
+L Device:CP1 C?
+U 1 1 62DDC32C
+P 7865 2360
+AR Path="/5E4A81E1/62DDC32C" Ref="C?"  Part="1" 
+AR Path="/5EACE220/62DDC32C" Ref="C107"  Part="1" 
+F 0 "C107" H 7750 2406 50  0000 R CNN
+F 1 "2200u" H 7750 2315 50  0000 R CNN
+F 2 "LittleSixteen:Axial_Cap_Dual" H 7865 2360 50  0001 C CNN
+F 3 "~" H 7865 2360 50  0001 C CNN
+	1    7865 2360
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7865 2510 7865 2570
+Wire Wire Line
+	7865 2210 7865 2145
+Wire Wire Line
+	7550 2145 7865 2145
+Connection ~ 8330 2145
+Wire Wire Line
+	6950 2145 6835 2145
+Wire Wire Line
+	6835 2145 6835 2570
+Wire Wire Line
+	6835 2570 7865 2570
+Connection ~ 8330 2570
+Connection ~ 8750 2145
+Wire Wire Line
+	8330 2145 8750 2145
+Wire Wire Line
+	8330 2570 8750 2570
+Connection ~ 7865 2145
+Connection ~ 7865 2570
+Wire Wire Line
+	7865 2145 8330 2145
+Wire Wire Line
+	7865 2570 8330 2570
+$Comp
+L power:+9V #PWR0227
+U 1 1 62E476F1
+P 9255 2055
+F 0 "#PWR0227" H 9255 1905 50  0001 C CNN
+F 1 "+9V" H 9255 2310 50  0000 C CNN
+F 2 "" H 9255 2055 50  0001 C CNN
+F 3 "" H 9255 2055 50  0001 C CNN
+	1    9255 2055
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2570 9255 2570
+Wire Wire Line
+	9255 2145 9255 2055
+$Comp
+L power:GND #PWR0228
+U 1 1 62E5167F
+P 9255 2645
+F 0 "#PWR0228" H 9255 2395 50  0001 C CNN
+F 1 "GND" H 9260 2472 50  0000 C CNN
+F 2 "" H 9255 2645 50  0001 C CNN
+F 3 "" H 9255 2645 50  0001 C CNN
+	1    9255 2645
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9255 2570 9255 2645
+Connection ~ 8750 2570
+Wire Wire Line
+	8750 2145 9255 2145
+Text Notes 9025 1920 0    50   ~ 0
+UNREGULATED
+Text Notes 7290 1310 0    50   ~ 0
+This power circuit has been\nlifted as-is from the Plus/4
+Wire Wire Line
+	5875 2100 5875 2510
+Wire Wire Line
+	5545 2100 5875 2100
+Wire Wire Line
+	5875 2510 7250 2510
+$Comp
+L linefilter:L LF100
+U 1 1 62BC2FB7
+P 4095 1485
+F 0 "LF100" H 4095 1850 50  0000 C CNN
+F 1 "CM4545Z131B-10" H 4235 1755 50  0000 C CNN
+F 2 "LittleSixteen:CM4545Z131B-10" V 4095 1535 50  0001 C CNN
+F 3 "" V 4095 1535 50  0001 C CNN
+	1    4095 1485
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3470 1535 3470 1960
+Wire Wire Line
+	3470 1535 3945 1535
+Wire Wire Line
+	3365 1535 3365 1635
+Wire Wire Line
+	3365 1635 3945 1635
+Wire Wire Line
+	2765 1535 3365 1535
+$Comp
+L Device:D_Bridge_+A-A CR100
+U 1 1 63040746
+P 7250 2145
+F 0 "CR100" H 7460 1945 50  0000 L CNN
+F 1 "NTE5304" H 7460 2025 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_Round_D9.8mm" H 7250 2145 50  0001 C CNN
+F 3 "~" H 7250 2145 50  0001 C CNN
+	1    7250 2145
+	1    0    0    1   
+$EndComp
+$Comp
+L din-7:DIN-7 CN8
+U 1 1 630EA11F
+P 2020 1435
+F 0 "CN8" H 2020 2025 50  0000 C CNN
+F 1 "POWER_INPUT" H 2020 1935 50  0000 C CNN
+F 2 "LittleSixteen:DIN-7_DS_7_102_OR_102B" H 2020 1435 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 2020 1435 50  0001 C CNN
+	1    2020 1435
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 630EC83D
+P 2020 1740
+F 0 "#PWR?" H 2020 1490 50  0001 C CNN
+F 1 "GND" H 2025 1567 50  0000 C CNN
+F 2 "" H 2020 1740 50  0001 C CNN
+F 3 "" H 2020 1740 50  0001 C CNN
+	1    2020 1740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2020 1710 2020 1740
+Text Notes 1525 1515 2    50   ~ 0
++5VDC 1.7A\n9VAC 1A
 $EndSCHEMATC

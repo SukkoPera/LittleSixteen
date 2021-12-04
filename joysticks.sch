@@ -1452,8 +1452,6 @@ Wire Wire Line
 	8905 2105 9585 2105
 NoConn ~ 2590 6760
 NoConn ~ 2590 7060
-Wire Bus Line
-	9685 1705 9685 4385
 $Comp
 L Device:Jumper_NC_Small JP10
 U 1 1 621BBD43
@@ -1476,4 +1474,6 @@ F 3 "~" H 4020 1435 50  0001 C CNN
 	1    4020 1435
 	0    -1   -1   0   
 $EndComp
+Wire Bus Line
+	9685 1705 9685 4385
 $EndSCHEMATC
