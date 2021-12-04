@@ -48,7 +48,7 @@ F 1 "Ferrite_Bead_Small" H 3780 2050 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 3610 2095 50  0001 C CNN
 F 3 "~" H 3680 2095 50  0001 C CNN
 	1    3680 2095
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	3835 1425 3835 1520
@@ -101,21 +101,6 @@ Wire Wire Line
 	3680 1930 3680 1995
 Wire Wire Line
 	3680 2525 4390 2525
-Wire Wire Line
-	4390 2425 3455 2425
-$Comp
-L Device:Ferrite_Bead_Small FB16
-U 1 1 5ECC62CE
-P 3355 2425
-F 0 "FB16" V 3500 2425 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 3455 2380 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 3285 2425 50  0001 C CNN
-F 3 "~" H 3355 2425 50  0001 C CNN
-	1    3355 2425
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	3255 2425 3010 2425
 $Comp
 L Device:C C23
 U 1 1 5ECC701E
@@ -209,19 +194,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 9055 2115 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small FB17
-U 1 1 5ECD8623
-P 5785 2325
-F 0 "FB17" V 5930 2325 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 5885 2280 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 5715 2325 50  0001 C CNN
-F 3 "~" H 5785 2325 50  0001 C CNN
-	1    5785 2325
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4990 2325 5685 2325
-$Comp
 L Device:R R29
 U 1 1 5ECD9EF8
 P 6425 2325
@@ -232,8 +204,6 @@ F 3 "~" H 6425 2325 50  0001 C CNN
 	1    6425 2325
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5885 2325 6050 2325
 $Comp
 L Device:C C24
 U 1 1 5ECE063E
@@ -269,17 +239,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 6395 1535 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small FB18
-U 1 1 5ECE8130
-P 5230 1535
-F 0 "FB18" V 5375 1535 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 5330 1490 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 5160 1535 50  0001 C CNN
-F 3 "~" H 5230 1535 50  0001 C CNN
-	1    5230 1535
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C25
 U 1 1 5ECF7C46
 P 5550 1925
@@ -291,11 +250,7 @@ F 3 "~" H 5550 1925 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4690 1535 5130 1535
-Wire Wire Line
 	4690 1535 4690 2125
-Wire Wire Line
-	5330 1535 5550 1535
 Wire Wire Line
 	5550 1775 5550 1535
 Connection ~ 5550 1535
@@ -909,7 +864,7 @@ U 1 1 620EE6EF
 P 4690 2425
 F 0 "CN3" H 4495 2175 50  0000 C CNN
 F 1 "CASSETTE" H 4395 2090 50  0000 C CNN
-F 2 "LittleSixteen:KMDGX-7S-BS" V 4680 2415 50  0001 C CNN
+F 2 "" V 4680 2415 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 4680 2415 50  0001 C CNN
 	1    4690 2425
 	1    0    0    -1  
@@ -1102,8 +1057,6 @@ Wire Wire Line
 	9375 5195 9045 5195
 Wire Wire Line
 	9375 5295 9045 5295
-Text Label 3710 2425 0    50   ~ 0
-tape_read
 Text Label 6670 5620 0    50   ~ 0
 iec_dat
 Text Label 6670 5420 0    50   ~ 0
@@ -1122,10 +1075,6 @@ Text Label 9045 4995 0    50   ~ 0
 iec_rst
 Text Notes 9075 6315 0    50   ~ 0
 These offer better ESD protection\nthan the retrofitted diodes, but use\nan SMT component. Mount only one\nor the other, at your preference.
-Text Label 5265 2325 0    50   ~ 0
-tape_wr
-Text Label 4690 1535 0    50   ~ 0
-tape_sense
 $Comp
 L DT1042:DT1042 U92
 U 1 1 62324DC8
@@ -1171,11 +1120,11 @@ Wire Wire Line
 Wire Wire Line
 	9470 3505 9020 3505
 Text Label 9020 3505 0    50   ~ 0
-tape_wr
+tape_wr2
 Text Label 9020 3305 0    50   ~ 0
-tape_read
+tape_read2
 Text Label 9020 3205 0    50   ~ 0
-tape_sense
+tape_sense2
 NoConn ~ 9470 3405
 Wire Notes Line
 	8925 2565 10795 2565
@@ -1274,7 +1223,7 @@ U 1 1 62482A9D
 P 1340 7045
 F 0 "J90" H 1390 7562 50  0000 C CNN
 F 1 "CONN_TAPE_DRIVE" H 1390 7471 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 1340 7045 50  0001 C CNN
+F 2 "" H 1340 7045 50  0001 C CNN
 F 3 "~" H 1340 7045 50  0001 C CNN
 	1    1340 7045
 	1    0    0    -1  
@@ -1350,6 +1299,102 @@ Wire Notes Line
 	3225 1960 3225 1615
 Text Notes 3620 1580 2    50   ~ 0
 ADDITIONAL CURRENT-\nLIMITING RESISTOR
+$Comp
+L Connector:Conn_01x06_Male CN93
+U 1 1 63113C84
+P 1570 3135
+F 0 "CN93" H 1542 3017 50  0000 R CNN
+F 1 "C64_STYLE_CASSETTE" H 1542 3108 50  0000 R CNN
+F 2 "LittleSixteen:C64-Cassette-Port-Male" H 1570 3135 50  0001 C CNN
+F 3 "~" H 1570 3135 50  0001 C CNN
+	1    1570 3135
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1370 2835 755  2835
+Wire Wire Line
+	1370 2935 755  2935
+Wire Wire Line
+	1370 3035 755  3035
+Wire Wire Line
+	1370 3135 755  3135
+Text Label 755  3135 0    50   ~ 0
+tape_mtr
+Text Label 755  2935 0    50   ~ 0
+tape_wr
+Text Label 755  3035 0    50   ~ 0
+tape_read
+Text Label 755  2835 0    50   ~ 0
+tape_sense
+Text Label 3710 2525 0    50   ~ 0
+tape_+5v
+Text Label 755  3235 0    50   ~ 0
+tape_+5v
+Wire Wire Line
+	755  3235 1370 3235
+Wire Wire Line
+	755  3335 1370 3335
+Text Label 755  3335 0    50   ~ 0
+tape_gnd
+Wire Wire Line
+	5885 2325 6050 2325
+Wire Wire Line
+	4990 2325 5685 2325
+$Comp
+L Device:Ferrite_Bead_Small FB17
+U 1 1 5ECD8623
+P 5785 2325
+F 0 "FB17" V 5930 2325 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 5885 2280 50  0001 L CNN
+F 2 "LittleSixteen:Ferrite" V 5715 2325 50  0001 C CNN
+F 3 "~" H 5785 2325 50  0001 C CNN
+	1    5785 2325
+	0    -1   -1   0   
+$EndComp
+Text Label 5265 2325 0    50   ~ 0
+tape_wr
+Wire Wire Line
+	3255 2425 3010 2425
+Wire Wire Line
+	4390 2425 3455 2425
+$Comp
+L Device:Ferrite_Bead_Small FB16
+U 1 1 5ECC62CE
+P 3355 2425
+F 0 "FB16" V 3500 2425 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 3455 2380 50  0001 L CNN
+F 2 "LittleSixteen:Ferrite" V 3285 2425 50  0001 C CNN
+F 3 "~" H 3355 2425 50  0001 C CNN
+	1    3355 2425
+	0    1    -1   0   
+$EndComp
+Text Label 3710 2425 0    50   ~ 0
+tape_read
 Wire Bus Line
 	3075 4640 3075 5520
+Wire Wire Line
+	5330 1535 5550 1535
+Wire Wire Line
+	4690 1535 5130 1535
+$Comp
+L Device:Ferrite_Bead_Small FB18
+U 1 1 5ECE8130
+P 5230 1535
+F 0 "FB18" V 5375 1535 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" H 5330 1490 50  0001 L CNN
+F 2 "LittleSixteen:Ferrite" V 5160 1535 50  0001 C CNN
+F 3 "~" H 5230 1535 50  0001 C CNN
+	1    5230 1535
+	0    -1   -1   0   
+$EndComp
+Text Label 5130 2610 0    50   ~ 0
+tape_gnd
+Text Label 4690 1535 0    50   ~ 0
+tape_sense
+Text Label 5915 2325 0    50   ~ 0
+tape_wr2
+Text Label 2845 2425 0    50   ~ 0
+tape_read2
+Text Label 5375 1535 0    50   ~ 0
+tape_sense2
 $EndSCHEMATC
