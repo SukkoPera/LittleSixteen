@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "LittleSixteen"
-Date "2021-11-23"
+Date "2021-12-05"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -1120,12 +1120,11 @@ Wire Wire Line
 Wire Wire Line
 	9470 3505 9020 3505
 Text Label 9020 3505 0    50   ~ 0
-tape_wr2
+tape_wr
 Text Label 9020 3305 0    50   ~ 0
-tape_read2
+tape_read
 Text Label 9020 3205 0    50   ~ 0
-tape_sense2
-NoConn ~ 9470 3405
+tape_sense
 Wire Notes Line
 	8925 2565 10795 2565
 Wire Notes Line
@@ -1395,6 +1394,7 @@ Text Label 2845 2425 0    50   ~ 0
 tape_read2
 Text Label 5375 1535 0    50   ~ 0
 tape_sense2
+NoConn ~ 9470 3405
 Wire Bus Line
 	3075 4640 3075 5520
 $EndSCHEMATC
