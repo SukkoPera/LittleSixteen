@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sun 05 Dec 2021 00:09:20 CET")
+    (date "Sun 05 Dec 2021 10:56:49 CET")
     (tool "Eeschema 5.1.10")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1040,7 +1040,7 @@
       (tstamp 5E982F3B))
     (comp (ref JP8)
       (value JP_RAMEN)
-      (footprint Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm)
+      (footprint Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm)
       (datasheet ~)
       (libsource (lib Device) (part Jumper_NC_Small) (description "Jumper, normally closed, small symbol"))
       (sheetpath (names "/Expansion Port/") (tstamps /5E6A379E/))

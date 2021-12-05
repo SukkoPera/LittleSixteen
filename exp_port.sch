@@ -363,7 +363,7 @@ U 1 1 61F43269
 P 6955 5190
 F 0 "JP8" H 6955 5030 50  0000 C CNN
 F 1 "JP_RAMEN" H 6955 4930 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6955 5190 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6955 5190 50  0001 C CNN
 F 3 "~" H 6955 5190 50  0001 C CNN
 	1    6955 5190
 	1    0    0    -1  
