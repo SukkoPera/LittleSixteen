@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 12
 Title "LittleSixteen"
-Date "2021-12-04"
+Date "2021-12-05"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -917,7 +917,7 @@ AR Path="/5E4A81E1/62DD1B71" Ref="C?"  Part="1"
 AR Path="/5EACE220/62DD1B71" Ref="C108"  Part="1" 
 F 0 "C108" H 8215 2406 50  0000 R CNN
 F 1 "10u" H 8215 2315 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8330 2360 50  0001 C CNN
+F 2 "" H 8330 2360 50  0001 C CNN
 F 3 "~" H 8330 2360 50  0001 C CNN
 	1    8330 2360
 	-1   0    0    -1  
@@ -1078,4 +1078,55 @@ Wire Wire Line
 	2020 1710 2020 1740
 Text Notes 1525 1515 2    50   ~ 0
 +5VDC 1.7A\n9VAC 1A
+Text Notes 7760 2840 0    50   ~ 0
+WE DECIDED TO REMOVE C108\nAS IT'S NOT REALLY ANY USEFUL
+Text Notes 10980 3040 2    50   ~ 0
+Additional cap\nfor smoother\nVCC mid-board
+$Comp
+L power:VCC #PWR?
+U 1 1 634BE799
+P 10750 2070
+AR Path="/5E4A465A/634BE799" Ref="#PWR?"  Part="1" 
+AR Path="/5EE7AAEB/634BE799" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A81E1/634BE799" Ref="#PWR?"  Part="1" 
+AR Path="/5EACE220/634BE799" Ref="#PWR0229"  Part="1" 
+F 0 "#PWR0229" H 10750 1920 50  0001 C CNN
+F 1 "VCC" H 10767 2243 50  0000 C CNN
+F 2 "" H 10750 2070 50  0001 C CNN
+F 3 "" H 10750 2070 50  0001 C CNN
+	1    10750 2070
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 634BE7A3
+P 10750 2520
+AR Path="/5E4A465A/634BE7A3" Ref="#PWR?"  Part="1" 
+AR Path="/5EE7AAEB/634BE7A3" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A81E1/634BE7A3" Ref="#PWR?"  Part="1" 
+AR Path="/5EACE220/634BE7A3" Ref="#PWR0230"  Part="1" 
+F 0 "#PWR0230" H 10750 2270 50  0001 C CNN
+F 1 "GND" H 10755 2347 50  0000 C CNN
+F 2 "" H 10750 2520 50  0001 C CNN
+F 3 "" H 10750 2520 50  0001 C CNN
+	1    10750 2520
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 2070 10750 2145
+Wire Wire Line
+	10750 2445 10750 2520
+$Comp
+L Device:CP1 C?
+U 1 1 634C97F7
+P 10750 2295
+AR Path="/5E4A81E1/634C97F7" Ref="C?"  Part="1" 
+AR Path="/5EACE220/634C97F7" Ref="C95"  Part="1" 
+F 0 "C95" H 10635 2341 50  0000 R CNN
+F 1 "470u" H 10635 2250 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10750 2295 50  0001 C CNN
+F 3 "~" H 10750 2295 50  0001 C CNN
+	1    10750 2295
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

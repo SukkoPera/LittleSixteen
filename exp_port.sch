@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 12
 Title "LittleSixteen"
-Date "2020-01-03"
+Date "2021-12-05"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -370,6 +370,47 @@ F 3 "~" H 6955 5190 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7055 5190 7230 5190
+Wire Wire Line
+	10280 3965 10280 3900
+$Comp
+L Device:C C?
+U 1 1 6349BFDB
+P 10280 4115
+AR Path="/5EACE220/6349BFDB" Ref="C?"  Part="1" 
+AR Path="/5E6A379E/6349BFDB" Ref="C94"  Part="1" 
+F 0 "C94" H 10395 4161 50  0000 L CNN
+F 1 "100n/25V" H 10395 4070 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10318 3965 50  0001 C CNN
+F 3 "~" H 10280 4115 50  0001 C CNN
+	1    10280 4115
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10280 4265 10280 4325
+$Comp
+L power:VCC #PWR0149
+U 1 1 6349D8C1
+P 10280 3900
+F 0 "#PWR0149" H 10280 3750 50  0001 C CNN
+F 1 "VCC" H 10297 4073 50  0000 C CNN
+F 2 "" H 10280 3900 50  0001 C CNN
+F 3 "" H 10280 3900 50  0001 C CNN
+	1    10280 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 6349E0F9
+P 10280 4325
+F 0 "#PWR0150" H 10280 4075 50  0001 C CNN
+F 1 "GND" H 10285 4152 50  0000 C CNN
+F 2 "" H 10280 4325 50  0001 C CNN
+F 3 "" H 10280 4325 50  0001 C CNN
+	1    10280 4325
+	1    0    0    -1  
+$EndComp
+Text Notes 10045 4725 0    50   ~ 0
+Additional\ndecoupling cap
 Wire Bus Line
 	3910 4290 3910 4990
 Wire Bus Line
