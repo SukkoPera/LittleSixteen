@@ -188,7 +188,7 @@ U 3 1 5ECD4244
 P 9055 2115
 F 0 "U9" H 9055 2340 50  0000 C CNN
 F 1 "74LS06" H 9050 2425 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9055 2115 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 9055 2115 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 9055 2115 50  0001 C CNN
 	3    9055 2115
 	-1   0    0    1   
@@ -233,7 +233,7 @@ U 3 1 5ECE62E7
 P 6395 1535
 F 0 "U11" H 6395 1852 50  0000 C CNN
 F 1 "74LS125" H 6395 1761 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6395 1535 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 6395 1535 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 6395 1535 50  0001 C CNN
 	3    6395 1535
 	1    0    0    -1  
@@ -359,7 +359,7 @@ U 4 1 5ED7BF96
 P 4550 5175
 F 0 "U9" H 4510 5175 50  0000 C CNN
 F 1 "74LS06" H 4220 5325 50  0001 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4550 5175 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 4550 5175 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4550 5175 50  0001 C CNN
 	4    4550 5175
 	1    0    0    -1  
@@ -380,7 +380,7 @@ U 5 1 5ED86128
 P 4250 5420
 F 0 "U9" H 4210 5420 50  0000 C CNN
 F 1 "74LS06" H 4250 5646 50  0001 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4250 5420 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 4250 5420 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4250 5420 50  0001 C CNN
 	5    4250 5420
 	1    0    0    -1  
@@ -393,7 +393,7 @@ U 6 1 5ED90E84
 P 4550 5620
 F 0 "U9" H 4500 5620 50  0000 C CNN
 F 1 "74LS06" H 4550 5846 50  0001 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4550 5620 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 4550 5620 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4550 5620 50  0001 C CNN
 	6    4550 5620
 	1    0    0    -1  
@@ -414,7 +414,7 @@ U 2 1 5EDAC005
 P 4255 5865
 F 0 "U9" H 4210 5865 50  0000 C CNN
 F 1 "74LS06" H 4420 5695 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4255 5865 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 4255 5865 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4255 5865 50  0001 C CNN
 	2    4255 5865
 	1    0    0    -1  
@@ -1370,8 +1370,6 @@ F 3 "~" H 3355 2425 50  0001 C CNN
 $EndComp
 Text Label 3710 2425 0    50   ~ 0
 tape_read
-Wire Bus Line
-	3075 4640 3075 5520
 Wire Wire Line
 	5330 1535 5550 1535
 Wire Wire Line
@@ -1397,4 +1395,6 @@ Text Label 2845 2425 0    50   ~ 0
 tape_read2
 Text Label 5375 1535 0    50   ~ 0
 tape_sense2
+Wire Bus Line
+	3075 4640 3075 5520
 $EndSCHEMATC

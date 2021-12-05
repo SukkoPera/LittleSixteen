@@ -19,7 +19,7 @@ U 1 1 5EE49479
 P 3680 2110
 F 0 "U3" H 3905 3155 50  0000 C CNN
 F 1 "23128_BASIC" H 3995 1060 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 3680 2110 50  0001 C CNN
+F 2 "LittleSixteen:DIP-28_W15.24mm_Socket_LongPads" H 3680 2110 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 3680 2110 50  0001 C CNN
 	1    3680 2110
 	1    0    0    -1  
@@ -443,7 +443,7 @@ U 1 1 61D02B96
 P 3860 4790
 F 0 "U90" H 3860 5115 50  0000 C CNN
 F 1 "74LS08" H 3860 5024 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3860 4790 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3860 4790 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3860 4790 50  0001 C CNN
 	1    3860 4790
 	1    0    0    -1  
@@ -454,7 +454,7 @@ U 2 1 61D0472F
 P 3845 5440
 F 0 "U90" H 3845 5765 50  0000 C CNN
 F 1 "74LS08" H 3845 5674 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3845 5440 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3845 5440 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3845 5440 50  0001 C CNN
 	2    3845 5440
 	1    0    0    -1  
@@ -465,7 +465,7 @@ U 3 1 61D05A7C
 P 3835 6090
 F 0 "U90" H 3835 6415 50  0000 C CNN
 F 1 "74LS08" H 3835 6324 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3835 6090 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3835 6090 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3835 6090 50  0001 C CNN
 	3    3835 6090
 	1    0    0    -1  
@@ -476,7 +476,7 @@ U 4 1 61D07AB4
 P 3835 6735
 F 0 "U90" H 3835 7060 50  0000 C CNN
 F 1 "74LS08" H 3835 6969 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3835 6735 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3835 6735 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3835 6735 50  0001 C CNN
 	4    3835 6735
 	1    0    0    -1  
@@ -487,7 +487,7 @@ U 5 1 61D093B9
 P 1170 6820
 F 0 "U90" H 1400 6866 50  0000 L CNN
 F 1 "74LS08" H 1400 6775 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1170 6820 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 1170 6820 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 1170 6820 50  0001 C CNN
 	5    1170 6820
 	1    0    0    -1  
@@ -653,7 +653,7 @@ U 1 1 5EE6447F
 P 7455 2110
 F 0 "U4" H 7680 3155 50  0000 C CNN
 F 1 "23128_KERNAL" H 7770 1060 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 7455 2110 50  0001 C CNN
+F 2 "LittleSixteen:DIP-28_W15.24mm_Socket_LongPads" H 7455 2110 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 7455 2110 50  0001 C CNN
 	1    7455 2110
 	1    0    0    -1  

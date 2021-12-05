@@ -396,7 +396,7 @@ U 1 1 61FC7C4B
 P 6705 2305
 F 0 "U17" H 6935 2960 50  0000 C CNN
 F 1 "74LS244" H 6975 1645 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 6705 2305 50  0001 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6705 2305 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT244.pdf" H 6705 2305 50  0001 C CNN
 	1    6705 2305
 	1    0    0    -1  
@@ -443,7 +443,7 @@ U 2 1 5E227156
 P 2955 5480
 F 0 "U11" H 2955 5797 50  0000 C CNN
 F 1 "74LS125" H 2955 5706 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2955 5480 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 2955 5480 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 2955 5480 50  0001 C CNN
 	2    2955 5480
 	1    0    0    -1  
@@ -473,7 +473,7 @@ U 1 1 5DFC8E43
 P 2955 2805
 F 0 "U11" H 2955 3122 50  0000 C CNN
 F 1 "74LS125" H 2955 3031 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2955 2805 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 2955 2805 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 2955 2805 50  0001 C CNN
 	1    2955 2805
 	1    0    0    -1  
@@ -606,7 +606,7 @@ U 1 1 61D585FB
 P 6700 4980
 F 0 "U18" H 6930 5635 50  0000 C CNN
 F 1 "74LS244" H 6970 4320 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 6700 4980 50  0001 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6700 4980 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT244.pdf" H 6700 4980 50  0001 C CNN
 	1    6700 4980
 	1    0    0    -1  

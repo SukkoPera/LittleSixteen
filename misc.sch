@@ -128,7 +128,7 @@ U 7 1 5EE35EC8
 P 2980 6565
 F 0 "U9" H 3210 6611 50  0000 L CNN
 F 1 "74LS06" H 3210 6520 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2980 6565 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 2980 6565 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 2980 6565 50  0001 C CNN
 	7    2980 6565
 	1    0    0    -1  
@@ -194,7 +194,7 @@ U 5 1 5EE3FF94
 P 1050 6565
 F 0 "U11" H 1280 6611 50  0000 L CNN
 F 1 "74LS125" H 1280 6520 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1050 6565 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 1050 6565 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 1050 6565 50  0001 C CNN
 	5    1050 6565
 	1    0    0    -1  
@@ -319,7 +319,7 @@ AR Path="/5E4A81E1/61864E19" Ref="U?"  Part="1"
 AR Path="/5EACE220/61864E19" Ref="U10"  Part="1" 
 F 0 "U10" H 5230 4830 50  0000 C CNN
 F 1 "NE555P" H 5305 4125 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6155 4080 50  0001 C CNN
+F 2 "LittleSixteen:DIP-8_W7.62mm_Socket_LongPads" H 6155 4080 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 6355 4080 50  0001 C CNN
 	1    5505 4480
 	1    0    0    -1  
@@ -505,7 +505,7 @@ AR Path="/5E4A81E1/61864E85" Ref="U?"  Part="1"
 AR Path="/5EACE220/61864E85" Ref="U9"  Part="1" 
 F 0 "U9" H 6995 4597 50  0000 C CNN
 F 1 "74LS06" H 6995 4506 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6995 4280 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 6995 4280 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 6995 4280 50  0001 C CNN
 	1    6995 4280
 	1    0    0    -1  
@@ -564,7 +564,7 @@ AR Path="/5ECB474B/625FE5B6" Ref="U?"  Part="4"
 AR Path="/5EACE220/625FE5B6" Ref="U11"  Part="4" 
 F 0 "U11" H 9860 6277 50  0000 C CNN
 F 1 "74LS125" H 9860 6186 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9860 5960 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 9860 5960 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 9860 5960 50  0001 C CNN
 	4    9860 5960
 	1    0    0    -1  

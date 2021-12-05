@@ -212,7 +212,7 @@ U 1 1 5E74C446
 P 8710 2140
 F 0 "U6" H 8710 2905 50  0000 C CNN
 F 1 "4416" H 8710 2814 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm_Socket_LongPads" H 8710 1390 50  0001 C CNN
+F 2 "LittleSixteen:DIP-18_W7.62mm_Socket_LongPads" H 8710 1390 50  0001 C CNN
 F 3 "http://pdf.datasheetcatalog.com/datasheet_pdf/texas-instruments/TMS4416-12_to_TMS4416-20.pdf" H 8710 1490 50  0001 C CNN
 	1    8710 2140
 	1    0    0    -1  
@@ -223,7 +223,7 @@ U 1 1 5E787BCA
 P 8710 3840
 F 0 "U5" H 8710 4605 50  0000 C CNN
 F 1 "4416" H 8710 4514 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm_Socket_LongPads" H 8710 3090 50  0001 C CNN
+F 2 "LittleSixteen:DIP-18_W7.62mm_Socket_LongPads" H 8710 3090 50  0001 C CNN
 F 3 "http://pdf.datasheetcatalog.com/datasheet_pdf/texas-instruments/TMS4416-12_to_TMS4416-20.pdf" H 8710 3190 50  0001 C CNN
 	1    8710 3840
 	1    0    0    -1  
@@ -338,7 +338,7 @@ U 2 1 5EA2906C
 P 3005 7010
 F 0 "U7" H 3235 7081 50  0000 L CNN
 F 1 "74LS257" H 3235 6990 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3005 7010 50  0001 C CNN
+F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 3005 7010 50  0001 C CNN
 F 3 "" H 3005 7010 50  0001 C CNN
 	2    3005 7010
 	1    0    0    -1  
@@ -349,7 +349,7 @@ U 2 1 5EA2A6DF
 P 4510 7010
 F 0 "U8" H 4740 7081 50  0000 L CNN
 F 1 "74LS257" H 4740 6990 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4510 7010 50  0001 C CNN
+F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 4510 7010 50  0001 C CNN
 F 3 "" H 4510 7010 50  0001 C CNN
 	2    4510 7010
 	1    0    0    -1  
@@ -604,7 +604,7 @@ U 1 1 5E9C487A
 P 3420 4930
 F 0 "U8" H 3420 5680 50  0000 C CNN
 F 1 "74LS257" H 3420 4060 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3420 4930 50  0001 C CNN
+F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 3420 4930 50  0001 C CNN
 F 3 "" H 3420 4930 50  0001 C CNN
 	1    3420 4930
 	1    0    0    -1  
@@ -628,7 +628,7 @@ U 1 1 5EA19058
 P 3420 2190
 F 0 "U7" H 3420 2940 50  0000 C CNN
 F 1 "74LS257" H 3420 1320 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 3420 2190 50  0001 C CNN
+F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 3420 2190 50  0001 C CNN
 F 3 "" H 3420 2190 50  0001 C CNN
 	1    3420 2190
 	1    0    0    -1  
@@ -806,7 +806,7 @@ AR Path="/5EACE220/618ABE98" Ref="U?"  Part="4"
 AR Path="/5E4A465A/618ABE98" Ref="U12"  Part="4" 
 F 0 "U12" H 6015 1965 50  0000 C CNN
 F 1 "74LS02" H 6015 1874 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6015 1640 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 6015 1640 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 6015 1640 50  0001 C CNN
 	4    6015 1640
 	1    0    0    -1  
