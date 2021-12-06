@@ -253,7 +253,7 @@ Connection ~ 6700 5490
 Wire Wire Line
 	6700 5490 6700 3090
 $Comp
-L Device:Ferrite_Bead_Small FB38
+L ferrite_bead_small:Ferrite_Bead_Small FB38
 U 1 1 5E9793EF
 P 6905 3390
 F 0 "FB38" V 6760 3390 50  0000 C CNN
@@ -266,7 +266,7 @@ $EndComp
 Wire Wire Line
 	6805 3390 6605 3390
 $Comp
-L Device:Ferrite_Bead_Small FB40
+L ferrite_bead_small:Ferrite_Bead_Small FB40
 U 1 1 5E979856
 P 4765 4090
 F 0 "FB40" V 4625 4090 50  0000 C CNN
@@ -291,7 +291,7 @@ PHI0
 Wire Wire Line
 	7440 3490 7205 3490
 $Comp
-L Device:Ferrite_Bead_Small FB39
+L ferrite_bead_small:Ferrite_Bead_Small FB39
 U 1 1 5E982F3B
 P 7105 3490
 F 0 "FB39" V 6960 3490 50  0000 C CNN

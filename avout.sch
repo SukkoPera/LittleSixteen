@@ -179,7 +179,7 @@ F 3 "" H 9260 1635 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small FB13
+L ferrite_bead_small:Ferrite_Bead_Small FB13
 U 1 1 5E03E255
 P 10050 2715
 F 0 "FB13" H 10150 2715 50  0000 L CNN
@@ -192,7 +192,7 @@ $EndComp
 Wire Wire Line
 	10050 2815 10050 2940
 $Comp
-L Device:Ferrite_Bead_Small FB12
+L ferrite_bead_small:Ferrite_Bead_Small FB12
 U 1 1 5E03F938
 P 10455 2315
 F 0 "FB12" V 10310 2315 50  0000 C CNN
@@ -203,7 +203,7 @@ F 3 "~" H 10455 2315 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small FB58
+L ferrite_bead_small:Ferrite_Bead_Small FB58
 U 1 1 5E040A9B
 P 10255 2215
 F 0 "FB58" V 10110 2215 50  0000 C CNN
@@ -1127,7 +1127,7 @@ $EndComp
 Wire Wire Line
 	9260 1730 9260 1635
 $Comp
-L Device:Ferrite_Bead_Small FB95
+L ferrite_bead_small:Ferrite_Bead_Small FB95
 U 1 1 61E4B6DF
 P 9260 2605
 F 0 "FB95" H 9066 2605 50  0000 R CNN
