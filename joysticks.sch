@@ -51,7 +51,7 @@ U 1 1 5E19A869
 P 8195 4480
 F 0 "D10" H 8330 4520 50  0000 C CNN
 F 1 "1N914" H 8355 4640 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4305 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4305 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4480 50  0001 C CNN
 	1    8195 4480
 	1    0    0    -1  
@@ -62,7 +62,7 @@ U 1 1 5E19A84C
 P 8510 4775
 F 0 "D9" H 8625 4810 50  0000 C CNN
 F 1 "1N914" H 8510 4901 50  0001 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4600 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4600 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4775 50  0001 C CNN
 	1    8510 4775
 	1    0    0    -1  
@@ -73,7 +73,7 @@ U 1 1 5E19A842
 P 8195 4680
 F 0 "D8" H 8305 4720 50  0000 C CNN
 F 1 "1N914" H 8195 4455 50  0001 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4505 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4505 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4680 50  0001 C CNN
 	1    8195 4680
 	1    0    0    -1  
@@ -84,7 +84,7 @@ U 1 1 5E19A838
 P 8195 4980
 F 0 "D7" H 8305 5025 50  0000 C CNN
 F 1 "1N914" H 8195 5105 50  0001 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4805 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4805 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4980 50  0001 C CNN
 	1    8195 4980
 	1    0    0    -1  
@@ -276,7 +276,7 @@ U 1 1 5E07A0F3
 P 8195 1805
 F 0 "D5" H 8305 1845 50  0000 C CNN
 F 1 "1N914" H 8365 1950 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1630 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1630 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 1805 50  0001 C CNN
 	1    8195 1805
 	1    0    0    -1  
@@ -411,7 +411,7 @@ U 1 1 5E03D308
 P 8195 2005
 F 0 "D3" H 8305 2045 50  0000 C CNN
 F 1 "1N914" H 8195 1790 50  0001 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1830 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1830 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2005 50  0001 C CNN
 	1    8195 2005
 	1    0    0    -1  
@@ -728,7 +728,7 @@ U 1 1 5E037618
 P 8510 1900
 F 0 "D1" H 8625 1940 50  0000 C CNN
 F 1 "1N914" H 8510 2025 50  0001 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1725 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1725 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 1900 50  0001 C CNN
 	1    8510 1900
 	1    0    0    -1  
@@ -1257,7 +1257,7 @@ U 1 1 5E19A82E
 P 8510 4580
 F 0 "D6" H 8625 4625 50  0000 C CNN
 F 1 "1N914" H 8510 4705 50  0001 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4405 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4405 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4580 50  0001 C CNN
 	1    8510 4580
 	1    0    0    -1  
@@ -1374,7 +1374,7 @@ U 1 1 5E03AEE2
 P 8195 2305
 F 0 "D2" H 8305 2345 50  0000 C CNN
 F 1 "1N914" H 8195 2430 50  0001 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 2130 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 2130 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2305 50  0001 C CNN
 	1    8195 2305
 	1    0    0    -1  
@@ -1421,7 +1421,7 @@ U 1 1 5E03D312
 P 8510 2105
 F 0 "D4" H 8625 2145 50  0000 C CNN
 F 1 "1N914" H 8510 2231 50  0001 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1930 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1930 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 2105 50  0001 C CNN
 	1    8510 2105
 	1    0    0    -1  
