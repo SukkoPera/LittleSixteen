@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 12
 Title "LittleSixteen"
-Date "2021-12-05"
+Date "2021-12-06"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -610,17 +610,6 @@ Wire Wire Line
 	3840 4695 3935 4695
 Wire Wire Line
 	3935 4280 3935 4695
-$Comp
-L power_switch:SW_DPDT_x2 SW1
-U 1 1 62A43028
-P 4590 1110
-F 0 "SW1" H 4590 785 50  0000 C CNN
-F 1 "POWER_SWITCH" H 4590 876 50  0000 C CNN
-F 2 "LittleSixteen:C64_PowerSwitch" H 4590 1110 50  0001 C CNN
-F 3 "~" H 4590 1110 50  0001 C CNN
-	1    4590 1110
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	2450 1010 2450 1335
 Wire Wire Line
@@ -849,11 +838,6 @@ Wire Wire Line
 	5545 1435 6050 1435
 Wire Wire Line
 	4245 1335 4330 1335
-Wire Wire Line
-	4330 1335 4330 1110
-Wire Wire Line
-	4330 1110 4390 1110
-NoConn ~ 4790 1210
 Wire Wire Line
 	5545 1010 5195 1010
 Wire Wire Line
@@ -1129,4 +1113,59 @@ F 3 "~" H 10750 2295 50  0001 C CNN
 	1    10750 2295
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 61B2AE72
+P 5375 810
+AR Path="/5E4A81E1/61B2AE72" Ref="R?"  Part="1" 
+AR Path="/5EACE220/61B2AE72" Ref="R96"  Part="1" 
+F 0 "R96" V 5582 810 50  0000 C CNN
+F 1 "10 2.5W" V 5491 810 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 5305 810 50  0001 C CNN
+F 3 "~" H 5375 810 50  0001 C CNN
+	1    5375 810 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4330 910  4390 910 
+Wire Wire Line
+	4330 910  4330 1335
+$Comp
+L power_switch:SW_DPDT_x2 SW1
+U 1 1 62A43028
+P 4590 910
+F 0 "SW1" H 4590 585 50  0000 C CNN
+F 1 "POWER_SWITCH" H 4590 676 50  0000 C CNN
+F 2 "LittleSixteen:C64_PowerSwitch" H 4590 910 50  0001 C CNN
+F 3 "~" H 4590 910 50  0001 C CNN
+	1    4590 910 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0231
+U 1 1 61B592D5
+P 5620 860
+F 0 "#PWR0231" H 5620 610 50  0001 C CNN
+F 1 "GND" H 5755 805 50  0000 C CNN
+F 2 "" H 5620 860 50  0001 C CNN
+F 3 "" H 5620 860 50  0001 C CNN
+	1    5620 860 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 810  5620 810 
+Wire Wire Line
+	5620 810  5620 860 
+Wire Wire Line
+	5225 810  4790 810 
+Text Notes 5190 745  2    50   ~ 0
+BLEEDING RESISTOR\nTO DISCHARGE CAPS\nIN POWER SUPPLY
+Wire Notes Line
+	5205 510  5205 890 
+Wire Notes Line
+	5205 890  5560 890 
+Wire Notes Line
+	5560 890  5560 510 
+Wire Notes Line
+	5560 510  5205 510 
 $EndSCHEMATC
