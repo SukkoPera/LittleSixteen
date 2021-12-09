@@ -42,6 +42,7 @@ F 0 "RP5" H 6018 4141 50  0000 L CNN
 F 1 "3.3k" H 6018 4050 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 6105 4095 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5730 4095 50  0001 C CNN
+F 4 "Bussed" H 5730 4095 50  0001 C CNN "Notes"
 	1    5730 4095
 	1    0    0    -1  
 $EndComp
