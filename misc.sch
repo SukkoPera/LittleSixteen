@@ -533,17 +533,6 @@ The TSR 2-2450 has a wide input range (6.5 - 36 VDC, 12 VDC nom.)\nand is able t
 Text Notes 4880 2430 0    50   ~ 0
 RECOMMENDED\nX5R/X7R\nCERAMIC
 $Comp
-L power_switch:SW_DPDT_x2 SW1
-U 2 1 62A43AA2
-P 6330 1860
-F 0 "SW1" H 6330 2053 50  0000 C CNN
-F 1 "POWER_SWITCH" H 6330 2144 50  0000 C CNN
-F 2 "LittleSixteen:C64_PowerSwitch" H 6330 1860 50  0001 C CNN
-F 3 "~" H 6330 1860 50  0001 C CNN
-	2    6330 1860
-	1    0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0197
 U 1 1 62A6B46E
 P 10280 2520
@@ -830,7 +819,7 @@ F 3 "~" H 6860 1760 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6530 1760 6710 1760
+	6625 1760 6665 1760
 Wire Wire Line
 	5545 1375 5545 1435
 Connection ~ 5545 1435
@@ -869,7 +858,7 @@ $EndComp
 Wire Wire Line
 	5875 1535 5875 1860
 Wire Wire Line
-	5875 1860 6130 1860
+	5875 1860 6225 1860
 Wire Wire Line
 	5545 1535 5875 1535
 $Comp
@@ -885,7 +874,6 @@ F 3 "" H 6050 1510 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6050 1435 6050 1510
-NoConn ~ 6530 1960
 Connection ~ 5545 2100
 Wire Wire Line
 	7250 2445 7250 2510
@@ -1128,19 +1116,6 @@ F 3 "~" H 5375 810 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4330 910  4390 910 
-Wire Wire Line
-	4330 910  4330 1335
-$Comp
-L power_switch:SW_DPDT_x2 SW1
-U 1 1 62A43028
-P 4590 910
-F 0 "SW1" H 4590 585 50  0000 C CNN
-F 1 "POWER_SWITCH" H 4590 676 50  0000 C CNN
-F 2 "LittleSixteen:C64_PowerSwitch" H 4590 910 50  0001 C CNN
-F 3 "~" H 4590 910 50  0001 C CNN
-	1    4590 910 
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0231
 U 1 1 61B592D5
@@ -1156,10 +1131,6 @@ Wire Wire Line
 	5525 810  5620 810 
 Wire Wire Line
 	5620 810  5620 860 
-Wire Wire Line
-	5225 810  4790 810 
-Text Notes 5190 745  2    50   ~ 0
-BLEEDING RESISTOR\nTO DISCHARGE CAPS\nIN POWER SUPPLY
 Wire Notes Line
 	5205 510  5205 890 
 Wire Notes Line
@@ -1168,4 +1139,57 @@ Wire Notes Line
 	5560 890  5560 510 
 Wire Notes Line
 	5560 510  5205 510 
+Wire Wire Line
+	4390 1110 4330 1110
+Wire Wire Line
+	4330 1110 4330 1335
+Wire Wire Line
+	4330 910  4330 810 
+Wire Wire Line
+	4330 810  5225 810 
+Text Notes 5190 745  2    50   ~ 0
+BLEEDING RESISTOR\nTO DISCHARGE CAPS\nON POWER DOWN
+$Comp
+L power_switch:SW_DPDT_x2 SW1
+U 1 1 62A43028
+P 4590 1010
+F 0 "SW1" H 4990 870 50  0000 C CNN
+F 1 "POWER_SWITCH" H 5170 955 50  0000 C CNN
+F 2 "LittleSixteen:C64_PowerSwitch" H 4590 1010 50  0001 C CNN
+F 3 "~" H 4590 1010 50  0001 C CNN
+	1    4590 1010
+	-1   0    0    1   
+$EndComp
+$Comp
+L power_switch:SW_DPDT_x2 SW1
+U 2 1 62A43AA2
+P 6425 1760
+F 0 "SW1" H 6425 1970 50  0000 C CNN
+F 1 "POWER_SWITCH" H 6425 2065 50  0000 C CNN
+F 2 "LittleSixteen:C64_PowerSwitch" H 6425 1760 50  0001 C CNN
+F 3 "~" H 6425 1760 50  0001 C CNN
+	2    6425 1760
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6225 1660 6180 1660
+Wire Wire Line
+	6180 1660 6180 1540
+Wire Wire Line
+	6180 1540 6665 1540
+Wire Wire Line
+	6665 1540 6665 1760
+Connection ~ 6665 1760
+Wire Wire Line
+	6665 1760 6710 1760
+Text Notes 6170 1470 0    50   ~ 0
+THIS ODD CONNECTION\nMAKES ROUTING EASIER
+Wire Notes Line
+	6150 1285 6150 1810
+Wire Notes Line
+	6150 1810 6720 1810
+Wire Notes Line
+	6720 1810 6720 1505
+Wire Notes Line
+	6720 1505 6150 1505
 $EndSCHEMATC
