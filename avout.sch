@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 12 12
 Title "LittleSixteen"
-Date "2021-11-29"
-Rev "3git"
+Date "2022-01-14"
+Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 "WARNING: These schematics might contain errors!"
@@ -27,31 +27,16 @@ $EndComp
 $Comp
 L Device:C C11
 U 1 1 5E01CA58
-P 6950 1240
-F 0 "C11" H 7065 1286 50  0000 L CNN
-F 1 "100n" H 7065 1195 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 6988 1090 50  0001 C CNN
-F 3 "~" H 6950 1240 50  0001 C CNN
-	1    6950 1240
+P 995 5580
+F 0 "C11" H 880 5626 50  0000 R CNN
+F 1 "100n" H 880 5535 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 1033 5430 50  0001 C CNN
+F 3 "~" H 995 5580 50  0001 C CNN
+	1    995  5580
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6950 1390 6950 2940
-Wire Wire Line
-	6950 2940 6480 2940
 Wire Wire Line
 	6010 2940 6010 2765
-$Comp
-L power:GND #PWR0177
-U 1 1 5E01E136
-P 6480 3085
-F 0 "#PWR0177" H 6480 2835 50  0001 C CNN
-F 1 "GND" H 6485 2912 50  0000 C CNN
-F 2 "" H 6480 3085 50  0001 C CNN
-F 3 "" H 6480 3085 50  0001 C CNN
-	1    6480 3085
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6480 3085 6480 2940
 Connection ~ 6480 2940
@@ -68,19 +53,6 @@ F 3 "~" H 6010 1220 50  0001 C CNN
 	1    6010 1220
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR0178
-U 1 1 5E021287
-P 6480 865
-F 0 "#PWR0178" H 6480 715 50  0001 C CNN
-F 1 "VCC" H 6497 1038 50  0000 C CNN
-F 2 "" H 6480 865 50  0001 C CNN
-F 3 "" H 6480 865 50  0001 C CNN
-	1    6480 865 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6480 865  6480 950 
 $Comp
 L Device:EMI_Filter_LCL EM5
 U 1 1 5E029075
@@ -136,9 +108,6 @@ Wire Wire Line
 	7900 2165 9150 2165
 Wire Wire Line
 	7600 2365 7600 2940
-Wire Wire Line
-	7600 2940 6950 2940
-Connection ~ 6950 2940
 Wire Wire Line
 	8135 2665 8135 2940
 Wire Wire Line
@@ -458,17 +427,6 @@ Wire Wire Line
 	4440 2935 4620 2935
 Wire Wire Line
 	4620 2935 4620 3015
-$Comp
-L power:GND #PWR0182
-U 1 1 5E0D9522
-P 4620 3405
-F 0 "#PWR0182" H 4620 3155 50  0001 C CNN
-F 1 "GND" H 4625 3232 50  0000 C CNN
-F 2 "" H 4620 3405 50  0001 C CNN
-F 3 "" H 4620 3405 50  0001 C CNN
-	1    4620 3405
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4620 3405 4620 3315
 $Comp
@@ -500,17 +458,6 @@ Wire Wire Line
 	5110 2935 5290 2935
 Wire Wire Line
 	5290 2935 5290 3015
-$Comp
-L power:GND #PWR0183
-U 1 1 5E0E032C
-P 5290 3405
-F 0 "#PWR0183" H 5290 3155 50  0001 C CNN
-F 1 "GND" H 5295 3232 50  0000 C CNN
-F 2 "" H 5290 3405 50  0001 C CNN
-F 3 "" H 5290 3405 50  0001 C CNN
-	1    5290 3405
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5290 3405 5290 3315
 Connection ~ 5290 2935
@@ -542,15 +489,6 @@ Text Notes 10230 2500 0    50   ~ 0
 AUDIO_OUT
 Text Notes 8230 1375 0    50   ~ 0
 From C64-Wiki (C64 uses the same connector):\n\nThe eight pin jack is *not* the more common DIN 45326\n(pins spanning 270°, circular like a horseshoe), but\nDIN 41524 (pins spanning 262°, a "U" shape with a more\nopen end). It's possible to forcibly plug in a wrong plug into\nthe jack, but one should get the right plug in the first place\non a new purchase. Should you happen to get the wrong\nplug and wasn't planning to use the +5V pin then you can\nremove the upper two pins out for a perfect fit.
-Wire Wire Line
-	6480 950  6950 950 
-Connection ~ 6480 950 
-Wire Wire Line
-	6950 950  6950 1090
-Wire Wire Line
-	6480 950  6010 950 
-Wire Wire Line
-	6010 950  6010 1070
 Wire Wire Line
 	6010 1370 6010 1420
 $Comp
@@ -604,17 +542,6 @@ F 3 "~" H 2130 5395 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2880 5855 2880 5950
-$Comp
-L power:GND #PWR083
-U 1 1 61A1F11D
-P 2880 5950
-F 0 "#PWR083" H 2880 5700 50  0001 C CNN
-F 1 "GND" H 2885 5777 50  0000 C CNN
-F 2 "" H 2880 5950 50  0001 C CNN
-F 3 "" H 2880 5950 50  0001 C CNN
-	1    2880 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2695 5150 2880 5150
 $Comp
@@ -856,17 +783,6 @@ Wire Wire Line
 	7205 5395 7365 5395
 Wire Wire Line
 	6905 5395 6775 5395
-$Comp
-L power:GND #PWR084
-U 1 1 61AA2886
-P 9485 6100
-F 0 "#PWR084" H 9485 5850 50  0001 C CNN
-F 1 "GND" H 9490 5927 50  0000 C CNN
-F 2 "" H 9485 6100 50  0001 C CNN
-F 3 "" H 9485 6100 50  0001 C CNN
-	1    9485 6100
-	1    0    0    -1  
-$EndComp
 Text GLabel 5425 5395 2    50   Output ~ 0
 COLOR_OUT
 $Comp
@@ -970,17 +886,6 @@ Wire Wire Line
 	5720 6935 5720 6860
 Wire Wire Line
 	5720 7320 5720 7235
-$Comp
-L power:GND #PWR085
-U 1 1 61B1B1F1
-P 5720 7320
-F 0 "#PWR085" H 5720 7070 50  0001 C CNN
-F 1 "GND" H 5725 7147 50  0000 C CNN
-F 2 "" H 5720 7320 50  0001 C CNN
-F 3 "" H 5720 7320 50  0001 C CNN
-	1    5720 7320
-	1    0    0    -1  
-$EndComp
 Connection ~ 5720 6860
 Wire Wire Line
 	5720 6860 6250 6860
@@ -997,29 +902,18 @@ Wire Wire Line
 $Comp
 L Device:CP1 C83
 U 1 1 61BCB802
-P 960 5485
-F 0 "C83" H 845 5531 50  0000 R CNN
-F 1 "100u/25V" H 845 5440 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 960 5485 50  0001 C CNN
-F 3 "~" H 960 5485 50  0001 C CNN
-	1    960  5485
+P 1260 5580
+F 0 "C83" H 1145 5626 50  0000 R CNN
+F 1 "100u/25V" H 1145 5535 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1260 5580 50  0001 C CNN
+F 3 "~" H 1260 5580 50  0001 C CNN
+	1    1260 5580
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	960  5250 960  5335
+	1130 5345 1130 5385
 Wire Wire Line
-	960  5635 960  5730
-$Comp
-L power:GND #PWR087
-U 1 1 61BD4A62
-P 960 5730
-F 0 "#PWR087" H 960 5480 50  0001 C CNN
-F 1 "GND" H 965 5557 50  0000 C CNN
-F 2 "" H 960 5730 50  0001 C CNN
-F 3 "" H 960 5730 50  0001 C CNN
-	1    960  5730
-	1    0    0    -1  
-$EndComp
+	1260 5730 1260 5775
 Wire Wire Line
 	7040 2465 7040 1500
 Wire Wire Line
@@ -1065,12 +959,12 @@ Wire Wire Line
 $Comp
 L power:VDD #PWR0200
 U 1 1 61C8FCEC
-P 960 5250
-F 0 "#PWR0200" H 960 5100 50  0001 C CNN
-F 1 "VDD" H 975 5423 50  0000 C CNN
-F 2 "" H 960 5250 50  0001 C CNN
-F 3 "" H 960 5250 50  0001 C CNN
-	1    960  5250
+P 1130 5345
+F 0 "#PWR0200" H 1130 5195 50  0001 C CNN
+F 1 "VDD" H 1145 5518 50  0000 C CNN
+F 2 "" H 1130 5345 50  0001 C CNN
+F 3 "" H 1130 5345 50  0001 C CNN
+	1    1130 5345
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1149,4 +1043,155 @@ Wire Notes Line
 	8825 2835 8825 1700
 Text Notes 9285 3260 2    50   ~ 0
 ADDITIONAL CURRENT-\nLIMITING RESISTOR AND\nEMI-PROTECTION FERRITE
+$Comp
+L power:GNDA #PWR0232
+U 1 1 61E6D037
+P 2880 5950
+F 0 "#PWR0232" H 2880 5700 50  0001 C CNN
+F 1 "GNDA" H 2885 5777 50  0000 C CNN
+F 2 "" H 2880 5950 50  0001 C CNN
+F 3 "" H 2880 5950 50  0001 C CNN
+	1    2880 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0233
+U 1 1 61E7DA1B
+P 1130 5825
+F 0 "#PWR0233" H 1130 5575 50  0001 C CNN
+F 1 "GNDA" H 1135 5652 50  0000 C CNN
+F 2 "" H 1130 5825 50  0001 C CNN
+F 3 "" H 1130 5825 50  0001 C CNN
+	1    1130 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0234
+U 1 1 61E85F57
+P 5720 7320
+F 0 "#PWR0234" H 5720 7070 50  0001 C CNN
+F 1 "GNDA" H 5725 7147 50  0000 C CNN
+F 2 "" H 5720 7320 50  0001 C CNN
+F 3 "" H 5720 7320 50  0001 C CNN
+	1    5720 7320
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0235
+U 1 1 61E86672
+P 9485 6100
+F 0 "#PWR0235" H 9485 5850 50  0001 C CNN
+F 1 "GNDA" H 9490 5927 50  0000 C CNN
+F 2 "" H 9485 6100 50  0001 C CNN
+F 3 "" H 9485 6100 50  0001 C CNN
+	1    9485 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0236
+U 1 1 61E8FEF8
+P 4245 7445
+F 0 "#PWR0236" H 4245 7195 50  0001 C CNN
+F 1 "GNDA" H 4250 7272 50  0000 C CNN
+F 2 "" H 4245 7445 50  0001 C CNN
+F 3 "" H 4245 7445 50  0001 C CNN
+	1    4245 7445
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0237
+U 1 1 61E90996
+P 3740 7445
+F 0 "#PWR0237" H 3740 7195 50  0001 C CNN
+F 1 "GND" H 3745 7272 50  0000 C CNN
+F 2 "" H 3740 7445 50  0001 C CNN
+F 3 "" H 3740 7445 50  0001 C CNN
+	1    3740 7445
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3740 7445 3740 7345
+Wire Wire Line
+	3740 7345 3835 7345
+$Comp
+L Device:L L80
+U 1 1 61E8F0DE
+P 3985 7345
+F 0 "L80" V 4175 7345 50  0000 C CNN
+F 1 "10u" V 4084 7345 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC" H 3985 7345 50  0001 C CNN
+F 3 "~" H 3985 7345 50  0001 C CNN
+	1    3985 7345
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4135 7345 4245 7345
+Wire Wire Line
+	4245 7345 4245 7445
+$Comp
+L power:GND #PWR0183
+U 1 1 5E0E032C
+P 5290 3405
+F 0 "#PWR0183" H 5290 3155 50  0001 C CNN
+F 1 "GND" H 5295 3232 50  0000 C CNN
+F 2 "" H 5290 3405 50  0001 C CNN
+F 3 "" H 5290 3405 50  0001 C CNN
+	1    5290 3405
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0182
+U 1 1 5E0D9522
+P 4620 3405
+F 0 "#PWR0182" H 4620 3155 50  0001 C CNN
+F 1 "GND" H 4625 3232 50  0000 C CNN
+F 2 "" H 4620 3405 50  0001 C CNN
+F 3 "" H 4620 3405 50  0001 C CNN
+	1    4620 3405
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0177
+U 1 1 5E01E136
+P 6480 3085
+F 0 "#PWR0177" H 6480 2835 50  0001 C CNN
+F 1 "GND" H 6485 2912 50  0000 C CNN
+F 2 "" H 6480 3085 50  0001 C CNN
+F 3 "" H 6480 3085 50  0001 C CNN
+	1    6480 3085
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	995  5430 995  5385
+Wire Wire Line
+	995  5385 1130 5385
+Wire Wire Line
+	1260 5385 1260 5430
+Connection ~ 1130 5385
+Wire Wire Line
+	1130 5385 1260 5385
+Wire Wire Line
+	995  5730 995  5775
+Wire Wire Line
+	995  5775 1130 5775
+Wire Wire Line
+	1130 5775 1130 5825
+Connection ~ 1130 5775
+Wire Wire Line
+	1130 5775 1260 5775
+Wire Wire Line
+	6480 2940 7600 2940
+$Comp
+L power:VCC #PWR0178
+U 1 1 5E021287
+P 6010 975
+F 0 "#PWR0178" H 6010 825 50  0001 C CNN
+F 1 "VCC" H 6027 1148 50  0000 C CNN
+F 2 "" H 6010 975 50  0001 C CNN
+F 3 "" H 6010 975 50  0001 C CNN
+	1    6010 975 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6010 975  6010 1070
 $EndSCHEMATC
