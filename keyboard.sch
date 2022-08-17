@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 12
 Title "LittleSixteen"
-Date "2021-11-02"
+Date "2022-08-17"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L MOS_6529:MOS_6529 U13
 U 1 1 5DECF108
-P 5510 3200
-F 0 "U13" H 5510 4015 50  0000 C CNN
-F 1 "MOS_6529" H 5510 3924 50  0000 C CNN
-F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 5510 3200 50  0001 C CNN
-F 3 "DOCUMENTATION" H 5510 3200 50  0001 C CNN
-	1    5510 3200
+P 5080 2295
+F 0 "U13" H 5080 3110 50  0000 C CNN
+F 1 "MOS_6529" H 5080 3019 50  0000 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 5080 2295 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5080 2295 50  0001 C CNN
+	1    5080 2295
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -93,456 +93,724 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x20_Male CN2
 U 1 1 5DED69BA
-P 8910 3320
-F 0 "CN2" H 9018 4401 50  0000 C CNN
-F 1 "KEYBOARD_HEADER" H 9018 4310 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 8910 3320 50  0001 C CNN
-F 3 "~" H 8910 3320 50  0001 C CNN
-	1    8910 3320
+P 9620 2415
+F 0 "CN2" H 9728 3496 50  0000 C CNN
+F 1 "KEYBOARD_HEADER" H 9728 3405 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 9620 2415 50  0001 C CNN
+F 3 "~" H 9620 2415 50  0001 C CNN
+	1    9620 2415
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8710 4320 8445 4320
-Text Label 7775 2620 2    50   ~ 0
+	9420 3415 9155 3415
+Text Label 8485 1715 2    50   ~ 0
 k7
-Text Label 7775 3320 2    50   ~ 0
+Text Label 8485 2415 2    50   ~ 0
 k6
-Text Label 7775 3220 2    50   ~ 0
+Text Label 8485 2315 2    50   ~ 0
 k5
-Text Label 7775 4020 2    50   ~ 0
+Text Label 8485 3115 2    50   ~ 0
 k3
-Text Label 7775 3720 2    50   ~ 0
+Text Label 8485 2815 2    50   ~ 0
 k2
-Text Label 7775 3820 2    50   ~ 0
+Text Label 8485 2915 2    50   ~ 0
 k1
-Text Notes 8975 3440 0    50   ~ 0
+Text Notes 9685 2535 0    50   ~ 0
 Pin 2: Key (Missing)\nPins 5, 20: NC\nMale
-Text Label 7775 4120 2    50   ~ 0
+Text Label 8485 3215 2    50   ~ 0
 k0
 Wire Wire Line
-	6260 3020 6880 3020
+	7590 2115 7590 3315
 Wire Wire Line
-	6880 3020 6880 4220
+	7770 2315 7770 2615
 Wire Wire Line
-	7060 3220 7060 3520
+	7770 2615 8920 2615
 Wire Wire Line
-	7060 3520 8210 3520
+	5830 2415 6165 2415
 Wire Wire Line
-	6260 3320 6970 3320
+	7680 2415 7680 2515
 Wire Wire Line
-	6970 3320 6970 3420
+	7680 2515 8705 2515
 Wire Wire Line
-	6970 3420 7995 3420
-Wire Wire Line
-	6700 2420 8000 2420
-NoConn ~ 8710 2520
+	7410 1515 8710 1515
+NoConn ~ 9420 1615
 $Comp
 L power:GND #PWR0105
 U 1 1 5DEF35D1
-P 8590 4470
-F 0 "#PWR0105" H 8590 4220 50  0001 C CNN
-F 1 "GND" H 8595 4297 50  0000 C CNN
-F 2 "" H 8590 4470 50  0001 C CNN
-F 3 "" H 8590 4470 50  0001 C CNN
-	1    8590 4470
+P 9300 3565
+F 0 "#PWR0105" H 9300 3315 50  0001 C CNN
+F 1 "GND" H 9305 3392 50  0000 C CNN
+F 2 "" H 9300 3565 50  0001 C CNN
+F 3 "" H 9300 3565 50  0001 C CNN
+	1    9300 3565
 	1    0    0    -1  
 $EndComp
-Text Notes 3745 3655 2    50   ~ 0
-According to Wikipedia, "it is rather clear that the 6529 is just a\nrelabeled 74(LS)639 bidirectional three-state/open-Collector-bus\ndriver. [...]\n\nIf Open-Collector-Output at A-Side is NOT necessary (e.g. for input\nonly application like in Commodore C16 Keyboard-Scanner) 74LS245,\nwhich is available much more easily today will also do."
 Entry Wire Line
-	7425 3220 7525 3320
+	8135 2315 8235 2415
 Entry Wire Line
-	7425 3120 7525 3220
+	8135 2215 8235 2315
 Wire Wire Line
-	7255 3120 7255 3070
+	7965 2215 7965 2165
 Wire Wire Line
-	7255 3070 7525 3070
+	7965 2165 8235 2165
 Wire Wire Line
-	7525 3070 7525 3120
+	8235 2165 8235 2215
 Wire Wire Line
-	7525 3120 8240 3120
+	8235 2215 8950 2215
 Entry Wire Line
-	7425 3620 7525 3720
+	8135 2715 8235 2815
 Entry Wire Line
-	7425 3720 7525 3820
+	8135 2815 8235 2915
 Entry Wire Line
-	7425 3920 7525 4020
+	8135 3015 8235 3115
 Entry Wire Line
-	7425 4020 7525 4120
+	8135 3115 8235 3215
 Wire Wire Line
-	6880 4220 8000 4220
+	7590 3315 8710 3315
 Wire Wire Line
-	6790 3620 7255 3620
+	7500 2715 7965 2715
 Wire Wire Line
-	7255 3620 7255 3570
+	7965 2715 7965 2665
 Wire Wire Line
-	7255 3570 7525 3570
+	7965 2665 8235 2665
 Wire Wire Line
-	7525 3570 7525 3620
+	8235 2665 8235 2715
 Wire Wire Line
-	7525 3620 7995 3620
+	8235 2715 8705 2715
 Wire Wire Line
-	6700 3920 7255 3920
+	7410 3015 7965 3015
 Wire Wire Line
-	7255 3920 7255 3860
+	7965 3015 7965 2955
 Wire Wire Line
-	7255 3860 7525 3860
+	7965 2955 8235 2955
 Wire Wire Line
-	7525 3860 7525 3920
+	8235 2955 8235 3015
 Wire Wire Line
-	7525 3920 8235 3920
-Text GLabel 8925 4755 2    50   Output ~ 0
+	8235 3015 8945 3015
+Text GLabel 9635 3850 2    50   Output ~ 0
 k[0..7]
 Wire Wire Line
-	4760 3020 4005 3020
+	5830 2515 6245 2515
 Wire Wire Line
-	4760 3320 4005 3320
+	7500 2515 7500 2715
 Wire Wire Line
-	4760 3420 4005 3420
+	5830 2615 6330 2615
 Wire Wire Line
-	4760 3520 4005 3520
+	7410 1515 7410 2615
 Wire Wire Line
-	4760 3620 4005 3620
+	7410 2715 7410 3015
 Wire Wire Line
-	4760 3720 4005 3720
+	7310 2015 7310 2815
 Wire Wire Line
-	6260 3420 6790 3420
-Wire Wire Line
-	6790 3420 6790 3620
-Wire Wire Line
-	6260 3520 6700 3520
-Wire Wire Line
-	6700 2420 6700 3520
-Wire Wire Line
-	6260 3620 6700 3620
-Wire Wire Line
-	6700 3620 6700 3920
-Wire Wire Line
-	6260 3720 6595 3720
-Wire Wire Line
-	6595 2920 6595 3720
-Text Label 4060 3020 0    50   ~ 0
-d0
-Text Label 4060 3120 0    50   ~ 0
-d1
-Text Label 4060 3220 0    50   ~ 0
-d2
-Text Label 4060 3320 0    50   ~ 0
-d3
-Text Label 4060 3420 0    50   ~ 0
-d4
-Text Label 4060 3520 0    50   ~ 0
-d5
-Text Label 4060 3620 0    50   ~ 0
-d6
-Text Label 4060 3720 0    50   ~ 0
-d7
-Entry Wire Line
-	3905 2920 4005 3020
-Entry Wire Line
-	3905 3020 4005 3120
-Entry Wire Line
-	3905 3120 4005 3220
-Entry Wire Line
-	3905 3220 4005 3320
-Entry Wire Line
-	3905 3320 4005 3420
-Entry Wire Line
-	3905 3420 4005 3520
-Entry Wire Line
-	3905 3520 4005 3620
-Entry Wire Line
-	3905 3620 4005 3720
-Wire Bus Line
-	3205 2920 3905 2920
-Text GLabel 3205 2920 0    50   Input ~ 0
-d[0..7]
-Wire Wire Line
-	4760 2680 4305 2680
-Wire Wire Line
-	4760 2780 4515 2780
-Text GLabel 4305 2680 0    50   Input ~ 0
+	4330 1775 4275 1775
+Text GLabel 3875 1775 0    50   Input ~ 0
 KEYPORT_CS
-Text GLabel 4515 2780 0    50   Input ~ 0
-R_~W
 Wire Bus Line
-	7425 4755 8925 4755
+	8135 3850 9635 3850
 Entry Wire Line
-	7425 2520 7525 2620
+	8135 1615 8235 1715
 Wire Wire Line
-	8710 2620 8210 2620
+	9420 1715 8920 1715
 Wire Wire Line
-	7525 3220 8020 3220
+	8235 2315 8730 2315
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB46
 U 1 1 5E275829
-P 8100 2420
-F 0 "FB46" V 7955 2420 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 7954 2420 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8030 2420 50  0001 C CNN
-F 3 "~" H 8100 2420 50  0001 C CNN
-	1    8100 2420
+P 8810 1515
+F 0 "FB46" V 8665 1515 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8664 1515 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8740 1515 50  0001 C CNN
+F 3 "~" H 8810 1515 50  0001 C CNN
+	1    8810 1515
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8200 2420 8710 2420
+	8910 1515 9420 1515
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB56
 U 1 1 5E277735
-P 8110 2620
-F 0 "FB56" V 7965 2620 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 7964 2620 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8040 2620 50  0001 C CNN
-F 3 "~" H 8110 2620 50  0001 C CNN
-	1    8110 2620
+P 8820 1715
+F 0 "FB56" V 8675 1715 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8674 1715 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8750 1715 50  0001 C CNN
+F 3 "~" H 8820 1715 50  0001 C CNN
+	1    8820 1715
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8710 2820 8445 2820
+	9420 1915 9155 1915
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB53
 U 1 1 5E279505
-P 8110 3020
-F 0 "FB53" V 7965 3020 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 7964 3020 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8040 3020 50  0001 C CNN
-F 3 "~" H 8110 3020 50  0001 C CNN
-	1    8110 3020
+P 8820 2115
+F 0 "FB53" V 8675 2115 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8674 2115 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8750 2115 50  0001 C CNN
+F 3 "~" H 8820 2115 50  0001 C CNN
+	1    8820 2115
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8210 3020 8710 3020
+	8920 2115 9420 2115
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB54
 U 1 1 5E27AC84
-P 8120 3220
-F 0 "FB54" V 7975 3220 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 7974 3220 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8050 3220 50  0001 C CNN
-F 3 "~" H 8120 3220 50  0001 C CNN
-	1    8120 3220
+P 8830 2315
+F 0 "FB54" V 8685 2315 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8684 2315 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8760 2315 50  0001 C CNN
+F 3 "~" H 8830 2315 50  0001 C CNN
+	1    8830 2315
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8220 3220 8710 3220
+	8930 2315 9420 2315
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB44
 U 1 1 5E27B4EF
-P 8095 3420
-F 0 "FB44" V 7950 3420 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 7949 3420 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8025 3420 50  0001 C CNN
-F 3 "~" H 8095 3420 50  0001 C CNN
-	1    8095 3420
+P 8805 2515
+F 0 "FB44" V 8660 2515 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8659 2515 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8735 2515 50  0001 C CNN
+F 3 "~" H 8805 2515 50  0001 C CNN
+	1    8805 2515
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8195 3420 8710 3420
+	8905 2515 9420 2515
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB45
 U 1 1 5E27BE11
-P 8095 3620
-F 0 "FB45" V 7950 3620 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 7949 3620 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8025 3620 50  0001 C CNN
-F 3 "~" H 8095 3620 50  0001 C CNN
-	1    8095 3620
+P 8805 2715
+F 0 "FB45" V 8660 2715 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8659 2715 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8735 2715 50  0001 C CNN
+F 3 "~" H 8805 2715 50  0001 C CNN
+	1    8805 2715
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8195 3620 8710 3620
+	8905 2715 9420 2715
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB50
 U 1 1 5E27C5F0
-P 8105 3820
-F 0 "FB50" V 7960 3820 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 7959 3820 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8035 3820 50  0001 C CNN
-F 3 "~" H 8105 3820 50  0001 C CNN
-	1    8105 3820
+P 8815 2915
+F 0 "FB50" V 8670 2915 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8669 2915 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8745 2915 50  0001 C CNN
+F 3 "~" H 8815 2915 50  0001 C CNN
+	1    8815 2915
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8205 3820 8710 3820
+	8915 2915 9420 2915
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB52
 U 1 1 5E27CC99
-P 8105 4020
-F 0 "FB52" V 7960 4020 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 7959 4020 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8035 4020 50  0001 C CNN
-F 3 "~" H 8105 4020 50  0001 C CNN
-	1    8105 4020
+P 8815 3115
+F 0 "FB52" V 8670 3115 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8669 3115 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8745 3115 50  0001 C CNN
+F 3 "~" H 8815 3115 50  0001 C CNN
+	1    8815 3115
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8205 4020 8710 4020
+	8915 3115 9420 3115
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB41
 U 1 1 5E27D4CD
-P 8100 4220
-F 0 "FB41" V 8245 4220 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 7954 4220 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8030 4220 50  0001 C CNN
-F 3 "~" H 8100 4220 50  0001 C CNN
-	1    8100 4220
+P 8810 3315
+F 0 "FB41" V 8955 3315 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8664 3315 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8740 3315 50  0001 C CNN
+F 3 "~" H 8810 3315 50  0001 C CNN
+	1    8810 3315
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8200 4220 8710 4220
+	8910 3315 9420 3315
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB48
 U 1 1 5E27E7DF
-P 8320 2920
-F 0 "FB48" V 8175 2920 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8174 2920 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8250 2920 50  0001 C CNN
-F 3 "~" H 8320 2920 50  0001 C CNN
-	1    8320 2920
+P 9030 2015
+F 0 "FB48" V 8885 2015 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8884 2015 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8960 2015 50  0001 C CNN
+F 3 "~" H 9030 2015 50  0001 C CNN
+	1    9030 2015
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8420 2920 8710 2920
+	9130 2015 9420 2015
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB42
 U 1 1 5E27ED7A
-P 8340 3120
-F 0 "FB42" V 8195 3120 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8194 3120 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8270 3120 50  0001 C CNN
-F 3 "~" H 8340 3120 50  0001 C CNN
-	1    8340 3120
+P 9050 2215
+F 0 "FB42" V 8905 2215 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8904 2215 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8980 2215 50  0001 C CNN
+F 3 "~" H 9050 2215 50  0001 C CNN
+	1    9050 2215
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8440 3120 8710 3120
+	9150 2215 9420 2215
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB55
 U 1 1 5E27F5BE
-P 8330 3320
-F 0 "FB55" V 8185 3320 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8184 3320 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8260 3320 50  0001 C CNN
-F 3 "~" H 8330 3320 50  0001 C CNN
-	1    8330 3320
+P 9040 2415
+F 0 "FB55" V 8895 2415 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8894 2415 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8970 2415 50  0001 C CNN
+F 3 "~" H 9040 2415 50  0001 C CNN
+	1    9040 2415
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8430 3320 8710 3320
+	9140 2415 9420 2415
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB43
 U 1 1 5E27FD6B
-P 8310 3520
-F 0 "FB43" V 8165 3520 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8164 3520 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8240 3520 50  0001 C CNN
-F 3 "~" H 8310 3520 50  0001 C CNN
-	1    8310 3520
+P 9020 2615
+F 0 "FB43" V 8875 2615 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8874 2615 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8950 2615 50  0001 C CNN
+F 3 "~" H 9020 2615 50  0001 C CNN
+	1    9020 2615
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8410 3520 8710 3520
+	9120 2615 9420 2615
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB51
 U 1 1 5E280D1A
-P 8335 3720
-F 0 "FB51" V 8190 3720 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8189 3720 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8265 3720 50  0001 C CNN
-F 3 "~" H 8335 3720 50  0001 C CNN
-	1    8335 3720
+P 9045 2815
+F 0 "FB51" V 8900 2815 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8899 2815 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8975 2815 50  0001 C CNN
+F 3 "~" H 9045 2815 50  0001 C CNN
+	1    9045 2815
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8435 3720 8710 3720
+	9145 2815 9420 2815
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB47
 U 1 1 5E281382
-P 8335 3920
-F 0 "FB47" V 8190 3920 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8189 3920 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8265 3920 50  0001 C CNN
-F 3 "~" H 8335 3920 50  0001 C CNN
-	1    8335 3920
+P 9045 3015
+F 0 "FB47" V 8900 3015 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8899 3015 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8975 3015 50  0001 C CNN
+F 3 "~" H 9045 3015 50  0001 C CNN
+	1    9045 3015
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8435 3920 8710 3920
+	9145 3015 9420 3015
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB49
 U 1 1 5E2818F5
-P 8320 4120
-F 0 "FB49" V 8440 4120 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8174 4120 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8250 4120 50  0001 C CNN
-F 3 "~" H 8320 4120 50  0001 C CNN
-	1    8320 4120
+P 9030 3215
+F 0 "FB49" V 9150 3215 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 8884 3215 50  0001 C CNN
+F 2 "LittleSixteen:Ferrite" V 8960 3215 50  0001 C CNN
+F 3 "~" H 9030 3215 50  0001 C CNN
+	1    9030 3215
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8420 4120 8710 4120
+	9130 3215 9420 3215
 Wire Wire Line
-	8590 2720 8710 2720
+	9300 1815 9420 1815
 Entry Wire Line
-	7425 2920 7525 3020
-Text Label 7775 3020 2    50   ~ 0
+	8135 2015 8235 2115
+Text Label 8485 2115 2    50   ~ 0
 k4
 Wire Wire Line
-	7525 3020 8010 3020
+	8235 2115 8720 2115
 Wire Wire Line
-	8590 2720 8590 4470
+	9300 1815 9300 3565
 Wire Wire Line
-	7255 2920 7255 2860
+	7965 2015 7965 1955
 Wire Wire Line
-	7255 2860 7525 2860
+	7965 1955 8235 1955
 Wire Wire Line
-	7525 2860 7525 2920
+	8235 1955 8235 2015
 Wire Wire Line
-	6595 2920 7255 2920
+	7310 2015 7965 2015
 Wire Wire Line
-	7525 2920 8220 2920
-NoConn ~ 8445 2820
-NoConn ~ 8445 4320
+	8235 2015 8930 2015
+NoConn ~ 9155 1915
+NoConn ~ 9155 3415
 Wire Wire Line
-	7525 3320 8230 3320
+	8235 2415 8940 2415
 Wire Wire Line
-	7525 4120 8220 4120
+	8235 3215 8930 3215
 Wire Wire Line
-	7525 3820 8005 3820
+	8235 2915 8715 2915
 Wire Wire Line
-	7525 3720 8235 3720
+	8235 2815 8945 2815
 Wire Wire Line
-	7525 4020 8005 4020
+	8235 3115 8715 3115
 Wire Wire Line
-	7525 2620 8010 2620
+	8235 1715 8720 1715
 Wire Wire Line
-	4005 3220 4760 3220
+	5830 2215 6005 2215
 Wire Wire Line
-	4005 3120 4760 3120
+	6005 2215 6005 830 
 Wire Wire Line
-	6260 3220 6345 3220
+	6005 830  6800 830 
+Connection ~ 6005 2215
 Wire Wire Line
-	6260 3120 6435 3120
-Wire Wire Line
-	6435 3120 6435 1735
-Wire Wire Line
-	6435 1735 7230 1735
-Connection ~ 6435 3120
-Wire Wire Line
-	6435 3120 7255 3120
-Wire Wire Line
-	6345 3220 6345 1635
-Wire Wire Line
-	6345 1635 7230 1635
-Connection ~ 6345 3220
-Wire Wire Line
-	6345 3220 7060 3220
-Text GLabel 7230 1635 2    50   Output ~ 0
+	6005 2215 7965 2215
+Text GLabel 6800 945  2    50   Output ~ 0
 D2_LATCHED
-Text GLabel 7230 1735 2    50   Output ~ 0
+Text GLabel 6800 830  2    50   Output ~ 0
 D1_LATCHED
+Connection ~ 4275 1775
+Wire Wire Line
+	4275 1775 3875 1775
+Wire Wire Line
+	4330 2115 4185 2115
+Wire Wire Line
+	4330 2415 3930 2415
+Wire Wire Line
+	4330 2515 3855 2515
+Wire Wire Line
+	4330 2615 3775 2615
+Text Label 3245 2115 0    50   ~ 0
+d0
+Text Label 3245 2215 0    50   ~ 0
+d1
+Text Label 3245 2315 0    50   ~ 0
+d2
+Text Label 3245 2415 0    50   ~ 0
+d3
+Text Label 3245 2515 0    50   ~ 0
+d4
+Text Label 3245 2615 0    50   ~ 0
+d5
+Text Label 3245 2715 0    50   ~ 0
+d6
+Text Label 3245 2815 0    50   ~ 0
+d7
+Entry Wire Line
+	3090 2015 3190 2115
+Entry Wire Line
+	3090 2115 3190 2215
+Entry Wire Line
+	3090 2215 3190 2315
+Entry Wire Line
+	3090 2315 3190 2415
+Entry Wire Line
+	3090 2415 3190 2515
+Entry Wire Line
+	3090 2515 3190 2615
+Entry Wire Line
+	3090 2615 3190 2715
+Entry Wire Line
+	3090 2715 3190 2815
 Wire Bus Line
-	3905 2920 3905 3625
+	2390 2015 3090 2015
+Text GLabel 2390 2015 0    50   Input ~ 0
+d[0..7]
+Wire Wire Line
+	4330 1875 4095 1875
+Text GLabel 4095 1875 0    50   Input ~ 0
+R_~W
+Wire Wire Line
+	3190 2315 4010 2315
+Wire Wire Line
+	3190 2215 4095 2215
+Connection ~ 4185 2115
+Wire Wire Line
+	4185 2115 3190 2115
+Connection ~ 4095 2215
+Wire Wire Line
+	4095 2215 4330 2215
+Connection ~ 4010 2315
+Wire Wire Line
+	4010 2315 4330 2315
+Connection ~ 3930 2415
+Wire Wire Line
+	3930 2415 3190 2415
+Connection ~ 3855 2515
+Wire Wire Line
+	3855 2515 3190 2515
+Connection ~ 3775 2615
+Wire Wire Line
+	3775 2615 3190 2615
+Wire Wire Line
+	3190 2715 3690 2715
+Wire Wire Line
+	3190 2815 3605 2815
+Connection ~ 3690 2715
+Wire Wire Line
+	3690 2715 4330 2715
+Connection ~ 3605 2815
+Wire Wire Line
+	3605 2815 4330 2815
+Connection ~ 6165 2415
+Wire Wire Line
+	6165 2415 7680 2415
+Connection ~ 6245 2515
+Wire Wire Line
+	6245 2515 7500 2515
+Connection ~ 6520 2815
+Wire Wire Line
+	6520 2815 7310 2815
+Connection ~ 6330 2615
+Wire Wire Line
+	6330 2615 7410 2615
+Connection ~ 6425 2715
+Wire Wire Line
+	6425 2715 7410 2715
+Wire Wire Line
+	5830 2715 6425 2715
+Wire Wire Line
+	5830 2815 6520 2815
+Wire Wire Line
+	5830 2115 5915 2115
+Connection ~ 5915 2115
+Wire Wire Line
+	5830 2315 6085 2315
+Wire Wire Line
+	6085 2315 7770 2315
+Connection ~ 6085 2315
+Wire Wire Line
+	5915 2115 7590 2115
+Wire Wire Line
+	6085 2315 6085 945 
+Wire Wire Line
+	6085 945  6800 945 
+Wire Wire Line
+	6085 2315 6085 3435
+Wire Wire Line
+	6085 3735 6085 4495
+Wire Wire Line
+	5570 4495 6085 4495
+Wire Wire Line
+	5915 4295 5915 4245
+Wire Wire Line
+	5915 2115 5915 3945
+Wire Wire Line
+	6425 2715 6425 3435
+Wire Wire Line
+	6520 4995 6520 3485
+Wire Wire Line
+	5570 4995 6520 4995
+Wire Wire Line
+	6425 4895 5570 4895
+Wire Wire Line
+	5570 4795 6330 4795
+Wire Wire Line
+	6245 4695 5570 4695
+Wire Wire Line
+	5570 4595 6165 4595
+Wire Wire Line
+	5070 5680 5070 5595
+$Comp
+L power:GND #PWR010
+U 1 1 6301CF9B
+P 5070 5680
+F 0 "#PWR010" H 5070 5430 50  0001 C CNN
+F 1 "GND" H 5075 5507 50  0000 C CNN
+F 2 "" H 5070 5680 50  0001 C CNN
+F 3 "" H 5070 5680 50  0001 C CNN
+	1    5070 5680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5070 3925 5070 3995
+$Comp
+L power:VCC #PWR08
+U 1 1 6301002E
+P 5070 3925
+F 0 "#PWR08" H 5070 3775 50  0001 C CNN
+F 1 "VCC" H 5087 4098 50  0000 C CNN
+F 2 "" H 5070 3925 50  0001 C CNN
+F 3 "" H 5070 3925 50  0001 C CNN
+	1    5070 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3605 4995 3605 2815
+Wire Wire Line
+	4570 4995 3605 4995
+Wire Wire Line
+	3690 4895 4570 4895
+Wire Wire Line
+	3690 2715 3690 4895
+Wire Wire Line
+	3775 4795 3775 2615
+Wire Wire Line
+	4570 4795 3775 4795
+Wire Wire Line
+	3855 4695 4570 4695
+Wire Wire Line
+	3855 2515 3855 4695
+Wire Wire Line
+	3930 4595 3930 2415
+Wire Wire Line
+	4570 4595 3930 4595
+Wire Wire Line
+	4010 4495 4570 4495
+Wire Wire Line
+	4010 2315 4010 4495
+Wire Wire Line
+	4095 4395 4095 2215
+Wire Wire Line
+	4570 4395 4095 4395
+Wire Wire Line
+	4185 4295 4570 4295
+Wire Wire Line
+	4185 2115 4185 4295
+Text GLabel 4140 5295 0    50   Input ~ 0
+~RESET
+$Comp
+L Device:D D72
+U 1 1 61FDC040
+P 6085 3585
+F 0 "D72" V 6085 3930 50  0000 R CNN
+F 1 "1n4148" V 6040 3505 50  0001 R CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6085 3585 50  0001 C CNN
+F 3 "~" H 6085 3585 50  0001 C CNN
+	1    6085 3585
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6005 3985 6005 4395
+$Comp
+L Device:D D71
+U 1 1 61FDBB12
+P 6005 3835
+F 0 "D71" V 6005 4100 50  0000 R CNN
+F 1 "1n4148" V 5960 3755 50  0001 R CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6005 3835 50  0001 C CNN
+F 3 "~" H 6005 3835 50  0001 C CNN
+	1    6005 3835
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4570 5295 4140 5295
+Wire Wire Line
+	4275 5195 4570 5195
+Wire Wire Line
+	4275 1775 4275 5195
+Wire Wire Line
+	6005 4395 5570 4395
+Wire Wire Line
+	6005 2215 6005 3685
+Wire Wire Line
+	5570 4295 5915 4295
+Wire Wire Line
+	6330 2615 6330 3685
+Wire Wire Line
+	6245 2515 6245 3945
+Wire Wire Line
+	6165 4595 6165 3485
+$Comp
+L Device:D D73
+U 1 1 630E8A8B
+P 6165 3335
+F 0 "D73" V 6160 3765 50  0000 R CNN
+F 1 "1n4148" V 6120 3255 50  0001 R CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6165 3335 50  0001 C CNN
+F 3 "~" H 6165 3335 50  0001 C CNN
+	1    6165 3335
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6165 3185 6165 2415
+$Comp
+L Device:D D74
+U 1 1 630E91AD
+P 6245 4095
+F 0 "D74" V 6240 3790 50  0000 R CNN
+F 1 "1n4148" V 6200 4015 50  0001 R CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6245 4095 50  0001 C CNN
+F 3 "~" H 6245 4095 50  0001 C CNN
+	1    6245 4095
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6245 4245 6245 4695
+$Comp
+L Device:D D75
+U 1 1 630E9A0F
+P 6330 3835
+F 0 "D75" V 6330 3610 50  0000 R CNN
+F 1 "1n4148" V 6285 3755 50  0001 R CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6330 3835 50  0001 C CNN
+F 3 "~" H 6330 3835 50  0001 C CNN
+	1    6330 3835
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6330 3985 6330 4795
+$Comp
+L Device:D D76
+U 1 1 630EA21C
+P 6425 3585
+F 0 "D76" V 6420 3455 50  0000 R CNN
+F 1 "1n4148" V 6380 3505 50  0001 R CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6425 3585 50  0001 C CNN
+F 3 "~" H 6425 3585 50  0001 C CNN
+	1    6425 3585
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6425 3735 6425 4895
+$Comp
+L Device:D D77
+U 1 1 630EAA33
+P 6520 3335
+F 0 "D77" V 6515 3250 50  0000 R CNN
+F 1 "1n4148" V 6475 3255 50  0001 R CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 6520 3335 50  0001 C CNN
+F 3 "~" H 6520 3335 50  0001 C CNN
+	1    6520 3335
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6520 3185 6520 2815
+$Comp
+L 74xx:74HCT273 U20
+U 1 1 61FA4404
+P 5070 4795
+F 0 "U20" H 5280 5445 50  0000 C CNN
+F 1 "74HCT273" H 5325 4135 50  0000 C CNN
+F 2 "" H 5070 4795 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT273.pdf" H 5070 4795 50  0001 C CNN
+	1    5070 4795
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D70
+U 1 1 61FDAEC3
+P 5915 4095
+F 0 "D70" V 5965 4315 50  0000 R CNN
+F 1 "1n4148" V 5885 4450 50  0000 R CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 5915 4095 50  0001 C CNN
+F 3 "~" H 5915 4095 50  0001 C CNN
+	1    5915 4095
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	3250 3135 6830 3135
+Wire Notes Line
+	6830 3135 6830 5980
+Wire Notes Line
+	6830 5980 3250 5980
+Wire Notes Line
+	3250 5980 3250 3135
+Text Notes 6895 5970 0    50   ~ 0
+Designed with Edoardo Auteri, also available separately\nfor stock C16s: https://www.pcbway.com/project/shareproject/\nsingle_port_interface_for_commodore_c16_keyboard_mos_6529b_replacement_09a105c6.html\n\nNote that this replacement only works for the 6529 as\nused in the keyboard circuit (i.e.: output only, there's\nno point in reading from this port, the actual keyboard\npolling is done through the k0..7 lines of the TED). The\nPlus/4 uses another 6529 in the UserPort circuit, but that\nwill require a replacement that is actually bidirectional.\nDaniël Mantione has already managed to create a suitable\nreplacement but that requires a rather uncommon 74652\nchip, so we preferred to go with something more ordinary\nhere. If you want to go with that, get this and plug it straight\nin the 6529 socket:\nhttps://www.sellmyretro.com/offer/details/mos-6529-spi-full-equivalent--_-soldering-kit-43923\n\nThe link also contains some information on why other chips\ncannot be used, read it carefully as there's a lot of wrong\ninformation around.
+Text Notes 6870 4290 0    157  ~ 0
+MOS6529 REPLACEMENT
 Wire Bus Line
-	7425 2520 7425 4755
+	3090 2015 3090 2720
+Wire Bus Line
+	8135 1615 8135 3850
 $EndSCHEMATC
