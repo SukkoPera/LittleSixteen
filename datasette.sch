@@ -152,7 +152,7 @@ U 1 1 5ECCE714
 P 8415 2555
 F 0 "D12" V 8478 2502 40  0000 R CNN
 F 1 "6.8V" V 8402 2502 40  0000 R CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8415 2555 60  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp_Zener" H 8415 2555 60  0001 C CNN
 F 3 "" H 8415 2555 60  0000 C CNN
 	1    8415 2555
 	0    -1   -1   0   
