@@ -587,27 +587,11 @@ Wire Wire Line
 Wire Wire Line
 	6085 2315 6085 3435
 Wire Wire Line
-	6085 3735 6085 4495
-Wire Wire Line
-	5570 4495 6085 4495
-Wire Wire Line
-	5915 4295 5915 4245
+	6085 3735 6085 4295
 Wire Wire Line
 	5915 2115 5915 3945
 Wire Wire Line
 	6425 2715 6425 3435
-Wire Wire Line
-	6520 4995 6520 3485
-Wire Wire Line
-	5570 4995 6520 4995
-Wire Wire Line
-	6425 4895 5570 4895
-Wire Wire Line
-	5570 4795 6330 4795
-Wire Wire Line
-	6245 4695 5570 4695
-Wire Wire Line
-	5570 4595 6165 4595
 Wire Wire Line
 	5070 5680 5070 5595
 $Comp
@@ -635,37 +619,7 @@ F 3 "" H 5070 3925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3605 4995 3605 2815
-Wire Wire Line
-	4570 4995 3605 4995
-Wire Wire Line
-	3690 4895 4570 4895
-Wire Wire Line
-	3690 2715 3690 4895
-Wire Wire Line
-	3775 4795 3775 2615
-Wire Wire Line
-	4570 4795 3775 4795
-Wire Wire Line
-	3855 4695 4570 4695
-Wire Wire Line
-	3855 2515 3855 4695
-Wire Wire Line
-	3930 4595 3930 2415
-Wire Wire Line
-	4570 4595 3930 4595
-Wire Wire Line
-	4010 4495 4570 4495
-Wire Wire Line
-	4010 2315 4010 4495
-Wire Wire Line
-	4095 4395 4095 2215
-Wire Wire Line
-	4570 4395 4095 4395
-Wire Wire Line
-	4185 4295 4570 4295
-Wire Wire Line
-	4185 2115 4185 4295
+	3690 2715 3690 4495
 Text GLabel 4140 5295 0    50   Input ~ 0
 ~RESET
 $Comp
@@ -679,8 +633,6 @@ F 3 "~" H 6085 3585 50  0001 C CNN
 	1    6085 3585
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6005 3985 6005 4395
 $Comp
 L Device:D D71
 U 1 1 61FDBB12
@@ -699,17 +651,11 @@ Wire Wire Line
 Wire Wire Line
 	4275 1775 4275 5195
 Wire Wire Line
-	6005 4395 5570 4395
-Wire Wire Line
 	6005 2215 6005 3685
-Wire Wire Line
-	5570 4295 5915 4295
 Wire Wire Line
 	6330 2615 6330 3685
 Wire Wire Line
 	6245 2515 6245 3945
-Wire Wire Line
-	6165 4595 6165 3485
 $Comp
 L Device:D D73
 U 1 1 630E8A8B
@@ -734,8 +680,6 @@ F 3 "~" H 6245 4095 50  0001 C CNN
 	1    6245 4095
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6245 4245 6245 4695
 $Comp
 L Device:D D75
 U 1 1 630E9A0F
@@ -748,7 +692,7 @@ F 3 "~" H 6330 3835 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6330 3985 6330 4795
+	6330 3985 6330 4695
 $Comp
 L Device:D D76
 U 1 1 630EA21C
@@ -761,7 +705,7 @@ F 3 "~" H 6425 3585 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6425 3735 6425 4895
+	6425 3735 6425 4495
 $Comp
 L Device:D D77
 U 1 1 630EAA33
@@ -781,7 +725,7 @@ U 1 1 61FA4404
 P 5070 4795
 F 0 "U20" H 5280 5445 50  0000 C CNN
 F 1 "74HCT273" H 5325 4135 50  0000 C CNN
-F 2 "" H 5070 4795 50  0001 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 5070 4795 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT273.pdf" H 5070 4795 50  0001 C CNN
 	1    5070 4795
 	1    0    0    -1  
@@ -809,6 +753,62 @@ Text Notes 6895 5970 0    50   ~ 0
 Designed with Edoardo Auteri, also available separately\nfor stock C16s: https://www.pcbway.com/project/shareproject/\nsingle_port_interface_for_commodore_c16_keyboard_mos_6529b_replacement_09a105c6.html\n\nNote that this replacement only works for the 6529 as\nused in the keyboard circuit (i.e.: output only, there's\nno point in reading from this port, the actual keyboard\npolling is done through the k0..7 lines of the TED). The\nPlus/4 uses another 6529 in the UserPort circuit, but that\nwill require a replacement that is actually bidirectional.\nDaniël Mantione has already managed to create a suitable\nreplacement but that requires a rather uncommon 74652\nchip, so we preferred to go with something more ordinary\nhere. If you want to go with that, get this and plug it straight\nin the 6529 socket:\nhttps://www.sellmyretro.com/offer/details/mos-6529-spi-full-equivalent--_-soldering-kit-43923\n\nThe link also contains some information on why other chips\ncannot be used, read it carefully as there's a lot of wrong\ninformation around.
 Text Notes 6870 4290 0    157  ~ 0
 MOS6529 REPLACEMENT
+Wire Wire Line
+	4010 2315 4010 4295
+Wire Wire Line
+	3775 4695 3775 2615
+Wire Wire Line
+	3855 4795 4570 4795
+Wire Wire Line
+	3855 2515 3855 4795
+Wire Wire Line
+	3775 4695 4570 4695
+Wire Wire Line
+	4570 4395 3930 4395
+Wire Wire Line
+	3930 4395 3930 2415
+Wire Wire Line
+	4185 4995 4570 4995
+Wire Wire Line
+	4185 2115 4185 4995
+Wire Wire Line
+	4570 4295 4010 4295
+Wire Wire Line
+	4570 4595 3605 4595
+Wire Wire Line
+	3605 2815 3605 4595
+Wire Wire Line
+	4095 4895 4570 4895
+Wire Wire Line
+	4095 2215 4095 4895
+Wire Wire Line
+	4570 4495 3690 4495
+Wire Wire Line
+	5915 4995 5570 4995
+Wire Wire Line
+	5915 4245 5915 4995
+Wire Wire Line
+	6005 4895 5570 4895
+Wire Wire Line
+	6005 3985 6005 4895
+Wire Wire Line
+	5570 4295 6085 4295
+Wire Wire Line
+	5570 4395 6165 4395
+Wire Wire Line
+	6165 4395 6165 3485
+Wire Wire Line
+	5570 4795 6245 4795
+Wire Wire Line
+	6245 4245 6245 4795
+Wire Wire Line
+	5570 4695 6330 4695
+Wire Wire Line
+	5570 4495 6425 4495
+Wire Wire Line
+	5570 4595 6520 4595
+Wire Wire Line
+	6520 4595 6520 3485
 Wire Bus Line
 	3090 2015 3090 2720
 Wire Bus Line
