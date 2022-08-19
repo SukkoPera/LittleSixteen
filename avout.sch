@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 12 12
 Title "LittleSixteen"
-Date "2022-01-14"
+Date "2022-08-18"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -514,12 +514,12 @@ SYNC_LUM
 $Comp
 L Device:C C81
 U 1 1 61A15F6A
-P 2545 5150
-F 0 "C81" V 2293 5150 50  0000 C CNN
-F 1 "330p" V 2384 5150 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2583 5000 50  0001 C CNN
-F 3 "~" H 2545 5150 50  0001 C CNN
-	1    2545 5150
+P 2405 5150
+F 0 "C81" V 2153 5150 50  0000 C CNN
+F 1 "330p" V 2244 5150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2443 5000 50  0001 C CNN
+F 3 "~" H 2405 5150 50  0001 C CNN
+	1    2405 5150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -528,7 +528,7 @@ Wire Wire Line
 	2130 5150 2130 5245
 Connection ~ 2130 5150
 Wire Wire Line
-	2130 5150 2395 5150
+	2130 5150 2255 5150
 $Comp
 L Device:R R82
 U 1 1 61A1BBEE
@@ -542,17 +542,15 @@ F 3 "~" H 2130 5395 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2880 5855 2880 5950
-Wire Wire Line
-	2695 5150 2880 5150
 $Comp
 L Device:R R83
 U 1 1 61A2269E
-P 2880 5395
-F 0 "R83" H 2950 5441 50  0000 L CNN
-F 1 "5.6k" H 2950 5350 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 2810 5395 50  0001 C CNN
-F 3 "~" H 2880 5395 50  0001 C CNN
-	1    2880 5395
+P 3045 5395
+F 0 "R83" H 3115 5441 50  0000 L CNN
+F 1 "5.6k" H 3115 5350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 2975 5395 50  0001 C CNN
+F 3 "~" H 3045 5395 50  0001 C CNN
+	1    3045 5395
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -570,9 +568,9 @@ Wire Wire Line
 	2880 5045 2880 5150
 Connection ~ 2880 5150
 Wire Wire Line
-	2880 5150 3130 5150
+	2880 5150 3045 5150
 Wire Wire Line
-	2880 5150 2880 5245
+	3045 5150 3045 5245
 Wire Wire Line
 	2880 4745 2880 4705
 $Comp
@@ -602,7 +600,7 @@ L Device:R R84
 U 1 1 61A39F31
 P 4025 5395
 F 0 "R84" V 3818 5395 50  0000 C CNN
-F 1 "68" V 3909 5395 50  0000 C CNN
+F 1 "56" V 3909 5395 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3955 5395 50  0001 C CNN
 F 3 "~" H 4025 5395 50  0001 C CNN
 	1    4025 5395
@@ -627,17 +625,6 @@ Wire Wire Line
 	4295 5175 4570 5175
 Wire Wire Line
 	4570 5175 4570 5245
-$Comp
-L Device:Jumper_NO_Small JP81
-U 1 1 61A46E1C
-P 4835 5175
-F 0 "JP81" H 4835 5360 50  0000 C CNN
-F 1 "RV1_BYPASS" H 4835 5269 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4835 5175 50  0001 C CNN
-F 3 "~" H 4835 5175 50  0001 C CNN
-	1    4835 5175
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4720 5395 4925 5395
 $Comp
@@ -645,7 +632,7 @@ L Device:R R85
 U 1 1 61A4B9A5
 P 4925 5620
 F 0 "R85" H 4995 5666 50  0000 L CNN
-F 1 "220" H 4995 5575 50  0000 L CNN
+F 1 "100" H 4995 5575 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 4855 5620 50  0001 C CNN
 F 3 "~" H 4925 5620 50  0001 C CNN
 	1    4925 5620
@@ -666,17 +653,13 @@ Wire Wire Line
 Wire Wire Line
 	5170 5395 5425 5395
 Connection ~ 5170 5395
-Text Notes 3665 5645 0    50   ~ 0
-Use 150R if RV1\nis not mounted
 Wire Wire Line
-	2880 5545 2880 5855
+	3045 5545 3045 5855
 Wire Wire Line
-	2880 5855 4925 5855
+	2880 5855 3045 5855
 Wire Wire Line
 	4925 5855 4925 5770
 Connection ~ 2880 5855
-Wire Wire Line
-	2880 5855 2130 5855
 Wire Wire Line
 	2130 5855 2130 5545
 NoConn ~ 4420 5395
@@ -702,7 +685,7 @@ L Device:R R87
 U 1 1 61A7D70B
 P 8405 5640
 F 0 "R87" V 8198 5640 50  0000 C CNN
-F 1 "75" V 8289 5640 50  0000 C CNN
+F 1 "150" V 8289 5640 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8335 5640 50  0001 C CNN
 F 3 "~" H 8405 5640 50  0001 C CNN
 	1    8405 5640
@@ -728,17 +711,6 @@ Wire Wire Line
 Wire Wire Line
 	8950 5420 8950 5490
 $Comp
-L Device:Jumper_NO_Small JP82
-U 1 1 61A7D723
-P 9215 5420
-F 0 "JP82" H 9215 5605 50  0000 C CNN
-F 1 "RV2_BYPASS" H 9215 5514 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9215 5420 50  0001 C CNN
-F 3 "~" H 9215 5420 50  0001 C CNN
-	1    9215 5420
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R88
 U 1 1 61A7D72E
 P 9485 5865
@@ -761,8 +733,6 @@ Wire Wire Line
 Wire Wire Line
 	9485 5640 9740 5640
 Connection ~ 9485 5640
-Text Notes 8045 5890 0    50   ~ 0
-Use 150R if RV2\nis not mounted
 Wire Wire Line
 	9485 6100 9485 6015
 Text GLabel 9740 5640 2    50   Output ~ 0
@@ -790,7 +760,7 @@ L Device:R R86
 U 1 1 61AA56B3
 P 7365 5160
 F 0 "R86" H 7435 5206 50  0000 L CNN
-F 1 "470" H 7435 5115 50  0000 L CNN
+F 1 "1.5k" H 7435 5115 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 7295 5160 50  0001 C CNN
 F 3 "~" H 7365 5160 50  0001 C CNN
 	1    7365 5160
@@ -831,7 +801,7 @@ L Device:C C82
 U 1 1 61AFDBD4
 P 4810 6420
 F 0 "C82" V 4558 6420 50  0000 C CNN
-F 1 "68p" V 4649 6420 50  0000 C CNN
+F 1 "150p" V 4649 6420 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4848 6270 50  0001 C CNN
 F 3 "~" H 4810 6420 50  0001 C CNN
 	1    4810 6420
@@ -840,7 +810,7 @@ $EndComp
 Wire Wire Line
 	4445 6420 4660 6420
 Wire Wire Line
-	4415 6860 4655 6860
+	4415 6860 4535 6860
 $Comp
 L Device:L L81
 U 1 1 61B0B1AC
@@ -855,37 +825,37 @@ $EndComp
 $Comp
 L Device:R R89
 U 1 1 61B0CE87
-P 5255 6860
-F 0 "R89" V 5048 6860 50  0000 C CNN
-F 1 "150" V 5139 6860 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5185 6860 50  0001 C CNN
-F 3 "~" H 5255 6860 50  0001 C CNN
-	1    5255 6860
+P 5400 6860
+F 0 "R89" V 5193 6860 50  0000 C CNN
+F 1 "150" V 5284 6860 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5330 6860 50  0001 C CNN
+F 3 "~" H 5400 6860 50  0001 C CNN
+	1    5400 6860
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4955 6860 5105 6860
+	4955 6860 5110 6860
 Wire Wire Line
 	4960 6420 5720 6420
 Wire Wire Line
 	5720 6420 5720 6860
 Wire Wire Line
-	5720 6860 5405 6860
+	5720 6860 5550 6860
 $Comp
 L Device:R R90
 U 1 1 61B1AD5D
-P 5720 7085
-F 0 "R90" H 5790 7131 50  0000 L CNN
-F 1 "150" H 5790 7040 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5650 7085 50  0001 C CNN
-F 3 "~" H 5720 7085 50  0001 C CNN
-	1    5720 7085
+P 5720 7270
+F 0 "R90" H 5790 7316 50  0000 L CNN
+F 1 "150" H 5790 7225 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5650 7270 50  0001 C CNN
+F 3 "~" H 5720 7270 50  0001 C CNN
+	1    5720 7270
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5720 6935 5720 6860
+	5720 7120 5720 6860
 Wire Wire Line
-	5720 7320 5720 7235
+	5720 7505 5720 7420
 Connection ~ 5720 6860
 Wire Wire Line
 	5720 6860 6250 6860
@@ -893,10 +863,8 @@ Text GLabel 6250 6860 2    50   Output ~ 0
 COMP_OUT
 Text Notes 3800 4470 0    157  ~ 0
 RF MODULATOR REPLACEMENT
-Text Notes 3435 6870 2    50   ~ 0
-These circuits can replace the composite/luma/chroma\noutput functionality of the original modulator.\n\nIt's basically the same as mbarszcz-pcb's\nc64-rf-modulator-replacement project for the C64, please see:\nhttps://github.com/mbarszcz-pcb/c64-rf-modulator-replacement
-Text Notes 8585 4930 0    50   ~ 0
-The trimmer pads can be bypassed by closing the\nsolder bridges and installing 150 Ohm resistors for\nR84 and R87. This won't give you the precision\nadjustment of the trimmers, but it will be close\nenough for most configurations. 
+Text Notes 3440 7525 2    50   ~ 0
+These circuits can replace the composite/luma/chroma\noutput functionality of the original modulator.\n\nIt's based on mbarszcz-pcb's\nc64-rf-modulator-replacement project for the C64, please see:\nhttps://github.com/mbarszcz-pcb/c64-rf-modulator-replacement.\n\nEdoardo spent a lot of time fine-tuning the component values\nand adding some new components in order to achieve the best\nvideo quality.\n\nThe trimmers are not needed by default, they can be installed in\norder to fine-tune the output signals f irther, in which case JP81\nand JP82 shall be opened.
 Wire Wire Line
 	9100 5640 9485 5640
 $Comp
@@ -1068,12 +1036,12 @@ $EndComp
 $Comp
 L power:GNDA #PWR0234
 U 1 1 61E85F57
-P 5720 7320
-F 0 "#PWR0234" H 5720 7070 50  0001 C CNN
-F 1 "GNDA" H 5725 7147 50  0000 C CNN
-F 2 "" H 5720 7320 50  0001 C CNN
-F 3 "" H 5720 7320 50  0001 C CNN
-	1    5720 7320
+P 5720 7505
+F 0 "#PWR0234" H 5720 7255 50  0001 C CNN
+F 1 "GNDA" H 5725 7332 50  0000 C CNN
+F 2 "" H 5720 7505 50  0001 C CNN
+F 3 "" H 5720 7505 50  0001 C CNN
+	1    5720 7505
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1194,4 +1162,142 @@ F 3 "" H 6010 975 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6010 975  6010 1070
+Connection ~ 3045 5150
+Wire Wire Line
+	3045 5150 3130 5150
+Connection ~ 3045 5855
+Wire Wire Line
+	3045 5855 4925 5855
+$Comp
+L Device:C C85
+U 1 1 634FD6CC
+P 3795 4705
+F 0 "C85" V 3635 4705 50  0000 C CNN
+F 1 "100n" V 3544 4705 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3833 4555 50  0001 C CNN
+F 3 "~" H 3795 4705 50  0001 C CNN
+	1    3795 4705
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3430 4705 3645 4705
+Connection ~ 3430 4705
+Wire Wire Line
+	3945 4705 4090 4705
+Wire Wire Line
+	4090 4705 4090 4865
+$Comp
+L power:GNDA #PWR0238
+U 1 1 63513249
+P 4090 4865
+F 0 "#PWR0238" H 4090 4615 50  0001 C CNN
+F 1 "GNDA" H 4095 4692 50  0000 C CNN
+F 2 "" H 4090 4865 50  0001 C CNN
+F 3 "" H 4090 4865 50  0001 C CNN
+	1    4090 4865
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP81
+U 1 1 635201CA
+P 4835 5175
+F 0 "JP81" H 4835 5387 50  0000 C CNN
+F 1 "RV1_BYPASS" H 4835 5296 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4835 5175 50  0001 C CNN
+F 3 "~" H 4835 5175 50  0001 C CNN
+	1    4835 5175
+	1    0    0    -1  
+$EndComp
+Text Notes 4425 5795 0    50   ~ 0
+DO NOT\nMOUNT
+$Comp
+L Device:Jumper_NC_Small JP82
+U 1 1 6353837A
+P 9215 5420
+F 0 "JP82" H 9215 5632 50  0000 C CNN
+F 1 "RV2_BYPASS" H 9215 5541 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 9215 5420 50  0001 C CNN
+F 3 "~" H 9215 5420 50  0001 C CNN
+	1    9215 5420
+	1    0    0    -1  
+$EndComp
+Text Notes 8810 6055 0    50   ~ 0
+DO NOT\nMOUNT
+$Comp
+L Device:C C86
+U 1 1 6355F0EE
+P 4810 7035
+F 0 "C86" V 4970 7035 50  0000 C CNN
+F 1 "220p" V 5061 7035 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4848 6885 50  0001 C CNN
+F 3 "~" H 4810 7035 50  0001 C CNN
+	1    4810 7035
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4660 7035 4535 7035
+Wire Wire Line
+	4535 7035 4535 6860
+Connection ~ 4535 6860
+Wire Wire Line
+	4535 6860 4655 6860
+Wire Wire Line
+	5110 6860 5110 7035
+Connection ~ 5110 6860
+Wire Wire Line
+	5110 6860 5250 6860
+$Comp
+L power:GNDA #PWR0239
+U 1 1 635758C0
+P 5110 7505
+F 0 "#PWR0239" H 5110 7255 50  0001 C CNN
+F 1 "GNDA" H 5115 7332 50  0000 C CNN
+F 2 "" H 5110 7505 50  0001 C CNN
+F 3 "" H 5110 7505 50  0001 C CNN
+	1    5110 7505
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C87
+U 1 1 63580302
+P 5110 7275
+F 0 "C87" H 4995 7229 50  0000 R CNN
+F 1 "330p" H 4995 7320 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5148 7125 50  0001 C CNN
+F 3 "~" H 5110 7275 50  0001 C CNN
+	1    5110 7275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5110 7425 5110 7505
+Wire Wire Line
+	4960 7035 5110 7035
+Connection ~ 5110 7035
+Wire Wire Line
+	5110 7035 5110 7125
+$Comp
+L Device:C C84
+U 1 1 634E857F
+P 2720 5400
+F 0 "C84" H 2835 5354 50  0000 L CNN
+F 1 "100p" H 2835 5445 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2758 5250 50  0001 C CNN
+F 3 "~" H 2720 5400 50  0001 C CNN
+	1    2720 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2720 5250 2720 5150
+Wire Wire Line
+	2720 5550 2720 5855
+Wire Wire Line
+	2130 5855 2720 5855
+Wire Wire Line
+	2555 5150 2720 5150
+Connection ~ 2720 5150
+Wire Wire Line
+	2720 5150 2880 5150
+Connection ~ 2720 5855
+Wire Wire Line
+	2720 5855 2880 5855
 $EndSCHEMATC
