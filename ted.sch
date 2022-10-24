@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 11
+Sheet 3 12
 Title "LittleSixteen"
 Date "2020-01-03"
-Rev "2git"
+Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 "WARNING: These schematics might contain errors!"
@@ -19,7 +19,7 @@ U 1 1 5DE0697D
 P 8185 2700
 F 0 "U1" H 8185 4215 50  0000 C CNN
 F 1 "MOS_7360_TED" H 8185 4124 50  0000 C CNN
-F 2 "Package_DIP:DIP-48_W15.24mm_Socket_LongPads" H 8185 2700 50  0001 C CNN
+F 2 "LittleSixteen:DIP-48_W15.24mm_Socket_LongPads" H 8185 2700 50  0001 C CNN
 F 3 "DOCUMENTATION" H 8185 2700 50  0001 C CNN
 	1    8185 2700
 	1    0    0    -1  
