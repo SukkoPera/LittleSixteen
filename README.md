@@ -21,9 +21,9 @@ The board was routed manually, trying to keep each track close to the original l
 The original Commodore 16 was the victim of several cost-cutting measures during its design phase. Its target price was $99 and Commodore still had to have some margin on that, so they really had to spare every cent they could and they went as far as not mounting the decoupling capacitors for a few chips which happened to have another one "close enough". Thus, a further goal of this project was to undo all of those measures and make the design as clean as possible, while also improving on it.
 
 ### Modifications introduced in V3
-In V3 we started making improvements to the board. The reasoning behind every modification is detailed on the [development blog](https://hackaday.io/project/182543-littlesixteen-commodore-16-mainboard), so I'll be pretty terse here.
+In V3 we started making improvements to the board. The reasoning behind every modification is detailed on the [Development Blog](https://hackaday.io/project/182543-littlesixteen-commodore-16-mainboard), so I'll be pretty terse here.
 
-- Switched to external power regulation, using the C64 connector and power supply: drastically reduces the heat inside the case, which is one of the main CPU/TED failure causes.
+- Switched to external power regulation, using the C64 power circuit and power supply: drastically reduces the heat inside the case, which is one of the main CPU/TED failure causes.
 - Added current-limiting resistors on all ports exposing power pins: this will avoid short-circuiting the power supply, whatever you do on the external connectors.
 - Added internal Joystick port buffers: this is basically like having two [OpenC16JoyAdapter](https://github.com/SukkoPera/OpenC16JoyAdapter)s built into the machine, preventing the TED pins to be directly exposed on the joystick ports, which is another common cause of TED failures. It also gives the ports a fixed ground, allowing the use of "advanced" joysticks with autofire functionalities for instance, which require power from the machine.
 - Joystick ports now use DB-9 (more properly: DE-9) connectors, just like any other machine of the era: you can now use your favourite C64/Amiga joystick on your C16.
@@ -36,6 +36,7 @@ In V3 we started making improvements to the board. The reasoning behind every mo
 - Since the RF modulator is basically useless these days, a [replacement circuit](https://github.com/mbarszcz-pcb/c64-rf-modulator-replacement) was integrated on the board, providing either Luma+Chroma (say S-Video) or Composite Video.
 - Added the possibility of combining the KERNAL and BASIC in a single all-in-one ROM: this allows replacing the original power-hungry chips with a single W27C512, which can also incorporate the Plus/4 function ROMs.
 - ESD protection was improved on all ports.
+- The track and ground plane layout were optimized in a few places in order to reduce noise and crosstalk.
 
 While the comprehensive switch of connectors to the C64 counterparts might be frowned upon, it was done because [C64-style cases](https://icomp.de/shop-icomp/en/shop/product/c64c-case.html) are still in production and this way LittleSixteen V3 will fit them just perfectly, yielding the ability to build new C16s from scratch, which is another one of our goals.
 
@@ -57,10 +58,17 @@ V2 was meant to be a 1:1 copy of the original board with some essential improvem
 
 If you don't like any of the above, feel free to fix it yourself and [submit a Pull Request](https://github.com/SukkoPera/LittleSixteen/pulls).
 
+## Testing
+V3 of the board was throughly tested by project collaborator Edoardo Auteri, as you can read on the [Development Blog](https://hackaday.io/project/182543/log/202804-how-to-make-the-changes-that-change-everything). In his words:
+
+> The machine works flawlessly providing superior audio and video performance, low power consumption and compatibility with the 1530 Datassette Unit (C2N model), SD2IEC, Atari joysticks and pads.
+
 ## Releases
-If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/LittleSixteen/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
+If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/Raemixx500/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
 
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
+
+**I am not providing ready-to-use gerber files**. If all you want is **to get boards made, I would really appreciate if you did so [in a way that supports the project](#support-the-project)**.
 
 ## License
 The LittleSixteen documentation, including the design itself, is copyright &copy; SukkoPera 2019-2022 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
