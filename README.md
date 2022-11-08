@@ -64,7 +64,7 @@ V3 of the board was throughly tested by project collaborator Edoardo Auteri, as 
 > The machine works flawlessly providing superior audio and video performance, low power consumption and compatibility with the 1530 Datassette Unit (C2N model), SD2IEC, Atari joysticks and pads.
 
 ## Releases
-If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/Raemixx500/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
+If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/LittleSixteen/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
 
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
 
