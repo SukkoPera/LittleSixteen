@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 12
+Sheet 10 13
 Title "LittleSixteen"
 Date "2021-11-05"
 Rev "3git"
@@ -418,7 +418,7 @@ Wire Wire Line
 Wire Wire Line
 	4590 6610 5100 6610
 Wire Wire Line
-	4590 6510 5100 6510
+	4590 6510 5345 6510
 Wire Wire Line
 	4590 6410 5100 6410
 Wire Wire Line
@@ -431,15 +431,13 @@ Wire Wire Line
 	4590 6010 5100 6010
 Wire Wire Line
 	4590 5910 5100 5910
-Text Label 4615 6610 0    50   ~ 0
-acia
-Text Label 4615 6210 0    50   ~ 0
+Text Label 5100 6210 2    50   ~ 0
 addr_clk
-Text Label 4615 5910 0    50   ~ 0
+Text Label 5100 5910 2    50   ~ 0
 rom_switch
-Text Label 4615 6010 0    50   ~ 0
+Text Label 5100 6010 2    50   ~ 0
 loop
-Text Label 4615 6310 0    50   ~ 0
+Text Label 5100 6310 2    50   ~ 0
 speech_cart
 Text Label 2780 5810 0    50   ~ 0
 a10_15
@@ -500,7 +498,7 @@ Text Notes 3180 4990 0    50   ~ 0
 Based on PLA16V8 by Daniël Mantione\nSee https://www.freepascal.org/~~daniel/c16pla/\n\nR80 and D80-85 should only be installed when\nactually using a PLA16V8, but I think they won't\nhurt anyway.\n\nDiodes other than 1n4148 will probably work, too.
 Text GLabel 5100 6410 2    50   Output ~ 0
 PHI2
-Text GLabel 5100 6510 2    50   Output ~ 0
+Text GLabel 5345 6510 2    50   Output ~ 0
 CASSETTE
 Text GLabel 5100 6110 2    50   Output ~ 0
 KEYPORT_CS
@@ -539,8 +537,6 @@ Text Label 3575 1285 2    50   ~ 0
 speech_cart
 Wire Wire Line
 	3145 1285 3575 1285
-Text Label 3575 1585 2    50   ~ 0
-acia
 Wire Wire Line
 	3800 1885 3800 2850
 Wire Wire Line
@@ -579,8 +575,8 @@ Text GLabel 3850 1385 2    50   Output ~ 0
 PHI2
 Wire Wire Line
 	3145 1385 3850 1385
-Text Notes 3745 1620 0    50   ~ 0
-$FD00-$FD0F (ACIA CS on +4)
+Text Notes 4090 1620 0    50   ~ 0
+$FD00-$FD0F
 Text Notes 3725 1290 0    50   ~ 0
 SCS (?)
 Text Notes 4360 1960 2    50   ~ 0
@@ -967,7 +963,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS175" H 6165 1585 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3145 1585 3575 1585
+	3145 1585 3850 1585
 Text Label 3175 1685 0    50   ~ 0
 addr_clk
 Text Label 3175 1885 0    50   ~ 0
@@ -993,6 +989,10 @@ Text GLabel 10420 2150 2    50   Output ~ 0
 ~FUNCHI_CS
 Wire Wire Line
 	10150 2150 10420 2150
+Text GLabel 3850 1585 2    50   Output ~ 0
+~ACIA
+Text GLabel 5100 6610 2    50   Output ~ 0
+~ACIA
 Wire Bus Line
 	5245 1085 5245 1685
 Wire Bus Line

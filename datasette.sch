@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 12
+Sheet 7 13
 Title "LittleSixteen"
 Date "2021-12-05"
 Rev "3git"
@@ -228,17 +228,6 @@ Wire Wire Line
 Wire Wire Line
 	6575 2325 6810 2325
 $Comp
-L 74xx:74LS125 U11
-U 3 1 5ECE62E7
-P 6395 1535
-F 0 "U11" H 6395 1852 50  0000 C CNN
-F 1 "74LS125" H 6395 1761 50  0000 C CNN
-F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 6395 1535 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 6395 1535 50  0001 C CNN
-	3    6395 1535
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C25
 U 1 1 5ECF7C46
 P 5550 1925
@@ -262,18 +251,6 @@ Connection ~ 5550 2965
 Wire Wire Line
 	5550 2965 5130 2965
 Wire Wire Line
-	6695 1535 7155 1535
-Text GLabel 7155 1535 2    50   Output ~ 0
-d[0..7]
-Text Label 6930 1535 2    50   ~ 0
-d2
-Wire Wire Line
-	6395 1785 6395 1905
-Wire Wire Line
-	6395 1905 7155 1905
-Text GLabel 7155 1905 2    50   Input ~ 0
-CASSETTE
-Wire Wire Line
 	8415 2605 8415 2965
 Wire Wire Line
 	8415 2965 7590 2965
@@ -283,8 +260,6 @@ Wire Wire Line
 Wire Wire Line
 	3010 2965 3995 2965
 Connection ~ 3995 2965
-Text Notes 7620 1830 2    50   ~ 0
-$FD10-$FD1F
 $Comp
 L Device:R R12
 U 1 1 5ED1DFFB
@@ -311,8 +286,6 @@ F 3 "" H 5550 975 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 975  5550 1070
-Text Notes 7070 1450 0    50   ~ 0
-CST_SENSE:\nLOW if one of the\nkeys PLAY,\nRECORD, F.FWD\nor REW is pressed,\nHIGH otherwise
 Text GLabel 6810 2325 2    50   Input ~ 0
 p[0..7]
 Text Label 6650 2325 0    50   ~ 0
@@ -365,7 +338,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4550 5175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6375 5175 5950 5175
+	6375 5175 6325 5175
 Text Label 3175 5175 0    50   ~ 0
 p2
 Wire Wire Line
@@ -991,8 +964,6 @@ Wire Wire Line
 	9490 790  9490 1230
 Connection ~ 5880 1535
 Wire Wire Line
-	5880 1535 6095 1535
-Wire Wire Line
 	9355 2115 9490 2115
 Wire Wire Line
 	9490 1530 9490 2115
@@ -1392,9 +1363,28 @@ Text Label 5915 2325 0    50   ~ 0
 tape_wr2
 Text Label 2845 2425 0    50   ~ 0
 tape_read2
-Text Label 5375 1535 0    50   ~ 0
-tape_sense2
 NoConn ~ 9470 3405
+Wire Wire Line
+	6325 5175 6325 4860
+Wire Wire Line
+	6325 4860 6655 4860
+Connection ~ 6325 5175
+Wire Wire Line
+	6325 5175 5950 5175
+Text GLabel 6655 4860 2    50   Output ~ 0
+~ATTN
+Wire Wire Line
+	5805 5865 5805 6450
+Wire Wire Line
+	5805 6450 6660 6450
+Text GLabel 6660 6450 2    50   Output ~ 0
+~BRESET
+Wire Wire Line
+	5880 1535 6100 1535
 Wire Bus Line
 	3075 4640 3075 5520
+Text Notes 6690 1745 0    50   ~ 0
+CST_SENSE:\nLOW if one of the\nkeys PLAY,\nRECORD, F.FWD\nor REW is pressed,\nHIGH otherwise
+Text GLabel 6100 1535 2    50   Output ~ 0
+~TAPE_SENSE
 $EndSCHEMATC

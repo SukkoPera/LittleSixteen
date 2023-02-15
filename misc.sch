@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 12
+Sheet 9 13
 Title "LittleSixteen"
-Date "2021-12-06"
+Date "2023-02-14"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -256,7 +256,7 @@ Wire Wire Line
 	1390 5950 1750 5950
 Text Notes 1595 7490 0    50   ~ 0
 Additional\ndecoupling cap
-Text Notes 9400 5440 0    157  ~ 0
+Text Notes 9250 5370 0    157  ~ 0
 SPARES
 Text Notes 3130 3525 0    157  ~ 0
 POWER-ON RESET\n+ RESET SWITCH
@@ -523,9 +523,9 @@ Wire Wire Line
 Connection ~ 6520 4280
 Wire Wire Line
 	6520 4280 6695 4280
-Text Notes 6865 5075 0    50   ~ 0
-This will be inverted\nseparately by U9B,\nno idea why
-NoConn ~ 10160 5960
+Text Notes 6735 5270 0    50   ~ 0
+This will be inverted\nseparately by U9B in\norder to be exposed\non connectors to the\noutside world
+NoConn ~ 10800 6000
 Text Notes 6695 885  0    157  ~ 0
 POWER REGULATION
 Text Notes 10480 -1865 0    50   ~ 0
@@ -548,36 +548,36 @@ Wire Wire Line
 $Comp
 L 74xx:74LS125 U?
 U 4 1 625FE5B6
-P 9860 5960
+P 10500 6000
 AR Path="/5ECB474B/625FE5B6" Ref="U?"  Part="4" 
 AR Path="/5EACE220/625FE5B6" Ref="U11"  Part="4" 
-F 0 "U11" H 9860 6277 50  0000 C CNN
-F 1 "74LS125" H 9860 6186 50  0000 C CNN
-F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 9860 5960 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 9860 5960 50  0001 C CNN
-	4    9860 5960
+F 0 "U11" H 10500 6317 50  0000 C CNN
+F 1 "74LS125" H 10500 6226 50  0000 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 10500 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 10500 6000 50  0001 C CNN
+	4    10500 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9560 5960 9410 5960
+	10200 6000 10050 6000
 Wire Wire Line
-	9410 5960 9410 5735
+	10050 6000 10050 5775
 Wire Wire Line
-	9410 5960 9410 6325
+	10050 6000 10050 6365
 Wire Wire Line
-	9410 6325 9860 6325
+	10050 6365 10500 6365
 Wire Wire Line
-	9860 6325 9860 6210
-Connection ~ 9410 5960
+	10500 6365 10500 6250
+Connection ~ 10050 6000
 $Comp
 L power:VCC #PWR0217
 U 1 1 62A8DCB8
-P 9410 5735
-F 0 "#PWR0217" H 9410 5585 50  0001 C CNN
-F 1 "VCC" H 9427 5908 50  0000 C CNN
-F 2 "" H 9410 5735 50  0001 C CNN
-F 3 "" H 9410 5735 50  0001 C CNN
-	1    9410 5735
+P 10050 5775
+F 0 "#PWR0217" H 10050 5625 50  0001 C CNN
+F 1 "VCC" H 10067 5948 50  0000 C CNN
+F 2 "" H 10050 5775 50  0001 C CNN
+F 3 "" H 10050 5775 50  0001 C CNN
+	1    10050 5775
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1014,17 +1014,6 @@ Wire Wire Line
 Wire Wire Line
 	2765 1535 3365 1535
 $Comp
-L Device:D_Bridge_+A-A CR100
-U 1 1 63040746
-P 7250 2145
-F 0 "CR100" H 7460 1945 50  0000 L CNN
-F 1 "NTE5304" H 7460 2025 50  0000 L CNN
-F 2 "Diode_THT:Diode_Bridge_Round_D9.8mm" H 7250 2145 50  0001 C CNN
-F 3 "~" H 7250 2145 50  0001 C CNN
-	1    7250 2145
-	1    0    0    1   
-$EndComp
-$Comp
 L din-7:DIN-7 CN8
 U 1 1 630EA11F
 P 2020 1435
@@ -1192,4 +1181,105 @@ Wire Notes Line
 	6720 1810 6720 1505
 Wire Notes Line
 	6720 1505 6150 1505
+$Comp
+L Power:+9VAC #PWR011
+U 1 1 64706A46
+P 7250 1670
+F 0 "#PWR011" H 7250 1545 50  0001 C CNN
+F 1 "+9VAC" H 7265 1843 50  0000 C CNN
+F 2 "" H 7250 1670 50  0001 C CNN
+F 3 "" H 7250 1670 50  0001 C CNN
+	1    7250 1670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1670 7250 1760
+Connection ~ 7250 1760
+$Comp
+L Power:-9VAC #PWR012
+U 1 1 6471A737
+P 7630 1670
+F 0 "#PWR012" H 7630 1545 50  0001 C CNN
+F 1 "-9VAC" H 7645 1843 50  0000 C CNN
+F 2 "" H 7630 1670 50  0001 C CNN
+F 3 "" H 7630 1670 50  0001 C CNN
+	1    7630 1670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7630 1670 7630 2510
+Wire Wire Line
+	7630 2510 7250 2510
+Connection ~ 7250 2510
+$Comp
+L Device:D_Bridge_+A-A CR100
+U 1 1 63040746
+P 7250 2145
+F 0 "CR100" H 6870 1915 50  0000 L CNN
+F 1 "NTE5304" H 6780 1995 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_Round_D9.8mm" H 7250 2145 50  0001 C CNN
+F 3 "~" H 7250 2145 50  0001 C CNN
+	1    7250 2145
+	1    0    0    1   
+$EndComp
+$Comp
+L 74xx:74LS125 U?
+U 3 1 648D14FC
+P 9310 6000
+AR Path="/5ECB474B/648D14FC" Ref="U?"  Part="3" 
+AR Path="/5EACE220/648D14FC" Ref="U11"  Part="3" 
+F 0 "U11" H 9310 6317 50  0000 C CNN
+F 1 "74LS125" H 9310 6226 50  0000 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 9310 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 9310 6000 50  0001 C CNN
+	3    9310 6000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9610 6000
+Wire Wire Line
+	9010 6000 8860 6000
+Wire Wire Line
+	8860 6000 8860 5775
+Wire Wire Line
+	8860 6000 8860 6365
+Wire Wire Line
+	8860 6365 9310 6365
+Wire Wire Line
+	9310 6365 9310 6250
+Connection ~ 8860 6000
+$Comp
+L power:VCC #PWR013
+U 1 1 648D9F19
+P 8860 5775
+F 0 "#PWR013" H 8860 5625 50  0001 C CNN
+F 1 "VCC" H 8877 5948 50  0000 C CNN
+F 2 "" H 8860 5775 50  0001 C CNN
+F 3 "" H 8860 5775 50  0001 C CNN
+	1    8860 5775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 649FC619
+P 9870 1015
+F 0 "#FLG0103" H 9870 1090 50  0001 C CNN
+F 1 "PWR_FLAG" H 9870 1188 50  0000 C CNN
+F 2 "" H 9870 1015 50  0001 C CNN
+F 3 "~" H 9870 1015 50  0001 C CNN
+	1    9870 1015
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9870 1015 9870 865 
+$Comp
+L power:VCC #PWR0243
+U 1 1 64A055C6
+P 9870 865
+F 0 "#PWR0243" H 9870 715 50  0001 C CNN
+F 1 "VCC" H 9887 1038 50  0000 C CNN
+F 2 "" H 9870 865 50  0001 C CNN
+F 3 "" H 9870 865 50  0001 C CNN
+	1    9870 865 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
