@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 13 13
-Title "16up"
+Sheet 13 14
+Title "LittleSixteen"
 Date "2023-02-14"
-Rev "2git"
+Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 ""
@@ -724,17 +724,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 11070 10770 50  0001 C CNN
 $EndComp
 $Comp
 L 74xx:74LS04 U21
-U 6 1 640B6670
-P 9910 10815
-F 0 "U21" H 9910 11132 50  0000 C CNN
-F 1 "74LS04" H 9910 11041 50  0000 C CNN
-F 2 "" H 9910 10815 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9910 10815 50  0001 C CNN
-	6    9910 10815
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U21
 U 7 1 640B7953
 P 2975 10020
 F 0 "U21" H 3205 10066 50  0000 L CNN
@@ -1053,8 +1042,8 @@ L ferrite_bead_small:Ferrite_Bead_Small FB?
 U 1 1 647718B2
 P 7390 6730
 AR Path="/5ECB474B/647718B2" Ref="FB?"  Part="1" 
-AR Path="/63EAD078/647718B2" Ref="FB8"  Part="1" 
-F 0 "FB8" V 7435 6850 50  0000 C CNN
+AR Path="/63EAD078/647718B2" Ref="FB62"  Part="1" 
+F 0 "FB62" V 7335 6595 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 7490 6685 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 7320 6730 50  0001 C CNN
 F 3 "~" H 7390 6730 50  0001 C CNN
@@ -1066,8 +1055,8 @@ L ferrite_bead_small:Ferrite_Bead_Small FB?
 U 1 1 6477BD12
 P 7185 6465
 AR Path="/5ECB474B/6477BD12" Ref="FB?"  Part="1" 
-AR Path="/63EAD078/6477BD12" Ref="FB7"  Part="1" 
-F 0 "FB7" H 7015 6380 50  0000 L CNN
+AR Path="/63EAD078/6477BD12" Ref="FB60"  Part="1" 
+F 0 "FB60" H 6980 6380 50  0000 L CNN
 F 1 "Ferrite_Bead_Small" H 7285 6420 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 7115 6465 50  0001 C CNN
 F 3 "~" H 7185 6465 50  0001 C CNN
@@ -1079,8 +1068,8 @@ L ferrite_bead_small:Ferrite_Bead_Small FB?
 U 1 1 64790452
 P 7455 7760
 AR Path="/5ECB474B/64790452" Ref="FB?"  Part="1" 
-AR Path="/63EAD078/64790452" Ref="FB11"  Part="1" 
-F 0 "FB11" H 7261 7760 50  0000 R CNN
+AR Path="/63EAD078/64790452" Ref="FB64"  Part="1" 
+F 0 "FB64" H 7261 7760 50  0000 R CNN
 F 1 "Ferrite_Bead_Small" H 7555 7715 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 7385 7760 50  0001 C CNN
 F 3 "~" H 7455 7760 50  0001 C CNN
@@ -1092,8 +1081,8 @@ L ferrite_bead_small:Ferrite_Bead_Small FB?
 U 1 1 647AEC6A
 P 9295 7760
 AR Path="/5ECB474B/647AEC6A" Ref="FB?"  Part="1" 
-AR Path="/63EAD078/647AEC6A" Ref="FB20"  Part="1" 
-F 0 "FB20" H 9050 7685 50  0000 L CNN
+AR Path="/63EAD078/647AEC6A" Ref="FB65"  Part="1" 
+F 0 "FB65" H 9050 7685 50  0000 L CNN
 F 1 "Ferrite_Bead_Small" H 9395 7715 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 9225 7760 50  0001 C CNN
 F 3 "~" H 9295 7760 50  0001 C CNN
@@ -1105,8 +1094,8 @@ L ferrite_bead_small:Ferrite_Bead_Small FB?
 U 1 1 647B8E58
 P 7425 6465
 AR Path="/5ECB474B/647B8E58" Ref="FB?"  Part="1" 
-AR Path="/63EAD078/647B8E58" Ref="FB10"  Part="1" 
-F 0 "FB10" H 7225 6375 50  0000 L CNN
+AR Path="/63EAD078/647B8E58" Ref="FB61"  Part="1" 
+F 0 "FB61" H 7225 6375 50  0000 L CNN
 F 1 "Ferrite_Bead_Small" H 7525 6420 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 7355 6465 50  0001 C CNN
 F 3 "~" H 7425 6465 50  0001 C CNN
@@ -1142,8 +1131,8 @@ L ferrite_bead_small:Ferrite_Bead_Small FB?
 U 1 1 6479A5EF
 P 7390 7330
 AR Path="/5ECB474B/6479A5EF" Ref="FB?"  Part="1" 
-AR Path="/63EAD078/6479A5EF" Ref="FB9"  Part="1" 
-F 0 "FB9" V 7430 7450 50  0000 C CNN
+AR Path="/63EAD078/6479A5EF" Ref="FB63"  Part="1" 
+F 0 "FB63" V 7330 7195 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" H 7490 7285 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 7320 7330 50  0001 C CNN
 F 3 "~" H 7390 7330 50  0001 C CNN
@@ -1178,8 +1167,8 @@ L ferrite_bead_small:Ferrite_Bead_Small FB?
 U 1 1 647EB007
 P 6905 6465
 AR Path="/5ECB474B/647EB007" Ref="FB?"  Part="1" 
-AR Path="/63EAD078/647EB007" Ref="FB6"  Part="1" 
-F 0 "FB6" H 6870 6385 50  0000 R CNN
+AR Path="/63EAD078/647EB007" Ref="FB59"  Part="1" 
+F 0 "FB59" H 6870 6385 50  0000 R CNN
 F 1 "Ferrite_Bead_Small" H 7005 6420 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 6835 6465 50  0001 C CNN
 F 3 "~" H 6905 6465 50  0001 C CNN

@@ -31,4 +31,5 @@
   (lib (name PLUS4_USERPORT)(type Legacy)(uri ${KIPRJMOD}/lib/PLUS4_USERPORT.lib)(options "")(descr ""))
   (lib (name W65C51S)(type Legacy)(uri ${KIPRJMOD}/lib/W65C51S.lib)(options "")(descr ""))
   (lib (name Power)(type Legacy)(uri ${KIPRJMOD}/lib/Power.lib)(options "")(descr ""))
+  (lib (name MOS_8580)(type Legacy)(uri ${KIPRJMOD}/lib/MOS_8580.lib)(options "")(descr ""))
 )

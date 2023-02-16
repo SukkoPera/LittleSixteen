@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 13
+Sheet 12 14
 Title "LittleSixteen"
 Date "2022-08-18"
-Rev "4git"
+Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 ""
@@ -248,43 +248,10 @@ F 3 "~" H 2145 1965 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1875 1965 1995 1965
-$Comp
-L Device:R R8
-U 1 1 5E06101C
-P 1725 1450
-F 0 "R8" V 1518 1450 50  0000 C CNN
-F 1 "1k" V 1609 1450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1655 1450 50  0001 C CNN
-F 3 "~" H 1725 1450 50  0001 C CNN
-	1    1725 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP1 C19
-U 1 1 5E061026
-P 2145 1450
-F 0 "C19" V 1893 1450 50  0000 C CNN
-F 1 "10u/25V" V 1984 1450 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2145 1450 50  0001 C CNN
-F 3 "~" H 2145 1450 50  0001 C CNN
-	1    2145 1450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1875 1450 1995 1450
-Wire Wire Line
-	1575 1450 1125 1450
-Text GLabel 1125 1450 0    50   Input ~ 0
-SND
-Wire Wire Line
-	2500 1450 2500 1700
-Wire Wire Line
-	2295 1450 2500 1450
 Wire Wire Line
 	2500 1965 2500 1700
 Wire Wire Line
 	2295 1965 2500 1965
-Connection ~ 2500 1700
 Wire Wire Line
 	2500 1700 2785 1700
 $Comp
@@ -1300,4 +1267,37 @@ Wire Wire Line
 Connection ~ 2720 5855
 Wire Wire Line
 	2720 5855 2880 5855
+Connection ~ 2500 1700
+Wire Wire Line
+	2295 1450 2500 1450
+Wire Wire Line
+	2500 1450 2500 1700
+Text GLabel 1125 1450 0    50   Input ~ 0
+SND
+Wire Wire Line
+	1575 1450 1125 1450
+Wire Wire Line
+	1875 1450 1995 1450
+$Comp
+L Device:CP1 C19
+U 1 1 5E061026
+P 2145 1450
+F 0 "C19" V 1893 1450 50  0000 C CNN
+F 1 "10u/25V" V 1984 1450 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2145 1450 50  0001 C CNN
+F 3 "~" H 2145 1450 50  0001 C CNN
+	1    2145 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E06101C
+P 1725 1450
+F 0 "R8" V 1518 1450 50  0000 C CNN
+F 1 "1k" V 1609 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1655 1450 50  0001 C CNN
+F 3 "~" H 1725 1450 50  0001 C CNN
+	1    1725 1450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

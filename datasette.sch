@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 13
+Sheet 7 14
 Title "LittleSixteen"
 Date "2021-12-05"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
-Comment2 "WARNING: These schematics might contain errors!"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -1381,10 +1381,10 @@ Text GLabel 6660 6450 2    50   Output ~ 0
 ~BRESET
 Wire Wire Line
 	5880 1535 6100 1535
-Wire Bus Line
-	3075 4640 3075 5520
 Text Notes 6690 1745 0    50   ~ 0
 CST_SENSE:\nLOW if one of the\nkeys PLAY,\nRECORD, F.FWD\nor REW is pressed,\nHIGH otherwise
 Text GLabel 6100 1535 2    50   Output ~ 0
 ~TAPE_SENSE
+Wire Bus Line
+	3075 4640 3075 5520
 $EndSCHEMATC
