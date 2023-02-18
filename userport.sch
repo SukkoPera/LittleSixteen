@@ -254,7 +254,7 @@ U 1 1 649AFBB4
 P 5840 4265
 F 0 "C44" H 5955 4311 50  0000 L CNN
 F 1 "100n" H 5955 4220 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 5878 4115 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5878 4115 50  0001 C CNN
 F 3 "~" H 5840 4265 50  0001 C CNN
 F 4 "810-FG28X7R1H104KNT0" H 5840 4265 50  0001 C CNN "MouserPN"
 	1    5840 4265
@@ -330,17 +330,6 @@ F 1 "MOS_6529" H 1703 9995 50  0000 L CNN
 F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 1435 10040 50  0001 C CNN
 F 3 "DOCUMENTATION" H 1435 10040 50  0001 C CNN
 	2    1435 10040
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 646770DB
-P 860 10040
-F 0 "C2" H 975 10086 50  0000 L CNN
-F 1 "100n" H 975 9995 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 898 9890 50  0001 C CNN
-F 3 "~" H 860 10040 50  0001 C CNN
-	1    860  10040
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -673,7 +662,7 @@ U 1 1 640B17BF
 P 8690 2340
 F 0 "U21" H 8690 2657 50  0000 C CNN
 F 1 "74LS04" H 8690 2566 50  0000 C CNN
-F 2 "" H 8690 2340 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8690 2340 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8690 2340 50  0001 C CNN
 	1    8690 2340
 	1    0    0    -1  
@@ -684,7 +673,7 @@ U 2 1 640B2561
 P 8690 2745
 F 0 "U21" H 8690 2970 50  0000 C CNN
 F 1 "74LS04" H 8690 2971 50  0001 C CNN
-F 2 "" H 8690 2745 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8690 2745 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8690 2745 50  0001 C CNN
 	2    8690 2745
 	1    0    0    -1  
@@ -695,7 +684,7 @@ U 3 1 640B3448
 P 8690 3210
 F 0 "U21" H 8690 3435 50  0000 C CNN
 F 1 "74LS04" H 8690 3436 50  0001 C CNN
-F 2 "" H 8690 3210 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8690 3210 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8690 3210 50  0001 C CNN
 	3    8690 3210
 	-1   0    0    -1  
@@ -706,7 +695,7 @@ U 4 1 640B42E4
 P 8690 3655
 F 0 "U21" H 8690 3880 50  0000 C CNN
 F 1 "74LS04" H 8690 3881 50  0001 C CNN
-F 2 "" H 8690 3655 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8690 3655 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8690 3655 50  0001 C CNN
 	4    8690 3655
 	-1   0    0    -1  
@@ -717,7 +706,7 @@ U 5 1 640B5243
 P 11070 10770
 F 0 "U21" H 11070 11087 50  0000 C CNN
 F 1 "74LS04" H 11070 10996 50  0000 C CNN
-F 2 "" H 11070 10770 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 11070 10770 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 11070 10770 50  0001 C CNN
 	5    11070 10770
 	1    0    0    -1  
@@ -728,7 +717,7 @@ U 7 1 640B7953
 P 2975 10020
 F 0 "U21" H 3205 10066 50  0000 L CNN
 F 1 "74LS04" H 3205 9975 50  0000 L CNN
-F 2 "" H 2975 10020 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2975 10020 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2975 10020 50  0001 C CNN
 	7    2975 10020
 	1    0    0    -1  
@@ -739,7 +728,7 @@ U 1 1 6413E36F
 P 2400 10040
 F 0 "C42" H 2515 10086 50  0000 L CNN
 F 1 "100n" H 2515 9995 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 2438 9890 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2438 9890 50  0001 C CNN
 F 3 "~" H 2400 10040 50  0001 C CNN
 	1    2400 10040
 	1    0    0    -1  
@@ -934,8 +923,8 @@ L Device:R R?
 U 1 1 6463BEFC
 P 9590 2870
 AR Path="/5E4A465A/6463BEFC" Ref="R?"  Part="1" 
-AR Path="/63EAD078/6463BEFC" Ref="R17"  Part="1" 
-F 0 "R17" H 9660 2916 50  0000 L CNN
+AR Path="/63EAD078/6463BEFC" Ref="R41"  Part="1" 
+F 0 "R41" H 9660 2916 50  0000 L CNN
 F 1 "10k" H 9660 2825 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9520 2870 50  0001 C CNN
 F 3 "~" H 9590 2870 50  0001 C CNN
@@ -964,8 +953,8 @@ L Device:R R?
 U 1 1 64646396
 P 9940 2870
 AR Path="/5E4A465A/64646396" Ref="R?"  Part="1" 
-AR Path="/63EAD078/64646396" Ref="R18"  Part="1" 
-F 0 "R18" H 10010 2916 50  0000 L CNN
+AR Path="/63EAD078/64646396" Ref="R42"  Part="1" 
+F 0 "R42" H 10010 2916 50  0000 L CNN
 F 1 "10k" H 10010 2825 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9870 2870 50  0001 C CNN
 F 3 "~" H 9940 2870 50  0001 C CNN
@@ -1048,7 +1037,7 @@ F 1 "Ferrite_Bead_Small" H 7490 6685 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 7320 6730 50  0001 C CNN
 F 3 "~" H 7390 6730 50  0001 C CNN
 	1    7390 6730
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB?
@@ -1061,7 +1050,7 @@ F 1 "Ferrite_Bead_Small" H 7285 6420 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 7115 6465 50  0001 C CNN
 F 3 "~" H 7185 6465 50  0001 C CNN
 	1    7185 6465
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB?
@@ -1100,7 +1089,7 @@ F 1 "Ferrite_Bead_Small" H 7525 6420 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 7355 6465 50  0001 C CNN
 F 3 "~" H 7425 6465 50  0001 C CNN
 	1    7425 6465
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R?
@@ -1108,8 +1097,8 @@ U 1 1 647C5CFF
 P 7425 6100
 AR Path="/61BCD018/647C5CFF" Ref="R?"  Part="1" 
 AR Path="/5ECB474B/647C5CFF" Ref="R?"  Part="1" 
-AR Path="/63EAD078/647C5CFF" Ref="R16"  Part="1" 
-F 0 "R16" H 7495 6146 50  0000 L CNN
+AR Path="/63EAD078/647C5CFF" Ref="R40"  Part="1" 
+F 0 "R40" H 7495 6146 50  0000 L CNN
 F 1 "22R 3W" H 7495 6055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 7355 6100 50  0001 C CNN
 F 3 "~" H 7425 6100 50  0001 C CNN
@@ -1137,7 +1126,7 @@ F 1 "Ferrite_Bead_Small" H 7490 7285 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 7320 7330 50  0001 C CNN
 F 3 "~" H 7390 7330 50  0001 C CNN
 	1    7390 7330
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	7290 6730 6470 6730
@@ -1173,7 +1162,7 @@ F 1 "Ferrite_Bead_Small" H 7005 6420 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 6835 6465 50  0001 C CNN
 F 3 "~" H 6905 6465 50  0001 C CNN
 	1    6905 6465
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6470 6830 7690 6830
@@ -1185,40 +1174,13 @@ Connection ~ 13500 1820
 Wire Wire Line
 	13500 1820 13675 1820
 $Comp
-L power:GND #PWR021
-U 1 1 648FD481
-P 15210 2115
-F 0 "#PWR021" H 15210 1865 50  0001 C CNN
-F 1 "GND" H 15215 1942 50  0000 C CNN
-F 2 "" H 15210 2115 50  0001 C CNN
-F 3 "" H 15210 2115 50  0001 C CNN
-	1    15210 2115
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C43
-U 1 1 648FDA10
-P 15210 1870
-F 0 "C43" H 15325 1916 50  0000 L CNN
-F 1 "100n" H 15325 1825 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 15248 1720 50  0001 C CNN
-F 3 "~" H 15210 1870 50  0001 C CNN
-F 4 "810-FG28X7R1H104KNT0" H 15210 1870 50  0001 C CNN "MouserPN"
-	1    15210 1870
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15210 2020 15210 2115
-Wire Wire Line
-	15210 1720 15210 1620
-$Comp
 L Device:R R?
 U 1 1 64956DD2
 P 6905 6100
 AR Path="/61BCD018/64956DD2" Ref="R?"  Part="1" 
 AR Path="/5ECB474B/64956DD2" Ref="R?"  Part="1" 
-AR Path="/63EAD078/64956DD2" Ref="R10"  Part="1" 
-F 0 "R10" H 6835 6146 50  0000 R CNN
+AR Path="/63EAD078/64956DD2" Ref="R38"  Part="1" 
+F 0 "R38" H 6835 6146 50  0000 R CNN
 F 1 "22R 3W" H 6835 6055 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 6835 6100 50  0001 C CNN
 F 3 "~" H 6905 6100 50  0001 C CNN
@@ -1237,8 +1199,8 @@ U 1 1 64956726
 P 7185 6100
 AR Path="/61BCD018/64956726" Ref="R?"  Part="1" 
 AR Path="/5ECB474B/64956726" Ref="R?"  Part="1" 
-AR Path="/63EAD078/64956726" Ref="R15"  Part="1" 
-F 0 "R15" H 6980 6140 50  0000 L CNN
+AR Path="/63EAD078/64956726" Ref="R39"  Part="1" 
+F 0 "R39" H 6980 6140 50  0000 L CNN
 F 1 "22R 3W" V 7280 5935 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 7115 6100 50  0001 C CNN
 F 3 "~" H 7185 6100 50  0001 C CNN
@@ -1282,17 +1244,6 @@ F 1 "VCC" H 14765 3828 50  0000 C CNN
 F 2 "" H 14750 3655 50  0001 C CNN
 F 3 "" H 14750 3655 50  0001 C CNN
 	1    14750 3655
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0244
-U 1 1 64A20196
-P 15210 1620
-F 0 "#PWR0244" H 15210 1470 50  0001 C CNN
-F 1 "VCC" H 15225 1793 50  0000 C CNN
-F 2 "" H 15210 1620 50  0001 C CNN
-F 3 "" H 15210 1620 50  0001 C CNN
-	1    15210 1620
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1372,6 +1323,213 @@ F 3 "" H 5840 4015 50  0001 C CNN
 	1    5840 4015
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C43
+U 1 1 646770DB
+P 860 10040
+F 0 "C43" H 975 10086 50  0000 L CNN
+F 1 "100n" H 975 9995 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 898 9890 50  0001 C CNN
+F 3 "~" H 860 10040 50  0001 C CNN
+	1    860  10040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 6895 3295 6895
+Wire Wire Line
+	3795 6995 3295 6995
+Wire Wire Line
+	3510 7430 3510 7330
+Wire Wire Line
+	3510 7730 3510 7825
+Wire Wire Line
+	2795 6095 2795 5985
+Wire Wire Line
+	2795 7495 2795 7570
+Wire Wire Line
+	3795 6795 3295 6795
+Wire Wire Line
+	3795 6695 3295 6695
+Wire Wire Line
+	3795 6395 3295 6395
+Wire Wire Line
+	3795 6295 3295 6295
+Wire Wire Line
+	2295 7095 1795 7095
+Wire Wire Line
+	2295 6995 1795 6995
+Wire Wire Line
+	2295 6895 1795 6895
+Wire Wire Line
+	2295 6795 1795 6795
+Wire Wire Line
+	2295 6695 1795 6695
+Wire Wire Line
+	2295 6595 1795 6595
+Wire Wire Line
+	2295 6495 1795 6495
+Wire Wire Line
+	2295 6395 1795 6395
+Wire Wire Line
+	2295 6295 1795 6295
+Text Notes 3810 6425 0    50   ~ 0
+$FD10 ONLY!
+Entry Wire Line
+	1695 6995 1795 7095
+Entry Wire Line
+	1695 6895 1795 6995
+Entry Wire Line
+	1695 6795 1795 6895
+Entry Wire Line
+	1695 6695 1795 6795
+Entry Wire Line
+	1695 6595 1795 6695
+Entry Wire Line
+	1695 6495 1795 6595
+Entry Wire Line
+	1695 6395 1795 6495
+Entry Wire Line
+	1695 6295 1795 6395
+Entry Wire Line
+	1695 6195 1795 6295
+Text Notes 2570 5665 0    50   ~ 0
+CHIP-SELECT\nGENERATION
+$Comp
+L Device:C C?
+U 1 1 6578AABF
+P 3510 7580
+AR Path="/64A6E6F3/6578AABF" Ref="C?"  Part="1" 
+AR Path="/63EAD078/6578AABF" Ref="C61"  Part="1" 
+F 0 "C61" H 3625 7626 50  0000 L CNN
+F 1 "100n" H 3625 7535 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3548 7430 50  0001 C CNN
+F 3 "~" H 3510 7580 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 3510 7580 50  0001 C CNN "MouserPN"
+F 5 "100n" H 3510 7580 50  0001 C CNN "Value"
+	1    3510 7580
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6578AAC5
+P 3510 7825
+AR Path="/64A6E6F3/6578AAC5" Ref="#PWR?"  Part="1" 
+AR Path="/63EAD078/6578AAC5" Ref="#PWR0278"  Part="1" 
+F 0 "#PWR0278" H 3510 7575 50  0001 C CNN
+F 1 "GND" H 3515 7652 50  0000 C CNN
+F 2 "" H 3510 7825 50  0001 C CNN
+F 3 "" H 3510 7825 50  0001 C CNN
+	1    3510 7825
+	1    0    0    -1  
+$EndComp
+Text Label 1795 7095 0    50   ~ 0
+a1
+Text Label 1795 6995 0    50   ~ 0
+a2
+Text Label 1795 6895 0    50   ~ 0
+a3
+Text Label 1795 6795 0    50   ~ 0
+a4
+Text Label 1795 6695 0    50   ~ 0
+a5
+Text Label 1795 6595 0    50   ~ 0
+a6
+Text Label 1795 6495 0    50   ~ 0
+a7
+Text Label 1795 6395 0    50   ~ 0
+a8
+Text Label 1795 6295 0    50   ~ 0
+a9
+$Comp
+L power:GND #PWR?
+U 1 1 6578AAD8
+P 2795 7570
+AR Path="/64A6E6F3/6578AAD8" Ref="#PWR?"  Part="1" 
+AR Path="/63EAD078/6578AAD8" Ref="#PWR0279"  Part="1" 
+F 0 "#PWR0279" H 2795 7320 50  0001 C CNN
+F 1 "GND" H 2800 7397 50  0000 C CNN
+F 2 "" H 2795 7570 50  0001 C CNN
+F 3 "" H 2795 7570 50  0001 C CNN
+	1    2795 7570
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_Programmable:GAL16V8 U?
+U 1 1 6578AAE0
+P 2795 6795
+AR Path="/64A6E6F3/6578AAE0" Ref="U?"  Part="1" 
+AR Path="/63EAD078/6578AAE0" Ref="U28"  Part="1" 
+F 0 "U28" H 3060 7395 50  0000 C CNN
+F 1 "GAL16V8" H 2985 6190 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 2795 6795 50  0001 C CNN
+F 3 "" H 2795 6795 50  0001 C CNN
+F 4 "556-AF16V8B15PU" H 2795 6795 50  0001 C CNN "MouserPN"
+F 5 "GAL16V8" H 2795 6795 50  0001 C CNN "Value"
+	1    2795 6795
+	1    0    0    -1  
+$EndComp
+Text GLabel 3475 6895 2    50   Input ~ 0
+PHI2
+$Comp
+L power:VCC #PWR?
+U 1 1 6578AAE7
+P 3510 7330
+AR Path="/64A6E6F3/6578AAE7" Ref="#PWR?"  Part="1" 
+AR Path="/63EAD078/6578AAE7" Ref="#PWR0280"  Part="1" 
+F 0 "#PWR0280" H 3510 7180 50  0001 C CNN
+F 1 "VCC" H 3525 7503 50  0000 C CNN
+F 2 "" H 3510 7330 50  0001 C CNN
+F 3 "" H 3510 7330 50  0001 C CNN
+	1    3510 7330
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6578AAED
+P 2795 5985
+AR Path="/64A6E6F3/6578AAED" Ref="#PWR?"  Part="1" 
+AR Path="/63EAD078/6578AAED" Ref="#PWR0281"  Part="1" 
+F 0 "#PWR0281" H 2795 5835 50  0001 C CNN
+F 1 "VCC" H 2810 6158 50  0000 C CNN
+F 2 "" H 2795 5985 50  0001 C CNN
+F 3 "" H 2795 5985 50  0001 C CNN
+	1    2795 5985
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 6195 0    50   Input ~ 0
+a[0..15]
+Wire Bus Line
+	1500 6195 1695 6195
+Text GLabel 3795 6295 2    50   Input ~ 0
+A15_10_HIGH
+Wire Wire Line
+	3795 6495 3295 6495
+Text Label 3795 6695 2    50   ~ 0
+cba
+Text GLabel 3795 6995 2    50   Input ~ 0
+R_~W
+Wire Wire Line
+	3795 6595 3295 6595
+Text Label 3795 6795 2    50   ~ 0
+gab
+Wire Wire Line
+	2295 7195 1795 7195
+Entry Wire Line
+	1695 7095 1795 7195
+Text Label 1795 7195 0    50   ~ 0
+a0
+Text Label 3795 6395 2    50   ~ 0
+~userport_cs
+Text Label 3795 6495 2    50   ~ 0
+~ramreg_rcs
+Text Label 3795 6595 2    50   ~ 0
+ramreg_wcs
+NoConn ~ 3795 6495
+NoConn ~ 3795 6595
+Text Label 3245 2825 0    50   ~ 0
+q+
+Text Label 3245 2925 0    50   ~ 0
+q-
 Wire Bus Line
 	9765 6730 9765 8260
 Wire Bus Line
@@ -1386,4 +1544,6 @@ Wire Bus Line
 	13775 1720 13775 2420
 Wire Bus Line
 	6130 2525 6130 3225
+Wire Bus Line
+	1695 6195 1695 7095
 $EndSCHEMATC

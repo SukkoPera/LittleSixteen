@@ -218,7 +218,7 @@ U 1 1 61152B4E
 P 10785 5560
 F 0 "H8" H 10885 5563 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10885 5518 50  0001 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 10785 5560 50  0001 C CNN
+F 2 "" H 10785 5560 50  0001 C CNN
 F 3 "~" H 10785 5560 50  0001 C CNN
 	1    10785 5560
 	1    0    0    -1  
@@ -282,23 +282,23 @@ Wire Wire Line
 $Comp
 L void:Void V0
 U 1 1 61145DF1
-P 8580 5735
-F 0 "V0" H 8658 5781 50  0000 L CNN
-F 1 "LOGO" H 8658 5690 50  0000 L CNN
-F 2 "LittleSixteen:Logo" H 8580 5735 50  0001 C CNN
-F 3 "" H 8580 5735 50  0001 C CNN
-	1    8580 5735
+P 6030 7170
+F 0 "V0" H 6108 7216 50  0000 L CNN
+F 1 "LOGO" H 6108 7125 50  0000 L CNN
+F 2 "LittleSixteen:Logo" H 6030 7170 50  0001 C CNN
+F 3 "" H 6030 7170 50  0001 C CNN
+	1    6030 7170
 	1    0    0    -1  
 $EndComp
 $Comp
 L void:Void V2
 U 1 1 61992CC0
-P 8580 6155
-F 0 "V2" H 8658 6201 50  0000 L CNN
-F 1 "CC BY-NC-SA 4.0" H 8658 6110 50  0000 L CNN
-F 2 "LittleSixteen:cc_by_nc_sa" H 8580 6155 50  0001 C CNN
-F 3 "" H 8580 6155 50  0001 C CNN
-	1    8580 6155
+P 6030 7590
+F 0 "V2" H 6108 7636 50  0000 L CNN
+F 1 "CC BY-NC-SA 4.0" H 6108 7545 50  0000 L CNN
+F 2 "LittleSixteen:cc_by_nc_sa" H 6030 7590 50  0001 C CNN
+F 3 "" H 6030 7590 50  0001 C CNN
+	1    6030 7590
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -390,12 +390,12 @@ Wire Wire Line
 $Comp
 L void:Void V1
 U 1 1 63408BAA
-P 8580 5945
-F 0 "V1" H 8658 5991 50  0000 L CNN
-F 1 "PCBWAY_LOGO" H 8658 5900 50  0000 L CNN
-F 2 "LittleSixteen:pcbway" H 8580 5945 50  0001 C CNN
-F 3 "" H 8580 5945 50  0001 C CNN
-	1    8580 5945
+P 6030 7380
+F 0 "V1" H 6108 7426 50  0000 L CNN
+F 1 "PCBWAY_LOGO" H 6108 7335 50  0000 L CNN
+F 2 "LittleSixteen:pcbway" H 6030 7380 50  0001 C CNN
+F 3 "" H 6030 7380 50  0001 C CNN
+	1    6030 7380
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -410,4 +410,54 @@ U 64A6E6F3
 F0 "SID!" 50
 F1 "sid.sch" 50
 $EndSheet
+$Comp
+L Mechanical:MountingHole_Pad H15
+U 1 1 650CB05A
+P 9205 4605
+F 0 "H15" H 9305 4608 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9305 4563 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad" H 9205 4605 50  0001 C CNN
+F 3 "~" H 9205 4605 50  0001 C CNN
+	1    9205 4605
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H16
+U 1 1 650CB180
+P 9205 4915
+F 0 "H16" H 9305 4918 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9305 4873 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad" H 9205 4915 50  0001 C CNN
+F 3 "~" H 9205 4915 50  0001 C CNN
+	1    9205 4915
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 6035 9205 6035
+Wire Wire Line
+	9205 6035 9205 6095
+$Comp
+L power:GND #PWR036
+U 1 1 650CB1A0
+P 9205 6095
+F 0 "#PWR036" H 9205 5845 50  0001 C CNN
+F 1 "GND" H 9210 5922 50  0000 C CNN
+F 2 "" H 9205 6095 50  0001 C CNN
+F 3 "" H 9205 6095 50  0001 C CNN
+	1    9205 6095
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9205 5015 9205 5060
+Wire Wire Line
+	9205 5060 9050 5060
+Connection ~ 9050 5060
+Wire Wire Line
+	9205 4705 9205 4750
+Wire Wire Line
+	9205 4750 9050 4750
+Wire Wire Line
+	9050 4750 9050 5060
+Wire Wire Line
+	9050 5060 9050 6035
 $EndSCHEMATC

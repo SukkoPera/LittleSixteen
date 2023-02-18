@@ -10,4 +10,9 @@ D Power symbol creates a global label with name "-9VAC"
 K power-flag
 $ENDCMP
 #
+$CMP AGND
+D Power symbol creates a global label with name "AGND" , audio ground
+K power-flag
+$ENDCMP
+#
 #End Doc Library

@@ -831,7 +831,7 @@ COMP_OUT
 Text Notes 3800 4470 0    157  ~ 0
 RF MODULATOR REPLACEMENT
 Text Notes 3440 7525 2    50   ~ 0
-These circuits can replace the composite/luma/chroma\noutput functionality of the original modulator.\n\nIt's based on mbarszcz-pcb's\nc64-rf-modulator-replacement project for the C64, please see:\nhttps://github.com/mbarszcz-pcb/c64-rf-modulator-replacement.\n\nEdoardo spent a lot of time fine-tuning the component values\nand adding some new components in order to achieve the best\nvideo quality.\n\nThe trimmers are not needed by default, they can be installed in\norder to fine-tune the output signals f irther, in which case JP81\nand JP82 shall be opened.
+These circuits can replace the composite/luma/chroma\noutput functionality of the original modulator.\n\nIt's based on mbarszcz-pcb's\nc64-rf-modulator-replacement project for the C64, please see:\nhttps://github.com/mbarszcz-pcb/c64-rf-modulator-replacement.\n\nEdoardo spent a lot of time fine-tuning the component values\nand adding some new components in order to achieve the best\nvideo quality.\n\nThe trimmers are not needed by default, they can be installed in\norder to fine-tune the output signals further, in which case JP81\nand JP82 shall be opened.
 Wire Wire Line
 	9100 5640 9485 5640
 $Comp
