@@ -1208,7 +1208,7 @@ F 1 "1k" V 1609 950 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1655 950 50  0001 C CNN
 F 3 "~" H 1725 950 50  0001 C CNN
 	1    1725 950 
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	2500 950  2500 1450
