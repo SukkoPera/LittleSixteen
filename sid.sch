@@ -1782,16 +1782,6 @@ F 3 "" H 5860 4045 50  0001 C CNN
 	1    5860 4045
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	8650 5890 8650 6745
-Wire Bus Line
-	7135 2495 7135 2895
-Wire Bus Line
-	9620 2095 9620 2795
-Wire Bus Line
-	15380 6155 15380 6855
-Wire Bus Line
-	6450 5890 6450 6845
 $Comp
 L Power:VTED #PWR0274
 U 1 1 6432A2C4
@@ -1803,4 +1793,14 @@ F 3 "" H 12830 830 50  0001 C CNN
 	1    12830 830 
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	8650 5890 8650 6745
+Wire Bus Line
+	7135 2495 7135 2895
+Wire Bus Line
+	9620 2095 9620 2795
+Wire Bus Line
+	15380 6155 15380 6855
+Wire Bus Line
+	6450 5890 6450 6845
 $EndSCHEMATC
