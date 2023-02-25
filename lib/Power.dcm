@@ -15,4 +15,9 @@ D Power symbol creates a global label with name "AGND" , audio ground
 K power-flag
 $ENDCMP
 #
+$CMP VTED
+D Power symbol creates a global label with name "VTED"
+K power-flag
+$ENDCMP
+#
 #End Doc Library

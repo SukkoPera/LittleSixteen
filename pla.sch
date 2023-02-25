@@ -997,13 +997,13 @@ Wire Wire Line
 	2780 5710 2780 5305
 Wire Wire Line
 	2780 5305 3205 5305
+Connection ~ 2780 5710
+Text GLabel 3205 5305 2    50   Output ~ 0
+A15_10_HIGH
 Wire Bus Line
 	5245 1085 5245 1685
 Wire Bus Line
 	1280 1185 1280 2285
 Wire Bus Line
 	2680 4095 2680 7215
-Connection ~ 2780 5710
-Text GLabel 3205 5305 2    50   Output ~ 0
-A15_10_HIGH
 $EndSCHEMATC

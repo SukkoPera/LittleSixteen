@@ -968,8 +968,6 @@ Wire Wire Line
 	4050 7065 3880 7065
 Wire Wire Line
 	4050 6965 3880 6965
-Text Label 4820 2650 0    50   ~ 0
-f1d
 Text Label 5445 6970 0    50   ~ 0
 f2d
 Text Label 5445 6770 0    50   ~ 0
