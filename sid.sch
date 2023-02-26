@@ -257,11 +257,9 @@ Wire Wire Line
 Wire Wire Line
 	15590 7135 15590 7035
 Wire Wire Line
-	13875 6255 12590 6255
-Wire Wire Line
 	13875 6355 12690 6355
 Wire Wire Line
-	13875 6455 12790 6455
+	13875 6455 13190 6455
 Wire Wire Line
 	11050 6855 10800 6855
 Wire Wire Line
@@ -314,22 +312,7 @@ Connection ~ 9245 2095
 Wire Wire Line
 	9245 2095 9520 2095
 Wire Wire Line
-	12590 6085 12590 6255
-Connection ~ 12590 6255
-Wire Wire Line
-	12690 6355 12690 6085
-Wire Wire Line
-	12790 6085 12790 6455
-Connection ~ 12790 6455
-Wire Wire Line
-	13875 6655 12990 6655
-Wire Wire Line
-	12990 6085 12990 6655
-Connection ~ 12990 6655
-Wire Wire Line
-	13875 6555 12890 6555
-Wire Wire Line
-	12890 6555 12890 6085
+	13875 6655 13290 6655
 Wire Wire Line
 	1320 10315 1320 10410
 Wire Wire Line
@@ -749,13 +732,7 @@ Wire Wire Line
 Wire Wire Line
 	13090 6955 13875 6955
 Wire Wire Line
-	13190 6855 13190 6085
-Wire Wire Line
-	13190 6855 13875 6855
-Wire Wire Line
-	13290 6085 13290 6755
-Wire Wire Line
-	13290 6755 13875 6755
+	13290 6085 13290 6655
 Text GLabel 15580 6155 2    50   BiDi ~ 0
 d[0..7]
 Text Label 10800 6655 0    50   ~ 0
@@ -801,31 +778,19 @@ F 3 "" H 10975 6280 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12590 6255 10355 6255
-Wire Wire Line
 	10355 6255 10355 6655
 Wire Wire Line
 	10355 6655 10470 6655
 Wire Wire Line
-	12790 6455 10255 6455
-Wire Wire Line
 	10255 6455 10255 6755
 Wire Wire Line
 	10255 6755 10470 6755
-Connection ~ 12690 6355
-Connection ~ 12890 6555
-Wire Wire Line
-	12990 6645 12990 6655
 Wire Wire Line
 	12990 6655 12990 6855
 Wire Wire Line
-	12890 6555 12890 6755
-Wire Wire Line
-	12070 6755 12890 6755
+	12070 6755 12590 6755
 Wire Wire Line
 	12070 6855 12990 6855
-Wire Wire Line
-	12690 6355 12690 6655
 Wire Wire Line
 	12070 6655 12690 6655
 Text Label 4980 6370 2    50   ~ 0
@@ -1793,6 +1758,51 @@ F 5 "MOS_8580" H 8110 2245 50  0001 C CNN "Value"
 	1    8110 2245
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	12690 6085 12690 6355
+Connection ~ 12590 6755
+Wire Wire Line
+	12590 6755 12890 6755
+Wire Wire Line
+	10355 6255 12890 6255
+Wire Wire Line
+	12590 6085 12590 6755
+Connection ~ 12690 6355
+Wire Wire Line
+	12690 6355 12690 6655
+Wire Wire Line
+	12890 6085 12890 6255
+Connection ~ 12890 6255
+Wire Wire Line
+	12890 6255 13875 6255
+Wire Wire Line
+	13875 6555 12890 6555
+Wire Wire Line
+	12890 6555 12890 6755
+Connection ~ 13190 6455
+Wire Wire Line
+	13190 6455 13190 6085
+Wire Wire Line
+	10255 6455 13190 6455
+Connection ~ 13290 6655
+Wire Wire Line
+	13290 6655 12990 6655
+Wire Wire Line
+	12790 6085 12790 6705
+Wire Wire Line
+	12790 6705 13190 6705
+Wire Wire Line
+	13190 6705 13190 6755
+Wire Wire Line
+	13190 6755 13875 6755
+Wire Wire Line
+	12990 6085 12990 6605
+Wire Wire Line
+	12990 6605 13140 6605
+Wire Wire Line
+	13140 6605 13140 6855
+Wire Wire Line
+	13140 6855 13875 6855
 Wire Bus Line
 	8650 5890 8650 6745
 Wire Bus Line
