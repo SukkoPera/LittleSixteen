@@ -1803,6 +1803,8 @@ Wire Wire Line
 	13140 6605 13140 6855
 Wire Wire Line
 	13140 6855 13875 6855
+NoConn ~ 8050 6345
+NoConn ~ 8050 6445
 Wire Bus Line
 	8650 5890 8650 6745
 Wire Bus Line

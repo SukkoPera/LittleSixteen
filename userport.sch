@@ -1530,6 +1530,7 @@ Text Label 3245 2825 0    50   ~ 0
 q+
 Text Label 3245 2925 0    50   ~ 0
 q-
+NoConn ~ 3795 6395
 Wire Bus Line
 	9765 6730 9765 8260
 Wire Bus Line

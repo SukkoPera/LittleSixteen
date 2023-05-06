@@ -434,10 +434,8 @@ Wire Wire Line
 	2955 3055 2955 3140
 Wire Wire Line
 	2955 5730 2955 5805
-Text Label 1660 5030 0    50   ~ 0
+Text Label 1660 5480 0    50   ~ 0
 d1
-Wire Wire Line
-	2540 5480 2655 5480
 $Comp
 L 74xx:74LS125 U11
 U 2 1 5E227156
@@ -460,14 +458,14 @@ F 3 "" H 2955 5805 50  0001 C CNN
 	1    2955 5805
 	1    0    0    -1  
 $EndComp
-Text GLabel 1230 2255 0    50   Input ~ 0
+Text GLabel 1230 2705 0    50   Input ~ 0
 d[0..7]
 Wire Bus Line
-	1230 2255 1560 2255
+	1230 2705 1560 2705
 Entry Wire Line
-	1560 4930 1660 5030
+	1560 5380 1660 5480
 Entry Wire Line
-	1560 2255 1660 2355
+	1560 2705 1660 2805
 $Comp
 L 74xx:74LS125 U11
 U 1 1 5DFC8E43
@@ -479,7 +477,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 2955 2805 50  0001 C CNN
 	1    2955 2805
 	1    0    0    -1  
 $EndComp
-Text Label 1660 2355 0    50   ~ 0
+Text Label 1660 2805 0    50   ~ 0
 d2
 Wire Wire Line
 	6200 5380 6060 5380
@@ -664,50 +662,6 @@ Wire Wire Line
 	6705 3145 6705 3180
 Text Notes 5875 2680 2    50   ~ 0
 The (apparently)\nodd connections\nhere are to\nsimplify routing!
-$Comp
-L Jumper:Jumper_3_Bridged12 JP1
-U 1 1 61F59301
-P 2390 5480
-F 0 "JP1" V 2344 5547 50  0000 L CNN
-F 1 "JOY2_SELECT" V 2435 5547 50  0000 L CNN
-F 2 "LittleSixteen:SolderJumper2x" H 2390 5480 50  0001 C CNN
-F 3 "~" H 2390 5480 50  0001 C CNN
-	1    2390 5480
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	2390 5730 2390 5920
-Wire Wire Line
-	2390 5920 2160 5920
-Text GLabel 2160 5920 0    50   Input ~ 0
-D1_LATCHED
-Wire Wire Line
-	2540 2805 2655 2805
-$Comp
-L Jumper:Jumper_3_Bridged12 JP2
-U 1 1 61F9FE8A
-P 2390 2805
-F 0 "JP2" V 2344 2872 50  0000 L CNN
-F 1 "JOY1_SELECT" V 2435 2872 50  0000 L CNN
-F 2 "LittleSixteen:SolderJumper2x" H 2390 2805 50  0001 C CNN
-F 3 "~" H 2390 2805 50  0001 C CNN
-	1    2390 2805
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	2390 3055 2390 3245
-Wire Wire Line
-	2390 3245 2160 3245
-Text GLabel 2160 3245 0    50   Input ~ 0
-D2_LATCHED
-Wire Wire Line
-	2390 2355 2390 2555
-Wire Wire Line
-	1660 2355 2390 2355
-Wire Wire Line
-	2390 5030 2390 5230
-Wire Wire Line
-	1660 5030 2390 5030
 Wire Wire Line
 	5930 1480 5930 1805
 NoConn ~ 7205 2205
@@ -786,9 +740,7 @@ Text Label 5340 4880 0    50   ~ 0
 Wire Wire Line
 	8660 4775 8905 4780
 Wire Bus Line
-	1560 2255 1560 4930
-Text Notes 2575 4575 2    50   ~ 0
-The JP1 and JP2 jumpers are not present\nin the original schematics but I have traced\nthem on my board. They are labeled "D1" and\n"D2", I have renamed them to avoid conflicts\nwith the diodes bearing the same labels.\n\nTheir purpose seems to be able to enable the\njoysticks after passing through the keyboard\ndriver. Since it seems  the latter was introduced\nlate in the x264 architecture, maybe the\ndesigners weren't sure what was best and kept\nboth possibilities.
+	1560 2705 1560 5380
 NoConn ~ 7200 4880
 Wire Wire Line
 	7205 2305 7400 2305
@@ -1473,6 +1425,10 @@ F 3 "~" H 4020 1435 50  0001 C CNN
 	1    4020 1435
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	1660 2805 2655 2805
+Wire Wire Line
+	1660 5480 2655 5480
 Wire Bus Line
 	9685 1705 9685 4385
 $EndSCHEMATC
