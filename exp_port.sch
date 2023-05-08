@@ -81,17 +81,6 @@ Text GLabel 4305 4090 0    50   Input ~ 0
 ~CAS
 Text GLabel 4570 3490 0    50   Input ~ 0
 R_~W
-$Comp
-L Exp-Port:C16-Exp-Port CN1
-U 1 1 5E91CB40
-P 5855 4290
-F 0 "CN1" H 5855 5855 50  0000 C CNN
-F 1 "EXPANSION_CONNECTOR" H 5855 5764 50  0000 C CNN
-F 2 "LittleSixteen:50Pin_Edge_Connector" H 5855 2640 50  0001 C CNN
-F 3 "DOCUMENTATION" H 5855 2540 50  0001 C CNN
-	1    5855 4290
-	1    0    0    -1  
-$EndComp
 Text Label 6905 5090 2    60   ~ 0
 a0
 Wire Wire Line
@@ -343,33 +332,6 @@ Text GLabel 4580 5290 0    50   Output ~ 0
 EXT_AUDIO
 Wire Wire Line
 	4580 5290 5105 5290
-Text GLabel 7230 5190 2    50   Output ~ 0
-RAMEN
-Wire Wire Line
-	6605 5190 6855 5190
-Wire Notes Line
-	6375 5115 7575 5115
-Wire Notes Line
-	7575 5115 7575 5260
-Wire Notes Line
-	7575 5260 6375 5260
-Wire Notes Line
-	6375 5260 6375 5115
-Text Notes 7635 5710 0    50   ~ 0
-On the Plus/4 schematics from the German User's guide, the\nZ pin is reported as "RAMEN (NC)". On the actual boards it is\nactually NC, but then why not use it as a real "RAM Enable"\nsignal to solve the problem of external RAM expansions not\nworking? :)\nWe add a jumper just in case some old cart has Z grounded\nwhile it shouldn't.
-$Comp
-L Device:Jumper_NC_Small JP8
-U 1 1 61F43269
-P 6955 5190
-F 0 "JP8" H 6955 5030 50  0000 C CNN
-F 1 "JP_RAMEN" H 6955 4930 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6955 5190 50  0001 C CNN
-F 3 "~" H 6955 5190 50  0001 C CNN
-	1    6955 5190
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7055 5190 7230 5190
 Wire Wire Line
 	10280 3965 10280 3900
 $Comp
@@ -411,6 +373,17 @@ F 3 "" H 10280 4325 50  0001 C CNN
 $EndComp
 Text Notes 10045 4725 0    50   ~ 0
 Additional\ndecoupling cap
+$Comp
+L Exp-Port:C16-Exp-Port CN1
+U 1 1 5E91CB40
+P 5855 4290
+F 0 "CN1" H 5855 5855 50  0000 C CNN
+F 1 "EXPANSION_CONNECTOR" H 5855 5764 50  0000 C CNN
+F 2 "LittleSixteen:50Pin_Edge_Connector" H 5855 2640 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5855 2540 50  0001 C CNN
+	1    5855 4290
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	3910 4290 3910 4990
 Wire Bus Line

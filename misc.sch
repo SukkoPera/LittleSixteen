@@ -1282,4 +1282,41 @@ F 3 "" H 9870 865 50  0001 C CNN
 	1    9870 865 
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74LS02 U?
+U 4 1 660AD22F
+P 8335 6000
+AR Path="/5EE7AAEB/660AD22F" Ref="U?"  Part="4" 
+AR Path="/5EACE220/660AD22F" Ref="U12"  Part="4" 
+AR Path="/5E4A465A/660AD22F" Ref="U?"  Part="4" 
+F 0 "U12" H 8335 6325 50  0000 C CNN
+F 1 "74LS02" H 8335 6234 50  0000 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 8335 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 8335 6000 50  0001 C CNN
+	4    8335 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7935 5900 7935 6100
+Wire Wire Line
+	7935 6100 8035 6100
+Connection ~ 7935 5900
+Wire Wire Line
+	7935 5900 8035 5900
+$Comp
+L power:VCC #PWR?
+U 1 1 660AD239
+P 7935 5775
+AR Path="/5E4A465A/660AD239" Ref="#PWR?"  Part="1" 
+AR Path="/5EACE220/660AD239" Ref="#PWR0292"  Part="1" 
+F 0 "#PWR0292" H 7935 5625 50  0001 C CNN
+F 1 "VCC" H 7952 5948 50  0000 C CNN
+F 2 "" H 7935 5775 50  0001 C CNN
+F 3 "" H 7935 5775 50  0001 C CNN
+	1    7935 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7935 5775 7935 5900
+NoConn ~ 8635 6000
 $EndSCHEMATC

@@ -457,17 +457,9 @@ Wire Wire Line
 	8235 1715 8720 1715
 Wire Wire Line
 	5830 2215 6005 2215
-Wire Wire Line
-	6005 2215 6005 830 
-Wire Wire Line
-	6005 830  6800 830 
 Connection ~ 6005 2215
 Wire Wire Line
 	6005 2215 7965 2215
-Text GLabel 6800 945  2    50   Output ~ 0
-D2_LATCHED
-Text GLabel 6800 830  2    50   Output ~ 0
-D1_LATCHED
 Connection ~ 4275 1775
 Wire Wire Line
 	4275 1775 3875 1775
@@ -580,10 +572,6 @@ Wire Wire Line
 Connection ~ 6085 2315
 Wire Wire Line
 	5915 2115 7590 2115
-Wire Wire Line
-	6085 2315 6085 945 
-Wire Wire Line
-	6085 945  6800 945 
 Wire Wire Line
 	6085 2315 6085 3435
 Wire Wire Line

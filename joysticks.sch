@@ -417,68 +417,8 @@ F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2005 50  0001 C CNN
 	1    8195 2005
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 5DFEE778
-P 2955 3140
-F 0 "#PWR0107" H 2955 2890 50  0001 C CNN
-F 1 "GND" H 2960 2967 50  0000 C CNN
-F 2 "" H 2955 3140 50  0001 C CNN
-F 3 "" H 2955 3140 50  0001 C CNN
-	1    2955 3140
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3255 5480 6060 5480
-Wire Wire Line
-	2955 3055 2955 3140
-Wire Wire Line
-	2955 5730 2955 5805
-Text Label 1660 5480 0    50   ~ 0
-d1
-$Comp
-L 74xx:74LS125 U11
-U 2 1 5E227156
-P 2955 5480
-F 0 "U11" H 2955 5797 50  0000 C CNN
-F 1 "74LS125" H 2955 5706 50  0000 C CNN
-F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 2955 5480 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 2955 5480 50  0001 C CNN
-	2    2955 5480
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5E19A809
-P 2955 5805
-F 0 "#PWR0110" H 2955 5555 50  0001 C CNN
-F 1 "GND" H 2960 5632 50  0000 C CNN
-F 2 "" H 2955 5805 50  0001 C CNN
-F 3 "" H 2955 5805 50  0001 C CNN
-	1    2955 5805
-	1    0    0    -1  
-$EndComp
-Text GLabel 1230 2705 0    50   Input ~ 0
-d[0..7]
-Wire Bus Line
-	1230 2705 1560 2705
-Entry Wire Line
-	1560 5380 1660 5480
-Entry Wire Line
-	1560 2705 1660 2805
-$Comp
-L 74xx:74LS125 U11
-U 1 1 5DFC8E43
-P 2955 2805
-F 0 "U11" H 2955 3122 50  0000 C CNN
-F 1 "74LS125" H 2955 3031 50  0000 C CNN
-F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 2955 2805 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 2955 2805 50  0001 C CNN
-	1    2955 2805
-	1    0    0    -1  
-$EndComp
-Text Label 1660 2805 0    50   ~ 0
-d2
 Wire Wire Line
 	6200 5380 6060 5380
 Wire Wire Line
@@ -739,8 +679,6 @@ Text Label 5340 4880 0    50   ~ 0
 2f
 Wire Wire Line
 	8660 4775 8905 4780
-Wire Bus Line
-	1560 2705 1560 5380
 NoConn ~ 7200 4880
 Wire Wire Line
 	7205 2305 7400 2305
@@ -1425,10 +1363,10 @@ F 3 "~" H 4020 1435 50  0001 C CNN
 	1    4020 1435
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1660 2805 2655 2805
-Wire Wire Line
-	1660 5480 2655 5480
 Wire Bus Line
 	9685 1705 9685 4385
+Text GLabel 3255 2805 0    50   Input ~ 0
+~JOY1
+Text GLabel 3255 5480 0    50   Input ~ 0
+~JOY2
 $EndSCHEMATC

@@ -76,8 +76,6 @@ F 3 "" H 14375 7635 50  0001 C CNN
 	1    14375 7635
 	-1   0    0    -1  
 $EndComp
-Text Label 13300 7255 0    50   ~ 0
-~joyport
 $Comp
 L power:GND #PWR032
 U 1 1 621B5ED3
@@ -143,10 +141,6 @@ Text Label 7235 2695 0    50   ~ 0
 a3
 Text Label 7235 2795 0    50   ~ 0
 a4
-Text Label 6975 2295 0    50   ~ 0
-~sid
-Text Notes 9835 9560 0    50   ~ 0
-THIS WILL BE USEFUL LATER...
 Text Notes 13205 8120 0    50   ~ 0
 D5-7 ARE EXPECTED TO READ AS HIGH BY SOME SOFTWARE,\nEVEN THOUGH THEIR VALUE IS ACTUALLY MEANINGLESS...
 Text Notes 14580 3830 0    50   ~ 0
@@ -251,7 +245,7 @@ Wire Wire Line
 Wire Wire Line
 	13875 7155 13300 7155
 Wire Wire Line
-	13875 7255 13300 7255
+	13875 7255 13560 7255
 Wire Wire Line
 	15590 7435 15590 7530
 Wire Wire Line
@@ -340,7 +334,7 @@ Wire Wire Line
 Wire Wire Line
 	7360 2195 6975 2195
 Wire Wire Line
-	7360 2295 6975 2295
+	7360 2295 7170 2295
 Wire Wire Line
 	7360 2395 7235 2395
 Wire Wire Line
@@ -425,129 +419,6 @@ Wire Wire Line
 	7360 2095 6975 2095
 Text Notes 10805 7825 0    50   ~ 0
 SERIES RESISTORS ADDED\nIN ORDER TO ALLOW SAFE\nWRITES TO THE PORT\n
-Wire Wire Line
-	8230 6745 8050 6745
-Wire Wire Line
-	8550 6845 8050 6845
-Wire Bus Line
-	8650 5890 6450 5890
-Wire Wire Line
-	8265 7280 8265 7180
-Wire Wire Line
-	8265 7580 8265 7675
-Wire Wire Line
-	7550 5945 7550 5835
-Wire Wire Line
-	7550 7345 7550 7420
-Wire Wire Line
-	8550 6645 8050 6645
-Wire Wire Line
-	8550 6545 8050 6545
-Wire Wire Line
-	8550 6245 8050 6245
-Wire Wire Line
-	8550 6145 8050 6145
-Wire Wire Line
-	7050 6945 6550 6945
-Wire Wire Line
-	7050 6845 6550 6845
-Wire Wire Line
-	7050 6745 6550 6745
-Wire Wire Line
-	7050 6645 6550 6645
-Wire Wire Line
-	7050 6545 6550 6545
-Wire Wire Line
-	7050 6445 6550 6445
-Wire Wire Line
-	7050 6345 6550 6345
-Wire Wire Line
-	7050 6245 6550 6245
-Wire Wire Line
-	7050 6145 6550 6145
-Entry Wire Line
-	8650 6745 8550 6845
-NoConn ~ 7050 7045
-Text Label 8550 6845 2    50   ~ 0
-a5
-Text Notes 8710 6905 0    50   ~ 0
-PHI2 IS NECESSARY FOR ADDRESS\nDECODING BECAUSE ADDRESSES\nARE VALID ON ITS RISING EDGE
-Text Notes 8710 6645 0    50   ~ 0
-$FD80-FD8F
-Text Notes 8710 6545 0    50   ~ 0
-$FD40-$FD5F OR $FE80-FE8F
-Entry Wire Line
-	8650 6145 8550 6245
-Entry Wire Line
-	8650 6045 8550 6145
-Entry Wire Line
-	6450 6845 6550 6945
-Entry Wire Line
-	6450 6745 6550 6845
-Entry Wire Line
-	6450 6645 6550 6745
-Entry Wire Line
-	6450 6545 6550 6645
-Entry Wire Line
-	6450 6445 6550 6545
-Entry Wire Line
-	6450 6345 6550 6445
-Entry Wire Line
-	6450 6245 6550 6345
-Entry Wire Line
-	6450 6145 6550 6245
-Entry Wire Line
-	6450 6045 6550 6145
-Text Notes 7325 5515 0    50   ~ 0
-CHIP-SELECT\nGENERATION
-$Comp
-L power:GND #PWR031
-U 1 1 62DC1E43
-P 8265 7675
-F 0 "#PWR031" H 8265 7425 50  0001 C CNN
-F 1 "GND" H 8270 7502 50  0000 C CNN
-F 2 "" H 8265 7675 50  0001 C CNN
-F 3 "" H 8265 7675 50  0001 C CNN
-	1    8265 7675
-	1    0    0    -1  
-$EndComp
-Text Label 8550 6545 2    50   ~ 0
-~sid
-Text Label 8550 6645 2    50   ~ 0
-~joyport
-Text Label 6550 6945 0    50   ~ 0
-a4
-Text Label 6550 6845 0    50   ~ 0
-a6
-Text Label 6550 6745 0    50   ~ 0
-a7
-Text Label 6550 6645 0    50   ~ 0
-a8
-Text Label 6550 6545 0    50   ~ 0
-a9
-Text Label 6550 6445 0    50   ~ 0
-a10
-Text Label 6550 6345 0    50   ~ 0
-a11
-Text Label 8550 6245 2    50   ~ 0
-a12
-Text Label 6550 6245 0    50   ~ 0
-a13
-Text Label 8550 6145 2    50   ~ 0
-a14
-Text Label 6550 6145 0    50   ~ 0
-a15
-$Comp
-L power:GND #PWR029
-U 1 1 620921F6
-P 7550 7420
-F 0 "#PWR029" H 7550 7170 50  0001 C CNN
-F 1 "GND" H 7555 7247 50  0000 C CNN
-F 2 "" H 7550 7420 50  0001 C CNN
-F 3 "" H 7550 7420 50  0001 C CNN
-	1    7550 7420
-	1    0    0    -1  
-$EndComp
 Text Notes 5600 915  0    50   ~ 0
 AUDIO-STUFF IS USING A SEPARATE\nGROUND FOR NOISE ISOLATION
 $Comp
@@ -620,8 +491,6 @@ Text GLabel 9910 2095 2    50   BiDi ~ 0
 d[0..7]
 Text GLabel 6975 2195 0    50   Input ~ 0
 R_~W
-Text GLabel 8230 6745 2    50   Input ~ 0
-PHI2
 Wire Wire Line
 	1465 6470 1320 6470
 Text GLabel 6940 2895 0    50   Input ~ 0
@@ -639,28 +508,6 @@ F 1 "VCC" H 6420 4218 50  0000 C CNN
 F 2 "" H 6405 4045 50  0001 C CNN
 F 3 "" H 6405 4045 50  0001 C CNN
 	1    6405 4045
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR025
-U 1 1 64C87D70
-P 8265 7180
-F 0 "#PWR025" H 8265 7030 50  0001 C CNN
-F 1 "VCC" H 8280 7353 50  0000 C CNN
-F 2 "" H 8265 7180 50  0001 C CNN
-F 3 "" H 8265 7180 50  0001 C CNN
-	1    8265 7180
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR024
-U 1 1 64C88143
-P 7550 5835
-F 0 "#PWR024" H 7550 5685 50  0001 C CNN
-F 1 "VCC" H 7565 6008 50  0000 C CNN
-F 2 "" H 7550 5835 50  0001 C CNN
-F 3 "" H 7550 5835 50  0001 C CNN
-	1    7550 5835
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -720,11 +567,6 @@ F 3 "" H 12590 5515 50  0001 C CNN
 $EndComp
 Text GLabel 13300 7155 0    50   Input ~ 0
 R_~W
-Text GLabel 6255 5890 0    50   Input ~ 0
-a[0..15]
-Wire Bus Line
-	6255 5890 6450 5890
-Connection ~ 6450 5890
 Wire Wire Line
 	12350 1800 12830 1800
 Wire Wire Line
@@ -1044,12 +886,6 @@ F 3 "" H 11820 4285 50  0001 C CNN
 	1    11820 4285
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10410 9920
-NoConn ~ 10110 10120
-NoConn ~ 10110 10220
-NoConn ~ 10410 10520
-NoConn ~ 10710 10320
-NoConn ~ 10710 10120
 $Comp
 L power:PWR_FLAG #FLG0105
 U 1 1 65C3E799
@@ -1279,17 +1115,6 @@ F 3 "74xx/74hc_hct74.pdf" H 1625 9725 50  0001 C CNN
 $EndComp
 $Comp
 L 74xx:74LS74 U25
-U 2 1 6530B2A4
-P 10410 10220
-F 0 "U25" H 10410 10701 50  0000 C CNN
-F 1 "74LS74" H 10410 10610 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 10410 10220 50  0001 C CNN
-F 3 "74xx/74hc_hct74.pdf" H 10410 10220 50  0001 C CNN
-	2    10410 10220
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS74 U25
 U 1 1 6530A3EB
 P 3215 6470
 F 0 "U25" H 3350 6730 50  0000 C CNN
@@ -1386,32 +1211,6 @@ F 4 "610-2SC1815-GR" H 12730 1495 50  0001 C CNN "MouserPN"
 F 5 "Either mount this or Q1" H 12730 1495 50  0001 C CNN "Notes"
 F 6 "2SC1815" H 12730 1495 50  0001 C CNN "Value"
 	1    12730 1495
-	1    0    0    -1  
-$EndComp
-$Comp
-L Logic_Programmable:GAL16V8 U26
-U 1 1 620806D2
-P 7550 6645
-F 0 "U26" H 7815 7245 50  0000 C CNN
-F 1 "GAL16V8" H 7740 6040 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 7550 6645 50  0001 C CNN
-F 3 "" H 7550 6645 50  0001 C CNN
-F 4 "556-AF16V8B15PU" H 7550 6645 50  0001 C CNN "MouserPN"
-F 5 "GAL16V8" H 7550 6645 50  0001 C CNN "Value"
-	1    7550 6645
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C56
-U 1 1 62DC238F
-P 8265 7430
-F 0 "C56" H 8380 7476 50  0000 L CNN
-F 1 "100n" H 8380 7385 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 8303 7280 50  0001 C CNN
-F 3 "~" H 8265 7430 50  0001 C CNN
-F 4 "810-FG28X7R1H104KNT0" H 8265 7430 50  0001 C CNN "MouserPN"
-F 5 "100n" H 8265 7430 50  0001 C CNN "Value"
-	1    8265 7430
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1803,16 +1602,14 @@ Wire Wire Line
 	13140 6605 13140 6855
 Wire Wire Line
 	13140 6855 13875 6855
-NoConn ~ 8050 6345
-NoConn ~ 8050 6445
-Wire Bus Line
-	8650 5890 8650 6745
+Text GLabel 13560 7255 0    50   Input ~ 0
+~JOY3
+Text GLabel 7170 2295 0    50   Input ~ 0
+~SID
 Wire Bus Line
 	7135 2495 7135 2895
 Wire Bus Line
 	9620 2095 9620 2795
 Wire Bus Line
 	15380 6155 15380 6855
-Wire Bus Line
-	6450 5890 6450 6845
 $EndSCHEMATC

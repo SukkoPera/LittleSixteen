@@ -1131,7 +1131,7 @@ $EndComp
 Wire Wire Line
 	7290 6730 6470 6730
 Text GLabel 11585 1280 0    50   Input ~ 0
-CASSETTE
+~CASSETTE
 Text GLabel 11775 1380 0    50   Input ~ 0
 R_~W
 Wire Wire Line
@@ -1351,9 +1351,9 @@ Wire Wire Line
 Wire Wire Line
 	3795 6695 3295 6695
 Wire Wire Line
-	3795 6395 3295 6395
+	4250 6395 3295 6395
 Wire Wire Line
-	3795 6295 3295 6295
+	3685 6295 3295 6295
 Wire Wire Line
 	2295 7095 1795 7095
 Wire Wire Line
@@ -1372,7 +1372,7 @@ Wire Wire Line
 	2295 6395 1795 6395
 Wire Wire Line
 	2295 6295 1795 6295
-Text Notes 3810 6425 0    50   ~ 0
+Text Notes 4655 6360 0    50   ~ 0
 $FD10 ONLY!
 Entry Wire Line
 	1695 6995 1795 7095
@@ -1392,8 +1392,6 @@ Entry Wire Line
 	1695 6295 1795 6395
 Entry Wire Line
 	1695 6195 1795 6295
-Text Notes 2570 5665 0    50   ~ 0
-CHIP-SELECT\nGENERATION
 $Comp
 L Device:C C?
 U 1 1 6578AABF
@@ -1500,7 +1498,7 @@ Text GLabel 1500 6195 0    50   Input ~ 0
 a[0..15]
 Wire Bus Line
 	1500 6195 1695 6195
-Text GLabel 3795 6295 2    50   Input ~ 0
+Text GLabel 3685 6295 2    50   Input ~ 0
 A15_10_HIGH
 Wire Wire Line
 	3795 6495 3295 6495
@@ -1509,7 +1507,7 @@ cba
 Text GLabel 3795 6995 2    50   Input ~ 0
 R_~W
 Wire Wire Line
-	3795 6595 3295 6595
+	4250 6595 3295 6595
 Text Label 3795 6795 2    50   ~ 0
 gab
 Wire Wire Line
@@ -1518,19 +1516,28 @@ Entry Wire Line
 	1695 7095 1795 7195
 Text Label 1795 7195 0    50   ~ 0
 a0
-Text Label 3795 6395 2    50   ~ 0
-~userport_cs
-Text Label 3795 6495 2    50   ~ 0
-~ramreg_rcs
-Text Label 3795 6595 2    50   ~ 0
-ramreg_wcs
-NoConn ~ 3795 6495
-NoConn ~ 3795 6595
 Text Label 3245 2825 0    50   ~ 0
 q+
 Text Label 3245 2925 0    50   ~ 0
 q-
-NoConn ~ 3795 6395
+Text Notes 2075 5595 0    157  ~ 0
+PLA - 3 -
+Text GLabel 3795 6495 2    50   Output ~ 0
+~CS_RAMRD
+Text GLabel 4250 6595 2    50   Output ~ 0
+CS_RAMWR
+Text GLabel 4250 6395 2    50   Output ~ 0
+~CASSETTE
+Wire Notes Line
+	3760 6415 3760 6680
+Wire Notes Line
+	3760 6680 4735 6680
+Wire Notes Line
+	4735 6680 4735 6415
+Wire Notes Line
+	4735 6415 3760 6415
+Text Notes 4755 6680 0    50   ~ 0
+512KB RAM EXPANSION\nCONTROL SIGNALS
 Wire Bus Line
 	9765 6730 9765 8260
 Wire Bus Line
