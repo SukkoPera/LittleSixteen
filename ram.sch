@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 14
 Title "LittleSixteen"
-Date "2023-05-08"
+Date "2023-07-09"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -192,35 +192,19 @@ Wire Bus Line
 	13460 1660 16050 1660
 Connection ~ 13460 1660
 Text Label 15950 2405 2    50   ~ 0
-a3
+a16
 Text Label 15950 2505 2    50   ~ 0
 a17
 Text Label 15950 2705 2    50   ~ 0
-a5
-Text Label 15950 2905 2    50   ~ 0
-a7
-Text Label 15950 3205 2    50   ~ 0
-a2
-Text Label 13560 2305 0    50   ~ 0
 a18
-Text Label 13560 2405 0    50   ~ 0
-a16
-Text Label 13560 2505 0    50   ~ 0
-a1
-Text Label 13560 2605 0    50   ~ 0
-a0
-Text Label 13560 2705 0    50   ~ 0
-a8
-Text Label 13560 2805 0    50   ~ 0
+Text Label 13560 2305 0    50   ~ 0
 a9
-Text Label 13560 2905 0    50   ~ 0
-a10
-Text Label 13560 3005 0    50   ~ 0
-a13
-Text Label 13560 3105 0    50   ~ 0
-a11
-Text Label 13560 3205 0    50   ~ 0
-a12
+Text Label 13560 2405 0    50   ~ 0
+a8
+Text Label 13560 2505 0    50   ~ 0
+a7
+Text Label 13560 2605 0    50   ~ 0
+a6
 Text Label 13560 3305 0    50   ~ 0
 a14
 Text Label 13560 3405 0    50   ~ 0
@@ -257,9 +241,9 @@ Wire Wire Line
 Wire Wire Line
 	15995 3205 16435 3205
 Text Label 15950 2805 2    50   ~ 0
-a6
+a12
 Text Label 15950 3005 2    50   ~ 0
-a4
+a13
 Text Label 15950 3505 2    50   ~ 0
 d2
 Text Label 15950 3405 2    50   ~ 0
@@ -1309,4 +1293,20 @@ Text GLabel 3115 1765 2    50   Output ~ 0
 ~JOY1
 Text GLabel 3355 1865 2    50   Output ~ 0
 ~JOY2
+Text Label 13560 2705 0    50   ~ 0
+a5
+Text Label 15950 2905 2    50   ~ 0
+a10
+Text Label 13560 2805 0    50   ~ 0
+a4
+Text Label 13560 2905 0    50   ~ 0
+a0
+Text Label 13560 3005 0    50   ~ 0
+a1
+Text Label 13560 3105 0    50   ~ 0
+a2
+Text Label 13560 3205 0    50   ~ 0
+a3
+Text Label 15950 3205 2    50   ~ 0
+a11
 $EndSCHEMATC
