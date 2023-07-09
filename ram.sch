@@ -498,7 +498,7 @@ Wire Bus Line
 Wire Bus Line
 	4665 2895 5035 2895
 Text GLabel 8060 2895 2    50   Output ~ 0
-p[0..7]
+r[0..7]
 Text Label 7630 2095 2    50   ~ 0
 r0
 Wire Bus Line
@@ -778,7 +778,7 @@ Entry Wire Line
 Wire Bus Line
 	7965 4175 7635 4175
 Text GLabel 7635 4175 0    50   Input ~ 0
-p[0..7]
+r[0..7]
 Entry Wire Line
 	8065 4275 7965 4175
 $Comp
@@ -790,12 +790,12 @@ AR Path="/62E48B71/64F128AF" Ref="C?"  Part="1"
 AR Path="/63A22C28/64F128AF" Ref="C?"  Part="1" 
 AR Path="/5E4A465A/64E9FF4C/64F128AF" Ref="C?"  Part="1" 
 AR Path="/5E4A465A/64F128AF" Ref="C9"  Part="1" 
-F 0 "C9" H 10420 4301 50  0000 R CNN
-F 1 "100n" H 10420 4210 50  0000 R CNN
+F 0 "C9" H 10420 4209 50  0000 R CNN
+F 1 "100n" H 10420 4300 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10573 4105 50  0001 C CNN
 F 3 "~" H 10535 4255 50  0001 C CNN
 	1    10535 4255
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	3060 2165 2855 2165
@@ -1105,10 +1105,6 @@ Text Label 3060 2165 2    50   ~ 0
 d2
 Text Label 3060 2065 2    50   ~ 0
 d1
-Text GLabel 3355 1865 2    50   Output ~ 0
-~JOY1
-Text GLabel 3115 1765 2    50   Output ~ 0
-~JOY2
 Wire Wire Line
 	2855 1965 3780 1965
 $Comp
@@ -1309,4 +1305,8 @@ Wire Bus Line
 	7965 4175 7965 4875
 Wire Bus Line
 	13460 1660 13460 3305
+Text GLabel 3115 1765 2    50   Output ~ 0
+~JOY1
+Text GLabel 3355 1865 2    50   Output ~ 0
+~JOY2
 $EndSCHEMATC

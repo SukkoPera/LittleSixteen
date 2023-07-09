@@ -1351,4 +1351,6 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5950 4725 50  0001 C CNN
 $EndComp
 Wire Bus Line
 	3075 4640 3075 5520
+Text Label 7915 2425 0    50   ~ 0
+tape_mtr2
 $EndSCHEMATC
