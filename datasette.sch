@@ -392,86 +392,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4255 5865 50  0001 C CNN
 	2    4255 5865
 	1    0    0    -1  
 $EndComp
-$Comp
-L r_pack05:R_Pack_5_Split RP1
-U 2 1 5EDB9C9F
-P 5950 4725
-F 0 "RP1" H 5920 4870 50  0000 R CNN
-F 1 "1k" H 6038 4680 50  0001 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 5880 4725 50  0001 C CNN
-F 3 "~" H 5950 4725 50  0001 C CNN
-F 4 "Bussed" H 5950 4725 50  0001 C CNN "Notes"
-	2    5950 4725
-	-1   0    0    -1  
-$EndComp
-$Comp
-L r_pack05:R_Pack_5_Split RP1
-U 3 1 5EDBACE1
-P 5805 4725
-F 0 "RP1" H 5810 4525 50  0000 L CNN
-F 1 "1k" H 5893 4680 50  0001 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 5735 4725 50  0001 C CNN
-F 3 "~" H 5805 4725 50  0001 C CNN
-F 4 "Bussed" H 5805 4725 50  0001 C CNN "Notes"
-	3    5805 4725
-	-1   0    0    -1  
-$EndComp
-$Comp
-L r_pack05:R_Pack_5_Split RP1
-U 4 1 5EDBB977
-P 5655 4725
-F 0 "RP1" H 5660 4890 50  0000 L CNN
-F 1 "1k" H 5743 4680 50  0001 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 5585 4725 50  0001 C CNN
-F 3 "~" H 5655 4725 50  0001 C CNN
-F 4 "Bussed" H 5655 4725 50  0001 C CNN "Notes"
-	4    5655 4725
-	-1   0    0    -1  
-$EndComp
-$Comp
-L r_pack05:R_Pack_5_Split RP1
-U 5 1 5EDBDC3F
-P 5505 4725
-F 0 "RP1" H 5515 4525 50  0000 L CNN
-F 1 "1k" H 5585 4725 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 5435 4725 50  0001 C CNN
-F 3 "~" H 5505 4725 50  0001 C CNN
-F 4 "Bussed" H 5505 4725 50  0001 C CNN "Notes"
-	5    5505 4725
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 4575 5950 4460
-Wire Wire Line
-	5950 4460 5805 4460
-Wire Wire Line
-	5505 4460 5505 4575
-Wire Wire Line
-	5805 4575 5805 4460
-Connection ~ 5805 4460
-Wire Wire Line
-	5805 4460 5730 4460
-Wire Wire Line
-	5655 4575 5655 4460
-Connection ~ 5655 4460
-Wire Wire Line
-	5655 4460 5505 4460
-$Comp
-L power:VCC #PWR0159
-U 1 1 5EDC64A7
-P 5730 4365
-F 0 "#PWR0159" H 5730 4215 50  0001 C CNN
-F 1 "VCC" H 5747 4538 50  0000 C CNN
-F 2 "" H 5730 4365 50  0001 C CNN
-F 3 "" H 5730 4365 50  0001 C CNN
-	1    5730 4365
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5730 4365 5730 4460
-Connection ~ 5730 4460
-Wire Wire Line
-	5730 4460 5655 4460
 Wire Wire Line
 	5805 4875 5805 5865
 Connection ~ 5805 5865
@@ -1385,6 +1305,50 @@ Text Notes 6690 1745 0    50   ~ 0
 CST_SENSE:\nLOW if one of the\nkeys PLAY,\nRECORD, F.FWD\nor REW is pressed,\nHIGH otherwise
 Text GLabel 6100 1535 2    50   Output ~ 0
 ~TAPE_SENSE
+$Comp
+L Device:R_Network05_Split RP1
+U 5 1 64605429
+P 5505 4725
+F 0 "RP1" H 5519 5040 50  0000 C CNN
+F 1 "1k" H 6060 4725 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 5425 4725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5505 4725 50  0001 C CNN
+	5    5505 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network05_Split RP1
+U 4 1 646047D0
+P 5655 4725
+F 0 "RP1" H 5669 4948 50  0000 C CNN
+F 1 "1k" H 5753 4672 50  0001 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 5575 4725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5655 4725 50  0001 C CNN
+	4    5655 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network05_Split RP1
+U 3 1 646039C4
+P 5805 4725
+F 0 "RP1" H 5705 5040 50  0000 L CNN
+F 1 "1k" H 5903 4672 50  0001 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 5725 4725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5805 4725 50  0001 C CNN
+	3    5805 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network05_Split RP1
+U 2 1 64602B24
+P 5950 4725
+F 0 "RP1" H 5845 4950 50  0000 L CNN
+F 1 "1k" H 6048 4672 50  0001 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 5870 4725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5950 4725 50  0001 C CNN
+	2    5950 4725
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	3075 4640 3075 5520
 $EndSCHEMATC

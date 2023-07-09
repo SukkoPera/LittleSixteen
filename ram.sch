@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 14
 Title "LittleSixteen"
-Date "2021-11-28"
+Date "2023-05-08"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -21,10 +21,10 @@ AR Path="/64EB88F1" Ref="C?"  Part="1"
 AR Path="/62E48B71/64EB88F1" Ref="C?"  Part="1" 
 AR Path="/63A22C28/64EB88F1" Ref="C?"  Part="1" 
 AR Path="/5E4A465A/64E9FF4C/64EB88F1" Ref="C?"  Part="1" 
-AR Path="/5E4A465A/64EB88F1" Ref="C27"  Part="1" 
-F 0 "C27" H 12820 3046 50  0000 L CNN
+AR Path="/5E4A465A/64EB88F1" Ref="C92"  Part="1" 
+F 0 "C92" H 12820 3046 50  0000 L CNN
 F 1 "100n" H 12820 2955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12743 2850 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 12743 2850 50  0001 C CNN
 F 3 "~" H 12705 3000 50  0001 C CNN
 	1    12705 3000
 	1    0    0    -1  
@@ -236,17 +236,17 @@ Wire Bus Line
 Text GLabel 12495 4435 0    50   BiDi ~ 0
 d[0..7]
 Text Label 13560 3505 0    50   ~ 0
-d2
-Text Label 13560 3605 0    50   ~ 0
 d1
-Text Label 13560 3705 0    50   ~ 0
-d0
-Text Label 15950 3605 2    50   ~ 0
-d5
-Text Label 15950 3705 2    50   ~ 0
-d4
-Text Label 15950 3805 2    50   ~ 0
+Text Label 13560 3605 0    50   ~ 0
 d3
+Text Label 13560 3705 0    50   ~ 0
+d5
+Text Label 15950 3605 2    50   ~ 0
+d4
+Text Label 15950 3705 2    50   ~ 0
+d6
+Text Label 15950 3805 2    50   ~ 0
+d7
 Text Label 13460 4435 2    60   ~ 0
 DataBus
 Connection ~ 13460 4435
@@ -261,9 +261,9 @@ a6
 Text Label 15950 3005 2    50   ~ 0
 a4
 Text Label 15950 3505 2    50   ~ 0
-d6
+d2
 Text Label 15950 3405 2    50   ~ 0
-d7
+d0
 Wire Wire Line
 	15505 3305 15685 3305
 Wire Wire Line
@@ -281,10 +281,10 @@ AR Path="/64F126B2" Ref="C?"  Part="1"
 AR Path="/62E48B71/64F126B2" Ref="C?"  Part="1" 
 AR Path="/63A22C28/64F126B2" Ref="C?"  Part="1" 
 AR Path="/5E4A465A/64E9FF4C/64F126B2" Ref="C?"  Part="1" 
-AR Path="/5E4A465A/64F126B2" Ref="C2"  Part="1" 
-F 0 "C2" H 5385 1431 50  0000 R CNN
+AR Path="/5E4A465A/64F126B2" Ref="C7"  Part="1" 
+F 0 "C7" H 5385 1431 50  0000 R CNN
 F 1 "100n" H 5385 1340 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5538 1235 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5538 1235 50  0001 C CNN
 F 3 "~" H 5500 1385 50  0001 C CNN
 	1    5500 1385
 	1    0    0    -1  
@@ -468,38 +468,38 @@ d7
 Wire Wire Line
 	6600 2095 6705 2095
 Entry Wire Line
-	7870 2095 7970 2195
+	7630 2095 7730 2195
 Wire Wire Line
 	6600 2295 6905 2295
 Entry Wire Line
-	7870 2295 7970 2395
+	7630 2295 7730 2395
 Wire Wire Line
-	6600 2495 7320 2495
+	6600 2495 7105 2495
 Entry Wire Line
-	7870 2495 7970 2595
+	7630 2495 7730 2595
 Wire Wire Line
-	6600 2695 7520 2695
+	6600 2695 7305 2695
 Entry Wire Line
-	7870 2695 7970 2795
+	7630 2695 7730 2795
 Wire Wire Line
 	6600 2195 6805 2195
 Entry Wire Line
-	7870 2195 7970 2295
+	7630 2195 7730 2295
 Wire Wire Line
 	6600 2395 7005 2395
 Entry Wire Line
-	7870 2395 7970 2495
+	7630 2395 7730 2495
 Wire Wire Line
-	6600 2595 7420 2595
+	6600 2595 7205 2595
 Entry Wire Line
-	7870 2595 7970 2695
+	7630 2595 7730 2695
 Wire Bus Line
-	7970 2895 8300 2895
+	7730 2895 8060 2895
 Wire Bus Line
 	4665 2895 5035 2895
-Text GLabel 8300 2895 2    50   Output ~ 0
+Text GLabel 8060 2895 2    50   Output ~ 0
 p[0..7]
-Text Label 7870 2095 2    50   ~ 0
+Text Label 7630 2095 2    50   ~ 0
 r0
 Wire Bus Line
 	1015 2365 1255 2365
@@ -510,9 +510,9 @@ Wire Wire Line
 Wire Wire Line
 	5500 1535 5500 1720
 Wire Wire Line
-	6600 2795 7620 2795
+	6600 2795 7405 2795
 Entry Wire Line
-	7870 2795 7970 2895
+	7630 2795 7730 2895
 $Comp
 L 74xx:74LS573 U?
 U 1 1 64F12799
@@ -521,7 +521,7 @@ AR Path="/5E4A465A/64E9FF4C/64F12799" Ref="U?"  Part="1"
 AR Path="/5E4A465A/64F12799" Ref="U6"  Part="1" 
 F 0 "U6" H 6300 3245 50  0000 C CNN
 F 1 "74HCT573" H 6360 1915 50  0000 C CNN
-F 2 "Package_SO:SO-20_5.3x12.6mm_P1.27mm" H 6100 2595 50  0001 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6100 2595 50  0001 C CNN
 F 3 "74xx/74hc573.pdf" H 6100 2595 50  0001 C CNN
 F 4 "595-SN74HCT573NSR" H 6100 2595 50  0001 C CNN "MouserPN"
 	1    6100 2595
@@ -537,111 +537,34 @@ Wire Wire Line
 	5035 3095 5035 3480
 Wire Wire Line
 	5600 2995 5120 2995
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 64F127CE
-P 6805 1755
-AR Path="/5E4A465A/64E9FF4C/64F127CE" Ref="RN?"  Part="1" 
-AR Path="/5E4A465A/64F127CE" Ref="RN4"  Part="1" 
-F 0 "RN4" H 6525 1755 50  0000 R CNN
-F 1 "1k" H 6993 1710 50  0001 L CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7080 1755 50  0001 C CNN
-F 3 "~" H 6805 1755 50  0001 C CNN
-	1    6805 1755
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 64F127D4
-P 7420 1755
-AR Path="/5E4A465A/64E9FF4C/64F127D4" Ref="RN?"  Part="1" 
-AR Path="/5E4A465A/64F127D4" Ref="RN5"  Part="1" 
-F 0 "RN5" H 7140 1801 50  0000 R CNN
-F 1 "1k" H 7140 1710 50  0000 R CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7695 1755 50  0001 C CNN
-F 3 "~" H 7420 1755 50  0001 C CNN
-	1    7420 1755
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6705 1955 6705 2095
 Connection ~ 6705 2095
 Wire Wire Line
-	6705 2095 7870 2095
+	6705 2095 7630 2095
 Wire Wire Line
 	6805 1955 6805 2195
 Connection ~ 6805 2195
 Wire Wire Line
-	6805 2195 7870 2195
+	6805 2195 7630 2195
 Wire Wire Line
 	6905 1955 6905 2295
 Connection ~ 6905 2295
 Wire Wire Line
-	6905 2295 7870 2295
+	6905 2295 7630 2295
 Wire Wire Line
 	7005 1955 7005 2395
 Connection ~ 7005 2395
 Wire Wire Line
-	7005 2395 7870 2395
+	7005 2395 7630 2395
 Wire Wire Line
-	7320 1955 7320 2495
-Connection ~ 7320 2495
+	7105 1955 7105 2495
 Wire Wire Line
-	7320 2495 7870 2495
+	7205 1955 7205 2595
 Wire Wire Line
-	7420 1955 7420 2595
-Connection ~ 7420 2595
+	7305 1955 7305 2695
 Wire Wire Line
-	7420 2595 7870 2595
-Wire Wire Line
-	7520 1955 7520 2695
-Connection ~ 7520 2695
-Wire Wire Line
-	7520 2695 7870 2695
-Wire Wire Line
-	7620 1955 7620 2795
-Connection ~ 7620 2795
-Wire Wire Line
-	7620 2795 7870 2795
-Wire Wire Line
-	6705 1555 6705 1475
-Wire Wire Line
-	6705 1475 6805 1475
-Wire Wire Line
-	7620 1475 7620 1555
-Wire Wire Line
-	7520 1555 7520 1475
-Connection ~ 7520 1475
-Wire Wire Line
-	7520 1475 7620 1475
-Wire Wire Line
-	7420 1555 7420 1475
-Connection ~ 7420 1475
-Wire Wire Line
-	7420 1475 7520 1475
-Wire Wire Line
-	7320 1555 7320 1475
-Connection ~ 7320 1475
-Wire Wire Line
-	7320 1475 7420 1475
-Wire Wire Line
-	7005 1555 7005 1475
-Connection ~ 7005 1475
-Wire Wire Line
-	7005 1475 7320 1475
-Wire Wire Line
-	6905 1555 6905 1475
-Connection ~ 6905 1475
-Wire Wire Line
-	6905 1475 7005 1475
-Wire Wire Line
-	6805 1555 6805 1475
-Connection ~ 6805 1475
-Wire Wire Line
-	6805 1475 6905 1475
-Wire Wire Line
-	6705 1475 6705 1385
-Connection ~ 6705 1475
+	7405 1955 7405 2795
 $Comp
 L 74xx:74LS245 U?
 U 1 1 64F12810
@@ -650,7 +573,7 @@ AR Path="/5E4A465A/64E9FF4C/64F12810" Ref="U?"  Part="1"
 AR Path="/5E4A465A/64F12810" Ref="U29"  Part="1" 
 F 0 "U29" H 9295 5420 50  0000 C CNN
 F 1 "74HCT245" H 9305 4110 50  0000 C CNN
-F 2 "Package_SO:SO-20_5.3x12.6mm_P1.27mm" H 9080 4775 50  0001 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 9080 4775 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 9080 4775 50  0001 C CNN
 F 4 "595-SN74HCT245ANSR" H 9080 4775 50  0001 C CNN "MouserPN"
 	1    9080 4775
@@ -699,7 +622,7 @@ AR Path="/5E4A465A/64E9FF4C/64F12844" Ref="U?"  Part="1"
 AR Path="/5E4A465A/64F12844" Ref="U5"  Part="1" 
 F 0 "U5" H 6015 5640 50  0000 C CNN
 F 1 "74HCT02" H 6015 5549 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6015 5315 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 6015 5315 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 6015 5315 50  0001 C CNN
 	1    6015 5315
 	1    0    0    -1  
@@ -714,7 +637,7 @@ AR Path="/5E4A465A/64E9FF4C/64F1284A" Ref="U?"  Part="2"
 AR Path="/5E4A465A/64F1284A" Ref="U5"  Part="2" 
 F 0 "U5" H 5160 5640 50  0000 C CNN
 F 1 "74HCT02" H 5160 5549 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5160 5315 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 5160 5315 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 5160 5315 50  0001 C CNN
 	2    5160 5315
 	1    0    0    -1  
@@ -729,7 +652,7 @@ AR Path="/5E4A465A/64E9FF4C/64F12850" Ref="U?"  Part="3"
 AR Path="/5E4A465A/64F12850" Ref="U5"  Part="3" 
 F 0 "U5" H 4100 5540 50  0000 C CNN
 F 1 "74HCT02" H 4100 5449 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4100 5215 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 4100 5215 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 4100 5215 50  0001 C CNN
 	3    4100 5215
 	1    0    0    -1  
@@ -744,7 +667,7 @@ AR Path="/5E4A465A/64E9FF4C/64F12856" Ref="U?"  Part="5"
 AR Path="/5E4A465A/64F12856" Ref="U5"  Part="5" 
 F 0 "U5" H 1375 6836 50  0000 L CNN
 F 1 "74HCT02" H 1375 6745 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1145 6790 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 1145 6790 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 1145 6790 50  0001 C CNN
 	5    1145 6790
 	1    0    0    -1  
@@ -757,10 +680,10 @@ AR Path="/64F1285C" Ref="C?"  Part="1"
 AR Path="/62E48B71/64F1285C" Ref="C?"  Part="1" 
 AR Path="/63A22C28/64F1285C" Ref="C?"  Part="1" 
 AR Path="/5E4A465A/64E9FF4C/64F1285C" Ref="C?"  Part="1" 
-AR Path="/5E4A465A/64F1285C" Ref="C1"  Part="1" 
-F 0 "C1" H 2095 6831 50  0000 L CNN
+AR Path="/5E4A465A/64F1285C" Ref="C8"  Part="1" 
+F 0 "C8" H 2095 6831 50  0000 L CNN
 F 1 "100n" H 2095 6740 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2018 6635 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2018 6635 50  0001 C CNN
 F 3 "~" H 1980 6785 50  0001 C CNN
 	1    1980 6785
 	1    0    0    -1  
@@ -869,7 +792,7 @@ AR Path="/5E4A465A/64E9FF4C/64F128AF" Ref="C?"  Part="1"
 AR Path="/5E4A465A/64F128AF" Ref="C9"  Part="1" 
 F 0 "C9" H 10420 4301 50  0000 R CNN
 F 1 "100n" H 10420 4210 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10573 4105 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10573 4105 50  0001 C CNN
 F 3 "~" H 10535 4255 50  0001 C CNN
 	1    10535 4255
 	1    0    0    -1  
@@ -1005,7 +928,7 @@ AR Path="/5EE7AAEB/65058F10" Ref="U?"  Part="1"
 AR Path="/5E4A465A/65058F10" Ref="U26"  Part="1" 
 F 0 "U26" H 2620 2565 50  0000 C CNN
 F 1 "GAL16V8" H 2545 1360 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 2355 1965 50  0001 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 2355 1965 50  0001 C CNN
 F 3 "" H 2355 1965 50  0001 C CNN
 F 4 "556-AF16V8B15PU" H 2355 1965 50  0001 C CNN "MouserPN"
 F 5 "GAL16V8" H 2355 1965 50  0001 C CNN "Value"
@@ -1051,7 +974,7 @@ AR Path="/64A6E6F3/65BE35EB" Ref="U?"  Part="2"
 AR Path="/5E4A465A/65BE35EB" Ref="U25"  Part="2" 
 F 0 "U25" H 3935 3840 50  0000 C CNN
 F 1 "74LS74" H 3960 3320 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3765 3580 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3765 3580 50  0001 C CNN
 F 3 "74xx/74hc_hct74.pdf" H 3765 3580 50  0001 C CNN
 	2    3765 3580
 	1    0    0    -1  
@@ -1097,7 +1020,7 @@ AR Path="/5E4A465A/64E9FF4C/65DF129B" Ref="U?"  Part="4"
 AR Path="/5E4A465A/65DF129B" Ref="U5"  Part="4" 
 F 0 "U5" H 3030 4515 50  0000 C CNN
 F 1 "74HCT02" H 3030 4424 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3030 4190 50  0001 C CNN
+F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3030 4190 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 3030 4190 50  0001 C CNN
 	4    3030 4190
 	1    0    0    -1  
@@ -1188,8 +1111,6 @@ Text GLabel 3115 1765 2    50   Output ~ 0
 ~JOY2
 Wire Wire Line
 	2855 1965 3780 1965
-Text Notes 7270 1850 2    50   ~ 0
-fixme
 $Comp
 L power:VCC #PWR?
 U 1 1 662623B5
@@ -1307,19 +1228,19 @@ F 3 "" H 3715 1765 50  0001 C CNN
 	1    3715 1765
 	1    0    0    -1  
 $EndComp
-Text Label 7870 2195 2    50   ~ 0
+Text Label 7630 2195 2    50   ~ 0
 r1
-Text Label 7870 2295 2    50   ~ 0
+Text Label 7630 2295 2    50   ~ 0
 r2
-Text Label 7870 2395 2    50   ~ 0
+Text Label 7630 2395 2    50   ~ 0
 r3
-Text Label 7870 2495 2    50   ~ 0
+Text Label 7630 2495 2    50   ~ 0
 r4
-Text Label 7870 2595 2    50   ~ 0
+Text Label 7630 2595 2    50   ~ 0
 r5
-Text Label 7870 2695 2    50   ~ 0
+Text Label 7630 2695 2    50   ~ 0
 r6
-Text Label 7870 2795 2    50   ~ 0
+Text Label 7630 2795 2    50   ~ 0
 r7
 Text Label 8065 4275 0    50   ~ 0
 r0
@@ -1343,6 +1264,31 @@ Text GLabel 1540 2365 0    50   Input ~ 0
 AEC
 Wire Wire Line
 	1855 2365 1540 2365
+$Comp
+L Device:R_Network08 RP3
+U 1 1 6475B295
+P 7105 1755
+F 0 "RP3" H 7493 1801 50  0000 L CNN
+F 1 "10k" H 7493 1710 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 7580 1755 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7105 1755 50  0001 C CNN
+	1    7105 1755
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6705 1385 6705 1555
+Connection ~ 7105 2495
+Connection ~ 7205 2595
+Connection ~ 7305 2695
+Connection ~ 7405 2795
+Wire Wire Line
+	7105 2495 7630 2495
+Wire Wire Line
+	7205 2595 7630 2595
+Wire Wire Line
+	7305 2695 7630 2695
+Wire Wire Line
+	7405 2795 7630 2795
 Wire Bus Line
 	13460 3405 13460 4435
 Wire Bus Line
@@ -1358,7 +1304,7 @@ Wire Bus Line
 Wire Bus Line
 	5035 2195 5035 2895
 Wire Bus Line
-	7970 2195 7970 2895
+	7730 2195 7730 2895
 Wire Bus Line
 	7965 4175 7965 4875
 Wire Bus Line
