@@ -1363,10 +1363,10 @@ F 3 "~" H 4020 1435 50  0001 C CNN
 	1    4020 1435
 	0    -1   -1   0   
 $EndComp
-Wire Bus Line
-	9685 1705 9685 4385
 Text GLabel 3255 2805 0    50   Input ~ 0
 ~JOY1
 Text GLabel 3255 5480 0    50   Input ~ 0
 ~JOY2
+Wire Bus Line
+	9685 1705 9685 4385
 $EndSCHEMATC
