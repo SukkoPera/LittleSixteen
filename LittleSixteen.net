@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Wed 12 Jul 2023 19:39:01 CEST")
+    (date "Thu 13 Jul 2023 00:14:50 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1372,8 +1372,10 @@
       (tstamp 6530A0A3))
     (comp (ref L3)
       (value FERRITE)
-      (footprint Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC)
+      (footprint Inductor_THT:L_Radial_D6.0mm_P4.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 875-28C0236-0EW-10))
       (libsource (lib Device) (part L) (description Inductor))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 653B5EBF))
