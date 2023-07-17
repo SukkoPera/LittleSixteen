@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 14
 Title "LittleSixteen"
-Date "2021-12-01"
-Rev "3git"
+Date "2023-07-17"
+Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 ""
@@ -17,9 +17,9 @@ Text Label 9585 4480 2    50   ~ 0
 k7
 Text Label 9585 1805 2    50   ~ 0
 k6
-Text Label 9585 2005 2    50   ~ 0
+Text Label 9585 2205 2    50   ~ 0
 k2
-Text Label 9585 1905 2    50   ~ 0
+Text Label 9585 2000 2    50   ~ 0
 k0
 Wire Wire Line
 	5530 3790 5530 3895
@@ -35,59 +35,25 @@ F 3 "" H 5530 3790 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Network05 RP5
-U 1 1 5E3A4C16
-P 5730 4095
-F 0 "RP5" H 6018 4141 50  0000 L CNN
-F 1 "3.3k" H 6018 4050 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 6105 4095 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5730 4095 50  0001 C CNN
-F 4 "Bussed" H 5730 4095 50  0001 C CNN "Notes"
-	1    5730 4095
-	1    0    0    -1  
-$EndComp
-$Comp
 L Diode:1N914 D10
 U 1 1 5E19A869
-P 8195 4480
-F 0 "D10" H 8330 4520 50  0000 C CNN
-F 1 "1N914" H 8355 4640 50  0000 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4305 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4480 50  0001 C CNN
-	1    8195 4480
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N914 D9
-U 1 1 5E19A84C
-P 8510 4775
-F 0 "D9" H 8625 4810 50  0000 C CNN
-F 1 "1N914" H 8510 4901 50  0001 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4600 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4775 50  0001 C CNN
-	1    8510 4775
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N914 D8
-U 1 1 5E19A842
-P 8195 4680
-F 0 "D8" H 8305 4720 50  0000 C CNN
-F 1 "1N914" H 8195 4455 50  0001 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4505 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4680 50  0001 C CNN
-	1    8195 4680
+P 8510 4480
+F 0 "D10" H 8645 4520 50  0000 C CNN
+F 1 "1N914" H 8355 4615 50  0000 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4305 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4480 50  0001 C CNN
+	1    8510 4480
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:1N914 D7
 U 1 1 5E19A838
-P 8195 4980
-F 0 "D7" H 8305 5025 50  0000 C CNN
-F 1 "1N914" H 8195 5105 50  0001 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4805 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4980 50  0001 C CNN
-	1    8195 4980
+P 8195 4580
+F 0 "D7" H 8305 4625 50  0000 C CNN
+F 1 "1N914" H 8195 4705 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4405 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4580 50  0001 C CNN
+	1    8195 4580
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -274,22 +240,20 @@ $EndComp
 $Comp
 L Diode:1N914 D5
 U 1 1 5E07A0F3
-P 8195 1805
-F 0 "D5" H 8305 1845 50  0000 C CNN
-F 1 "1N914" H 8365 1950 50  0000 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1630 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 1805 50  0001 C CNN
-	1    8195 1805
+P 8510 1805
+F 0 "D5" H 8620 1845 50  0000 C CNN
+F 1 "1N914" H 8360 1945 50  0000 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1630 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 1805 50  0001 C CNN
+	1    8510 1805
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	9585 2105 9685 2005
+	9585 2405 9685 2305
 Entry Wire Line
-	9585 2305 9685 2205
+	9585 2405 9685 2305
 Entry Wire Line
-	9585 2105 9685 2005
-Entry Wire Line
-	9585 2005 9685 1905
+	9585 2205 9685 2105
 Entry Wire Line
 	9585 1805 9685 1705
 Entry Wire Line
@@ -301,20 +265,7 @@ k[0..7]
 Text Notes 555  7680 0    50   ~ 0
 Joystick Connector Pinout\nMiniDIN-8\n1 Up\n2 Down\n3 Left\n4 Right\n5 +5V\n6 Fire\n7 Ground\n8 Select\n\nAll signals are joy to C16, except Select
 Wire Wire Line
-	7200 4780 7395 4780
-Wire Wire Line
-	7200 4680 7395 4680
-Wire Wire Line
-	7200 4980 7395 4980
-Wire Wire Line
-	7200 4580 7395 4580
-Wire Wire Line
-	7200 4480 7395 4480
-Wire Wire Line
-	8345 4680 9060 4680
-Wire Wire Line
 	4910 4880 4495 4880
-NoConn ~ 7200 5080
 NoConn ~ 7200 5180
 $Comp
 L power:GND #PWR0193
@@ -329,8 +280,6 @@ F 3 "" H 6700 5855 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 5780 6700 5820
-Wire Wire Line
-	6700 4075 6700 4180
 $Comp
 L power:VCC #PWR0194
 U 1 1 61E546AD
@@ -344,18 +293,6 @@ F 3 "" H 6700 4075 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack05_SIP_Split RP91
-U 2 1 61EB4E58
-P 7545 4780
-F 0 "RP91" V 7500 5065 50  0000 C CNN
-F 1 "100" V 7429 4780 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7465 4780 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4780 50  0001 C CNN
-F 4 "Independent" H 7545 4780 50  0001 C CNN "Notes"
-	2    7545 4780
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Pack05_SIP_Split RP91
 U 3 1 61EB627F
 P 7545 4480
 F 0 "RP91" V 7505 4765 50  0000 C CNN
@@ -366,75 +303,27 @@ F 4 "Independent" H 7545 4480 50  0001 C CNN "Notes"
 	3    7545 4480
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Pack05_SIP_Split RP91
-U 4 1 61EB730F
-P 7545 4680
-F 0 "RP91" V 7500 4965 50  0000 C CNN
-F 1 "100" V 7429 4680 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7465 4680 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4680 50  0001 C CNN
-F 4 "Independent" H 7545 4680 50  0001 C CNN "Notes"
-	4    7545 4680
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	7695 4980 8045 4980
+	7695 4580 8045 4580
 Wire Wire Line
-	7695 4680 8045 4680
+	7695 4480 8360 4480
 Wire Wire Line
-	7695 4780 8360 4775
-Wire Wire Line
-	7695 4480 8045 4480
-Wire Wire Line
-	7205 2005 7400 2005
-Wire Wire Line
-	7205 1905 7400 1905
-NoConn ~ 7205 2505
-$Comp
-L 74xx:74AHCT244 U17
-U 1 1 61FC7C4B
-P 6705 2305
-F 0 "U17" H 6935 2960 50  0000 C CNN
-F 1 "74LS244" H 6975 1645 50  0000 C CNN
-F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6705 2305 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT244.pdf" H 6705 2305 50  0001 C CNN
-	1    6705 2305
-	1    0    0    -1  
-$EndComp
+	7205 2205 7400 2205
 Wire Wire Line
 	5265 1905 5730 1905
 Wire Wire Line
-	7700 1805 8045 1805
+	7700 1805 8360 1805
 $Comp
 L Diode:1N914 D3
 U 1 1 5E03D308
-P 8195 2005
-F 0 "D3" H 8305 2045 50  0000 C CNN
-F 1 "1N914" H 8195 1790 50  0001 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1830 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2005 50  0001 C CNN
-	1    8195 2005
+P 8195 2205
+F 0 "D3" H 8305 2245 50  0000 C CNN
+F 1 "1N914" H 8195 1990 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 2030 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2205 50  0001 C CNN
+	1    8195 2205
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3255 5480 6060 5480
-Wire Wire Line
-	6200 5380 6060 5380
-Wire Wire Line
-	6060 5380 6060 5480
-Connection ~ 6060 5480
-Wire Wire Line
-	6060 5480 6200 5480
-Wire Wire Line
-	6205 2705 6065 2705
-Wire Wire Line
-	6065 2705 6065 2805
-Wire Wire Line
-	3255 2805 6065 2805
-Connection ~ 6065 2805
-Wire Wire Line
-	6065 2805 6205 2805
 Wire Wire Line
 	10710 6075 10710 6150
 Wire Wire Line
@@ -514,7 +403,7 @@ F 3 "~" H 10210 5925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6705 1400 6705 1505
+	6705 1400 6705 1450
 $Comp
 L power:VCC #PWR01
 U 1 1 6227D53A
@@ -539,19 +428,8 @@ F 3 "" H 6705 3180 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6705 3105 6705 3145
-$Comp
-L 74xx:74AHCT244 U18
-U 1 1 61D585FB
-P 6700 4980
-F 0 "U18" H 6930 5635 50  0000 C CNN
-F 1 "74LS244" H 6970 4320 50  0000 C CNN
-F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6700 4980 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT244.pdf" H 6700 4980 50  0001 C CNN
-	1    6700 4980
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7700 2005 8045 2005
+	7700 2205 8045 2205
 $Comp
 L Device:R_Pack05_SIP_Split RP90
 U 3 1 61FC7C69
@@ -567,89 +445,33 @@ $EndComp
 $Comp
 L Device:R_Pack05_SIP_Split RP90
 U 4 1 61FC7C73
-P 7550 2005
-F 0 "RP90" V 7510 2275 50  0000 C CNN
-F 1 "100" V 7434 2005 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7470 2005 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2005 50  0001 C CNN
-F 4 "Independent" H 7550 2005 50  0001 C CNN "Notes"
-	4    7550 2005
+P 7550 2205
+F 0 "RP90" V 7510 2475 50  0000 C CNN
+F 1 "100" V 7434 2205 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7470 2205 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2205 50  0001 C CNN
+F 4 "Independent" H 7550 2205 50  0001 C CNN "Notes"
+	4    7550 2205
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6200 4880 5990 4880
-Wire Wire Line
-	5990 5820 6700 5820
 Connection ~ 6700 5820
 Wire Wire Line
 	6700 5820 6700 5855
-Wire Wire Line
-	6200 5180 5990 5180
-Connection ~ 5990 5180
-Wire Wire Line
-	5990 5180 5990 5820
-Wire Wire Line
-	6205 2205 5995 2205
-Wire Wire Line
-	6205 2505 5995 2505
-Connection ~ 5995 2505
-Wire Wire Line
-	5995 2505 5995 3145
 Wire Wire Line
 	5995 3145 6705 3145
 Connection ~ 6705 3145
 Wire Wire Line
 	6705 3145 6705 3180
-Text Notes 5875 2680 2    50   ~ 0
+Text Notes 5955 2765 2    50   ~ 0
 The (apparently)\nodd connections\nhere are to\nsimplify routing!
 Wire Wire Line
 	5930 1480 5930 1805
-NoConn ~ 7205 2205
 Wire Wire Line
-	6205 2405 5995 2405
-Connection ~ 5995 2405
-Wire Wire Line
-	5995 2405 5995 2505
-Wire Wire Line
-	5995 2205 5995 2405
-Wire Wire Line
-	5730 2305 6205 2305
-NoConn ~ 7205 2405
-Wire Wire Line
-	8660 1900 8905 1905
-$Comp
-L Diode:1N914 D1
-U 1 1 5E037618
-P 8510 1900
-F 0 "D1" H 8625 1940 50  0000 C CNN
-F 1 "1N914" H 8510 2025 50  0001 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 1900 50  0001 C CNN
-	1    8510 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7205 2105 7400 2105
-$Comp
-L Device:R_Pack05_SIP_Split RP90
-U 5 1 61FC7C7D
-P 7550 1905
-F 0 "RP90" V 7505 2175 50  0000 C CNN
-F 1 "100" V 7434 1905 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7470 1905 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 1905 50  0001 C CNN
-F 4 "Independent" H 7550 1905 50  0001 C CNN "Notes"
-	5    7550 1905
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7700 1905 8360 1900
-Text Label 9585 2305 2    50   ~ 0
-k1
+	7205 2405 7400 2405
 Wire Wire Line
 	7205 1805 7400 1805
 Wire Wire Line
-	8345 1805 9585 1805
+	8660 1805 9585 1805
 Text Label 5305 1805 0    50   ~ 0
 1u
 Text Label 5305 1905 0    50   ~ 0
@@ -660,13 +482,6 @@ Text Label 5305 2105 0    50   ~ 0
 1r
 Text Label 5305 2205 0    50   ~ 0
 1f
-Wire Wire Line
-	5990 4880 5990 5080
-Wire Wire Line
-	6200 5080 5990 5080
-Connection ~ 5990 5080
-Wire Wire Line
-	5990 5080 5990 5180
 Text Label 5340 4480 0    50   ~ 0
 2u
 Text Label 5340 4580 0    50   ~ 0
@@ -677,11 +492,6 @@ Text Label 5340 4780 0    50   ~ 0
 2r
 Text Label 5340 4880 0    50   ~ 0
 2f
-Wire Wire Line
-	8660 4775 8905 4780
-NoConn ~ 7200 4880
-Wire Wire Line
-	7205 2305 7400 2305
 $Comp
 L Device:R R91
 U 1 1 62AFB1A5
@@ -1106,13 +916,9 @@ Wire Wire Line
 	4660 2105 5065 2105
 Connection ~ 5830 4680
 Wire Wire Line
-	5830 4680 6200 4680
-Wire Wire Line
 	5110 4680 5830 4680
 Wire Wire Line
 	5630 4295 5630 4400
-Wire Wire Line
-	6015 4480 6015 4580
 Wire Wire Line
 	6095 4480 6200 4480
 Wire Wire Line
@@ -1121,64 +927,22 @@ Wire Wire Line
 	5830 4295 5830 4680
 Wire Wire Line
 	5630 4400 6095 4400
-Wire Wire Line
-	6015 4580 6200 4580
-Wire Wire Line
-	5730 4980 6200 4980
 Connection ~ 5630 4400
-Text Label 7225 4580 0    50   ~ 0
-b2u
-Text Label 7225 4680 0    50   ~ 0
-b2l
-Text Label 7225 4780 0    50   ~ 0
-b2r
 Text Label 7225 4480 0    50   ~ 0
 b2f
-Text Label 7225 4980 0    50   ~ 0
+Text Label 7225 4580 0    50   ~ 0
 b2d
 Wire Wire Line
-	8660 4580 9135 4580
+	8985 4580 8345 4580
 Wire Wire Line
-	8985 4980 8345 4980
-$Comp
-L Diode:1N914 D6
-U 1 1 5E19A82E
-P 8510 4580
-F 0 "D6" H 8625 4625 50  0000 C CNN
-F 1 "1N914" H 8510 4705 50  0001 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4405 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4580 50  0001 C CNN
-	1    8510 4580
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Pack05_SIP_Split RP91
-U 5 1 61EB849F
-P 7545 4580
-F 0 "RP91" V 7500 4860 50  0000 C CNN
-F 1 "100" V 7429 4580 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7465 4580 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4580 50  0001 C CNN
-F 4 "Independent" H 7545 4580 50  0001 C CNN "Notes"
-	5    7545 4580
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7695 4580 8360 4580
-Wire Wire Line
-	8345 4480 9585 4480
+	8660 4480 9585 4480
 Wire Wire Line
 	5730 4295 5730 4580
 Connection ~ 5730 4580
 Wire Wire Line
-	5930 4780 6200 4780
-Connection ~ 5930 4780
-Wire Wire Line
 	5930 4295 5930 4780
 Wire Wire Line
 	5110 4880 5630 4880
-Wire Wire Line
-	5730 4580 5730 4980
 Wire Wire Line
 	5630 4400 5630 4880
 Wire Wire Line
@@ -1195,150 +959,84 @@ Wire Wire Line
 $Comp
 L Device:R_Pack05_SIP_Split RP91
 U 1 1 61EB0CF8
-P 7545 4980
-F 0 "RP91" V 7500 5265 50  0000 C CNN
-F 1 "100" V 6930 4975 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7465 4980 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4980 50  0001 C CNN
-F 4 "Independent" H 7545 4980 50  0001 C CNN "Notes"
-	1    7545 4980
+P 7545 4580
+F 0 "RP91" V 7500 4865 50  0000 C CNN
+F 1 "100" V 7355 4580 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7465 4580 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4580 50  0001 C CNN
+F 4 "Independent" H 7545 4580 50  0001 C CNN "Notes"
+	1    7545 4580
 	0    1    1    0   
 $EndComp
-Connection ~ 5930 1805
-Wire Wire Line
-	5930 1805 5995 1805
-Wire Wire Line
-	5995 1805 5995 1905
-Wire Wire Line
-	5995 1905 6205 1905
 Wire Wire Line
 	5730 1480 5730 1905
 Wire Wire Line
 	6075 1705 6075 1805
 Wire Wire Line
-	6075 1805 6205 1805
-Connection ~ 5730 1905
-Wire Wire Line
-	5730 1905 5730 2305
-Wire Wire Line
-	5630 2005 6205 2005
-Wire Wire Line
 	5065 2005 5630 2005
-Connection ~ 5630 2005
 Wire Wire Line
 	5630 1480 5630 2005
 Wire Wire Line
 	5830 1480 5830 1705
 Wire Wire Line
 	5065 2205 5830 2205
-Connection ~ 5830 1705
 Wire Wire Line
 	5830 1705 6075 1705
 Wire Wire Line
-	5830 1705 5830 2205
-Wire Wire Line
 	5530 2105 5265 2105
-Wire Wire Line
-	5530 2105 6205 2105
-Connection ~ 5530 2105
 Wire Wire Line
 	5530 1480 5530 2105
 Wire Wire Line
 	5065 1805 5930 1805
 Text Label 7225 1805 0    50   ~ 0
 b1f
-Text Label 7225 2005 0    50   ~ 0
+Text Label 7225 2205 0    50   ~ 0
 b1l
-Text Label 7225 2105 0    50   ~ 0
+Text Label 7225 2405 0    50   ~ 0
 b1r
 Text Label 7225 1905 0    50   ~ 0
-b1u
-Text Label 7225 2305 0    50   ~ 0
 b1d
-Text Label 9585 2105 2    50   ~ 0
+Text Label 9585 2405 2    50   ~ 0
 k3
-$Comp
-L Diode:1N914 D2
-U 1 1 5E03AEE2
-P 8195 2305
-F 0 "D2" H 8305 2345 50  0000 C CNN
-F 1 "1N914" H 8195 2430 50  0001 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 2130 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2305 50  0001 C CNN
-	1    8195 2305
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7700 2305 8045 2305
-$Comp
-L Device:R_Pack05_SIP_Split RP90
-U 1 1 61FC7C55
-P 7550 2305
-F 0 "RP90" V 7510 2570 50  0000 C CNN
-F 1 "100" V 7360 2305 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7470 2305 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2305 50  0001 C CNN
-F 4 "Independent" H 7550 2305 50  0001 C CNN "Notes"
-	1    7550 2305
-	0    1    1    0   
-$EndComp
+	8345 2205 9060 2205
 Wire Wire Line
-	8345 2005 9060 2005
-Wire Wire Line
-	8905 1905 9135 1905
-Wire Wire Line
-	8345 2305 8985 2305
-Wire Wire Line
-	8660 2105 8905 2105
+	8660 2405 8905 2405
 $Comp
 L Device:R_Pack05_SIP_Split RP90
 U 2 1 61FC7C5F
-P 7550 2105
-F 0 "RP90" V 7510 2375 50  0000 C CNN
-F 1 "100" V 7434 2105 50  0001 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 7470 2105 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2105 50  0001 C CNN
-F 4 "Independent" H 7550 2105 50  0001 C CNN "Notes"
-	2    7550 2105
+P 7550 2405
+F 0 "RP90" V 7510 2675 50  0000 C CNN
+F 1 "100" V 7434 2405 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7470 2405 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2405 50  0001 C CNN
+F 4 "Independent" H 7550 2405 50  0001 C CNN "Notes"
+	2    7550 2405
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7700 2105 8360 2105
+	7700 2405 8360 2405
 $Comp
 L Diode:1N914 D4
 U 1 1 5E03D312
-P 8510 2105
-F 0 "D4" H 8625 2145 50  0000 C CNN
-F 1 "1N914" H 8510 2231 50  0001 C CNN
-F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1930 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 2105 50  0001 C CNN
-	1    8510 2105
+P 8510 2405
+F 0 "D4" H 8625 2445 50  0000 C CNN
+F 1 "1N914" H 8510 2531 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 2230 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 2405 50  0001 C CNN
+	1    8510 2405
 	1    0    0    -1  
 $EndComp
 Text Notes 11150 1440 2    50   ~ 0
 This was one of the weakest spots of the C16, where the\nTED chip pins were directly exposed outside through the\njoystick ports.\n\nAdding a buffer will protect the TED from ESD, and TVS\ndiodes could do even more. This is basically Levente\nHársfalvi's design integrated into the C16. Please see:\nhttp://www.zimmers.net/anonftp/pub/cbm/documents/projects/interfaces/plus4joy/plus4joy.html\n\nWe can also consider to replace the MiniDIN-8 ports with\nD-SUB 9 ones.
 Entry Wire Line
-	9585 1905 9685 1805
+	9585 2000 9685 1900
+Connection ~ 9060 2205
 Wire Wire Line
-	9135 4580 9135 1905
-Connection ~ 9135 1905
+	9060 2205 9585 2205
+Connection ~ 8905 2405
 Wire Wire Line
-	9135 1905 9585 1905
-Wire Wire Line
-	8985 4980 8985 2305
-Connection ~ 8985 2305
-Wire Wire Line
-	8985 2305 9585 2305
-Wire Wire Line
-	9060 4680 9060 2005
-Connection ~ 9060 2005
-Wire Wire Line
-	9060 2005 9585 2005
-Wire Wire Line
-	8905 4780 8905 2105
-Connection ~ 8905 2105
-Wire Wire Line
-	8905 2105 9585 2105
+	8905 2405 9585 2405
 NoConn ~ 2590 6760
 NoConn ~ 2590 7060
 $Comp
@@ -1367,6 +1065,320 @@ Text GLabel 3255 2805 0    50   Input ~ 0
 ~JOY1
 Text GLabel 3255 5480 0    50   Input ~ 0
 ~JOY2
+Wire Wire Line
+	7200 4480 7395 4480
+Wire Wire Line
+	7200 4580 7395 4580
+Wire Wire Line
+	3255 5480 6200 5480
+Wire Wire Line
+	5930 4780 5930 5080
+Wire Wire Line
+	5930 5080 6200 5080
+Connection ~ 5930 4780
+Wire Wire Line
+	5830 4680 5830 4880
+Wire Wire Line
+	6015 4680 6200 4680
+Wire Wire Line
+	6015 4480 6015 4680
+Wire Wire Line
+	6200 5380 6135 5380
+Wire Wire Line
+	6135 5380 6135 4115
+Wire Wire Line
+	6135 4115 6700 4115
+Wire Wire Line
+	6700 4075 6700 4115
+Wire Wire Line
+	6700 4115 6700 4180
+Connection ~ 6700 4115
+$Comp
+L 74xx:74LS245 U18
+U 1 1 64B52A46
+P 6700 4980
+F 0 "U18" H 6920 5645 50  0000 C CNN
+F 1 "74LS245" H 6930 4295 50  0000 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6700 4980 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6700 4980 50  0001 C CNN
+	1    6700 4980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6095 5820 6700 5820
+Wire Wire Line
+	5830 4880 6200 4880
+Wire Wire Line
+	6200 4780 6095 4780
+Wire Wire Line
+	6095 4780 6095 4980
+$Comp
+L Diode:1N914 D9
+U 1 1 5E19A84C
+P 8510 5075
+F 0 "D9" H 8625 5110 50  0000 C CNN
+F 1 "1N914" H 8510 5201 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4900 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 5075 50  0001 C CNN
+	1    8510 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack05_SIP_Split RP91
+U 2 1 61EB4E58
+P 7545 5080
+F 0 "RP91" V 7500 5365 50  0000 C CNN
+F 1 "100" V 7429 5080 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7465 5080 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 5080 50  0001 C CNN
+F 4 "Independent" H 7545 5080 50  0001 C CNN "Notes"
+	2    7545 5080
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7695 5080 8360 5075
+Text Label 7225 5080 0    50   ~ 0
+b2r
+Wire Wire Line
+	7200 5080 7395 5080
+Wire Wire Line
+	8660 5075 8905 5075
+Wire Wire Line
+	8905 2405 8905 5075
+Wire Wire Line
+	8345 4880 9060 4880
+Wire Wire Line
+	7695 4880 8045 4880
+Text Label 7225 4880 0    50   ~ 0
+b2l
+Wire Wire Line
+	7200 4880 7395 4880
+$Comp
+L Device:R_Pack05_SIP_Split RP91
+U 4 1 61EB730F
+P 7545 4880
+F 0 "RP91" V 7500 5165 50  0000 C CNN
+F 1 "100" V 7429 4880 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7465 4880 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4880 50  0001 C CNN
+F 4 "Independent" H 7545 4880 50  0001 C CNN "Notes"
+	4    7545 4880
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N914 D8
+U 1 1 5E19A842
+P 8195 4880
+F 0 "D8" H 8305 4920 50  0000 C CNN
+F 1 "1N914" H 8195 4655 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4705 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4880 50  0001 C CNN
+	1    8195 4880
+	1    0    0    -1  
+$EndComp
+Text Label 7225 4680 0    50   ~ 0
+b2u
+$Comp
+L Diode:1N914 D6
+U 1 1 5E19A82E
+P 8510 4680
+F 0 "D6" H 8625 4725 50  0000 C CNN
+F 1 "1N914" H 8510 4805 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4505 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4680 50  0001 C CNN
+	1    8510 4680
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack05_SIP_Split RP91
+U 5 1 61EB849F
+P 7545 4680
+F 0 "RP91" V 7500 4960 50  0000 C CNN
+F 1 "100" V 7429 4680 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7465 4680 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4680 50  0001 C CNN
+F 4 "Independent" H 7545 4680 50  0001 C CNN "Notes"
+	5    7545 4680
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7695 4680 8360 4680
+Wire Wire Line
+	7200 4680 7395 4680
+Wire Wire Line
+	9060 2205 9060 4880
+Wire Wire Line
+	8660 4680 9135 4680
+$Comp
+L Device:R_Network05 RP5
+U 1 1 5E3A4C16
+P 5730 4095
+F 0 "RP5" H 5450 4141 50  0000 R CNN
+F 1 "3.3k" H 5450 4050 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 6105 4095 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5730 4095 50  0001 C CNN
+F 4 "Bussed" H 5730 4095 50  0001 C CNN "Notes"
+	1    5730 4095
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5730 4580 6200 4580
+Wire Wire Line
+	6200 4980 6095 4980
+Connection ~ 6095 4980
+Wire Wire Line
+	6095 4980 6095 5180
+Wire Wire Line
+	6200 5180 6095 5180
+Connection ~ 6095 5180
+Wire Wire Line
+	6095 5180 6095 5820
+NoConn ~ 7200 4780
+NoConn ~ 7200 4980
+Wire Wire Line
+	6075 1805 6205 1805
+$Comp
+L 74xx:74LS245 U17
+U 1 1 64DE6AC7
+P 6705 2305
+F 0 "U17" H 6925 2970 50  0000 C CNN
+F 1 "74LS245" H 6935 1620 50  0000 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6705 2305 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6705 2305 50  0001 C CNN
+	1    6705 2305
+	1    0    0    -1  
+$EndComp
+Connection ~ 5930 1805
+Wire Wire Line
+	5930 1805 5995 1805
+Wire Wire Line
+	6205 2105 5995 2105
+Wire Wire Line
+	5995 2105 5995 2305
+Wire Wire Line
+	6205 2505 5995 2505
+Connection ~ 5995 2505
+Wire Wire Line
+	5995 2505 5995 3145
+Wire Wire Line
+	6205 2305 5995 2305
+Connection ~ 5995 2305
+Wire Wire Line
+	5995 2305 5995 2505
+Wire Wire Line
+	5995 2005 6205 2005
+Wire Wire Line
+	5995 1805 5995 2005
+Connection ~ 5830 1705
+Wire Wire Line
+	5830 1705 5830 2205
+Wire Wire Line
+	6205 2205 6075 2205
+Wire Wire Line
+	6075 2205 6075 2155
+Wire Wire Line
+	6075 2155 5930 2155
+Wire Wire Line
+	5530 2105 5530 2405
+Wire Wire Line
+	5530 2405 6205 2405
+Connection ~ 5530 2105
+Wire Wire Line
+	5630 2005 5930 2005
+Wire Wire Line
+	5930 2005 5930 2155
+Connection ~ 5630 2005
+Wire Wire Line
+	5730 1905 6205 1905
+Connection ~ 5730 1905
+NoConn ~ 7205 2105
+NoConn ~ 7205 2505
+Text Label 7225 2005 0    50   ~ 0
+b1u
+Wire Wire Line
+	7700 2005 8360 2000
+$Comp
+L Device:R_Pack05_SIP_Split RP90
+U 5 1 61FC7C7D
+P 7550 2005
+F 0 "RP90" V 7505 2275 50  0000 C CNN
+F 1 "100" V 7434 2005 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7470 2005 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2005 50  0001 C CNN
+F 4 "Independent" H 7550 2005 50  0001 C CNN "Notes"
+	5    7550 2005
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N914 D1
+U 1 1 5E037618
+P 8510 2000
+F 0 "D1" H 8625 2040 50  0000 C CNN
+F 1 "1N914" H 8510 2125 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 2000 50  0001 C CNN
+	1    8510 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7205 2005 7400 2005
+Wire Wire Line
+	8660 2000 9135 2000
+Wire Wire Line
+	9135 2000 9135 4680
+Connection ~ 9135 2000
+Wire Wire Line
+	9135 2000 9585 2000
+Wire Wire Line
+	7205 1905 7400 1905
+$Comp
+L Diode:1N914 D2
+U 1 1 5E03AEE2
+P 8195 1905
+F 0 "D2" H 8305 1945 50  0000 C CNN
+F 1 "1N914" H 8195 2030 50  0001 C CNN
+F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1730 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 1905 50  0001 C CNN
+	1    8195 1905
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1905 8045 1905
+$Comp
+L Device:R_Pack05_SIP_Split RP90
+U 1 1 61FC7C55
+P 7550 1905
+F 0 "RP90" V 7510 2170 50  0000 C CNN
+F 1 "100" V 7360 1905 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 7470 1905 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 1905 50  0001 C CNN
+F 4 "Independent" H 7550 1905 50  0001 C CNN "Notes"
+	1    7550 1905
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8345 1905 8985 1905
+Connection ~ 8985 1905
+Wire Wire Line
+	8985 1905 9585 1905
+Entry Wire Line
+	9585 1905 9685 1805
+Text Label 9585 1905 2    50   ~ 0
+k1
+NoConn ~ 7205 2305
+Wire Wire Line
+	8985 1905 8985 4580
+Wire Wire Line
+	3255 2805 6205 2805
+Wire Wire Line
+	6140 1450 6705 1450
+Connection ~ 6705 1450
+Wire Wire Line
+	6705 1450 6705 1505
+Wire Wire Line
+	6205 2705 6140 2705
+Wire Wire Line
+	6140 2705 6140 1450
 Wire Bus Line
 	9685 1705 9685 4385
 $EndSCHEMATC

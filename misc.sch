@@ -784,7 +784,7 @@ AR Path="/5E4A81E1/62DDC32C" Ref="C?"  Part="1"
 AR Path="/5EACE220/62DDC32C" Ref="C107"  Part="1" 
 F 0 "C107" H 7750 2406 50  0000 R CNN
 F 1 "1000u/25V" H 7750 2315 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7865 2360 50  0001 C CNN
+F 2 "LittleSixteen:Axial_Cap_Dual" H 7865 2360 50  0001 C CNN
 F 3 "~" H 7865 2360 50  0001 C CNN
 	1    7865 2360
 	-1   0    0    -1  
