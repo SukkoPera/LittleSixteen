@@ -164,7 +164,6 @@ Text Label 10415 1595 2    50   ~ 0
 audio_in
 Text Label 10415 1495 2    50   ~ 0
 audio_out
-NoConn ~ 11510 3425
 NoConn ~ 11970 3625
 Text Notes 10480 2415 0    50   ~ 0
 MOUNT FOR MOS\n6581 ONLY
@@ -409,10 +408,6 @@ Wire Wire Line
 	11820 4210 11820 4285
 Wire Wire Line
 	11670 3190 11670 3525
-Wire Wire Line
-	11510 3525 11670 3525
-Wire Wire Line
-	11510 3625 11670 3625
 Wire Wire Line
 	11820 3775 11820 3910
 Wire Wire Line
@@ -1279,19 +1274,6 @@ F 5 "100" H 11920 6755 50  0001 C CNN "Value"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male SW2
-U 1 1 6436DD9D
-P 11310 3525
-F 0 "SW2" H 11283 3457 50  0000 R CNN
-F 1 "SW_DIGIFIX" H 11283 3548 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 11310 3525 50  0001 C CNN
-F 3 "~" H 11310 3525 50  0001 C CNN
-F 4 "For 6581 do not mount" H 11310 3525 50  0001 C CNN "Notes"
-F 5 "SW_DIGIFIX" H 11310 3525 50  0001 C CNN "Value"
-	1    11310 3525
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R35
 U 1 1 6340C3F1
 P 11820 4060
@@ -1606,6 +1588,21 @@ Text GLabel 13560 7255 0    50   Input ~ 0
 ~JOY3
 Text GLabel 7170 2295 0    50   Input ~ 0
 ~SID
+Wire Wire Line
+	11510 3625 11670 3625
+Wire Wire Line
+	11510 3525 11670 3525
+$Comp
+L Connector:Conn_01x02_Male SW2
+U 1 1 652F59B8
+P 11310 3525
+F 0 "SW2" H 11282 3407 50  0000 R CNN
+F 1 "SW_DIGIFIX" H 11282 3498 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 11310 3525 50  0001 C CNN
+F 3 "~" H 11310 3525 50  0001 C CNN
+	1    11310 3525
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	7135 2495 7135 2895
 Wire Bus Line
