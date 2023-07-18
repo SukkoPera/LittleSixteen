@@ -1027,7 +1027,7 @@ AR Path="/5E019FCB/65CC3782" Ref="L?"  Part="1"
 AR Path="/64A6E6F3/65CC3782" Ref="L2"  Part="1" 
 F 0 "L2" V 13045 4090 50  0000 C CNN
 F 1 "10u" V 12954 4090 50  0000 C CNN
-F 2 "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC" H 12855 4090 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D6.0mm_P4.00mm" H 12855 4090 50  0001 C CNN
 F 3 "~" H 12855 4090 50  0001 C CNN
 	1    12855 4090
 	0    -1   -1   0   
