@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Wed 19 Jul 2023 11:10:07 CEST")
+    (date "Wed 19 Jul 2023 14:57:26 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -2094,7 +2094,7 @@
       (tstamp 61E4B6DF))
     (comp (ref L80)
       (value 10u)
-      (footprint Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC)
+      (footprint Inductor_THT:L_Radial_D6.0mm_P4.00mm)
       (datasheet ~)
       (libsource (lib Device) (part L) (description Inductor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
