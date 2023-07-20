@@ -1052,7 +1052,7 @@ F 1 "470p" H 4410 6540 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4333 6435 50  0001 C CNN
 F 3 "~" H 4295 6585 50  0001 C CNN
 F 4 "810-FG28C0G1H471JNT6" H 4295 6585 50  0001 C CNN "MouserPN"
-F 5 "If using old CD4520 as U2 do not mount C20" H 4295 6585 50  0001 C CNN "Notes"
+F 5 "" H 4295 6585 50  0001 C CNN "Notes"
 F 6 "470p" H 4295 6585 50  0001 C CNN "Value"
 	1    4295 6585
 	1    0    0    -1  
@@ -1092,7 +1092,7 @@ F 1 "100" V 3854 6370 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3900 6370 50  0001 C CNN
 F 3 "~" H 3970 6370 50  0001 C CNN
 F 4 "660-MF1/4LCT52R101G" H 3970 6370 50  0001 C CNN "MouserPN"
-F 5 "If using old CD4520 as U2 replace R11 with 0R" H 3970 6370 50  0001 C CNN "Notes"
+F 5 "" H 3970 6370 50  0001 C CNN "Notes"
 F 6 "100" H 3970 6370 50  0001 C CNN "Value"
 	1    3970 6370
 	0    1    1    0   
@@ -1203,7 +1203,7 @@ F 1 "2SC1815" H 12920 1450 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 12930 1420 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 12730 1495 50  0001 L CNN
 F 4 "610-2SC1815-GR" H 12730 1495 50  0001 C CNN "MouserPN"
-F 5 "Either mount this or Q1" H 12730 1495 50  0001 C CNN "Notes"
+F 5 "" H 12730 1495 50  0001 C CNN "Notes"
 F 6 "2SC1815" H 12730 1495 50  0001 C CNN "Value"
 	1    12730 1495
 	1    0    0    -1  
@@ -1323,7 +1323,7 @@ F 1 "1k" H 10650 1820 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 10650 1775 50  0001 C CNN
 F 3 "~" H 10720 1775 50  0001 C CNN
 F 4 "603-MFR-25FBF52-1K" H 10720 1775 50  0001 C CNN "MouserPN"
-F 5 "For 6581 do not mount R3" H 10720 1775 50  0001 C CNN "Notes"
+F 5 "For 6581 do not mount" H 10720 1775 50  0001 C CNN "Notes"
 F 6 "1k" H 10720 1775 50  0001 C CNN "Value"
 	1    10720 1775
 	-1   0    0    1   
@@ -1536,6 +1536,7 @@ F 2 "LittleSixteen:DIP-28_W15.24mm_Socket_LongPads" H 8110 2245 50  0001 C CNN
 F 3 "DOCUMENTATION" H 8110 2245 50  0001 C CNN
 F 4 ":)" H 8110 2245 50  0001 C CNN "MouserPN"
 F 5 "MOS_8580" H 8110 2245 50  0001 C CNN "Value"
+F 6 "Or 6581" H 8110 2245 50  0001 C CNN "Notes"
 	1    8110 2245
 	1    0    0    -1  
 $EndComp
@@ -1600,6 +1601,7 @@ F 0 "SW2" H 11282 3407 50  0000 R CNN
 F 1 "SW_DIGIFIX" H 11282 3498 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 11310 3525 50  0001 C CNN
 F 3 "~" H 11310 3525 50  0001 C CNN
+F 4 "For 6581 do not mount or leave open" H 11310 3525 50  0001 C CNN "Notes"
 	1    11310 3525
 	1    0    0    -1  
 $EndComp

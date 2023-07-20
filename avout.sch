@@ -277,6 +277,7 @@ F 0 "Q3" H 4130 1746 50  0000 L CNN
 F 1 "2SC1815" H 4130 1655 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 4140 1625 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 3940 1700 50  0001 L CNN
+F 4 "610-2SC1815-GR" H 3940 1700 50  0001 C CNN "MouserPN"
 	1    3940 1700
 	1    0    0    -1  
 $EndComp
@@ -1314,6 +1315,7 @@ F 0 "Q81" H 3520 5196 50  0000 L CNN
 F 1 "2SC1815" H 3520 5105 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3530 5075 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 3330 5150 50  0001 L CNN
+F 4 "610-2SC1815-GR" H 3330 5150 50  0001 C CNN "MouserPN"
 	1    3330 5150
 	1    0    0    -1  
 $EndComp
@@ -1325,6 +1327,7 @@ F 0 "Q82" H 7900 5441 50  0000 L CNN
 F 1 "2SC1815" H 7900 5350 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7910 5320 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 7710 5395 50  0001 L CNN
+F 4 "610-2SC1815-GR" H 7710 5395 50  0001 C CNN "MouserPN"
 	1    7710 5395
 	1    0    0    -1  
 $EndComp

@@ -871,7 +871,7 @@ F 0 "SW3" H 3853 1882 50  0000 R CNN
 F 1 "SW_JOYSWAP" H 3853 1973 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3880 1950 50  0001 C CNN
 F 3 "~" H 3880 1950 50  0001 C CNN
-F 4 "For 6581 do not mount" H 3880 1950 50  0001 C CNN "Notes"
+F 4 "" H 3880 1950 50  0001 C CNN "Notes"
 F 5 "SW_DIGIFIX" H 3880 1950 50  0001 C CNN "Value"
 	1    3880 1950
 	-1   0    0    1   

@@ -1105,7 +1105,7 @@ AR Path="/5EE7AAEB/660AD22F" Ref="U?"  Part="4"
 AR Path="/5EACE220/660AD22F" Ref="U12"  Part="4" 
 AR Path="/5E4A465A/660AD22F" Ref="U?"  Part="4" 
 F 0 "U12" H 9805 6375 50  0000 C CNN
-F 1 "74LS02" H 9805 6284 50  0000 C CNN
+F 1 "74HCT02" H 9805 6284 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 9805 6050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 9805 6050 50  0001 C CNN
 	4    9805 6050
@@ -1199,6 +1199,7 @@ F 0 "U7" H 5045 7087 50  0000 C CNN
 F 1 "L7812" H 5045 6996 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5070 6695 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5045 6795 50  0001 C CNN
+F 4 "VERY IMPORTANT!!! For 8580 use L7809" H 5045 6845 50  0001 C CNN "Notes"
 	1    5045 6845
 	1    0    0    -1  
 $EndComp

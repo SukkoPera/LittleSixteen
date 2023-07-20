@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Thu 20 Jul 2023 14:50:45 CEST")
+    (date "Thu 20 Jul 2023 15:38:53 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -388,6 +388,8 @@
       (value 2SC1815)
       (footprint Package_TO_SOT_THT:TO-92_Inline_Wide)
       (datasheet https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf)
+      (fields
+        (field (name MouserPN) 610-2SC1815-GR))
       (libsource (lib Transistor_BJT) (part 2SC1815) (description "0.15A Ic, 50V Vce, Low Noise Audio NPN Transistor, TO-92"))
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
       (tstamp 5EAF64AB))
@@ -423,6 +425,8 @@
       (value 2SC1815)
       (footprint Package_TO_SOT_THT:TO-92_Inline_Wide)
       (datasheet https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf)
+      (fields
+        (field (name MouserPN) 610-2SC1815-GR))
       (libsource (lib Transistor_BJT) (part 2SC1815) (description "0.15A Ic, 50V Vce, Low Noise Audio NPN Transistor, TO-92"))
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
       (tstamp 5EB1F45B))
@@ -536,7 +540,6 @@
       (footprint Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical)
       (datasheet ~)
       (fields
-        (field (name Notes) "For 6581 do not mount")
         (field (name Value) SW_DIGIFIX))
       (libsource (lib Connector) (part Conn_01x03_Male) (description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /RAM/) (tstamps /5E4A465A/))
@@ -586,7 +589,7 @@
       (sheetpath (names /ROMs/) (tstamps /5EE476E1/))
       (tstamp 5EE644B7))
     (comp (ref U90)
-      (value 74LS08)
+      (value 74HCT08)
       (footprint LittleSixteen:DIP-14_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS08)
       (libsource (lib 74xx) (part 74LS08) (description "Quad And2"))
@@ -1320,7 +1323,7 @@
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 63040746))
     (comp (ref U12)
-      (value 74LS02)
+      (value 74HCT02)
       (footprint LittleSixteen:DIP-14_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74ls02)
       (libsource (lib 74xx) (part 74LS02) (description "quad 2-input NOR gate"))
@@ -1337,6 +1340,8 @@
       (value L7812)
       (footprint Package_TO_SOT_THT:TO-220-3_Vertical)
       (datasheet http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf)
+      (fields
+        (field (name Notes) "VERY IMPORTANT!!! For 8580 use L7809"))
       (libsource (lib Regulator_Linear) (part L7812) (description "Positive 1.5A 35V Linear Regulator, Fixed Output 12V, TO-220/TO-263/TO-252"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 652DBBCB))
@@ -1396,7 +1401,7 @@
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 652C0739))
     (comp (ref U14)
-      (value 74LS139)
+      (value 74HCT139)
       (footprint LittleSixteen:DIP-16_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS139)
       (libsource (lib 74xx) (part 74LS139) (description "Dual Decoder 1 of 4, Active low outputs"))
@@ -1427,8 +1432,6 @@
       (value 1n4148)
       (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp)
       (datasheet ~)
-      (fields
-        (field (name Notes) "Only mount if using PLA16V8"))
       (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names "/PLA & Chip Selection/") (tstamps /5EE7AAEB/))
       (tstamp 61A4BF35))
@@ -1436,8 +1439,6 @@
       (value 1n4148)
       (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp)
       (datasheet ~)
-      (fields
-        (field (name Notes) "Only mount if using PLA16V8"))
       (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names "/PLA & Chip Selection/") (tstamps /5EE7AAEB/))
       (tstamp 61A4BF4B))
@@ -1445,8 +1446,6 @@
       (value 1n4148)
       (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp)
       (datasheet ~)
-      (fields
-        (field (name Notes) "Only mount if using PLA16V8"))
       (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names "/PLA & Chip Selection/") (tstamps /5EE7AAEB/))
       (tstamp 61A4BF51))
@@ -1454,8 +1453,6 @@
       (value 1n4148)
       (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp)
       (datasheet ~)
-      (fields
-        (field (name Notes) "Only mount if using PLA16V8"))
       (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names "/PLA & Chip Selection/") (tstamps /5EE7AAEB/))
       (tstamp 61A4BF57))
@@ -1463,8 +1460,6 @@
       (value 1n4148)
       (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp)
       (datasheet ~)
-      (fields
-        (field (name Notes) "Only mount if using PLA16V8"))
       (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names "/PLA & Chip Selection/") (tstamps /5EE7AAEB/))
       (tstamp 61A4BF5D))
@@ -1472,8 +1467,6 @@
       (value 1n4148)
       (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp)
       (datasheet ~)
-      (fields
-        (field (name Notes) "Only mount if using PLA16V8"))
       (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names "/PLA & Chip Selection/") (tstamps /5EE7AAEB/))
       (tstamp 61A4BF63))
@@ -1750,7 +1743,7 @@
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
       (tstamp 623144B5))
     (comp (ref U18)
-      (value 74LS245)
+      (value 74HCT245)
       (footprint LittleSixteen:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS245)
       (libsource (lib 74xx) (part 74LS245) (description "Octal BUS Transceivers, 3-State outputs"))
@@ -1787,7 +1780,7 @@
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
       (tstamp 5E3A4C16))
     (comp (ref U17)
-      (value 74LS245)
+      (value 74HCT245)
       (footprint LittleSixteen:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS245)
       (libsource (lib 74xx) (part 74LS245) (description "Octal BUS Transceivers, 3-State outputs"))
@@ -1907,6 +1900,8 @@
       (value 2SC1815)
       (footprint Package_TO_SOT_THT:TO-92_Inline_Wide)
       (datasheet https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf)
+      (fields
+        (field (name MouserPN) 610-2SC1815-GR))
       (libsource (lib Transistor_BJT) (part 2SC1815) (description "0.15A Ic, 50V Vce, Low Noise Audio NPN Transistor, TO-92"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E06CD62))
@@ -2166,6 +2161,8 @@
       (value 2SC1815)
       (footprint Package_TO_SOT_THT:TO-92_Inline_Wide)
       (datasheet https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf)
+      (fields
+        (field (name MouserPN) 610-2SC1815-GR))
       (libsource (lib Transistor_BJT) (part 2SC1815) (description "0.15A Ic, 50V Vce, Low Noise Audio NPN Transistor, TO-92"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 6436C9A5))
@@ -2173,6 +2170,8 @@
       (value 2SC1815)
       (footprint Package_TO_SOT_THT:TO-92_Inline_Wide)
       (datasheet https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf)
+      (fields
+        (field (name MouserPN) 610-2SC1815-GR))
       (libsource (lib Transistor_BJT) (part 2SC1815) (description "0.15A Ic, 50V Vce, Low Noise Audio NPN Transistor, TO-92"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 6436FE8F))
@@ -2405,7 +2404,6 @@
       (datasheet ~)
       (fields
         (field (name MouserPN) 810-FG28C0G1H471JNT6)
-        (field (name Notes) "If using old CD4520 as U2 do not mount C20")
         (field (name Value) 470p))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2436,7 +2434,6 @@
       (datasheet ~)
       (fields
         (field (name MouserPN) 660-MF1/4LCT52R101G)
-        (field (name Notes) "If using old CD4520 as U2 replace R11 with 0R")
         (field (name Value) 100))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2492,7 +2489,6 @@
       (datasheet https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf)
       (fields
         (field (name MouserPN) 610-2SC1815-GR)
-        (field (name Notes) "Either mount this or Q1")
         (field (name Value) 2SC1815))
       (libsource (lib Transistor_BJT) (part 2SC1815) (description "0.15A Ic, 50V Vce, Low Noise Audio NPN Transistor, TO-92"))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2545,7 +2541,7 @@
       (datasheet ~)
       (fields
         (field (name MouserPN) 603-MFR-25FBF52-1K)
-        (field (name Notes) "For 6581 do not mount R3")
+        (field (name Notes) "For 6581 do not mount")
         (field (name Value) 1k))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2709,6 +2705,7 @@
       (datasheet DOCUMENTATION)
       (fields
         (field (name MouserPN) ":)")
+        (field (name Notes) "Or 6581")
         (field (name Value) MOS_8580))
       (libsource (lib MOS_8580) (part MOS_8580) (description ""))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2717,6 +2714,8 @@
       (value SW_DIGIFIX)
       (footprint Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name Notes) "For 6581 do not mount or leave open"))
       (libsource (lib Connector) (part Conn_01x02_Male) (description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
       (tstamp 652F59B8)))
