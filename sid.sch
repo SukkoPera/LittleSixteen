@@ -1609,4 +1609,6 @@ Wire Bus Line
 	9620 2095 9620 2795
 Wire Bus Line
 	15380 6155 15380 6855
+Text Label 2100 6470 0    50   ~ 0
+~mux
 $EndSCHEMATC
