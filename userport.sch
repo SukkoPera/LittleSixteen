@@ -1144,7 +1144,7 @@ AR Path="/5E6A379E/6486FE58" Ref="JP?"  Part="1"
 AR Path="/63EAD078/6486FE58" Ref="JP12"  Part="1" 
 F 0 "JP12" H 13840 1732 50  0000 C CNN
 F 1 "JP_TPSENSE" H 13840 1641 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 13840 1520 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13840 1520 50  0001 C CNN
 F 3 "~" H 13840 1520 50  0001 C CNN
 	1    13840 1520
 	-1   0    0    -1  

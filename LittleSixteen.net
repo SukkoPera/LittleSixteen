@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Thu 20 Jul 2023 15:38:53 CEST")
+    (date "Thu 20 Jul 2023 16:34:03 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -2305,7 +2305,7 @@
       (tstamp 6479A5EF))
     (comp (ref JP12)
       (value JP_TPSENSE)
-      (footprint Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Device) (part Jumper_NC_Small) (description "Jumper, normally closed, small symbol"))
       (sheetpath (names "/User Port/") (tstamps /63EAD078/))
