@@ -126,8 +126,6 @@ Wire Wire Line
 Wire Wire Line
 	9645 1945 10050 1945
 Wire Wire Line
-	10050 1945 10050 2615
-Wire Wire Line
 	10050 2940 9520 2940
 Connection ~ 8660 2940
 Wire Wire Line
@@ -147,19 +145,6 @@ F 3 "" H 9260 1635 50  0001 C CNN
 	1    9260 1635
 	1    0    0    -1  
 $EndComp
-$Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB13
-U 1 1 5E03E255
-P 10050 2715
-F 0 "FB13" H 10150 2715 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 10150 2670 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 9980 2715 50  0001 C CNN
-F 3 "~" H 10050 2715 50  0001 C CNN
-	1    10050 2715
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10050 2815 10050 2940
 $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB12
 U 1 1 5E03F938
@@ -1343,4 +1328,8 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 7
 	1    7710 5395
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10050 1945 10050 2940
+Text Notes 10090 3020 0    50   ~ 0
+FB13 REMOVED\nTO REDUCE\nCHROMA/LUMA\nCROSSTALK\n(THANKS TLC!)
 $EndSCHEMATC
