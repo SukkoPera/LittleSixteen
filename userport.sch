@@ -912,8 +912,6 @@ Text Label 9665 6730 2    50   ~ 0
 rxd_ttl
 Text Label 9665 7530 2    50   ~ 0
 txd_ttl
-Text Notes 12425 5960 0    50   ~ 0
-!!!!!!!!!!!!!!!!!!!!!!!!\n!!! gab, cba TBD !!!\n!!!!!!!!!!!!!!!!!!!!!!!!
 Text Notes 8255 4200 0    50   ~ 0
 SOME CONTROL SIGNALS ARE INVERTED FOR\nHISTORICAL REASONS THAT DATE BACK TO\nTHE VIC-1011A
 Text Notes 10120 10240 0    50   ~ 0
@@ -1520,7 +1518,7 @@ Text Label 3245 2825 0    50   ~ 0
 q+
 Text Label 3245 2925 0    50   ~ 0
 q-
-Text Notes 2075 5595 0    157  ~ 0
+Text Notes 2140 5255 0    157  ~ 0
 PLA - 3 -
 Text GLabel 3795 6495 2    50   Output ~ 0
 ~CS_RAMRD
@@ -1556,4 +1554,6 @@ Wire Bus Line
 	6130 2525 6130 3225
 Wire Bus Line
 	1695 6195 1695 7095
+Text Notes 1380 5695 0    50   ~ 0
+Generates:\n- Control signals for the Hannes RAM Expansion register at $FD16\n- ~CS~ for the User Port MOS 6529 (or replacement) at $FD10 only, named ~CASSETTE~ here\n- Other control signals for the User Port MOS 6529 replacement circuit
 $EndSCHEMATC

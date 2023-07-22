@@ -262,8 +262,6 @@ Wire Bus Line
 	9685 1705 10185 1705
 Text GLabel 10185 1705 2    50   Output ~ 0
 k[0..7]
-Text Notes 555  7680 0    50   ~ 0
-Joystick Connector Pinout\nMiniDIN-8\n1 Up\n2 Down\n3 Left\n4 Right\n5 +5V\n6 Fire\n7 Ground\n8 Select\n\nAll signals are joy to C16, except Select
 Wire Wire Line
 	4910 4880 4495 4880
 NoConn ~ 7200 5180
@@ -1027,8 +1025,8 @@ F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 2405 50  0001 C CNN
 	1    8510 2405
 	1    0    0    -1  
 $EndComp
-Text Notes 11150 1440 2    50   ~ 0
-This was one of the weakest spots of the C16, where the\nTED chip pins were directly exposed outside through the\njoystick ports.\n\nAdding a buffer will protect the TED from ESD, and TVS\ndiodes could do even more. This is basically Levente\nHársfalvi's design integrated into the C16. Please see:\nhttp://www.zimmers.net/anonftp/pub/cbm/documents/projects/interfaces/plus4joy/plus4joy.html\n\nWe can also consider to replace the MiniDIN-8 ports with\nD-SUB 9 ones.
+Text Notes 11125 1290 2    50   ~ 0
+This was one of the weakest spots of the C16, where the\nTED chip pins were directly exposed outside through the\njoystick ports.\n\nAdding a buffer will protect the TED from ESD, and TVS\ndiodes could do even more. This is basically Levente\nHársfalvi's design (changed to 74x245 just for our convenience)\nintegrated into the C16. Please see:\nhttp://www.zimmers.net/anonftp/pub/cbm/documents/projects/interfaces/plus4joy/plus4joy.html\n
 Entry Wire Line
 	9585 2000 9685 1900
 Connection ~ 9060 2205
@@ -1273,20 +1271,12 @@ Connection ~ 5830 1705
 Wire Wire Line
 	5830 1705 5830 2205
 Wire Wire Line
-	6205 2205 6075 2205
-Wire Wire Line
-	6075 2205 6075 2155
-Wire Wire Line
-	6075 2155 5930 2155
-Wire Wire Line
 	5530 2105 5530 2405
 Wire Wire Line
 	5530 2405 6205 2405
 Connection ~ 5530 2105
 Wire Wire Line
 	5630 2005 5930 2005
-Wire Wire Line
-	5930 2005 5930 2155
 Connection ~ 5630 2005
 Wire Wire Line
 	5730 1905 6205 1905
@@ -1379,6 +1369,10 @@ Wire Wire Line
 	6205 2705 6140 2705
 Wire Wire Line
 	6140 2705 6140 1450
+Wire Wire Line
+	5930 2205 6205 2205
+Wire Wire Line
+	5930 2005 5930 2205
 Wire Bus Line
 	9685 1705 9685 4385
 $EndSCHEMATC

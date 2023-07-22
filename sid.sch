@@ -1605,12 +1605,12 @@ F 4 "For 6581 do not mount or leave open" H 11310 3525 50  0001 C CNN "Notes"
 	1    11310 3525
 	1    0    0    -1  
 $EndComp
+Text Label 2100 6470 0    50   ~ 0
+~mux
 Wire Bus Line
 	7135 2495 7135 2895
 Wire Bus Line
 	9620 2095 9620 2795
 Wire Bus Line
 	15380 6155 15380 6855
-Text Label 2100 6470 0    50   ~ 0
-~mux
 $EndSCHEMATC
