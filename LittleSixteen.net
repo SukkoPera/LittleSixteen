@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sat 22 Jul 2023 23:28:01 CEST")
+    (date "Sat 22 Jul 2023 23:50:30 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1336,7 +1336,7 @@
       (tstamp 660AD22F))
     (comp (ref D87)
       (value 1n4001)
-      (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp)
+      (footprint LittleSixteen:D_DO-41_SOD81_P5.08mm_Vertical_KathodeUp)
       (datasheet ~)
       (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
@@ -1391,7 +1391,7 @@
       (tstamp 653B5EBF))
     (comp (ref D88)
       (value 1n4001)
-      (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp)
+      (footprint LittleSixteen:D_DO-41_SOD81_P5.08mm_Vertical_KathodeUp)
       (datasheet ~)
       (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
