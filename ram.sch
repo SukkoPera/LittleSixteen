@@ -1308,6 +1308,9 @@ F 3 "~" H 3965 2355 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 2090 3700 2255
+Connection ~ 3700 2255
+Wire Wire Line
+	3700 2255 3765 2255
 Wire Bus Line
 	8090 5180 8090 6210
 Wire Bus Line
@@ -1328,7 +1331,4 @@ Wire Bus Line
 	7380 2195 7380 2895
 Wire Bus Line
 	8090 3435 8090 5080
-Connection ~ 3700 2255
-Wire Wire Line
-	3700 2255 3765 2255
 $EndSCHEMATC

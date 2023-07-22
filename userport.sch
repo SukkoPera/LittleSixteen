@@ -1538,6 +1538,8 @@ Text Notes 4755 6680 0    50   ~ 0
 512KB RAM EXPANSION\nCONTROL SIGNALS
 NoConn ~ 10770 10770
 NoConn ~ 11370 10770
+Text Notes 1380 5695 0    50   ~ 0
+Generates:\n- Control signals for the Hannes RAM Expansion register at $FD16\n- ~CS~ for the User Port MOS 6529 (or replacement) at $FD10 only, named ~CASSETTE~ here\n- Other control signals for the User Port MOS 6529 replacement circuit
 Wire Bus Line
 	9765 6730 9765 8260
 Wire Bus Line
@@ -1554,6 +1556,4 @@ Wire Bus Line
 	6130 2525 6130 3225
 Wire Bus Line
 	1695 6195 1695 7095
-Text Notes 1380 5695 0    50   ~ 0
-Generates:\n- Control signals for the Hannes RAM Expansion register at $FD16\n- ~CS~ for the User Port MOS 6529 (or replacement) at $FD10 only, named ~CASSETTE~ here\n- Other control signals for the User Port MOS 6529 replacement circuit
 $EndSCHEMATC

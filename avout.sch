@@ -48,7 +48,7 @@ U 1 1 5E01E939
 P 6010 1220
 F 0 "L1" H 6062 1266 50  0000 L CNN
 F 1 "1.2u" H 6062 1175 50  0000 L CNN
-F 2 "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC" H 6010 1220 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D6.0mm_P4.00mm" H 6010 1220 50  0001 C CNN
 F 3 "~" H 6010 1220 50  0001 C CNN
 	1    6010 1220
 	1    0    0    -1  
