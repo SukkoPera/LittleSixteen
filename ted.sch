@@ -736,6 +736,46 @@ F 3 "~" H 1740 3655 50  0001 C CNN
 	1    1740 3655
 	0    -1   1    0   
 $EndComp
+Wire Wire Line
+	8250 5365 8250 5770
+Wire Wire Line
+	8385 5365 8250 5365
+Text Notes 7715 4895 0    50   ~ 0
+(EXPERIMENTAL)\nDIRECT TED OUTPUT
+Wire Wire Line
+	8195 5265 8385 5265
+$Comp
+L Connector:Conn_01x02_Male CN?
+U 1 1 64CE27EC
+P 8585 5365
+AR Path="/64A6E6F3/64CE27EC" Ref="CN?"  Part="1" 
+AR Path="/5DE044CB/64CE27EC" Ref="CN13"  Part="1" 
+F 0 "CN13" H 8557 5247 50  0000 R CNN
+F 1 "CONN_TED_OUTPUT" H 8557 5338 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8585 5365 50  0001 C CNN
+F 3 "~" H 8585 5365 50  0001 C CNN
+	1    8585 5365
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 64CE27F4
+P 8045 5265
+AR Path="/64A6E6F3/64CE27F4" Ref="C?"  Part="1" 
+AR Path="/5DE044CB/64CE27F4" Ref="C96"  Part="1" 
+F 0 "C96" V 8297 5265 50  0000 C CNN
+F 1 "10u" V 8206 5265 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8045 5265 50  0001 C CNN
+F 3 "~" H 8045 5265 50  0001 C CNN
+F 4 "710-860010472002" H 8045 5265 50  0001 C CNN "MouserPN"
+F 5 "10u" H 8045 5265 50  0001 C CNN "Value"
+	1    8045 5265
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7610 5265 0    50   Input ~ 0
+SND
+Wire Wire Line
+	7610 5265 7895 5265
 Wire Bus Line
 	6865 885  6865 1650
 Wire Bus Line
@@ -744,4 +784,17 @@ Wire Bus Line
 	9505 3250 9505 3950
 Wire Bus Line
 	9505 885  9505 2650
+$Comp
+L power:GND #PWR?
+U 1 1 64CF4BA6
+P 8250 5770
+AR Path="/5E4A81E1/64CF4BA6" Ref="#PWR?"  Part="1" 
+AR Path="/5DE044CB/64CF4BA6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8250 5520 50  0001 C CNN
+F 1 "GND" H 8255 5597 50  0000 C CNN
+F 2 "" H 8250 5770 50  0001 C CNN
+F 3 "" H 8250 5770 50  0001 C CNN
+	1    8250 5770
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

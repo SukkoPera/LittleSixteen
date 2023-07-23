@@ -1159,12 +1159,12 @@ $Comp
 L Device:R R8
 U 1 1 5E06101C
 P 1725 1450
-F 0 "R8" V 1518 1450 50  0000 C CNN
-F 1 "1k" V 1609 1450 50  0000 C CNN
+F 0 "R8" V 1932 1450 50  0000 C CNN
+F 1 "1k" V 1841 1450 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1655 1450 50  0001 C CNN
 F 3 "~" H 1725 1450 50  0001 C CNN
 	1    1725 1450
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	2295 950  2500 950 
