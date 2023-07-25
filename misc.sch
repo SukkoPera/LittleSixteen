@@ -1386,4 +1386,52 @@ F 3 "" H 6735 6740 50  0001 C CNN
 	1    6735 6740
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 64EE4596
+P 6735 6960
+AR Path="/5DE044CB/64EE4596" Ref="TP?"  Part="1" 
+AR Path="/5EACE220/64EE4596" Ref="TP3"  Part="1" 
+F 0 "TP3" H 6735 7285 50  0000 C CNN
+F 1 "VTED_TESTPOINT" H 6735 7194 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6935 6960 50  0001 C CNN
+F 3 "~" H 6935 6960 50  0001 C CNN
+	1    6735 6960
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6735 6960 6735 6845
+Connection ~ 6735 6845
+$Comp
+L Connector:TestPoint TP?
+U 1 1 64EF6F17
+P 6190 1010
+AR Path="/5DE044CB/64EF6F17" Ref="TP?"  Part="1" 
+AR Path="/5EACE220/64EF6F17" Ref="TP2"  Part="1" 
+F 0 "TP2" V 6293 1082 50  0000 C CNN
+F 1 "FIVEV_TESTPOINT" V 6384 1082 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6390 1010 50  0001 C CNN
+F 3 "~" H 6390 1010 50  0001 C CNN
+	1    6190 1010
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 1010 6190 1010
+Connection ~ 6050 1010
+$Comp
+L Connector:TestPoint TP?
+U 1 1 64F0CBEF
+P 9180 2145
+AR Path="/5DE044CB/64F0CBEF" Ref="TP?"  Part="1" 
+AR Path="/5EACE220/64F0CBEF" Ref="TP4"  Part="1" 
+F 0 "TP4" V 9134 2333 50  0000 L CNN
+F 1 "NINEV_TESTPOINT" V 9225 2333 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 9380 2145 50  0001 C CNN
+F 3 "~" H 9380 2145 50  0001 C CNN
+	1    9180 2145
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9040 2145 9180 2145
+Connection ~ 9040 2145
 $EndSCHEMATC

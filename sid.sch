@@ -630,7 +630,7 @@ Wire Wire Line
 	12070 6855 12990 6855
 Wire Wire Line
 	12070 6655 12690 6655
-Text Label 4980 6370 2    50   ~ 0
+Text Label 5405 6370 2    50   ~ 0
 sidclk
 $Comp
 L power:GND #PWR0244
@@ -657,7 +657,7 @@ Wire Wire Line
 	4295 6735 4295 6795
 Connection ~ 4295 6370
 Wire Wire Line
-	4295 6370 4980 6370
+	4295 6370 5115 6370
 Wire Notes Line
 	3735 6055 4620 6055
 Wire Notes Line
@@ -1607,10 +1607,28 @@ F 4 "For 6581 do not mount or leave open" H 11310 3525 50  0001 C CNN "Notes"
 $EndComp
 Text Label 2100 6470 0    50   ~ 0
 ~mux
+$Comp
+L Connector:TestPoint TP?
+U 1 1 64F28672
+P 5115 6445
+AR Path="/5DE044CB/64F28672" Ref="TP?"  Part="1" 
+AR Path="/64A6E6F3/64F28672" Ref="TP5"  Part="1" 
+F 0 "TP5" H 5115 6770 50  0000 C CNN
+F 1 "SIDCLK_TESTPOINT" H 5115 6679 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5315 6445 50  0001 C CNN
+F 3 "~" H 5315 6445 50  0001 C CNN
+	1    5115 6445
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5115 6445 5115 6370
 Wire Bus Line
 	7135 2495 7135 2895
 Wire Bus Line
 	9620 2095 9620 2795
 Wire Bus Line
 	15380 6155 15380 6855
+Connection ~ 5115 6370
+Wire Wire Line
+	5115 6370 5405 6370
 $EndSCHEMATC
