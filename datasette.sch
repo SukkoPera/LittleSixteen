@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 14
 Title "LittleSixteen"
-Date "2021-12-05"
+Date "2023-07-25"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -834,7 +834,7 @@ Wire Notes Line
 	4025 5950 2960 5950
 Wire Notes Line
 	4025 6245 4025 5950
-Text Notes 2875 6210 2    50   ~ 0
+Text Notes 2920 6205 2    50   ~ 0
 These protection diodes\nare usually installed in place of\nferrites FB3 and FB4.
 $Comp
 L Device:R R93
@@ -1025,123 +1025,101 @@ Wire Notes Line
 Wire Notes Line
 	8925 6410 8925 2565
 Wire Wire Line
-	1140 6745 685  6745
+	2015 6715 1560 6715
 Wire Wire Line
-	1140 6845 685  6845
+	2515 6715 2970 6715
 Wire Wire Line
-	1140 6945 685  6945
+	2015 6815 1560 6815
 Wire Wire Line
-	1140 7045 685  7045
+	2015 6915 1560 6915
 Wire Wire Line
-	1140 7145 685  7145
+	2515 6815 2970 6815
 Wire Wire Line
-	2100 6845 1640 6845
+	1375 6915 915  6915
 Wire Wire Line
-	2100 6945 1640 6945
+	1375 7015 915  7015
 Wire Wire Line
-	2100 7045 1640 7045
-Wire Wire Line
-	2100 7145 1640 7145
-Wire Wire Line
-	1140 7245 685  7245
-Wire Wire Line
-	685  7245 685  7345
+	1375 7115 915  7115
 $Comp
 L power:GND #PWR0213
 U 1 1 623B7B36
-P 685 7515
-F 0 "#PWR0213" H 685 7265 50  0001 C CNN
-F 1 "GND" H 690 7342 50  0000 C CNN
-F 2 "" H 685 7515 50  0001 C CNN
-F 3 "" H 685 7515 50  0001 C CNN
-	1    685  7515
-	1    0    0    -1  
+P 2970 7085
+F 0 "#PWR0213" H 2970 6835 50  0001 C CNN
+F 1 "GND" H 2975 6912 50  0000 C CNN
+F 2 "" H 2970 7085 50  0001 C CNN
+F 3 "" H 2970 7085 50  0001 C CNN
+	1    2970 7085
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0214
 U 1 1 623B7EDA
-P 685 6620
-F 0 "#PWR0214" H 685 6470 50  0001 C CNN
-F 1 "VCC" H 702 6793 50  0000 C CNN
-F 2 "" H 685 6620 50  0001 C CNN
-F 3 "" H 685 6620 50  0001 C CNN
-	1    685  6620
+P 1560 6590
+F 0 "#PWR0214" H 1560 6440 50  0001 C CNN
+F 1 "VCC" H 1577 6763 50  0000 C CNN
+F 2 "" H 1560 6590 50  0001 C CNN
+F 3 "" H 1560 6590 50  0001 C CNN
+	1    1560 6590
 	1    0    0    -1  
 $EndComp
 Text Label 5265 2425 0    50   ~ 0
 tape_mtr
-Text Label 685  6945 0    50   ~ 0
+Text Label 2970 6815 2    50   ~ 0
 tape_wr
-Text Label 685  7145 0    50   ~ 0
+Text Label 2970 6715 2    50   ~ 0
 tape_mtr
-Text Label 685  6845 0    50   ~ 0
+Text Label 1560 6915 0    50   ~ 0
 tape_sense
-Text Label 685  7045 0    50   ~ 0
+Text Label 1560 6815 0    50   ~ 0
 tape_read
-Text Label 2100 6945 2    50   ~ 0
+Text Label 1375 7115 2    50   ~ 0
 iec_atn
-Text Label 2100 7045 2    50   ~ 0
+Text Label 1375 6915 2    50   ~ 0
 iec_clk
-Text Label 2100 7145 2    50   ~ 0
+Text Label 1375 6815 2    50   ~ 0
 iec_dat
-Text Label 2100 7245 2    50   ~ 0
+Text Label 1375 7015 2    50   ~ 0
 iec_rst
 Text Label 8090 5620 1    50   ~ 0
 iec_srq
-Text Label 2100 6845 2    50   ~ 0
-iec_srq
 Wire Wire Line
-	685  6620 685  6745
+	1560 6590 1560 6715
 Wire Wire Line
-	1640 6745 2095 6745
+	915  6715 1370 6715
 $Comp
 L power:VCC #PWR0215
 U 1 1 62461BF9
-P 2095 6620
-F 0 "#PWR0215" H 2095 6470 50  0001 C CNN
-F 1 "VCC" H 2112 6793 50  0000 C CNN
-F 2 "" H 2095 6620 50  0001 C CNN
-F 3 "" H 2095 6620 50  0001 C CNN
-	1    2095 6620
+P 1370 6590
+F 0 "#PWR0215" H 1370 6440 50  0001 C CNN
+F 1 "VCC" H 1387 6763 50  0000 C CNN
+F 2 "" H 1370 6590 50  0001 C CNN
+F 3 "" H 1370 6590 50  0001 C CNN
+	1    1370 6590
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2095 6620 2095 6745
-$Comp
-L Connector_Generic:Conn_02x07_Odd_Even J90
-U 1 1 62482A9D
-P 1340 7045
-F 0 "J90" H 1390 7562 50  0000 C CNN
-F 1 "CONN_TAPE_DRIVE" H 1390 7471 50  0000 C CNN
-F 2 "" H 1340 7045 50  0001 C CNN
-F 3 "~" H 1340 7045 50  0001 C CNN
-	1    1340 7045
-	1    0    0    -1  
-$EndComp
+	1370 6590 1370 6715
 Wire Wire Line
-	1140 7345 685  7345
-Connection ~ 685  7345
+	2515 6915 2970 6915
 Wire Wire Line
-	685  7345 685  7515
+	2970 6915 2970 7085
 $Comp
 L power:GND #PWR0216
 U 1 1 624971E6
-P 2095 7515
-F 0 "#PWR0216" H 2095 7265 50  0001 C CNN
-F 1 "GND" H 2100 7342 50  0000 C CNN
-F 2 "" H 2095 7515 50  0001 C CNN
-F 3 "" H 2095 7515 50  0001 C CNN
-	1    2095 7515
+P 1370 7485
+F 0 "#PWR0216" H 1370 7235 50  0001 C CNN
+F 1 "GND" H 1375 7312 50  0000 C CNN
+F 2 "" H 1370 7485 50  0001 C CNN
+F 3 "" H 1370 7485 50  0001 C CNN
+	1    1370 7485
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1640 7345 2095 7345
+	915  7315 1370 7315
 Wire Wire Line
-	2095 7345 2095 7515
+	1370 7315 1370 7485
 Wire Wire Line
-	1640 7245 2100 7245
-Text Notes 2260 7435 0    50   ~ 0
-This connector has all the Tape and IEC\nsignals and can be used to implement\nan internal SD2IEC or Tapuino.
+	915  7215 1375 7215
 Wire Wire Line
 	7430 5820 7430 6085
 Wire Wire Line
@@ -1351,6 +1329,34 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5950 4725 50  0001 C CNN
 $EndComp
 Text Label 7915 2425 0    50   ~ 0
 tape_mtr2
+$Comp
+L Connector:Conn_01x07_Male J90
+U 1 1 64DB182D
+P 715 7015
+F 0 "J90" H 823 7496 50  0000 C CNN
+F 1 "CONN_IEC_INT" H 823 7405 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 715 7015 50  0001 C CNN
+F 3 "~" H 715 7015 50  0001 C CNN
+	1    715  7015
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J91
+U 1 1 64DC3929
+P 2215 6815
+F 0 "J91" H 2265 7132 50  0000 C CNN
+F 1 "CONN_TAPE_INT" H 2265 7041 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2215 6815 50  0001 C CNN
+F 3 "~" H 2215 6815 50  0001 C CNN
+	1    2215 6815
+	1    0    0    -1  
+$EndComp
+Text Label 1375 7215 2    50   ~ 0
+iec_srq
+Wire Wire Line
+	1375 6815 915  6815
 Wire Bus Line
 	3075 4640 3075 5520
+Text Notes 1550 7560 0    50   ~ 0
+These connectors have all the Tape\nand IEC signals and can be used to\nimplement an internal SD2IEC and Tapuino.
 $EndSCHEMATC
