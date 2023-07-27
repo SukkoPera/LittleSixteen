@@ -1133,11 +1133,11 @@ F 5 "100n" H 12550 3190 50  0001 C CNN "Value"
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1
+L Connector_Generic:Conn_02x05_Odd_Even CN14
 U 1 1 64DAD690
 P 11250 6855
-F 0 "J1" H 11300 7272 50  0000 C CNN
-F 1 "CONN_JOY3" H 11300 7181 50  0000 C CNN
+F 0 "CN14" H 11300 6522 50  0000 C CNN
+F 1 "CONN_JOY3" H 11300 6431 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 11250 6855 50  0001 C CNN
 F 3 "~" H 11250 6855 50  0001 C CNN
 	1    11250 6855
