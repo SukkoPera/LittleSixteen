@@ -846,11 +846,11 @@ F 3 "~" H 3175 6865 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2975 6865 2975 6410
+Connection ~ 2975 6410
+Wire Wire Line
+	2975 6410 2780 6410
 Wire Bus Line
 	5245 1085 5245 1685
 Wire Bus Line
 	2680 4095 2680 6610
-Connection ~ 2975 6410
-Wire Wire Line
-	2975 6410 2780 6410
 $EndSCHEMATC

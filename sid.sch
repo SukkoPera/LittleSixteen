@@ -1622,13 +1622,13 @@ F 3 "~" H 5315 6445 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5115 6445 5115 6370
+Connection ~ 5115 6370
+Wire Wire Line
+	5115 6370 5405 6370
 Wire Bus Line
 	7135 2495 7135 2895
 Wire Bus Line
 	9620 2095 9620 2795
 Wire Bus Line
 	15380 6155 15380 6855
-Connection ~ 5115 6370
-Wire Wire Line
-	5115 6370 5405 6370
 $EndSCHEMATC
