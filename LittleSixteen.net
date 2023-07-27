@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Thu 27 Jul 2023 23:08:47 CEST")
+    (date "Thu 27 Jul 2023 23:13:16 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -2292,7 +2292,7 @@
       (sheetpath (names "/User Port/") (tstamps /63EAD078/))
       (tstamp 63F3B9D0))
     (comp (ref U21)
-      (value 74LS04)
+      (value 74HCT04)
       (footprint LittleSixteen:DIP-14_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS04)
       (libsource (lib 74xx) (part 74LS04) (description "Hex Inverter"))
