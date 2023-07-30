@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 7 14
 Title "LittleSixteen"
 Date "2023-07-25"
-Rev "3git"
+Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 ""
@@ -1355,8 +1355,8 @@ Text Label 1375 7215 2    50   ~ 0
 iec_srq
 Wire Wire Line
 	1375 6815 915  6815
-Wire Bus Line
-	3075 4640 3075 5520
 Text Notes 1550 7560 0    50   ~ 0
 These connectors have all the Tape\nand IEC signals and can be used to\nimplement an internal SD2IEC and Tapuino.
+Wire Bus Line
+	3075 4640 3075 5520
 $EndSCHEMATC

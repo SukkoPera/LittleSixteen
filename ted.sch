@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 3 14
 Title "LittleSixteen"
 Date "2020-01-03"
-Rev "3git"
+Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 ""
@@ -741,7 +741,7 @@ Wire Wire Line
 Wire Wire Line
 	8385 5365 8250 5365
 Text Notes 7715 4895 0    50   ~ 0
-(EXPERIMENTAL)\nDIRECT TED OUTPUT
+(EXPERIMENTAL)\nDIRECT TED AUDIO OUTPUT
 Wire Wire Line
 	8195 5265 8385 5265
 $Comp

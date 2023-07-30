@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 4 14
 Title "LittleSixteen"
 Date "2023-07-10"
-Rev "3git"
+Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
 Comment2 ""
@@ -1240,7 +1240,7 @@ Text GLabel 3100 2055 2    50   Output ~ 0
 Text GLabel 3340 2155 2    50   Output ~ 0
 ~JOY2
 Text Notes 940  1135 0    50   ~ 0
-Generates:\n- High RAM address bits, depending on the contents of the $FD16\n  register, implementing the Hannes logic\n-  ~CS~ signals for joystick buffers, adding the possibility of swapping
+Generates:\n- High RAM address bits, depending on the contents of the $FD16\n  register, implementing the Hannes logic\n-  ~CS~ signals for joystick buffers, with the possibility of swapping them
 $Comp
 L AS6C4008:AS6C4008 U30
 U 1 1 64EB8905
