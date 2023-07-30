@@ -902,12 +902,12 @@ $Comp
 L ferrite_bead_small:Ferrite_Bead_Small FB95
 U 1 1 61E4B6DF
 P 9260 2605
-F 0 "FB95" H 9066 2605 50  0000 R CNN
+F 0 "FB95" H 9360 2605 50  0000 L CNN
 F 1 "Ferrite_Bead_Small" H 9360 2560 50  0001 L CNN
 F 2 "LittleSixteen:Ferrite" V 9190 2605 50  0001 C CNN
 F 3 "~" H 9260 2605 50  0001 C CNN
 	1    9260 2605
-	1    0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9260 2505 9260 2030
