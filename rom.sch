@@ -515,12 +515,12 @@ $Comp
 L Connector:Conn_01x03_Male JP13
 U 1 1 6538CD5C
 P 4905 6600
-F 0 "JP13" H 4877 6624 50  0000 R CNN
-F 1 "JP_ROM_BANK" H 4877 6533 50  0000 R CNN
+F 0 "JP13" H 4877 6532 50  0000 R CNN
+F 1 "JP_ROM_BANK" H 4877 6623 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4905 6600 50  0001 C CNN
 F 3 "~" H 4905 6600 50  0001 C CNN
 	1    4905 6600
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Text Label 3895 6600 0    50   ~ 0
 singlerom_ce

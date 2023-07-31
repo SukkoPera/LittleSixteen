@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Mon 31 Jul 2023 00:15:29 CEST")
+    (date "Mon 31 Jul 2023 18:35:40 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -5420,9 +5420,9 @@
       (node (ref U90) (pin 1)))
     (net (code 183) (name /ROMs/singlerom_ce_bas)
       (node (ref JP8) (pin 3))
-      (node (ref JP13) (pin 1)))
+      (node (ref JP13) (pin 3)))
     (net (code 184) (name /ROMs/singlerom_ce_krn)
-      (node (ref JP13) (pin 3))
+      (node (ref JP13) (pin 1))
       (node (ref JP5) (pin 3)))
     (net (code 185) (name /ROMs/singlerom_ce)
       (node (ref JP13) (pin 2))
