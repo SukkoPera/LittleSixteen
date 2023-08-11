@@ -43,6 +43,7 @@ F 0 "C33" H 2055 6616 50  0000 L CNN
 F 1 "100n" H 2055 6525 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 1978 6420 50  0001 C CNN
 F 3 "~" H 1940 6570 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 1940 6570 50  0001 C CNN "MouserPN"
 	1    1940 6570
 	1    0    0    -1  
 $EndComp
@@ -214,12 +215,12 @@ Wire Wire Line
 Wire Wire Line
 	8235 2315 8730 2315
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB46
+L emi_filter_3pin:EMI_Filter_3Pin FB46
 U 1 1 5E275829
 P 8810 1515
 F 0 "FB46" V 8665 1515 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8664 1515 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8740 1515 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8664 1515 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8740 1515 50  0001 C CNN
 F 3 "~" H 8810 1515 50  0001 C CNN
 	1    8810 1515
 	0    -1   1    0   
@@ -227,12 +228,12 @@ $EndComp
 Wire Wire Line
 	8910 1515 9420 1515
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB56
+L emi_filter_3pin:EMI_Filter_3Pin FB56
 U 1 1 5E277735
 P 8820 1715
 F 0 "FB56" V 8675 1715 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8674 1715 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8750 1715 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8674 1715 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8750 1715 50  0001 C CNN
 F 3 "~" H 8820 1715 50  0001 C CNN
 	1    8820 1715
 	0    -1   1    0   
@@ -240,12 +241,12 @@ $EndComp
 Wire Wire Line
 	9420 1915 9155 1915
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB53
+L emi_filter_3pin:EMI_Filter_3Pin FB53
 U 1 1 5E279505
 P 8820 2115
 F 0 "FB53" V 8675 2115 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8674 2115 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8750 2115 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8674 2115 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8750 2115 50  0001 C CNN
 F 3 "~" H 8820 2115 50  0001 C CNN
 	1    8820 2115
 	0    -1   1    0   
@@ -253,12 +254,12 @@ $EndComp
 Wire Wire Line
 	8920 2115 9420 2115
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB54
+L emi_filter_3pin:EMI_Filter_3Pin FB54
 U 1 1 5E27AC84
 P 8830 2315
 F 0 "FB54" V 8685 2315 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8684 2315 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8760 2315 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8684 2315 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8760 2315 50  0001 C CNN
 F 3 "~" H 8830 2315 50  0001 C CNN
 	1    8830 2315
 	0    -1   1    0   
@@ -266,12 +267,12 @@ $EndComp
 Wire Wire Line
 	8930 2315 9420 2315
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB44
+L emi_filter_3pin:EMI_Filter_3Pin FB44
 U 1 1 5E27B4EF
 P 8805 2515
 F 0 "FB44" V 8660 2515 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8659 2515 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8735 2515 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8659 2515 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8735 2515 50  0001 C CNN
 F 3 "~" H 8805 2515 50  0001 C CNN
 	1    8805 2515
 	0    -1   1    0   
@@ -279,12 +280,12 @@ $EndComp
 Wire Wire Line
 	8905 2515 9420 2515
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB45
+L emi_filter_3pin:EMI_Filter_3Pin FB45
 U 1 1 5E27BE11
 P 8805 2715
 F 0 "FB45" V 8660 2715 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8659 2715 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8735 2715 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8659 2715 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8735 2715 50  0001 C CNN
 F 3 "~" H 8805 2715 50  0001 C CNN
 	1    8805 2715
 	0    -1   1    0   
@@ -292,12 +293,12 @@ $EndComp
 Wire Wire Line
 	8905 2715 9420 2715
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB50
+L emi_filter_3pin:EMI_Filter_3Pin FB50
 U 1 1 5E27C5F0
 P 8815 2915
 F 0 "FB50" V 8670 2915 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8669 2915 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8745 2915 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8669 2915 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8745 2915 50  0001 C CNN
 F 3 "~" H 8815 2915 50  0001 C CNN
 	1    8815 2915
 	0    -1   1    0   
@@ -305,12 +306,12 @@ $EndComp
 Wire Wire Line
 	8915 2915 9420 2915
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB52
+L emi_filter_3pin:EMI_Filter_3Pin FB52
 U 1 1 5E27CC99
 P 8815 3115
 F 0 "FB52" V 8670 3115 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8669 3115 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8745 3115 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8669 3115 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8745 3115 50  0001 C CNN
 F 3 "~" H 8815 3115 50  0001 C CNN
 	1    8815 3115
 	0    -1   1    0   
@@ -318,12 +319,12 @@ $EndComp
 Wire Wire Line
 	8915 3115 9420 3115
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB41
+L emi_filter_3pin:EMI_Filter_3Pin FB41
 U 1 1 5E27D4CD
 P 8810 3315
 F 0 "FB41" V 8955 3315 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8664 3315 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8740 3315 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8664 3315 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8740 3315 50  0001 C CNN
 F 3 "~" H 8810 3315 50  0001 C CNN
 	1    8810 3315
 	0    -1   1    0   
@@ -331,12 +332,12 @@ $EndComp
 Wire Wire Line
 	8910 3315 9420 3315
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB48
+L emi_filter_3pin:EMI_Filter_3Pin FB48
 U 1 1 5E27E7DF
 P 9030 2015
 F 0 "FB48" V 8885 2015 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8884 2015 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8960 2015 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8884 2015 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8960 2015 50  0001 C CNN
 F 3 "~" H 9030 2015 50  0001 C CNN
 	1    9030 2015
 	0    -1   1    0   
@@ -344,12 +345,12 @@ $EndComp
 Wire Wire Line
 	9130 2015 9420 2015
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB42
+L emi_filter_3pin:EMI_Filter_3Pin FB42
 U 1 1 5E27ED7A
 P 9050 2215
 F 0 "FB42" V 8905 2215 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8904 2215 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8980 2215 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8904 2215 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8980 2215 50  0001 C CNN
 F 3 "~" H 9050 2215 50  0001 C CNN
 	1    9050 2215
 	0    -1   1    0   
@@ -357,12 +358,12 @@ $EndComp
 Wire Wire Line
 	9150 2215 9420 2215
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB55
+L emi_filter_3pin:EMI_Filter_3Pin FB55
 U 1 1 5E27F5BE
 P 9040 2415
 F 0 "FB55" V 8895 2415 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8894 2415 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8970 2415 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8894 2415 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8970 2415 50  0001 C CNN
 F 3 "~" H 9040 2415 50  0001 C CNN
 	1    9040 2415
 	0    -1   1    0   
@@ -370,12 +371,12 @@ $EndComp
 Wire Wire Line
 	9140 2415 9420 2415
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB43
+L emi_filter_3pin:EMI_Filter_3Pin FB43
 U 1 1 5E27FD6B
 P 9020 2615
 F 0 "FB43" V 8875 2615 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8874 2615 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8950 2615 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8874 2615 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8950 2615 50  0001 C CNN
 F 3 "~" H 9020 2615 50  0001 C CNN
 	1    9020 2615
 	0    -1   1    0   
@@ -383,12 +384,12 @@ $EndComp
 Wire Wire Line
 	9120 2615 9420 2615
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB51
+L emi_filter_3pin:EMI_Filter_3Pin FB51
 U 1 1 5E280D1A
 P 9045 2815
 F 0 "FB51" V 8900 2815 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8899 2815 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8975 2815 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8899 2815 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8975 2815 50  0001 C CNN
 F 3 "~" H 9045 2815 50  0001 C CNN
 	1    9045 2815
 	0    -1   1    0   
@@ -396,12 +397,12 @@ $EndComp
 Wire Wire Line
 	9145 2815 9420 2815
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB47
+L emi_filter_3pin:EMI_Filter_3Pin FB47
 U 1 1 5E281382
 P 9045 3015
 F 0 "FB47" V 8900 3015 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8899 3015 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8975 3015 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8899 3015 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8975 3015 50  0001 C CNN
 F 3 "~" H 9045 3015 50  0001 C CNN
 	1    9045 3015
 	0    -1   1    0   
@@ -409,12 +410,12 @@ $EndComp
 Wire Wire Line
 	9145 3015 9420 3015
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB49
+L emi_filter_3pin:EMI_Filter_3Pin FB49
 U 1 1 5E2818F5
 P 9030 3215
 F 0 "FB49" V 9150 3215 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 8884 3215 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 8960 3215 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 8884 3215 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 8960 3215 50  0001 C CNN
 F 3 "~" H 9030 3215 50  0001 C CNN
 	1    9030 3215
 	0    -1   1    0   

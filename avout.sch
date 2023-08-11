@@ -32,6 +32,7 @@ F 0 "C11" H 880 5626 50  0000 R CNN
 F 1 "100n" H 880 5535 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 1033 5430 50  0001 C CNN
 F 3 "~" H 995 5580 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 995 5580 50  0001 C CNN "MouserPN"
 	1    995  5580
 	1    0    0    -1  
 $EndComp
@@ -53,39 +54,6 @@ F 3 "~" H 6010 1220 50  0001 C CNN
 	1    6010 1220
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:EMI_Filter_LCL EM5
-U 1 1 5E029075
-P 7600 2265
-F 0 "EM5" H 7600 2460 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 7600 2491 50  0001 C CNN
-F 2 "LittleSixteen:EMI_Filter" V 7600 2265 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 7600 2265 50  0001 C CNN
-	1    7600 2265
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:EMI_Filter_LCL EM3
-U 1 1 5E02CB2E
-P 8660 2415
-F 0 "EM3" H 8660 2610 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 8660 2641 50  0001 C CNN
-F 2 "LittleSixteen:EMI_Filter" V 8660 2415 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 8660 2415 50  0001 C CNN
-	1    8660 2415
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:EMI_Filter_LCL EM4
-U 1 1 5E02E767
-P 8135 2565
-F 0 "EM4" H 8135 2760 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 8135 2791 50  0001 C CNN
-F 2 "LittleSixteen:EMI_Filter" V 8135 2565 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 8135 2565 50  0001 C CNN
-	1    8135 2565
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6660 2165 7210 2165
 Wire Wire Line
@@ -93,31 +61,11 @@ Wire Wire Line
 Wire Wire Line
 	6660 2315 7125 2315
 Wire Wire Line
-	8960 2315 9345 2315
-Wire Wire Line
-	8435 2465 9150 2465
-Wire Wire Line
-	9150 2465 9150 2415
-Wire Wire Line
 	9150 2415 9345 2415
 Wire Wire Line
 	9150 2165 9150 2215
 Wire Wire Line
 	9150 2215 9345 2215
-Wire Wire Line
-	7900 2165 9150 2165
-Wire Wire Line
-	7600 2365 7600 2940
-Wire Wire Line
-	8135 2665 8135 2940
-Wire Wire Line
-	8135 2940 7600 2940
-Connection ~ 7600 2940
-Wire Wire Line
-	8660 2515 8660 2940
-Wire Wire Line
-	8660 2940 8135 2940
-Connection ~ 8135 2940
 Text Notes 9760 1925 2    50   ~ 0
 DIN-8
 NoConn ~ 9945 2415
@@ -127,7 +75,6 @@ Wire Wire Line
 	9645 1945 10050 1945
 Wire Wire Line
 	10050 2940 9520 2940
-Connection ~ 8660 2940
 Wire Wire Line
 	9645 2615 9645 2785
 Wire Wire Line
@@ -146,23 +93,23 @@ F 3 "" H 9260 1635 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB12
+L emi_filter_3pin:EMI_Filter_3Pin FB12
 U 1 1 5E03F938
 P 10455 2315
 F 0 "FB12" V 10310 2315 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 10555 2270 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 10385 2315 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 10555 2270 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 10385 2315 50  0001 C CNN
 F 3 "~" H 10455 2315 50  0001 C CNN
 	1    10455 2315
 	0    -1   1    0   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB58
+L emi_filter_3pin:EMI_Filter_3Pin FB58
 U 1 1 5E040A9B
 P 10255 2215
 F 0 "FB58" V 10110 2215 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 10355 2170 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 10185 2215 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 10355 2170 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 10185 2215 50  0001 C CNN
 F 3 "~" H 10255 2215 50  0001 C CNN
 	1    10255 2215
 	0    -1   1    0   
@@ -726,9 +673,10 @@ L Device:L L81
 U 1 1 61B0B1AC
 P 4805 6860
 F 0 "L81" V 4995 6860 50  0000 C CNN
-F 1 "10u" V 4904 6860 50  0000 C CNN
+F 1 "FERRITE" V 4904 6860 50  0000 C CNN
 F 2 "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC" H 4805 6860 50  0001 C CNN
 F 3 "~" H 4805 6860 50  0001 C CNN
+F 4 "875-28C0236-0EW-10" H 4805 6860 50  0001 C CNN "MouserPN"
 	1    4805 6860
 	0    -1   -1   0   
 $EndComp
@@ -782,7 +730,7 @@ L Device:CP1 C83
 U 1 1 61BCB802
 P 1260 5580
 F 0 "C83" H 1145 5626 50  0000 R CNN
-F 1 "100u/25V" H 1145 5535 50  0000 R CNN
+F 1 "100u/35V" H 1145 5535 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1260 5580 50  0001 C CNN
 F 3 "~" H 1260 5580 50  0001 C CNN
 	1    1260 5580
@@ -798,21 +746,15 @@ Wire Wire Line
 	7040 1500 7350 1500
 Connection ~ 7040 2465
 Wire Wire Line
-	7040 2465 7835 2465
-Wire Wire Line
 	7125 2315 7125 1645
 Wire Wire Line
 	7125 1645 7350 1645
 Connection ~ 7125 2315
 Wire Wire Line
-	7125 2315 8360 2315
-Wire Wire Line
 	7210 2165 7210 1790
 Wire Wire Line
 	7210 1790 7350 1790
 Connection ~ 7210 2165
-Wire Wire Line
-	7210 2165 7300 2165
 Text GLabel 7350 1790 2    50   Input ~ 0
 COMP_OUT
 Text GLabel 7350 1500 2    50   Input ~ 0
@@ -881,30 +823,28 @@ $EndComp
 Wire Wire Line
 	9520 2590 9520 2940
 Connection ~ 9520 2940
-Wire Wire Line
-	9520 2940 8660 2940
 $Comp
 L Device:R R?
 U 1 1 61DEF839
 P 9260 1880
 AR Path="/61BCD018/61DEF839" Ref="R?"  Part="1" 
 AR Path="/5E019FCB/61DEF839" Ref="R95"  Part="1" 
-F 0 "R95" H 9190 1926 50  0000 R CNN
-F 1 "4.7R 1W" H 9190 1835 50  0000 R CNN
+F 0 "R95" H 9330 1834 50  0000 L CNN
+F 1 "4.7 1W" H 9330 1925 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 9190 1880 50  0001 C CNN
 F 3 "~" H 9260 1880 50  0001 C CNN
 	1    9260 1880
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	9260 1730 9260 1635
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB95
+L emi_filter_3pin:EMI_Filter_3Pin FB95
 U 1 1 61E4B6DF
 P 9260 2605
 F 0 "FB95" H 9360 2605 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 9360 2560 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 9190 2605 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 9360 2560 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 9190 2605 50  0001 C CNN
 F 3 "~" H 9260 2605 50  0001 C CNN
 	1    9260 2605
 	-1   0    0    -1  
@@ -941,9 +881,10 @@ L Device:L L80
 U 1 1 61E8F0DE
 P 3985 7345
 F 0 "L80" V 4175 7345 50  0000 C CNN
-F 1 "10u" V 4084 7345 50  0000 C CNN
+F 1 "FERRITE" V 4084 7345 50  0000 C CNN
 F 2 "Inductor_THT:L_Radial_D6.0mm_P4.00mm" H 3985 7345 50  0001 C CNN
 F 3 "~" H 3985 7345 50  0001 C CNN
+F 4 "875-28C0236-0EW-10" H 3985 7345 50  0001 C CNN "MouserPN"
 	1    3985 7345
 	0    -1   -1   0   
 $EndComp
@@ -1002,8 +943,6 @@ Wire Wire Line
 Connection ~ 1130 5775
 Wire Wire Line
 	1130 5775 1260 5775
-Wire Wire Line
-	6480 2940 7600 2940
 $Comp
 L power:VCC #PWR0178
 U 1 1 5E021287
@@ -1031,6 +970,7 @@ F 0 "C85" V 3635 4705 50  0000 C CNN
 F 1 "100n" V 3544 4705 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3833 4555 50  0001 C CNN
 F 3 "~" H 3795 4705 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 3795 4705 50  0001 C CNN "MouserPN"
 	1    3795 4705
 	0    -1   -1   0   
 $EndComp
@@ -1046,7 +986,7 @@ L Device:Jumper_NC_Small JP81
 U 1 1 635201CA
 P 4835 5175
 F 0 "JP81" H 4835 5387 50  0000 C CNN
-F 1 "RV1_BYPASS" H 4835 5296 50  0000 C CNN
+F 1 "JMP_RV1_BYPASS" H 4835 5296 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4835 5175 50  0001 C CNN
 F 3 "~" H 4835 5175 50  0001 C CNN
 	1    4835 5175
@@ -1059,7 +999,7 @@ L Device:Jumper_NC_Small JP82
 U 1 1 6353837A
 P 9215 5420
 F 0 "JP82" H 9215 5632 50  0000 C CNN
-F 1 "RV2_BYPASS" H 9215 5541 50  0000 C CNN
+F 1 "JMP_RV2_BYPASS" H 9215 5541 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 9215 5420 50  0001 C CNN
 F 3 "~" H 9215 5420 50  0001 C CNN
 	1    9215 5420
@@ -1116,6 +1056,7 @@ F 0 "C84" H 2835 5354 50  0000 L CNN
 F 1 "100p" H 2835 5445 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2758 5250 50  0001 C CNN
 F 3 "~" H 2720 5400 50  0001 C CNN
+F 4 "810-FG28C0G2A101JNT6" H 2720 5400 50  0001 C CNN "MouserPN"
 	1    2720 5400
 	-1   0    0    1   
 $EndComp
@@ -1335,4 +1276,57 @@ Wire Wire Line
 	10050 1945 10050 2940
 Text Notes 10090 3020 0    50   ~ 0
 FB13 REMOVED\nTO REDUCE\nCHROMA/LUMA\nCROSSTALK\n(THANKS TLC!)
+Wire Wire Line
+	6480 2940 9520 2940
+Wire Wire Line
+	7210 2165 7475 2165
+Wire Wire Line
+	7675 2165 9150 2165
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin EM5
+U 1 1 67130B45
+P 7575 2165
+F 0 "EM5" V 7720 2165 50  0000 C CNN
+F 1 "DSS1NB32A271Q91A" H 7675 2120 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 7505 2165 50  0001 C CNN
+F 3 "~" H 7575 2165 50  0001 C CNN
+	1    7575 2165
+	0    1    -1   0   
+$EndComp
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin EM4
+U 1 1 6714E1C3
+P 8145 2465
+F 0 "EM4" V 8000 2465 50  0000 C CNN
+F 1 "DSS1NB32A271Q91A" H 8245 2420 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 8075 2465 50  0001 C CNN
+F 3 "~" H 8145 2465 50  0001 C CNN
+	1    8145 2465
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7040 2465 8045 2465
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin EM3
+U 1 1 6716F690
+P 8620 2315
+F 0 "EM3" V 8475 2315 50  0000 C CNN
+F 1 "DSS1NB32A271Q91A" H 8720 2270 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 8550 2315 50  0001 C CNN
+F 3 "~" H 8620 2315 50  0001 C CNN
+	1    8620 2315
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7125 2315 8520 2315
+Wire Wire Line
+	8720 2315 9345 2315
+Wire Wire Line
+	9150 2495 8360 2495
+Wire Wire Line
+	8360 2495 8360 2465
+Wire Wire Line
+	8360 2465 8245 2465
+Wire Wire Line
+	9150 2415 9150 2495
 $EndSCHEMATC

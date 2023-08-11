@@ -40,12 +40,12 @@ F 3 "" H 3835 1425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB14
+L emi_filter_3pin:EMI_Filter_3Pin FB14
 U 1 1 5ECB83BF
 P 3680 2095
 F 0 "FB14" H 3780 2095 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 3780 2050 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 3610 2095 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 3780 2050 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 3610 2095 50  0001 C CNN
 F 3 "~" H 3680 2095 50  0001 C CNN
 	1    3680 2095
 	-1   0    0    1   
@@ -60,6 +60,7 @@ F 0 "C26" H 3880 1694 50  0000 R CNN
 F 1 "100n" H 3880 1785 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4033 1590 50  0001 C CNN
 F 3 "~" H 3995 1740 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 3995 1740 50  0001 C CNN "MouserPN"
 	1    3995 1740
 	-1   0    0    1   
 $EndComp
@@ -67,12 +68,12 @@ Wire Wire Line
 	3995 1890 3995 2325
 Connection ~ 3995 2325
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB15
+L emi_filter_3pin:EMI_Filter_3Pin FB15
 U 1 1 5ECBC7A2
 P 5130 2760
 F 0 "FB15" H 5230 2760 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 5230 2715 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 5060 2760 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 5230 2715 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 5060 2760 50  0001 C CNN
 F 3 "~" H 5130 2760 50  0001 C CNN
 	1    5130 2760
 	1    0    0    -1  
@@ -109,6 +110,7 @@ F 0 "C23" H 2895 2639 50  0000 R CNN
 F 1 "470p" H 2895 2730 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3048 2535 50  0001 C CNN
 F 3 "~" H 3010 2685 50  0001 C CNN
+F 4 "810-FG28C0G1H471JNT6" H 3010 2685 50  0001 C CNN "MouserPN"
 	1    3010 2685
 	-1   0    0    1   
 $EndComp
@@ -212,6 +214,7 @@ F 0 "C24" H 5935 2669 50  0000 R CNN
 F 1 "470p" H 5935 2760 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 6088 2565 50  0001 C CNN
 F 3 "~" H 6050 2715 50  0001 C CNN
+F 4 "810-FG28C0G1H471JNT6" H 6050 2715 50  0001 C CNN "MouserPN"
 	1    6050 2715
 	-1   0    0    1   
 $EndComp
@@ -235,6 +238,7 @@ F 0 "C25" H 5435 1879 50  0000 R CNN
 F 1 "470p" H 5435 1970 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5588 1775 50  0001 C CNN
 F 3 "~" H 5550 1925 50  0001 C CNN
+F 4 "810-FG28C0G1H471JNT6" H 5550 1925 50  0001 C CNN "MouserPN"
 	1    5550 1925
 	-1   0    0    1   
 $EndComp
@@ -252,8 +256,6 @@ Wire Wire Line
 	5550 2965 5130 2965
 Wire Wire Line
 	8415 2605 8415 2965
-Wire Wire Line
-	8415 2965 7590 2965
 Connection ~ 6050 2965
 Wire Wire Line
 	3010 2835 3010 2965
@@ -450,90 +452,6 @@ Text Notes 2405 1110 0    157  ~ 0
 DATASSETTE\nINTERFACE
 Text Notes 7130 2250 2    50   ~ 0
 CST_WRT
-$Comp
-L Ferrite3Pin:Ferrite_3pin FB3
-U 1 1 5E29E46B
-P 6475 5620
-F 0 "FB3" V 6360 5620 50  0000 C CNN
-F 1 "Ferrite_3pin" V 6329 5620 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 6405 5620 50  0001 C CNN
-F 3 "~" H 6475 5620 50  0001 C CNN
-	1    6475 5620
-	0    1    1    0   
-$EndComp
-$Comp
-L Ferrite3Pin:Ferrite_3pin FB2
-U 1 1 5E2AB049
-P 6180 5865
-F 0 "FB2" V 6065 5865 50  0000 C CNN
-F 1 "Ferrite_3pin" V 6034 5865 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 6110 5865 50  0001 C CNN
-F 3 "~" H 6180 5865 50  0001 C CNN
-	1    6180 5865
-	0    1    1    0   
-$EndComp
-$Comp
-L Ferrite3Pin:Ferrite_3pin FB4
-U 1 1 5E2AB69F
-P 6175 5420
-F 0 "FB4" V 6060 5420 50  0000 C CNN
-F 1 "Ferrite_3pin" V 6029 5420 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 6105 5420 50  0001 C CNN
-F 3 "~" H 6175 5420 50  0001 C CNN
-	1    6175 5420
-	0    1    1    0   
-$EndComp
-$Comp
-L Ferrite3Pin:Ferrite_3pin FB5
-U 1 1 5E2AC1A5
-P 6475 5175
-F 0 "FB5" V 6360 5175 50  0000 C CNN
-F 1 "Ferrite_3pin" V 6329 5175 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 6405 5175 50  0001 C CNN
-F 3 "~" H 6475 5175 50  0001 C CNN
-	1    6475 5175
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6475 5275 6475 5310
-Wire Wire Line
-	6475 5310 6655 5310
-Wire Wire Line
-	6655 5310 6655 6085
-Wire Wire Line
-	6655 6085 6475 6085
-Wire Wire Line
-	6180 6085 6180 5965
-Wire Wire Line
-	6475 5720 6475 6085
-Wire Wire Line
-	6175 5520 6175 5550
-Wire Wire Line
-	6175 5550 6325 5550
-Wire Wire Line
-	6325 5550 6325 6085
-Connection ~ 6325 6085
-Wire Wire Line
-	6325 6085 6180 6085
-Connection ~ 6475 6085
-$Comp
-L power:GND #PWR0184
-U 1 1 5E2C1840
-P 6400 6140
-F 0 "#PWR0184" H 6400 5890 50  0001 C CNN
-F 1 "GND" H 6405 5967 50  0000 C CNN
-F 2 "" H 6400 6140 50  0001 C CNN
-F 3 "" H 6400 6140 50  0001 C CNN
-	1    6400 6140
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 6085 6400 6140
-Wire Wire Line
-	6475 6085 6400 6085
-Connection ~ 6400 6085
-Wire Wire Line
-	6400 6085 6325 6085
 Wire Wire Line
 	7505 5820 7505 5865
 Wire Wire Line
@@ -549,23 +467,6 @@ Wire Wire Line
 Wire Wire Line
 	7965 6085 7965 6140
 Connection ~ 7965 6085
-Wire Wire Line
-	7780 6085 7965 6085
-Wire Wire Line
-	7780 5930 7780 6085
-Wire Wire Line
-	7865 5930 7780 5930
-$Comp
-L Ferrite3Pin:Ferrite_3pin FB1
-U 1 1 5E2BCB55
-P 7965 5930
-F 0 "FB1" H 7865 5930 50  0000 R CNN
-F 1 "Ferrite_3pin" V 7819 5930 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 7895 5930 50  0001 C CNN
-F 3 "~" H 7965 5930 50  0001 C CNN
-	1    7965 5930
-	-1   0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0158
 U 1 1 5ED75A9A
@@ -581,22 +482,6 @@ Wire Wire Line
 	7965 6030 7965 6085
 Wire Wire Line
 	7965 5830 7965 5420
-$Comp
-L Ferrite3Pin:Ferrite_3pin FB19
-U 1 1 5E31356C
-P 7590 2425
-F 0 "FB19" V 7445 2425 50  0000 C CNN
-F 1 "Ferrite_3pin" V 7444 2425 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 7520 2425 50  0001 C CNN
-F 3 "~" H 7590 2425 50  0001 C CNN
-	1    7590 2425
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	7590 2525 7590 2965
-Connection ~ 7590 2965
-Wire Wire Line
-	7590 2965 6050 2965
 $Comp
 L Device:D D97
 U 1 1 61845FF9
@@ -974,7 +859,7 @@ F 0 "U92" H 10398 3401 50  0000 L CNN
 F 1 "DT1042" H 10398 3310 50  0000 L CNN
 F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 9920 2805 50  0001 C CNN
 F 3 "" H 9920 2805 50  0001 C CNN
-F 4 "Optional, protects Serial port from ESD" H 10070 3355 50  0001 C CNN "Notes"
+F 4 "Optional, protects Tape port from ESD" H 10070 3355 50  0001 C CNN "Notes"
 	1    10070 3355
 	1    0    0    -1  
 $EndComp
@@ -1122,9 +1007,6 @@ Wire Wire Line
 	915  7215 1375 7215
 Wire Wire Line
 	7430 5820 7430 6085
-Wire Wire Line
-	7430 6085 7780 6085
-Connection ~ 7780 6085
 Text Notes 6975 5620 0    50   ~ 0
 DATA
 Text Notes 6975 5420 0    50   ~ 0
@@ -1149,7 +1031,7 @@ P 3680 1780
 AR Path="/61BCD018/61D9A19A" Ref="R?"  Part="1" 
 AR Path="/5ECB474B/61D9A19A" Ref="R94"  Part="1" 
 F 0 "R94" H 3610 1826 50  0000 R CNN
-F 1 "4.7R 1W" H 3610 1735 50  0000 R CNN
+F 1 "4.7 1W" H 3610 1735 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 3610 1780 50  0001 C CNN
 F 3 "~" H 3680 1780 50  0001 C CNN
 	1    3680 1780
@@ -1209,12 +1091,12 @@ Wire Wire Line
 Wire Wire Line
 	4990 2325 5685 2325
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB17
+L emi_filter_3pin:EMI_Filter_3Pin FB17
 U 1 1 5ECD8623
 P 5785 2325
 F 0 "FB17" V 5930 2325 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 5885 2280 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 5715 2325 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 5885 2280 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 5715 2325 50  0001 C CNN
 F 3 "~" H 5785 2325 50  0001 C CNN
 	1    5785 2325
 	0    -1   -1   0   
@@ -1226,12 +1108,12 @@ Wire Wire Line
 Wire Wire Line
 	4390 2425 3455 2425
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB16
+L emi_filter_3pin:EMI_Filter_3Pin FB16
 U 1 1 5ECC62CE
 P 3355 2425
 F 0 "FB16" V 3500 2425 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 3455 2380 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 3285 2425 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 3455 2380 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 3285 2425 50  0001 C CNN
 F 3 "~" H 3355 2425 50  0001 C CNN
 	1    3355 2425
 	0    1    -1   0   
@@ -1243,12 +1125,12 @@ Wire Wire Line
 Wire Wire Line
 	4690 1535 5130 1535
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB18
+L emi_filter_3pin:EMI_Filter_3Pin FB18
 U 1 1 5ECE8130
 P 5230 1535
 F 0 "FB18" V 5375 1535 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 5330 1490 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 5160 1535 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 5330 1490 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 5160 1535 50  0001 C CNN
 F 3 "~" H 5230 1535 50  0001 C CNN
 	1    5230 1535
 	0    -1   -1   0   
@@ -1291,6 +1173,7 @@ F 0 "RP1" H 5519 5040 50  0000 C CNN
 F 1 "1k" H 6060 4725 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 5425 4725 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5505 4725 50  0001 C CNN
+F 4 "Bussed" H 5505 4725 50  0001 C CNN "Notes"
 	5    5505 4725
 	1    0    0    -1  
 $EndComp
@@ -1302,6 +1185,7 @@ F 0 "RP1" H 5669 4948 50  0000 C CNN
 F 1 "1k" H 5753 4672 50  0001 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 5575 4725 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5655 4725 50  0001 C CNN
+F 4 "Bussed" H 5655 4725 50  0001 C CNN "Notes"
 	4    5655 4725
 	1    0    0    -1  
 $EndComp
@@ -1313,6 +1197,7 @@ F 0 "RP1" H 5705 5040 50  0000 L CNN
 F 1 "1k" H 5903 4672 50  0001 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 5725 4725 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5805 4725 50  0001 C CNN
+F 4 "Bussed" H 5805 4725 50  0001 C CNN "Notes"
 	3    5805 4725
 	1    0    0    -1  
 $EndComp
@@ -1324,16 +1209,17 @@ F 0 "RP1" H 5845 4950 50  0000 L CNN
 F 1 "1k" H 6048 4672 50  0001 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 5870 4725 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5950 4725 50  0001 C CNN
+F 4 "Bussed" H 5950 4725 50  0001 C CNN "Notes"
 	2    5950 4725
 	1    0    0    -1  
 $EndComp
 Text Label 7915 2425 0    50   ~ 0
 tape_mtr2
 $Comp
-L Connector:Conn_01x07_Male J90
+L Connector:Conn_01x07_Male CN15
 U 1 1 64DB182D
 P 715 7015
-F 0 "J90" H 823 7496 50  0000 C CNN
+F 0 "CN15" H 823 7496 50  0000 C CNN
 F 1 "CONN_IEC_INT" H 823 7405 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 715 7015 50  0001 C CNN
 F 3 "~" H 715 7015 50  0001 C CNN
@@ -1341,10 +1227,10 @@ F 3 "~" H 715 7015 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J91
+L Connector_Generic:Conn_02x03_Odd_Even CN16
 U 1 1 64DC3929
 P 2215 6815
-F 0 "J91" H 2265 7132 50  0000 C CNN
+F 0 "CN16" H 2265 7132 50  0000 C CNN
 F 1 "CONN_TAPE_INT" H 2265 7041 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2215 6815 50  0001 C CNN
 F 3 "~" H 2215 6815 50  0001 C CNN
@@ -1357,6 +1243,76 @@ Wire Wire Line
 	1375 6815 915  6815
 Text Notes 1550 7560 0    50   ~ 0
 These connectors have all the Tape\nand IEC signals and can be used to\nimplement an internal SD2IEC and Tapuino.
+Wire Wire Line
+	6050 2965 8415 2965
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin FB19
+U 1 1 670692CB
+P 7590 2425
+F 0 "FB19" V 7735 2425 50  0000 C CNN
+F 1 "DSS1NB32A271Q91A" H 7690 2380 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 7520 2425 50  0001 C CNN
+F 3 "~" H 7590 2425 50  0001 C CNN
+	1    7590 2425
+	0    -1   1    0   
+$EndComp
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin FB2
+U 1 1 6707F003
+P 6180 5865
+F 0 "FB2" V 6325 5865 50  0000 C CNN
+F 1 "DSS1NB32A271Q91A" H 6280 5820 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 6110 5865 50  0001 C CNN
+F 3 "~" H 6180 5865 50  0001 C CNN
+	1    6180 5865
+	0    1    -1   0   
+$EndComp
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin FB3
+U 1 1 670A70CA
+P 6475 5620
+F 0 "FB3" V 6620 5620 50  0000 C CNN
+F 1 "DSS1NB32A271Q91A" H 6575 5575 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 6405 5620 50  0001 C CNN
+F 3 "~" H 6475 5620 50  0001 C CNN
+	1    6475 5620
+	0    1    -1   0   
+$EndComp
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin FB4
+U 1 1 670A7799
+P 6175 5420
+F 0 "FB4" V 6320 5420 50  0000 C CNN
+F 1 "DSS1NB32A271Q91A" H 6275 5375 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 6105 5420 50  0001 C CNN
+F 3 "~" H 6175 5420 50  0001 C CNN
+	1    6175 5420
+	0    1    -1   0   
+$EndComp
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin FB5
+U 1 1 670A7ED0
+P 6475 5175
+F 0 "FB5" V 6620 5175 50  0000 C CNN
+F 1 "DSS1NB32A271Q91A" H 6575 5130 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 6405 5175 50  0001 C CNN
+F 3 "~" H 6475 5175 50  0001 C CNN
+	1    6475 5175
+	0    1    -1   0   
+$EndComp
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin FB1
+U 1 1 670A8919
+P 7965 5930
+F 0 "FB1" H 8065 5930 50  0000 L CNN
+F 1 "DSS1NB32A271Q91A" H 8065 5885 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 7895 5930 50  0001 C CNN
+F 3 "~" H 7965 5930 50  0001 C CNN
+	1    7965 5930
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7430 6085 7965 6085
 Wire Bus Line
 	3075 4640 3075 5520
 $EndSCHEMATC

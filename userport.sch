@@ -526,13 +526,14 @@ d6
 Text Label 11625 5155 0    50   ~ 0
 d7
 $Comp
-L Device:R_Network08 RN1
+L Device:R_Network08 RP4
 U 1 1 63F3B9D0
 P 14350 3935
-F 0 "RN1" H 14738 3981 50  0000 L CNN
+F 0 "RP4" H 14738 3981 50  0000 L CNN
 F 1 "8.2k" H 14738 3890 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP9" V 14825 3935 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 14350 3935 50  0001 C CNN
+F 4 "Bussed" H 14350 3935 50  0001 C CNN "Notes"
 	1    14350 3935
 	-1   0    0    -1  
 $EndComp
@@ -730,6 +731,7 @@ F 0 "C42" H 2515 10086 50  0000 L CNN
 F 1 "100n" H 2515 9995 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 2438 9890 50  0001 C CNN
 F 3 "~" H 2400 10040 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 2400 10040 50  0001 C CNN "MouserPN"
 	1    2400 10040
 	1    0    0    -1  
 $EndComp
@@ -1025,66 +1027,66 @@ Wire Wire Line
 Wire Wire Line
 	6905 7530 6905 6565
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB?
+L emi_filter_3pin:EMI_Filter_3Pin FB?
 U 1 1 647718B2
 P 7390 6730
 AR Path="/5ECB474B/647718B2" Ref="FB?"  Part="1" 
 AR Path="/63EAD078/647718B2" Ref="FB62"  Part="1" 
 F 0 "FB62" V 7335 6595 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 7490 6685 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 7320 6730 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 7490 6685 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 7320 6730 50  0001 C CNN
 F 3 "~" H 7390 6730 50  0001 C CNN
 	1    7390 6730
 	0    1    -1   0   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB?
+L emi_filter_3pin:EMI_Filter_3Pin FB?
 U 1 1 6477BD12
 P 7185 6465
 AR Path="/5ECB474B/6477BD12" Ref="FB?"  Part="1" 
 AR Path="/63EAD078/6477BD12" Ref="FB60"  Part="1" 
 F 0 "FB60" H 6980 6380 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 7285 6420 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 7115 6465 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 7285 6420 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 7115 6465 50  0001 C CNN
 F 3 "~" H 7185 6465 50  0001 C CNN
 	1    7185 6465
 	1    0    0    1   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB?
+L emi_filter_3pin:EMI_Filter_3Pin FB?
 U 1 1 64790452
 P 7455 7760
 AR Path="/5ECB474B/64790452" Ref="FB?"  Part="1" 
 AR Path="/63EAD078/64790452" Ref="FB64"  Part="1" 
 F 0 "FB64" H 7261 7760 50  0000 R CNN
-F 1 "Ferrite_Bead_Small" H 7555 7715 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 7385 7760 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 7555 7715 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 7385 7760 50  0001 C CNN
 F 3 "~" H 7455 7760 50  0001 C CNN
 	1    7455 7760
 	1    0    0    -1  
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB?
+L emi_filter_3pin:EMI_Filter_3Pin FB?
 U 1 1 647AEC6A
 P 9295 7760
 AR Path="/5ECB474B/647AEC6A" Ref="FB?"  Part="1" 
 AR Path="/63EAD078/647AEC6A" Ref="FB65"  Part="1" 
 F 0 "FB65" H 9050 7685 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 9395 7715 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 9225 7760 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 9395 7715 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 9225 7760 50  0001 C CNN
 F 3 "~" H 9295 7760 50  0001 C CNN
 	1    9295 7760
 	1    0    0    -1  
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB?
+L emi_filter_3pin:EMI_Filter_3Pin FB?
 U 1 1 647B8E58
 P 7425 6465
 AR Path="/5ECB474B/647B8E58" Ref="FB?"  Part="1" 
 AR Path="/63EAD078/647B8E58" Ref="FB61"  Part="1" 
 F 0 "FB61" H 7225 6375 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 7525 6420 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 7355 6465 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 7525 6420 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 7355 6465 50  0001 C CNN
 F 3 "~" H 7425 6465 50  0001 C CNN
 	1    7425 6465
 	1    0    0    1   
@@ -1097,7 +1099,7 @@ AR Path="/61BCD018/647C5CFF" Ref="R?"  Part="1"
 AR Path="/5ECB474B/647C5CFF" Ref="R?"  Part="1" 
 AR Path="/63EAD078/647C5CFF" Ref="R40"  Part="1" 
 F 0 "R40" H 7495 6146 50  0000 L CNN
-F 1 "22R 3W" H 7495 6055 50  0000 L CNN
+F 1 "22 3W" H 7495 6055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 7355 6100 50  0001 C CNN
 F 3 "~" H 7425 6100 50  0001 C CNN
 	1    7425 6100
@@ -1114,14 +1116,14 @@ Wire Wire Line
 Wire Wire Line
 	7490 7330 7690 7330
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB?
+L emi_filter_3pin:EMI_Filter_3Pin FB?
 U 1 1 6479A5EF
 P 7390 7330
 AR Path="/5ECB474B/6479A5EF" Ref="FB?"  Part="1" 
 AR Path="/63EAD078/6479A5EF" Ref="FB63"  Part="1" 
 F 0 "FB63" V 7330 7195 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 7490 7285 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 7320 7330 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 7490 7285 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 7320 7330 50  0001 C CNN
 F 3 "~" H 7390 7330 50  0001 C CNN
 	1    7390 7330
 	0    1    -1   0   
@@ -1141,7 +1143,7 @@ P 13840 1520
 AR Path="/5E6A379E/6486FE58" Ref="JP?"  Part="1" 
 AR Path="/63EAD078/6486FE58" Ref="JP12"  Part="1" 
 F 0 "JP12" H 13840 1732 50  0000 C CNN
-F 1 "JP_TPSENSE" H 13840 1641 50  0000 C CNN
+F 1 "JMP_TPSENSE" H 13840 1641 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13840 1520 50  0001 C CNN
 F 3 "~" H 13840 1520 50  0001 C CNN
 	1    13840 1520
@@ -1150,14 +1152,14 @@ $EndComp
 Text GLabel 14150 1520 2    50   Input ~ 0
 ~TAPE_SENSE
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB?
+L emi_filter_3pin:EMI_Filter_3Pin FB?
 U 1 1 647EB007
 P 6905 6465
 AR Path="/5ECB474B/647EB007" Ref="FB?"  Part="1" 
 AR Path="/63EAD078/647EB007" Ref="FB59"  Part="1" 
 F 0 "FB59" H 6870 6385 50  0000 R CNN
-F 1 "Ferrite_Bead_Small" H 7005 6420 50  0001 L CNN
-F 2 "LittleSixteen:Ferrite" V 6835 6465 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" H 7005 6420 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 6835 6465 50  0001 C CNN
 F 3 "~" H 6905 6465 50  0001 C CNN
 	1    6905 6465
 	1    0    0    1   
@@ -1179,7 +1181,7 @@ AR Path="/61BCD018/64956DD2" Ref="R?"  Part="1"
 AR Path="/5ECB474B/64956DD2" Ref="R?"  Part="1" 
 AR Path="/63EAD078/64956DD2" Ref="R38"  Part="1" 
 F 0 "R38" H 6835 6146 50  0000 R CNN
-F 1 "22R 3W" H 6835 6055 50  0000 R CNN
+F 1 "22 3W" H 6835 6055 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 6835 6100 50  0001 C CNN
 F 3 "~" H 6905 6100 50  0001 C CNN
 	1    6905 6100
@@ -1199,7 +1201,7 @@ AR Path="/61BCD018/64956726" Ref="R?"  Part="1"
 AR Path="/5ECB474B/64956726" Ref="R?"  Part="1" 
 AR Path="/63EAD078/64956726" Ref="R39"  Part="1" 
 F 0 "R39" H 6980 6140 50  0000 L CNN
-F 1 "22R 3W" V 7280 5935 50  0000 L CNN
+F 1 "22 3W" V 7280 5935 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 7115 6100 50  0001 C CNN
 F 3 "~" H 7185 6100 50  0001 C CNN
 	1    7185 6100
@@ -1329,6 +1331,7 @@ F 0 "C43" H 975 10086 50  0000 L CNN
 F 1 "100n" H 975 9995 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 898 9890 50  0001 C CNN
 F 3 "~" H 860 10040 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 860 10040 50  0001 C CNN "MouserPN"
 	1    860  10040
 	1    0    0    -1  
 $EndComp

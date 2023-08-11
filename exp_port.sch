@@ -242,12 +242,12 @@ Connection ~ 6700 5490
 Wire Wire Line
 	6700 5490 6700 3090
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB38
+L emi_filter_3pin:EMI_Filter_3Pin FB38
 U 1 1 5E9793EF
 P 6905 3390
 F 0 "FB38" V 6760 3390 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 6759 3390 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 6835 3390 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 6759 3390 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 6835 3390 50  0001 C CNN
 F 3 "~" H 6905 3390 50  0001 C CNN
 	1    6905 3390
 	0    1    1    0   
@@ -255,12 +255,12 @@ $EndComp
 Wire Wire Line
 	6805 3390 6605 3390
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB40
+L emi_filter_3pin:EMI_Filter_3Pin FB40
 U 1 1 5E979856
 P 4765 4090
 F 0 "FB40" V 4625 4090 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 4619 4090 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4695 4090 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4619 4090 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4695 4090 50  0001 C CNN
 F 3 "~" H 4765 4090 50  0001 C CNN
 	1    4765 4090
 	0    -1   1    0   
@@ -280,12 +280,12 @@ PHI0
 Wire Wire Line
 	7440 3490 7205 3490
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB39
+L emi_filter_3pin:EMI_Filter_3Pin FB39
 U 1 1 5E982F3B
 P 7105 3490
 F 0 "FB39" V 6960 3490 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 6959 3490 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 7035 3490 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 6959 3490 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 7035 3490 50  0001 C CNN
 F 3 "~" H 7105 3490 50  0001 C CNN
 	1    7105 3490
 	0    1    1    0   
@@ -341,9 +341,10 @@ P 10280 4115
 AR Path="/5EACE220/6349BFDB" Ref="C?"  Part="1" 
 AR Path="/5E6A379E/6349BFDB" Ref="C94"  Part="1" 
 F 0 "C94" H 10395 4161 50  0000 L CNN
-F 1 "100n/25V" H 10395 4070 50  0000 L CNN
+F 1 "100n" H 10395 4070 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10318 3965 50  0001 C CNN
 F 3 "~" H 10280 4115 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 10280 4115 50  0001 C CNN "MouserPN"
 	1    10280 4115
 	1    0    0    -1  
 $EndComp

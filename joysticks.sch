@@ -39,7 +39,7 @@ L Diode:1N914 D10
 U 1 1 5E19A869
 P 8510 4480
 F 0 "D10" H 8645 4520 50  0000 C CNN
-F 1 "1N914" H 8355 4615 50  0000 C CNN
+F 1 "1n4148" H 8355 4615 50  0000 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4305 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4480 50  0001 C CNN
 	1    8510 4480
@@ -50,7 +50,7 @@ L Diode:1N914 D7
 U 1 1 5E19A838
 P 8195 4580
 F 0 "D7" H 8305 4625 50  0000 C CNN
-F 1 "1N914" H 8195 4705 50  0001 C CNN
+F 1 "1n4148" H 8195 4705 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4405 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4580 50  0001 C CNN
 	1    8195 4580
@@ -82,12 +82,12 @@ $EndComp
 Wire Wire Line
 	5530 1110 5530 1080
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB35
+L emi_filter_3pin:EMI_Filter_3Pin FB35
 U 1 1 5E19A8AD
 P 5010 4880
 F 0 "FB35" V 5145 4880 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 4864 4880 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4940 4880 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4864 4880 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4940 4880 50  0001 C CNN
 F 3 "~" H 5010 4880 50  0001 C CNN
 	1    5010 4880
 	0    1    1    0   
@@ -95,56 +95,56 @@ $EndComp
 Wire Wire Line
 	4160 3705 4160 3775
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB30
+L emi_filter_3pin:EMI_Filter_3Pin FB30
 U 1 1 5E19A89F
 P 4160 3875
 F 0 "FB30" H 3966 3875 50  0000 R CNN
-F 1 "Ferrite_Bead_Small" V 4014 3875 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4090 3875 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4014 3875 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4090 3875 50  0001 C CNN
 F 3 "~" H 4160 3875 50  0001 C CNN
 	1    4160 3875
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB33
+L emi_filter_3pin:EMI_Filter_3Pin FB33
 U 1 1 5E19A894
 P 5010 4680
 F 0 "FB33" V 5145 4680 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 4864 4680 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4940 4680 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4864 4680 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4940 4680 50  0001 C CNN
 F 3 "~" H 5010 4680 50  0001 C CNN
 	1    5010 4680
 	0    1    1    0   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB34
+L emi_filter_3pin:EMI_Filter_3Pin FB34
 U 1 1 5E19A889
 P 5215 4780
 F 0 "FB34" V 5360 4780 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 5069 4780 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 5145 4780 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 5069 4780 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 5145 4780 50  0001 C CNN
 F 3 "~" H 5215 4780 50  0001 C CNN
 	1    5215 4780
 	0    1    1    0   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB32
+L emi_filter_3pin:EMI_Filter_3Pin FB32
 U 1 1 5E19A87E
 P 5210 4580
 F 0 "FB32" V 5065 4580 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 5064 4580 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 5140 4580 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 5064 4580 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 5140 4580 50  0001 C CNN
 F 3 "~" H 5210 4580 50  0001 C CNN
 	1    5210 4580
 	0    1    1    0   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB31
+L emi_filter_3pin:EMI_Filter_3Pin FB31
 U 1 1 5E19A873
 P 5010 4480
 F 0 "FB31" V 4865 4480 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 4864 4480 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4940 4480 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4864 4480 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4940 4480 50  0001 C CNN
 F 3 "~" H 5010 4480 50  0001 C CNN
 	1    5010 4480
 	0    1    1    0   
@@ -161,78 +161,78 @@ F 3 "" H 4160 3290 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB29
+L emi_filter_3pin:EMI_Filter_3Pin FB29
 U 1 1 5E0A3992
 P 4230 2500
 F 0 "FB29" H 4330 2500 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" V 4084 2500 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4160 2500 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4084 2500 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4160 2500 50  0001 C CNN
 F 3 "~" H 4230 2500 50  0001 C CNN
 	1    4230 2500
 	1    0    0    1   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB28
+L emi_filter_3pin:EMI_Filter_3Pin FB28
 U 1 1 5E0A2BD5
 P 4965 2205
 F 0 "FB28" V 5100 2205 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 4819 2205 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4895 2205 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4819 2205 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4895 2205 50  0001 C CNN
 F 3 "~" H 4965 2205 50  0001 C CNN
 	1    4965 2205
 	0    1    1    0   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB22
+L emi_filter_3pin:EMI_Filter_3Pin FB22
 U 1 1 5E094DB1
 P 4115 1200
 F 0 "FB22" H 4215 1200 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" V 3969 1200 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4045 1200 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 3969 1200 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4045 1200 50  0001 C CNN
 F 3 "~" H 4115 1200 50  0001 C CNN
 	1    4115 1200
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB26
+L emi_filter_3pin:EMI_Filter_3Pin FB26
 U 1 1 5E09220F
 P 4965 2005
 F 0 "FB26" V 5100 2005 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 4819 2005 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4895 2005 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4819 2005 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4895 2005 50  0001 C CNN
 F 3 "~" H 4965 2005 50  0001 C CNN
 	1    4965 2005
 	0    1    1    0   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB27
+L emi_filter_3pin:EMI_Filter_3Pin FB27
 U 1 1 5E09163E
 P 5165 2105
 F 0 "FB27" V 5310 2105 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 5019 2105 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 5095 2105 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 5019 2105 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 5095 2105 50  0001 C CNN
 F 3 "~" H 5165 2105 50  0001 C CNN
 	1    5165 2105
 	0    1    1    0   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB25
+L emi_filter_3pin:EMI_Filter_3Pin FB25
 U 1 1 5E09073A
 P 5165 1905
 F 0 "FB25" V 5020 1905 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 5019 1905 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 5095 1905 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 5019 1905 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 5095 1905 50  0001 C CNN
 F 3 "~" H 5165 1905 50  0001 C CNN
 	1    5165 1905
 	0    1    1    0   
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB24
+L emi_filter_3pin:EMI_Filter_3Pin FB24
 U 1 1 5E08FAD9
 P 4965 1805
 F 0 "FB24" V 4820 1805 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 4819 1805 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4895 1805 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4819 1805 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4895 1805 50  0001 C CNN
 F 3 "~" H 4965 1805 50  0001 C CNN
 	1    4965 1805
 	0    1    1    0   
@@ -242,7 +242,7 @@ L Diode:1N914 D5
 U 1 1 5E07A0F3
 P 8510 1805
 F 0 "D5" H 8620 1845 50  0000 C CNN
-F 1 "1N914" H 8360 1945 50  0000 C CNN
+F 1 "1n4148" H 8360 1945 50  0000 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1630 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 1805 50  0001 C CNN
 	1    8510 1805
@@ -297,7 +297,8 @@ F 0 "RP91" V 7505 4765 50  0000 C CNN
 F 1 "100" V 7429 4480 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 4480 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4480 50  0001 C CNN
-F 4 "Independent" H 7545 4480 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7545 4480 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7545 4480 50  0001 C CNN "MouserPN"
 	3    7545 4480
 	0    1    1    0   
 $EndComp
@@ -316,7 +317,7 @@ L Diode:1N914 D3
 U 1 1 5E03D308
 P 8195 2205
 F 0 "D3" H 8305 2245 50  0000 C CNN
-F 1 "1N914" H 8195 1990 50  0001 C CNN
+F 1 "1n4148" H 8195 1990 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 2030 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 2205 50  0001 C CNN
 	1    8195 2205
@@ -358,6 +359,7 @@ F 0 "C40" H 10825 5971 50  0000 L CNN
 F 1 "100n" H 10825 5880 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10748 5775 50  0001 C CNN
 F 3 "~" H 10710 5925 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 10710 5925 50  0001 C CNN "MouserPN"
 	1    10710 5925
 	1    0    0    -1  
 $EndComp
@@ -397,6 +399,7 @@ F 0 "C39" H 10325 5971 50  0000 L CNN
 F 1 "100n" H 10325 5880 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10248 5775 50  0001 C CNN
 F 3 "~" H 10210 5925 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 10210 5925 50  0001 C CNN "MouserPN"
 	1    10210 5925
 	1    0    0    -1  
 $EndComp
@@ -436,7 +439,8 @@ F 0 "RP90" V 7510 2075 50  0000 C CNN
 F 1 "100" V 7434 1805 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7470 1805 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 1805 50  0001 C CNN
-F 4 "Independent" H 7550 1805 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7550 1805 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7550 1805 50  0001 C CNN "MouserPN"
 	3    7550 1805
 	0    1    1    0   
 $EndComp
@@ -448,7 +452,8 @@ F 0 "RP90" V 7510 2475 50  0000 C CNN
 F 1 "100" V 7434 2205 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7470 2205 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2205 50  0001 C CNN
-F 4 "Independent" H 7550 2205 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7550 2205 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7550 2205 50  0001 C CNN "MouserPN"
 	4    7550 2205
 	0    1    1    0   
 $EndComp
@@ -495,7 +500,7 @@ L Device:R R91
 U 1 1 62AFB1A5
 P 4115 880
 F 0 "R91" H 4045 926 50  0000 R CNN
-F 1 "4.7R 1W" H 4045 835 50  0000 R CNN
+F 1 "4.7 1W" H 4045 835 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 4045 880 50  0001 C CNN
 F 3 "~" H 4115 880 50  0001 C CNN
 	1    4115 880 
@@ -506,7 +511,7 @@ L Device:R R92
 U 1 1 62B0FE1B
 P 4160 3555
 F 0 "R92" H 4090 3601 50  0000 R CNN
-F 1 "4.7R 1W" H 4090 3510 50  0000 R CNN
+F 1 "4.7 1W" H 4090 3510 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 4090 3555 50  0001 C CNN
 F 3 "~" H 4160 3555 50  0001 C CNN
 	1    4160 3555
@@ -766,12 +771,12 @@ F 3 "" H 4275 5325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB37
+L emi_filter_3pin:EMI_Filter_3Pin FB37
 U 1 1 5E19A8B7
 P 4275 5175
 F 0 "FB37" H 4375 5175 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" V 4129 5175 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4205 5175 50  0001 C CNN
+F 1 "DSS1NB32A271Q91A" V 4129 5175 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4205 5175 50  0001 C CNN
 F 3 "~" H 4275 5175 50  0001 C CNN
 	1    4275 5175
 	1    0    0    1   
@@ -962,7 +967,8 @@ F 0 "RP91" V 7500 4865 50  0000 C CNN
 F 1 "100" V 7355 4580 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 4580 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4580 50  0001 C CNN
-F 4 "Independent" H 7545 4580 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7545 4580 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7545 4580 50  0001 C CNN "MouserPN"
 	1    7545 4580
 	0    1    1    0   
 $EndComp
@@ -1008,7 +1014,8 @@ F 0 "RP90" V 7510 2675 50  0000 C CNN
 F 1 "100" V 7434 2405 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7470 2405 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2405 50  0001 C CNN
-F 4 "Independent" H 7550 2405 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7550 2405 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7550 2405 50  0001 C CNN "MouserPN"
 	2    7550 2405
 	0    1    1    0   
 $EndComp
@@ -1019,7 +1026,7 @@ L Diode:1N914 D4
 U 1 1 5E03D312
 P 8510 2405
 F 0 "D4" H 8625 2445 50  0000 C CNN
-F 1 "1N914" H 8510 2531 50  0001 C CNN
+F 1 "1n4148" H 8510 2531 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 2230 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 2405 50  0001 C CNN
 	1    8510 2405
@@ -1042,7 +1049,7 @@ L Device:Jumper_NC_Small JP10
 U 1 1 621BBD43
 P 4065 4110
 F 0 "JP10" V 4105 3990 50  0000 R CNN
-F 1 "JP_J2_POW5" V 4020 3990 50  0000 R CNN
+F 1 "JMP_J2_POW5" V 4020 3990 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4065 4110 50  0001 C CNN
 F 3 "~" H 4065 4110 50  0001 C CNN
 	1    4065 4110
@@ -1053,7 +1060,7 @@ L Device:Jumper_NC_Small JP9
 U 1 1 623144B5
 P 4020 1435
 F 0 "JP9" V 4060 1315 50  0000 R CNN
-F 1 "JP_J1_POW5" V 3975 1315 50  0000 R CNN
+F 1 "JMP_J1_POW5" V 3975 1315 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4020 1435 50  0001 C CNN
 F 3 "~" H 4020 1435 50  0001 C CNN
 	1    4020 1435
@@ -1115,7 +1122,7 @@ L Diode:1N914 D9
 U 1 1 5E19A84C
 P 8510 5075
 F 0 "D9" H 8625 5110 50  0000 C CNN
-F 1 "1N914" H 8510 5201 50  0001 C CNN
+F 1 "1n4148" H 8510 5201 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4900 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 5075 50  0001 C CNN
 	1    8510 5075
@@ -1129,7 +1136,8 @@ F 0 "RP91" V 7500 5365 50  0000 C CNN
 F 1 "100" V 7429 5080 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 5080 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 5080 50  0001 C CNN
-F 4 "Independent" H 7545 5080 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7545 5080 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7545 5080 50  0001 C CNN "MouserPN"
 	2    7545 5080
 	0    1    1    0   
 $EndComp
@@ -1159,7 +1167,8 @@ F 0 "RP91" V 7500 5165 50  0000 C CNN
 F 1 "100" V 7429 4880 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 4880 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4880 50  0001 C CNN
-F 4 "Independent" H 7545 4880 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7545 4880 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7545 4880 50  0001 C CNN "MouserPN"
 	4    7545 4880
 	0    1    1    0   
 $EndComp
@@ -1168,7 +1177,7 @@ L Diode:1N914 D8
 U 1 1 5E19A842
 P 8195 4880
 F 0 "D8" H 8305 4920 50  0000 C CNN
-F 1 "1N914" H 8195 4655 50  0001 C CNN
+F 1 "1n4148" H 8195 4655 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 4705 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 4880 50  0001 C CNN
 	1    8195 4880
@@ -1181,7 +1190,7 @@ L Diode:1N914 D6
 U 1 1 5E19A82E
 P 8510 4680
 F 0 "D6" H 8625 4725 50  0000 C CNN
-F 1 "1N914" H 8510 4805 50  0001 C CNN
+F 1 "1n4148" H 8510 4805 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 4505 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 4680 50  0001 C CNN
 	1    8510 4680
@@ -1195,7 +1204,8 @@ F 0 "RP91" V 7500 4960 50  0000 C CNN
 F 1 "100" V 7429 4680 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7465 4680 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7545 4680 50  0001 C CNN
-F 4 "Independent" H 7545 4680 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7545 4680 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7545 4680 50  0001 C CNN "MouserPN"
 	5    7545 4680
 	0    1    1    0   
 $EndComp
@@ -1208,10 +1218,10 @@ Wire Wire Line
 Wire Wire Line
 	8660 4680 9135 4680
 $Comp
-L Device:R_Network05 RP5
+L Device:R_Network05 RP3
 U 1 1 5E3A4C16
 P 5730 4095
-F 0 "RP5" H 5450 4141 50  0000 R CNN
+F 0 "RP3" H 5450 4141 50  0000 R CNN
 F 1 "3.3k" H 5450 4050 50  0000 R CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 6105 4095 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5730 4095 50  0001 C CNN
@@ -1295,7 +1305,8 @@ F 0 "RP90" V 7505 2275 50  0000 C CNN
 F 1 "100" V 7434 2005 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7470 2005 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 2005 50  0001 C CNN
-F 4 "Independent" H 7550 2005 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7550 2005 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7550 2005 50  0001 C CNN "MouserPN"
 	5    7550 2005
 	0    1    1    0   
 $EndComp
@@ -1304,7 +1315,7 @@ L Diode:1N914 D1
 U 1 1 5E037618
 P 8510 2000
 F 0 "D1" H 8625 2040 50  0000 C CNN
-F 1 "1N914" H 8510 2125 50  0001 C CNN
+F 1 "1n4148" H 8510 2125 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8510 1825 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8510 2000 50  0001 C CNN
 	1    8510 2000
@@ -1326,7 +1337,7 @@ L Diode:1N914 D2
 U 1 1 5E03AEE2
 P 8195 1905
 F 0 "D2" H 8305 1945 50  0000 C CNN
-F 1 "1N914" H 8195 2030 50  0001 C CNN
+F 1 "1n4148" H 8195 2030 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 8195 1730 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 8195 1905 50  0001 C CNN
 	1    8195 1905
@@ -1342,7 +1353,8 @@ F 0 "RP90" V 7510 2170 50  0000 C CNN
 F 1 "100" V 7360 1905 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 7470 1905 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7550 1905 50  0001 C CNN
-F 4 "Independent" H 7550 1905 50  0001 C CNN "Notes"
+F 4 "Isolated/Independent" H 7550 1905 50  0001 C CNN "Notes"
+F 5 "652-4610X-2LF-100" H 7550 1905 50  0001 C CNN "MouserPN"
 	1    7550 1905
 	0    1    1    0   
 $EndComp
