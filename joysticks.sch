@@ -65,6 +65,7 @@ F 1 "3.3k" H 6018 1235 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 6105 1280 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5730 1280 50  0001 C CNN
 F 4 "Bussed" H 5730 1280 50  0001 C CNN "Notes"
+F 5 "774-77061332P" H 5730 1280 50  0001 C CNN "MouserPN"
 	1    5730 1280
 	1    0    0    -1  
 $EndComp
@@ -1106,6 +1107,8 @@ F 0 "U18" H 6920 5645 50  0000 C CNN
 F 1 "74HCT245" H 6930 4295 50  0000 C CNN
 F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6700 4980 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6700 4980 50  0001 C CNN
+F 4 "595-SN74HCT245ANSR" H 6700 4980 50  0001 C CNN "MouserPN"
+F 5 "Or 595-SN74HCT245NE4" H 6700 4980 50  0001 C CNN "Notes"
 	1    6700 4980
 	1    0    0    -1  
 $EndComp
@@ -1226,6 +1229,7 @@ F 1 "3.3k" H 5450 4050 50  0000 R CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 6105 4095 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5730 4095 50  0001 C CNN
 F 4 "Bussed" H 5730 4095 50  0001 C CNN "Notes"
+F 5 "774-77061332P" H 5730 4095 50  0001 C CNN "MouserPN"
 	1    5730 4095
 	1    0    0    -1  
 $EndComp
@@ -1253,6 +1257,8 @@ F 0 "U17" H 6925 2970 50  0000 C CNN
 F 1 "74HCT245" H 6935 1620 50  0000 C CNN
 F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6705 2305 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6705 2305 50  0001 C CNN
+F 4 "595-SN74HCT245ANSR" H 6705 2305 50  0001 C CNN "MouserPN"
+F 5 "Or 595-SN74HCT245NE4" H 6705 2305 50  0001 C CNN "Notes"
 	1    6705 2305
 	1    0    0    -1  
 $EndComp

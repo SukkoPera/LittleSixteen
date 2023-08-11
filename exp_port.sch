@@ -382,6 +382,7 @@ F 0 "CN1" H 5855 5855 50  0000 C CNN
 F 1 "EXPANSION_CONNECTOR" H 5855 5764 50  0000 C CNN
 F 2 "LittleSixteen:50Pin_Edge_Connector" H 5855 2640 50  0001 C CNN
 F 3 "DOCUMENTATION" H 5855 2540 50  0001 C CNN
+F 4 "Must be recovered from an old board : (" H 5855 4290 50  0001 C CNN "Notes"
 	1    5855 4290
 	1    0    0    -1  
 $EndComp

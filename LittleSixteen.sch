@@ -87,6 +87,7 @@ F 0 "H1" H 10375 4608 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10375 4563 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.7mm_Pad" H 10275 4605 50  0001 C CNN
 F 3 "~" H 10275 4605 50  0001 C CNN
+F 4 "---" H 10275 4605 50  0001 C CNN "MouserPN"
 	1    10275 4605
 	1    0    0    -1  
 $EndComp
@@ -98,6 +99,7 @@ F 0 "H3" H 10375 4918 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10375 4873 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.7mm_Pad" H 10275 4915 50  0001 C CNN
 F 3 "~" H 10275 4915 50  0001 C CNN
+F 4 "---" H 10275 4915 50  0001 C CNN "MouserPN"
 	1    10275 4915
 	1    0    0    -1  
 $EndComp
@@ -109,6 +111,7 @@ F 0 "H5" H 10375 5238 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10375 5193 50  0001 L CNN
 F 2 "" H 10275 5235 50  0001 C CNN
 F 3 "~" H 10275 5235 50  0001 C CNN
+F 4 "---" H 10275 5235 50  0001 C CNN "MouserPN"
 	1    10275 5235
 	1    0    0    -1  
 $EndComp
@@ -120,6 +123,7 @@ F 0 "H7" H 10375 5563 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10375 5518 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.7mm_Pad" H 10275 5560 50  0001 C CNN
 F 3 "~" H 10275 5560 50  0001 C CNN
+F 4 "---" H 10275 5560 50  0001 C CNN "MouserPN"
 	1    10275 5560
 	1    0    0    -1  
 $EndComp
@@ -131,6 +135,7 @@ F 0 "H9" H 10375 5888 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10375 5843 50  0001 L CNN
 F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 10275 5885 50  0001 C CNN
 F 3 "~" H 10275 5885 50  0001 C CNN
+F 4 "---" H 10275 5885 50  0001 C CNN "MouserPN"
 	1    10275 5885
 	1    0    0    -1  
 $EndComp
@@ -187,6 +192,7 @@ F 0 "H2" H 10885 4608 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10885 4563 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.7mm_Pad" H 10785 4605 50  0001 C CNN
 F 3 "~" H 10785 4605 50  0001 C CNN
+F 4 "---" H 10785 4605 50  0001 C CNN "MouserPN"
 	1    10785 4605
 	1    0    0    -1  
 $EndComp
@@ -198,6 +204,7 @@ F 0 "H4" H 10885 4918 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10885 4873 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.7mm_Pad" H 10785 4915 50  0001 C CNN
 F 3 "~" H 10785 4915 50  0001 C CNN
+F 4 "---" H 10785 4915 50  0001 C CNN "MouserPN"
 	1    10785 4915
 	1    0    0    -1  
 $EndComp
@@ -209,6 +216,7 @@ F 0 "H6" H 10885 5238 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10885 5193 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.7mm_Pad" H 10785 5235 50  0001 C CNN
 F 3 "~" H 10785 5235 50  0001 C CNN
+F 4 "---" H 10785 5235 50  0001 C CNN "MouserPN"
 	1    10785 5235
 	1    0    0    -1  
 $EndComp
@@ -220,6 +228,7 @@ F 0 "H8" H 10885 5563 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10885 5518 50  0001 L CNN
 F 2 "" H 10785 5560 50  0001 C CNN
 F 3 "~" H 10785 5560 50  0001 C CNN
+F 4 "---" H 10785 5560 50  0001 C CNN "MouserPN"
 	1    10785 5560
 	1    0    0    -1  
 $EndComp
@@ -231,6 +240,7 @@ F 0 "H10" H 10885 5888 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10885 5843 50  0001 L CNN
 F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 10785 5885 50  0001 C CNN
 F 3 "~" H 10785 5885 50  0001 C CNN
+F 4 "---" H 10785 5885 50  0001 C CNN "MouserPN"
 	1    10785 5885
 	1    0    0    -1  
 $EndComp
@@ -309,6 +319,7 @@ F 0 "H11" H 9850 4608 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9850 4563 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9750 4605 50  0001 C CNN
 F 3 "~" H 9750 4605 50  0001 C CNN
+F 4 "---" H 9750 4605 50  0001 C CNN "MouserPN"
 	1    9750 4605
 	1    0    0    -1  
 $EndComp
@@ -320,6 +331,7 @@ F 0 "H12" H 9850 4918 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9850 4873 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9750 4915 50  0001 C CNN
 F 3 "~" H 9750 4915 50  0001 C CNN
+F 4 "---" H 9750 4915 50  0001 C CNN "MouserPN"
 	1    9750 4915
 	1    0    0    -1  
 $EndComp
@@ -331,6 +343,7 @@ F 0 "H13" H 9850 5238 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9850 5193 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9750 5235 50  0001 C CNN
 F 3 "~" H 9750 5235 50  0001 C CNN
+F 4 "---" H 9750 5235 50  0001 C CNN "MouserPN"
 	1    9750 5235
 	1    0    0    -1  
 $EndComp
@@ -342,6 +355,7 @@ F 0 "H14" H 9850 5563 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9850 5518 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9750 5560 50  0001 C CNN
 F 3 "~" H 9750 5560 50  0001 C CNN
+F 4 "---" H 9750 5560 50  0001 C CNN "MouserPN"
 	1    9750 5560
 	1    0    0    -1  
 $EndComp
@@ -418,6 +432,7 @@ F 0 "H15" H 9305 4608 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9305 4563 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.7mm_Pad" H 9205 4605 50  0001 C CNN
 F 3 "~" H 9205 4605 50  0001 C CNN
+F 4 "---" H 9205 4605 50  0001 C CNN "MouserPN"
 	1    9205 4605
 	1    0    0    -1  
 $EndComp
@@ -429,6 +444,7 @@ F 0 "H16" H 9305 4918 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9305 4873 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.7mm_Pad" H 9205 4915 50  0001 C CNN
 F 3 "~" H 9205 4915 50  0001 C CNN
+F 4 "---" H 9205 4915 50  0001 C CNN "MouserPN"
 	1    9205 4915
 	1    0    0    -1  
 $EndComp

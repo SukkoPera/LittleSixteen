@@ -21,6 +21,8 @@ F 0 "U3" H 3905 3155 50  0000 C CNN
 F 1 "23128_BASIC" H 3995 1060 50  0000 C CNN
 F 2 "LittleSixteen:DIP-28_W15.24mm_Socket_LongPads" H 3680 2110 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 3680 2110 50  0001 C CNN
+F 4 ":)" H 3680 2110 50  0001 C CNN "MouserPN"
+F 5 "Can be replaced with 27512 (E)EPROM" H 3680 2110 50  0001 C CNN "Notes"
 	1    3680 2110
 	1    0    0    -1  
 $EndComp
@@ -409,6 +411,7 @@ F 0 "JP5" V 6411 3077 50  0000 L CNN
 F 1 "SW_KCE" V 6320 3077 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6365 3010 50  0001 C CNN
 F 3 "~" H 6365 3010 50  0001 C CNN
+F 4 "---" H 6365 3010 50  0001 C CNN "MouserPN"
 	1    6365 3010
 	0    -1   1    0   
 $EndComp
@@ -443,6 +446,7 @@ F 0 "JP7" V 6411 5727 50  0000 L CNN
 F 1 "SW_KA14" V 6320 5727 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6365 5660 50  0001 C CNN
 F 3 "~" H 6365 5660 50  0001 C CNN
+F 4 "---" H 6365 5660 50  0001 C CNN "MouserPN"
 	1    6365 5660
 	0    -1   1    0   
 $EndComp
@@ -475,6 +479,7 @@ F 0 "JP6" V 6411 4452 50  0000 L CNN
 F 1 "SW_KA15" V 6320 4452 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6365 4385 50  0001 C CNN
 F 3 "~" H 6365 4385 50  0001 C CNN
+F 4 "---" H 6365 4385 50  0001 C CNN "MouserPN"
 	1    6365 4385
 	0    -1   1    0   
 $EndComp
@@ -500,6 +505,7 @@ F 0 "JP8" V 2101 3077 50  0000 L CNN
 F 1 "SW_BCE" V 2010 3077 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2055 3010 50  0001 C CNN
 F 3 "~" H 2055 3010 50  0001 C CNN
+F 4 "---" H 2055 3010 50  0001 C CNN "MouserPN"
 	1    2055 3010
 	0    -1   1    0   
 $EndComp
@@ -518,7 +524,7 @@ L Connector:Conn_01x03_Male JP13
 U 1 1 6538CD5C
 P 4905 6600
 F 0 "JP13" H 4877 6532 50  0000 R CNN
-F 1 "JMP_ROM_BANK" H 4877 6623 50  0000 R CNN
+F 1 "SW_ROM_BANK" H 4877 6623 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4905 6600 50  0001 C CNN
 F 3 "~" H 4905 6600 50  0001 C CNN
 	1    4905 6600
@@ -559,6 +565,7 @@ F 0 "R98" H 2455 2816 50  0000 L CNN
 F 1 "10k" H 2455 2725 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 2315 2770 50  0001 C CNN
 F 3 "~" H 2385 2770 50  0001 C CNN
+F 4 "603-MFR-25FTF52-10K" H 2385 2770 50  0001 C CNN "MouserPN"
 	1    2385 2770
 	1    0    0    -1  
 $EndComp
@@ -590,6 +597,7 @@ F 0 "R99" H 6670 2724 50  0000 R CNN
 F 1 "10k" H 6670 2815 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 6670 2770 50  0001 C CNN
 F 3 "~" H 6740 2770 50  0001 C CNN
+F 4 "603-MFR-25FTF52-10K" H 6740 2770 50  0001 C CNN "MouserPN"
 	1    6740 2770
 	-1   0    0    1   
 $EndComp
@@ -620,6 +628,8 @@ F 0 "U4" H 8185 3155 50  0000 C CNN
 F 1 "23128_KERNAL" H 8275 1060 50  0000 C CNN
 F 2 "LittleSixteen:DIP-28_W15.24mm_Socket_LongPads" H 7960 2110 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 7960 2110 50  0001 C CNN
+F 4 ":)" H 7960 2110 50  0001 C CNN "MouserPN"
+F 5 "Can be replaced with 27512 (E)EPROM" H 7960 2110 50  0001 C CNN "Notes"
 	1    7960 2110
 	1    0    0    -1  
 $EndComp

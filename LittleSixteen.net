@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Fri 11 Aug 2023 22:09:15 CEST")
+    (date "Fri 11 Aug 2023 23:49:01 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -162,6 +162,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_3.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61150450))
@@ -169,12 +171,16 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_3.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61150D7C))
     (comp (ref H5)
       (value MountingHole_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 611511B9))
@@ -182,6 +188,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_3.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 611515CC))
@@ -189,6 +197,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_4.3mm_M4_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61151934))
@@ -196,6 +206,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_3.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61152AD4))
@@ -203,6 +215,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_3.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61152B3A))
@@ -210,12 +224,16 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_3.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61152B44))
     (comp (ref H8)
       (value MountingHole_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61152B4E))
@@ -223,6 +241,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_4.3mm_M4_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61152B58))
@@ -242,6 +262,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_2.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61A81AD7))
@@ -249,6 +271,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_2.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61A81BB9))
@@ -256,6 +280,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_2.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61A81BC3))
@@ -263,6 +289,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_2.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 61A81BCD))
@@ -276,6 +304,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_3.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 650CB05A))
@@ -283,6 +313,8 @@
       (value MountingHole_Pad)
       (footprint MountingHole:MountingHole_3.7mm_Pad)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 650CB180))
@@ -290,13 +322,17 @@
       (value MOS_8501)
       (footprint LittleSixteen:DIP-40_W15.24mm_Socket_LongPads)
       (datasheet DOCUMENTATION)
+      (fields
+        (field (name MouserPN) ":)"))
       (libsource (lib MOS_8501) (part MOS_8501) (description ""))
       (sheetpath (names /CPU/) (tstamps /5E4A81E1/))
       (tstamp 5E4AA751))
     (comp (ref C4)
       (value 10u/25V)
-      (footprint Capacitor_THT:CP_Radial_D6.3mm_P2.50mm)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010672009))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names /CPU/) (tstamps /5E4A81E1/))
       (tstamp 5E4B0F0F))
@@ -320,6 +356,8 @@
       (value MOS_6510)
       (footprint LittleSixteen:DIP-40_W15.24mm_Socket_LongPads)
       (datasheet DOCUMENTATION)
+      (fields
+        (field (name MouserPN) ":)"))
       (libsource (lib MOS_6510) (part MOS_6510) (description ""))
       (sheetpath (names /CPU/) (tstamps /5E4A81E1/))
       (tstamp 62666B06))
@@ -327,13 +365,17 @@
       (value MOS_7360_TED)
       (footprint LittleSixteen:DIP-48_W15.24mm_Socket_LongPads)
       (datasheet DOCUMENTATION)
+      (fields
+        (field (name MouserPN) ":)"))
       (libsource (lib MOS_7360_TED) (part MOS_7360_TED) (description ""))
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
       (tstamp 5DE0697D))
     (comp (ref C3)
       (value 10u/25V)
-      (footprint Capacitor_THT:CP_Radial_D6.3mm_P2.50mm)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010672009))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
       (tstamp 5E9903C9))
@@ -385,6 +427,8 @@
       (value 10k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FTF52-10K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
       (tstamp 5EAF3AF0))
@@ -461,6 +505,8 @@
       (value CLOCK_TESTPOINT)
       (footprint TestPoint:TestPoint_Pad_D2.0mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Connector) (part TestPoint) (description "test point"))
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
       (tstamp 5EB92ED3))
@@ -469,6 +515,7 @@
       (footprint Crystal:Crystal_HC49-U_Horizontal_1EP_style2)
       (datasheet ~)
       (fields
+        (field (name MouserPN) 710-830003298B)
         (field (name Notes) "Use 14.31818M for NTSC, +/- 70ppm, CL = 32p"))
       (libsource (lib Device) (part Crystal_GND3) (description "Three pin crystal, GND on pin 3"))
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
@@ -485,7 +532,7 @@
       (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860010472002)
+        (field (name MouserPN) 710-860010672009)
         (field (name Value) 10u))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
@@ -503,6 +550,9 @@
       (value 74HCT02)
       (footprint LittleSixteen:DIP-14_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74hct02)
+      (fields
+        (field (name MouserPN) 595-SN74HCT02N)
+        (field (name Notes) "Or 595-SN74HC02N, 595-SN74HCT02NE4"))
       (libsource (lib 74xx) (part 74HCT02) (description "quad 2-input NOR gate"))
       (sheetpath (names /RAM/) (tstamps /5E4A465A/))
       (tstamp 64F12844))
@@ -529,7 +579,8 @@
       (footprint LittleSixteen:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS245)
       (fields
-        (field (name MouserPN) 595-SN74HCT245ANSR))
+        (field (name MouserPN) 595-SN74HCT245ANSR)
+        (field (name Notes) "Or 595-SN74HCT245NE4"))
       (libsource (lib 74xx) (part 74LS245) (description "Octal BUS Transceivers, 3-State outputs"))
       (sheetpath (names /RAM/) (tstamps /5E4A465A/))
       (tstamp 64F12810))
@@ -600,6 +651,8 @@
       (value 10k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FTF52-10K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /RAM/) (tstamps /5E4A465A/))
       (tstamp 65A92B25))
@@ -614,6 +667,9 @@
       (value 23128_BASIC)
       (footprint LittleSixteen:DIP-28_W15.24mm_Socket_LongPads)
       (datasheet http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf)
+      (fields
+        (field (name MouserPN) ":)")
+        (field (name Notes) "Can be replaced with 27512 (E)EPROM"))
       (libsource (lib 23128) (part 23128) (description "16k x 8 bit PROM used as ROM in several commodore (and other) computer systems"))
       (sheetpath (names /ROMs/) (tstamps /5EE476E1/))
       (tstamp 5EE49479))
@@ -646,6 +702,8 @@
       (value SW_KCE)
       (footprint Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Jumper) (part Jumper_3_Bridged12) (description "Jumper, 3-pole, pins 1+2 closed/bridged"))
       (sheetpath (names /ROMs/) (tstamps /5EE476E1/))
       (tstamp 61D78514))
@@ -653,6 +711,8 @@
       (value SW_KA14)
       (footprint Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Jumper) (part Jumper_3_Bridged12) (description "Jumper, 3-pole, pins 1+2 closed/bridged"))
       (sheetpath (names /ROMs/) (tstamps /5EE476E1/))
       (tstamp 6530C040))
@@ -660,6 +720,8 @@
       (value SW_KA15)
       (footprint Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Jumper) (part Jumper_3_Bridged12) (description "Jumper, 3-pole, pins 1+2 closed/bridged"))
       (sheetpath (names /ROMs/) (tstamps /5EE476E1/))
       (tstamp 6530C05B))
@@ -667,11 +729,13 @@
       (value SW_BCE)
       (footprint Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Jumper) (part Jumper_3_Bridged12) (description "Jumper, 3-pole, pins 1+2 closed/bridged"))
       (sheetpath (names /ROMs/) (tstamps /5EE476E1/))
       (tstamp 653331DB))
     (comp (ref JP13)
-      (value JMP_ROM_BANK)
+      (value SW_ROM_BANK)
       (footprint Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x03_Male) (description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"))
@@ -681,6 +745,8 @@
       (value 10k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FTF52-10K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /ROMs/) (tstamps /5EE476E1/))
       (tstamp 6549EF2F))
@@ -688,6 +754,8 @@
       (value 10k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FTF52-10K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /ROMs/) (tstamps /5EE476E1/))
       (tstamp 654AD4D8))
@@ -695,6 +763,9 @@
       (value 23128_KERNAL)
       (footprint LittleSixteen:DIP-28_W15.24mm_Socket_LongPads)
       (datasheet http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf)
+      (fields
+        (field (name MouserPN) ":)")
+        (field (name Notes) "Can be replaced with 27512 (E)EPROM"))
       (libsource (lib 23128) (part 23128) (description "16k x 8 bit PROM used as ROM in several commodore (and other) computer systems"))
       (sheetpath (names /ROMs/) (tstamps /5EE476E1/))
       (tstamp 5EE6447F))
@@ -711,6 +782,8 @@
       (value MOS_6529)
       (footprint LittleSixteen:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet DOCUMENTATION)
+      (fields
+        (field (name MouserPN) ":)"))
       (libsource (lib MOS_6529) (part MOS_6529) (description ""))
       (sheetpath (names /Keyboard/) (tstamps /5DECEF6F/))
       (tstamp 5DECF108))
@@ -968,6 +1041,8 @@
       (value 100)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 708-RNF14FTD100R))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Datassette & Serial Bus/") (tstamps /5ECB474B/))
       (tstamp 5ECD9EF8))
@@ -1115,6 +1190,8 @@
       (value C64_STYLE_CASSETTE)
       (footprint LittleSixteen:C64-Cassette-Port-Male)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Connector) (part Conn_01x06_Male) (description "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names "/Datassette & Serial Bus/") (tstamps /5ECB474B/))
       (tstamp 63113C84))
@@ -1238,6 +1315,8 @@
       (value EXPANSION_CONNECTOR)
       (footprint LittleSixteen:50Pin_Edge_Connector)
       (datasheet DOCUMENTATION)
+      (fields
+        (field (name Notes) "Must be recovered from an old board : ("))
       (libsource (lib Exp-Port) (part C16-Exp-Port) (description ""))
       (sheetpath (names "/Expansion Port/") (tstamps /5E6A379E/))
       (tstamp 5E91CB40))
@@ -1282,8 +1361,10 @@
       (tstamp 61864E19))
     (comp (ref C17)
       (value 1u/16V)
-      (footprint Capacitor_THT:CP_Radial_D6.3mm_P2.50mm)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010672005))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 61864E37))
@@ -1291,6 +1372,8 @@
       (value 100k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-100K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 61864E44))
@@ -1303,8 +1386,10 @@
       (tstamp 61864E54))
     (comp (ref C16)
       (value 10u/25V)
-      (footprint Capacitor_THT:CP_Radial_D6.3mm_P2.50mm)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010672009))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 61864E65))
@@ -1338,9 +1423,11 @@
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 62C32DD5))
     (comp (ref C101)
-      (value 100u/35V)
-      (footprint Capacitor_THT:CP_Radial_D8.0mm_P5.00mm)
+      (value 470u/25V)
+      (footprint Capacitor_THT:CP_Radial_D8.0mm_P3.50mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010474013))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 62C8C494))
@@ -1400,6 +1487,8 @@
     (comp (ref LF100)
       (value CM4545Z131B-10)
       (footprint LittleSixteen:CM4545Z131B-10)
+      (fields
+        (field (name MouserPN) 875-CM4545Z131B-10))
       (libsource (lib linefilter) (part L) (description ""))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 62BC2FB7))
@@ -1412,8 +1501,10 @@
       (tstamp 630EA11F))
     (comp (ref C95)
       (value 470u/25V)
-      (footprint Capacitor_THT:CP_Radial_D10.0mm_P5.00mm)
+      (footprint Capacitor_THT:CP_Radial_D8.0mm_P3.50mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010474013))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 634C97F7))
@@ -1435,6 +1526,9 @@
       (value 74HCT02)
       (footprint LittleSixteen:DIP-14_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74ls02)
+      (fields
+        (field (name MouserPN) 595-SN74HCT02N)
+        (field (name Notes) "Or 595-SN74HC02N, 595-SN74HCT02NE4"))
       (libsource (lib 74xx) (part 74LS02) (description "quad 2-input NOR gate"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 660AD22F))
@@ -1477,7 +1571,7 @@
       (footprint Capacitor_THT:CP_Radial_D8.0mm_P3.50mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860020474013))
+        (field (name MouserPN) 710-860010474013))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 65308CBA))
@@ -1486,7 +1580,7 @@
       (footprint Capacitor_THT:CP_Radial_D8.0mm_P3.50mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860020474013))
+        (field (name MouserPN) 710-860010474013))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 6530A0A3))
@@ -1511,7 +1605,7 @@
       (footprint Capacitor_THT:CP_Radial_D8.0mm_P3.50mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860020474013))
+        (field (name MouserPN) 710-860010474013))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 652C0739))
@@ -1519,6 +1613,8 @@
       (value VTED_TESTPOINT)
       (footprint TestPoint:TestPoint_Pad_D2.0mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Connector) (part TestPoint) (description "test point"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 64EE4596))
@@ -1526,6 +1622,8 @@
       (value FIVEV_TESTPOINT)
       (footprint TestPoint:TestPoint_Pad_D2.0mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Connector) (part TestPoint) (description "test point"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 64EF6F17))
@@ -1533,6 +1631,8 @@
       (value NINEV_TESTPOINT)
       (footprint TestPoint:TestPoint_Pad_D2.0mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Connector) (part TestPoint) (description "test point"))
       (sheetpath (names "/Power & Misc/") (tstamps /5EACE220/))
       (tstamp 64F0CBEF))
@@ -1648,6 +1748,8 @@
       (value SIDCS_TESTPOINT)
       (footprint TestPoint:TestPoint_Pad_D2.0mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Connector) (part TestPoint) (description "test point"))
       (sheetpath (names "/PLA & Chip Selection/") (tstamps /5EE7AAEB/))
       (tstamp 64F85BB3))
@@ -1655,6 +1757,8 @@
       (value MUX_TESTPOINT)
       (footprint TestPoint:TestPoint_Pad_D2.0mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Connector) (part TestPoint) (description "test point"))
       (sheetpath (names "/PLA & Chip Selection/") (tstamps /5EE7AAEB/))
       (tstamp 64F9F183))
@@ -1677,6 +1781,7 @@
       (footprint Resistor_THT:R_Array_SIP6)
       (datasheet http://www.vishay.com/docs/31509/csc.pdf)
       (fields
+        (field (name MouserPN) 774-77061332P)
         (field (name Notes) Bussed))
       (libsource (lib Device) (part R_Network05) (description "5 resistor network, star topology, bussed resistors, small symbol"))
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
@@ -1908,6 +2013,9 @@
       (value 74HCT245)
       (footprint LittleSixteen:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS245)
+      (fields
+        (field (name MouserPN) 595-SN74HCT245ANSR)
+        (field (name Notes) "Or 595-SN74HCT245NE4"))
       (libsource (lib 74xx) (part 74LS245) (description "Octal BUS Transceivers, 3-State outputs"))
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
       (tstamp 64B52A46))
@@ -1937,6 +2045,7 @@
       (footprint Resistor_THT:R_Array_SIP6)
       (datasheet http://www.vishay.com/docs/31509/csc.pdf)
       (fields
+        (field (name MouserPN) 774-77061332P)
         (field (name Notes) Bussed))
       (libsource (lib Device) (part R_Network05) (description "5 resistor network, star topology, bussed resistors, small symbol"))
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
@@ -1945,6 +2054,9 @@
       (value 74HCT245)
       (footprint LittleSixteen:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS245)
+      (fields
+        (field (name MouserPN) 595-SN74HCT245ANSR)
+        (field (name Notes) "Or 595-SN74HCT245NE4"))
       (libsource (lib 74xx) (part 74LS245) (description "Octal BUS Transceivers, 3-State outputs"))
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
       (tstamp 64DE6AC7))
@@ -1977,9 +2089,11 @@
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E01CA58))
     (comp (ref L1)
-      (value 1.2u)
+      (value FERRITE)
       (footprint Inductor_THT:L_Radial_D6.0mm_P4.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 875-28C0236-0EW-10))
       (libsource (lib Device) (part L) (description Inductor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E01E939))
@@ -2001,6 +2115,8 @@
       (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-1K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E05604E))
@@ -2008,13 +2124,17 @@
       (value 100k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-100K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E057298))
     (comp (ref C18)
       (value 10u/25V)
-      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.50mm)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010672009))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E059C15))
@@ -2022,6 +2142,8 @@
       (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-1K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E067484))
@@ -2052,6 +2174,8 @@
       (value 10k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FTF52-10K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E0721C1))
@@ -2071,8 +2195,10 @@
       (tstamp 5E0D6DA0))
     (comp (ref C31)
       (value 10u/25V)
-      (footprint Capacitor_THT:CP_Radial_D6.3mm_P2.50mm)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010672009))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E0DD47B))
@@ -2080,6 +2206,8 @@
       (value 100k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-100K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E0E0320))
@@ -2094,6 +2222,8 @@
       (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-1K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 61A1BBEE))
@@ -2122,6 +2252,8 @@
       (value 1k)
       (footprint Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 652-3296W-1-102LF))
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 61A3B2F3))
@@ -2129,6 +2261,8 @@
       (value 100)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 708-RNF14FTD100R))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 61A4B9A5))
@@ -2143,6 +2277,8 @@
       (value 220)
       (footprint Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 652-3296W-1-221LF))
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 61A7D715))
@@ -2175,11 +2311,11 @@
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 61AFDBD4))
     (comp (ref L81)
-      (value FERRITE)
+      (value 10u)
       (footprint Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 875-28C0236-0EW-10))
+        (field (name MouserPN) 542-78F100-RC))
       (libsource (lib Device) (part L) (description Inductor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 61B0B1AC))
@@ -2247,6 +2383,8 @@
       (value JMP_RV1_BYPASS)
       (footprint Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Device) (part Jumper_NC_Small) (description "Jumper, normally closed, small symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 635201CA))
@@ -2254,6 +2392,8 @@
       (value JMP_RV2_BYPASS)
       (footprint Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Device) (part Jumper_NC_Small) (description "Jumper, normally closed, small symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 6353837A))
@@ -2282,8 +2422,10 @@
       (tstamp 634E857F))
     (comp (ref C19)
       (value 10u/25V)
-      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.50mm)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010672009))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E061026))
@@ -2291,13 +2433,17 @@
       (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-1K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 5E06101C))
     (comp (ref C62)
       (value 10u/25V)
-      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.50mm)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010672009))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 6403521D))
@@ -2305,6 +2451,8 @@
       (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-1K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 64035227))
@@ -2351,6 +2499,8 @@
       (value MOS_6529)
       (footprint LittleSixteen:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet DOCUMENTATION)
+      (fields
+        (field (name MouserPN) ":)"))
       (libsource (lib MOS_6529) (part MOS_6529) (description ""))
       (sheetpath (names "/User Port/") (tstamps /63EAD078/))
       (tstamp 64674547))
@@ -2358,6 +2508,8 @@
       (value USERPORT)
       (footprint LittleSixteen:Plus4_UserPort)
       (datasheet DOCUMENTATION)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib PLUS4_USERPORT) (part PLUS4_USERPORT) (description ""))
       (sheetpath (names "/User Port/") (tstamps /63EAD078/))
       (tstamp 646E7EB3))
@@ -2381,6 +2533,9 @@
       (value MOS_6551_ACIA)
       (footprint LittleSixteen:DIP-28_W15.24mm_Socket_LongPads)
       (datasheet DOCUMENTATION)
+      (fields
+        (field (name MouserPN) ":)")
+        (field (name Notes) "Or MOS 8551, WDC W65C51S (Maybe -N too), Rockwell R6551(A)P, UMC UM6551(A)"))
       (libsource (lib W65C51S) (part W65C51S) (description ""))
       (sheetpath (names "/User Port/") (tstamps /63EAD078/))
       (tstamp 648B1695))
@@ -2420,6 +2575,8 @@
       (value 10k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FTF52-10K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/User Port/") (tstamps /63EAD078/))
       (tstamp 6463BEFC))
@@ -2427,6 +2584,8 @@
       (value 10k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FTF52-10K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names "/User Port/") (tstamps /63EAD078/))
       (tstamp 64646396))
@@ -2547,7 +2706,7 @@
       (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860010472002)
+        (field (name MouserPN) 710-860010672009)
         (field (name Value) 10u))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2557,6 +2716,7 @@
       (footprint Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical)
       (datasheet ~)
       (fields
+        (field (name MouserPN) 652-3296W-1-103LF)
         (field (name Value) 10k))
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2612,7 +2772,7 @@
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 660-MF1/4LCT52R101G)
+        (field (name MouserPN) 708-RNF14FTD100R)
         (field (name Value) 100))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2659,7 +2819,8 @@
       (footprint LittleSixteen:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS245)
       (fields
-        (field (name MouserPN) 595-SN74HCT245N)
+        (field (name MouserPN) 595-SN74HCT245ANSR)
+        (field (name Notes) "Or 595-SN74HCT245NE4")
         (field (name Value) 74HCT245))
       (libsource (lib 74xx) (part 74LS245) (description "Octal BUS Transceivers, 3-State outputs"))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2701,6 +2862,7 @@
       (footprint Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical)
       (datasheet ~)
       (fields
+        (field (name MouserPN) 652-3296W-1-105LF)
         (field (name Notes) "For 6581 do not mount")
         (field (name Value) 1M))
       (libsource (lib Device) (part R_POT) (description Potentiometer))
@@ -2729,10 +2891,10 @@
       (tstamp 64257402))
     (comp (ref C60)
       (value 470u/25V)
-      (footprint Capacitor_THT:CP_Radial_D10.0mm_P5.00mm)
+      (footprint Capacitor_THT:CP_Radial_D8.0mm_P3.50mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860020573008)
+        (field (name MouserPN) 710-860010474013)
         (field (name Value) 100u/16V))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2813,7 +2975,7 @@
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 660-MF1/4LCT52R101G)
+        (field (name MouserPN) 708-RNF14FTD100R)
         (field (name Value) 100))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2823,7 +2985,7 @@
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 660-MF1/4LCT52R101G)
+        (field (name MouserPN) 708-RNF14FTD100R)
         (field (name Value) 100))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
@@ -2904,6 +3066,8 @@
       (value SIDCLK_TESTPOINT)
       (footprint TestPoint:TestPoint_Pad_D2.0mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Connector) (part TestPoint) (description "test point"))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
       (tstamp 64F28672)))
