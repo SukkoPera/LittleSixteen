@@ -166,6 +166,7 @@ F 1 "10u/25V" V 1984 1965 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2145 1965 50  0001 C CNN
 F 3 "~" H 2145 1965 50  0001 C CNN
 F 4 "710-860010672009" H 2145 1965 50  0001 C CNN "MouserPN"
+F 5 "Audio cap recommended" H 2145 1965 50  0001 C CNN "Notes"
 	1    2145 1965
 	0    1    1    0   
 $EndComp
@@ -323,6 +324,7 @@ F 1 "10u/25V" V 4799 2935 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4960 2935 50  0001 C CNN
 F 3 "~" H 4960 2935 50  0001 C CNN
 F 4 "710-860010672009" H 4960 2935 50  0001 C CNN "MouserPN"
+F 5 "Audio cap recommended" H 4960 2935 50  0001 C CNN "Notes"
 	1    4960 2935
 	0    -1   1    0   
 $EndComp
@@ -1108,6 +1110,7 @@ F 1 "10u/25V" V 1984 1450 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2145 1450 50  0001 C CNN
 F 3 "~" H 2145 1450 50  0001 C CNN
 F 4 "710-860010672009" H 2145 1450 50  0001 C CNN "MouserPN"
+F 5 "Audio cap recommended" H 2145 1450 50  0001 C CNN "Notes"
 	1    2145 1450
 	0    1    1    0   
 $EndComp
@@ -1140,6 +1143,7 @@ F 1 "10u/25V" V 1984 950 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2145 950 50  0001 C CNN
 F 3 "~" H 2145 950 50  0001 C CNN
 F 4 "710-860010672009" H 2145 950 50  0001 C CNN "MouserPN"
+F 5 "Audio cap recommended" H 2145 950 50  0001 C CNN "Notes"
 	1    2145 950 
 	0    1    1    0   
 $EndComp

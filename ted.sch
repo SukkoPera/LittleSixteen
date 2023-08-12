@@ -777,6 +777,7 @@ F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8045 5265 50  0001 C CNN
 F 3 "~" H 8045 5265 50  0001 C CNN
 F 4 "710-860010672009" H 8045 5265 50  0001 C CNN "MouserPN"
 F 5 "10u" H 8045 5265 50  0001 C CNN "Value"
+F 6 "Audio cap recommended" H 8045 5265 50  0001 C CNN "Notes"
 	1    8045 5265
 	0    -1   -1   0   
 $EndComp

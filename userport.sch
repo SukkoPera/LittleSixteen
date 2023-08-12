@@ -284,6 +284,7 @@ F 0 "Y2" V 2731 2835 50  0000 L CNN
 F 1 "1.8432M" V 2640 2835 50  0000 L CNN
 F 2 "Crystal:Crystal_HC49-U_Vertical" H 2685 2705 50  0001 C CNN
 F 3 "~" H 2685 2705 50  0001 C CNN
+F 4 "Series, no load cap, max series resistance: 400R" H 2685 2705 50  0001 C CNN "Notes"
 	1    2685 2705
 	0    -1   -1   0   
 $EndComp

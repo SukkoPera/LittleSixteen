@@ -1003,6 +1003,7 @@ F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 14195 1800 50  0001 C CNN
 F 3 "~" H 14195 1800 50  0001 C CNN
 F 4 "710-860010672009" H 14195 1800 50  0001 C CNN "MouserPN"
 F 5 "10u" H 14195 1800 50  0001 C CNN "Value"
+F 6 "Audio cap recommended" H 14195 1800 50  0001 C CNN "Notes"
 	1    14195 1800
 	0    -1   -1   0   
 $EndComp
@@ -1502,7 +1503,7 @@ F 1 "22n" H 6280 1955 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 6433 1850 50  0001 C CNN
 F 3 "~" H 6395 2000 50  0001 C CNN
 F 4 "810-FG28X7R1H223KNT0" H 6395 2000 50  0001 C CNN "MouserPN"
-F 5 "For 6581 use 470pF" H 6395 2000 50  0001 C CNN "Notes"
+F 5 "For 6581 use 470pF, polyester film cap recommended" H 6395 2000 50  0001 C CNN "Notes"
 F 6 "22n" H 6395 2000 50  0001 C CNN "Value"
 	1    6395 2000
 	1    0    0    -1  
@@ -1516,7 +1517,7 @@ F 1 "22n" H 6281 1435 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 6433 1330 50  0001 C CNN
 F 3 "~" H 6395 1480 50  0001 C CNN
 F 4 "810-FG28X7R1H223KNT0" H 6395 1480 50  0001 C CNN "MouserPN"
-F 5 "For 6581 use 470pF" H 6395 1480 50  0001 C CNN "Notes"
+F 5 "For 6581 use 470pF, polyester film cap recommended" H 6395 1480 50  0001 C CNN "Notes"
 F 6 "22n" H 6395 1480 50  0001 C CNN "Value"
 	1    6395 1480
 	1    0    0    -1  
