@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sat 12 Aug 2023 09:49:05 CEST")
+    (date "Sat 12 Aug 2023 10:12:04 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -532,7 +532,6 @@
       (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860010672009)
         (field (name Notes) "Audio cap recommended")
         (field (name Value) 10u))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
@@ -2135,7 +2134,6 @@
       (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860010672009)
         (field (name Notes) "Audio cap recommended"))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
@@ -2200,7 +2198,6 @@
       (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860010672009)
         (field (name Notes) "Audio cap recommended"))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
@@ -2337,9 +2334,11 @@
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 61B1AD5D))
     (comp (ref C83)
-      (value 100u/35V)
-      (footprint Capacitor_THT:CP_Radial_D6.3mm_P2.50mm)
+      (value 10u/25V)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 710-860010672009))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
       (tstamp 61BCB802))
@@ -2428,7 +2427,6 @@
       (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860010672009)
         (field (name Notes) "Audio cap recommended"))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
@@ -2447,7 +2445,6 @@
       (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860010672009)
         (field (name Notes) "Audio cap recommended"))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names "/Audio/Video Output/") (tstamps /5E019FCB/))
@@ -2713,7 +2710,6 @@
       (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 710-860010672009)
         (field (name Notes) "Audio cap recommended")
         (field (name Value) 10u))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
