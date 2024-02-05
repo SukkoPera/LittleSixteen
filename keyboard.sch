@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 14
 Title "LittleSixteen"
-Date "2022-08-17"
+Date "2024-02-05"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -97,9 +97,9 @@ $Comp
 L Connector:Conn_01x20_Male CN2
 U 1 1 5DED69BA
 P 9620 2415
-F 0 "CN2" H 9728 3496 50  0000 C CNN
-F 1 "KEYBOARD_HEADER" H 9728 3405 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 9620 2415 50  0001 C CNN
+F 0 "CN2" H 9592 2389 50  0000 R CNN
+F 1 "KEYBOARD_HEADER" H 9592 2298 50  0000 R CNN
+F 2 "LittleSixteen:PinHeader_1x20_P2.54mm_NoPin2" H 9620 2415 50  0001 C CNN
 F 3 "~" H 9620 2415 50  0001 C CNN
 	1    9620 2415
 	-1   0    0    -1  
@@ -118,8 +118,8 @@ Text Label 8485 2815 2    50   ~ 0
 k2
 Text Label 8485 2915 2    50   ~ 0
 k1
-Text Notes 9685 2535 0    50   ~ 0
-Pin 2: Key (Missing)\nPins 5, 20: NC\nMale
+Text Notes 9645 3055 0    50   ~ 0
+Male\nPin 2: Key (Missing)\nPin 5: NC on original board,\n       optional power for\n       MechBoard16 for us\nPin 20: NC
 Text Label 8485 3215 2    50   ~ 0
 k0
 Wire Wire Line
@@ -241,7 +241,7 @@ F 3 "~" H 8820 1715 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	9420 1915 9155 1915
+	9420 1915 9185 1915
 $Comp
 L emi_filter_3pin:EMI_Filter_3Pin FB53
 U 1 1 5E279505
@@ -444,7 +444,6 @@ Wire Wire Line
 	7310 2015 7965 2015
 Wire Wire Line
 	8235 2015 8930 2015
-NoConn ~ 9155 1915
 NoConn ~ 9155 3415
 Wire Wire Line
 	8235 2415 8940 2415
@@ -800,6 +799,32 @@ Wire Wire Line
 	5570 4595 6520 4595
 Wire Wire Line
 	6520 4595 6520 3485
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 65C514B9
+P 9185 1120
+F 0 "JP1" V 9139 1168 50  0000 L CNN
+F 1 "JMP_KBD_POWER" V 9230 1168 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9185 1120 50  0001 C CNN
+F 3 "~" H 9185 1120 50  0001 C CNN
+	1    9185 1120
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9185 1915 9185 1220
+$Comp
+L power:VCC #PWR024
+U 1 1 65C61E3F
+P 9185 925
+F 0 "#PWR024" H 9185 775 50  0001 C CNN
+F 1 "VCC" H 9202 1098 50  0000 C CNN
+F 2 "" H 9185 925 50  0001 C CNN
+F 3 "" H 9185 925 50  0001 C CNN
+	1    9185 925 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9185 925  9185 1020
 Wire Bus Line
 	3090 2015 3090 2720
 Wire Bus Line
