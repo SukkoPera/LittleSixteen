@@ -15,8 +15,8 @@ D Power symbol creates a global label with name "VGND" , video ground
 K power-flag
 $ENDCMP
 #
-$CMP VTED
-D Power symbol creates a global label with name "VTED"
+$CMP VSID
+D Power symbol creates a global label with name "VSID"
 K power-flag
 $ENDCMP
 #
