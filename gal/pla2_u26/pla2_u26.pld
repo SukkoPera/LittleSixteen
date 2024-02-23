@@ -1,0 +1,106 @@
+/* LittleSixteen V4 PLA2 (U26) Equations
+ * Copyright 2022-2024 SukkoPera <software@sukkology.net>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+Name PLA2_U26;
+Partno TBD;
+Date 14/02/2023;
+Revision 01;
+Designer SukkoPera;
+Company OpenRetroWorks;
+Assembly None;
+Location Italy;
+Device g16v8as;		// Simple Mode
+
+/* This implements almost all the logic required by the 256 kB RAM Expansion for the Commodore 16/Plus 4 designed by
+ * Hannes, as drawn in the schematics by Solder/Synergy.
+ *
+ * The memory of 512 kB is divided in 8 64kB banks. You can only use 480 kB though, because you can't switch memory
+ * lower than $1000. A further restriction is possible if you use bit 7. The control register for the expansion is
+ * located at address $FD16 (64790):
+ *
+ * - Bit 0/1/2: Select RAM-bank (0-7), standard is RAM-bank 7
+ * - Bit 3: Unused, but could be for a 1 MB version - LEave at 1
+ * - Bit 4/5: Leave these set to 1 for compatibility with the expansion by CSORY
+ * - Bit 6: "TED-feature", added in "Update 1":
+ *   - 1: Allows TED access to RAM (for text, graphic) to RAM-bank selected with bits 0..2
+ *   - 0: TED access to RAM only in bank 7, bits 0..2 ignored
+ * - Bit 7: Set the switch-bound:
+ *   - 0: >$0fff
+ *   - 1: >$3fff
+ *
+ * Note:
+ * - At power-on the plus/4 all bits are "1". The standard bank is bank 7.
+ *
+ * This GAL implements all the glue logic shown in the schematics by Solder/Synergy, *except* the 6529B implementing the
+ * control register. Since that IC is not easy to find these days, we use an alternative circuit involving a 74x573 for
+ * the write part (a 74x273 could be used too, but the '573 simplified our routing), a 74x245 for the readback part,
+ * some pull-up resistors and a NE555 to implement the "outputs-high-on-reset" feature of the 6529 (a 74x74 or any other
+ * D-type flip-flop could replace the '555, but I didn't want to have a partially-used IC and I had a ton of '555 lying
+ * around). It could be objected that this alternative circuit is a bit overkill as the expansion only uses p0/1/6/7,
+ * but a lot of the software already available which supports this expansion seems to read/write the whole 8 bits of the
+ * register in their expansion-detecting algorithms, so better play safe. V1 of the expansion only implemented those 4
+ * bits though, and all the software I tested still appeared to work correctly. If you are writing a new detection
+ * algorithm, I'd recommend to only use p0/1/6/7.
+ * 
+ * Thanks to Levente Harsfalvi (TLC) for suggesting this replacement circuit for the 6529.
+ */
+
+/** Pin Definitions **/
+
+/* High Address Bits Generation - 512 kB Version (8 slots)
+ * P0/P1/P2: Select RAM-bank (0-7), standard is RAM-bank 7
+ * P6: 0: TED always accesses RAM bank 7, 1 = TED accesses selected RAM-bank
+ * P7: Switch-bound: 0 = >$0fff, 1 = >$3fff
+ */
+Pin 1 = a15;
+Pin 2 = a14;
+Pin 3 = a13;
+Pin 4 = a12;
+Pin 5 = p0;						// P0 from RAM Register
+Pin 6 = p1;						// P1 from RAM Register
+Pin 7 = p2;						// P2 from RAM Register
+Pin 8 = p6;						// P6 from RAM Register
+Pin 9 = p7;						// P7 from RAM Register
+Pin 11 = aec;					// Low when TED accesses bus
+
+Pin 17 = sram_a18;				// OUTPUT: A16 for 512 kB RAM's additional address line
+Pin 18 = sram_a17;				// OUTPUT: A17 for 512 kB RAM's additional address line
+Pin 19 = sram_a16;				// OUTPUT: A18 for 512 kB RAM's additional address line
+
+// Joystick Buffer
+Pin 12 = d2;					// Active-low, joystick 1 select input
+Pin 13 = d1;					// Active-low, joystick 2 select input
+Pin 14 = joyswap;				// Active-low, swaps joysticks
+Pin 15 = j2sel;					// OUTPUT: Active-low, joystick 2 select
+Pin 16 = j1sel;					// OUTPUT: Active-low, joystick 1 select
+
+
+/** Declarations and Intermediate Variable Definitions **/
+FIELD _addr = [a15..12];
+
+
+/** Logic Equations **/
+
+// High Address Bits Generation
+_switchable_range = (!p7 & _addr:[1000..FFFF]) # (p7 & _addr:[4000..FFFF]);
+sram_a16 = (aec & (p0 # !_switchable_range)) # (!aec & (!p6 # !_switchable_range # p0));
+sram_a17 = (aec & (p1 # !_switchable_range)) # (!aec & (!p6 # !_switchable_range # p1));
+sram_a18 = (aec & (p2 # !_switchable_range)) # (!aec & (!p6 # !_switchable_range # p2));
+
+// Joystick Buffer
+j1sel = (joyswap & d2) # (!joyswap & d1);
+j2sel = (joyswap & d1) # (!joyswap & d2);

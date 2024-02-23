@@ -1,0 +1,89 @@
+/* LittleSixteen V4 PLA1 (U19) Equations
+ * Copyright 2022-2024 SukkoPera <software@sukkology.net>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+Name PLA1_U18;
+Partno TBD;
+Date 14/02/2023;
+Revision 01;
+Designer SukkoPera;
+Company OpenRetroWorks;
+Assembly None;
+Location Italy;
+Device g16v8as;		// Simple Mode
+
+/* This is derived from PLA16V8 by D. Mantione: https://www.freepascal.org/~daniel/c16pla/
+ * It behaves almost as a normal C16/+4 PLA except that:
+ * - Does NOT produce userport /CS
+ * - Instead produces SID & 3rd joystick port /CS
+ */
+
+/** Pin Definitions **/
+
+// Inputs
+pin 1  = i_affxx;	// High if A10-15 are all high (i.e.: $FCxx-$FFxx)
+pin 2  = i_a7;
+pin 3  = i_a6;
+pin 4  = i_a5;
+pin 5  = i_a4;
+pin 6  = i_phi0;
+pin 7  = i_mux;
+pin 8  = i_a9;
+pin 9  = i_ras;		// Active-low
+pin 11 = i_a8;
+
+// Outputs (All active-low except o_kernal and o_f7, which is actually useless)
+pin 12 = o_acia;
+pin 13 = o_sid;
+pin 14 = o_phi2;
+pin 15 = o_joyport;
+pin 16 = o_addrclk;
+pin 17 = o_spi_keyb;
+pin 18 = o_f7;
+pin 19 = o_kernal;
+
+
+/** Declarations and Intermediate Variable Definitions **/
+FIELD _addr_lo = [i_a7..0];
+
+
+/** Logic Equations **/
+
+o_f7 = i_mux # (!i_ras & i_phi0 & o_f7);			// Note this is internally looped, no need to put it on output pin
+o_phi2 = !i_ras & i_phi0 & o_f7;
+
+// SID
+_addr_fdxx = i_affxx & !i_a9 & i_a8;
+_addr_fexx = i_affxx & i_a9 & !i_a8;
+_de_range = _addr_fdxx & _addr_lo:[40..5F];			// $FD4x/FD5x
+_hu_range = _addr_fexx & _addr_lo:[80..9F];			// $FD8x/FD9x
+o_sid = !(o_phi2 & (_de_range # _hu_range));		// Addresses are valid on PHI2 rising edge
+
+/* Joystick port Chip Select (Always FD80-FD8F) */
+_joyrange = _addr_fdxx & _addr_lo:[80..8F];			// $FD8x
+o_joyport = !(o_phi2 & _joyrange);
+
+// $FD0x
+o_acia = !(i_affxx & !i_a9 & i_a8 & !i_a7 & !i_a6 & !i_a5 & !i_a4 & !i_ras & i_phi0 & o_f7);
+
+// $FDDx
+o_addrclk = !(i_affxx & !i_a9 & i_a8 & i_a7 & i_a6 & !i_a5 & i_a4 & !i_ras & i_phi0 & o_f7);
+
+// $FD3x
+o_spi_keyb = !(i_affxx & !i_a9 & i_a8 & !i_a7 & !i_a6 & i_a5 & i_a4 & !i_ras & i_phi0 & o_f7);
+
+// $FCxx (but active-HIGH!?!?)
+o_kernal = i_affxx & !i_a9 & !i_a8;

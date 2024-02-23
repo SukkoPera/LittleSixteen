@@ -1,0 +1,93 @@
+/* LittleSixteen V4 PLA3 (U28) Equations
+ * Copyright 2022-2024 SukkoPera <software@sukkology.net>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+Name PLA3_U28;
+Partno TBD;
+Date 14/02/2023;
+Revision 01;
+Designer SukkoPera;
+Company OpenRetroWorks;
+Assembly None;
+Location Italy;
+Device g16v8as;		// Simple Mode
+
+/** Pin Definitions **/
+
+/* RAM Register /CS (handled by HCT138 in the original Hannes/Solder schematics)
+ * The idea is to decode the $FD10-FD1F Userport /CS range, only feeding $FD10 to its original purpose and using the
+ * remaining addresses for other stuff. In particular, $FD16 will be the control register for our RAM expansion.
+ * 
+ * Note: the Userport /CS range is also known as "Cassette" on the C16 schematics, as it actually has no Userport.
+ */
+Pin 1 = a9;
+Pin 2 = a8;
+Pin 3 = a7;
+Pin 4 = a6;
+Pin 5 = a5;
+Pin 6 = a4;
+Pin 7 = a3;
+Pin 8 = a2;
+Pin 9 = a1;
+Pin 11 = a0;
+Pin 12 = rw;				// R/W: Since we emulate the MOS 6529 used in the original project with several chips, we'll
+                            // need to enable one or the other according to whether a read or a write is in progress
+Pin 13 = phi2;
+Pin 16 = ramreg_wcs;		// OUTPUT: $FD16 = CS for RAM Register Write (U3, 74x573)
+Pin 17 = ramreg_rcs;		// OUTPUT: $FD16 = /CS for RAM Register Read (U4, 74x245)
+Pin 18 = userport_cs;		// OUTPUT: $FD10, enables Userport 6529 (C16: U11 pin 10/+4: U5 pin 19)
+Pin 19 = a15_10_hi;			// 6-input AND gate implemented with diode logic for the PLA16V8, high iff a15..10 are all high
+
+
+/* Userport 6529 replacement: We also generate some signals that can be used for replacing the MOS 6529 that normally
+ * controls the parallel section of the Userport with a stock 74ALS654. This is derived from work by Daniel Mantione,
+ * thanks!
+ */
+Pin 14 = gab;				// 74LS654 A-B enable
+Pin 15 = cba;				// 74LS654 B-A clock
+
+
+/** Declarations and Intermediate Variable Definitions **/
+//~ _addr_fcxx = a15_10_hi & !a9 & !a8;
+_addr_fdxx = a15_10_hi & !a9 & a8;
+//~ _addr_fexx = a15_10_hi & a9 & !a8;
+//~ _addr_ffxx = a15_10_hi & a9 & a8;
+Field _addr_lo = [a7..0];
+
+
+/** Logic Equations **/
+
+// RAM Register
+userport_cs = !(phi2 & _addr_fdxx & _addr_lo:10);		// Keep the internal userport accessible at $FD10
+ramreg_rcs = !(rw & phi2 & _addr_fdxx & _addr_lo:16);	// R/W high => Reading
+ramreg_wcs = !rw & phi2 & _addr_fdxx & _addr_lo:16;		// R/W low => Writing. Note that this is active-high, as the
+														// 74x573 is transparent when pin 11 is low and latches the last
+														// value when it goes high
+
+/*** SIGNALS FOR MOS 6529 REPLACEMENT BASED ON 74LS654 ***/
+
+/* This is an *active-high* enable for the CPU bus facing side, it should drive the bus when chip is selected (cs = 0)
+ * for reading (rw = 1)
+ */
+gab = rw & !userport_cs;
+
+/* This is the clock that stores data that drives the userport-facing side, it shall output a rising edge when chip is
+ * selected (cs = 0) for writing (rw = 0) at the end of the cycle (i.e.: when the last of them goes high).
+ *
+ * I think we are slightly wrong here, as this will go high as soon as *one* of rw or cs goes high, while *I think* the
+ * 6529 stores data upon the last rising edge of the two, but it won't matter much in practice.
+ */
+cba = rw # userport_cs;
