@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 14
 Title "LittleSixteen"
-Date "2020-01-03"
+Date "2024-02-05"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -798,6 +798,81 @@ F 3 "" H 8250 5770 50  0001 C CNN
 	1    8250 5770
 	1    0    0    -1  
 $EndComp
+$Comp
+L Oscillator:CXO_DIP14 X1
+U 1 1 65CA419C
+P 3300 6040
+F 0 "X1" H 3490 6300 50  0000 R CNN
+F 1 "OSC_DIP14" H 3775 5780 50  0000 R CNN
+F 2 "LittleSixteen:Oscillator_DIP-8+14" H 3750 5690 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 3200 6040 50  0001 C CNN
+	1    3300 6040
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 65CA9785
+P 3300 6385
+F 0 "#PWR031" H 3300 6135 50  0001 C CNN
+F 1 "GND" H 3305 6212 50  0000 C CNN
+F 2 "" H 3300 6385 50  0001 C CNN
+F 3 "" H 3300 6385 50  0001 C CNN
+	1    3300 6385
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6340 3300 6385
+Wire Wire Line
+	3300 5740 3300 5635
+$Comp
+L power:VCC #PWR025
+U 1 1 65CAECEF
+P 3300 5635
+F 0 "#PWR025" H 3300 5485 50  0001 C CNN
+F 1 "VCC" H 3317 5808 50  0000 C CNN
+F 2 "" H 3300 5635 50  0001 C CNN
+F 3 "" H 3300 5635 50  0001 C CNN
+	1    3300 5635
+	1    0    0    -1  
+$EndComp
+Text Label 6000 2850 0    50   ~ 0
+clock_in
+Text Label 4095 6040 2    50   ~ 0
+clock_in
+Wire Wire Line
+	3600 6040 4095 6040
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 65CBEEFF
+P 2750 6040
+F 0 "JP2" H 2750 6225 50  0000 C CNN
+F 1 "JMP_OSC_GND" H 2750 6134 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2750 6040 50  0001 C CNN
+F 3 "~" H 2750 6040 50  0001 C CNN
+	1    2750 6040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6040 3000 6040
+Wire Wire Line
+	2650 6040 2485 6040
+$Comp
+L power:GND #PWR029
+U 1 1 65CCA0B2
+P 2485 6385
+F 0 "#PWR029" H 2485 6135 50  0001 C CNN
+F 1 "GND" H 2490 6212 50  0000 C CNN
+F 2 "" H 2485 6385 50  0001 C CNN
+F 3 "" H 2485 6385 50  0001 C CNN
+	1    2485 6385
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2485 6040 2485 6385
+Text Notes 2450 7070 0    50   ~ 0
+This can replace the whole circuit above.\n\nIf a DFO is mounted, PAL/NTSC switching\nbecomes a breeze ;)
+Text Notes 2640 5305 0    50   ~ 0
+ALTERNATIVE DISCRETE OSCILLATOR
 Wire Bus Line
 	6865 885  6865 1650
 Wire Bus Line
