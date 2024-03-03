@@ -62,14 +62,14 @@ FIELD _addr_lo = [i_a7..0];
 
 /** Logic Equations **/
 
-o_f7 = i_mux # (!i_ras & i_phi0 & o_f7);			// Note this is internally looped, no need to put it on output pin
+o_f7 = i_mux # (!i_ras & i_phi0 & o_f7);
 o_phi2 = !i_ras & i_phi0 & o_f7;
 
 // SID
 _addr_fdxx = i_affxx & !i_a9 & i_a8;
 _addr_fexx = i_affxx & i_a9 & !i_a8;
 _de_range = _addr_fdxx & _addr_lo:[40..5F];			// $FD4x/FD5x
-_hu_range = _addr_fexx & _addr_lo:[80..9F];			// $FD8x/FD9x
+_hu_range = _addr_fexx & _addr_lo:[80..9F];			// $FE8x/FE9x
 o_sid = !(o_phi2 & (_de_range # _hu_range));		// Addresses are valid on PHI2 rising edge
 
 /* Joystick port Chip Select (Always FD80-FD8F) */

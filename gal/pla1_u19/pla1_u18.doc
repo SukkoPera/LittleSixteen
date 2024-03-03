@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          g16v8as  Library DLIB-h-40-2
-Created         Fri Feb 23 23:24:01 2024
+Created         Sun Mar 03 15:02:06 2024
 Name            PLA1_U18
 Partno          TBD
 Revision        01
@@ -55,6 +55,9 @@ o_joyport =>
 o_kernal =>
     !i_a8 & !i_a9 & i_affxx
 
+o_phi2 =>
+    i_phi0 & !i_ras & o_f7
+
 o_sid =>
     !i_a5 & !i_a6 & i_a7 & !i_a8 & i_a9 & i_affxx & o_phi2
   # !i_a5 & i_a6 & !i_a7 & i_a8 & !i_a9 & i_affxx & o_phi2
@@ -93,7 +96,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     o_f7                        18       V        2       8       2     
     o_joyport                   15       V        1       8       2     
     o_kernal                    19       V        1       8       2     
-    o_phi2                      14       V        -       -       -     
+    o_phi2                      14       V        1       8       2     
     o_sid                       13       V        2       8       2     
     o_spi_keyb                  17       V        1       8       2     
 
