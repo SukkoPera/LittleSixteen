@@ -15,14 +15,15 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-Name PLA2_U26;
+Name PLA2_U26_256K;
 Partno TBD;
-Date 14/02/2023;
-Revision 01;
+Date 21/07/2024;
+Revision 02;
 Designer SukkoPera;
 Company OpenRetroWorks;
 Assembly None;
 Location Italy;
 Device g16v8as;		// Simple Mode
 
+$DEFINE TWOFIVESIX 'b'1
 $INCLUDE pla2_u26_main.inc

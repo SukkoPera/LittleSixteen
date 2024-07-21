@@ -1,15 +1,15 @@
 
 *******************************************************************************
-                                   PLA2_U26
+                                 PLA2_U26_256K
 *******************************************************************************
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          g16v8as  Library DLIB-h-40-2
-Created         Sun Jul 21 02:03:49 2024
-Name            PLA2_U26
+Created         Sun Jul 21 02:05:05 2024
+Name            PLA2_U26_256K
 Partno          TBD
-Revision        01
-Date            14/02/2023
+Revision        02
+Date            21/07/2024
 Designer        SukkoPera
 Company         OpenRetroWorks
 Assembly        None
@@ -52,10 +52,7 @@ sram_a17 =>
   # !aec & !p6
 
 sram_a18 =>
-    p2
-  # !a14 & !a15 & p7
-  # !a12 & !a13 & !a14 & !a15
-  # !aec & !p6
+    0 
 
 
 ===============================================================================
@@ -85,7 +82,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     p7                          9        V        -       -       -     
     sram_a16                    19       V        4       8       1     
     sram_a17                    18       V        4       8       1     
-    sram_a18                    17       V        4       8       1     
+    sram_a18                    17       V        1       8       1     
 
 
 LEGEND    D : default variable         F : field      G : group
