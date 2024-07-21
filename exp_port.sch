@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 14
 Title "LittleSixteen"
-Date "2021-12-05"
+Date "2024-07-21"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -303,7 +303,7 @@ Text GLabel 4305 3890 0    50   Input ~ 0
 Wire Wire Line
 	6605 3290 7440 3290
 Text GLabel 7440 3290 2    50   Input ~ 0
-~BRESET
+~RESET
 Text GLabel 7230 3190 2    50   Input ~ 0
 C1_LOW
 Wire Wire Line
