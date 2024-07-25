@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 14
 Title "LittleSixteen"
-Date "2023-07-25"
+Date "2024-07-21"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -1164,7 +1164,7 @@ Text GLabel 6660 6450 2    50   Output ~ 0
 Wire Wire Line
 	5880 1535 6100 1535
 Text Notes 6690 1745 0    50   ~ 0
-CST_SENSE:\nLOW if one of the\nkeys PLAY,\nRECORD, F.FWD\nor REW is pressed,\nHIGH otherwise
+CST_SENSE:\nLOW if one of the\nkeys PLAY,\nRECORD, F.FWD\nor REW is pressed,\nHIGH otherwise\n(actually floating)
 Text GLabel 6100 1535 2    50   Output ~ 0
 ~TAPE_SENSE
 $Comp
