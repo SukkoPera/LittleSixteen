@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 13 14
 Title "LittleSixteen"
-Date "2024-07-21"
+Date "2024-08-07"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -1142,23 +1142,6 @@ Text GLabel 11585 1280 0    50   Input ~ 0
 ~CASSETTE
 Text GLabel 11775 1380 0    50   Input ~ 0
 R_~W
-Wire Wire Line
-	14150 1520 13940 1520
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 6486FE58
-P 13840 1520
-AR Path="/5E6A379E/6486FE58" Ref="JP?"  Part="1" 
-AR Path="/63EAD078/6486FE58" Ref="JP12"  Part="1" 
-F 0 "JP12" H 13840 1732 50  0000 C CNN
-F 1 "JMP_TPSENSE" H 13840 1641 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13840 1520 50  0001 C CNN
-F 3 "~" H 13840 1520 50  0001 C CNN
-	1    13840 1520
-	-1   0    0    -1  
-$EndComp
-Text GLabel 14150 1520 2    50   Input ~ 0
-~TAPE_SENSE
 $Comp
 L emi_filter_3pin:EMI_Filter_3Pin FB?
 U 1 1 647EB007
@@ -1176,8 +1159,6 @@ Wire Wire Line
 	6470 6830 7690 6830
 Wire Wire Line
 	13500 1520 13500 1820
-Wire Wire Line
-	13500 1520 13740 1520
 Connection ~ 13500 1820
 Wire Wire Line
 	13500 1820 13675 1820
@@ -1551,6 +1532,10 @@ NoConn ~ 10770 10770
 NoConn ~ 11370 10770
 Text Notes 1380 5695 0    50   ~ 0
 Generates:\n- Control signals for the Hannes RAM Expansion register at $FD16\n- ~CS~ for the User Port MOS 6529 (or replacement) at $FD10 only, named ~CASSETTE~ here\n- Other control signals for the User Port MOS 6529 replacement circuit
+Text GLabel 13950 1520 2    50   Input ~ 0
+~TAPE_SENSE_USERPORT
+Wire Wire Line
+	13500 1520 13950 1520
 Wire Bus Line
 	9765 6730 9765 8260
 Wire Bus Line

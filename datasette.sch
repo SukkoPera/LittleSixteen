@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 14
 Title "LittleSixteen"
-Date "2024-07-21"
+Date "2024-08-07"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -229,8 +229,6 @@ Wire Wire Line
 Connection ~ 5130 2965
 Wire Wire Line
 	6050 2865 6050 2965
-Wire Wire Line
-	6575 2325 6810 2325
 $Comp
 L Device:C C25
 U 1 1 5ECF7C46
@@ -289,10 +287,6 @@ F 3 "" H 5550 975 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 975  5550 1070
-Text GLabel 6810 2325 2    50   Input ~ 0
-p[0..7]
-Text Label 6650 2325 0    50   ~ 0
-p6
 Text GLabel 9940 2115 2    50   Input ~ 0
 p[0..7]
 Text Notes 9945 2045 0    50   ~ 0
@@ -451,7 +445,7 @@ Text Notes 4865 4060 0    157  ~ 0
 SERIAL BUS\n(OR 1541 DISK DRIVE)
 Text Notes 2405 1110 0    157  ~ 0
 DATASSETTE\nINTERFACE
-Text Notes 7130 2250 2    50   ~ 0
+Text Notes 7300 2150 2    50   ~ 0
 CST_WRT
 Wire Wire Line
 	7505 5820 7505 5865
@@ -1163,10 +1157,10 @@ Text GLabel 6660 6450 2    50   Output ~ 0
 ~BRESET
 Wire Wire Line
 	5880 1535 6100 1535
-Text Notes 6690 1745 0    50   ~ 0
+Text Notes 6895 1770 0    50   ~ 0
 CST_SENSE:\nLOW if one of the\nkeys PLAY,\nRECORD, F.FWD\nor REW is pressed,\nHIGH otherwise\n(actually floating)
-Text GLabel 6100 1535 2    50   Output ~ 0
-~TAPE_SENSE
+Text GLabel 6440 1110 2    50   Output ~ 0
+~TAPE_SENSE_USERPORT
 $Comp
 L Device:R_Network05_Split RP1
 U 5 1 64605429
@@ -1315,6 +1309,45 @@ F 3 "~" H 7965 5930 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7430 6085 7965 6085
+$Comp
+L Jumper:Jumper_3_Open JP12
+U 1 1 66B76798
+P 6250 1535
+F 0 "JP12" V 6204 1621 50  0000 L CNN
+F 1 "JMP_TPSENSE" V 6295 1621 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6250 1535 50  0001 C CNN
+F 3 "~" H 6250 1535 50  0001 C CNN
+	1    6250 1535
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 1285 6250 1110
+Wire Wire Line
+	6250 1110 6440 1110
+Wire Wire Line
+	6250 1785 6250 1960
+Text Notes 6070 995  0    50   ~ 0
+JP12 replicates JP8/9 of the Plus/4\nSet to 1-2 unless you know what you are doing
+Text Label 6650 2325 0    50   ~ 0
+p6
+Text GLabel 6980 2225 2    50   Input ~ 0
+p[0..7]
+Wire Wire Line
+	6575 2325 6810 2325
+Text Label 6515 1960 0    50   ~ 0
+p7
+Text GLabel 6895 1860 2    50   Output ~ 0
+p[0..7]
+Wire Wire Line
+	6250 1960 6675 1960
+Entry Wire Line
+	6810 2325 6910 2225
+Wire Bus Line
+	6910 2225 6980 2225
+Entry Wire Line
+	6675 1960 6775 1860
+Wire Bus Line
+	6775 1860 6895 1860
 Wire Bus Line
 	3075 4640 3075 5520
 $EndSCHEMATC
