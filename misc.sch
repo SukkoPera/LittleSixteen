@@ -261,21 +261,6 @@ $EndComp
 Text GLabel 5595 3755 2    50   Output ~ 0
 ~RESET
 Wire Wire Line
-	5255 3215 5255 3305
-$Comp
-L power:VCC #PWR?
-U 1 1 61864E27
-P 5255 3215
-AR Path="/5E4A81E1/61864E27" Ref="#PWR?"  Part="1" 
-AR Path="/5EACE220/61864E27" Ref="#PWR0145"  Part="1" 
-F 0 "#PWR0145" H 5255 3065 50  0001 C CNN
-F 1 "VCC" H 5272 3388 50  0000 C CNN
-F 2 "" H 5255 3215 50  0001 C CNN
-F 3 "" H 5255 3215 50  0001 C CNN
-	1    5255 3215
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
 	1905 4745 3095 4745
 Wire Wire Line
 	1905 4370 1905 4745
@@ -1148,20 +1133,6 @@ Wire Wire Line
 	9405 5825 9405 5950
 NoConn ~ 10105 6050
 $Comp
-L Device:R_Network05_Split RP?
-U 1 1 646314F4
-P 5255 3455
-AR Path="/5ECB474B/646314F4" Ref="RP?"  Part="1" 
-AR Path="/5EACE220/646314F4" Ref="RP1"  Part="1" 
-F 0 "RP1" H 5343 3501 50  0000 L CNN
-F 1 "1k" H 5343 3410 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 5175 3455 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5255 3455 50  0001 C CNN
-F 4 "Bussed" H 5255 3455 50  0001 C CNN "Notes"
-	1    5255 3455
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+9V #PWR09
 U 1 1 6528EC50
 P 2640 6360
@@ -1454,5 +1425,19 @@ F 3 "~" H 6935 6960 50  0001 C CNN
 F 4 "---" H 6735 6960 50  0001 C CNN "MouserPN"
 	1    6735 6960
 	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Network05_Split RP?
+U 4 1 66C4D809
+P 5255 3455
+AR Path="/5ECB474B/66C4D809" Ref="RP?"  Part="4" 
+AR Path="/5EACE220/66C4D809" Ref="RP1"  Part="4" 
+F 0 "RP1" H 5353 3493 50  0000 L CNN
+F 1 "1k" H 5353 3402 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 5175 3455 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5255 3455 50  0001 C CNN
+F 4 "Bussed" H 5255 3455 50  0001 C CNN "Notes"
+	4    5255 3455
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

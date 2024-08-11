@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 14
 Title "LittleSixteen"
-Date "2024-08-07"
+Date "2024-08-11"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -376,8 +376,6 @@ Wire Wire Line
 	4250 5175 3175 5175
 Wire Wire Line
 	7505 5865 6280 5865
-Wire Wire Line
-	6080 5865 5805 5865
 $Comp
 L 74xx:74LS06 U9
 U 2 1 5EDAC005
@@ -391,7 +389,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 4255 5865 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5805 4875 5805 5865
-Connection ~ 5805 5865
 Wire Wire Line
 	5805 5865 4555 5865
 Wire Wire Line
@@ -519,8 +516,6 @@ Text Notes 7190 5860 0    50   ~ 0
 RESET
 Text Notes 7795 5415 0    50   ~ 0
 GND
-Text Notes 4070 6785 0    50   ~ 0
-NOTES:\n- Fastloaders might use these signals differently!\n- All signals are active-low\n- All signals are open collector, since this is a *bus*
 Connection ~ 3010 2425
 Wire Notes Line
 	2960 4490 4025 4500
@@ -1150,12 +1145,6 @@ Wire Wire Line
 Text GLabel 6655 4860 2    50   Output ~ 0
 ~ATTN
 Wire Wire Line
-	5805 5865 5805 6450
-Wire Wire Line
-	5805 6450 6660 6450
-Text GLabel 6660 6450 2    50   Output ~ 0
-~BRESET
-Wire Wire Line
 	5880 1535 6100 1535
 Text Notes 6895 1770 0    50   ~ 0
 CST_SENSE:\nLOW if one of the\nkeys PLAY,\nRECORD, F.FWD\nor REW is pressed,\nHIGH otherwise\n(actually floating)
@@ -1163,50 +1152,26 @@ Text GLabel 6440 1110 2    50   Output ~ 0
 ~TAPE_SENSE_USERPORT
 $Comp
 L Device:R_Network05_Split RP1
-U 5 1 64605429
+U 3 1 646039C4
 P 5505 4725
-F 0 "RP1" H 5519 5040 50  0000 C CNN
-F 1 "1k" H 6060 4725 50  0000 C CNN
+F 0 "RP1" H 5405 5040 50  0000 L CNN
+F 1 "1k" H 5603 4672 50  0001 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 5425 4725 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5505 4725 50  0001 C CNN
 F 4 "Bussed" H 5505 4725 50  0001 C CNN "Notes"
-	5    5505 4725
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Network05_Split RP1
-U 4 1 646047D0
-P 5655 4725
-F 0 "RP1" H 5669 4948 50  0000 C CNN
-F 1 "1k" H 5753 4672 50  0001 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 5575 4725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5655 4725 50  0001 C CNN
-F 4 "Bussed" H 5655 4725 50  0001 C CNN "Notes"
-	4    5655 4725
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Network05_Split RP1
-U 3 1 646039C4
-P 5805 4725
-F 0 "RP1" H 5705 5040 50  0000 L CNN
-F 1 "1k" H 5903 4672 50  0001 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 5725 4725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5805 4725 50  0001 C CNN
-F 4 "Bussed" H 5805 4725 50  0001 C CNN "Notes"
-	3    5805 4725
+	3    5505 4725
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Network05_Split RP1
 U 2 1 64602B24
-P 5950 4725
-F 0 "RP1" H 5845 4950 50  0000 L CNN
-F 1 "1k" H 6048 4672 50  0001 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 5870 4725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5950 4725 50  0001 C CNN
-F 4 "Bussed" H 5950 4725 50  0001 C CNN "Notes"
-	2    5950 4725
+P 5655 4725
+F 0 "RP1" H 5550 4950 50  0000 L CNN
+F 1 "1k" H 5753 4672 50  0001 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 5575 4725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5655 4725 50  0001 C CNN
+F 4 "Bussed" H 5655 4725 50  0001 C CNN "Notes"
+	2    5655 4725
 	1    0    0    -1  
 $EndComp
 Text Label 7915 2425 0    50   ~ 0
@@ -1251,17 +1216,6 @@ F 2 "LittleSixteen:EMI_Filter" V 7520 2425 50  0001 C CNN
 F 3 "~" H 7590 2425 50  0001 C CNN
 	1    7590 2425
 	0    -1   1    0   
-$EndComp
-$Comp
-L emi_filter_3pin:EMI_Filter_3Pin FB2
-U 1 1 6707F003
-P 6180 5865
-F 0 "FB2" V 6325 5865 50  0000 C CNN
-F 1 "DSS1NB32A271Q91A" H 6280 5820 50  0001 L CNN
-F 2 "LittleSixteen:EMI_Filter" V 6110 5865 50  0001 C CNN
-F 3 "~" H 6180 5865 50  0001 C CNN
-	1    6180 5865
-	0    1    -1   0   
 $EndComp
 $Comp
 L emi_filter_3pin:EMI_Filter_3Pin FB3
@@ -1348,6 +1302,88 @@ Entry Wire Line
 	6675 1960 6775 1860
 Wire Bus Line
 	6775 1860 6895 1860
+$Comp
+L emi_filter_3pin:EMI_Filter_3Pin FB2
+U 1 1 6707F003
+P 6180 5865
+F 0 "FB2" V 6325 5865 50  0000 C CNN
+F 1 "DSS1NB32A271Q91A" H 6280 5820 50  0001 L CNN
+F 2 "LittleSixteen:EMI_Filter" V 6110 5865 50  0001 C CNN
+F 3 "~" H 6180 5865 50  0001 C CNN
+	1    6180 5865
+	0    1    -1   0   
+$EndComp
+Text Notes 2865 5295 2    50   ~ 0
+NOTES:\n- Fastloaders might use these signals differently!\n- All signals are active-low\n- All signals are open collector, since this is a *bus*
+Text GLabel 5515 6655 0    50   Input ~ 0
+~RESET
+$Comp
+L Jumper:Jumper_3_Open JP3
+U 1 1 66BD1BAC
+P 5805 6255
+F 0 "JP3" V 5851 6342 50  0000 L CNN
+F 1 "JP_IECRST" V 5760 6342 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5805 6255 50  0001 C CNN
+F 3 "~" H 5805 6255 50  0001 C CNN
+	1    5805 6255
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5805 6005 5805 5865
+Connection ~ 5805 5865
+Wire Wire Line
+	5955 6255 6025 6255
+Wire Wire Line
+	6025 6255 6025 5865
+Wire Wire Line
+	6025 5865 6080 5865
+Wire Wire Line
+	5805 6505 5805 6655
+Wire Wire Line
+	5805 6655 5515 6655
+Text Notes 3925 7260 0    50   ~ 0
+The original schematics bring a dedicated "copy" of the RESET signal\nto the IEC connector. This has the drawback that IEC devices (including\nthe well-known "Reset dongles") cannot reset the machine. While that\nshouldn't be a problem since we have a dedicated reset button, JP3 \ngives you the possibility of making those work.
+$Comp
+L Device:R_Network05_Split RP1
+U 1 1 66C2C54E
+P 5950 4725
+AR Path="/5ECB474B/66C2C54E" Ref="RP1"  Part="1" 
+AR Path="/5EACE220/66C2C54E" Ref="RP?"  Part="1" 
+F 0 "RP1" H 6038 4771 50  0000 L CNN
+F 1 "1k" H 6038 4680 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 5870 4725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5950 4725 50  0001 C CNN
+F 4 "Bussed" H 5950 4725 50  0001 C CNN "Notes"
+	1    5950 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network05_Split RP1
+U 5 1 64605429
+P 5805 4725
+F 0 "RP1" H 5705 5045 50  0000 L CNN
+F 1 "1k" H 6360 4725 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 5725 4725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5805 4725 50  0001 C CNN
+F 4 "Bussed" H 5805 4725 50  0001 C CNN "Notes"
+	5    5805 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4485 5950 4575
+$Comp
+L power:VCC #PWR?
+U 1 1 66C66638
+P 5950 4485
+AR Path="/5E4A81E1/66C66638" Ref="#PWR?"  Part="1" 
+AR Path="/5EACE220/66C66638" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5950 4335 50  0001 C CNN
+F 1 "VCC" H 5967 4658 50  0000 C CNN
+F 2 "" H 5950 4485 50  0001 C CNN
+F 3 "" H 5950 4485 50  0001 C CNN
+	1    5950 4485
+	-1   0    0    -1  
+$EndComp
 Wire Bus Line
 	3075 4640 3075 5520
 $EndSCHEMATC
