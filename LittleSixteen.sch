@@ -475,5 +475,24 @@ Wire Wire Line
 Wire Wire Line
 	9050 4750 9050 5060
 Wire Wire Line
-	9050 5060 9050 6035
+	9050 5060 9050 5380
+$Comp
+L Mechanical:MountingHole_Pad H17
+U 1 1 67204BC1
+P 9205 5235
+F 0 "H17" H 9305 5238 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9305 5193 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad" H 9205 5235 50  0001 C CNN
+F 3 "~" H 9205 5235 50  0001 C CNN
+F 4 "---" H 9205 5235 50  0001 C CNN "MouserPN"
+	1    9205 5235
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9205 5335 9205 5380
+Wire Wire Line
+	9205 5380 9050 5380
+Connection ~ 9050 5380
+Wire Wire Line
+	9050 5380 9050 6035
 $EndSCHEMATC
