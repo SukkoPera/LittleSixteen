@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 14
 Title "LittleSixteen"
-Date "2023-07-10"
+Date "2024-11-13"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -168,12 +168,8 @@ Entry Wire Line
 	10680 4580 10580 4680
 Entry Wire Line
 	10680 4480 10580 4580
-Entry Wire Line
-	10680 4380 10580 4480
 Wire Wire Line
 	10135 4080 10315 4080
-Entry Wire Line
-	10680 4080 10580 4180
 Text Label 10580 4180 2    50   ~ 0
 a16
 Text Label 10580 4280 2    50   ~ 0
@@ -862,8 +858,8 @@ Text Label 3340 1755 2    50   ~ 0
 a16
 Text Label 3340 1855 2    50   ~ 0
 a17
-Text Label 3340 1955 2    50   ~ 0
-a18
+Text Label 3335 1955 2    50   ~ 0
+a18_from_pla
 Wire Wire Line
 	3045 2455 2840 2455
 Wire Wire Line
@@ -1118,25 +1114,25 @@ Wire Wire Line
 Text Label 3340 2255 2    50   ~ 0
 joyswap
 Wire Wire Line
-	3700 1790 3700 1690
+	4090 1790 4090 1690
 Wire Wire Line
-	3765 2355 3700 2355
+	4155 2355 4090 2355
 Wire Wire Line
-	3700 2355 3700 2455
+	4090 2355 4090 2455
 $Comp
 L power:GND #PWR?
 U 1 1 6616A4EF
-P 3700 2455
+P 4090 2455
 AR Path="/6616A4EF" Ref="#PWR?"  Part="1" 
 AR Path="/62E48B71/6616A4EF" Ref="#PWR?"  Part="1" 
 AR Path="/63A22C28/6616A4EF" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A465A/64E9FF4C/6616A4EF" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A465A/6616A4EF" Ref="#PWR0291"  Part="1" 
-F 0 "#PWR0291" H 3700 2205 50  0001 C CNN
-F 1 "GND" H 3705 2282 50  0000 C CNN
-F 2 "" H 3700 2455 50  0001 C CNN
-F 3 "" H 3700 2455 50  0001 C CNN
-	1    3700 2455
+F 0 "#PWR0291" H 4090 2205 50  0001 C CNN
+F 1 "GND" H 4095 2282 50  0000 C CNN
+F 2 "" H 4090 2455 50  0001 C CNN
+F 3 "" H 4090 2455 50  0001 C CNN
+	1    4090 2455
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
@@ -1152,7 +1148,7 @@ d2
 Text Label 3045 2355 2    50   ~ 0
 d1
 Wire Wire Line
-	2840 2255 3700 2255
+	2840 2255 4090 2255
 $Comp
 L power:VCC #PWR?
 U 1 1 662A014F
@@ -1195,14 +1191,14 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 6630FA01
-P 3700 1690
+P 4090 1690
 AR Path="/5E6A379E/6630FA01" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A465A/6630FA01" Ref="#PWR0137"  Part="1" 
-F 0 "#PWR0137" H 3700 1540 50  0001 C CNN
-F 1 "VCC" H 3717 1863 50  0000 C CNN
-F 2 "" H 3700 1690 50  0001 C CNN
-F 3 "" H 3700 1690 50  0001 C CNN
-	1    3700 1690
+F 0 "#PWR0137" H 4090 1540 50  0001 C CNN
+F 1 "VCC" H 4107 1863 50  0000 C CNN
+F 2 "" H 4090 1690 50  0001 C CNN
+F 3 "" H 4090 1690 50  0001 C CNN
+	1    4090 1690
 	1    0    0    -1  
 $EndComp
 Text Label 7280 2195 2    50   ~ 0
@@ -1296,40 +1292,84 @@ Text Notes 8240 6490 0    50   ~ 0
 Note that address bits and data bits can be swapped freely\nhere since no refresh mechanism is involved, so let's just\nassign everything in order to simplify routing!
 Text Notes 7635 2560 0    50   ~ 0
 Another idea from Levente Hársfalvi in order to achieve the "high at reset"\nbehaviour of the MOS 6529 that was originally used in Hannes/Solder's\ndesign for the control register: keep the 74x573 in Hi-Z until the first write\nto $FD16 and use pull-ups on its output. All hail TLC!
-Text Notes 11095 1105 2    118  ~ 0
-- WE USE A SINGLE STATIC RAM CHIP\n- WE SUPPORT A HANNES-STYLE MECHANISM\n  FOR RAM EXPANSION TO UP TO 512 KB
+Text Notes 11100 1455 2    118  ~ 0
+- WE USE A SINGLE STATIC RAM CHIP\n- WE SUPPORT A HANNES-STYLE MECHANISM\n  FOR RAM EXPANSION TO UP TO 512 KB\n- WE PROVIDE A SWITCH TO LIMIT THE RAM\n  TO 256 KB FOR COMPATIBLITY
 $Comp
 L Device:R R?
 U 1 1 65A92B25
-P 3700 1940
+P 4090 1940
 AR Path="/5E019FCB/65A92B25" Ref="R?"  Part="1" 
 AR Path="/5E4A465A/65A92B25" Ref="R97"  Part="1" 
-F 0 "R97" H 3630 1894 50  0000 R CNN
-F 1 "10k" H 3630 1985 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3630 1940 50  0001 C CNN
-F 3 "~" H 3700 1940 50  0001 C CNN
-F 4 "603-MFR-25FTF52-10K" H 3700 1940 50  0001 C CNN "MouserPN"
-	1    3700 1940
+F 0 "R97" H 4020 1894 50  0000 R CNN
+F 1 "10k" H 4020 1985 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 4020 1940 50  0001 C CNN
+F 3 "~" H 4090 1940 50  0001 C CNN
+F 4 "603-MFR-25FTF52-10K" H 4090 1940 50  0001 C CNN "MouserPN"
+	1    4090 1940
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male CN?
 U 1 1 65AA1AF3
-P 3965 2355
+P 4355 2355
 AR Path="/64A6E6F3/65AA1AF3" Ref="CN?"  Part="1" 
 AR Path="/5E4A465A/65AA1AF3" Ref="JP17"  Part="1" 
-F 0 "JP17" H 3937 2237 50  0000 R CNN
-F 1 "SW_JOYSWAP" H 3937 2328 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3965 2355 50  0001 C CNN
-F 3 "~" H 3965 2355 50  0001 C CNN
-	1    3965 2355
+F 0 "JP17" H 4530 2415 50  0000 R CNN
+F 1 "SW_JOYSWAP" H 4535 2495 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4355 2355 50  0001 C CNN
+F 3 "~" H 4355 2355 50  0001 C CNN
+	1    4355 2355
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3700 2090 3700 2255
-Connection ~ 3700 2255
+	4090 2090 4090 2255
+Connection ~ 4090 2255
 Wire Wire Line
-	3700 2255 3765 2255
+	4090 2255 4155 2255
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 6758122B
+P 3590 1955
+AR Path="/5EE476E1/6758122B" Ref="JP?"  Part="1" 
+AR Path="/5E4A465A/6758122B" Ref="JP4"  Part="1" 
+F 0 "JP4" H 3590 1650 50  0000 C CNN
+F 1 "SW_RAMSIZE" H 3590 1565 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3590 1955 50  0001 C CNN
+F 3 "~" H 3590 1955 50  0001 C CNN
+F 4 "---" H 3590 1955 50  0001 C CNN "MouserPN"
+	1    3590 1955
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3590 1805 3590 1755
+Wire Wire Line
+	3590 1755 3790 1755
+Wire Wire Line
+	3840 1955 3910 1955
+Wire Wire Line
+	3910 1955 3910 2055
+$Comp
+L power:GND #PWR?
+U 1 1 675B33AC
+P 3910 2055
+AR Path="/675B33AC" Ref="#PWR?"  Part="1" 
+AR Path="/62E48B71/675B33AC" Ref="#PWR?"  Part="1" 
+AR Path="/63A22C28/675B33AC" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A465A/64E9FF4C/675B33AC" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A465A/675B33AC" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 3910 1805 50  0001 C CNN
+F 1 "GND" H 3910 1900 50  0000 C CNN
+F 2 "" H 3910 2055 50  0001 C CNN
+F 3 "" H 3910 2055 50  0001 C CNN
+	1    3910 2055
+	-1   0    0    -1  
+$EndComp
+Text Label 3790 1755 2    50   ~ 0
+a18
+Text Notes 3410 1920 0    50   ~ 0
+512\nkB
+Text Notes 3875 1920 2    50   ~ 0
+256\nkB
 Wire Bus Line
 	8090 5180 8090 6210
 Wire Bus Line
@@ -1337,9 +1377,9 @@ Wire Bus Line
 Wire Bus Line
 	1240 2255 1240 2655
 Wire Bus Line
-	10680 5080 10680 6210
-Wire Bus Line
 	10680 3435 10680 4880
+Wire Bus Line
+	10680 5080 10680 6210
 Wire Bus Line
 	3655 4770 3655 5470
 Wire Bus Line
