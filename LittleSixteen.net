@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Thu 02 Jan 2025 21:48:15 CET")
+    (date "Sat 04 Jan 2025 14:06:55 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -2959,7 +2959,7 @@
       (datasheet ~)
       (fields
         (field (name MouserPN) 603-MFR-25FBF52-1K)
-        (field (name Notes) "For 6581 do not mount")
+        (field (name Notes) "For 8580 do not mount")
         (field (name Value) 1k))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
