@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 13 14
 Title "LittleSixteen"
-Date "2024-08-07"
+Date "2025-01-04"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -1099,20 +1099,6 @@ F 3 "~" H 7425 6465 50  0001 C CNN
 	1    7425 6465
 	1    0    0    1   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 647C5CFF
-P 7425 6100
-AR Path="/61BCD018/647C5CFF" Ref="R?"  Part="1" 
-AR Path="/5ECB474B/647C5CFF" Ref="R?"  Part="1" 
-AR Path="/63EAD078/647C5CFF" Ref="R40"  Part="1" 
-F 0 "R40" H 7495 6146 50  0000 L CNN
-F 1 "22 3W" H 7495 6055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 7355 6100 50  0001 C CNN
-F 3 "~" H 7425 6100 50  0001 C CNN
-	1    7425 6100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7425 5950 7425 5900
 Wire Wire Line
@@ -1162,40 +1148,12 @@ Wire Wire Line
 Connection ~ 13500 1820
 Wire Wire Line
 	13500 1820 13675 1820
-$Comp
-L Device:R R?
-U 1 1 64956DD2
-P 6905 6100
-AR Path="/61BCD018/64956DD2" Ref="R?"  Part="1" 
-AR Path="/5ECB474B/64956DD2" Ref="R?"  Part="1" 
-AR Path="/63EAD078/64956DD2" Ref="R38"  Part="1" 
-F 0 "R38" H 6835 6146 50  0000 R CNN
-F 1 "22 3W" H 6835 6055 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 6835 6100 50  0001 C CNN
-F 3 "~" H 6905 6100 50  0001 C CNN
-	1    6905 6100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6905 5950 6905 5900
 Wire Wire Line
 	7185 6250 7185 6365
 Text Notes 7620 5955 0    50   ~ 0
-According to the "TED System Hardware Manual":\n- +5VDC is "100 mA worst case"\n- 9VAC is "400 DC mA worst case", whatever that means\nIn practice resistors that can bear that power will be\nhuuuuge, so it's up to you.
-$Comp
-L Device:R R?
-U 1 1 64956726
-P 7185 6100
-AR Path="/61BCD018/64956726" Ref="R?"  Part="1" 
-AR Path="/5ECB474B/64956726" Ref="R?"  Part="1" 
-AR Path="/63EAD078/64956726" Ref="R39"  Part="1" 
-F 0 "R39" H 6980 6140 50  0000 L CNN
-F 1 "22 3W" V 7280 5935 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 7115 6100 50  0001 C CNN
-F 3 "~" H 7185 6100 50  0001 C CNN
-	1    7185 6100
-	1    0    0    -1  
-$EndComp
+According to the "TED System Hardware Manual":\n- +5VDC is "100 mA worst case"\n- 9VAC is "400 DC mA worst case", whatever that means\n
 Wire Wire Line
 	7600 6530 7600 6210
 Wire Wire Line
@@ -1552,4 +1510,40 @@ Wire Bus Line
 	6130 2525 6130 3225
 Wire Bus Line
 	1695 6195 1695 7095
+$Comp
+L Device:Polyfuse F3
+U 1 1 677AFD86
+P 7425 6100
+F 0 "F3" H 7513 6146 50  0000 L CNN
+F 1 "250m" H 7513 6055 50  0000 L CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 7475 5900 50  0001 L CNN
+F 3 "~" H 7425 6100 50  0001 C CNN
+F 4 " 603-BK60-025-DZ" H 7425 6100 50  0001 C CNN "MouserPN"
+	1    7425 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F1
+U 1 1 677B0E80
+P 6905 6100
+F 0 "F1" H 6817 6146 50  0000 R CNN
+F 1 "400m" H 6817 6055 50  0000 R CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 6955 5900 50  0001 L CNN
+F 3 "~" H 6905 6100 50  0001 C CNN
+F 4 " 603-BK60-040-DI" H 6905 6100 50  0001 C CNN "MouserPN"
+	1    6905 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F2
+U 1 1 677B15C8
+P 7185 6100
+F 0 "F2" H 7015 6145 50  0000 L CNN
+F 1 "400m" H 6945 6055 50  0000 L CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 7235 5900 50  0001 L CNN
+F 3 "~" H 7185 6100 50  0001 C CNN
+F 4 " 603-BK60-040-DI" H 7185 6100 50  0001 C CNN "MouserPN"
+	1    7185 6100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
