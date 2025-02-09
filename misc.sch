@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 12
 Title "LittleSixteen"
-Date "2021-12-06"
+Date "2025-02-09"
 Rev "3git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -535,13 +535,13 @@ RECOMMENDED\nX5R/X7R\nCERAMIC
 $Comp
 L power_switch:SW_DPDT_x2 SW1
 U 2 1 62A43AA2
-P 6330 1860
-F 0 "SW1" H 6330 2053 50  0000 C CNN
-F 1 "POWER_SWITCH" H 6330 2144 50  0000 C CNN
-F 2 "LittleSixteen:C64_PowerSwitch" H 6330 1860 50  0001 C CNN
-F 3 "~" H 6330 1860 50  0001 C CNN
-	2    6330 1860
-	1    0    0    1   
+P 6415 1760
+F 0 "SW1" H 6415 1953 50  0000 C CNN
+F 1 "POWER_SWITCH" H 6415 2044 50  0000 C CNN
+F 2 "LittleSixteen:C64_PowerSwitch" H 6415 1760 50  0001 C CNN
+F 3 "~" H 6415 1760 50  0001 C CNN
+	2    6415 1760
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0197
@@ -830,12 +830,12 @@ F 3 "~" H 6860 1760 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6530 1760 6710 1760
+	6615 1760 6660 1760
 Wire Wire Line
 	5545 1375 5545 1435
 Connection ~ 5545 1435
 Wire Wire Line
-	5545 1435 6050 1435
+	5545 1435 5990 1435
 Wire Wire Line
 	4245 1335 4330 1335
 Wire Wire Line
@@ -869,22 +869,22 @@ $EndComp
 Wire Wire Line
 	5875 1535 5875 1860
 Wire Wire Line
-	5875 1860 6130 1860
+	5875 1860 6215 1860
 Wire Wire Line
 	5545 1535 5875 1535
 $Comp
 L power:GND #PWR0226
 U 1 1 62D7FE05
-P 6050 1510
-F 0 "#PWR0226" H 6050 1260 50  0001 C CNN
-F 1 "GND" H 6055 1337 50  0000 C CNN
-F 2 "" H 6050 1510 50  0001 C CNN
-F 3 "" H 6050 1510 50  0001 C CNN
-	1    6050 1510
+P 5990 1510
+F 0 "#PWR0226" H 5990 1260 50  0001 C CNN
+F 1 "GND" H 5995 1337 50  0000 C CNN
+F 2 "" H 5990 1510 50  0001 C CNN
+F 3 "" H 5990 1510 50  0001 C CNN
+	1    5990 1510
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 1435 6050 1510
+	5990 1435 5990 1510
 NoConn ~ 6530 1960
 Connection ~ 5545 2100
 Wire Wire Line
@@ -1126,21 +1126,6 @@ F 3 "~" H 5375 810 50  0001 C CNN
 	1    5375 810 
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4330 910  4390 910 
-Wire Wire Line
-	4330 910  4330 1335
-$Comp
-L power_switch:SW_DPDT_x2 SW1
-U 1 1 62A43028
-P 4590 910
-F 0 "SW1" H 4590 585 50  0000 C CNN
-F 1 "POWER_SWITCH" H 4590 676 50  0000 C CNN
-F 2 "LittleSixteen:C64_PowerSwitch" H 4590 910 50  0001 C CNN
-F 3 "~" H 4590 910 50  0001 C CNN
-	1    4590 910 
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0231
 U 1 1 61B592D5
@@ -1156,10 +1141,8 @@ Wire Wire Line
 	5525 810  5620 810 
 Wire Wire Line
 	5620 810  5620 860 
-Wire Wire Line
-	5225 810  4790 810 
 Text Notes 5190 745  2    50   ~ 0
-BLEEDING RESISTOR\nTO DISCHARGE CAPS\nIN POWER SUPPLY
+BLEEDING RESISTOR\nTO DISCHARGE CAPS\nON POWER DOWN
 Wire Notes Line
 	5205 510  5205 890 
 Wire Notes Line
@@ -1168,4 +1151,46 @@ Wire Notes Line
 	5560 890  5560 510 
 Wire Notes Line
 	5560 510  5205 510 
+$Comp
+L power_switch:SW_DPDT_x2 SW1
+U 1 1 62A43028
+P 4590 1010
+F 0 "SW1" H 4975 820 50  0000 C CNN
+F 1 "POWER_SWITCH" H 5155 910 50  0000 C CNN
+F 2 "LittleSixteen:C64_PowerSwitch" H 4590 1010 50  0001 C CNN
+F 3 "~" H 4590 1010 50  0001 C CNN
+	1    4590 1010
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4390 1110 4330 1110
+Wire Wire Line
+	4330 1110 4330 1335
+Wire Wire Line
+	4330 910  4390 910 
+Wire Wire Line
+	4330 810  4330 910 
+Wire Wire Line
+	4330 810  5225 810 
+Wire Wire Line
+	6215 1660 6155 1660
+Wire Wire Line
+	6155 1660 6155 1565
+Wire Wire Line
+	6155 1565 6660 1565
+Wire Wire Line
+	6660 1565 6660 1760
+Connection ~ 6660 1760
+Wire Wire Line
+	6660 1760 6710 1760
+Text Notes 6155 1475 0    50   ~ 0
+THIS ODD CONNECTION\nMAKES ROUTING EASIER
+Wire Notes Line
+	6125 1300 6125 1815
+Wire Notes Line
+	6125 1815 6710 1815
+Wire Notes Line
+	6710 1815 6710 1520
+Wire Notes Line
+	6710 1520 6130 1520
 $EndSCHEMATC
