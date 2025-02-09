@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sun 09 Feb 2025 14:31:50 CET")
+    (date "Sun 09 Feb 2025 14:34:25 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -372,7 +372,7 @@
       (sheetpath (names /TED/) (tstamps /5DE044CB/))
       (tstamp 5EB093CB))
     (comp (ref C15)
-      (value 10p)
+      (value 10n)
       (footprint Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm)
       (datasheet ~)
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
