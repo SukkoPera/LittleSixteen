@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sun 09 Feb 2025 11:26:29 CET")
+    (date "Sun 09 Feb 2025 14:31:50 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -758,7 +758,7 @@
       (tstamp 5ECC85E0))
     (comp (ref D12)
       (value 6.8V)
-      (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp)
+      (footprint LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp_Zener)
       (libsource (lib w_device) (part ZENER) (description "Diode zener"))
       (sheetpath (names "/Datassette & Serial Bus/") (tstamps /5ECB474B/))
       (tstamp 5ECCE714))
