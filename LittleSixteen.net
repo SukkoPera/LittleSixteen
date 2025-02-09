@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Mon 06 Dec 2021 22:55:53 CET")
+    (date "Sun 09 Feb 2025 11:26:29 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -906,6 +906,7 @@
       (tstamp 619101EB))
     (comp (ref CN3)
       (value CASSETTE)
+      (footprint LittleSixteen:KMDGX-7S-BS)
       (datasheet http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf)
       (libsource (lib mini-din-7) (part Mini-DIN-7) (description "7-pin Mini-DIN connector"))
       (sheetpath (names "/Datassette & Serial Bus/") (tstamps /5ECB474B/))
@@ -984,7 +985,6 @@
       (tstamp 61D9A19A))
     (comp (ref CN93)
       (value C64_STYLE_CASSETTE)
-      (footprint LittleSixteen:C64-Cassette-Port-Male)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x06_Male) (description "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names "/Datassette & Serial Bus/") (tstamps /5ECB474B/))
