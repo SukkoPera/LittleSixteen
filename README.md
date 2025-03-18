@@ -19,18 +19,16 @@ The original Commodore 16 was the victim of several cost-cutting measures during
 ### Modifications introduced in V4
 The goal of V4 was to make LittleSixteen an improved Plus/4 clone, rather than a C16 clone.
 
-- 100% Plus/4 compatible User Port
-- 512 kB Hannes-style RAM expansion
-- 2 ROM banks, each of which can carry the whole set of ROMs: KERNAL + BASIC + Function ROMs
-- Onboard SID (either 6581 or 8580 + Optional Digifix) + 3rd joystick port (SID audio is mixed with the TED/Ext audio with configurable volume but direct dedicated output is also available)
-- Joystick swapper
-- Ability to replace keyboard MOS 6529 with 74x273 (so that 6529 can be recycled for User Port, but that one as well can be replaced with a 74x654)
-- Removed FB13 in order to reduce luma/chroma crosstalk and improve video quality (Thanks @TLC!)
-- Direct TED output connector (experimental)
-- Pin header with all tape signals (think Internal Tapuino)
-- Pin header with all IEC signals (think Internal SD2IEC)
-
-The board has only been extended on the left side, height is the same as V3, so it should fit any C64 case or a C16 case with "reasonable" modifications if so you prefer (i.e.: replace the side bracket with one from a C64, or [make one yourself](https://www.thingiverse.com/thing:959633), enlarge the tape connector cutout and make a new one for the User Port).
+- 100% Plus/4 compatible User Port.
+- 512 kB Hannes-style RAM expansion (which can be reduced to 256 kB through a single jumper for compatibility reasons).
+- 2 ROM banks, each of which can carry the whole set of ROMs: KERNAL + BASIC + Function ROMs.
+- Onboard SID (either 6581 or 8580 + Optional Digifix) + 3rd joystick port (SID audio is mixed with the TED/Ext audio with configurable volume but direct dedicated output is also available).
+- Direct TED output connector.
+- Joystick swapper.
+- Ability to replace keyboard MOS 6529 with 74x273 (so that 6529 can be recycled for User Port, but that one as well can be replaced with a 74x654).
+- Removed FB13 in order to reduce luma/chroma crosstalk and improve video quality.
+- Pin header with all tape signals (think Internal Tapuino).
+- Pin header with all IEC signals (think Internal SD2IEC).
 
 ### Modifications introduced in V3
 In V3 we started making improvements to the board. The reasoning behind every modification is detailed on the [Development Blog](https://hackaday.io/project/182543-littlesixteen-commodore-16-mainboard), so I'll be pretty terse here.
