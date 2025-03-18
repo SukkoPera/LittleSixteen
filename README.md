@@ -4,21 +4,33 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date/SukkoPera/LittleSixteen?color=blue&label=last%20release)
 ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/SukkoPera/LittleSixteen/latest?color=orange)
 
-LittleSixteen is an Open Hardware remake of the Commodore 16 home computer, featuring many improvements over the original design.
+LittleSixteen is an Open Hardware remake of the Commodore 16, 116 and Plus/4 home computers, featuring many improvements over the original design.
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/LittleSixteen/master/img/render-top.png)
 
-## Why?
-I was trying to understand why [64k RAM expansions](https://github.com/SukkoPera/OpenC16RamExpansion) do not work out-of-the-box on Commodore 16 machines, so I looked around and found some schematics. While they looked correct (and official), I found them hard to understand, as most of the components were packed together on a single page. So I thought the first thing I had to do was to redraw them so that they would be easier to pick up at first sight. I did it in Kicad so that those schematics could actually be used to remake the C16 board, which I ultimately did.
+## Summary
+While this project started as a simple redrawing of the C16 schematics, it has now evolved into what could be considered the flagship member of the 264 family of Commodore computers, since it has all the characteristics of the other models [^nospeech] and bears a full array of extra features and improvements, while keeping full compatibility with them.
 
-You might think there is not much point in that, as C16 mainboards are usually abundant and still in good shape these days, it's their CPU and TED chips that tend to die an early death, unfortunately, and you would be right. The main goal of this project is in fact to document how this computer was made, in the hope that, as some [other](https://hackaday.io/project/11460-fpgated) [projects](https://github.com/monotech/MOS_CPU_Replacer) progress, we could have a fully open implementation of a Commodore 16 one day (and of the rest of the x264 Series, of course).
-
-Components and circuits are grouped by logical functions in the schematics. DRC and ERC checks are 100% passed (not strictly true, but the remaining few warnings are harmless).
-
-The board was routed manually, trying to keep each track close to the original layout. This means that the schematics should be 100% accurate.
+The new goal of this project is to allow anyone to build a very significant home computer from the '80s from scratch, only using parts that can be found on the market [^almost]. The design is fully through-hole so no particular soldering skills are required for the assembly. The estimated cost for a single complete machine is around 250-300€.
 
 ## Differences from Original
 The original Commodore 16 was the victim of several cost-cutting measures during its design phase. Its target price was $99 and Commodore still had to have some margin on that, so they really had to spare every cent they could and they went as far as not mounting the decoupling capacitors for a few chips which happened to have another one "close enough". Thus, a further goal of this project was to undo all of those measures and make the design as clean as possible, while also improving on it.
+
+### Modifications introduced in V4
+The goal of V4 was to make LittleSixteen an improved Plus/4 clone, rather than a C16 clone.
+
+- 100% Plus/4 compatible User Port
+- 512 kB Hannes-style RAM expansion
+- 2 ROM banks, each of which can carry the whole set of ROMs: KERNAL + BASIC + Function ROMs
+- Onboard SID (either 6581 or 8580 + Optional Digifix) + 3rd joystick port (SID audio is mixed with the TED/Ext audio with configurable volume but direct dedicated output is also available)
+- Joystick swapper
+- Ability to replace keyboard MOS 6529 with 74x273 (so that 6529 can be recycled for User Port, but that one as well can be replaced with a 74x654)
+- Removed FB13 in order to reduce luma/chroma crosstalk and improve video quality (Thanks @TLC!)
+- Direct TED output connector (experimental)
+- Pin header with all tape signals (think Internal Tapuino)
+- Pin header with all IEC signals (think Internal SD2IEC)
+
+The board has only been extended on the left side, height is the same as V3, so it should fit any C64 case or a C16 case with "reasonable" modifications if so you prefer (i.e.: replace the side bracket with one from a C64, or [make one yourself](https://www.thingiverse.com/thing:959633), enlarge the tape connector cutout and make a new one for the User Port).
 
 ### Modifications introduced in V3
 In V3 we started making improvements to the board. The reasoning behind every modification is detailed on the [Development Blog](https://hackaday.io/project/182543-littlesixteen-commodore-16-mainboard), so I'll be pretty terse here.
@@ -59,7 +71,12 @@ V2 was meant to be a 1:1 copy of the original board with some essential improvem
 If you don't like any of the above, feel free to fix it yourself and [submit a Pull Request](https://github.com/SukkoPera/LittleSixteen/pulls).
 
 ## Testing
-V3 of the board was throughly tested by project collaborator Edoardo Auteri, as you can read on the [Development Blog](https://hackaday.io/project/182543/log/202804-how-to-make-the-changes-that-change-everything). In his words:
+V3  and V4 of the board were throughly tested by project collaborator Edoardo Auteri, as you can read on the [Development Blog](https://hackaday.io/project/182543/log/202804-how-to-make-the-changes-that-change-everything). In his words:
+
+## Assembly
+If you want to build your own board, **please make sure read the assembly notes on [the Wiki](https://github.com/SukkoPera/LittleSixteen/wiki) carefully!**
+
+Note that there are different pages for different revisions of the board.
 
 > The machine works flawlessly providing superior audio and video performance, low power consumption and compatibility with the 1530 Datassette Unit (C2N model), SD2IEC, Atari joysticks and pads.
 
@@ -71,7 +88,7 @@ Every release is accompanied by its Bill Of Materials (BOM) file and any relevan
 **I am not providing ready-to-use gerber files**. If all you want is **to get boards made, I would really appreciate if you did so [in a way that supports the project](#support-the-project)**.
 
 ## License
-The LittleSixteen documentation, including the design itself, is copyright &copy; SukkoPera 2019-2022 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The LittleSixteen documentation, including the design itself, is copyright &copy; SukkoPera 2019-2025 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 This documentation is distributed *as is* and WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES whatsoever with respect to its functionality, operability or use, including, without limitation, any implied warranties OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE or infringement. We expressly disclaim any liability whatsoever for any direct, indirect, consequential, incidental or special damages, including, without limitation, lost revenues, lost profits, losses resulting from business interruption or loss of data, regardless of the form of action or legal theory under which the liability may be asserted, even if advised of the possibility or likelihood of such damages.
 
@@ -95,3 +112,6 @@ You can also buy me a coffee if you want:
 - J. F. Gomez for the [3D model of the Barrel jack](https://grabcad.com/library/dc-power-jack-5-5mm-x-2-1mm-2-54mm-pitch-1).
 - [Edoardo Auteri](https://github.com/kinmami), for his invaluable advice on analog stuff and for fully assembling the first prototype and testing it thoroughly.
 - Last but not least, thanks to [PCBWay](https://www.pcbway.com) for sponsoring the project and providing us with free prototypes of V3.
+
+[^nospeech]: Ok, ok... No V364 speech support, I'll admit!
+[^almost]: Almost, the CPU, TED and Expansion port connector must be recovered somehow.
