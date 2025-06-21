@@ -688,6 +688,7 @@ F 0 "F100" V 6663 1760 50  0000 C CNN
 F 1 "1.5A" V 6754 1760 50  0000 C CNN
 F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open" V 6790 1760 50  0001 C CNN
 F 3 "~" H 6860 1760 50  0001 C CNN
+F 4 "504-BK1/GMA-1.5-R + 693-0031.8201" H 6860 1760 50  0001 C CNN "MouserPN"
 	1    6860 1760
 	0    1    1    0   
 $EndComp

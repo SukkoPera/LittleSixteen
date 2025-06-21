@@ -236,6 +236,7 @@ F 0 "U90" H 3555 4980 50  0000 C CNN
 F 1 "74HCT08" H 3555 4889 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3555 4655 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3555 4655 50  0001 C CNN
+F 4 "595-SN74HCT08N" H 3555 4655 50  0001 C CNN "MouserPN"
 	1    3555 4655
 	1    0    0    -1  
 $EndComp
@@ -247,6 +248,7 @@ F 0 "U90" H 3540 5630 50  0000 C CNN
 F 1 "74HCT08" H 3540 5539 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3540 5305 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3540 5305 50  0001 C CNN
+F 4 "595-SN74HCT08N" H 3540 5305 50  0001 C CNN "MouserPN"
 	2    3540 5305
 	1    0    0    -1  
 $EndComp
@@ -258,6 +260,7 @@ F 0 "U90" H 3530 6280 50  0000 C CNN
 F 1 "74HCT08" H 3530 6189 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3530 5955 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3530 5955 50  0001 C CNN
+F 4 "595-SN74HCT08N" H 3530 5955 50  0001 C CNN "MouserPN"
 	3    3530 5955
 	1    0    0    -1  
 $EndComp
@@ -269,6 +272,7 @@ F 0 "U90" H 3530 6925 50  0000 C CNN
 F 1 "74HCT08" H 3530 6834 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 3530 6600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3530 6600 50  0001 C CNN
+F 4 "595-SN74HCT08N" H 3530 6600 50  0001 C CNN "MouserPN"
 	4    3530 6600
 	1    0    0    -1  
 $EndComp
@@ -280,6 +284,7 @@ F 0 "U90" H 1095 6731 50  0000 L CNN
 F 1 "74HCT08" H 1095 6640 50  0000 L CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 865 6685 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 865 6685 50  0001 C CNN
+F 4 "595-SN74HCT08N" H 865 6685 50  0001 C CNN "MouserPN"
 	5    865  6685
 	1    0    0    -1  
 $EndComp
