@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 13 14
 Title "LittleSixteen"
-Date "2025-01-04"
+Date "2025-06-22"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -536,7 +536,7 @@ L Device:R_Network08 RP4
 U 1 1 63F3B9D0
 P 14350 3935
 F 0 "RP4" H 14738 3981 50  0000 L CNN
-F 1 "8.2k" H 14738 3890 50  0000 L CNN
+F 1 "3.3k" H 14738 3890 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP9" V 14825 3935 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 14350 3935 50  0001 C CNN
 F 4 "Bussed" H 14350 3935 50  0001 C CNN "Notes"

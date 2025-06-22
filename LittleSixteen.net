@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sun 22 Jun 2025 19:06:31 CEST")
+    (date "Sun 22 Jun 2025 19:11:57 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -140,7 +140,7 @@
         (title LittleSixteen)
         (company SukkoPera)
         (rev 4git)
-        (date 2025-01-04)
+        (date 2025-06-22)
         (source userport.sch)
         (comment (number 1) (value "Licensed under CC BY-NC-SA 4.0"))
         (comment (number 2) (value ""))
@@ -2752,7 +2752,7 @@
       (sheetpath (names "/User Port/") (tstamps /63EAD078/))
       (tstamp 63CCDE81))
     (comp (ref RP4)
-      (value 8.2k)
+      (value 3.3k)
       (footprint Resistor_THT:R_Array_SIP9)
       (datasheet http://www.vishay.com/docs/31509/csc.pdf)
       (fields
