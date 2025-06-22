@@ -806,19 +806,6 @@ $EndComp
 Wire Wire Line
 	9520 2590 9520 2940
 Connection ~ 9520 2940
-$Comp
-L Device:R R?
-U 1 1 61DEF839
-P 9260 1880
-AR Path="/61BCD018/61DEF839" Ref="R?"  Part="1" 
-AR Path="/5E019FCB/61DEF839" Ref="R95"  Part="1" 
-F 0 "R95" H 9330 1834 50  0000 L CNN
-F 1 "4.7 1W" H 9330 1925 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 9190 1880 50  0001 C CNN
-F 3 "~" H 9260 1880 50  0001 C CNN
-	1    9260 1880
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	9260 1730 9260 1635
 $Comp
@@ -1410,4 +1397,19 @@ Wire Wire Line
 	4415 6860 4605 6860
 Text Notes 9855 6040 0    50   ~ 0
 1-2: Same circuit as\n      original modulator\n2-3: Simpler circuit that\n      enhances the Chroma signal
+$Comp
+L Device:Polyfuse F?
+U 1 1 69AAA0A0
+P 9260 1880
+AR Path="/63EAD078/69AAA0A0" Ref="F?"  Part="1" 
+AR Path="/5ECB474B/69AAA0A0" Ref="F?"  Part="1" 
+AR Path="/5E019FCB/69AAA0A0" Ref="F1"  Part="1" 
+F 0 "F1" H 9172 1926 50  0000 R CNN
+F 1 "250m" H 9172 1835 50  0000 R CNN
+F 2 "LittleSixteen:Fuse_Bourns" H 9310 1680 50  0001 L CNN
+F 3 "~" H 9260 1880 50  0001 C CNN
+F 4 "603-BK60-025-DZ" H 9260 1880 50  0001 C CNN "MouserPN"
+	1    9260 1880
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

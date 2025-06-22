@@ -1017,19 +1017,6 @@ F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7505 5520 50  0001
 	1    7505 5520
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 61D9A19A
-P 3680 1780
-AR Path="/61BCD018/61D9A19A" Ref="R?"  Part="1" 
-AR Path="/5ECB474B/61D9A19A" Ref="R94"  Part="1" 
-F 0 "R94" H 3610 1826 50  0000 R CNN
-F 1 "4.7 1W" H 3610 1735 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 3610 1780 50  0001 C CNN
-F 3 "~" H 3680 1780 50  0001 C CNN
-	1    3680 1780
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3680 2195 3680 2525
 Wire Notes Line
@@ -1041,7 +1028,7 @@ Wire Notes Line
 Wire Notes Line
 	3225 1960 3225 1615
 Text Notes 3620 1580 2    50   ~ 0
-ADDITIONAL CURRENT-\nLIMITING RESISTOR
+ADDITIONAL CURRENT-\nLIMITING FUSE
 $Comp
 L Connector:Conn_01x06_Male CN93
 U 1 1 63113C84
@@ -1396,6 +1383,20 @@ F 2 "" H 5950 4485 50  0001 C CNN
 F 3 "" H 5950 4485 50  0001 C CNN
 	1    5950 4485
 	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F?
+U 1 1 69A73FBB
+P 3680 1780
+AR Path="/63EAD078/69A73FBB" Ref="F?"  Part="1" 
+AR Path="/5ECB474B/69A73FBB" Ref="F2"  Part="1" 
+F 0 "F2" H 3592 1826 50  0000 R CNN
+F 1 "250m" H 3592 1735 50  0000 R CNN
+F 2 "LittleSixteen:Fuse_Bourns" H 3730 1580 50  0001 L CNN
+F 3 "~" H 3680 1780 50  0001 C CNN
+F 4 "603-BK60-025-DZ" H 3680 1780 50  0001 C CNN "MouserPN"
+	1    3680 1780
+	1    0    0    -1  
 $EndComp
 Wire Bus Line
 	3075 4640 3075 5520

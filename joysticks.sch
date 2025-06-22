@@ -440,17 +440,6 @@ Text Label 3405 4780 0    50   ~ 0
 2r
 Text Label 3405 4880 0    50   ~ 0
 2f
-$Comp
-L Device:R R91
-U 1 1 62AFB1A5
-P 2180 880
-F 0 "R91" H 2110 926 50  0000 R CNN
-F 1 "4.7 1W" H 2110 835 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 2110 880 50  0001 C CNN
-F 3 "~" H 2180 880 50  0001 C CNN
-	1    2180 880 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2180 1030 2180 1100
 $Comp
@@ -483,7 +472,7 @@ Wire Notes Line
 Wire Notes Line
 	1720 1045 1720 680 
 Text Notes 2415 950  0    50   ~ 0
-ADDITIONAL CURRENT-\nLIMITING RESISTOR
+ADDITIONAL CURRENT-\nLIMITING FUSE
 Wire Notes Line
 	2375 1050 2375 685 
 $Comp
@@ -814,7 +803,7 @@ $EndComp
 Wire Notes Line
 	2420 3725 2420 3360
 Text Notes 2460 3625 0    50   ~ 0
-ADDITIONAL CURRENT-\nLIMITING RESISTOR
+ADDITIONAL CURRENT-\nLIMITING FUSE
 Wire Notes Line
 	1765 3720 1765 3355
 Wire Notes Line
@@ -831,17 +820,6 @@ Text Label 2085 4830 0    50   ~ 0
 f2d
 Wire Wire Line
 	2225 3405 2225 3290
-$Comp
-L Device:R R92
-U 1 1 62B0FE1B
-P 2225 3555
-F 0 "R92" H 2155 3601 50  0000 R CNN
-F 1 "4.7 1W" H 2155 3510 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P5.08mm_Vertical" V 2155 3555 50  0001 C CNN
-F 3 "~" H 2225 3555 50  0001 C CNN
-	1    2225 3555
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2975 4880 2560 4880
 $Comp
@@ -1486,6 +1464,34 @@ F 1 "VCC" H 9402 5348 50  0000 C CNN
 F 2 "" H 9385 5175 50  0001 C CNN
 F 3 "" H 9385 5175 50  0001 C CNN
 	1    9385 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F?
+U 1 1 69A5FEA8
+P 2225 3555
+AR Path="/63EAD078/69A5FEA8" Ref="F?"  Part="1" 
+AR Path="/61BCD018/69A5FEA8" Ref="F4"  Part="1" 
+F 0 "F4" H 2137 3601 50  0000 R CNN
+F 1 "400m" H 2137 3510 50  0000 R CNN
+F 2 "LittleSixteen:Fuse_Bourns" H 2275 3355 50  0001 L CNN
+F 3 "~" H 2225 3555 50  0001 C CNN
+F 4 "603-BK60-040-DI" H 2225 3555 50  0001 C CNN "MouserPN"
+	1    2225 3555
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F?
+U 1 1 69A6971B
+P 2180 880
+AR Path="/63EAD078/69A6971B" Ref="F?"  Part="1" 
+AR Path="/61BCD018/69A6971B" Ref="F3"  Part="1" 
+F 0 "F3" H 2092 926 50  0000 R CNN
+F 1 "400m" H 2092 835 50  0000 R CNN
+F 2 "LittleSixteen:Fuse_Bourns" H 2230 680 50  0001 L CNN
+F 3 "~" H 2180 880 50  0001 C CNN
+F 4 "603-BK60-040-DI" H 2180 880 50  0001 C CNN "MouserPN"
+	1    2180 880 
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
