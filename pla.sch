@@ -21,6 +21,7 @@ F 0 "U14" H 9280 5531 50  0000 L CNN
 F 1 "74HCT139" H 9280 5440 50  0000 L CNN
 F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 9050 5485 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 9050 5485 50  0001 C CNN
+F 4 "595-SN74HCT139N" H 9050 5485 50  0001 C CNN "MouserPN"
 	3    9050 5485
 	1    0    0    -1  
 $EndComp
@@ -573,6 +574,7 @@ F 0 "U14" H 9650 2517 50  0000 C CNN
 F 1 "74HCT139" H 9650 2426 50  0000 C CNN
 F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 9650 2150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 9650 2150 50  0001 C CNN
+F 4 "595-SN74HCT139N" H 9650 2150 50  0001 C CNN "MouserPN"
 	2    9650 2150
 	1    0    0    -1  
 $EndComp
@@ -584,6 +586,7 @@ F 0 "U14" H 8115 1652 50  0000 C CNN
 F 1 "74HCT139" H 8115 1561 50  0000 C CNN
 F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 8115 1285 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 8115 1285 50  0001 C CNN
+F 4 "595-SN74HCT139N" H 8115 1285 50  0001 C CNN "MouserPN"
 	1    8115 1285
 	1    0    0    -1  
 $EndComp

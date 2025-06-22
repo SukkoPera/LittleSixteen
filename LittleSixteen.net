@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sun 22 Jun 2025 16:18:34 CEST")
+    (date "Sun 22 Jun 2025 17:02:48 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1770,6 +1770,8 @@
       (value 74HCT139)
       (footprint LittleSixteen:DIP-16_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS139)
+      (fields
+        (field (name MouserPN) 595-SN74HCT139N))
       (libsource (lib 74xx) (part 74LS139) (description "Dual Decoder 1 of 4, Active low outputs"))
       (sheetpath (names "/PLA & Chip Selection/") (tstamps /5EE7AAEB/))
       (tstamp 5EEA114E))
@@ -2041,8 +2043,10 @@
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
       (tstamp 5E3A4C16))
     (comp (ref U17)
-      (value 74LS139)
+      (value 74HCT139)
       (datasheet http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf)
+      (fields
+        (field (name MouserPN) 595-SN74HCT139N))
       (libsource (lib 74xx) (part 74LS139) (description "Dual Decoder 1 of 4, Active low outputs"))
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
       (tstamp 688526AE))
@@ -2145,9 +2149,11 @@
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
       (tstamp 5E19A8AD))
     (comp (ref U18)
-      (value 74LS244)
+      (value 74HCT244)
       (footprint LittleSixteen:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT244.pdf)
+      (fields
+        (field (name MouserPN) 595-SN74HCT244N))
       (libsource (lib 74xx) (part 74AHCT244) (description "8-bit Buffer/Line Driver 3-state"))
       (sheetpath (names /Joysticks/) (tstamps /61BCD018/))
       (tstamp 68B42D86))
