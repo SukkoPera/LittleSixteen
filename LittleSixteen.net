@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sun 22 Jun 2025 17:02:48 CEST")
+    (date "Sun 22 Jun 2025 19:06:31 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -151,7 +151,7 @@
         (title LittleSixteen)
         (company SukkoPera)
         (rev 4git)
-        (date 2023-02-16)
+        (date 2025-06-22)
         (source sid.sch)
         (comment (number 1) (value "Licensed under CC BY-NC-SA 4.0"))
         (comment (number 2) (value ""))
@@ -2986,7 +2986,7 @@
       (sheetpath (names /SID!/) (tstamps /64A6E6F3/))
       (tstamp 653B124D))
     (comp (ref R37)
-      (value 100)
+      (value 220)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical)
       (datasheet ~)
       (fields

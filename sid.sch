@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 14 14
 Title "LittleSixteen"
-Date "2023-02-16"
+Date "2025-06-22"
 Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
@@ -1096,7 +1096,7 @@ L Device:R R37
 U 1 1 65320868
 P 3970 6370
 F 0 "R37" V 3763 6370 50  0000 C CNN
-F 1 "100" V 3854 6370 50  0000 C CNN
+F 1 "220" V 3854 6370 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3900 6370 50  0001 C CNN
 F 3 "~" H 3970 6370 50  0001 C CNN
 F 4 "708-RNF14FTD100R" H 3970 6370 50  0001 C CNN "MouserPN"
