@@ -1112,8 +1112,6 @@ Wire Wire Line
 	3100 2055 2840 2055
 Wire Wire Line
 	3045 2355 2840 2355
-Text Label 3340 2255 2    50   ~ 0
-joyswap
 Wire Wire Line
 	4090 1790 4090 1690
 Wire Wire Line
@@ -1149,7 +1147,7 @@ d2
 Text Label 3045 2355 2    50   ~ 0
 d1
 Wire Wire Line
-	2840 2255 4090 2255
+	2840 2255 3470 2255
 $Comp
 L power:VCC #PWR?
 U 1 1 662A014F
@@ -1371,6 +1369,12 @@ Text Notes 3410 1920 0    50   ~ 0
 512\nkB
 Text Notes 3875 1920 2    50   ~ 0
 256\nkB
+Text GLabel 3570 2355 2    50   Output ~ 0
+~JOYSWAP
+Wire Wire Line
+	3570 2355 3470 2355
+Wire Wire Line
+	3470 2355 3470 2255
 Wire Bus Line
 	8090 5180 8090 6210
 Wire Bus Line
@@ -1391,4 +1395,7 @@ Wire Bus Line
 	7380 2195 7380 2895
 Wire Bus Line
 	8090 3435 8090 5080
+Connection ~ 3470 2255
+Wire Wire Line
+	3470 2255 4090 2255
 $EndSCHEMATC
