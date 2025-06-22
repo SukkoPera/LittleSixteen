@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/LittleSixteen/LittleSixteen.sch)
-    (date "Sun 22 Jun 2025 23:37:32 CEST")
+    (date "Sun 22 Jun 2025 23:53:05 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -2555,7 +2555,7 @@
       (tstamp 634FD6CC))
     (comp (ref JP81)
       (value JMP_RV1_BYPASS)
-      (footprint Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm)
+      (footprint Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm)
       (datasheet ~)
       (fields
         (field (name MouserPN) ---))
@@ -2564,7 +2564,7 @@
       (tstamp 635201CA))
     (comp (ref JP82)
       (value JMP_RV2_BYPASS)
-      (footprint Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm)
+      (footprint Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm)
       (datasheet ~)
       (fields
         (field (name MouserPN) ---))
