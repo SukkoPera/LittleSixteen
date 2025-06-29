@@ -698,6 +698,7 @@ F 0 "U20" H 5280 5445 50  0000 C CNN
 F 1 "74HCT273" H 5325 4135 50  0000 C CNN
 F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 5070 4795 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT273.pdf" H 5070 4795 50  0001 C CNN
+F 4 "595-CD74HCT273E" H 5070 4795 50  0001 C CNN "MouserPN"
 	1    5070 4795
 	1    0    0    -1  
 $EndComp
@@ -774,6 +775,7 @@ F 0 "JP1" V 9139 1168 50  0000 L CNN
 F 1 "JMP_KBD_POWER" V 9230 1168 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9185 1120 50  0001 C CNN
 F 3 "~" H 9185 1120 50  0001 C CNN
+F 4 "---" H 9185 1120 50  0001 C CNN "MouserPN"
 	1    9185 1120
 	0    1    1    0   
 $EndComp

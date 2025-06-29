@@ -285,6 +285,7 @@ F 1 "1.8432M" V 2640 2835 50  0000 L CNN
 F 2 "Crystal:Crystal_HC49-U_Vertical" H 2685 2705 50  0001 C CNN
 F 3 "~" H 2685 2705 50  0001 C CNN
 F 4 "Series, no load cap, max series resistance: 400R" H 2685 2705 50  0001 C CNN "Notes"
+F 5 "520-HCA184-SX" H 2685 2705 50  0001 C CNN "MouserPN"
 	1    2685 2705
 	0    -1   -1   0   
 $EndComp
@@ -671,6 +672,7 @@ F 0 "U21" H 8690 2955 50  0000 C CNN
 F 1 "74HCT04" H 8700 1605 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 8690 2745 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8690 2745 50  0001 C CNN
+F 4 "595-SN74HCT04N" H 8690 2745 50  0001 C CNN "MouserPN"
 	1    8690 2745
 	1    0    0    -1  
 $EndComp
@@ -682,6 +684,7 @@ F 0 "U21" H 8690 2565 50  0000 C CNN
 F 1 "74HCT04" H 8690 2566 50  0001 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 8690 2340 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8690 2340 50  0001 C CNN
+F 4 "595-SN74HCT04N" H 8690 2340 50  0001 C CNN "MouserPN"
 	2    8690 2340
 	1    0    0    -1  
 $EndComp
@@ -693,6 +696,7 @@ F 0 "U21" H 8690 3435 50  0000 C CNN
 F 1 "74HCT04" H 8690 3436 50  0001 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 8690 3210 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8690 3210 50  0001 C CNN
+F 4 "595-SN74HCT04N" H 8690 3210 50  0001 C CNN "MouserPN"
 	3    8690 3210
 	-1   0    0    -1  
 $EndComp
@@ -704,6 +708,7 @@ F 0 "U21" H 8690 3880 50  0000 C CNN
 F 1 "74HCT04" H 8690 3881 50  0001 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 8690 3655 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8690 3655 50  0001 C CNN
+F 4 "595-SN74HCT04N" H 8690 3655 50  0001 C CNN "MouserPN"
 	4    8690 3655
 	-1   0    0    -1  
 $EndComp
@@ -715,6 +720,7 @@ F 0 "U21" H 11070 11087 50  0000 C CNN
 F 1 "74HCT04" H 11070 10996 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 11070 10770 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 11070 10770 50  0001 C CNN
+F 4 "595-SN74HCT04N" H 11070 10770 50  0001 C CNN "MouserPN"
 	5    11070 10770
 	1    0    0    -1  
 $EndComp
@@ -726,6 +732,7 @@ F 0 "U21" H 3205 10066 50  0000 L CNN
 F 1 "74HCT04" H 3205 9975 50  0000 L CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 2975 10020 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2975 10020 50  0001 C CNN
+F 4 "595-SN74HCT04N" H 2975 10020 50  0001 C CNN "MouserPN"
 	7    2975 10020
 	1    0    0    -1  
 $EndComp

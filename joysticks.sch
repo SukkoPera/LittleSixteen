@@ -29,90 +29,8 @@ Wire Bus Line
 	9120 1570 9620 1570
 Text GLabel 9620 1570 2    50   Output ~ 0
 k[0..7]
-Wire Wire Line
-	10615 5900 10615 5975
-Wire Wire Line
-	10615 5525 10615 5600
-$Comp
-L power:GND #PWR06
-U 1 1 6224E22E
-P 10615 5975
-F 0 "#PWR06" H 10615 5725 50  0001 C CNN
-F 1 "GND" H 10620 5802 50  0000 C CNN
-F 2 "" H 10615 5975 50  0001 C CNN
-F 3 "" H 10615 5975 50  0001 C CNN
-	1    10615 5975
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR04
-U 1 1 6224E234
-P 10615 5525
-F 0 "#PWR04" H 10615 5375 50  0001 C CNN
-F 1 "VCC" H 10632 5698 50  0000 C CNN
-F 2 "" H 10615 5525 50  0001 C CNN
-F 3 "" H 10615 5525 50  0001 C CNN
-	1    10615 5525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 6224E23A
-P 10615 5750
-AR Path="/5E4A465A/6224E23A" Ref="C?"  Part="1" 
-AR Path="/61BCD018/6224E23A" Ref="C40"  Part="1" 
-F 0 "C40" H 10730 5796 50  0000 L CNN
-F 1 "100n" H 10730 5705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10653 5600 50  0001 C CNN
-F 3 "~" H 10615 5750 50  0001 C CNN
-F 4 "810-FG28X7R1H104KNT0" H 10615 5750 50  0001 C CNN "MouserPN"
-	1    10615 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10115 5900 10115 5975
-Wire Wire Line
-	10115 5525 10115 5600
-$Comp
-L power:GND #PWR05
-U 1 1 622541CE
-P 10115 5975
-F 0 "#PWR05" H 10115 5725 50  0001 C CNN
-F 1 "GND" H 10120 5802 50  0000 C CNN
-F 2 "" H 10115 5975 50  0001 C CNN
-F 3 "" H 10115 5975 50  0001 C CNN
-	1    10115 5975
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR03
-U 1 1 622541D8
-P 10115 5525
-F 0 "#PWR03" H 10115 5375 50  0001 C CNN
-F 1 "VCC" H 10132 5698 50  0000 C CNN
-F 2 "" H 10115 5525 50  0001 C CNN
-F 3 "" H 10115 5525 50  0001 C CNN
-	1    10115 5525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 622541E2
-P 10115 5750
-AR Path="/5E4A465A/622541E2" Ref="C?"  Part="1" 
-AR Path="/61BCD018/622541E2" Ref="C39"  Part="1" 
-F 0 "C39" H 10230 5796 50  0000 L CNN
-F 1 "100n" H 10230 5705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10153 5600 50  0001 C CNN
-F 3 "~" H 10115 5750 50  0001 C CNN
-F 4 "810-FG28X7R1H104KNT0" H 10115 5750 50  0001 C CNN "MouserPN"
-	1    10115 5750
-	1    0    0    -1  
-$EndComp
 Text Label 9020 2865 2    50   ~ 0
 k0
-Text Notes 11100 1260 2    50   ~ 0
-This was one of the weakest spots of the C16, where the\nTED chip pins were directly exposed outside through the\njoystick ports.\n\nAdding a buffer will protect the TED from ESD, and TVS\ndiodes could do even more. This is basically Levente\nHársfalvi's design (changed to 74x245 just for our convenience)\nintegrated into the C16. Please see:\nhttp://www.zimmers.net/anonftp/pub/cbm/documents/projects/interfaces/plus4joy/plus4joy.html\n
 Wire Wire Line
 	7130 4880 7795 4880
 NoConn ~ 2590 7060
@@ -186,6 +104,7 @@ F 1 "DT1042" H 4978 6870 50  0000 L CNN
 F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 4500 6365 50  0001 C CNN
 F 3 "" H 4500 6365 50  0001 C CNN
 F 4 "Optional, protects Joystick port from ESD" H 4650 6915 50  0001 C CNN "Notes"
+F 5 "621-DT1042-04TS-7" H 4650 6915 50  0001 C CNN "MouserPN"
 	1    4650 6915
 	1    0    0    -1  
 $EndComp
@@ -234,6 +153,7 @@ F 1 "DT1042" H 6528 6875 50  0000 L CNN
 F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 6050 6370 50  0001 C CNN
 F 3 "" H 6050 6370 50  0001 C CNN
 F 4 "Optional, protects Joystick port from ESD" H 6200 6920 50  0001 C CNN "Notes"
+F 5 "621-DT1042-04TS-7" H 6200 6920 50  0001 C CNN "MouserPN"
 	1    6200 6920
 	1    0    0    -1  
 $EndComp
@@ -286,6 +206,7 @@ F 1 "DT1042" H 3518 6865 50  0000 L CNN
 F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 3040 6360 50  0001 C CNN
 F 3 "" H 3040 6360 50  0001 C CNN
 F 4 "Optional, protects Joystick port from ESD" H 3190 6910 50  0001 C CNN "Notes"
+F 5 "621-DT1042-04TS-7" H 3190 6910 50  0001 C CNN "MouserPN"
 	1    3190 6910
 	1    0    0    -1  
 $EndComp
@@ -671,8 +592,6 @@ F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 7635 4980 50  0001 C CNN
 	1    7635 4980
 	1    0    0    -1  
 $EndComp
-Text Notes 5300 850  0    50   ~ 0
-Normally:\n- JOY1 reports fire button on k6\n- JOY2 reports fire button on k7
 Text Label 9020 1670 2    50   ~ 0
 k7
 $Comp
@@ -925,7 +844,7 @@ F 0 "U18" H 6240 4020 50  0000 C CNN
 F 1 "74HCT244" H 6280 2705 50  0000 C CNN
 F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 6010 3365 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT244.pdf" H 6010 3365 50  0001 C CNN
-F 4 "595-SN74HCT244N" H 6010 3365 50  0001 C CNN "MouserPN"
+F 4 "595-CD74HCT244E" H 6010 3365 50  0001 C CNN "MouserPN"
 	1    6010 3365
 	1    0    0    -1  
 $EndComp
@@ -1303,7 +1222,7 @@ L Device:R_Pack06_SIP_Split RP90
 U 5 1 69836104
 P 6980 4880
 F 0 "RP90" V 6935 5165 50  0000 C CNN
-F 1 "100" V 6864 4880 50  0001 C CNN
+F 1 "100" V 6864 4880 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP12" V 6900 4880 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6980 4880 50  0001 C CNN
 F 4 "652-4612X-2LF-100" H 6980 4880 50  0001 C CNN "MouserPN"
@@ -1381,7 +1300,7 @@ L Device:R_Pack06_SIP_Split RP91
 U 2 1 69810EE8
 P 6985 2865
 F 0 "RP91" V 6940 3155 50  0000 C CNN
-F 1 "100" V 6869 2865 50  0001 C CNN
+F 1 "100" V 6869 2865 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP12" V 6905 2865 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6985 2865 50  0001 C CNN
 F 4 "652-4612X-2LF-100" H 6985 2865 50  0001 C CNN "MouserPN"
@@ -1396,7 +1315,7 @@ L Device:R_Pack06_SIP_Split RP90
 U 1 1 69835790
 P 6985 1670
 F 0 "RP90" V 6935 1960 50  0000 C CNN
-F 1 "100" V 6869 1670 50  0001 C CNN
+F 1 "100" V 6869 1670 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP12" V 6905 1670 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6985 1670 50  0001 C CNN
 F 4 "652-4612X-2LF-100" H 6985 1670 50  0001 C CNN "MouserPN"
@@ -1430,43 +1349,6 @@ Wire Wire Line
 Wire Wire Line
 	3895 1805 4670 1805
 $Comp
-L 74xx:74LS139 U17
-U 3 1 69A0C199
-P 9385 5750
-F 0 "U17" H 9155 5796 50  0000 R CNN
-F 1 "74HCT139" H 9155 5705 50  0000 R CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 9385 5750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 9385 5750 50  0001 C CNN
-	3    9385 5750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9385 6250 9385 6325
-$Comp
-L power:GND #PWR0184
-U 1 1 69A1AAE4
-P 9385 6325
-F 0 "#PWR0184" H 9385 6075 50  0001 C CNN
-F 1 "GND" H 9390 6152 50  0000 C CNN
-F 2 "" H 9385 6325 50  0001 C CNN
-F 3 "" H 9385 6325 50  0001 C CNN
-	1    9385 6325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9385 5175 9385 5250
-$Comp
-L power:VCC #PWR0189
-U 1 1 69A24627
-P 9385 5175
-F 0 "#PWR0189" H 9385 5025 50  0001 C CNN
-F 1 "VCC" H 9402 5348 50  0000 C CNN
-F 2 "" H 9385 5175 50  0001 C CNN
-F 3 "" H 9385 5175 50  0001 C CNN
-	1    9385 5175
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Polyfuse F?
 U 1 1 69A5FEA8
 P 2225 3555
@@ -1492,6 +1374,128 @@ F 2 "LittleSixteen:Fuse_Bourns" H 2230 680 50  0001 L CNN
 F 3 "~" H 2180 880 50  0001 C CNN
 F 4 "603-BK60-040-DI" H 2180 880 50  0001 C CNN "MouserPN"
 	1    2180 880 
+	1    0    0    -1  
+$EndComp
+Text Notes 11100 1260 2    50   ~ 0
+This was one of the weakest spots of the C16, where the\nTED chip pins were directly exposed outside through the\njoystick ports.\n\nAdding a buffer will protect the TED from ESD, and TVS\ndiodes could do even more. This is basically Levente\nHársfalvi's design (changed to 74x245 just for our convenience)\nintegrated into the C16. Please see:\nhttp://www.zimmers.net/anonftp/pub/cbm/documents/projects/interfaces/plus4joy/plus4joy.html\n
+Text Notes 5300 850  0    50   ~ 0
+Normally:\n- JOY1 reports fire button on k6\n- JOY2 reports fire button on k7
+Wire Wire Line
+	10700 5730 10700 5805
+Wire Wire Line
+	10700 5355 10700 5430
+$Comp
+L power:GND #PWR06
+U 1 1 6224E22E
+P 10700 5805
+F 0 "#PWR06" H 10700 5555 50  0001 C CNN
+F 1 "GND" H 10705 5632 50  0000 C CNN
+F 2 "" H 10700 5805 50  0001 C CNN
+F 3 "" H 10700 5805 50  0001 C CNN
+	1    10700 5805
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 6224E234
+P 10700 5355
+F 0 "#PWR04" H 10700 5205 50  0001 C CNN
+F 1 "VCC" H 10717 5528 50  0000 C CNN
+F 2 "" H 10700 5355 50  0001 C CNN
+F 3 "" H 10700 5355 50  0001 C CNN
+	1    10700 5355
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6224E23A
+P 10700 5580
+AR Path="/5E4A465A/6224E23A" Ref="C?"  Part="1" 
+AR Path="/61BCD018/6224E23A" Ref="C40"  Part="1" 
+F 0 "C40" H 10815 5626 50  0000 L CNN
+F 1 "100n" H 10815 5535 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10738 5430 50  0001 C CNN
+F 3 "~" H 10700 5580 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 10700 5580 50  0001 C CNN "MouserPN"
+	1    10700 5580
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 5730 10200 5805
+Wire Wire Line
+	10200 5355 10200 5430
+$Comp
+L power:GND #PWR05
+U 1 1 622541CE
+P 10200 5805
+F 0 "#PWR05" H 10200 5555 50  0001 C CNN
+F 1 "GND" H 10205 5632 50  0000 C CNN
+F 2 "" H 10200 5805 50  0001 C CNN
+F 3 "" H 10200 5805 50  0001 C CNN
+	1    10200 5805
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 622541D8
+P 10200 5355
+F 0 "#PWR03" H 10200 5205 50  0001 C CNN
+F 1 "VCC" H 10217 5528 50  0000 C CNN
+F 2 "" H 10200 5355 50  0001 C CNN
+F 3 "" H 10200 5355 50  0001 C CNN
+	1    10200 5355
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 622541E2
+P 10200 5580
+AR Path="/5E4A465A/622541E2" Ref="C?"  Part="1" 
+AR Path="/61BCD018/622541E2" Ref="C39"  Part="1" 
+F 0 "C39" H 10315 5626 50  0000 L CNN
+F 1 "100n" H 10315 5535 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10238 5430 50  0001 C CNN
+F 3 "~" H 10200 5580 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 10200 5580 50  0001 C CNN "MouserPN"
+	1    10200 5580
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS139 U17
+U 3 1 69A0C199
+P 9470 5580
+F 0 "U17" H 9240 5626 50  0000 R CNN
+F 1 "74HCT139" H 9240 5535 50  0000 R CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 9470 5580 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 9470 5580 50  0001 C CNN
+F 4 "595-SN74HCT139N" H 9470 5580 50  0001 C CNN "MouserPN"
+	3    9470 5580
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9470 6080 9470 6155
+$Comp
+L power:GND #PWR0184
+U 1 1 69A1AAE4
+P 9470 6155
+F 0 "#PWR0184" H 9470 5905 50  0001 C CNN
+F 1 "GND" H 9475 5982 50  0000 C CNN
+F 2 "" H 9470 6155 50  0001 C CNN
+F 3 "" H 9470 6155 50  0001 C CNN
+	1    9470 6155
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9470 5005 9470 5080
+$Comp
+L power:VCC #PWR0189
+U 1 1 69A24627
+P 9470 5005
+F 0 "#PWR0189" H 9470 4855 50  0001 C CNN
+F 1 "VCC" H 9487 5178 50  0000 C CNN
+F 2 "" H 9470 5005 50  0001 C CNN
+F 3 "" H 9470 5005 50  0001 C CNN
+	1    9470 5005
 	1    0    0    -1  
 $EndComp
 Wire Bus Line

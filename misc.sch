@@ -350,7 +350,7 @@ F 0 "C16" H 4010 4516 50  0000 L CNN
 F 1 "10u/25V" H 4010 4425 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3895 4470 50  0001 C CNN
 F 3 "~" H 3895 4470 50  0001 C CNN
-F 4 "710-860010672009" H 3895 4470 50  0001 C CNN "MouserPN"
+F 4 "710-860010572002" H 3895 4470 50  0001 C CNN "MouserPN"
 	1    3895 4470
 	-1   0    0    -1  
 $EndComp
@@ -485,6 +485,7 @@ F 0 "SW1" H 10367 2368 50  0000 L CNN
 F 1 "SW_POWER" H 10367 2277 50  0000 L CNN
 F 2 "LittleSixteen:C64_PowerSwitch" H 10280 2330 50  0001 C CNN
 F 3 "~" H 10280 2330 50  0001 C CNN
+F 4 "Get from AliExpress" H 10280 2330 50  0001 C CNN "Notes"
 	3    10280 2330
 	-1   0    0    -1  
 $EndComp
@@ -994,6 +995,7 @@ F 0 "SW1" H 4990 870 50  0000 C CNN
 F 1 "SW_POWER" H 5170 955 50  0000 C CNN
 F 2 "LittleSixteen:C64_PowerSwitch" H 4590 1010 50  0001 C CNN
 F 3 "~" H 4590 1010 50  0001 C CNN
+F 4 "Get from AliExpress" H 4590 1010 50  0001 C CNN "Notes"
 	1    4590 1010
 	-1   0    0    1   
 $EndComp
@@ -1005,6 +1007,7 @@ F 0 "SW1" H 6425 1970 50  0000 C CNN
 F 1 "SW_POWER" H 6425 2065 50  0000 C CNN
 F 2 "LittleSixteen:C64_PowerSwitch" H 6425 1760 50  0001 C CNN
 F 3 "~" H 6425 1760 50  0001 C CNN
+F 4 "Get from AliExpress" H 6425 1760 50  0001 C CNN "Notes"
 	2    6425 1760
 	-1   0    0    1   
 $EndComp

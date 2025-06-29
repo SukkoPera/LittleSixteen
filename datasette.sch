@@ -789,6 +789,7 @@ F 1 "DT1042" H 10303 5100 50  0000 L CNN
 F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 9825 4595 50  0001 C CNN
 F 3 "" H 9825 4595 50  0001 C CNN
 F 4 "Optional, protects Serial port from ESD" H 9975 5145 50  0001 C CNN "Notes"
+F 5 "621-DT1042-04TS-7" H 9975 5145 50  0001 C CNN "MouserPN"
 	1    9975 5145
 	1    0    0    -1  
 $EndComp
@@ -853,6 +854,7 @@ F 1 "DT1042" H 10398 3310 50  0000 L CNN
 F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 9920 2805 50  0001 C CNN
 F 3 "" H 9920 2805 50  0001 C CNN
 F 4 "Optional, protects Tape port from ESD" H 10070 3355 50  0001 C CNN "Notes"
+F 5 "621-DT1042-04TS-7" H 10070 3355 50  0001 C CNN "MouserPN"
 	1    10070 3355
 	1    0    0    -1  
 $EndComp
@@ -1269,6 +1271,7 @@ F 0 "JP12" V 6204 1621 50  0000 L CNN
 F 1 "JMP_TPSENSE" V 6295 1621 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6250 1535 50  0001 C CNN
 F 3 "~" H 6250 1535 50  0001 C CNN
+F 4 "---" H 6250 1535 50  0001 C CNN "MouserPN"
 	1    6250 1535
 	0    1    1    0   
 $EndComp
@@ -1324,6 +1327,7 @@ F 0 "JP3" V 5851 6342 50  0000 L CNN
 F 1 "JP_IECRST" V 5760 6342 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5805 6255 50  0001 C CNN
 F 3 "~" H 5805 6255 50  0001 C CNN
+F 4 "---" H 5805 6255 50  0001 C CNN "MouserPN"
 	1    5805 6255
 	0    -1   -1   0   
 $EndComp

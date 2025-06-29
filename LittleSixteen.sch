@@ -297,6 +297,7 @@ F 0 "V0" H 6108 7216 50  0000 L CNN
 F 1 "LOGO" H 6108 7125 50  0000 L CNN
 F 2 "LittleSixteen:Logo" H 6030 7170 50  0001 C CNN
 F 3 "" H 6030 7170 50  0001 C CNN
+F 4 "---" H 6030 7170 50  0001 C CNN "MouserPN"
 	1    6030 7170
 	1    0    0    -1  
 $EndComp
@@ -308,6 +309,7 @@ F 0 "V2" H 6108 7636 50  0000 L CNN
 F 1 "CC BY-NC-SA 4.0" H 6108 7545 50  0000 L CNN
 F 2 "LittleSixteen:cc_by_nc_sa" H 6030 7590 50  0001 C CNN
 F 3 "" H 6030 7590 50  0001 C CNN
+F 4 "---" H 6030 7590 50  0001 C CNN "MouserPN"
 	1    6030 7590
 	1    0    0    -1  
 $EndComp
@@ -409,6 +411,7 @@ F 0 "V1" H 6108 7426 50  0000 L CNN
 F 1 "PCBWAY_LOGO" H 6108 7335 50  0000 L CNN
 F 2 "LittleSixteen:pcbway" H 6030 7380 50  0001 C CNN
 F 3 "" H 6030 7380 50  0001 C CNN
+F 4 "---" H 6030 7380 50  0001 C CNN "MouserPN"
 	1    6030 7380
 	1    0    0    -1  
 $EndComp
