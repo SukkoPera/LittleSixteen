@@ -71,12 +71,12 @@ If you don't like any of the above, feel free to fix it yourself and [submit a P
 ## Testing
 V3  and V4 of the board were throughly tested by project collaborator Edoardo Auteri, as you can read on the [Development Blog](https://hackaday.io/project/182543/log/202804-how-to-make-the-changes-that-change-everything). In his words:
 
+> The machine works flawlessly providing superior audio and video performance, low power consumption and compatibility with the 1530 Datassette Unit (C2N model), SD2IEC, Atari joysticks and pads.
+
 ## Assembly
 If you want to build your own board, **please make sure read the assembly notes on [the Wiki](https://github.com/SukkoPera/LittleSixteen/wiki) carefully!**
 
 Note that there are different pages for different revisions of the board.
-
-> The machine works flawlessly providing superior audio and video performance, low power consumption and compatibility with the 1530 Datassette Unit (C2N model), SD2IEC, Atari joysticks and pads.
 
 ## Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/LittleSixteen/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
@@ -113,3 +113,4 @@ You can also buy me a coffee if you want:
 
 [^nospeech]: Ok, ok... No V364 speech support, I'll admit!
 [^almost]: Almost, the CPU, TED and Expansion port connector must be recovered somehow.
+
