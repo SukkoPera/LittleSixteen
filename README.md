@@ -11,9 +11,9 @@ LittleSixteen is an Open Hardware remake of the Commodore 16, 116 and Plus/4 hom
 ## Summary
 While this project started as a simple redrawing of the C16 schematics, it has now evolved into what could be considered the flagship member of the 264 family of Commodore computers, since it has all the characteristics of the other models [^nospeech] and bears a full array of extra features and improvements, while keeping full compatibility with them.
 
-The new goal of this project is to allow anyone to build a very significant home computer from the '80s from scratch, only using parts that can be found on the market [^almost]. The design is fully through-hole so no particular soldering skills are required for the assembly. The estimated cost for a single complete machine is around 250-300€.
+The new goal of this project is to allow anyone to build a very significant home computer from the '80s from scratch, only using parts that can be found on the market [^almost]. The design is fully through-hole so no particular soldering skills are required for the assembly. The estimated cost of ALL materials (case and power supply included) for a single complete machine is around 250-300€.
 
-## Differences from Original
+## Differences and Improvements
 The original Commodore 16 was the victim of several cost-cutting measures during its design phase. Its target price was $99 and Commodore still had to have some margin on that, so they really had to spare every cent they could and they went as far as not mounting the decoupling capacitors for a few chips which happened to have another one "close enough". Thus, a further goal of this project was to undo all of those measures and make the design as clean as possible, while also improving on it.
 
 ### Modifications introduced in V4
@@ -23,7 +23,7 @@ The goal of V4 was to make LittleSixteen an improved Plus/4 clone, rather than a
 - 512 kB Hannes-style RAM expansion (which can be reduced to 256 kB through a single jumper for compatibility reasons).
 - 2 ROM banks, each of which can carry the whole set of ROMs: KERNAL + BASIC + Function ROMs.
 - Onboard SID (either 6581 or 8580 + Optional Digifix) + 3rd joystick port (SID audio is mixed with the TED/Ext audio with configurable volume but direct dedicated output is also available).
-- Direct TED output connector.
+- Direct TED audio output connector.
 - Joystick swapper.
 - Ability to replace keyboard MOS 6529 with 74x273 (so that 6529 can be recycled for User Port, but that one as well can be replaced with a 74x654).
 - Removed FB13 in order to reduce luma/chroma crosstalk and improve video quality.
@@ -107,10 +107,12 @@ You can also buy me a coffee if you want:
 - My father, for buying me my C16 when I was 8, my first computer ever. This project is dedicated to his memory.
 - Amiwell, for giving me a free C16 that I used to trace a lot of connections.
 - [StormTrooper](https://github.com/StormTrooper/Commodore-Plus4) for his similar project about the Plus/4, which is where many of the footprints and 3D models used in this project come from.
-- J. F. Gomez for the [3D model of the Barrel jack](https://grabcad.com/library/dc-power-jack-5-5mm-x-2-1mm-2-54mm-pitch-1).
+- J. F. Gomez, for the [3D model of the Barrel jack](https://grabcad.com/library/dc-power-jack-5-5mm-x-2-1mm-2-54mm-pitch-1).
 - [Edoardo Auteri](https://github.com/kinmami), for his invaluable advice on analog stuff and for fully assembling the first prototype and testing it thoroughly.
+- Gordon Fecyk AKA Great White Retro, for beta-testing, making videos of his builds and spreading the word.
 - Last but not least, thanks to [PCBWay](https://www.pcbway.com) for sponsoring the project and providing us with free prototypes of V3.
 
 [^nospeech]: Ok, ok... No V364 speech support, I'll admit!
 [^almost]: Almost, the CPU, TED and Expansion port connector must be recovered somehow.
+
 
