@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +9VAC
+D Power symbol creates a global label with name "+9VAC"
+K power-flag
+$ENDCMP
+#
+$CMP -9VAC
+D Power symbol creates a global label with name "-9VAC"
+K power-flag
+$ENDCMP
+#
+$CMP VGND
+D Power symbol creates a global label with name "VGND" , video ground
+K power-flag
+$ENDCMP
+#
+$CMP VSID
+D Power symbol creates a global label with name "VSID"
+K power-flag
+$ENDCMP
+#
+#End Doc Library

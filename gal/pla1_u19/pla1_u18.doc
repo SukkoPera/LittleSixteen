@@ -1,0 +1,108 @@
+
+*******************************************************************************
+                                   PLA1_U18
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8as  Library DLIB-h-40-2
+Created         Sun Mar 03 15:02:06 2024
+Name            PLA1_U18
+Partno          TBD
+Revision        01
+Date            14/02/2023
+Designer        SukkoPera
+Company         OpenRetroWorks
+Assembly        None
+Location        Italy
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+_addr_fdxx =>
+    i_a8 & !i_a9 & i_affxx
+
+_addr_fexx =>
+    !i_a8 & i_a9 & i_affxx
+
+_addr_lo =>
+    i_a7 , i_a6 , i_a5 , i_a4 , i_a3 , i_a2 , i_a1 , i_a0
+
+_de_range =>
+    !i_a5 & i_a6 & !i_a7 & i_a8 & !i_a9 & i_affxx
+
+_hu_range =>
+    !i_a5 & !i_a6 & i_a7 & !i_a8 & i_a9 & i_affxx
+
+_joyrange =>
+    !i_a4 & !i_a5 & !i_a6 & i_a7 & i_a8 & !i_a9 & i_affxx
+
+o_acia =>
+    !i_a4 & !i_a5 & !i_a6 & !i_a7 & i_a8 & !i_a9 & i_affxx & i_phi0 & !i_ras & 
+      o_f7
+
+o_addrclk =>
+    i_a4 & !i_a5 & i_a6 & i_a7 & i_a8 & !i_a9 & i_affxx & i_phi0 & !i_ras & 
+      o_f7
+
+o_f7 =>
+    i_mux
+  # i_phi0 & !i_ras & o_f7
+
+o_joyport =>
+    !i_a4 & !i_a5 & !i_a6 & i_a7 & i_a8 & !i_a9 & i_affxx & o_phi2
+
+o_kernal =>
+    !i_a8 & !i_a9 & i_affxx
+
+o_phi2 =>
+    i_phi0 & !i_ras & o_f7
+
+o_sid =>
+    !i_a5 & !i_a6 & i_a7 & !i_a8 & i_a9 & i_affxx & o_phi2
+  # !i_a5 & i_a6 & !i_a7 & i_a8 & !i_a9 & i_affxx & o_phi2
+
+o_spi_keyb =>
+    i_a4 & i_a5 & !i_a6 & !i_a7 & i_a8 & !i_a9 & i_affxx & i_phi0 & !i_ras & 
+      o_f7
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    _addr_fdxx                  0        I        1       -       -     
+    _addr_fexx                  0        I        1       -       -     
+    _addr_lo                    0        F        -       -       -     
+    _de_range                   0        I        1       -       -     
+    _hu_range                   0        I        1       -       -     
+    _joyrange                   0        I        1       -       -     
+    i_a4                        5        V        -       -       -     
+    i_a5                        4        V        -       -       -     
+    i_a6                        3        V        -       -       -     
+    i_a7                        2        V        -       -       -     
+    i_a8                        11       V        -       -       -     
+    i_a9                        8        V        -       -       -     
+    i_affxx                     1        V        -       -       -     
+    i_mux                       7        V        -       -       -     
+    i_phi0                      6        V        -       -       -     
+    i_ras                       9        V        -       -       -     
+    o_acia                      12       V        1       8       2     
+    o_addrclk                   16       V        1       8       2     
+    o_f7                        18       V        2       8       2     
+    o_joyport                   15       V        1       8       2     
+    o_kernal                    19       V        1       8       2     
+    o_phi2                      14       V        1       8       2     
+    o_sid                       13       V        2       8       2     
+    o_spi_keyb                  17       V        1       8       2     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 12
+Sheet 2 14
 Title "LittleSixteen"
 Date "2021-11-17"
-Rev "3git"
+Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
-Comment2 "WARNING: These schematics might contain errors!"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -23,6 +23,7 @@ F 0 "U2" H 3615 3780 50  0000 C CNN
 F 1 "MOS_8501" H 3615 3689 50  0000 C CNN
 F 2 "LittleSixteen:DIP-40_W15.24mm_Socket_LongPads" H 3615 2465 50  0001 C CNN
 F 3 "DOCUMENTATION" H 3615 2465 50  0001 C CNN
+F 4 ":)" H 3615 2465 50  0001 C CNN "MouserPN"
 	1    3615 2465
 	1    0    0    -1  
 $EndComp
@@ -252,8 +253,9 @@ U 1 1 5E4B0F0F
 P 1025 7090
 F 0 "C4" H 911 7136 50  0000 R CNN
 F 1 "10u/25V" H 911 7045 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1025 7090 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1025 7090 50  0001 C CNN
 F 3 "~" H 1025 7090 50  0001 C CNN
+F 4 "710-860010572002" H 1025 7090 50  0001 C CNN "MouserPN"
 	1    1025 7090
 	1    0    0    -1  
 $EndComp
@@ -265,6 +267,7 @@ F 0 "C22" H 1635 7136 50  0000 L CNN
 F 1 "100n" H 1635 7045 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 1558 6940 50  0001 C CNN
 F 3 "~" H 1520 7090 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 1520 7090 50  0001 C CNN "MouserPN"
 	1    1520 7090
 	1    0    0    -1  
 $EndComp
@@ -480,6 +483,7 @@ F 0 "U102" H 3615 7145 50  0000 C CNN
 F 1 "MOS_6510" H 3615 7054 50  0000 C CNN
 F 2 "LittleSixteen:DIP-40_W15.24mm_Socket_LongPads" H 3615 5830 50  0001 C CNN
 F 3 "DOCUMENTATION" H 3615 5830 50  0001 C CNN
+F 4 ":)" H 3615 5830 50  0001 C CNN "MouserPN"
 	1    3615 5830
 	1    0    0    -1  
 $EndComp

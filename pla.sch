@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 12
+Sheet 10 14
 Title "LittleSixteen"
 Date "2021-11-05"
-Rev "3git"
+Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
-Comment2 "WARNING: These schematics might contain errors!"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -18,9 +18,10 @@ L 74xx:74LS139 U14
 U 3 1 5EEA114E
 P 9050 5485
 F 0 "U14" H 9280 5531 50  0000 L CNN
-F 1 "74LS139" H 9280 5440 50  0000 L CNN
+F 1 "74HCT139" H 9280 5440 50  0000 L CNN
 F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 9050 5485 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 9050 5485 50  0001 C CNN
+F 4 "595-SN74HCT139N" H 9050 5485 50  0001 C CNN "MouserPN"
 	3    9050 5485
 	1    0    0    -1  
 $EndComp
@@ -32,6 +33,7 @@ F 0 "C28" H 9890 5526 50  0000 L CNN
 F 1 "100n" H 9890 5435 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 9813 5330 50  0001 C CNN
 F 3 "~" H 9775 5480 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 9775 5480 50  0001 C CNN "MouserPN"
 	1    9775 5480
 	1    0    0    -1  
 $EndComp
@@ -84,34 +86,14 @@ L 74xx:74LS02 U12
 U 5 1 5EEE272F
 P 7265 5485
 F 0 "U12" H 7495 5531 50  0000 L CNN
-F 1 "74LS02" H 7495 5440 50  0000 L CNN
+F 1 "74HCT02" H 7495 5440 50  0000 L CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 7265 5485 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 7265 5485 50  0001 C CNN
+F 4 "595-SN74HCT02N" H 7265 5485 50  0001 C CNN "MouserPN"
+F 5 "Or 595-SN74HC02N, 595-SN74HCT02NE4" H 7265 5485 50  0001 C CNN "Notes"
 	5    7265 5485
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9775 3675 9775 4175
-Wire Wire Line
-	9775 4175 9405 4175
-Wire Wire Line
-	9050 4175 9050 4030
-$Comp
-L power:GND #PWR0174
-U 1 1 5DEA08EA
-P 9405 4275
-F 0 "#PWR0174" H 9405 4025 50  0001 C CNN
-F 1 "GND" H 9410 4102 50  0000 C CNN
-F 2 "" H 9405 4275 50  0001 C CNN
-F 3 "" H 9405 4275 50  0001 C CNN
-	1    9405 4275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9405 4275 9405 4175
-Connection ~ 9405 4175
-Wire Wire Line
-	9405 4175 9050 4175
 $Comp
 L Device:C C91
 U 1 1 6116CC87
@@ -120,6 +102,7 @@ F 0 "C91" H 8105 5526 50  0000 L CNN
 F 1 "100n" H 8105 5435 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 8028 5330 50  0001 C CNN
 F 3 "~" H 7990 5480 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 7990 5480 50  0001 C CNN "MouserPN"
 	1    7990 5480
 	1    0    0    -1  
 $EndComp
@@ -209,45 +192,12 @@ F 0 "C90" H 10535 5526 50  0000 L CNN
 F 1 "100n" H 10535 5435 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10458 5330 50  0001 C CNN
 F 3 "~" H 10420 5480 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 10420 5480 50  0001 C CNN "MouserPN"
 	1    10420 5480
 	1    0    0    -1  
 $EndComp
 Text Notes 10190 6225 0    50   ~ 0
 Additional\ndecoupling cap\nfor U15
-$Comp
-L atf16v8:ATF16V8 U?
-U 1 1 61A4BF19
-P 3840 6260
-AR Path="/61A237FB/61A4BF19" Ref="U?"  Part="1" 
-AR Path="/5EE7AAEB/61A4BF19" Ref="U19"  Part="1" 
-F 0 "U19" H 3840 7075 50  0000 C CNN
-F 1 "ATF16V8" H 3840 6984 50  0000 C CNN
-F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 3840 6260 50  0001 C CNN
-F 3 "DOCUMENTATION" H 3840 6260 50  0001 C CNN
-	1    3840 6260
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4590 5810 4715 5810
-Wire Wire Line
-	4715 5650 4715 5810
-$Comp
-L power:GND #PWR?
-U 1 1 61A4BF27
-P 2965 6875
-AR Path="/61A237FB/61A4BF27" Ref="#PWR?"  Part="1" 
-AR Path="/5EE7AAEB/61A4BF27" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 2965 6625 50  0001 C CNN
-F 1 "GND" H 2970 6702 50  0000 C CNN
-F 2 "" H 2965 6875 50  0001 C CNN
-F 3 "" H 2965 6875 50  0001 C CNN
-	1    2965 6875
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3090 6710 2965 6710
-Wire Wire Line
-	2965 6710 2965 6875
 Wire Wire Line
 	2580 4905 2175 4905
 Wire Wire Line
@@ -270,7 +220,7 @@ F 0 "D80" H 2335 5455 50  0000 C CNN
 F 1 "1n4148" H 2325 5550 50  0000 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2225 5405 50  0001 C CNN
 F 3 "~" H 2225 5405 50  0001 C CNN
-F 4 "Only mount if using PLA16V8" H 2225 5405 50  0001 C CNN "Notes"
+F 4 "" H 2225 5405 50  0001 C CNN "Notes"
 	1    2225 5405
 	-1   0    0    1   
 $EndComp
@@ -288,8 +238,6 @@ Text Label 2390 5005 0    50   ~ 0
 a14
 Text Label 2390 5105 0    50   ~ 0
 a13
-Text Label 4615 6710 0    50   ~ 0
-a8
 Text Label 2780 6510 0    50   ~ 0
 a9
 Text Label 2390 5205 0    50   ~ 0
@@ -308,7 +256,7 @@ F 0 "D81" H 2140 5265 50  0000 C CNN
 F 1 "1n4148" H 2025 5179 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2025 5305 50  0001 C CNN
 F 3 "~" H 2025 5305 50  0001 C CNN
-F 4 "Only mount if using PLA16V8" H 2025 5305 50  0001 C CNN "Notes"
+F 4 "" H 2025 5305 50  0001 C CNN "Notes"
 	1    2025 5305
 	-1   0    0    1   
 $EndComp
@@ -322,7 +270,7 @@ F 0 "D82" H 2335 5165 50  0000 C CNN
 F 1 "1n4148" H 2225 5079 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2225 5205 50  0001 C CNN
 F 3 "~" H 2225 5205 50  0001 C CNN
-F 4 "Only mount if using PLA16V8" H 2225 5205 50  0001 C CNN "Notes"
+F 4 "" H 2225 5205 50  0001 C CNN "Notes"
 	1    2225 5205
 	-1   0    0    1   
 $EndComp
@@ -336,7 +284,7 @@ F 0 "D83" H 2140 5065 50  0000 C CNN
 F 1 "1n4148" H 2025 4979 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2025 5105 50  0001 C CNN
 F 3 "~" H 2025 5105 50  0001 C CNN
-F 4 "Only mount if using PLA16V8" H 2025 5105 50  0001 C CNN "Notes"
+F 4 "" H 2025 5105 50  0001 C CNN "Notes"
 	1    2025 5105
 	-1   0    0    1   
 $EndComp
@@ -350,7 +298,7 @@ F 0 "D84" H 2330 4970 50  0000 C CNN
 F 1 "1n4148" H 2225 4879 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2225 5005 50  0001 C CNN
 F 3 "~" H 2225 5005 50  0001 C CNN
-F 4 "Only mount if using PLA16V8" H 2225 5005 50  0001 C CNN "Notes"
+F 4 "" H 2225 5005 50  0001 C CNN "Notes"
 	1    2225 5005
 	-1   0    0    1   
 $EndComp
@@ -364,7 +312,7 @@ F 0 "D85" H 2140 4865 50  0000 C CNN
 F 1 "1n4148" H 2025 4779 50  0001 C CNN
 F 2 "LittleSixteen:D_DO-35_SOD27_P5.08mm_Vertical_KathodeUp" H 2025 4905 50  0001 C CNN
 F 3 "~" H 2025 4905 50  0001 C CNN
-F 4 "Only mount if using PLA16V8" H 2025 4905 50  0001 C CNN "Notes"
+F 4 "" H 2025 4905 50  0001 C CNN "Notes"
 	1    2025 4905
 	-1   0    0    1   
 $EndComp
@@ -397,7 +345,6 @@ F 0 "R80" H 1640 4614 50  0000 R CNN
 F 1 "5.6k" H 1640 4705 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1640 4660 50  0001 C CNN
 F 3 "~" H 1710 4660 50  0001 C CNN
-F 4 "Only mount if using PLA16V8" H 1710 4660 50  0001 C CNN "Notes"
 	1    1710 4660
 	-1   0    0    1   
 $EndComp
@@ -416,31 +363,27 @@ Wire Wire Line
 Wire Wire Line
 	3090 6510 2780 6510
 Wire Wire Line
-	4590 6610 5100 6610
+	4090 6510 4600 6510
 Wire Wire Line
-	4590 6510 5100 6510
+	4090 6410 4435 6410
 Wire Wire Line
-	4590 6410 5100 6410
+	4090 6310 4600 6310
 Wire Wire Line
-	4590 6310 5100 6310
+	4090 6210 4845 6210
 Wire Wire Line
-	4590 6210 5100 6210
+	4090 6110 4600 6110
 Wire Wire Line
-	4590 6110 5100 6110
+	4090 6010 4600 6010
 Wire Wire Line
-	4590 6010 5100 6010
+	4090 5910 4600 5910
 Wire Wire Line
-	4590 5910 5100 5910
-Text Label 4615 6610 0    50   ~ 0
-acia
-Text Label 4615 6210 0    50   ~ 0
+	4090 5810 4600 5810
+Text Label 4600 6110 2    50   ~ 0
 addr_clk
-Text Label 4615 5910 0    50   ~ 0
+Text Label 4600 5810 2    50   ~ 0
 rom_switch
-Text Label 4615 6010 0    50   ~ 0
+Text Label 4600 5910 2    50   ~ 0
 loop
-Text Label 4615 6310 0    50   ~ 0
-speech_cart
 Text Label 2780 5810 0    50   ~ 0
 a10_15
 Entry Wire Line
@@ -453,14 +396,6 @@ Entry Wire Line
 	2680 6110 2780 6210
 Entry Wire Line
 	2680 6410 2780 6510
-Wire Wire Line
-	4590 6710 5100 6710
-Entry Wire Line
-	5100 6710 5200 6810
-Wire Bus Line
-	5200 6810 5200 7215
-Wire Bus Line
-	5200 7215 2680 7215
 Entry Wire Line
 	2580 4905 2680 5005
 Entry Wire Line
@@ -495,23 +430,21 @@ Connection ~ 1710 5105
 Wire Wire Line
 	1710 5105 1710 5205
 Text Notes 3160 4140 0    157  ~ 0
-PLA REPLACEMENT
-Text Notes 3180 4990 0    50   ~ 0
-Based on PLA16V8 by Daniël Mantione\nSee https://www.freepascal.org/~~daniel/c16pla/\n\nR80 and D80-85 should only be installed when\nactually using a PLA16V8, but I think they won't\nhurt anyway.\n\nDiodes other than 1n4148 will probably work, too.
-Text GLabel 5100 6410 2    50   Output ~ 0
+PLA - 1 -
+Text Notes 3160 4605 0    50   ~ 0
+Modified version of PLA16V8 by Daniël Mantione\nSee https://www.freepascal.org/~~daniel/c16pla/\n- Does NOT produce userport ~CS~\n- Instead produces SID & 3rd joystick port ~CS~
+Text GLabel 4600 6310 2    50   Output ~ 0
 PHI2
-Text GLabel 5100 6510 2    50   Output ~ 0
-CASSETTE
-Text GLabel 5100 6110 2    50   Output ~ 0
+Text GLabel 4845 6410 2    50   Output ~ 0
+~SID
+Text GLabel 4600 6010 2    50   Output ~ 0
 KEYPORT_CS
 Text GLabel 2590 6610 0    50   Input ~ 0
 ~RAS
 Wire Wire Line
-	2590 6610 3090 6610
-Wire Wire Line
 	2590 6310 3090 6310
 Wire Wire Line
-	3090 6410 2780 6410
+	3090 6410 2975 6410
 Wire Wire Line
 	2780 6410 2780 6360
 Wire Wire Line
@@ -524,240 +457,11 @@ Text GLabel 2590 6410 0    50   Input ~ 0
 MUX
 Text GLabel 2590 6310 0    50   Input ~ 0
 PHI0
-$Comp
-L power:VCC #PWR0196
-U 1 1 61CEDD52
-P 4715 5650
-F 0 "#PWR0196" H 4715 5500 50  0001 C CNN
-F 1 "VCC" H 4732 5823 50  0000 C CNN
-F 2 "" H 4715 5650 50  0001 C CNN
-F 3 "" H 4715 5650 50  0001 C CNN
-	1    4715 5650
-	1    0    0    -1  
-$EndComp
-Text Label 3575 1285 2    50   ~ 0
-speech_cart
-Wire Wire Line
-	3145 1285 3575 1285
-Text Label 3575 1585 2    50   ~ 0
-acia
-Wire Wire Line
-	3800 1885 3800 2850
-Wire Wire Line
-	3145 1885 3800 1885
 Wire Wire Line
 	3885 1885 4360 1885
-Text Notes 3860 2850 0    50   ~ 0
-KERN $FC00-$FCFF
-Wire Notes Line
-	8615 960  8615 1250
-Text Notes 8390 940  0    50   ~ 0
-This enables function\nROM LOW on the +4
-Wire Notes Line
-	10150 1825 10150 2115
-Text Notes 9925 1805 0    50   ~ 0
-This enables function\nROM HIGH on the +4
-Wire Wire Line
-	3970 1685 4075 1685
-Wire Wire Line
-	3970 1785 3970 1685
-Text GLabel 4075 1685 2    50   Output ~ 0
-KEYPORT_CS
-Wire Wire Line
-	3145 1785 3970 1785
 Wire Wire Line
 	3800 2850 7050 2850
-Wire Wire Line
-	3885 1685 3145 1685
-Wire Wire Line
-	3885 1685 3885 1885
-Text GLabel 4075 1485 2    50   Output ~ 0
-CASSETTE
-Wire Wire Line
-	3145 1485 4075 1485
-Text GLabel 3850 1385 2    50   Output ~ 0
-PHI2
-Wire Wire Line
-	3145 1385 3850 1385
-Text Notes 3745 1620 0    50   ~ 0
-$FD00-$FD0F (ACIA CS on +4)
-Text Notes 3725 1290 0    50   ~ 0
-SCS (?)
-Text Notes 4360 1960 2    50   ~ 0
-ADDR CLK\n$FDD0-$FDDF
 Connection ~ 7050 2850
-$Comp
-L MOS_251641_PLA:MOS_251641_PLA U16
-U 1 1 5DE932D8
-P 2395 1985
-F 0 "U16" H 2395 3200 50  0000 C CNN
-F 1 "MOS_251641_PLA" H 2395 3109 50  0000 C CNN
-F 2 "LittleSixteen:DIP-28_W15.24mm_Socket_LongPads" H 2395 1985 50  0001 C CNN
-F 3 "DOCUMENTATION" H 2395 1985 50  0001 C CNN
-	1    2395 1985
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3145 1985 3685 1985
-Wire Wire Line
-	3685 1985 3685 600 
-Wire Wire Line
-	3685 600  1530 600 
-Wire Wire Line
-	1530 600  1530 1035
-Wire Wire Line
-	1645 1285 1380 1285
-Wire Wire Line
-	1645 1385 1380 1385
-Wire Wire Line
-	1645 1485 1380 1485
-Wire Wire Line
-	1645 1585 1380 1585
-Wire Wire Line
-	1645 1685 1380 1685
-Wire Wire Line
-	1645 1785 1380 1785
-Wire Wire Line
-	1645 1885 1380 1885
-Wire Wire Line
-	1645 1985 1380 1985
-Wire Wire Line
-	1645 2085 1380 2085
-Wire Wire Line
-	1645 2185 1380 2185
-Wire Wire Line
-	1645 2285 1380 2285
-Wire Wire Line
-	1645 2385 1380 2385
-Entry Wire Line
-	1280 1185 1380 1285
-Entry Wire Line
-	1280 1285 1380 1385
-Entry Wire Line
-	1280 1385 1380 1485
-Entry Wire Line
-	1280 1485 1380 1585
-Entry Wire Line
-	1280 1585 1380 1685
-Entry Wire Line
-	1280 1685 1380 1785
-Entry Wire Line
-	1280 1785 1380 1885
-Entry Wire Line
-	1280 1885 1380 1985
-Entry Wire Line
-	1280 1985 1380 2085
-Entry Wire Line
-	1280 2085 1380 2185
-Entry Wire Line
-	1280 2185 1380 2285
-Entry Wire Line
-	1280 2285 1380 2385
-Wire Bus Line
-	1280 1185 960  1185
-Text GLabel 960  1185 0    50   Input ~ 0
-a[0..15]
-Text Label 1415 1285 0    50   ~ 0
-a10
-Text Label 1415 1385 0    50   ~ 0
-a11
-Text Label 1415 1485 0    50   ~ 0
-a13
-Text Label 1415 1585 0    50   ~ 0
-a14
-Text Label 1415 1685 0    50   ~ 0
-a12
-Text Label 1415 1785 0    50   ~ 0
-a7
-Text Label 1415 1885 0    50   ~ 0
-a6
-Text Label 1415 1985 0    50   ~ 0
-a5
-Text Label 1415 2085 0    50   ~ 0
-a4
-Text Label 1415 2185 0    50   ~ 0
-a15
-Text Label 1415 2285 0    50   ~ 0
-a9
-Text Label 1415 2385 0    50   ~ 0
-a8
-Wire Wire Line
-	1645 1035 1530 1035
-Wire Wire Line
-	1420 1135 1420 1025
-Wire Wire Line
-	1420 1025 960  1025
-Wire Wire Line
-	1420 1135 1645 1135
-Text GLabel 960  1025 0    50   Input ~ 0
-PHI0
-Wire Wire Line
-	1645 2935 1535 2935
-Wire Wire Line
-	1535 2935 1535 3055
-$Comp
-L power:GND #PWR0176
-U 1 1 5DF08B63
-P 1535 3055
-F 0 "#PWR0176" H 1535 2805 50  0001 C CNN
-F 1 "GND" H 1540 2882 50  0000 C CNN
-F 2 "" H 1535 3055 50  0001 C CNN
-F 3 "" H 1535 3055 50  0001 C CNN
-	1    1535 3055
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1645 2735 1185 2735
-Wire Wire Line
-	1645 2635 960  2635
-Text GLabel 960  2635 0    50   Input ~ 0
-~RAS
-Text GLabel 1185 2735 0    50   Input ~ 0
-MUX
-Wire Wire Line
-	9405 2915 9775 2915
-Connection ~ 9405 2915
-Wire Wire Line
-	9405 2805 9405 2915
-$Comp
-L power:VCC #PWR0175
-U 1 1 5DEA08F7
-P 9405 2805
-F 0 "#PWR0175" H 9405 2655 50  0001 C CNN
-F 1 "VCC" H 9422 2978 50  0000 C CNN
-F 2 "" H 9405 2805 50  0001 C CNN
-F 3 "" H 9405 2805 50  0001 C CNN
-	1    9405 2805
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9775 2915 9775 3375
-Wire Wire Line
-	9050 2915 9405 2915
-Wire Wire Line
-	9050 3030 9050 2915
-$Comp
-L Device:C C30
-U 1 1 5DEA08DA
-P 9775 3525
-F 0 "C30" H 9890 3571 50  0000 L CNN
-F 1 "100n" H 9890 3480 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 9813 3375 50  0001 C CNN
-F 3 "~" H 9775 3525 50  0001 C CNN
-	1    9775 3525
-	1    0    0    -1  
-$EndComp
-$Comp
-L MOS_251641_PLA:MOS_251641_PLA U16
-U 2 1 5DE9421D
-P 9050 3530
-F 0 "U16" H 8822 3576 50  0000 R CNN
-F 1 "MOS_251641_PLA" H 8822 3485 50  0000 R CNN
-F 2 "LittleSixteen:DIP-28_W15.24mm_Socket_LongPads" H 9050 3530 50  0001 C CNN
-F 3 "DOCUMENTATION" H 9050 3530 50  0001 C CNN
-	2    9050 3530
-	1    0    0    -1  
-$EndComp
 Text GLabel 10420 2350 2    50   Output ~ 0
 C2_HIGH
 Text GLabel 10420 2250 2    50   Output ~ 0
@@ -807,9 +511,11 @@ L 74xx:74LS02 U12
 U 3 1 5EEC5F05
 P 8105 2750
 F 0 "U12" H 8105 3075 50  0000 C CNN
-F 1 "74LS02" H 8105 2984 50  0000 C CNN
+F 1 "74HCT02" H 8105 2984 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 8105 2750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 8105 2750 50  0001 C CNN
+F 4 "595-SN74HCT02N" H 8105 2750 50  0001 C CNN "MouserPN"
+F 5 "Or 595-SN74HC02N, 595-SN74HCT02NE4" H 8105 2750 50  0001 C CNN "Notes"
 	3    8105 2750
 	1    0    0    -1  
 $EndComp
@@ -828,9 +534,11 @@ L 74xx:74LS02 U12
 U 2 1 5EEBA2EA
 P 8105 2050
 F 0 "U12" H 8105 2375 50  0000 C CNN
-F 1 "74LS02" H 8105 2284 50  0000 C CNN
+F 1 "74HCT02" H 8105 2284 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 8105 2050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 8105 2050 50  0001 C CNN
+F 4 "595-SN74HCT02N" H 8105 2050 50  0001 C CNN "MouserPN"
+F 5 "Or 595-SN74HC02N, 595-SN74HCT02NE4" H 8105 2050 50  0001 C CNN "Notes"
 	2    8105 2050
 	1    0    0    -1  
 $EndComp
@@ -863,9 +571,10 @@ L 74xx:74LS139 U14
 U 2 1 5EEA00AA
 P 9650 2150
 F 0 "U14" H 9650 2517 50  0000 C CNN
-F 1 "74LS139" H 9650 2426 50  0000 C CNN
+F 1 "74HCT139" H 9650 2426 50  0000 C CNN
 F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 9650 2150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 9650 2150 50  0001 C CNN
+F 4 "595-SN74HCT139N" H 9650 2150 50  0001 C CNN "MouserPN"
 	2    9650 2150
 	1    0    0    -1  
 $EndComp
@@ -874,9 +583,10 @@ L 74xx:74LS139 U14
 U 1 1 5EE9F177
 P 8115 1285
 F 0 "U14" H 8115 1652 50  0000 C CNN
-F 1 "74LS139" H 8115 1561 50  0000 C CNN
+F 1 "74HCT139" H 8115 1561 50  0000 C CNN
 F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 8115 1285 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 8115 1285 50  0001 C CNN
+F 4 "595-SN74HCT139N" H 8115 1285 50  0001 C CNN "MouserPN"
 	1    8115 1285
 	1    0    0    -1  
 $EndComp
@@ -917,9 +627,11 @@ L 74xx:74LS02 U12
 U 1 1 5EE7B8FB
 P 4660 1985
 F 0 "U12" H 4660 1668 50  0000 C CNN
-F 1 "74LS02" H 4660 1759 50  0000 C CNN
+F 1 "74HCT02" H 4660 1759 50  0000 C CNN
 F 2 "LittleSixteen:DIP-14_W7.62mm_Socket_LongPads" H 4660 1985 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4660 1985 50  0001 C CNN
+F 4 "595-SN74HCT02N" H 4660 1985 50  0001 C CNN "MouserPN"
+F 5 "Or 595-SN74HC02N, 595-SN74HCT02NE4" H 4660 1985 50  0001 C CNN "Notes"
 	1    4660 1985
 	1    0    0    -1  
 $EndComp
@@ -960,20 +672,13 @@ L 74xx:74LS175 U15
 U 1 1 5EE7EA9B
 P 6165 1585
 F 0 "U15" H 6380 2135 50  0000 C CNN
-F 1 "74LS175" H 6435 930 50  0000 C CNN
+F 1 "74HCT175" H 6435 930 50  0000 C CNN
 F 2 "LittleSixteen:DIP-16_W7.62mm_Socket_LongPads" H 6165 1585 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS175" H 6165 1585 50  0001 C CNN
+F 4 "595-CD74HCT175E" H 6165 1585 50  0001 C CNN "MouserPN"
 	1    6165 1585
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3145 1585 3575 1585
-Text Label 3175 1685 0    50   ~ 0
-addr_clk
-Text Label 3175 1885 0    50   ~ 0
-rom_switch
-Text Label 3175 1985 0    50   ~ 0
-loop
 $Comp
 L power:VCC #PWR0199
 U 1 1 61D4F9A8
@@ -993,10 +698,176 @@ Text GLabel 10420 2150 2    50   Output ~ 0
 ~FUNCHI_CS
 Wire Wire Line
 	10150 2150 10420 2150
+Text GLabel 4600 6510 2    50   Output ~ 0
+~ACIA
+Wire Wire Line
+	2780 5710 2780 5165
+Wire Wire Line
+	2780 5165 3205 5165
+Connection ~ 2780 5710
+Text GLabel 3205 5165 2    50   Output ~ 0
+A15_10_HIGH
+Text Label 3800 2850 0    50   ~ 0
+rom_switch
+Text Notes 4840 6550 0    50   ~ 0
+$FD00-$FD0F
+Text Notes 5150 6140 2    50   ~ 0
+$FDD0-$FDDF
+Text Notes 4615 5845 0    50   ~ 0
+KERN $FC00-$FCFF
+Text Label 3885 1885 0    50   ~ 0
+addr_clk
+Text GLabel 4845 6210 2    50   Output ~ 0
+~JOY3
+Wire Wire Line
+	3590 5610 3590 5500
+Wire Wire Line
+	3590 7010 3590 7085
+$Comp
+L power:GND #PWR?
+U 1 1 652CFBD6
+P 3590 7085
+AR Path="/64A6E6F3/652CFBD6" Ref="#PWR?"  Part="1" 
+AR Path="/63EAD078/652CFBD6" Ref="#PWR?"  Part="1" 
+AR Path="/5EE7AAEB/652CFBD6" Ref="#PWR0293"  Part="1" 
+F 0 "#PWR0293" H 3590 6835 50  0001 C CNN
+F 1 "GND" H 3595 6912 50  0000 C CNN
+F 2 "" H 3590 7085 50  0001 C CNN
+F 3 "" H 3590 7085 50  0001 C CNN
+	1    3590 7085
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_Programmable:GAL16V8 U?
+U 1 1 652CFBDE
+P 3590 6310
+AR Path="/64A6E6F3/652CFBDE" Ref="U?"  Part="1" 
+AR Path="/63EAD078/652CFBDE" Ref="U?"  Part="1" 
+AR Path="/5EE7AAEB/652CFBDE" Ref="U19"  Part="1" 
+F 0 "U19" H 3855 6910 50  0000 C CNN
+F 1 "GAL16V8" H 3780 5705 50  0000 C CNN
+F 2 "LittleSixteen:DIP-20_W7.62mm_Socket_LongPads" H 3590 6310 50  0001 C CNN
+F 3 "" H 3590 6310 50  0001 C CNN
+F 4 "556-AF16V8B15PU" H 3590 6310 50  0001 C CNN "MouserPN"
+F 5 "GAL16V8" H 3590 6310 50  0001 C CNN "Value"
+	1    3590 6310
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 652CFBE4
+P 3590 5500
+AR Path="/64A6E6F3/652CFBE4" Ref="#PWR?"  Part="1" 
+AR Path="/63EAD078/652CFBE4" Ref="#PWR?"  Part="1" 
+AR Path="/5EE7AAEB/652CFBE4" Ref="#PWR0294"  Part="1" 
+F 0 "#PWR0294" H 3590 5350 50  0001 C CNN
+F 1 "VCC" H 3605 5673 50  0000 C CNN
+F 2 "" H 3590 5500 50  0001 C CNN
+F 3 "" H 3590 5500 50  0001 C CNN
+	1    3590 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2590 6610 2635 6610
+Wire Wire Line
+	2635 6610 2635 6540
+Wire Wire Line
+	2635 6540 2780 6540
+Wire Wire Line
+	2780 6540 2780 6610
+Wire Wire Line
+	2780 6610 3090 6610
+Text Label 2780 6710 0    50   ~ 0
+a8
+Wire Wire Line
+	3090 6710 2780 6710
+Entry Wire Line
+	2680 6610 2780 6710
+NoConn ~ 4600 5910
+Wire Wire Line
+	1820 6635 1820 6710
+Wire Wire Line
+	1820 6260 1820 6335
+$Comp
+L power:GND #PWR?
+U 1 1 64692107
+P 1820 6710
+AR Path="/5E4A465A/64692107" Ref="#PWR?"  Part="1" 
+AR Path="/5EE7AAEB/64692107" Ref="#PWR0138"  Part="1" 
+F 0 "#PWR0138" H 1820 6460 50  0001 C CNN
+F 1 "GND" H 1825 6537 50  0000 C CNN
+F 2 "" H 1820 6710 50  0001 C CNN
+F 3 "" H 1820 6710 50  0001 C CNN
+	1    1820 6710
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64692111
+P 1820 6260
+AR Path="/5E4A465A/64692111" Ref="#PWR?"  Part="1" 
+AR Path="/5EE7AAEB/64692111" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 1820 6110 50  0001 C CNN
+F 1 "VCC" H 1837 6433 50  0000 C CNN
+F 2 "" H 1820 6260 50  0001 C CNN
+F 3 "" H 1820 6260 50  0001 C CNN
+	1    1820 6260
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6469211B
+P 1820 6485
+AR Path="/5E4A465A/6469211B" Ref="C?"  Part="1" 
+AR Path="/5EE7AAEB/6469211B" Ref="C30"  Part="1" 
+F 0 "C30" H 1935 6531 50  0000 L CNN
+F 1 "100n" H 1935 6440 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 1858 6335 50  0001 C CNN
+F 3 "~" H 1820 6485 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 1820 6485 50  0001 C CNN "MouserPN"
+	1    1820 6485
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 64F85BB3
+P 4435 6640
+AR Path="/5DE044CB/64F85BB3" Ref="TP?"  Part="1" 
+AR Path="/5EE7AAEB/64F85BB3" Ref="TP6"  Part="1" 
+F 0 "TP6" H 4435 6965 50  0000 C CNN
+F 1 "SIDCS_TESTPOINT" H 4435 6874 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4635 6640 50  0001 C CNN
+F 3 "~" H 4635 6640 50  0001 C CNN
+F 4 "---" H 4435 6640 50  0001 C CNN "MouserPN"
+	1    4435 6640
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4435 6640 4435 6410
+Connection ~ 4435 6410
+Wire Wire Line
+	4435 6410 4845 6410
+$Comp
+L Connector:TestPoint TP?
+U 1 1 64F9F183
+P 2975 6865
+AR Path="/5DE044CB/64F9F183" Ref="TP?"  Part="1" 
+AR Path="/5EE7AAEB/64F9F183" Ref="TP7"  Part="1" 
+F 0 "TP7" H 2975 7190 50  0000 C CNN
+F 1 "MUX_TESTPOINT" H 2975 7099 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3175 6865 50  0001 C CNN
+F 3 "~" H 3175 6865 50  0001 C CNN
+F 4 "---" H 2975 6865 50  0001 C CNN "MouserPN"
+	1    2975 6865
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2975 6865 2975 6410
+Connection ~ 2975 6410
+Wire Wire Line
+	2975 6410 2780 6410
 Wire Bus Line
 	5245 1085 5245 1685
 Wire Bus Line
-	1280 1185 1280 2285
-Wire Bus Line
-	2680 4095 2680 7215
+	2680 4095 2680 6610
 $EndSCHEMATC

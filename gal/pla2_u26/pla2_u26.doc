@@ -1,0 +1,95 @@
+
+*******************************************************************************
+                                   PLA2_U26
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8as  Library DLIB-h-40-2
+Created         Sun Jul 21 02:03:49 2024
+Name            PLA2_U26
+Partno          TBD
+Revision        01
+Date            14/02/2023
+Designer        SukkoPera
+Company         OpenRetroWorks
+Assembly        None
+Location        Italy
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+_addr =>
+    a15 , a14 , a13 , a12
+
+_switchable_range =>
+    a12 & !a14 & !a15 & !p7
+  # !a12 & a13 & !a15 & !p7
+  # !a12 & a13 & a14 & a15 & !p7
+  # a12 & a13 & a14 & !p7
+  # !a14 & a15
+  # !a13 & a14 & !p7
+  # a14 & p7
+
+j1sel =>
+    d2 & joyswap
+  # d1 & !joyswap
+
+j2sel =>
+    d1 & joyswap
+  # d2 & !joyswap
+
+sram_a16 =>
+    p0
+  # !a14 & !a15 & p7
+  # !a12 & !a13 & !a14 & !a15
+  # !aec & !p6
+
+sram_a17 =>
+    p1
+  # !a14 & !a15 & p7
+  # !a12 & !a13 & !a14 & !a15
+  # !aec & !p6
+
+sram_a18 =>
+    p2
+  # !a14 & !a15 & p7
+  # !a12 & !a13 & !a14 & !a15
+  # !aec & !p6
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    _addr                       0        F        -       -       -     
+    _switchable_range           0        I        7       -       -     
+    a12                         4        V        -       -       -     
+    a13                         3        V        -       -       -     
+    a14                         2        V        -       -       -     
+    a15                         1        V        -       -       -     
+    aec                         11       V        -       -       -     
+    d1                          13       V        -       -       -     
+    d2                          12       V        -       -       -     
+    j1sel                       16       V        2       8       1     
+    j2sel                       15       V        2       8       1     
+    joyswap                     14       V        -       -       -     
+    p0                          5        V        -       -       -     
+    p1                          6        V        -       -       -     
+    p2                          7        V        -       -       -     
+    p6                          8        V        -       -       -     
+    p7                          9        V        -       -       -     
+    sram_a16                    19       V        4       8       1     
+    sram_a17                    18       V        4       8       1     
+    sram_a18                    17       V        4       8       1     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

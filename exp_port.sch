@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 12
+Sheet 8 14
 Title "LittleSixteen"
-Date "2021-12-05"
-Rev "3git"
+Date "2024-07-21"
+Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
-Comment2 "WARNING: These schematics might contain errors!"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -81,17 +81,6 @@ Text GLabel 4305 4090 0    50   Input ~ 0
 ~CAS
 Text GLabel 4570 3490 0    50   Input ~ 0
 R_~W
-$Comp
-L Exp-Port:C16-Exp-Port CN1
-U 1 1 5E91CB40
-P 5855 4290
-F 0 "CN1" H 5855 5855 50  0000 C CNN
-F 1 "EXPANSION_CONNECTOR" H 5855 5764 50  0000 C CNN
-F 2 "LittleSixteen:50Pin_Edge_Connector" H 5855 2640 50  0001 C CNN
-F 3 "DOCUMENTATION" H 5855 2540 50  0001 C CNN
-	1    5855 4290
-	1    0    0    -1  
-$EndComp
 Text Label 6905 5090 2    60   ~ 0
 a0
 Wire Wire Line
@@ -253,26 +242,28 @@ Connection ~ 6700 5490
 Wire Wire Line
 	6700 5490 6700 3090
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB38
+L emi_filter_3pin:EMI_Filter_3Pin FB38
 U 1 1 5E9793EF
 P 6905 3390
 F 0 "FB38" V 6760 3390 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 6759 3390 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 6835 3390 50  0001 C CNN
+F 1 "DO NOT MOUNT" V 6759 3390 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 6835 3390 50  0001 C CNN
 F 3 "~" H 6905 3390 50  0001 C CNN
+F 4 "---" H 6905 3390 50  0001 C CNN "MouserPN"
 	1    6905 3390
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	6805 3390 6605 3390
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB40
+L emi_filter_3pin:EMI_Filter_3Pin FB40
 U 1 1 5E979856
 P 4765 4090
 F 0 "FB40" V 4625 4090 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 4619 4090 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 4695 4090 50  0001 C CNN
+F 1 "DO NOT MOUNT" V 4619 4090 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 4695 4090 50  0001 C CNN
 F 3 "~" H 4765 4090 50  0001 C CNN
+F 4 "---" H 4765 4090 50  0001 C CNN "MouserPN"
 	1    4765 4090
 	0    -1   1    0   
 $EndComp
@@ -291,13 +282,14 @@ PHI0
 Wire Wire Line
 	7440 3490 7205 3490
 $Comp
-L ferrite_bead_small:Ferrite_Bead_Small FB39
+L emi_filter_3pin:EMI_Filter_3Pin FB39
 U 1 1 5E982F3B
 P 7105 3490
 F 0 "FB39" V 6960 3490 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 6959 3490 50  0001 C CNN
-F 2 "LittleSixteen:Ferrite" V 7035 3490 50  0001 C CNN
+F 1 "DO NOT MOUNT" V 6959 3490 50  0001 C CNN
+F 2 "LittleSixteen:EMI_Filter" V 7035 3490 50  0001 C CNN
 F 3 "~" H 7105 3490 50  0001 C CNN
+F 4 "---" H 7105 3490 50  0001 C CNN "MouserPN"
 	1    7105 3490
 	0    1    1    0   
 $EndComp
@@ -343,33 +335,6 @@ Text GLabel 4580 5290 0    50   Output ~ 0
 EXT_AUDIO
 Wire Wire Line
 	4580 5290 5105 5290
-Text GLabel 7230 5190 2    50   Output ~ 0
-RAMEN
-Wire Wire Line
-	6605 5190 6855 5190
-Wire Notes Line
-	6375 5115 7575 5115
-Wire Notes Line
-	7575 5115 7575 5260
-Wire Notes Line
-	7575 5260 6375 5260
-Wire Notes Line
-	6375 5260 6375 5115
-Text Notes 7635 5710 0    50   ~ 0
-On the Plus/4 schematics from the German User's guide, the\nZ pin is reported as "RAMEN (NC)". On the actual boards it is\nactually NC, but then why not use it as a real "RAM Enable"\nsignal to solve the problem of external RAM expansions not\nworking? :)\nWe add a jumper just in case some old cart has Z grounded\nwhile it shouldn't.
-$Comp
-L Device:Jumper_NC_Small JP8
-U 1 1 61F43269
-P 6955 5190
-F 0 "JP8" H 6955 5030 50  0000 C CNN
-F 1 "JP_RAMEN" H 6955 4930 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6955 5190 50  0001 C CNN
-F 3 "~" H 6955 5190 50  0001 C CNN
-	1    6955 5190
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7055 5190 7230 5190
 Wire Wire Line
 	10280 3965 10280 3900
 $Comp
@@ -379,9 +344,10 @@ P 10280 4115
 AR Path="/5EACE220/6349BFDB" Ref="C?"  Part="1" 
 AR Path="/5E6A379E/6349BFDB" Ref="C94"  Part="1" 
 F 0 "C94" H 10395 4161 50  0000 L CNN
-F 1 "100n/25V" H 10395 4070 50  0000 L CNN
+F 1 "100n" H 10395 4070 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 10318 3965 50  0001 C CNN
 F 3 "~" H 10280 4115 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 10280 4115 50  0001 C CNN "MouserPN"
 	1    10280 4115
 	1    0    0    -1  
 $EndComp
@@ -411,6 +377,19 @@ F 3 "" H 10280 4325 50  0001 C CNN
 $EndComp
 Text Notes 10045 4725 0    50   ~ 0
 Additional\ndecoupling cap
+$Comp
+L Exp-Port:C16-Exp-Port CN1
+U 1 1 5E91CB40
+P 5855 4290
+F 0 "CN1" H 5855 5855 50  0000 C CNN
+F 1 "EXPANSION_CONNECTOR" H 5855 5764 50  0000 C CNN
+F 2 "LittleSixteen:50Pin_Edge_Connector" H 5855 2640 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5855 2540 50  0001 C CNN
+F 4 "Must be recovered from an old board : (" H 5855 4290 50  0001 C CNN "Notes"
+F 5 ":)" H 5855 4290 50  0001 C CNN "MouserPN"
+	1    5855 4290
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	3910 4290 3910 4990
 Wire Bus Line

@@ -1,0 +1,113 @@
+CSIM(WM): CUPL Simulation Program
+Version 5.0a Serial# 
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+CREATED Sun Jul 21 02:03:51 2024
+
+LISTING FOR SIMULATION FILE: PLA2_U26.si
+
+   1: /* LittleSixteen V4 PLA2 (U26) Equations
+   2:  * Copyright 2022-2024 SukkoPera <software@sukkology.net>
+   3:  *
+   4:  * This program is free software: you can redistribute it and/or modify
+   5:  * it under the terms of the GNU General Public License as published by
+   6:  * the Free Software Foundation, either version 3 of the License, or
+   7:  * (at your option) any later version.
+   8:  *
+   9:  * This program is distributed in the hope that it will be useful,
+  10:  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  11:  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  12:  * GNU General Public License for more details.
+  13:  *
+  14:  * You should have received a copy of the GNU General Public License
+  15:  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  16:  */
+  17: 
+  18: Name PLA2_U26;
+  19: Partno TBD;
+  20: Date 14/02/2023;
+  21: Revision 01;
+  22: Designer SukkoPera;
+  23: Company OpenRetroWorks;
+  24: Assembly None;
+  25: Location Italy;
+  26: Device g16v8as;
+  27: 
+  28: FIELD _addr = [a15,a14,a13,a12];
+  29:
+  30: ORDER: _addr, p0, p1, p2, p6, p7, aec,    sram_a16, sram_a17, sram_a18;
+  31: 
+
+======================
+         d      sss   
+                rrr   
+                aaa   
+                mmm   
+                ___   
+               aaaa   
+      _ad pppppe111   
+       r  01267c678   
+======================
+0001: 0000000101HHH
+0002: 0001000101LLL
+0003: 0010000101LLL
+0004: 0011000101LLL
+0005: 0011001101LLH
+0006: 0011010101LHL
+0007: 0011011101LHH
+0008: 0011100101HLL
+0009: 0011101101HLH
+0010: 0011110101HHL
+0011: 0011111101HHH
+0012: 0000000111HHH
+0013: 0001000111HHH
+0014: 0010000111HHH
+0015: 0011000111HHH
+0016: 0100000111LLL
+0017: 0000000001HHH
+0018: 0001000001LLL
+0019: 0010000001LLL
+0020: 0011000001LLL
+0021: 0011001001LLH
+0022: 0011010001LHL
+0023: 0011011001LHH
+0024: 0011100001HLL
+0025: 0011101001HLH
+0026: 0011110001HHL
+0027: 0011111001HHH
+0028: 0000000011HHH
+0029: 0001000011HHH
+0030: 0010000011HHH
+0031: 0011000011HHH
+0032: 0100000011LLL
+0033: 0000000100HHH
+0034: 0001000100LLL
+0035: 0010000100LLL
+0036: 0011000100LLL
+0037: 0011001100LLH
+0038: 0011010100LHL
+0039: 0011011100LHH
+0040: 0011100100HLL
+0041: 0011101100HLH
+0042: 0011110100HHL
+0043: 0011111100HHH
+0044: 0000000110HHH
+0045: 0001000110HHH
+0046: 0010000110HHH
+0047: 0011000110HHH
+0048: 0100000110LLL
+0049: 0000000000HHH
+0050: 0001000000HHH
+0051: 0010000000HHH
+0052: 0011000000HHH
+0053: 0011001000HHH
+0054: 0011010000HHH
+0055: 0011011000HHH
+0056: 0011100000HHH
+0057: 0011101000HHH
+0058: 0011110000HHH
+0059: 0011111000HHH
+0060: 0000000010HHH
+0061: 0001000010HHH
+0062: 0010000010HHH
+0063: 0011000010HHH
+0064: 0100000010HHH

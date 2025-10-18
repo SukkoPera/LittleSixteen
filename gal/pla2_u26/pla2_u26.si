@@ -1,0 +1,101 @@
+/* LittleSixteen V4 PLA2 (U26) Equations
+ * Copyright 2022-2024 SukkoPera <software@sukkology.net>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+Name PLA2_U26;
+Partno TBD;
+Date 14/02/2023;
+Revision 01;
+Designer SukkoPera;
+Company OpenRetroWorks;
+Assembly None;
+Location Italy;
+Device g16v8as;
+
+ORDER: _addr, p0, p1, p2, p6, p7, aec,    sram_a16, sram_a17, sram_a18;
+
+VECTORS:
+
+/* CPU (aec=1) */
+'0' 000 1 0 1  HHH
+'1' 000 1 0 1  LLL	/* Into switchable range with threshold at $0FFF */
+'2' 000 1 0 1  LLL
+'3' 000 1 0 1  LLL
+'3' 001 1 0 1  LLH
+'3' 010 1 0 1  LHL
+'3' 011 1 0 1  LHH
+'3' 100 1 0 1  HLL
+'3' 101 1 0 1  HLH
+'3' 110 1 0 1  HHL
+'3' 111 1 0 1  HHH
+'0' 000 1 1 1  HHH  /* Move threshold to $3FFF (p7=1) */
+'1' 000 1 1 1  HHH
+'2' 000 1 1 1  HHH
+'3' 000 1 1 1  HHH
+'4' 000 1 1 1  LLL	/* Into switchable range */
+
+/* CPU shall not be affected by p6 */
+'0' 000 0 0 1  HHH
+'1' 000 0 0 1  LLL	/* Into switchable range with threshold at $0FFF */
+'2' 000 0 0 1  LLL
+'3' 000 0 0 1  LLL
+'3' 001 0 0 1  LLH
+'3' 010 0 0 1  LHL
+'3' 011 0 0 1  LHH
+'3' 100 0 0 1  HLL
+'3' 101 0 0 1  HLH
+'3' 110 0 0 1  HHL
+'3' 111 0 0 1  HHH
+'0' 000 0 1 1  HHH  /* Move threshold to $3FFF (p7=1) */
+'1' 000 0 1 1  HHH
+'2' 000 0 1 1  HHH
+'3' 000 0 1 1  HHH
+'4' 000 0 1 1  LLL	/* Into switchable range */
+
+/* TED (aec=0) */
+'0' 000 1 0 0  HHH
+'1' 000 1 0 0  LLL	/* Into switchable range with threshold at $0FFF */
+'2' 000 1 0 0  LLL
+'3' 000 1 0 0  LLL
+'3' 001 1 0 0  LLH
+'3' 010 1 0 0  LHL
+'3' 011 1 0 0  LHH
+'3' 100 1 0 0  HLL
+'3' 101 1 0 0  HLH
+'3' 110 1 0 0  HHL
+'3' 111 1 0 0  HHH
+'0' 000 1 1 0  HHH  /* Move threshold to $3FFF (p7=1) */
+'1' 000 1 1 0  HHH
+'2' 000 1 1 0  HHH
+'3' 000 1 1 0  HHH
+'4' 000 1 1 0  LLL	/* Into switchable range */
+
+'0' 000 0 0 0  HHH  /* Now prohibit TED from switching (p6=0) */
+'1' 000 0 0 0  HHH	/* Into switchable range with threshold at $0FFF */
+'2' 000 0 0 0  HHH
+'3' 000 0 0 0  HHH
+'3' 001 0 0 0  HHH
+'3' 010 0 0 0  HHH
+'3' 011 0 0 0  HHH
+'3' 100 0 0 0  HHH
+'3' 101 0 0 0  HHH
+'3' 110 0 0 0  HHH
+'3' 111 0 0 0  HHH
+'0' 000 0 1 0  HHH  /* Move threshold to $3FFF (p7=1) */
+'1' 000 0 1 0  HHH
+'2' 000 0 1 0  HHH
+'3' 000 0 1 0  HHH
+'4' 000 0 1 0  HHH	/* Into switchable range */

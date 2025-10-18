@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 12
+Sheet 3 14
 Title "LittleSixteen"
-Date "2020-01-03"
-Rev "3git"
+Date "2024-02-05"
+Rev "4git"
 Comp "SukkoPera"
 Comment1 "Licensed under CC BY-NC-SA 4.0"
-Comment2 "WARNING: These schematics might contain errors!"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -21,6 +21,7 @@ F 0 "U1" H 8185 4215 50  0000 C CNN
 F 1 "MOS_7360_TED" H 8185 4124 50  0000 C CNN
 F 2 "LittleSixteen:DIP-48_W15.24mm_Socket_LongPads" H 8185 2700 50  0001 C CNN
 F 3 "DOCUMENTATION" H 8185 2700 50  0001 C CNN
+F 4 ":)" H 8185 2700 50  0001 C CNN "MouserPN"
 	1    8185 2700
 	1    0    0    -1  
 $EndComp
@@ -329,8 +330,9 @@ AR Path="/5E4A81E1/5E9903C9" Ref="C?"  Part="1"
 AR Path="/5DE044CB/5E9903C9" Ref="C3"  Part="1" 
 F 0 "C3" H 5871 7131 50  0000 R CNN
 F 1 "10u/25V" H 5871 7040 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5985 7085 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5985 7085 50  0001 C CNN
 F 3 "~" H 5985 7085 50  0001 C CNN
+F 4 "710-860010572002" H 5985 7085 50  0001 C CNN "MouserPN"
 	1    5985 7085
 	1    0    0    -1  
 $EndComp
@@ -344,6 +346,7 @@ F 0 "C21" H 6595 7131 50  0000 L CNN
 F 1 "100n" H 6595 7040 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 6518 6935 50  0001 C CNN
 F 3 "~" H 6480 7085 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 6480 7085 50  0001 C CNN "MouserPN"
 	1    6480 7085
 	1    0    0    -1  
 $EndComp
@@ -495,6 +498,7 @@ F 0 "R1" H 2320 2666 50  0000 L CNN
 F 1 "10k" H 2320 2575 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 2180 2620 50  0001 C CNN
 F 3 "~" H 2250 2620 50  0001 C CNN
+F 4 "603-MFR-25FTF52-10K" H 2250 2620 50  0001 C CNN "MouserPN"
 	1    2250 2620
 	1    0    0    -1  
 $EndComp
@@ -508,6 +512,7 @@ F 0 "Q1" H 3390 3426 50  0000 L CNN
 F 1 "2SC1815" H 3390 3335 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3400 3305 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 3200 3380 50  0001 L CNN
+F 4 "610-2SC1815-GR" H 3200 3380 50  0001 C CNN "MouserPN"
 	1    3200 3380
 	1    0    0    -1  
 $EndComp
@@ -569,7 +574,7 @@ L Device:C C15
 U 1 1 5EB150D4
 P 3855 3130
 F 0 "C15" V 3603 3130 50  0000 C CNN
-F 1 "10p" V 3694 3130 50  0000 C CNN
+F 1 "10n" V 3694 3130 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 3893 2980 50  0001 C CNN
 F 3 "~" H 3855 3130 50  0001 C CNN
 	1    3855 3130
@@ -603,6 +608,7 @@ F 0 "Q2" H 4955 3176 50  0000 L CNN
 F 1 "2SC1815" H 4955 3085 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 4965 3055 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 4765 3130 50  0001 L CNN
+F 4 "610-2SC1815-GR" H 4765 3130 50  0001 C CNN "MouserPN"
 	1    4765 3130
 	1    0    0    -1  
 $EndComp
@@ -677,6 +683,7 @@ F 0 "C32" H 5685 2661 50  0000 L CNN
 F 1 "100p" H 5685 2570 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 5608 2465 50  0001 C CNN
 F 3 "~" H 5570 2615 50  0001 C CNN
+F 4 "810-FG28C0G2A101JNT6" H 5570 2615 50  0001 C CNN "MouserPN"
 	1    5570 2615
 	1    0    0    -1  
 $EndComp
@@ -705,6 +712,7 @@ F 0 "TP1" H 6000 2945 50  0000 C CNN
 F 1 "CLOCK_TESTPOINT" H 6000 2854 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6200 2620 50  0001 C CNN
 F 3 "~" H 6200 2620 50  0001 C CNN
+F 4 "---" H 6000 2620 50  0001 C CNN "MouserPN"
 	1    6000 2620
 	1    0    0    -1  
 $EndComp
@@ -727,13 +735,145 @@ $Comp
 L Device:Crystal_GND3 Y1
 U 1 1 5E276D96
 P 1740 3655
-F 0 "Y1" V 1740 3786 50  0000 L CNN
-F 1 "Crystal" V 1695 3786 50  0001 L CNN
+F 0 "Y1" V 1694 3786 50  0000 L CNN
+F 1 "17.734475M" V 1785 3786 50  0000 L CNN
 F 2 "Crystal:Crystal_HC49-U_Horizontal_1EP_style2" H 1740 3655 50  0001 C CNN
 F 3 "~" H 1740 3655 50  0001 C CNN
+F 4 "Use 14.31818M for NTSC, +/- 70ppm, CL = 32p" H 1740 3655 50  0001 C CNN "Notes"
+F 5 "710-830003298B" H 1740 3655 50  0001 C CNN "MouserPN"
 	1    1740 3655
 	0    -1   1    0   
 $EndComp
+Wire Wire Line
+	8250 5365 8250 5770
+Wire Wire Line
+	8385 5365 8250 5365
+Text Notes 7715 4895 0    50   ~ 0
+(EXPERIMENTAL)\nDIRECT TED AUDIO OUTPUT
+Wire Wire Line
+	8195 5265 8385 5265
+$Comp
+L Connector:Conn_01x02_Male CN?
+U 1 1 64CE27EC
+P 8585 5365
+AR Path="/64A6E6F3/64CE27EC" Ref="CN?"  Part="1" 
+AR Path="/5DE044CB/64CE27EC" Ref="CN13"  Part="1" 
+F 0 "CN13" H 8557 5247 50  0000 R CNN
+F 1 "CONN_TED_OUTPUT" H 8557 5338 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8585 5365 50  0001 C CNN
+F 3 "~" H 8585 5365 50  0001 C CNN
+	1    8585 5365
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 64CE27F4
+P 8045 5265
+AR Path="/64A6E6F3/64CE27F4" Ref="C?"  Part="1" 
+AR Path="/5DE044CB/64CE27F4" Ref="C96"  Part="1" 
+F 0 "C96" V 8297 5265 50  0000 C CNN
+F 1 "10u/25V" V 8206 5265 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8045 5265 50  0001 C CNN
+F 3 "~" H 8045 5265 50  0001 C CNN
+F 4 "710-860010572002" H 8045 5265 50  0001 C CNN "MouserPN"
+F 5 "10u" H 8045 5265 50  0001 C CNN "Value"
+F 6 "Audio cap recommended" H 8045 5265 50  0001 C CNN "Notes"
+	1    8045 5265
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7610 5265 0    50   Input ~ 0
+SND
+Wire Wire Line
+	7610 5265 7895 5265
+$Comp
+L power:GND #PWR?
+U 1 1 64CF4BA6
+P 8250 5770
+AR Path="/5E4A81E1/64CF4BA6" Ref="#PWR?"  Part="1" 
+AR Path="/5DE044CB/64CF4BA6" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 8250 5520 50  0001 C CNN
+F 1 "GND" H 8255 5597 50  0000 C CNN
+F 2 "" H 8250 5770 50  0001 C CNN
+F 3 "" H 8250 5770 50  0001 C CNN
+	1    8250 5770
+	1    0    0    -1  
+$EndComp
+$Comp
+L Oscillator:CXO_DIP14 X1
+U 1 1 65CA419C
+P 3300 6040
+F 0 "X1" H 3490 6300 50  0000 R CNN
+F 1 "OSC_DIP14" H 3775 5780 50  0000 R CNN
+F 2 "LittleSixteen:Oscillator_DIP-8+14" H 3750 5690 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 3200 6040 50  0001 C CNN
+	1    3300 6040
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 65CA9785
+P 3300 6385
+F 0 "#PWR031" H 3300 6135 50  0001 C CNN
+F 1 "GND" H 3305 6212 50  0000 C CNN
+F 2 "" H 3300 6385 50  0001 C CNN
+F 3 "" H 3300 6385 50  0001 C CNN
+	1    3300 6385
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6340 3300 6385
+Wire Wire Line
+	3300 5740 3300 5635
+$Comp
+L power:VCC #PWR025
+U 1 1 65CAECEF
+P 3300 5635
+F 0 "#PWR025" H 3300 5485 50  0001 C CNN
+F 1 "VCC" H 3317 5808 50  0000 C CNN
+F 2 "" H 3300 5635 50  0001 C CNN
+F 3 "" H 3300 5635 50  0001 C CNN
+	1    3300 5635
+	1    0    0    -1  
+$EndComp
+Text Label 6000 2850 0    50   ~ 0
+clock_in
+Text Label 4095 6040 2    50   ~ 0
+clock_in
+Wire Wire Line
+	3600 6040 4095 6040
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 65CBEEFF
+P 2750 6040
+F 0 "JP2" H 2750 6225 50  0000 C CNN
+F 1 "JMP_OSC_GND" H 2750 6134 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2750 6040 50  0001 C CNN
+F 3 "~" H 2750 6040 50  0001 C CNN
+F 4 "---" H 2750 6040 50  0001 C CNN "MouserPN"
+	1    2750 6040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6040 3000 6040
+Wire Wire Line
+	2650 6040 2485 6040
+$Comp
+L power:GND #PWR029
+U 1 1 65CCA0B2
+P 2485 6385
+F 0 "#PWR029" H 2485 6135 50  0001 C CNN
+F 1 "GND" H 2490 6212 50  0000 C CNN
+F 2 "" H 2485 6385 50  0001 C CNN
+F 3 "" H 2485 6385 50  0001 C CNN
+	1    2485 6385
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2485 6040 2485 6385
+Text Notes 2450 7070 0    50   ~ 0
+This can replace the whole circuit above.\n\nIf a DFO is mounted, PAL/NTSC switching\nbecomes a breeze ;)
+Text Notes 2640 5305 0    50   ~ 0
+ALTERNATIVE DISCRETE OSCILLATOR
 Wire Bus Line
 	6865 885  6865 1650
 Wire Bus Line

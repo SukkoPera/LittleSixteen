@@ -1,0 +1,82 @@
+
+*******************************************************************************
+                                   PLA3_U28
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8as  Library DLIB-h-40-2
+Created         Fri Feb 23 23:26:25 2024
+Name            PLA3_U28
+Partno          TBD
+Revision        01
+Date            14/02/2023
+Designer        SukkoPera
+Company         OpenRetroWorks
+Assembly        None
+Location        Italy
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+_addr_fdxx =>
+    a15_10_hi & a8 & !a9
+
+_addr_lo =>
+    a7 , a6 , a5 , a4 , a3 , a2 , a1 , a0
+
+cba =>
+    rw
+  # userport_cs
+
+gab =>
+    rw & !userport_cs
+
+ramreg_rcs =>
+    !a0 & a1 & a15_10_hi & a2 & !a3 & a4 & !a5 & !a6 & !a7 & a8 & !a9 & phi2 & 
+      rw
+
+ramreg_wcs =>
+    !a0 & a1 & a15_10_hi & a2 & !a3 & a4 & !a5 & !a6 & !a7 & a8 & !a9 & phi2 & 
+      !rw
+
+userport_cs =>
+    !a0 & !a1 & a15_10_hi & !a2 & !a3 & a4 & !a5 & !a6 & !a7 & a8 & !a9 & 
+      phi2
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    _addr_fdxx                  0        I        1       -       -     
+    _addr_lo                    0        F        -       -       -     
+    a0                          11       V        -       -       -     
+    a1                          9        V        -       -       -     
+    a15_10_hi                   19       V        -       -       -     
+    a2                          8        V        -       -       -     
+    a3                          7        V        -       -       -     
+    a4                          6        V        -       -       -     
+    a5                          5        V        -       -       -     
+    a6                          4        V        -       -       -     
+    a7                          3        V        -       -       -     
+    a8                          2        V        -       -       -     
+    a9                          1        V        -       -       -     
+    cba                         15       V        2       8       2     
+    gab                         14       V        1       8       2     
+    phi2                        13       V        -       -       -     
+    ramreg_rcs                  17       V        1       8       2     
+    ramreg_wcs                  16       V        1       8       2     
+    rw                          12       V        -       -       -     
+    userport_cs                 18       V        1       8       2     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EMI_Filter_3Pin
+D 3-Pin EMI Filter
+K ferrite bead inductor filter emi
+F ~
+$ENDCMP
+#
+#End Doc Library
