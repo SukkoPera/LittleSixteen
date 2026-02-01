@@ -102,7 +102,7 @@ Also, if you still have to register, [you can use this link](https://www.pcbway.
 
 You can also buy me a coffee if you want:
 
-<a href='https://ko-fi.com/L3L0U18L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href='https://ko-fi.com/L3L0U18L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## Thanks
 - My father, for buying me my C16 when I was 8, my first computer ever. This project is dedicated to his memory.
@@ -115,6 +115,7 @@ You can also buy me a coffee if you want:
 
 [^nospeech]: Ok, ok... No V364 speech support, I'll admit!
 [^almost]: Almost, the CPU, TED and Expansion port connector must be recovered somehow.
+
 
 
 
